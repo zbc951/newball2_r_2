@@ -1,0 +1,2175 @@
+.middle {
+    width: 1270px;
+    height: 850px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+
+    //隱藏版
+    .hideboard {
+        width: 100%;
+        min-width: 1460px;
+        height: 60px;
+        background: #2a2a2a;
+        position: fixed;
+        z-index: 5;
+        left: 0px;
+        top: 110px;
+
+        &.innerboard {
+            height: 155px;
+        }
+    }
+
+    .mainBox {
+        margin-top: 70px;
+    }
+
+    //串關投注
+    .bettingbar {
+        display: none;
+        width: 580px;
+        height: 50px;
+        position: fixed;
+        margin: 0px 0px 0px 250px;
+        bottom: 0px;
+        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        background-color: #850004;
+        border-radius: 15px 15px 0px 0px;
+        z-index: 10;
+        cursor: pointer;
+        transition: 0.5s all;
+        &::before {
+            content: "";
+            width: 8px;
+            height: 11px;
+            position: absolute;
+            background: url('../images/arrow_w.png');
+            right: 40px;
+            top: 20px;
+            transform: rotate(90deg);
+            pointer-events: none;
+        }
+        &.display {
+            display: block;
+        }
+        &.open {
+            bottom: 502px;
+            &::before {
+                transform: rotate(270deg);
+            }
+        }
+        //總投注額
+        .barnum {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 5px;
+            margin: 13px 0px 0px 40px;
+            line-height: 28px;
+            font-size: 17px;
+            color: #850004;
+            position: relative;
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                line-height: 24px;
+            }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                line-height: 24px;
+            }
+        }
+        //觸發按鈕
+        .opbut {
+            width: 100%;
+            height: 50px;
+            span {
+                float: left;
+                margin: 18px 0px 0px 10px;
+                color: #fff;
+            }
+        }
+        //計算機按鈕
+        .calbtn {
+            width: 22px;
+            height: 30px;
+            position: absolute;
+            right: 100px;
+            top: 10px;
+            background: url('../images/calculator.png') no-repeat;
+        }
+        //投注內容
+        .bettingbox {
+            width: 576px;
+            height: 0px;
+            background: #fff;
+            border: solid 2px #e01821;
+            border-bottom-width: 0px;
+            border-top-width: 0px;
+            overflow: hidden;
+            cursor: default;
+            transition: 0.5s all;
+            //table視窗
+            .bettingwindow {
+                width: 100%;
+                height: 260px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                scrollbar-width: thin;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #b9becf;
+                    border-radius: 10px;
+                }
+                table {
+                    margin: 0px;
+                }
+            }
+            //總額顯示
+            .bettingtotal {
+                width: 100%;
+                height: 45px;
+                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+                background: #e2e4ed;
+                div {
+                    display: block;
+                    width: 180px;
+                    height: 100%;
+                    border-right: solid 1px #c7c7c7;
+                    float: left;
+                    line-height: 45px;
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            //決定金額
+            .bettingend {
+                width: 100%;
+                height: 197px;
+                background: #f8f8f8;
+                p {
+                    margin: 20px 200px 25px 15px;
+                    float: left;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .endbox {
+                    width: 50%;
+                    text-align: right;
+                    float: left;
+                    input {
+                        width: 150px;
+                        height: 31px;
+                        margin: 0px 5px 10px 0px;
+                        border-radius: 5px;
+                        border: solid 1px #8593d8;
+                        font-size: 16px;
+                        padding-left: 5px;
+                        &::placeholder {
+                            font-weight: bold;
+                            color: #c7c7c7;
+                            font-size: 15px;
+                        }
+                        &:last-child {
+                            color: #ff0000;
+                        }
+                    }
+                    div {
+                        position: relative;
+                        .inputname {
+                            float: left;
+                            margin: 12px 0px 0px 15px;
+                            font-size: 14px;
+                        }
+                        .dollar {
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                        }
+                    }
+                    button {
+                        width: 85px;
+                        height: 35px;
+                        float: left;
+                        margin: 0px 3px 10px 3px;
+                        border: solid 1px #eb0004;
+                        border-radius: 5px;
+                        font-size: 17px;
+                        color: #4d515d;
+                        font-weight: bold;
+                        line-height: 35px;
+                        background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+                        background-color: #efd5d5;
+                        &:hover {
+                            background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
+                        }
+                        &:active,&.active {
+                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            background-color: #850004;
+                            color: #fff;
+                        }
+                        &.cur {
+                            width: 176px;
+                            color: #fff;
+                            background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+                            background-color: #850004;
+                            &:hover,&:active,&.active {
+                                background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            &.open {
+                height: 502px;
+            }
+        }
+    }
+    //串關投注確認窗
+    .bettingch {
+        display: none;
+        width: 580px;
+        height: 50px;
+        position: fixed;
+        z-index: 20;
+        left: 35%;
+        top: 150px;
+        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        background-color: #850004;
+        border-radius: 15px 15px 0px 0px;
+        //總投注額
+        .barnum {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 5px;
+            margin: 13px 0px 0px 15px;
+            line-height: 28px;
+            font-size: 17px;
+            color: #850004;
+            position: relative;
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                line-height: 24px;
+            }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                line-height: 24px;
+            }
+        }
+        .barword {
+            color: #fff;
+            float: left;
+            margin: 18px 0px 0px 10px;
+        }
+        .chbut {
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            background: transparent;
+            right: 30px;
+            top: 13px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                background: #fff;
+                top: 0px;
+                left: 11px;
+                transform: rotate(45deg);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                background: #fff;
+                top: 0px;
+                left: 11px;
+                transform: rotate(135deg);
+            }
+        }
+        //投注內容
+        .bettingbox {
+            width: 576px;
+            height: 430px;
+            margin-top: 50px;
+            background: #fff;
+            border: solid 2px #e01821;
+            border-top-width: 0px;
+            border-radius: 0px 0px 15px 15px;
+            overflow: hidden;
+            cursor: default;
+            //table視窗
+            .bettingwindow {
+                width: 100%;
+                height: 260px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                scrollbar-width: thin;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #b9becf;
+                    border-radius: 10px;
+                }
+                table {
+                    margin: 0px;
+                }
+            }
+            //總額顯示
+            .bettingtotal {
+                width: 100%;
+                height: 45px;
+                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+                background: #e2e4ed;
+                div {
+                    display: block;
+                    width: 180px;
+                    height: 100%;
+                    border-right: solid 1px #8a8a8a;
+                    float: left;
+                    line-height: 45px;
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            //決定金額
+            .bettingend {
+                width: 100%;
+                height: 200px;
+                background: #f8f8f8;
+                .endbox {
+                    width: 287px;
+                    height: 75px;
+                    text-align: left;
+                    float: left;
+                    margin-top: 25px;
+                    &:last-child {
+                        border-left: solid 1px #c7c7c7;
+                    }
+                    p {
+                        margin: 0px 0px 0px 40px;
+                        line-height: 75px;
+                        color: #f31d1d;
+                        font-size: 14px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background: #f31d1d;
+                            border-radius: 12px;
+                            left: -25px;
+                            top: 26px;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 4px;
+                            height: 8px;
+                            border: solid 3px #fff;
+                            border-width: 0px 2px 2px 0px;
+                            transform: rotate(45deg);
+                            top: 30px;
+                            left: -18px;
+                        }
+                    }
+                    span {
+                        font-size: 13px;
+                        line-height: 24px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        //顯示
+        &.display {
+            display: block;
+        }
+    }
+
+    //盤口教程
+    .teach {
+        display: none;
+        width: 96%;
+        height: auto;
+        margin: 80px auto 0px;
+        &.display {
+            display: block;
+        }
+        button {
+            width: 85px;
+            height: 35px;
+            border-radius: 5px;
+            color: white;
+            float: left;
+            margin: 0px 5px 20px 0px;
+            background: linear-gradient(to bottom, #dfb995, #b6885f);
+            background: #b6885f;
+            border: 1px solid #b78960;
+            font-size: 15px;
+            &:hover,&:active {
+                background: linear-gradient(to bottom, #444f8b, #6a75b2);
+                border: 1px solid #444f8b;
+            }
+            &.active {
+                background: linear-gradient(to bottom, #444f8b, #6a75b2);
+                background-color: #6a75b2;
+                border: 1px solid #444f8b;
+            }
+        }
+    }
+    //內頁
+    .inner {
+        display: none;
+        &.display {
+            display: block;
+        }
+        //上頂圖
+        .topimg {
+            width: 885px;
+            height: 130px;
+            background: url('../images/inn_soc.png') no-repeat;
+            background-size: 100%;
+            position: fixed;
+            margin: -160px 0px 0px 10px;
+            z-index: 6;
+            &.base {
+                background: url('../images/inn_base.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bask {
+                background: url('../images/inn_bask.png') no-repeat;
+                background-size: 100%;
+            }
+            &.race {
+                background: url('../images/inn_race.png') no-repeat;
+                background-size: 100%;
+            }
+            &.esp {
+                background: url('../images/inn_esp.png') no-repeat;
+                background-size: 100%;
+            }
+            &.stock {
+                background: url('../images/inn_stock.png') no-repeat;
+                background-size: 100%;
+            }
+            &.lot {
+                background: url('../images/inn_lot.png') no-repeat;
+                background-size: 100%;
+            }
+            &.ice {
+                background: url('../images/inn_ice.png') no-repeat;
+                background-size: 100%;
+            }
+            &.football {
+                background: url('../images/inn_football.png') no-repeat;
+                background-size: 100%;
+            }
+            &.ten {
+                background: url('../images/inn_ten.png') no-repeat;
+                background-size: 100%;
+            }
+            &.snooker {
+                background: url('../images/inn_sno.png') no-repeat;
+                background-size: 100%;
+            }
+            &.vball {
+                background: url('../images/inn_vba.png') no-repeat;
+                background-size: 100%;
+            }
+            &.racecar {
+                background: url('../images/inn_mot.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bad {
+                background: url('../images/inn_bad.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bso {
+                background: url('../images/inn_bso.png') no-repeat;
+                background-size: 100%;
+            }
+            &.pp {
+                background: url('../images/inn_tab.png') no-repeat;
+                background-size: 100%;
+            }
+            //左字+右雙IC
+            .topword,.toplink {
+                width: 20%;
+                height: 100%;
+                float: left;
+                text-align: left;
+                p {
+                    color: #fff;
+                    width: 100%;
+                    margin: 30px 0px 0px 20px;
+                    font-size: 15px;
+                    &:last-child {
+                        margin-top: 10px;
+                    }
+                }
+                button {
+                    float: right;
+                    width: 33px;
+                    height: 30px;
+                    margin: 30px 20px 0px 0px;
+                    background: url('../images/topfix_ic.png');
+                    background-size: 200%;
+                    position: relative;
+                    overflow: hidden;
+                    &:last-child {
+                        margin-right: 10px;
+                        background-position-x: -33px;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 60px;
+                        background: linear-gradient(to right,transparent,#fff,transparent);
+                        transform: rotate(135deg);
+                        top: -15px;
+                        left: -40px;
+                    }
+                    &:hover,&:active,&.active:before {
+                        left: 50px;
+                        transition: 0.3s left;
+                    }
+                }
+            }
+            //中間隊伍
+            .topteam {
+                width: 60%;
+                height: 100%;
+                float: left;
+                div {
+                    width: 33%;
+                    height: 100%;
+                    float: left;
+                    line-height: 10px;
+                    word-break: break-all;
+                    &:first-child {
+                        text-align: right;
+                    }
+                    &.team2 {
+                        text-align: left;
+                        span {
+                            float: left;
+                        }
+                        p {
+                            float: left;
+                            margin: 43px 0px 0px 10px;
+                        }
+                    }
+                    &.teammid {
+                        p {
+                            display: block;
+                            width: 100%;
+                            margin: 10px 0px;
+                            font-size: 18px;
+                            &:first-child {
+                                margin: 13px 0px 0px 0px;
+                                font-size: 15px;
+                            }
+                            &:last-child {
+                                margin-top: 5px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    p {
+                        // display: inline;
+                        width: 64%;
+                        height: auto;
+                        color: #fff;
+                        font-size: 17px;
+                        float: right;
+                        margin: 43px 10px 0px 0px;
+                        line-height: 18px;
+                    }
+                    span {
+                        display: block;
+                        width: 50px;
+                        height: 35px;
+                        margin-top: 31px;
+                        background: url('../images/team_icon.png') no-repeat;
+                        background-size: 600%;
+                        float: right;
+                        &.team2 {
+                            background-position-x: -50px;
+                        }
+                        &.team3 {
+                            background-position-x: -100px;
+                        }
+                        &.team4 {
+                            background-position-x: -150px;
+                        }
+                        &.team5 {
+                            background-position-x: -200px;
+                        }
+                        &.team6 {
+                            background-position-x: -250px;
+                        }
+                    }
+                }
+            }
+        }
+        //table
+        table {
+            &:nth-of-type(1) {
+                margin-top: 160px;
+            }
+        }
+    }
+}
+
+//懸浮列
+.topfix {
+    display: none;
+    width: calc(100% - 660px);
+    height: 50px;
+    border-radius: 3px;
+    background: #747474;
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    z-index: 6;
+
+    &.display {
+        display: block;
+    }
+
+    ul {
+        float: left;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        text-align: left;
+
+        i {
+            color: #fff;
+            font-size: 18px;
+            margin: 0px 6px 0px 12px;
+            transform: translateY(2px);
+
+            &.fa-sync-alt {
+                position: absolute;
+                top: 14px;
+                right: -25px;
+                margin: 0px;
+                cursor: pointer;
+            }
+        }
+
+        //遊戲標題
+        .gameName {
+            display: inline-block;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        //重新整理
+        .reWeb {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin-left: 20px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 8px 6px 0px 6px;
+                border-color: #fff transparent;
+                right: 10px;
+                top: 22px;
+                pointer-events: none;
+            }
+
+            select {
+                background: #505050;
+                color: #fff;
+                appearance:none;   
+                -moz-appearance:none;   
+                -webkit-appearance:none;
+                padding: 5px 30px 5px 5px;
+                border: solid 1px #fff;
+                font-size: 12px;
+            }
+
+            button {
+                width: 25px;
+                height: 25px;
+                background: #fff;
+                position: absolute;
+                right: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        //玩法種類
+        .kind,.sort,.chooseLeague {
+            float: right;
+            width: auto;
+            height: 100%;
+            position: relative;
+            margin-right: 10px;
+            font-size: 12px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 8px 6px 0px 6px;
+                border-color: #fff transparent;
+                right: 10px;
+                top: 22px;
+                pointer-events: none;
+            }
+            
+            select {
+                background: #505050;
+                color: #fff;
+                appearance:none;   
+                -moz-appearance:none;   
+                -webkit-appearance:none;
+                padding: 5px 30px 3px 5px;
+                border: solid 1px #fff;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+        
+        .chooseLeague {
+            
+            span {
+                background: #505050;
+                color: #fff;
+                padding: 7px 30px 6px 5px;
+                border: solid 1px #fff;
+                cursor: pointer;
+            }
+        }
+
+        .timeSelect {
+            float: left;
+            width: auto;
+            height: 100%;
+            margin-left: 15px;
+            user-select: none;
+            position: relative;
+
+            .turnBtn {
+                display: inline-block;
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-width: 10px 13px 10px 0px;
+                border-color: transparent #fff;
+                cursor: pointer;
+                transform: translateY(4px);
+                transform-origin: 10px 32px;
+
+                &:active {
+                    transform: scale(0.8);
+                }
+
+                &.next {
+                    border-width: 10px 0px 10px 13px;
+                }
+            }
+
+            .date {
+                display: inline-block;
+                margin: 0px 10px;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+
+                &:hover,&:active,&.active {
+
+                    .arrow {
+                        border-color: #fff transparent;
+                    }
+                }
+
+                .total {
+                    display: inline-block;
+                    background: #2a2a2a;
+                    border-radius: 3px;
+                    margin-left: 10px;
+                    line-height: 22px;
+                    width: 36px;
+                    text-align: center;
+
+                    span {
+                        color: #ffee00;
+                    }
+                }
+
+                .arrow {
+                    display: inline-block;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-color: #b1b1b1 transparent;
+                    border-width: 8px 6px 0px 6px;
+                    margin-left: 10px;
+                }
+
+                .moreTimeList {
+                    display: none;
+                    position: absolute;
+                    left: 0px;
+                    top: 50px;
+                    width: 143px;
+                    height: auto;
+                    background: #505050;
+                    line-height: 30px;
+                    border-radius: 0px 0px 3px 3px;
+
+                    &.display {
+                        display: block;
+                    }
+    
+                    li {
+                        text-align: center;
+                        font-size: 14px;
+                        border-bottom: solid 1px #a0a0a0;
+                        color: #fff;
+
+                        &:last-child {
+                            border: none;
+                        }
+
+                        &:hover,&:active,&.active {
+                            background: #747474;
+                        }
+                    }
+                }
+            }
+
+            .smallBtn {
+                background: transparent;
+                border: solid 1px #ffffff;
+                color: #fff;
+                padding: 3px 10px 4px;
+                border-radius: 3px;
+                margin: 0px 3px;
+
+                &:nth-of-type(1) {
+                    margin-left: 10px;
+                }
+
+                &:hover,&:active,&.active {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+//選擇聯盟
+.chleague {
+    display: none;
+    width: 1260px;
+    height: 0px;
+    padding: 20px 0px;
+    overflow: hidden;
+    border-radius: 0px 0px 3px 3px;
+    overflow-y: auto;
+    position: absolute;
+    top: 55px;
+    left: 280px;
+    z-index: 5;
+    background: #ababab;
+    scrollbar-width: thin;
+    text-align: center;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+
+    &.display {
+        display: block;
+        height: auto;
+        max-height: 350px;
+    }
+
+    &.index {
+
+        ul {
+
+            li {
+                width: 20%;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 20%;
+            text-align: left;
+            padding-left: 30px;
+
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                &:nth-last-of-type(1) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                &:nth-last-of-type(1) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+                position: relative;
+                padding: 6px 0px;
+
+                .cube {
+                    left: -20px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 160px;
+        height: 36px;
+        border: 1px solid #495cc5;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+        background-color: #3247b8;
+        color: #fff;
+        margin-top: 15px;
+
+        &:hover,&:active,&.active {
+            background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+            background-color: #8e9bdc;
+        }
+    }
+}
+
+//彈窗區
+
+//黑幕
+.filter {
+    display: none;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 15;
+
+    &.display {
+        display: block;
+    }
+}
+
+//盤口對照表
+.conversionBox {
+    display: none;
+    width: 800px;
+    height: 375px;
+    border-radius: 3px;
+    background: #747474;
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+
+    &.display {
+        display: block;
+    }
+
+    h1 {
+        width: 100%;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        background: #ababab;
+        color: #434343;
+        border-radius: 3px 3px 0px 0px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .innerBox {
+        width: 94%;
+        height: 285px;
+        background: #9b9b9b;
+        border-radius: 3px;
+        margin: 3% auto;
+
+        p {
+            color: #595959;
+            padding: 12px 14px;
+            font-size: 14px;
+        }
+
+        .baseline {
+            width: 96%;
+            height: 1px;
+            background: #ababab;
+            margin: 0px auto;
+        }
+    }
+
+    button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #cacaca;
+        border: solid 3px #676767;
+        right: -50px;
+        top: -50px;
+        box-shadow: 0px 0px 0px 5px #cacaca;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            right: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            left: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+//設定
+.controlBox {
+    display: none;
+    width: 600px;
+    height: 430px;
+    border-radius: 3px;
+    background: #747474;
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+
+    h1 {
+        width: 100%;
+        height: 40px;
+        line-height: 42px;
+        text-align: center;
+        background: #ababab;
+        color: #434343;
+        border-radius: 3px 3px 0px 0px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .innerBox1 {
+        width: 96%;
+        height: 90px;
+        margin: 2% auto 0px;
+        background: #9b9b9b;
+        border-radius: 3px;
+
+        p {
+            font-size: 14px;
+            padding: 10px 12px;
+            color: #595959;
+        }
+
+        .baseline {
+            width: 100%;
+            height: 1px;
+            background: #ababab;
+        }
+
+        .partingBox {
+            height: 54px;
+            float: left;
+            width: 50%;
+            text-align: right;
+            line-height: 54px;
+            font-size: 14px;
+
+            .slideBase {
+                float: right;
+                margin: 9px 40px 0px 15px;
+                width: 120px;
+                height: 35px;
+                background: #353535;
+                border-radius: 40px;
+                position: relative;
+
+                &.lSide {
+                    
+                    .slideBar {
+                        left: 2%;
+                    }
+
+                    p {
+
+                        &:nth-of-type(1) {
+                            color: #353535;
+                        }
+                    }
+                }
+
+                &.rSide {
+
+                    .slideBar {
+                        right: 2%;
+                    }
+
+                    p {
+
+                        &:nth-of-type(2) {
+                            color: #353535;
+                        }
+                    }
+                }
+
+                p {
+                    width: calc(50% - 1px);
+                    height: 100%;
+                    line-height: 35px;
+                    float: left;
+                    font-size: 12px;
+                    color: #ababab;
+                    text-align: center;
+                    padding: 0px;
+                    position: relative;
+                    z-index: 5;
+                    padding-top: 1px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        padding-left: 1px;
+                    }
+
+                    &:last-child {
+                        padding-right: 1px;
+                    }
+                }
+
+                .slideBar {
+                    position: absolute;
+                    width: 48%;
+                    height: 84%;
+                    top: 8.5%;
+                    background: #ababab;
+                    border-radius: 30px;
+                    transition: all 0.2s;
+                }
+            }
+        }
+
+        .longBox {
+            width: 100%;
+            height: 54px;
+            line-height: 54px;
+            padding-left: 50px;
+            font-size: 14px;
+
+            button {
+                text-align: right;
+                background: #535353;
+                border-radius: 3px;
+                width: 80px;
+                height: 30px;
+                padding-right: 10px;
+                font-size: 16px;
+                color: #ababab;
+                margin-right: 4px;
+                border: solid 1px transparent;
+
+                &:nth-of-type(1) {
+                    margin-left: 20px;
+                }
+
+                &:hover,&:active,&.active {
+                    background: #353535;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+
+    .innerBox2 {
+        width: calc(96% - 15px);
+        height: 50px;
+        margin: 2% auto 0px;
+        background: #9b9b9b;
+        border-radius: 3px;
+        line-height: 50px;
+        color: #595959;
+        padding-left: 15px;
+        font-size: 14px;
+
+        p {
+            display: inline-block;
+            color: #434343;
+            margin: 0px 35px;
+            font-size: 15px;
+            font-weight: bold;
+
+            span {
+                color: #923e4c;
+                font-weight: normal;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .cancelBtn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #cacaca;
+        border: solid 3px #676767;
+        right: -50px;
+        top: -50px;
+        box-shadow: 0px 0px 0px 5px #cacaca;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            right: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            left: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &.display {
+        display: block;
+    }
+}
+
+//cube
+.cube {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
+    background-color: #cbd0e9;
+    border: 1px solid #b2afcf;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+
+    &.active {
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
+        background-color: #3449b9;
+        position: absolute;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            width: 3px;
+            height: 8px;
+            border: solid 1px #fff;
+            transform: rotate(45deg);
+            border-width: 0px 2px 2px 0px;
+        }
+    }
+}
+
+//一般投注
+.norbetting {
+    display: none;
+    width: 580px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    background: #3d3d3d;
+    border-radius: 3px 3px 0px 0px;
+    z-index: 16;
+    text-align: left;
+
+    &.display {
+        display: block;
+    }
+
+    .barname {
+        line-height: 50px;
+        color: #cacaca;
+        padding-left: 20px;
+    }
+
+    .norcancelbtn {
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin: 15px 25px 0px 0px;
+        background: transparent;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 0px;
+            left: 10px;
+            transform: rotate(-45deg);
+            background: #fff;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 0px;
+            right: 9px;
+            transform: rotate(45deg);
+            background: #fff;
+        }
+    }
+
+    .nor_bettingbox {
+        width: 576px;
+        height: auto;
+        background: #fff;
+        border: solid 2px #3d3d3d;
+        border-radius: 0px 0px 3px 3px;
+        border-top-width: 0px;
+        overflow: hidden;
+
+        //總額顯示
+        .bettingtotal {
+            width: 100%;
+            height: 45px;
+            background: #747474;
+
+            div {
+                display: block;
+                width: 180px;
+                height: 100%;
+                color: #fff;
+                border-right: solid 1px #ababab;
+                float: left;
+                line-height: 45px;
+                font-size: 14px;
+                text-align: left;
+                padding-left: 10px;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        //決定金額
+        .bettingend {
+            width: 100%;
+            height: 140px;
+            background: #4d4d4d;
+            padding-top: 15px;
+
+            .endbox {
+                width: 50%;
+                text-align: right;
+                float: left;
+                color: #fff;
+
+                input {
+                    width: 150px;
+                    height: 31px;
+                    margin: 1px 5px 11px 0px;
+                    border-radius: 3px;
+                    border: none;
+                    font-size: 16px;
+                    padding-left: 5px;
+
+                    &::placeholder {
+                        color: #c7c7c7;
+                        font-size: 14px;
+                    }
+
+                    &:last-child {
+                        color: #ff0000;
+                    }
+                }
+
+                div {
+                    position: relative;
+
+                    .inputname {
+                        float: left;
+                        margin: 12px 0px 0px 15px;
+                        font-size: 14px;
+                    }
+
+                    .dollar {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                    }
+                }
+
+                button {
+                    width: 85px;
+                    height: 35px;
+                    float: left;
+                    margin: 0px 3px 10px 3px;
+                    border: solid 1px #495cc5;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    color: #4d515d;
+                    font-weight: bold;
+                    line-height: 35px;
+                    background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
+                    background-color:#d5d9ef;
+
+                    &:hover {
+                        background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
+                    }
+
+                    &:active,&.active {
+                        background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+                        background-color: #2e44b7;
+                        color: #fff;
+                    }
+
+                    &.decideBtn {
+                        width: 176px;
+                        color: #fff;
+                        background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
+                        background-color: #2e44b7;
+                        &:hover,&:active,&.active {
+                            background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//一般投注確認窗
+.norbettingCheck {
+    display: none;
+    width: 580px;
+    height: 50px;
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    background: #3d3d3d;
+    border-radius: 3px 3px 0px 0px;
+
+    &.display {
+        display: block;
+    }
+
+    .barname {
+        line-height: 50px;
+        color: #cacaca;
+        padding-left: 20px;
+    }
+
+    .checkCancelBtn {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        background: transparent;
+        right: 30px;
+        top: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: #fff;
+            top: 0px;
+            left: 11px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: #fff;
+            top: 0px;
+            left: 11px;
+            transform: rotate(135deg);
+        }
+    }
+
+    //投注內容
+    .bettingbox {
+        width: 576px;
+        height: auto;
+        background: #fff;
+        border: solid 2px #3d3d3d;
+        border-top-width: 0px;
+        border-radius: 0px 0px 3px 3px;
+        overflow: hidden;
+        
+        //總額顯示
+        .bettingtotal {
+            width: 100%;
+            height: 45px;
+            background: #747474;
+
+            div {
+                display: block;
+                width: 180px;
+                height: 100%;
+                color: #fff;
+                border-right: solid 1px #ababab;
+                float: left;
+                line-height: 45px;
+                font-size: 14px;
+                text-align: left;
+                padding-left: 10px;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+        //決定金額
+        .bettingend {
+            width: 100%;
+            height: 90px;
+            background: #4d4d4d;
+
+            .endbox {
+                width: 287px;
+                height: 48px;
+                text-align: left;
+                float: left;
+                margin-top: 20px;
+                color: #fff;
+
+                &:last-child {
+                    border-left: solid 1px #c7c7c7;
+                }
+
+                p {
+                    margin: 0px 0px 0px 40px;
+                    line-height: 48px;
+                    color: #556de7;
+                    font-size: 14px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background: #354ecf;
+                        border-radius: 12px;
+                        left: -25px;
+                        top: 14px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 4px;
+                        height: 8px;
+                        border: solid 3px #fff;
+                        border-width: 0px 2px 2px 0px;
+                        transform: rotate(45deg);
+                        top: 18px;
+                        left: -18px;
+                    }
+                }
+
+                span {
+                    font-size: 13px;
+                    line-height: 24px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+//串關計算機
+.calculator {
+    display: none;
+    width: 715px;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 20;
+    &.display {
+        display: block;
+    }
+    .calbar {
+        width: 100%;
+        height: 40px;
+        border-radius: 15px 15px 0px 0px;
+        background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+        background-color:#2f45b7;
+        position: relative;
+        text-align: center;
+        line-height: 44px;
+        color: #fff;
+        font-size: 17px;
+        button {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: -40px;
+            top: -40px;
+            border-radius: 20px;
+            border: solid 2px #fff;
+            background: transparent;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 25px;
+                background: #fff;
+                transform: rotate(45deg);
+                top: 3px;
+                right: 14px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 25px;
+                background: #fff;
+                transform: rotate(-45deg);
+                top: 3px;
+                left: 14px;
+            }
+        }
+    }
+    .calbox {
+        width: calc(100% - 60px);
+        height: 385px;
+        background: #f7f7f7;
+        border-radius: 0px 0px 15px 15px;
+        position: relative;
+        overflow: hidden;
+        padding: 0px 30px 20px;
+        .top {
+            padding: 10px 0px;
+            .inputbox {
+                input {
+                    width: 80px;
+                    height: 24px;
+                    padding-left: 7px;
+                    border: solid 1px #9ba1c5;
+                    margin: 0px 10px 0px 5px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #2539a0;
+                }
+                button {
+                    width: 60px;
+                    height: 28px;
+                    color: #fff;
+                    background: #556de7;
+                    font-size: 15px;
+                    border-radius: 3px;
+                    &:hover,&:active,&.active {
+                        background: #2539a0;
+                    }
+                }
+            }
+        }
+        .mid {
+            width: 100%;
+            height: 170px;
+            border: solid 1px #9ba1c5;
+            border-radius: 10px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            table {
+                width: 100%;
+                box-shadow: none;
+                margin: 0px;
+                border-radius: 0px;
+                tr {
+                    &:nth-child(odd) {
+                        background: #f7f8fc;
+                    }
+                    th {
+                        border-bottom-width: 0px;
+                        font-size: 14px;
+                    }
+                    td {
+                        border-top-width: 0px;
+                        padding: 3px 5px;
+                        &:nth-of-type(1),&:nth-of-type(4) {
+                            width: 10%;
+                        }
+                        .odds {
+                            width: 50px;
+                            padding-left: 5px;
+                            border: solid 1px #9ba1c5;
+                            border-radius: 3px;
+                            
+                        }
+                        .selectbox {
+                            position: relative;
+                            font-size: 14px;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            /*for FireFox*/
+                            @media screen and (min--moz-device-pixel-ratio:0){
+                                &::before {
+                                    top: 10px;
+                                    left: 87px;
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 0px;
+                                height: 0px;
+                                border-style: solid;
+                                border-width: 5px 3px 0px 3px;
+                                border-color: #687abc transparent transparent transparent;
+                                top: 9px;
+                                left: 84px;
+                                pointer-events: none;
+                            }
+                            select {
+                                color: #687abc;
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                width: 55px;
+                                height: 22px;
+                                border: solid 1px #9ba1c5;
+                                border-radius: 3px;
+                                padding-left: 5px;
+                                line-height: 22px;
+                                font-size: 14px;
+                                margin: 0px 3px;
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    width: 60px;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    width: 60px;
+                                }
+                                /*for FireFox*/
+                                @media screen and (min--moz-device-pixel-ratio:0){
+                                    width: 60px;
+                                }
+                            }
+                            input {
+                                background: #d7d7d7;
+                                border-radius: 3px;
+                                width: 35px;
+                                height: 20px;
+                                border: none;
+                                text-align: center;
+                                color: #585858;
+                                font-weight: bold;
+                                font-size: 15px;
+                            }
+                            span {
+                                font-size: 15px;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            .inputbox {
+                margin: 10px 0px;
+                text-align: center;
+                font-size: 17px;
+                input {
+                    width: 100px;
+                    height: 28px;
+                    padding-left: 10px;
+                    border: solid 1px #9ba1c5;
+                    border-radius: 3px;
+                    margin-left: 5px;
+                    color: #e60012;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                button {
+                    width: 260px;
+                    height: 40px;
+                    background: linear-gradient(to left,#9ca8e4,#495cc5);
+                    background-color: #495cc5;
+                    border-radius: 3px;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-left: 50px;
+                    &:hover,&:active,&.active {
+                        background: #2539a0;
+                    }
+                }
+            }
+            .remind {
+                margin-top: 10px;
+                width: calc(100% - 20px);
+                border-radius: 10px;
+                background: #fff;
+                text-align: left;
+                border: solid 1px #9ba1c5;
+                padding: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    &.retitle {
+                        text-align: center;
+                        border-bottom: solid 1px #e0e1e3;
+                        padding-bottom: 7px;
+                    }
+                    &.extitle {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//共用區
+
+.liveRemind {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #ffee00;
+    border-radius: 50px;
+    transform: translateY(-2px);
+    margin-right: 3px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 5px;
+        height: 5px;
+        background: #ffee00;
+        border-radius: 50px;
+        animation: liveRemind 0.8s ease-in 0s infinite;
+    }
+}
+
+.mark {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #8e9bdc;
+}
+
+//足球
+
+//犯規數
+.redCard,.yellowCard {
+					
+    span {
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        background: #ff0000;
+        margin: 0px 10px -3px 0px;
+    }
+
+    &.yellowCard {
+        margin-top: 6px;
+
+        span {
+            background: #ffee00;
+        }
+    }
+}
+
+//棒球
+
+//選手狀況
+.playerStatus {
+    color: #c7cef3;
+}
+
+//投手名稱
+.pitcher {
+    color: #8596ee;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+//壘包數
+.baseBag {
+    position: relative;
+    width: 34px;
+    height: 25px;
+    margin: 8px auto 0px;
+
+    &.one {
+
+        span {
+
+            &.first {
+                background: #fff;
+            }
+        }
+    }
+
+    &.two {
+
+        span {
+
+            &.second {
+                background: #fff;
+            }
+        }
+    }
+
+    &.three {
+
+        span {
+
+            &.third {
+                background: #fff;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        background: transparent;
+        border: solid 1px #fff;
+
+        &.first {
+            bottom: 0px;
+            right: 0px;
+        }
+
+        &.second {
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        &.third {
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}
+
+//球數
+.totalPitch {
+
+    &.b1 {
+        
+        span {
+            
+            &:nth-of-type(1) {
+                background: #097c25;
+            }
+        }
+    }
+
+    &.b2 {
+        
+        span {
+            
+            &:nth-of-type(1),&:nth-of-type(2) {
+                background: #097c25;
+            }
+        }
+    }
+
+    &.b3 {
+        
+        span {
+            
+            &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
+                background: #097c25;
+            }
+        }
+    }
+
+    &.s1 {
+        
+        span {
+            
+            &:nth-of-type(1) {
+                background: #f39800;
+            }
+        }
+    }
+
+    &.s2 {
+        
+        span {
+            
+            &:nth-of-type(1),&:nth-of-type(2) {
+                background: #f39800;
+            }
+        }
+    }
+
+    &.o1 {
+        
+        span {
+            
+            &:nth-of-type(1) {
+                background: #c84a4a;
+            }
+        }
+    }
+
+    &.o2 {
+        
+        span {
+            
+            &:nth-of-type(1),&:nth-of-type(2) {
+                background: #c84a4a;
+            }
+        }
+    }
+
+    span {
+        float: right;
+        width: 7px;
+        height: 7px;
+        border-radius: 10px;
+        background: #b2b4c0;
+        margin: 6px 3px 0px 0px;
+    }
+}

@@ -1,0 +1,70 @@
+@keyframes reset {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rowbut {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes rowbut2 {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes btnFlashing {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes liveRemind {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.75;
+        transform: scale(1.25);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+
+    80% {
+        opacity: 0.25;
+        transform: scale(2.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.8);
+    }
+}

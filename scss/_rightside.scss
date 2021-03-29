@@ -1,0 +1,412 @@
+//右列
+.right {
+    width: 300px;
+    height: 850px;
+    margin-left: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 6;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+    
+    //上段字樣
+    .statusWindow {
+        width: 100%;
+        height: auto;
+        background: #eeeeee;
+        
+        p {
+            background: #747474;
+            border-bottom: solid 1px #ababab;
+            color: #fff;
+            padding: 7px 15px;
+            font-size: 12px;
+        }
+
+        ul {
+
+            li {
+                padding: 7px 15px;
+                font-size: 14px;
+                border-bottom: solid 1px #ababab;
+
+                span {
+                    float: right;
+                    font-size: 12px;
+                    padding-top: 2px;
+
+                    &.onWait {
+                        color: #3c7424;
+                    }
+                }
+
+                button {
+                    float: right;
+                    width: 15px;
+                    height: 15px;
+                    background: transparent;
+                    border: solid 1px #000;
+                    border-radius: 15px;
+                    margin-left: 15px;
+                    position: relative;
+                    overflow: hidden;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 7px;
+                        background: #000;
+                        transform: rotate(45deg);
+                        top: 3px;
+                        right: 6px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 7px;
+                        background: #000;
+                        transform: rotate(-45deg);
+                        top: 3px;
+                        left: 6px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    //直播小框
+    .liveWindow {
+        width: 100%;
+        height: auto;
+        background: #ababab;
+        text-align: center;
+
+        .title {
+            background: #747474;
+            border-bottom: solid 1px #ababab;
+            color: #fff;
+            padding: 7px 15px;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .leftTeam,.rightTeam {
+            display: inline-block;
+            width: 35%;
+            height: 50px;
+            position: relative;
+
+            &.leftTeam {
+
+                p {
+                    text-align: right;
+                    right: 0px;
+                }
+            }
+
+            &.rightTeam {
+
+                p {
+                    text-align: left;
+                    left: 0px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                color: #000;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                line-height: 15px;
+            }
+        }
+        
+        .score {
+            display: inline-block;
+            width: 25%;
+            height: 50px;
+            position: relative;
+
+            p {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
+                span {
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .liveShow {
+            width: 100%;
+            height: 195px;
+            background: url('../images/live.png') no-repeat;
+            background-size: cover;
+        }
+    }
+    //下大框
+    .room {
+        width: 100%;
+        height: auto;
+        //切換按鈕
+        .twobut {
+            width: 100%;
+            height: 27px;
+            background: #747474;
+
+            .line {
+                float: left;
+                width: 1%;
+                height: 100%;
+                background: #ababab;
+            }
+
+            button {
+                width: 49.5%;
+                height: 100%;
+                background: transparent;
+                color: #fff;
+                font-size: 14px;
+                float: left;
+
+                &:hover,&:active,&.active {
+                    background: #a1a1a1;
+                    color: #000;
+                }
+            }
+        }
+        .onebut {
+            width: 100%;
+            height: 27px;
+            background: #747474;
+
+            button {
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                color: #fff;
+                font-size: 14px;
+
+                &:hover,&:active,&.active {
+                    background: #a1a1a1;
+                    color: #000;
+                }
+            }
+        }
+
+        //直播賽事
+        .livelist {
+            display: none;
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            background: #ababab;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #b9becf;
+                border-radius: 10px;
+            }
+
+            &.open {
+                display: block;
+            }
+
+            ul {
+
+                //選單
+                li {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    border-bottom: solid 1px #ebebeb;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    &:hover,&:active {
+                        background: rgb(218, 218, 218);
+
+                        &::before {
+                            transform: rotate(90deg);
+                        }
+
+                        span {
+                            color: #000;
+                        }
+                    }
+
+                    &.active {
+                        height: auto;
+                        background: rgb(218, 218, 218);
+
+                        &::before {
+                            transform: rotate(90deg);
+                        }
+
+                        span {
+                            color: #000;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 0px;
+                        height: 0px;
+                        border-style: solid;
+                        border-width: 7px 0px 7px 8px;
+                        border-color: transparent #000;
+                        right: 25px;
+                        top: 8px;
+                        transition: 0.3s all;
+                    }
+
+                    .gameName {
+                        color: #fff;
+                        font-size: 13px;
+                        margin-left: 30px;
+                    }
+
+                    .games {
+                        float: right;
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: #000;
+                        margin: 2px 60px 0px 0px;
+                    }
+
+                    .innerList {
+                        width: 100%;
+                        height: 70px;
+                        background: #bcbcbc;
+                        position: relative;
+                        border-top: solid 1px #ebebeb;
+                        cursor: default;
+
+                        p {
+                            width: 100%;
+                            line-height: 18px;
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 12px;
+                            color: #575757;
+
+                            span {
+                                font-weight: bold;
+                                color: #000;
+
+                                .situation {
+                                    font-weight: normal;
+                                    float: right;
+                                    margin-right: 20px;
+
+                                    &.onLive {
+                                        position: relative;
+                                        color: #4c6ef5;
+                                        
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-radius: 12px;
+                                            top: 6px;
+                                            left: -12px;
+                                            background: #4c6ef5;
+                                        }
+                                    }
+                                }
+                            }
+
+                            button {
+                                position: absolute;
+                                right: 20px;
+                                bottom: 0px;
+                                width: 70px;
+                                height: 30px;
+                                background: #ababab;
+                                border-radius: 3px;
+                                border: solid 1px #fff;
+                                color: #fff;
+
+                                &:hover,&:active,&.active {
+                                    background: #fff;
+                                    color: #ababab;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //聊天室
+        .bettingStatus {
+            display: none;
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            background: #bcbcbc;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #b9becf;
+                border-radius: 10px;
+            }
+
+            &.open {
+                display: block;
+            }
+        }
+    }
+}

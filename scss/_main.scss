@@ -1,0 +1,40 @@
+//main
+main {
+    display: block;
+    width: 100%;
+    min-width: 1460px;
+    height: auto;
+    position: relative;
+
+    //置中外包
+    article {
+        height: 890px;
+        margin: 0px auto;
+        overflow: hidden;
+        position: relative;
+        //優惠用
+        &.discountborad {
+            width: 1170px;
+        }
+        //我的頁面用
+        &.mineboard {
+            width: 1125px;
+        }
+    }
+
+    //背景
+    .bg {
+        width: 100%;
+        min-width: 1460px;
+        height: 1000px;
+        position: absolute;
+        top: 0px;
+        background: #2a2a2a;
+        z-index: -999;
+
+        //首頁縮拉
+        &.index {
+            min-width: 1160px;
+        }
+    }
+}
