@@ -5486,7 +5486,7 @@ main .bg.index {
 .filter {
   display: none;
   background: rgba(0, 0, 0, 0.8);
-  width: 100%;
+  width: 1920px;
   height: 100%;
   position: absolute;
   top: 0px;
