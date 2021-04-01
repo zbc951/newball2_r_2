@@ -684,20 +684,20 @@ $(function(){
 
 //fixside
 $(function(){
-    var wWD = window.innerWidth;
-        if(wWD <= 1460) {
-            $('.fixside').addClass('rwd');
-        } else {
-            $('.fixside').removeClass('rwd');
-        }
-    $(window).resize(function(){
-        var wWD = window.innerWidth;
-        if(wWD <= 1460) {
-            $('.fixside').addClass('rwd');
-        } else {
-            $('.fixside').removeClass('rwd');
-        }
-    })
+    // var wWD = window.innerWidth;
+    //     if(wWD <= 1460) {
+    //         $('.fixside').addClass('rwd');
+    //     } else {
+    //         $('.fixside').removeClass('rwd');
+    //     }
+    // $(window).resize(function(){
+    //     var wWD = window.innerWidth;
+    //     if(wWD <= 1460) {
+    //         $('.fixside').addClass('rwd');
+    //     } else {
+    //         $('.fixside').removeClass('rwd');
+    //     }
+    // })
 
     $('.searchbut').click(function(){
         $(this).toggleClass('active');

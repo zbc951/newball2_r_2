@@ -2,7 +2,6 @@
 	width: calc(100% - 10px);
     height: auto;
     border-collapse: collapse;
-    overflow: hidden;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
 	background: #4d4d4d;
@@ -23,6 +22,9 @@
 			vertical-align: middle;
 			background: #3d3d3d;
 			border-bottom: solid 1px #ababab;
+			position: sticky;
+			top: 70px;
+			z-index: 2;
 
 			//字靠左
 			&.tLeft {
@@ -2300,13 +2302,6 @@
 
 			td {
 
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-				}
-
 				&:nth-of-type(1) {
 					width: 7%;
 				}
@@ -2369,6 +2364,170 @@
 	//賽車
 
 	//羽毛球
+	&.tType12 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 20%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 31%;
+				}
+
+				&:nth-of-type(2) {
+					width: 2%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 4%;
+				}
+
+				&:nth-of-type(8) {
+					width: 4%;
+				}
+
+				&:nth-of-type(9) {
+					width: 15%;
+				}
+
+				&:nth-of-type(10) {
+					width: 15%;
+				}
+
+				&:nth-of-type(11) {
+					width: 15%;
+				}
+
+				&:nth-of-type(12) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType12_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 20%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 28%;
+				}
+
+				&:nth-of-type(2) {
+					width: 2%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 4%;
+				}
+
+				&:nth-of-type(8) {
+					width: 4%;
+				}
+
+				&:nth-of-type(9) {
+					width: 16%;
+				}
+
+				&:nth-of-type(10) {
+					width: 16%;
+				}
+
+				&:nth-of-type(11) {
+					width: 16%;
+				}
+
+				&:nth-of-type(12) {
+					width: 6%;
+				}
+			}
+		}
+	}
 	&.tType12_index {
 
 		&.hide1 {
@@ -2391,13 +2550,6 @@
 		tr {
 
 			td {
-
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-				}
 
 				&:nth-of-type(1) {
 					width: 7%;
