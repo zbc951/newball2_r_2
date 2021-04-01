@@ -23,22 +23,6 @@
         border-radius: 10px;
     }
 
-    //隱藏版
-    .hideboard {
-        width: 100%;
-        min-width: 1460px;
-        height: 60px;
-        background: #2a2a2a;
-        position: fixed;
-        z-index: 5;
-        left: 0px;
-        top: 110px;
-
-        &.innerboard {
-            height: 155px;
-        }
-    }
-
     .mainBox {
         margin-top: 70px;
     }
@@ -668,6 +652,17 @@
             }
         }
     }
+}
+
+//隱藏版
+.hideboard {
+    width: 1260px;
+    height: 70px;
+    background: #2a2a2a;
+    position: absolute;
+    z-index: 5;
+    left: 280px;
+    top: 0px;
 }
 
 //懸浮列
@@ -1995,17 +1990,17 @@
 
 //犯規數
 .redCard,.yellowCard {
+    display: inline-block;
 					
     span {
         display: inline-block;
         width: 10px;
         height: 15px;
         background: #ff0000;
-        margin: 0px 10px -3px 0px;
+        margin: 0px 4px -3px 0px;
     }
 
     &.yellowCard {
-        margin-top: 6px;
 
         span {
             background: #ffee00;
@@ -2033,6 +2028,7 @@
     width: 34px;
     height: 25px;
     margin: 8px auto 0px;
+    padding: 0px;
 
     &.one {
 

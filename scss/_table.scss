@@ -240,6 +240,17 @@
 					color: #74ca4f;
 				}
 			}
+
+			p {
+					
+				&:nth-of-type(1) {
+					padding-bottom: 8px;
+				}
+
+				&:last-child {
+					padding: 0px;
+				}
+			}
       	}
 	}
 
@@ -282,7 +293,7 @@
 
 				td {
 					&:nth-of-type(1) {
-						width: 55%;
+						width: 50%;
 					}
 				}
 			}
@@ -292,11 +303,25 @@
 
 			td {
 
+				div {
+					
+					&:nth-of-type(1) {
+						margin-bottom: 8px;
+					}
+
+					p {
+
+						&.redCard,&.yellowCard {
+							padding: 0px;
+						}
+					}
+				}
+
 				&:nth-of-type(1) {
-					width: 32%;
+					width: 27%;
 				}
 				&:nth-of-type(2) {
-					width: 5%;
+					width: 10%;
 				}
 				&:nth-of-type(3) {
 					width: 5%;
@@ -369,17 +394,32 @@
 		tr {
 
 			td {
+
+				div {
+					
+					&:nth-of-type(1) {
+						margin-bottom: 8px;
+					}
+
+					p {
+
+						&.redCard,&.yellowCard {
+							padding: 0px;
+						}
+					}
+				}
+
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 46%;
+					width: 36%;
 				}
 
 				&:nth-of-type(2) {
-					width: 16%;
+					width: 5%;
 				}
 
 				&:nth-of-type(3) {
-					width: 16%;
+					width: 5%;
 				}
 
 				&:nth-of-type(4) {
@@ -387,6 +427,14 @@
 				}
 
 				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
 					width: 6%;
 				}
 			}
@@ -405,7 +453,7 @@
 					}
 
 					&:nth-of-type(4),&:nth-of-type(7) {
-						width: 24%;
+						width: 21%;
 					}
 	
 					&:nth-of-type(2),&:nth-of-type(10) {
@@ -418,6 +466,20 @@
 		tr {
 
 			td {
+
+				div {
+					
+					&:nth-of-type(1) {
+						margin-bottom: 8px;
+					}
+
+					p {
+
+						&.redCard,&.yellowCard {
+							padding: 0px;
+						}
+					}
+				}
 
 				&:nth-of-type(1) {
 					width: 7%;
@@ -433,11 +495,11 @@
 				}
 
 				&:nth-of-type(4) {
-					width: 29%;
+					width: 26%;
 				}
 
 				&:nth-of-type(5) {
-					width: 5%;
+					width: 7%;
 				}
 
 				&:nth-of-type(6) {
@@ -445,11 +507,11 @@
 				}
 
 				&:nth-of-type(7) {
-					width: 29%;
+					width: 26%;
 				}
 
 				&:nth-of-type(8) {
-					width: 5%;
+					width: 7%;
 				}
 
 				&:nth-of-type(9) {
@@ -457,7 +519,7 @@
 				}
 
 				&:nth-of-type(10) {
-					width: 5%;
+					width: 7%;
 				}
 			}
 		}
@@ -471,7 +533,7 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
+					&:nth-last-of-type(2) {
 						display: none;
 					}
 				}
@@ -489,10 +551,6 @@
 					&:nth-of-type(3) {
 						width: 6%;
 					}
-
-					&:nth-of-type(3) {
-						width: 6%;
-					}
 				}
 			}
 		}
@@ -501,9 +559,10 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(2) {
-						display: none;
+				td {
+					
+					&:nth-of-type(1) {
+						width: 25%;
 					}
 				}
 			}
@@ -513,27 +572,22 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
 				td {
-					&:nth-of-type(1) {
-						width: 50%;
-					}
+
 					&:nth-of-type(2) {
-						width: 8%;
+						width: 7%;
 					}
+					
 					&:nth-of-type(3) {
-						width: 8%;
+						width: 7%;
 					}
-					&:nth-of-type(4) {
-						width: 8%;
-					}
+
 					&:nth-of-type(5) {
-						width: 26%;
+						width: 18%;
+					}
+
+					&:nth-of-type(6) {
+						width: 18%;
 					}
 				}
 			}
@@ -544,16 +598,24 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 34%;
+					width: 35%;
 				}
 				&:nth-of-type(2) {
 					width: 5%;
+
+					p {
+						padding: 0px;
+					}
 				}
 				&:nth-of-type(3) {
 					width: 5%;
+
+					p {
+						padding: 0px;
+					}
 				}
 				&:nth-of-type(4) {
-					width: 5%;
+					width: 4%;
 				}
 				&:nth-of-type(5) {
 					width: 15%;
@@ -577,7 +639,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
+
+					&:nth-last-of-type(2) {
 						display: none;
 					}
 				}
@@ -588,9 +651,14 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(2) {
-						display: none;
+				td {
+
+					&:nth-of-type(1) {
+						width: 25%;
+					}
+
+					&:nth-of-type(3) {
+						width: 6%;
 					}
 				}
 			}
@@ -600,15 +668,18 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
 				td {
-					&:nth-of-type(1) {
-						width: 55%;
+
+					&:nth-of-type(2) {
+						width: 7%;
+					}
+
+					&:nth-of-type(3) {
+						width: 7%;
+					}
+
+					&:nth-of-type(7) {
+						width: 7%;
 					}
 				}
 			}
@@ -619,22 +690,42 @@
 			td {
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 46%;
+					width: 31%;
 				}
 
 				&:nth-of-type(2) {
-					width: 16%;
+					width: 5%;
+
+					p {
+						padding: 0px;
+					}
 				}
 
 				&:nth-of-type(3) {
-					width: 16%;
+					width: 5%;
+
+					p {
+						padding: 0px;
+					}
 				}
 
 				&:nth-of-type(4) {
-					width: 16%;
+					width: 5%;
 				}
 
 				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
+					width: 16%;
+				}
+
+				&:nth-of-type(8) {
 					width: 6%;
 				}
 			}
@@ -696,12 +787,7 @@
 
 				p {
 
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-
 					&.baseBag {
-						padding: 0px;
 						margin: 0px auto;
 					}
 
@@ -783,7 +869,7 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
+					&:nth-last-of-type(2) {
 						display: none;
 					}
 				}
@@ -801,9 +887,14 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(2) {
-						display: none;
+				td {
+
+					&:nth-of-type(7) {
+						width: 14%;
+					}
+
+					&:nth-of-type(8) {
+						width: 14%;
 					}
 				}
 			}
@@ -813,15 +904,9 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
 				td {
 					&:nth-of-type(1) {
-						width: 40%;
+						width: 20%;
 					}
 				}
 			}
@@ -861,43 +946,12 @@
 				&:nth-of-type(10) {
 					width: 5%;
 				}
-
-				button {
-
-					p {
-						width: auto;
-						height: auto;
-						
-						&:first-child,&:last-child {
-							padding: 0px;
-						}
-					}
-				}
-
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-				}
 			}
 		}
 	}
 	&.tType3_2 {
 
 		&.hide1 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(1) {
-						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
 
 			tr {
 
@@ -913,15 +967,10 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
 				td {
+
 					&:nth-of-type(1) {
-						width: 55%;
+						width: 30%;
 					}
 				}
 			}
@@ -933,22 +982,42 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 46%;
+					width: 34%;
 				}
 
 				&:nth-of-type(2) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(3) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(4) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 4%;
+				}
+
+				&:nth-of-type(7) {
+					width: 16%;
+				}
+
+				&:nth-of-type(8) {
+					width: 16%;
+				}
+
+				&:nth-of-type(9) {
+					width: 16%;
+				}
+
+				&:nth-of-type(10) {
 					width: 6%;
 				}
 			}
@@ -976,13 +1045,6 @@
 		tr {
 
 			td {
-
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-				}
 
 				&:nth-of-type(1) {
 					width: 7%;
@@ -1039,26 +1101,38 @@
 		&.hide1 {
 
 			th,td {
-				&:nth-last-of-type(1) {
-					display: none;
-				}
-			}
-		}
-
-		&.hide2 {
-
-			th,td {
 				&:nth-last-of-type(2) {
 					display: none;
 				}
 			}
 		}
 
+		&.hide2 {
+			
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 25%;
+					}
+
+					button {
+						margin: 0px;
+					}
+				}
+			}
+		}
+
 		&.hide3 {
 
-			th,td {
-				&:nth-last-of-type(3) {
-					display: none;
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 18%;
+					}
 				}
 			}
 		}
@@ -1066,17 +1140,6 @@
 		tr {
 
 			td {
-
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-
-					&:last-child {
-						padding: 0px;
-					}
-				}
 
 				&:nth-of-type(1) {
 					width: 31%;
@@ -1139,18 +1202,6 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
-						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
 					&:nth-last-of-type(2) {
 						display: none;
 					}
@@ -1162,15 +1213,14 @@
 
 			tr {
 
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
 				td {
+					
 					&:nth-of-type(1) {
-						width: 55%;
+						width: 26%;
+					}
+
+					&:nth-of-type(13) {
+						width: 8%;
 					}
 				}
 			}
@@ -1181,22 +1231,54 @@
 			td {
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 46%;
+					width: 28%;
 				}
 
 				&:nth-of-type(2) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(3) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(4) {
-					width: 16%;
+					width: 2%;
 				}
 
 				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 2%;
+				}
+
+				&:nth-of-type(8) {
+					width: 2%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+
+				&:nth-of-type(10) {
+					width: 16%;
+				}
+
+				&:nth-of-type(11) {
+					width: 16%;
+				}
+
+				&:nth-of-type(12) {
+					width: 16%;
+				}
+
+				&:nth-of-type(13) {
 					width: 6%;
 				}
 			}
@@ -1512,6 +1594,209 @@
 	//彩球版型
 
 	//網球版型
+	&.tType8 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 22%;
+					}
+
+					button {
+						margin: 0px;
+					}
+				}
+			}
+		}
+
+		&.hide3 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 17%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				p {
+					
+					&:nth-of-type(1) {
+						padding-bottom: 8px;
+					}
+
+					&:last-child {
+						padding: 0px;
+					}
+				}
+
+				&:nth-of-type(1) {
+					width: 28%;
+				}
+
+				&:nth-of-type(2) {
+					width: 3%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 2%;
+				}
+
+				&:nth-of-type(8) {
+					width: 4%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+
+				&:nth-of-type(10) {
+					width: 15%;
+				}
+
+				&:nth-of-type(11) {
+					width: 15%;
+				}
+
+				&:nth-of-type(12) {
+					width: 15%;
+				}
+
+				&:nth-of-type(13) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType8_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide3 {
+
+			tr {
+
+				td {
+					
+					&:nth-of-type(1) {
+						width: 23%;
+					}
+
+					&:nth-of-type(13) {
+						width: 8%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					line-height: 25px;
+					width: 25%;
+				}
+
+				&:nth-of-type(2) {
+					width: 3%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 2%;
+				}
+
+				&:nth-of-type(8) {
+					width: 4%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+
+				&:nth-of-type(10) {
+					width: 16%;
+				}
+
+				&:nth-of-type(11) {
+					width: 16%;
+				}
+
+				&:nth-of-type(12) {
+					width: 16%;
+				}
+
+				&:nth-of-type(13) {
+					width: 6%;
+				}
+			}
+		}
+	}
 	&.tType8_index {
 
 		&.hide1 {
@@ -1534,13 +1819,6 @@
 		tr {
 
 			td {
-
-				p {
-					
-					&:nth-of-type(1) {
-						padding-bottom: 8px;
-					}
-				}
 
 				&:nth-of-type(1) {
 					width: 7%;
@@ -1598,7 +1876,45 @@
 	}
 
 	//斯諾克版型
-	&.tType9_index {
+	&.tType9 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 35%;
+					}
+				}
+			}
+		}
+
+		&.hide3 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 25%;
+					}
+				}
+			}
+		}
 
 		tr {
 
@@ -1609,7 +1925,113 @@
 					&:nth-of-type(1) {
 						padding-bottom: 8px;
 					}
+
+					&:last-child {
+						padding: 0px;
+					}
 				}
+
+				&:nth-of-type(1) {
+					width: 41%;
+				}
+
+				&:nth-of-type(2) {
+					width: 4%;
+				}
+
+				&:nth-of-type(3) {
+					width: 4%;
+				}
+
+				&:nth-of-type(4) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
+				}
+
+				&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType9_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 36%;
+					}
+
+					&:nth-of-type(7) {
+						width: 8%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					line-height: 25px;
+					width: 38%;
+				}
+
+				&:nth-of-type(2) {
+					width: 4%;
+				}
+
+				&:nth-of-type(3) {
+					width: 4%;
+				}
+
+				&:nth-of-type(4) {
+					width: 16%;
+				}
+
+				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType9_index {
+
+		tr {
+
+			td {
 
 				&:nth-of-type(1) {
 					width: 7%;
@@ -1639,6 +2061,222 @@
 	}
 
 	//排球+乒乓球版型
+	&.tType10 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 20%;
+					}
+				}
+			}
+		}
+
+		&.hide3 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 16%;
+					}
+	
+					&:nth-of-type(11) {
+						width: 16%;
+					}
+	
+					&:nth-of-type(12) {
+						width: 16%;
+					}
+	
+					&:nth-of-type(14) {
+						width: 5%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 27%;
+				}
+
+				&:nth-of-type(2) {
+					width: 2%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 2%;
+				}
+
+				&:nth-of-type(8) {
+					width: 2%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+
+				&:nth-of-type(10) {
+					width: 4%;
+				}
+
+				&:nth-of-type(11) {
+					width: 15%;
+				}
+
+				&:nth-of-type(12) {
+					width: 15%;
+				}
+
+				&:nth-of-type(13) {
+					width: 15%;
+				}
+
+				&:nth-of-type(14) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType10_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				
+			}
+		}
+
+		&.hide3 {
+
+			tr {
+
+				td {
+					
+					&:nth-of-type(1) {
+						width: 22%;
+					}
+
+					&:nth-of-type(14) {
+						width: 8%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					line-height: 25px;
+					width: 24%;
+				}
+
+				&:nth-of-type(2) {
+					width: 2%;
+				}
+
+				&:nth-of-type(3) {
+					width: 2%;
+				}
+
+				&:nth-of-type(4) {
+					width: 2%;
+				}
+
+				&:nth-of-type(5) {
+					width: 2%;
+				}
+
+				&:nth-of-type(6) {
+					width: 2%;
+				}
+
+				&:nth-of-type(7) {
+					width: 2%;
+				}
+
+				&:nth-of-type(8) {
+					width: 2%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+
+				&:nth-of-type(10) {
+					width: 4%;
+				}
+
+				&:nth-of-type(11) {
+					width: 16%;
+				}
+
+				&:nth-of-type(12) {
+					width: 16%;
+				}
+
+				&:nth-of-type(13) {
+					width: 16%;
+				}
+
+				&:nth-of-type(14) {
+					width: 6%;
+				}
+			}
+		}
+	}
 	&.tType10_index {
 
 		&.hide1 {
