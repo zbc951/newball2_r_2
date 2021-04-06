@@ -202,6 +202,29 @@
         </div>
         <button class="cancelBtn"></button>
     </div>
+    <!--註冊窗-->
+    <div class="signupWindow">
+        <!--上字-->
+        <div class="signupbar">
+            <span>會員註冊</span>
+            <button></button>
+        </div>
+        <!--主內容-->
+        <div class="signupbox">
+            <div><span>輸入帳號</span><input type="text"></div>
+            <div><span>手機號碼</span><input type="text"></div>
+            <div><span>暱稱</span><input type="text"></div>
+            <div><span>電子信箱</span><input type="text"></div>
+            <div><span>密碼</span><input type="password"></div>
+            <div><span>微信帳號</span><input type="text"></div>
+            <div><span>確認密碼</span><input type="password"></div>
+            <div><span>QQ帳號</span><input type="text"></div>
+            <div>
+                <button>取消</button>
+                <button>送出</button>
+            </div>
+        </div>
+    </div>
     <!--header-->
     <header>
         <!--上時間列-->
@@ -258,7 +281,7 @@
 				<p>帳戶名稱:<span>AAA888</span></p>
                 <p class="quota">昨日信用額度:<span>1000000</span>元</p>
                 <p class="quota">今日信用額度:<span>1000000</span>元</p>
-                <button class="logoutBtn">登出</button>
+                <button class="logoutBtn" onclick="window.location.href='./index.html'">登出</button>
                 <div class="selectBox">
                     <i class="fas fa-globe"></i>
                     <select name="" id="">
@@ -277,120 +300,120 @@
             <!--左列-->
             <section class="left">
                 <ul>
-                    <li>
-                        <a href="#">
+                    <li class="loveBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-heart"></i>
                             我的最愛
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="#">
+                    <li class="hotBtn active">
+                        <a href="javascript:;">
                             <i class="fab fa-hotjar"></i>
                             熱門賽事
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li class="onLive">
-                        <a href="./html/balls/soccer.html">
+                    <li class="soccerBtn onLive">
+                        <a href="javascript:;">
                             <i class="far fa-futbol"></i>
                             足球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/baseball.html">
+                    <li class="baseballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-baseball-ball"></i>
                             棒球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/basketball.html">
+                    <li class="basketballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-basketball-ball"></i>
                             籃球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/race.html">
+                    <li class="raceBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-flag-checkered"></i>
                             賽馬賽狗
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/esp.html">
+                    <li class="espBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-keyboard"></i>
                             電競
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./stock.html">
+                    <li class="stockBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-signal"></i>
                             股票指數
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./lotto.html">
+                    <li class="lottoBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-ticket-alt"></i>
                             彩球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/iceball.html">
+                    <li class="iceballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-hockey-puck"></i>
                             冰球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/tennis.html">
+                    <li class="tennisBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-baseball-ball"></i>
                             網球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/snooker.html">
+                    <li class="snookerBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-dot-circle"></i>
                             斯諾克
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/vball.html">
+                    <li class="vballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-volleyball-ball"></i>
                             排球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./racecar.html">
+                    <li class="racecarBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-car"></i>
                             賽車
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/badminton.html">
+                    <li class="badmintonBtn">
+                        <a href="javascript:;">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.985 511.985" style="enable-background:new 0 0 511.985 511.985;" xml:space="preserve">
                                 <g>
                                     <g>
@@ -413,24 +436,24 @@
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./beachball.html">
+                    <li class="beachballBtn">
+                        <a href="javascript:;">
                             <i class="far fa-futbol"></i>
                             沙灘足球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/football.html">
+                    <li class="footballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-football-ball"></i>
                             美式足球
                             <div class="live">LIVE</div>
                             <div class="total">295</div>
                         </a>
                     </li>
-                    <li>
-                        <a href="./html/balls/tableball.html">
+                    <li class="tableballBtn">
+                        <a href="javascript:;">
                             <i class="fas fa-table-tennis"></i>
                             乒乓球
                             <div class="live">LIVE</div>
@@ -444,7 +467,7 @@
                 <!--遊戲版面-->
                 <div class="mainBox">
                     <!--足球-->
-                    <table class="playBorad tType1_index">
+                    <table class="playBorad tType1_index soccer">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">足球-英格蘭-超級聯賽</th>
@@ -587,7 +610,7 @@
                         </tr>
                     </table>
                     <!--棒球-->
-                    <table class="playBorad tType2_index">
+                    <table class="playBorad tType2_index baseball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="20">棒球-日本-NPB職業棒球聯賽</th>
@@ -956,7 +979,7 @@
                         </tr>
                     </table>
                     <!--籃球-->
-                    <table class="playBorad tType3_index">
+                    <table class="playBorad tType3_index basketball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">籃球-台灣-SBL超級籃球聯賽</th>
@@ -1150,7 +1173,7 @@
                         </tr>
                     </table>
                     <!--賽馬賽狗-->
-                    <table class="playBorad tType4_index">
+                    <table class="playBorad tType4_index race">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="10">賽馬賽狗-香港蝴蝶花讓賽</th>
@@ -1255,7 +1278,7 @@
                         </tr>
                     </table>
                     <!--電競LOL-->
-                    <table class="playBorad tType5_lol_index">
+                    <table class="playBorad tType5_lol_index esp">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="19">電子競技-英雄聯盟-中國職業聯賽</th>
@@ -1521,7 +1544,7 @@
                         </tr>
                     </table>
                     <!--電競DOTA-->
-                    <table class="playBorad tType5_dota_index">
+                    <table class="playBorad tType5_dota_index esp">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="18">電子競技-刀塔2-FDC職業錦標賽</th>
@@ -1774,7 +1797,7 @@
                         </tr>
                     </table>
                     <!--電競CS-->
-                    <table class="playBorad tType5_cs_index">
+                    <table class="playBorad tType5_cs_index esp">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="15">電子競技-絕對武力:全球攻勢-ESEA</th>
@@ -1986,7 +2009,7 @@
                         </tr>
                     </table>
                     <!--股票指數-->
-                    <table class="playBorad tType6_index">
+                    <table class="playBorad tType6_index stock">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="6">股票指數-美國道瓊工業平均指數</th>
@@ -2013,7 +2036,7 @@
                         </tr>
                     </table>
                     <!--彩球Bingo-->
-                    <table class="playBorad tType7_bingo_index">
+                    <table class="playBorad tType7_bingo_index lotto">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="16">彩球-Bingo Bingo 賓果賓果</th>
@@ -2085,7 +2108,7 @@
                         </tr>
                     </table>
                     <!--彩球大樂透-->
-                    <table class="playBorad tType7_lottery_index">
+                    <table class="playBorad tType7_lottery_index lotto">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="10">彩球-大樂透</th>
@@ -2137,7 +2160,7 @@
                         </tr>
                     </table>
                     <!--冰球-->
-                    <table class="playBorad tType3_index">
+                    <table class="playBorad tType3_index iceball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">冰球-美國-AHL美國冰球聯盟</th>
@@ -2296,7 +2319,7 @@
                         </tr>
                     </table>
                     <!--網球-->
-                    <table class="playBorad tType8_index">
+                    <table class="playBorad tType8_index tennis">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="13">網球-ITF-M15安塔利亞</th>
@@ -2483,7 +2506,7 @@
                         </tr>
                     </table>
                     <!--撞球-->
-                    <table class="playBorad tType9_index">
+                    <table class="playBorad tType9_index snooker">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="6">斯諾克-珊瑚巡迴錦標賽</th>
@@ -2577,7 +2600,7 @@
                         </tr>
                     </table>
                     <!--排球-->
-                    <table class="playBorad tType10_index">
+                    <table class="playBorad tType10_index vball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="14">排球-美國-NCAA大學女子排球賽</th>
@@ -2777,7 +2800,7 @@
                         </tr>
                     </table>
                     <!--賽車-->
-                    <table class="playBorad tType11_index">
+                    <table class="playBorad tType11_index racecar">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">賽車-義大利莫拉大獎賽</th>
@@ -2893,7 +2916,7 @@
                         </tr>
                     </table>
                     <!--羽毛球-->
-                    <table class="playBorad tType12_index">
+                    <table class="playBorad tType12_index badminton">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="12">羽毛球-奧爾良大師賽-女子單打</th>
@@ -3067,7 +3090,7 @@
                         </tr>
                     </table>
                     <!--沙灘足球-->
-                    <table class="playBorad tType1_index">
+                    <table class="playBorad tType1_index beachball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">沙灘足球</th>
@@ -3173,7 +3196,7 @@
                         </tr>
                     </table>
                     <!--美式足球-->
-                    <table class="playBorad tType3_index">
+                    <table class="playBorad tType3_index football">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="11">美式足球-美國-NFL職業美式足球</th>
@@ -3332,7 +3355,7 @@
                         </tr>
                     </table>
                     <!--乒乓球-->
-                    <table class="playBorad tType10_index">
+                    <table class="playBorad tType10_index tableball">
                         <!--標題-->
                         <tr>
                             <th class="tLeft" colspan="14">乒乓球-塞特卡盃-男子單打</th>
@@ -3915,53 +3938,6 @@
         <!--背景-->
         <div class="bg index"></div>
     </main>
-    <!--彈出窗-->
-    <div>
-        <!--登入窗-->
-        <div class="login">
-            <!--上字-->
-            <div class="loginbar">
-                <span>會員登入</span>
-                <button></button>
-            </div>
-            <!--主內容-->
-            <div class="loginbox">
-                <div><span>用戶帳號</span><input type="text"></div>
-                <div><span>用戶密碼</span><input type="password"></div>
-                <div>
-                    <span class="cube active"></span><span class="rem">記住密碼</span>
-                    <span class="fog">忘記密碼?</span>
-                </div>
-                <div>
-                    <button>註冊</button>
-                    <button>登入</button>
-                </div>
-            </div>
-        </div>
-        <!--註冊窗-->
-        <div class="signup">
-            <!--上字-->
-            <div class="signupbar">
-                <span>會員註冊</span>
-                <button></button>
-            </div>
-            <!--主內容-->
-            <div class="signupbox">
-                <div><span>輸入帳號</span><input type="text"></div>
-                <div><span>手機號碼</span><input type="text"></div>
-                <div><span>暱稱</span><input type="text"></div>
-                <div><span>電子信箱</span><input type="text"></div>
-                <div><span>密碼</span><input type="password"></div>
-                <div><span>微信帳號</span><input type="text"></div>
-                <div><span>確認密碼</span><input type="password"></div>
-                <div><span>QQ帳號</span><input type="text"></div>
-                <div>
-                    <button>取消</button>
-                    <button>送出</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

@@ -68,7 +68,8 @@ input {
 html {
   font-family: "my_font";
   background: white;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -193,6 +194,18 @@ header article .logged .inputBox input {
   padding-left: 5px;
   border-radius: 3px;
   border: none;
+}
+header article .logged .inputBox input::-webkit-input-placeholder {
+  color: #8f8f8f;
+}
+header article .logged .inputBox input::-moz-placeholder {
+  color: #8f8f8f;
+}
+header article .logged .inputBox input:-ms-input-placeholder {
+  color: #8f8f8f;
+}
+header article .logged .inputBox input::-ms-input-placeholder {
+  color: #8f8f8f;
 }
 header article .logged .inputBox input::placeholder {
   color: #8f8f8f;
@@ -466,6 +479,8 @@ main .bg.index {
   display: inline-block;
   width: 40px;
   height: 17px;
+  background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
+  background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
   background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
   background-color: #2e44b6;
   position: relative;
@@ -618,7 +633,9 @@ main .bg.index {
   top: 8px;
   left: 18px;
   font-size: 18px;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 .left ul li a i::before {
   margin: 0px auto;
@@ -651,7 +668,9 @@ main .bg.index {
   height: auto;
   width: auto;
   top: 49%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
   background: #4d4d4d;
@@ -743,7 +762,9 @@ main .bg.index {
   width: 1px;
   height: 7px;
   background: #000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 3px;
   right: 6px;
 }
@@ -753,7 +774,9 @@ main .bg.index {
   width: 1px;
   height: 7px;
   background: #000;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 3px;
   left: 6px;
 }
@@ -790,7 +813,9 @@ main .bg.index {
   color: #000;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   line-height: 15px;
 }
 .right .liveWindow .score {
@@ -804,7 +829,9 @@ main .bg.index {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .right .liveWindow .score p span {
   color: #fff;
@@ -897,7 +924,9 @@ main .bg.index {
   background: #dadada;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .right .room .livelist ul li:hover span, .right .room .livelist ul li:active span {
   color: #000;
@@ -907,7 +936,9 @@ main .bg.index {
   background: #dadada;
 }
 .right .room .livelist ul li.active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .right .room .livelist ul li.active span {
   color: #000;
@@ -922,6 +953,8 @@ main .bg.index {
   border-color: transparent #000;
   right: 25px;
   top: 8px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
@@ -950,7 +983,9 @@ main .bg.index {
   position: absolute;
   left: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 12px;
   color: #575757;
 }
@@ -1095,7 +1130,8 @@ main .bg.index {
   border-style: solid;
   border-width: 0px 15px 15px 0px;
   border-color: transparent #108c2e transparent transparent;
-  animation: btnFlashing 1s linear 0s infinite;
+  -webkit-animation: btnFlashing 1s linear 0s infinite;
+          animation: btnFlashing 1s linear 0s infinite;
 }
 .playBorad tr td button::after {
   display: none;
@@ -1108,7 +1144,8 @@ main .bg.index {
   border-style: solid;
   border-width: 15px 15px 0px 0px;
   border-color: transparent #ae4639 transparent transparent;
-  animation: btnFlashing 1s linear 0s infinite;
+  -webkit-animation: btnFlashing 1s linear 0s infinite;
+          animation: btnFlashing 1s linear 0s infinite;
 }
 .playBorad tr td button.up::before {
   display: block;
@@ -1158,13 +1195,17 @@ main .bg.index {
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .playBorad tr td button.disable span {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 18px;
 }
 .playBorad tr td button.disable i {
@@ -1177,7 +1218,9 @@ main .bg.index {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .playBorad tr td a {
   display: block;
@@ -3206,13 +3249,17 @@ main .bg.index {
   width: 13px;
   height: 13px;
   background: url("../images/arrow.png") no-repeat;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   background-size: 100%;
   margin: 2px 0px 0px 15px;
 }
 .playBorad.tbet tr th span.arrow.un {
   background-position: 0px -13px;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .playBorad.tbet tr th .topline {
   width: 1px;
@@ -3253,7 +3300,8 @@ main .bg.index {
 }
 .playBorad.tbet2 {
   width: 96%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 12px;
   margin: 0px auto 25px;
 }
@@ -3306,7 +3354,8 @@ main .bg.index {
   border-radius: 0px;
   margin: 0px;
   position: relative;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .playBorad.tbetting tr th {
   border-width: 1px;
@@ -3328,7 +3377,9 @@ main .bg.index {
   background: #000;
   top: 0px;
   left: 8px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .playBorad.tbetting tr th button::after {
   content: "";
@@ -3338,7 +3389,9 @@ main .bg.index {
   background: #000;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 .playBorad.tbetting tr td {
   height: 50px;
@@ -3375,7 +3428,9 @@ main .bg.index {
   padding: 5px 0px 30px 145px;
 }
 .playBorad.tteach tr.teachre.dou td .rebody {
-  transform: translateY(-70%) translateX(-50%);
+  -webkit-transform: translateY(-70%) translateX(-50%);
+      -ms-transform: translateY(-70%) translateX(-50%);
+          transform: translateY(-70%) translateX(-50%);
 }
 .playBorad.tteach tr.teachre td {
   border: none;
@@ -3389,12 +3444,16 @@ main .bg.index {
 .playBorad.tteach tr.teachre td .rebody {
   width: 320px;
   height: 80px;
+  background: -webkit-gradient(linear, left top, right top, from(#e7eefd), color-stop(40%, #effbff), color-stop(60%, #effbff), to(#e7eefd));
+  background: -o-linear-gradient(left, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background-color: #effbff;
   border-radius: 40px;
   position: absolute;
   left: 50%;
-  transform: translateY(-38%) translateX(-50%);
+  -webkit-transform: translateY(-38%) translateX(-50%);
+      -ms-transform: translateY(-38%) translateX(-50%);
+          transform: translateY(-38%) translateX(-50%);
 }
 .playBorad.tteach tr.teachre td .rebody p {
   width: 100%;
@@ -3421,7 +3480,9 @@ main .bg.index {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
   background: #e9f5ff;
   border-radius: 50%;
 }
@@ -3456,7 +3517,9 @@ main .bg.index {
   background-size: 200%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .playBorad.tteach tr td .teamimg.fr {
   right: 0px;
@@ -3472,7 +3535,9 @@ main .bg.index {
   padding: 5px 10px;
   bottom: -20px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: solid 1px #b9c0d2;
   border-radius: 30px;
   color: #4a5ec5;
@@ -3528,6 +3593,8 @@ main .bg.index {
 }
 .playBorad.tinn tr td button {
   width: 98%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
   background-color: #ebecf7;
   font-size: 15px;
@@ -3631,7 +3698,8 @@ main .bg.index {
   }
 }
 .playBorad.tperson.money tr th .re:hover::before, .playBorad.tperson.money tr th .re:active::before, .playBorad.tperson.money tr th .re.active::before {
-  animation: reset 1s linear 0s infinite;
+  -webkit-animation: reset 1s linear 0s infinite;
+          animation: reset 1s linear 0s infinite;
 }
 .playBorad.tperson.money tr td .creditcard {
   width: 250px;
@@ -3641,6 +3709,8 @@ main .bg.index {
   float: left;
   margin-right: 20px;
   border: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
   position: relative;
 }
@@ -3664,7 +3734,9 @@ main .bg.index {
   height: 16px;
   border: solid 5px #fff;
   border-width: 0px 5px 5px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 0px;
   right: 5px;
 }
@@ -3694,11 +3766,16 @@ main .bg.index {
   font-weight: bold;
 }
 .playBorad.tperson.money tr td .creditcard.c1 {
+  background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
   background-color: #6589c6;
 }
 .playBorad.tperson.money tr td .creditcard.c1:hover, .playBorad.tperson.money tr td .creditcard.c1:active, .playBorad.tperson.money tr td .creditcard.c1.active {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
   background-color: #6589c6;
 }
@@ -3706,14 +3783,20 @@ main .bg.index {
   background: #6589c6;
 }
 .playBorad.tperson.money tr td .creditcard.c1::before {
-  box-shadow: 0 0 6px 1px #6689c6;
+  -webkit-box-shadow: 0 0 6px 1px #6689c6;
+          box-shadow: 0 0 6px 1px #6689c6;
 }
 .playBorad.tperson.money tr td .creditcard.c2 {
+  background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
   background-color: #31a8b1;
 }
 .playBorad.tperson.money tr td .creditcard.c2:hover, .playBorad.tperson.money tr td .creditcard.c2:active, .playBorad.tperson.money tr td .creditcard.c2.active {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
   background-color: #31a8b1;
 }
@@ -3721,17 +3804,23 @@ main .bg.index {
   background: #31a8b1;
 }
 .playBorad.tperson.money tr td .creditcard.c2::before {
-  box-shadow: 0 0 6px 1px #32a9b2;
+  -webkit-box-shadow: 0 0 6px 1px #32a9b2;
+          box-shadow: 0 0 6px 1px #32a9b2;
 }
 .playBorad.tperson.money tr td .creditcard.c2 div {
   background-position-x: -35px;
 }
 .playBorad.tperson.money tr td .creditcard.c3 {
+  background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
   background-color: #d7767a;
 }
 .playBorad.tperson.money tr td .creditcard.c3:hover, .playBorad.tperson.money tr td .creditcard.c3:active, .playBorad.tperson.money tr td .creditcard.c3.active {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
   background-color: #d7767a;
 }
@@ -3739,7 +3828,8 @@ main .bg.index {
   background: #d7767a;
 }
 .playBorad.tperson.money tr td .creditcard.c3::before {
-  box-shadow: 0 0 6px 1px #d8767a;
+  -webkit-box-shadow: 0 0 6px 1px #d8767a;
+          box-shadow: 0 0 6px 1px #d8767a;
 }
 .playBorad.tperson.money tr td .creditcard.c3 div {
   background-position-x: -70px;
@@ -3748,7 +3838,8 @@ main .bg.index {
   margin: 0px;
 }
 .playBorad.tperson.money tr td .creditcard:hover, .playBorad.tperson.money tr td .creditcard:active, .playBorad.tperson.money tr td .creditcard.active {
-  box-shadow: 0 0 4px 1px #bac0db;
+  -webkit-box-shadow: 0 0 4px 1px #bac0db;
+          box-shadow: 0 0 4px 1px #bac0db;
   background: #fff;
 }
 .playBorad.tperson.money tr td .creditcard .card_ic {
@@ -3833,10 +3924,13 @@ main .bg.index {
   background: transparent;
   padding-top: 20px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .playBorad.tperson.contactus tr td .upimg:hover, .playBorad.tperson.contactus tr td .upimg:active, .playBorad.tperson.contactus tr td .upimg.active {
-  box-shadow: 0 0 8px 1px #d7ddf1;
+  -webkit-box-shadow: 0 0 8px 1px #d7ddf1;
+          box-shadow: 0 0 8px 1px #d7ddf1;
   color: #000;
 }
 .playBorad.tperson.contactus tr td .upimg span {
@@ -3860,12 +3954,16 @@ main .bg.index {
   color: #fff;
   font-size: 16px;
   float: right;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3247b8));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   background-color: #3247b8;
   border-radius: 5px;
   padding: 0px;
 }
 .playBorad.tperson.contactus tr td .upimgbut:hover, .playBorad.tperson.contactus tr td .upimgbut:active, .playBorad.tperson.contactus tr td .upimgbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#3247b8));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #3247b8 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
 }
 .playBorad.tperson.control .midC {
@@ -3887,14 +3985,16 @@ main .bg.index {
   color: #fff;
 }
 .playBorad.tperson.control .midC .rowbut.lside .innbut {
-  animation: rowbut 0.3s ease-out 0s;
+  -webkit-animation: rowbut 0.3s ease-out 0s;
+          animation: rowbut 0.3s ease-out 0s;
 }
 .playBorad.tperson.control .midC .rowbut.rside span:nth-of-type(1) {
   color: #fff;
 }
 .playBorad.tperson.control .midC .rowbut.rside .innbut {
   left: 53%;
-  animation: rowbut2 0.3s ease-out 0s;
+  -webkit-animation: rowbut2 0.3s ease-out 0s;
+          animation: rowbut2 0.3s ease-out 0s;
 }
 .playBorad.tperson.control .midC .rowbut span {
   margin-right: 22px;
@@ -3972,6 +4072,26 @@ main .bg.index {
   border-radius: 5px;
   border: 1px solid #b9c0d2;
 }
+.playBorad.tperson.withdrawl tr td input::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.withdrawl tr td input::-moz-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.withdrawl tr td input:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.withdrawl tr td input::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
 .playBorad.tperson.withdrawl tr td input::placeholder {
   font-weight: bold;
   font-size: 13px;
@@ -4005,11 +4125,15 @@ main .bg.index {
   cursor: default;
 }
 .playBorad.tperson.withdrawl tr td .withbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
 .playBorad.tperson.withdrawl tr td .withbut.focus:hover, .playBorad.tperson.withdrawl tr td .withbut.focus:active, .playBorad.tperson.withdrawl tr td .withbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -4074,6 +4198,22 @@ main .bg.index {
   padding-left: 10px;
   margin: 15px 0px;
 }
+.playBorad.tperson.transpoint tr td .inputmoney::-webkit-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.playBorad.tperson.transpoint tr td .inputmoney::-moz-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.playBorad.tperson.transpoint tr td .inputmoney:-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.playBorad.tperson.transpoint tr td .inputmoney::-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
 .playBorad.tperson.transpoint tr td .inputmoney::placeholder {
   color: #c7c7c7;
   font-weight: bold;
@@ -4096,11 +4236,15 @@ main .bg.index {
   cursor: default;
 }
 .playBorad.tperson.transpoint tr td .transbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
 .playBorad.tperson.transpoint tr td .transbut.focus:hover, .playBorad.tperson.transpoint tr td .transbut.focus:active, .playBorad.tperson.transpoint tr td .transbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -4322,6 +4466,26 @@ main .bg.index {
   border-radius: 5px;
   border: 1px solid #b9c0d2;
 }
+.playBorad.tperson.deposit tr td .depositmoney::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.deposit tr td .depositmoney::-moz-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.deposit tr td .depositmoney:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+.playBorad.tperson.deposit tr td .depositmoney::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
 .playBorad.tperson.deposit tr td .depositmoney::placeholder {
   font-weight: bold;
   font-size: 13px;
@@ -4355,11 +4519,15 @@ main .bg.index {
   cursor: default;
 }
 .playBorad.tperson.deposit tr td .withbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
 .playBorad.tperson.deposit tr td .withbut.focus:hover, .playBorad.tperson.deposit tr td .withbut.focus:active, .playBorad.tperson.deposit tr td .withbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -4529,6 +4697,8 @@ main .bg.index {
   right: 0px;
   top: 18px;
   border-radius: 15px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
 }
@@ -4546,6 +4716,8 @@ main .bg.index {
   top: 10%;
   left: 10%;
   border-radius: 30px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .playBorad.tperson tr td .tbox .half.lite .wallet_ic {
@@ -4628,6 +4800,8 @@ main .bg.index {
   color: #d7af8a;
 }
 .playBorad.tperson tr td .tbox .half .copy {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5daef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
   background-color: #ffffff;
   border-radius: 5px;
@@ -4637,6 +4811,8 @@ main .bg.index {
   padding: 6px 20px;
 }
 .playBorad.tperson tr td .tbox .half .copy:hover, .playBorad.tperson tr td .tbox .half .copy:active, .playBorad.tperson tr td .tbox .half .copy.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5daef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
   background-color: #d5daef;
   color: #000;
@@ -4792,6 +4968,8 @@ main .bg.index {
 }
 .playBorad.tsmall tr td .tbox .appbut {
   border: 1px solid #495cc5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
   background-color: #d5daef;
   width: 80px;
@@ -4801,6 +4979,8 @@ main .bg.index {
   padding: 5px 0px;
 }
 .playBorad.tsmall tr td .tbox .appbut:hover, .playBorad.tsmall tr td .tbox .appbut:active, .playBorad.tsmall tr td .tbox .appbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
   background: linear-gradient(to top, #fff 0%, #d5daef 100%);
   color: #000;
 }
@@ -4824,10 +5004,14 @@ main .bg.index {
   float: right;
   margin: 3px 30px 0px 0px;
   border: 1px solid #495cc5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
   background-color: #d5daef;
 }
 .playBorad.tsmall tr td .tbox .bowserbut:hover, .playBorad.tsmall tr td .tbox .bowserbut:active, .playBorad.tsmall tr td .tbox .bowserbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
   background: linear-gradient(to top, #fff 0%, #d5daef 100%);
   color: #000;
 }
@@ -4871,7 +5055,9 @@ main .bg.index {
   display: none;
   width: 850px;
   margin: 0px 0px 20px 17px;
-  transform: translateY(130px);
+  -webkit-transform: translateY(130px);
+      -ms-transform: translateY(130px);
+          transform: translateY(130px);
 }
 .playBorad.tsportP.display {
   display: table;
@@ -4920,7 +5106,8 @@ main .bg.index {
   border-color: transparent #d5d5d5 #bcbcbc #8c8c8c;
   vertical-align: middle;
   background: #ababab;
-  box-shadow: 0px -1px 0px 0px #8c8c8c inset;
+  -webkit-box-shadow: 0px -1px 0px 0px #8c8c8c inset;
+          box-shadow: 0px -1px 0px 0px #8c8c8c inset;
   font-size: 12px;
 }
 .bettingBorad tr td.waiting {
@@ -5047,11 +5234,15 @@ main .bg.index {
   position: fixed;
   margin: 0px 0px 0px 250px;
   bottom: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
+  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
   z-index: 10;
   cursor: pointer;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 .middle .bettingbar::before {
@@ -5062,7 +5253,9 @@ main .bg.index {
   background: url("../images/arrow_w.png");
   right: 40px;
   top: 20px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   pointer-events: none;
 }
 .middle .bettingbar.display {
@@ -5072,7 +5265,9 @@ main .bg.index {
   bottom: 502px;
 }
 .middle .bettingbar.open::before {
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 .middle .bettingbar .barnum {
   display: block;
@@ -5125,6 +5320,8 @@ main .bg.index {
   border-top-width: 0px;
   overflow: hidden;
   cursor: default;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 .middle .bettingbar .bettingbox .bettingwindow {
@@ -5152,7 +5349,8 @@ main .bg.index {
 .middle .bettingbar .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 .middle .bettingbar .bettingbox .bettingtotal div {
@@ -5194,6 +5392,26 @@ main .bg.index {
   font-size: 16px;
   padding-left: 5px;
 }
+.middle .bettingbar .bettingbox .bettingend .endbox input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+.middle .bettingbar .bettingbox .bettingend .endbox input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+.middle .bettingbar .bettingbox .bettingend .endbox input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+.middle .bettingbar .bettingbox .bettingend .endbox input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
 .middle .bettingbar .bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
   color: #c7c7c7;
@@ -5226,13 +5444,19 @@ main .bg.index {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#efd5d5), to(#fff));
+  background: -o-linear-gradient(bottom, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
   background-color: #efd5d5;
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#efd5d5), to(#fff));
+  background: -o-linear-gradient(top, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button:active, .middle .bettingbar .bettingbox .bettingend .endbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
   background-color: #850004;
   color: #fff;
@@ -5240,10 +5464,14 @@ main .bg.index {
 .middle .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
   background-color: #850004;
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .middle .bettingbar .bettingbox .bettingend .endbox button.cur:active, .middle .bettingbar .bettingbox .bettingend .endbox button.cur.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
 }
 .middle .bettingbar .bettingbox.open {
@@ -5257,6 +5485,8 @@ main .bg.index {
   z-index: 20;
   left: 35%;
   top: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
+  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
@@ -5307,7 +5537,9 @@ main .bg.index {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .middle .bettingch .chbut::after {
   content: "";
@@ -5317,7 +5549,9 @@ main .bg.index {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 .middle .bettingch .bettingbox {
   width: 576px;
@@ -5355,7 +5589,8 @@ main .bg.index {
 .middle .bettingch .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 .middle .bettingch .bettingbox .bettingtotal div {
@@ -5411,7 +5646,9 @@ main .bg.index {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 30px;
   left: -18px;
 }
@@ -5439,16 +5676,22 @@ main .bg.index {
   color: white;
   float: left;
   margin: 0px 5px 20px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
+  background: -o-linear-gradient(top, #dfb995, #b6885f);
   background: linear-gradient(to bottom, #dfb995, #b6885f);
   background: #b6885f;
   border: 1px solid #b78960;
   font-size: 15px;
 }
 .middle .teach button:hover, .middle .teach button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
+  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   border: 1px solid #444f8b;
 }
 .middle .teach button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
+  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   background-color: #6a75b2;
   border: 1px solid #444f8b;
@@ -5562,13 +5805,19 @@ main .bg.index {
   position: absolute;
   width: 20px;
   height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: -o-linear-gradient(left, transparent, #fff, transparent);
   background: linear-gradient(to right, transparent, #fff, transparent);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   top: -15px;
   left: -40px;
 }
 .middle .inner .topimg .topword button:hover, .middle .inner .topimg .topword button:active, .middle .inner .topimg .topword button.active:before, .middle .inner .topimg .toplink button:hover, .middle .inner .topimg .toplink button:active, .middle .inner .topimg .toplink button.active:before {
   left: 50px;
+  -webkit-transition: 0.3s left;
+  -o-transition: 0.3s left;
   transition: 0.3s left;
 }
 .middle .inner .topimg .topteam {
@@ -5682,7 +5931,9 @@ main .bg.index {
   color: #fff;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
-  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
 }
 .topfix ul i.fa-sync-alt {
   position: absolute;
@@ -5695,7 +5946,9 @@ main .bg.index {
   width: 18px;
   height: 18px;
   margin: 0px 6px 0px 12px;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
   fill: #fff;
 }
 .topfix ul .gameName {
@@ -5739,7 +5992,9 @@ main .bg.index {
   position: absolute;
   right: -40px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .topfix ul .kind, .topfix ul .sort, .topfix ul .chooseLeague {
   float: right;
@@ -5786,6 +6041,8 @@ main .bg.index {
   height: 100%;
   margin-left: 15px;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   position: relative;
 }
@@ -5797,11 +6054,17 @@ main .bg.index {
   border-width: 10px 13px 10px 0px;
   border-color: transparent #fff;
   cursor: pointer;
-  transform: translateY(4px);
-  transform-origin: 10px 32px;
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transform-origin: 10px 32px;
+      -ms-transform-origin: 10px 32px;
+          transform-origin: 10px 32px;
 }
 .topfix ul .timeSelect .turnBtn:active {
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .topfix ul .timeSelect .turnBtn.next {
   border-width: 10px 0px 10px 13px;
@@ -5916,8 +6179,12 @@ main .bg.index {
   width: 20%;
 }
 .chleague ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .chleague ul li {
   width: 20%;
@@ -5951,12 +6218,16 @@ main .bg.index {
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   color: #fff;
   margin-top: 15px;
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
   background-color: #8e9bdc;
 }
@@ -5984,7 +6255,9 @@ main .bg.index {
   z-index: 20;
   left: 50%;
   top: 20%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .conversionBox.display {
   display: block;
@@ -6027,7 +6300,8 @@ main .bg.index {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
+          box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .conversionBox button::before {
   content: "";
@@ -6037,7 +6311,9 @@ main .bg.index {
   right: 16px;
   top: 8px;
   background: #676767;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .conversionBox button::after {
   content: "";
@@ -6047,7 +6323,145 @@ main .bg.index {
   left: 16px;
   top: 8px;
   background: #676767;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.signupWindow {
+  display: none;
+  position: absolute;
+  width: 800px;
+  height: 360px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 200px;
+  z-index: 20;
+}
+.signupWindow.display {
+  display: block;
+}
+.signupWindow .signupbar {
+  width: 100%;
+  height: 50px;
+  background: #2a2a2a;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+}
+.signupWindow .signupbar span {
+  font-size: 17px;
+  color: #fff;
+  line-height: 54px;
+  padding-left: 20px;
+}
+.signupWindow .signupbar button {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  background: transparent;
+}
+.signupWindow .signupbar button::before {
+  content: "";
+  width: 1px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  left: 8px;
+  top: 0px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.signupWindow .signupbar button::after {
+  content: "";
+  width: 1px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  left: 8px;
+  top: 0px;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.signupWindow .signupbox {
+  width: 100%;
+  height: 265px;
+  background: #747474;
+  border-radius: 0px 0px 3px 3px;
+  padding: 20px 0px;
+}
+.signupWindow .signupbox div {
+  width: 48%;
+  height: 50px;
+  float: left;
+  position: relative;
+}
+.signupWindow .signupbox div:last-child {
+  width: 500px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20px;
+  text-align: center;
+}
+.signupWindow .signupbox div input {
+  width: 235px;
+  height: 28px;
+  font-size: 17px;
+  padding: 3px 0px 3px 10px;
+  float: right;
+  margin: 7px 10px 0px 0px;
+  border: 1px solid #b9bfdc;
+  border-radius: 4px;
+}
+.signupWindow .signupbox div span {
+  line-height: 50px;
+  color: #fff;
+  padding-left: 40px;
+}
+.signupWindow .signupbox div button {
+  width: 180px;
+  height: 36px;
+  margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+  background-color: #d5d9ef;
+  border: 1px solid #495cc5;
+  color: #4d515d;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4d515d;
+}
+.signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
+  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+}
+.signupWindow .signupbox div button:last-child {
+  margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  color: #fff;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .signupWindow .signupbox div button:last-child {
+    color: #4d515d;
+  }
+}
+.signupWindow .signupbox div button:last-child:hover, .signupWindow .signupbox div button:last-child:active, .signupWindow .signupbox div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
 .controlBox {
@@ -6060,7 +6474,9 @@ main .bg.index {
   z-index: 20;
   left: 50%;
   top: 15%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .controlBox h1 {
   width: 100%;
@@ -6146,6 +6562,8 @@ main .bg.index {
   top: 8.5%;
   background: #ababab;
   border-radius: 30px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .controlBox .innerBox1 .longBox {
@@ -6207,7 +6625,8 @@ main .bg.index {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  box-shadow: 0px 0px 0px 5px #cacaca;
+  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
+          box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .controlBox .cancelBtn::before {
   content: "";
@@ -6217,7 +6636,9 @@ main .bg.index {
   right: 16px;
   top: 8px;
   background: #676767;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .controlBox .cancelBtn::after {
   content: "";
@@ -6227,7 +6648,9 @@ main .bg.index {
   left: 16px;
   top: 8px;
   background: #676767;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .controlBox.display {
   display: block;
@@ -6237,6 +6660,8 @@ main .bg.index {
   display: block;
   width: 12px;
   height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
+  background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
   background-color: #cbd0e9;
   border: 1px solid #b2afcf;
@@ -6248,6 +6673,8 @@ main .bg.index {
 .cube.active {
   width: 12px;
   height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3449b9), to(#8694d8));
+  background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
   background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
   background-color: #3449b9;
   position: absolute;
@@ -6260,7 +6687,9 @@ main .bg.index {
   width: 3px;
   height: 8px;
   border: solid 1px #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   border-width: 0px 2px 2px 0px;
 }
 
@@ -6271,7 +6700,9 @@ main .bg.index {
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #3d3d3d;
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
@@ -6300,7 +6731,9 @@ main .bg.index {
   height: 20px;
   top: 0px;
   left: 10px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background: #fff;
 }
 .norbetting .norcancelbtn::after {
@@ -6310,7 +6743,9 @@ main .bg.index {
   height: 20px;
   top: 0px;
   right: 9px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: #fff;
 }
 .norbetting .nor_bettingbox {
@@ -6363,6 +6798,22 @@ main .bg.index {
   font-size: 16px;
   padding-left: 5px;
 }
+.norbetting .nor_bettingbox .bettingend .endbox input::-webkit-input-placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.norbetting .nor_bettingbox .bettingend .endbox input::-moz-placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.norbetting .nor_bettingbox .bettingend .endbox input:-ms-input-placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.norbetting .nor_bettingbox .bettingend .endbox input::-ms-input-placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+}
 .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
   color: #c7c7c7;
   font-size: 14px;
@@ -6394,13 +6845,19 @@ main .bg.index {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
   color: #fff;
@@ -6408,10 +6865,14 @@ main .bg.index {
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn {
   width: 176px;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:hover, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:active, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
 }
 
@@ -6422,7 +6883,9 @@ main .bg.index {
   position: fixed;
   z-index: 20;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 150px;
   background: #3d3d3d;
   border-radius: 3px 3px 0px 0px;
@@ -6451,7 +6914,9 @@ main .bg.index {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .norbettingCheck .checkCancelBtn::after {
   content: "";
@@ -6461,7 +6926,9 @@ main .bg.index {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 .norbettingCheck .bettingbox {
   width: 576px;
@@ -6532,7 +6999,9 @@ main .bg.index {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 18px;
   left: -18px;
 }
@@ -6549,7 +7018,9 @@ main .bg.index {
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 20;
 }
 .calculator.display {
@@ -6559,6 +7030,8 @@ main .bg.index {
   width: 100%;
   height: 40px;
   border-radius: 15px 15px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   position: relative;
@@ -6583,7 +7056,9 @@ main .bg.index {
   width: 2px;
   height: 25px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 3px;
   right: 14px;
 }
@@ -6593,7 +7068,9 @@ main .bg.index {
   width: 2px;
   height: 25px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 3px;
   left: 14px;
 }
@@ -6641,7 +7118,8 @@ main .bg.index {
 }
 .calculator .calbox .mid table {
   width: 100%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   margin: 0px;
   border-radius: 0px;
 }
@@ -6771,6 +7249,8 @@ main .bg.index {
 .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
+  background: -webkit-gradient(linear, right top, left top, from(#9ca8e4), to(#495cc5));
+  background: -o-linear-gradient(right, #9ca8e4, #495cc5);
   background: linear-gradient(to left, #9ca8e4, #495cc5);
   background-color: #495cc5;
   border-radius: 3px;
@@ -6809,7 +7289,9 @@ main .bg.index {
   height: 5px;
   background: #ffee00;
   border-radius: 50px;
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
   margin-right: 3px;
   position: relative;
 }
@@ -6822,7 +7304,8 @@ main .bg.index {
   height: 5px;
   background: #ffee00;
   border-radius: 50px;
-  animation: liveRemind 0.8s ease-in 0s infinite;
+  -webkit-animation: liveRemind 0.8s ease-in 0s infinite;
+          animation: liveRemind 0.8s ease-in 0s infinite;
 }
 
 .mark {
@@ -6878,7 +7361,9 @@ main .bg.index {
   position: absolute;
   width: 10px;
   height: 10px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: transparent;
   border: solid 1px #fff;
 }
@@ -6889,7 +7374,9 @@ main .bg.index {
 .baseBag span.second {
   top: 0px;
   left: 50%;
-  transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
 }
 .baseBag span.third {
   bottom: 0px;
@@ -6986,6 +7473,8 @@ main .bg.index {
   position: absolute;
   top: 0px;
   left: 0px;
+  -webkit-transition: 0.5s left;
+  -o-transition: 0.5s left;
   transition: 0.5s left;
   z-index: 2;
 }
@@ -7001,6 +7490,8 @@ main .bg.index {
   text-align: center;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7026,11 +7517,32 @@ main .bg.index {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: inset 0 0 2px 2px #c6cae0;
+  -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
+          box-shadow: inset 0 0 2px 2px #c6cae0;
   border: none;
   border-radius: 15px;
   float: left;
   margin: 15px 0px 0px 10px;
+}
+.fixside .search input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.fixside .search input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.fixside .search input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+.fixside .search input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
@@ -7040,6 +7552,8 @@ main .bg.index {
 .fixside .search button {
   width: 50px;
   height: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   color: #fff;
@@ -7049,6 +7563,8 @@ main .bg.index {
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
 }
 .fixside .search .searchbox {
@@ -7066,6 +7582,8 @@ main .bg.index {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
+  background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
   background-color: #e2e6f5;
   cursor: pointer;
@@ -7080,10 +7598,14 @@ main .bg.index {
   top: 21px;
 }
 .fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .fixside .search .searchbox div {
   background: #fff;
@@ -7134,6 +7656,8 @@ main .bg.index {
   margin-top: 62px;
   border-radius: 3px 0px 0px 3px;
   position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -7150,6 +7674,8 @@ main .bg.index {
   cursor: pointer;
 }
 .fixside .fun .hamBtn:hover, .fixside .fun .hamBtn:active, .fixside .fun .hamBtn.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7182,6 +7708,8 @@ main .bg.index {
   height: 75px;
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7253,12 +7781,15 @@ main .bg.index {
 .discount .window {
   width: 93%;
   height: 180px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 15px 0px 0px 5%;
   border-radius: 20px;
   border: 1px solid #8581b4;
-  box-shadow: 0 0 4px 2px #bac0db;
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+          box-shadow: 0 0 4px 2px #bac0db;
   position: relative;
 }
 .discount .window p {
@@ -7290,7 +7821,9 @@ main .bg.index {
   background: url("../images/discountleft_ic.png");
   background-size: 500%;
   background-position-y: -20px;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 .discount .window p span.limit {
   background-position-x: -20px;
@@ -7346,6 +7879,8 @@ main .bg.index {
   background: url("../images/disimg_3.png") no-repeat;
 }
 .discount .window button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3349b8));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
   background: #3349b8;
   border: solid 1px #1e2f8e;
@@ -7359,17 +7894,24 @@ main .bg.index {
   border-radius: 5px;
 }
 .discount .window button:hover, .discount .window button:active, .discount .window button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3349b8));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
 }
 .discount .activebox {
   width: 93%;
   height: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 0px 0px 0px 5%;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 0 4px 2px #bac0db;
-  transform: translateY(-20px);
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+          box-shadow: 0 0 4px 2px #bac0db;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -7434,7 +7976,10 @@ main .bg.index {
   width: 850px;
   height: 45px;
   border-radius: 5px;
-  box-shadow: 0px 0px 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0px 0px 6px 1px #bcc2dc;
+          box-shadow: 0px 0px 6px 1px #bcc2dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   bottom: 0px;
@@ -7519,14 +8064,16 @@ main .bg.index {
   color: #fff;
 }
 .myself .minetopfix .fixbar .mes_rowbut.lside .innbut {
-  animation: rowbut 0.3s ease-out 0s;
+  -webkit-animation: rowbut 0.3s ease-out 0s;
+          animation: rowbut 0.3s ease-out 0s;
 }
 .myself .minetopfix .fixbar .mes_rowbut.rside span:nth-of-type(1) {
   color: #fff;
 }
 .myself .minetopfix .fixbar .mes_rowbut.rside .innbut {
   left: 53%;
-  animation: rowbut2 0.3s ease-out 0s;
+  -webkit-animation: rowbut2 0.3s ease-out 0s;
+          animation: rowbut2 0.3s ease-out 0s;
 }
 .myself .minetopfix .fixbar .mes_rowbut span {
   margin-right: 20px;
@@ -7568,6 +8115,8 @@ main .bg.index {
   }
 }
 .myself .minetopfix .fixbar button:hover, .myself .minetopfix .fixbar button:active, .myself .minetopfix .fixbar button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(top, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to bottom, #1b2c86 0%, #7e8bd1 100%);
   background-color: #1b2c86;
   color: #fff;
@@ -7699,6 +8248,8 @@ main .bg.index {
 .myself .recordbar {
   width: 850px;
   height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#edeef5));
+  background: -o-linear-gradient(top, #ffffff 0%, #edeef5 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
   background-color: #d6d9ee;
   border-radius: 5px;
@@ -7708,6 +8259,8 @@ main .bg.index {
   z-index: 1;
 }
 .myself .recordbar.open {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
+  background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
   background-color: #d8a77b;
 }
@@ -7765,7 +8318,8 @@ main .bg.index {
   height: 45px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 6px 3px #ccd0ec;
+  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
+          box-shadow: 0 0 6px 3px #ccd0ec;
   position: relative;
   z-index: 1;
   margin: 0px 0px 15px 17px;
@@ -7779,9 +8333,13 @@ main .bg.index {
   background: url("../images/arrow_b.png") no-repeat;
   right: 20px;
   top: 18px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .myself .helpbar.open {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
+  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
   background-color: #424d89;
 }
@@ -7789,7 +8347,9 @@ main .bg.index {
   width: 8px;
   height: 11px;
   background: url("../images/arrow_w.png");
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .myself .helpbar.open p {
   color: #fff;
@@ -7812,6 +8372,8 @@ main .bg.index {
   color: #000;
 }
 .myself .helpbar.nb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
+  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
   background-color: #424d89;
 }
@@ -7855,7 +8417,8 @@ main .bg.index {
   padding-top: 20px;
   border-radius: 0px 0px 12px 12px;
   color: #4d515d;
-  box-shadow: 0 0 6px 3px #ccd0ec;
+  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
+          box-shadow: 0 0 6px 3px #ccd0ec;
   text-align: left;
 }
 .myself .helpbox.display {
@@ -7880,7 +8443,8 @@ main .bg.index {
   height: auto;
   border-radius: 12px;
   border: 1px solid #6b76b4;
-  box-shadow: 0 0 7px 1px #e2e4f3;
+  -webkit-box-shadow: 0 0 7px 1px #e2e4f3;
+          box-shadow: 0 0 7px 1px #e2e4f3;
   margin: 0px auto 20px;
   padding: 15px;
 }
@@ -7933,7 +8497,8 @@ main .bg.index {
   position: fixed;
   margin-left: 17px;
   border-radius: 10px;
-  box-shadow: 0 0 5px 1px #d9dbef;
+  -webkit-box-shadow: 0 0 5px 1px #d9dbef;
+          box-shadow: 0 0 5px 1px #d9dbef;
   z-index: 1;
 }
 .myself .sportbar button {
@@ -7941,6 +8506,8 @@ main .bg.index {
   width: 80px;
   height: 32px;
   border: 1px solid #b78960;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b78960));
+  background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
   background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
   background-color: #b78960;
   border-radius: 5px;
@@ -7951,6 +8518,8 @@ main .bg.index {
   margin: 0px 10px 15px 0px;
 }
 .myself .sportbar button:hover, .myself .sportbar button:active, .myself .sportbar button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#434e8a), to(#6974b2));
+  background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
   background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
   border-color: #444f8b;
   background-color: #434e8a;
@@ -8026,7 +8595,8 @@ main .bg.index {
 .myself .onlineroom .chatwindow .chat .gmchat {
   float: left;
   border: 1px solid #c2c5ff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
+          box-shadow: 0 0 8px 1px #dfe1ec;
   border-radius: 0px 15px 15px 15px;
   font-size: 14px;
   padding: 12px;
@@ -8045,7 +8615,8 @@ main .bg.index {
   float: right;
   background: #273aa1;
   color: #fff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
+          box-shadow: 0 0 8px 1px #dfe1ec;
   border-radius: 15px 0px 15px 15px;
   font-size: 14px;
   padding: 12px;
@@ -8087,6 +8658,26 @@ main .bg.index {
   outline: none;
   resize: none;
 }
+.myself .onlineroom .chatarea textarea::-webkit-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+.myself .onlineroom .chatarea textarea::-moz-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+.myself .onlineroom .chatarea textarea:-ms-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+.myself .onlineroom .chatarea textarea::-ms-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
 .myself .onlineroom .chatarea textarea::placeholder {
   color: #e0dede;
   font-size: 14px;
@@ -8096,6 +8687,8 @@ main .bg.index {
   width: 90px;
   height: 36px;
   margin-right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8996da), to(#3046b7));
+  background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 5px;
@@ -8103,6 +8696,8 @@ main .bg.index {
   font-size: 15px;
 }
 .myself .onlineroom .chatarea button:hover, .myself .onlineroom .chatarea button:active, .myself .onlineroom .chatarea button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8996da), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8996da 0%, #3046b7 100%);
   background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
 }
 .myself .aboutus, .myself .aboutlink {
@@ -8123,7 +8718,8 @@ main .bg.index {
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  box-shadow: 0 0 6px 1px #d7dced;
+  -webkit-box-shadow: 0 0 6px 1px #d7dced;
+          box-shadow: 0 0 6px 1px #d7dced;
   margin: 0px 10px 10px 0px;
 }
 .myself .aboutlink div a:hover, .myself .aboutlink div a:active, .myself .aboutlink div a.active {
@@ -8171,34 +8767,92 @@ main .bg.index {
   color: #4d515d;
 }
 
-@keyframes reset {
+@-webkit-keyframes reset {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes reset {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rowbut {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes rowbut {
   0% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes rowbut2 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes rowbut2 {
   0% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes btnFlashing {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes btnFlashing {
@@ -8212,26 +8866,58 @@ main .bg.index {
     opacity: 0;
   }
 }
-@keyframes liveRemind {
+@-webkit-keyframes liveRemind {
   0% {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
     opacity: 0.75;
-    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
   }
   50% {
     opacity: 0.5;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   80% {
     opacity: 0.25;
-    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
   100% {
     opacity: 0;
-    transform: scale(2.8);
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
+  }
+}
+@keyframes liveRemind {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    opacity: 0.75;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  80% {
+    opacity: 0.25;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
   }
 }
 html {
@@ -8256,265 +8942,23 @@ html body::-webkit-scrollbar-thumb {
   background: #b9becf;
   border-radius: 10px;
 }
-html body .login {
-  display: none;
-  position: absolute;
-  width: 400px;
-  height: 300px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 200px;
-  z-index: 20;
-}
-html body .login .loginbar {
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
-  background-color: #3046b7;
-  border-radius: 12px 12px 0px 0px;
-  position: relative;
-}
-html body .login .loginbar span {
-  font-size: 17px;
-  line-height: 50px;
-  padding-left: 20px;
-  color: #fff;
-}
-html body .login .loginbar button {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
-}
-html body .login .loginbar button::before {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(45deg);
-}
-html body .login .loginbar button::after {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(135deg);
-}
-html body .login .loginbox {
-  width: 100%;
-  height: 195px;
-  background: #fff;
-  border-radius: 0px 0px 12px 12px;
-  padding: 20px 0px;
-}
-html body .login .loginbox div {
-  width: 330px;
-  height: 50px;
-  margin: 0px auto;
-  position: relative;
-}
-html body .login .loginbox div input {
-  width: 225px;
-  height: 32px;
-  font-size: 17px;
-  padding: 3px 0px 3px 10px;
-  float: right;
-  margin: 4px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 4px;
-}
-html body .login .loginbox div span {
-  font-size: 17px;
-  color: #4d515d;
-  line-height: 50px;
-}
-html body .login .loginbox div span.rem {
-  float: left;
-  margin-left: 30px;
-}
-html body .login .loginbox div span.fog {
-  float: right;
-  cursor: pointer;
-}
-html body .login .loginbox div span.cube {
-  top: 16px;
-  left: 10px;
-}
-html body .login .loginbox div button {
-  width: 160px;
-  height: 36px;
-  float: left;
-  margin-right: 10px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
-  border: 1px solid #495cc5;
-  color: #4d515d;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #4d515d;
-}
-html body .login .loginbox div button:hover, html body .login .loginbox div button:active, html body .login .loginbox div button.active {
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-}
-html body .login .loginbox div button:last-child {
-  margin: 0px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  color: #fff;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .login .loginbox div button:last-child {
-    color: #4d515d;
-  }
-}
-html body .login .loginbox div button:last-child:hover, html body .login .loginbox div button:last-child:active, html body .login .loginbox div button:last-child.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-}
-html body .login.display {
-  display: block;
-}
-html body .signup {
-  display: none;
-  position: absolute;
-  width: 800px;
-  height: 360px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 200px;
-  z-index: 20;
-}
-html body .signup .signupbar {
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
-  background-color: #3046b7;
-  border-radius: 12px 12px 0px 0px;
-  position: relative;
-}
-html body .signup .signupbar span {
-  font-size: 17px;
-  color: #fff;
-  line-height: 50px;
-  padding-left: 20px;
-}
-html body .signup .signupbar button {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
-}
-html body .signup .signupbar button::before {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(45deg);
-}
-html body .signup .signupbar button::after {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  transform: rotate(135deg);
-}
-html body .signup .signupbox {
-  width: 100%;
-  height: 265px;
-  background: #fff;
-  border-radius: 0px 0px 12px 12px;
-  padding: 20px 0px;
-}
-html body .signup .signupbox div {
-  width: 48%;
-  height: 50px;
-  float: left;
-  position: relative;
-}
-html body .signup .signupbox div:last-child {
-  width: 500px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 20px;
-  text-align: center;
-}
-html body .signup .signupbox div input {
-  width: 235px;
-  height: 28px;
-  font-size: 17px;
-  padding: 3px 0px 3px 10px;
-  float: right;
-  margin: 7px 10px 0px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 4px;
-}
-html body .signup .signupbox div span {
-  line-height: 50px;
-  color: #4d515d;
-  padding-left: 40px;
-}
-html body .signup .signupbox div button {
-  width: 180px;
-  height: 36px;
-  margin-right: 10px;
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
-  border: 1px solid #495cc5;
-  color: #4d515d;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #4d515d;
-}
-html body .signup .signupbox div button:hover, html body .signup .signupbox div button:active, html body .signup .signupbox div button.active {
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-}
-html body .signup .signupbox div button:last-child {
-  margin: 0px;
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  color: #fff;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .signup .signupbox div button:last-child {
-    color: #4d515d;
-  }
-}
-html body .signup .signupbox div button:last-child:hover, html body .signup .signupbox div button:last-child:active, html body .signup .signupbox div button:last-child.active {
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-}
-html body .signup.display {
-  display: block;
-}
 html body .cardremind {
   display: none;
   position: absolute;
   width: 500px;
   height: 200px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
 html body .cardremind .remindbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -8542,7 +8986,9 @@ html body .cardremind .remindbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .cardremind .remindbar button::after {
   content: "";
@@ -8552,7 +8998,9 @@ html body .cardremind .remindbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .cardremind .remindbox {
   width: 100%;
@@ -8569,6 +9017,8 @@ html body .cardremind .remindbox p {
 html body .cardremind .remindbox button {
   width: 160px;
   height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -8579,14 +9029,20 @@ html body .cardremind .remindbox button {
   color: #4d515d;
 }
 html body .cardremind .remindbox button:hover, html body .cardremind .remindbox button:active, html body .cardremind .remindbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .cardremind .remindbox button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
 }
 html body .cardremind .remindbox button:last-child:hover, html body .cardremind .remindbox button:last-child:active, html body .cardremind .remindbox button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .cardremind.display {
@@ -8598,13 +9054,17 @@ html body .passwordchange {
   width: 350px;
   height: 360px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 100px;
   z-index: 20;
 }
 html body .passwordchange .changebar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -8632,7 +9092,9 @@ html body .passwordchange .changebar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .passwordchange .changebar button::after {
   content: "";
@@ -8642,7 +9104,9 @@ html body .passwordchange .changebar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .passwordchange .changebox {
   width: 100%;
@@ -8660,7 +9124,9 @@ html body .passwordchange .changebox div {
 html body .passwordchange .changebox div:last-child {
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -8682,6 +9148,8 @@ html body .passwordchange .changebox div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -8692,15 +9160,21 @@ html body .passwordchange .changebox div button {
   color: #4d515d;
 }
 html body .passwordchange .changebox div button:hover, html body .passwordchange .changebox div button:active, html body .passwordchange .changebox div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .passwordchange .changebox div button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   color: #fff;
 }
 html body .passwordchange .changebox div button:last-child:hover, html body .passwordchange .changebox div button:last-child:active, html body .passwordchange .changebox div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .passwordchange.display {
@@ -8712,13 +9186,17 @@ html body .cardadd {
   width: 800px;
   height: 360px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 110px;
   z-index: 20;
 }
 html body .cardadd .cardaddbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -8746,7 +9224,9 @@ html body .cardadd .cardaddbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .cardadd .cardaddbar button::after {
   content: "";
@@ -8756,7 +9236,9 @@ html body .cardadd .cardaddbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .cardadd .cardaddbox {
   width: 100%;
@@ -8774,7 +9256,9 @@ html body .cardadd .cardaddbox div {
 html body .cardadd .cardaddbox div:last-child {
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -8811,6 +9295,8 @@ html body .cardadd .cardaddbox div span {
 html body .cardadd .cardaddbox div button {
   width: 220px;
   height: 36px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -8820,6 +9306,8 @@ html body .cardadd .cardaddbox div button {
   font-weight: bold;
 }
 html body .cardadd .cardaddbox div button:hover, html body .cardadd .cardaddbox div button:active, html body .cardadd .cardaddbox div button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .cardadd.display {
@@ -8828,6 +9316,8 @@ html body .cardadd.display {
 
 .bg_gold {
   background-color: #fedab8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
+  background: -o-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
   color: #6c2600;
   font-size: 14px;
@@ -8835,6 +9325,8 @@ html body .cardadd.display {
 
 .bg_gray {
   background-color: #f0f0f0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
+  background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
   background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
   color: #4d515d;
   font-size: 14px;
@@ -8842,6 +9334,8 @@ html body .cardadd.display {
 
 .bg_darkpurple {
   background-color: #414c88;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+  background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
   color: #ffffff;
   font-size: 14px;
