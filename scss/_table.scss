@@ -256,7 +256,7 @@
       	}
 	}
 
-	//足球版型
+	//足球+沙灘足球版型
 	&.tType1 {
 
 		&.hide1 {
@@ -1096,6 +1096,195 @@
 	}
 
 	//賽馬賽狗版型
+	&.tType4 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(2) {
+						width: 25%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 34%;
+				}
+
+				&:nth-of-type(3) {
+					width: 15%;
+				}
+
+				&:nth-of-type(4) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
+				}
+
+				&:nth-of-type(6) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType4_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(2) {
+						width: 25%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 31%;
+				}
+
+				&:nth-of-type(3) {
+					width: 16%;
+				}
+
+				&:nth-of-type(4) {
+					width: 16%;
+				}
+
+				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType4_index {
+
+		&.hide2 {
+			
+			tr {
+
+				td {
+
+					&:nth-of-type(5) {
+						width: 29%;
+					}
+
+					&:nth-of-type(10) {
+						width: 8%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				p {
+					padding-bottom: 8px;
+
+					&:last-child {
+						padding: 0px;
+					}
+				}
+
+				&:nth-of-type(1) {
+					width: 7%;
+				}
+
+				&:nth-of-type(2) {
+					width: 7%;
+				}
+
+				&:nth-of-type(3) {
+					width: 3%;
+				}
+
+				&:nth-of-type(4) {
+					width: 3%;
+				}
+
+				&:nth-of-type(5) {
+					width: 31%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
+					width: 16%;
+				}
+
+				&:nth-of-type(8) {
+					width: 3%;
+				}
+
+				&:nth-of-type(9) {
+					width: 8%;
+				}
+
+				&:nth-of-type(10) {
+					width: 6%;
+				}
+			}
+		}
+	}
 
 	//電競版型
 	&.tType5 {
@@ -1592,8 +1781,429 @@
 	}
 
 	//股票指數版型
+	&.tType6 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+				}
+			}
+		}
+		
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 20%;
+				}
+
+				&:nth-of-type(2) {
+					width: 5%;
+				}
+
+				&:nth-of-type(3) {
+					width: 24%;
+				}
+
+				&:nth-of-type(4) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
+				}
+
+				&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType6_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+				}
+			}
+		}
+		
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 20%;
+				}
+
+				&:nth-of-type(2) {
+					width: 5%;
+				}
+
+				&:nth-of-type(3) {
+					width: 21%;
+				}
+
+				&:nth-of-type(4) {
+					width: 16%;
+				}
+
+				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType6_index {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 12%;
+				}
+
+				&:nth-of-type(2) {
+					width: 20%;
+				}
+
+				&:nth-of-type(3) {
+					width: 20%;
+				}
+
+				&:nth-of-type(4) {
+					width: 20%;
+				}
+
+				&:nth-of-type(5) {
+					width: 20%;
+				}
+
+				&:nth-of-type(6) {
+					width: 8%;
+				}
+			}
+		}
+	}
 
 	//彩球版型
+	&.tType7 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+				}
+			}
+		}
+		
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 20%;
+				}
+
+				&:nth-of-type(2) {
+					width: 5%;
+				}
+
+				&:nth-of-type(3) {
+					width: 24%;
+				}
+
+				&:nth-of-type(4) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
+				}
+
+				&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType7_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(3) {
+						width: 15%;
+					}
+				}
+			}
+		}
+		
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 20%;
+				}
+
+				&:nth-of-type(2) {
+					width: 5%;
+				}
+
+				&:nth-of-type(3) {
+					width: 21%;
+				}
+
+				&:nth-of-type(4) {
+					width: 16%;
+				}
+
+				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 16%;
+				}
+
+				&:nth-of-type(7) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType7_bingo_index {
+
+		&.hide3 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(13) {
+						width: 8%;
+					}
+
+					&:nth-of-type(14) {
+						width: 8%;
+					}
+
+					&:nth-of-type(15) {
+						width: 8%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 12%;
+				}
+
+				&:nth-of-type(2) {
+					width: 12%;
+				}
+
+				&:nth-of-type(3) {
+					width: 3%;
+				}
+
+				&:nth-of-type(4) {
+					width: 3%;
+				}
+
+				&:nth-of-type(5) {
+					width: 3%;
+				}
+
+				&:nth-of-type(6) {
+					width: 3%;
+				}
+
+				&:nth-of-type(7) {
+					width: 3%;
+				}
+
+				&:nth-of-type(8) {
+					width: 3%;
+				}
+
+				&:nth-of-type(9) {
+					width: 3%;
+				}
+
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11) {
+					width: 3%;
+				}
+
+				&:nth-of-type(12) {
+					width: 3%;
+				}
+
+				&:nth-of-type(13) {
+					width: 12%;
+				}
+
+				&:nth-of-type(14) {
+					width: 12%;
+				}
+
+				&:nth-of-type(15) {
+					width: 12%;
+				}
+
+				&:nth-of-type(16) {
+					width: 10%;
+				}
+			}
+		}
+	}
+	&.tType7_lottery_index {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 8%;
+				}
+
+				&:nth-of-type(4) {
+					width: 9%;
+				}
+
+				&:nth-of-type(5) {
+					width: 9%;
+				}
+
+				&:nth-of-type(6) {
+					width: 9%;
+				}
+
+				&:nth-of-type(7) {
+					width: 9%;
+				}
+
+				&:nth-of-type(8) {
+					width: 9%;
+				}
+
+				&:nth-of-type(9) {
+					width: 7%;
+				}
+
+				&:nth-of-type(10) {
+					width: 10%;
+				}
+			}
+		}
+	}
 
 	//網球版型
 	&.tType8 {
@@ -2191,14 +2801,6 @@
 			}
 		}
 
-		&.hide2 {
-
-			tr {
-
-				
-			}
-		}
-
 		&.hide3 {
 
 			tr {
@@ -2362,6 +2964,182 @@
 	}
 
 	//賽車
+	&.tType11 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(2) {
+						width: 25%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 34%;
+				}
+
+				&:nth-of-type(3) {
+					width: 15%;
+				}
+
+				&:nth-of-type(4) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
+				}
+
+				&:nth-of-type(6) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType11_2 {
+
+		&.hide1 {
+
+			tr {
+
+				th,td {
+
+					&:nth-last-of-type(2) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&.hide2 {
+
+			tr {
+
+				td {
+
+					&:nth-of-type(2) {
+						width: 25%;
+					}
+				}
+			}
+		}
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 31%;
+				}
+
+				&:nth-of-type(3) {
+					width: 16%;
+				}
+
+				&:nth-of-type(4) {
+					width: 16%;
+				}
+
+				&:nth-of-type(5) {
+					width: 16%;
+				}
+
+				&:nth-of-type(6) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType11_index {
+
+		tr {
+
+			td {
+
+				p {
+					padding-bottom: 8px;
+
+					&:last-child {
+						padding: 0px;
+					}
+				 }
+				 
+				&:nth-of-type(1) {
+					width: 7%;
+				}
+
+				&:nth-of-type(2) {
+					width: 7%;
+				}
+
+				&:nth-of-type(3) {
+					width: 3%;
+				}
+
+				&:nth-of-type(4) {
+					width: 3%;
+				}
+
+				&:nth-of-type(5) {
+					width: 26%;
+				}
+
+				&:nth-of-type(6) {
+					width: 5%;
+				}
+
+				&:nth-of-type(7) {
+					width: 3%;
+				}
+
+				&:nth-of-type(8) {
+					width: 26%;
+				}
+
+				&:nth-of-type(9) {
+					width: 8%;
+				}
+
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11) {
+					width: 6%;
+				}
+			}
+		}
+	}
 
 	//羽毛球
 	&.tType12 {
@@ -2601,8 +3379,6 @@
 			}
 		}
 	}
-
-	//沙灘足球
 
     //足球比賽結果
     &.tsocre {
