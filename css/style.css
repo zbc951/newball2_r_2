@@ -1199,7 +1199,7 @@ main .bg.index {
   background-position: -20px 0px;
 }
 .playBorad tr td a.tbimg3 {
-  width: 60%;
+  width: auto;
   height: auto;
   color: #fff;
 }
@@ -1224,6 +1224,9 @@ main .bg.index {
 .playBorad.tType1.hide3 tr th:nth-last-of-type(4), .playBorad.tType1.hide3 tr td:nth-last-of-type(4) {
   display: none;
 }
+.playBorad.tType1.hide3 tr td:nth-of-type(1) {
+  width: 28%;
+}
 .playBorad.tType1 tr td div:nth-of-type(1) {
   margin-bottom: 8px;
 }
@@ -1231,7 +1234,7 @@ main .bg.index {
   padding: 0px;
 }
 .playBorad.tType1 tr td:nth-of-type(1) {
-  width: 17%;
+  width: 19%;
 }
 .playBorad.tType1 tr td:nth-of-type(2) {
   width: 7%;
@@ -1255,7 +1258,7 @@ main .bg.index {
   width: 12%;
 }
 .playBorad.tType1 tr td:nth-of-type(9) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType1_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType1_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
@@ -1263,8 +1266,17 @@ main .bg.index {
 .playBorad.tType1_2.hide2 tr th:nth-last-of-type(3), .playBorad.tType1_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
 }
+.playBorad.tType1_2.hide2 tr td:nth-of-type(1) {
+  width: 28%;
+}
 .playBorad.tType1_2.hide3 tr th:nth-last-of-type(4), .playBorad.tType1_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
+}
+.playBorad.tType1_2.hide3 tr td:nth-of-type(1) {
+  width: 46%;
+}
+.playBorad.tType1_2.hide3 tr td:nth-of-type(9) {
+  width: 5%;
 }
 .playBorad.tType1_2 tr td div:nth-of-type(1) {
   margin-bottom: 8px;
@@ -1274,7 +1286,7 @@ main .bg.index {
 }
 .playBorad.tType1_2 tr td:nth-of-type(1) {
   line-height: 25px;
-  width: 23%;
+  width: 25%;
 }
 .playBorad.tType1_2 tr td:nth-of-type(2) {
   width: 7%;
@@ -1298,7 +1310,7 @@ main .bg.index {
   width: 12%;
 }
 .playBorad.tType1_2 tr td:nth-of-type(9) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType1_index.hide1 tr td:nth-of-type(1) {
   width: 10%;
@@ -1355,8 +1367,11 @@ main .bg.index {
 .playBorad.tType2.hide3 tr th:nth-last-of-type(4), .playBorad.tType2.hide3 tr td:nth-last-of-type(4) {
   display: none;
 }
+.playBorad.tType2.hide3 tr td:nth-of-type(1) {
+  width: 27.5%;
+}
 .playBorad.tType2 tr td:nth-of-type(1) {
-  width: 18.5%;
+  width: 20.5%;
 }
 .playBorad.tType2 tr td:nth-of-type(2) {
   width: 6%;
@@ -1389,7 +1404,59 @@ main .bg.index {
   width: 12%;
 }
 .playBorad.tType2 tr td:nth-of-type(10) {
+  width: 4%;
+}
+.playBorad.tType2_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType2_2.hide1 tr td:nth-last-of-type(2) {
+  display: none;
+}
+.playBorad.tType2_2.hide2 tr th:nth-last-of-type(3), .playBorad.tType2_2.hide2 tr td:nth-last-of-type(3) {
+  display: none;
+}
+.playBorad.tType2_2.hide3 tr th:nth-last-of-type(4), .playBorad.tType2_2.hide3 tr td:nth-last-of-type(4) {
+  display: none;
+}
+.playBorad.tType2_2.hide3 tr td:nth-of-type(1) {
+  width: 38.5%;
+}
+.playBorad.tType2_2.hide3 tr td:nth-of-type(10) {
+  width: 5%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(1) {
+  line-height: 25px;
+  width: 20.5%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(2) {
   width: 6%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(2) p {
+  padding: 0px;
+}
+.playBorad.tType2_2 tr td:nth-of-type(3) {
+  width: 5.5%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(3) p {
+  padding: 0px;
+}
+.playBorad.tType2_2 tr td:nth-of-type(4) {
+  width: 4%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(5) {
+  width: 12%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(6) {
+  width: 12%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(7) {
+  width: 12%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(8) {
+  width: 12%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(9) {
+  width: 12%;
+}
+.playBorad.tType2_2 tr td:nth-of-type(10) {
+  width: 4%;
 }
 .playBorad.tType2_index.hide1 tr td:nth-of-type(4) {
   width: 9%;
@@ -1483,8 +1550,11 @@ main .bg.index {
 .playBorad.tType3.hide3 tr th:nth-last-of-type(4), .playBorad.tType3.hide3 tr td:nth-last-of-type(4) {
   display: none;
 }
+.playBorad.tType3.hide3 tr td:nth-of-type(1) {
+  width: 29%;
+}
 .playBorad.tType3 tr td:nth-of-type(1) {
-  width: 20%;
+  width: 22%;
 }
 .playBorad.tType3 tr td:nth-of-type(2) {
   width: 2%;
@@ -1520,17 +1590,25 @@ main .bg.index {
   width: 12%;
 }
 .playBorad.tType3 tr td:nth-of-type(13) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType3_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType3_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBorad.tType3_2.hide2 tr th:nth-last-of-type(3), .playBorad.tType3_2.hide2 tr td:nth-last-of-type(3) {
+  display: none;
+}
+.playBorad.tType3_2.hide3 tr th:nth-last-of-type(4), .playBorad.tType3_2.hide3 tr td:nth-last-of-type(4) {
+  display: none;
+}
 .playBorad.tType3_2.hide3 tr td:nth-of-type(1) {
-  width: 30%;
+  width: 40%;
+}
+.playBorad.tType3_2.hide3 tr td:nth-of-type(13) {
+  width: 5%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(1) {
-  line-height: 25px;
-  width: 34%;
+  width: 22%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(2) {
   width: 2%;
@@ -1545,19 +1623,28 @@ main .bg.index {
   width: 2%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(6) {
-  width: 4%;
+  width: 2%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(7) {
-  width: 16%;
+  width: 4%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(8) {
-  width: 16%;
+  width: 12%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(9) {
-  width: 16%;
+  width: 12%;
 }
 .playBorad.tType3_2 tr td:nth-of-type(10) {
-  width: 6%;
+  width: 12%;
+}
+.playBorad.tType3_2 tr td:nth-of-type(11) {
+  width: 12%;
+}
+.playBorad.tType3_2 tr td:nth-of-type(12) {
+  width: 12%;
+}
+.playBorad.tType3_2 tr td:nth-of-type(13) {
+  width: 4%;
 }
 .playBorad.tType3_index.hide2 tr td:nth-of-type(4) {
   width: 47%;
@@ -1598,53 +1685,50 @@ main .bg.index {
 .playBorad.tType3_index tr td:nth-of-type(11) {
   width: 6%;
 }
-.playBorad.tType4.hide1 tr th:nth-last-of-type(2), .playBorad.tType4.hide1 tr td:nth-last-of-type(2) {
-  display: none;
+.playBorad.tType4.hide1 tr td:nth-of-type(1) {
+  width: 68%;
+}
+.playBorad.tType4.hide1 tr td:nth-of-type(2) {
+  width: 14%;
+}
+.playBorad.tType4.hide1 tr td:nth-of-type(3) {
+  width: 14%;
+}
+.playBorad.tType4.hide2 tr td:nth-of-type(1) {
+  width: 63%;
 }
 .playBorad.tType4.hide2 tr td:nth-of-type(2) {
-  width: 25%;
+  width: 16%;
+}
+.playBorad.tType4.hide2 tr td:nth-of-type(3) {
+  width: 16%;
+}
+.playBorad.tType4.hide2 tr td:nth-of-type(4) {
+  width: 5%;
+}
+.playBorad.tType4.hide3 tr td:nth-of-type(1) {
+  width: 60%;
+}
+.playBorad.tType4.hide3 tr td:nth-of-type(2) {
+  width: 17%;
+}
+.playBorad.tType4.hide3 tr td:nth-of-type(3) {
+  width: 17%;
+}
+.playBorad.tType4.hide3 tr td:nth-of-type(4) {
+  width: 6%;
 }
 .playBorad.tType4 tr td:nth-of-type(1) {
-  width: 15%;
+  width: 72%;
 }
 .playBorad.tType4 tr td:nth-of-type(2) {
-  width: 34%;
+  width: 12%;
 }
 .playBorad.tType4 tr td:nth-of-type(3) {
-  width: 15%;
+  width: 12%;
 }
 .playBorad.tType4 tr td:nth-of-type(4) {
-  width: 15%;
-}
-.playBorad.tType4 tr td:nth-of-type(5) {
-  width: 15%;
-}
-.playBorad.tType4 tr td:nth-of-type(6) {
-  width: 6%;
-}
-.playBorad.tType4_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType4_2.hide1 tr td:nth-last-of-type(2) {
-  display: none;
-}
-.playBorad.tType4_2.hide2 tr td:nth-of-type(2) {
-  width: 25%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(1) {
-  width: 15%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(2) {
-  width: 31%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(3) {
-  width: 16%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(4) {
-  width: 16%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(5) {
-  width: 16%;
-}
-.playBorad.tType4_2 tr td:nth-of-type(6) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType4_index.hide2 tr td:nth-of-type(5) {
   width: 29%;
@@ -1688,20 +1772,20 @@ main .bg.index {
 .playBorad.tType4_index tr td:nth-of-type(10) {
   width: 6%;
 }
-.playBorad.tType5.hide1 th:nth-last-of-type(2), .playBorad.tType5.hide1 td:nth-last-of-type(2) {
+.playBorad.tType5.hide1 tr th:nth-last-of-type(2), .playBorad.tType5.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
-.playBorad.tType5.hide2 tr td:nth-of-type(1) {
-  width: 25%;
+.playBorad.tType5.hide2 tr th:nth-last-of-type(3), .playBorad.tType5.hide2 tr td:nth-last-of-type(3) {
+  display: none;
 }
-.playBorad.tType5.hide2 tr td button {
-  margin: 0px;
+.playBorad.tType5.hide3 tr th:nth-last-of-type(4), .playBorad.tType5.hide3 tr td:nth-last-of-type(4) {
+  display: none;
 }
 .playBorad.tType5.hide3 tr td:nth-of-type(1) {
-  width: 18%;
+  width: 27%;
 }
 .playBorad.tType5 tr td:nth-of-type(1) {
-  width: 31%;
+  width: 18%;
 }
 .playBorad.tType5 tr td:nth-of-type(2) {
   width: 2%;
@@ -1728,29 +1812,40 @@ main .bg.index {
   width: 4%;
 }
 .playBorad.tType5 tr td:nth-of-type(10) {
-  width: 15%;
+  width: 12%;
 }
 .playBorad.tType5 tr td:nth-of-type(11) {
-  width: 15%;
+  width: 12%;
 }
 .playBorad.tType5 tr td:nth-of-type(12) {
-  width: 15%;
+  width: 12%;
 }
 .playBorad.tType5 tr td:nth-of-type(13) {
-  width: 6%;
+  width: 12%;
+}
+.playBorad.tType5 tr td:nth-of-type(14) {
+  width: 12%;
+}
+.playBorad.tType5 tr td:nth-of-type(15) {
+  width: 4%;
 }
 .playBorad.tType5_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType5_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
-.playBorad.tType5_2.hide3 tr td:nth-of-type(1) {
-  width: 26%;
+.playBorad.tType5_2.hide2 tr th:nth-last-of-type(3), .playBorad.tType5_2.hide2 tr td:nth-last-of-type(3) {
+  display: none;
 }
-.playBorad.tType5_2.hide3 tr td:nth-of-type(13) {
-  width: 8%;
+.playBorad.tType5_2.hide3 tr th:nth-last-of-type(4), .playBorad.tType5_2.hide3 tr td:nth-last-of-type(4) {
+  display: none;
+}
+.playBorad.tType5_2.hide3 tr td:nth-of-type(1) {
+  width: 40%;
+}
+.playBorad.tType5_2.hide3 tr td:nth-of-type(15) {
+  width: 5%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(1) {
-  line-height: 25px;
-  width: 28%;
+  width: 18%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(2) {
   width: 2%;
@@ -1777,16 +1872,22 @@ main .bg.index {
   width: 4%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(10) {
-  width: 16%;
+  width: 12%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(11) {
-  width: 16%;
+  width: 12%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(12) {
-  width: 16%;
+  width: 12%;
 }
 .playBorad.tType5_2 tr td:nth-of-type(13) {
-  width: 6%;
+  width: 12%;
+}
+.playBorad.tType5_2 tr td:nth-of-type(14) {
+  width: 12%;
+}
+.playBorad.tType5_2 tr td:nth-of-type(15) {
+  width: 4%;
 }
 .playBorad.tType5_lol_index.hide1 tr td:nth-of-type(3) {
   width: 32%;
@@ -1971,59 +2072,50 @@ main .bg.index {
 .playBorad.tType5_cs_index p:nth-of-type(1) {
   padding-bottom: 8px;
 }
-.playBorad.tType6.hide1 tr th:nth-last-of-type(2), .playBorad.tType6.hide1 tr td:nth-last-of-type(2) {
-  display: none;
+.playBorad.tType6.hide1 tr td:nth-of-type(1) {
+  width: 68%;
+}
+.playBorad.tType6.hide1 tr td:nth-of-type(2) {
+  width: 14%;
+}
+.playBorad.tType6.hide1 tr td:nth-of-type(3) {
+  width: 14%;
+}
+.playBorad.tType6.hide2 tr td:nth-of-type(1) {
+  width: 63%;
+}
+.playBorad.tType6.hide2 tr td:nth-of-type(2) {
+  width: 16%;
 }
 .playBorad.tType6.hide2 tr td:nth-of-type(3) {
-  width: 15%;
+  width: 16%;
+}
+.playBorad.tType6.hide2 tr td:nth-of-type(4) {
+  width: 5%;
+}
+.playBorad.tType6.hide3 tr td:nth-of-type(1) {
+  width: 60%;
+}
+.playBorad.tType6.hide3 tr td:nth-of-type(2) {
+  width: 17%;
+}
+.playBorad.tType6.hide3 tr td:nth-of-type(3) {
+  width: 17%;
+}
+.playBorad.tType6.hide3 tr td:nth-of-type(4) {
+  width: 6%;
 }
 .playBorad.tType6 tr td:nth-of-type(1) {
-  width: 20%;
+  width: 72%;
 }
 .playBorad.tType6 tr td:nth-of-type(2) {
-  width: 5%;
+  width: 12%;
 }
 .playBorad.tType6 tr td:nth-of-type(3) {
-  width: 24%;
+  width: 12%;
 }
 .playBorad.tType6 tr td:nth-of-type(4) {
-  width: 15%;
-}
-.playBorad.tType6 tr td:nth-of-type(5) {
-  width: 15%;
-}
-.playBorad.tType6 tr td:nth-of-type(6) {
-  width: 15%;
-}
-.playBorad.tType6 tr td:nth-of-type(7) {
-  width: 6%;
-}
-.playBorad.tType6_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType6_2.hide1 tr td:nth-last-of-type(2) {
-  display: none;
-}
-.playBorad.tType6_2.hide2 tr td:nth-of-type(3) {
-  width: 15%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(1) {
-  width: 20%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(2) {
-  width: 5%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(3) {
-  width: 21%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(4) {
-  width: 16%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(5) {
-  width: 16%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(6) {
-  width: 16%;
-}
-.playBorad.tType6_2 tr td:nth-of-type(7) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType6_index tr td:nth-of-type(1) {
   width: 12%;
@@ -2043,59 +2135,50 @@ main .bg.index {
 .playBorad.tType6_index tr td:nth-of-type(6) {
   width: 8%;
 }
-.playBorad.tType7.hide1 tr th:nth-last-of-type(2), .playBorad.tType7.hide1 tr td:nth-last-of-type(2) {
-  display: none;
+.playBorad.tType7.hide1 tr td:nth-of-type(1) {
+  width: 68%;
+}
+.playBorad.tType7.hide1 tr td:nth-of-type(2) {
+  width: 14%;
+}
+.playBorad.tType7.hide1 tr td:nth-of-type(3) {
+  width: 14%;
+}
+.playBorad.tType7.hide2 tr td:nth-of-type(1) {
+  width: 63%;
+}
+.playBorad.tType7.hide2 tr td:nth-of-type(2) {
+  width: 16%;
 }
 .playBorad.tType7.hide2 tr td:nth-of-type(3) {
-  width: 15%;
+  width: 16%;
+}
+.playBorad.tType7.hide2 tr td:nth-of-type(4) {
+  width: 5%;
+}
+.playBorad.tType7.hide3 tr td:nth-of-type(1) {
+  width: 60%;
+}
+.playBorad.tType7.hide3 tr td:nth-of-type(2) {
+  width: 17%;
+}
+.playBorad.tType7.hide3 tr td:nth-of-type(3) {
+  width: 17%;
+}
+.playBorad.tType7.hide3 tr td:nth-of-type(4) {
+  width: 6%;
 }
 .playBorad.tType7 tr td:nth-of-type(1) {
-  width: 20%;
+  width: 72%;
 }
 .playBorad.tType7 tr td:nth-of-type(2) {
-  width: 5%;
+  width: 12%;
 }
 .playBorad.tType7 tr td:nth-of-type(3) {
-  width: 24%;
+  width: 12%;
 }
 .playBorad.tType7 tr td:nth-of-type(4) {
-  width: 15%;
-}
-.playBorad.tType7 tr td:nth-of-type(5) {
-  width: 15%;
-}
-.playBorad.tType7 tr td:nth-of-type(6) {
-  width: 15%;
-}
-.playBorad.tType7 tr td:nth-of-type(7) {
-  width: 6%;
-}
-.playBorad.tType7_2.hide1 tr th:nth-last-of-type(2), .playBorad.tType7_2.hide1 tr td:nth-last-of-type(2) {
-  display: none;
-}
-.playBorad.tType7_2.hide2 tr td:nth-of-type(3) {
-  width: 15%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(1) {
-  width: 20%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(2) {
-  width: 5%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(3) {
-  width: 21%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(4) {
-  width: 16%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(5) {
-  width: 16%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(6) {
-  width: 16%;
-}
-.playBorad.tType7_2 tr td:nth-of-type(7) {
-  width: 6%;
+  width: 4%;
 }
 .playBorad.tType7_bingo_index.hide3 tr td:nth-of-type(13) {
   width: 8%;
