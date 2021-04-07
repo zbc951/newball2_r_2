@@ -119,7 +119,7 @@
 
 				//方形按鈕
 				&.type1 {
-					width: 80px;
+					width: 65px;
 					height: 50px;
 
 					//註解
@@ -143,17 +143,17 @@
 				//長型按鈕
 				&.type2 {
 					display: block;
-					width: 180px;
-					height: 25px;
+					width: 135px;
+					height: 40px;
 					margin: 0px auto 5px;
 
 					&:last-child {
 						margin-bottom: 0px;
 					}
 
-					//雙按鈕
-					&.twin {
-						height: 40px;
+					//三按鈕
+					&.third {
+						height: 25px;
 					}
 
 					//註解
@@ -264,7 +264,7 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
+					&:nth-last-of-type(2) {
 						display: none;
 					}
 				}
@@ -276,7 +276,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+
+					&:nth-last-of-type(3) {
 						display: none;
 					}
 				}
@@ -288,14 +289,9 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
 
-				td {
-					&:nth-of-type(1) {
-						width: 50%;
+					&:nth-last-of-type(4) {
+						display: none;
 					}
 				}
 			}
@@ -320,31 +316,31 @@
 				}
 
 				&:nth-of-type(1) {
-					width: 27%;
+					width: 17%;
 				}
 				&:nth-of-type(2) {
-					width: 10%;
+					width: 7%;
 				}
 				&:nth-of-type(3) {
-					width: 5%;
+					width: 4%;
 				}
 				&:nth-of-type(4) {
-					width: 7%;
+					width: 18%;
 				}
 				&:nth-of-type(5) {
-					width: 7%;
+					width: 12%;
 				}
 				&:nth-of-type(6) {
-					width: 7%;
+					width: 12%;
 				}
 				&:nth-of-type(7) {
-					width: 16%;
+					width: 12%;
 				}
 				&:nth-of-type(8) {
-					width: 16%;
+					width: 12%;
 				}
 				&:nth-of-type(9) {
-					width: 5%;
+					width: 6%;
 				}
 			}
 		}
@@ -356,7 +352,7 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(1) {
+					&:nth-last-of-type(2) {
 						display: none;
 					}
 				}
@@ -368,7 +364,7 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(3) {
 						display: none;
 					}
 				}
@@ -380,14 +376,9 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
 
-				td {
-					&:nth-of-type(1) {
-						width: 55%;
+					&:nth-last-of-type(4) {
+						display: none;
 					}
 				}
 			}
@@ -413,30 +404,38 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 36%;
+					width: 23%;
 				}
 
 				&:nth-of-type(2) {
-					width: 5%;
+					width: 7%;
 				}
 
 				&:nth-of-type(3) {
-					width: 5%;
+					width: 4%;
 				}
 
 				&:nth-of-type(4) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(5) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(6) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(7) {
+					width: 12%;
+				}
+
+				&:nth-of-type(8) {
+					width: 12%;
+				}
+
+				&:nth-of-type(9) {
 					width: 6%;
 				}
 			}
@@ -539,21 +538,6 @@
 						display: none;
 					}
 				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-
-					&:nth-of-type(2) {
-						width: 6%;
-					}
-
-					&:nth-of-type(3) {
-						width: 6%;
-					}
-				}
 			}
 		}
 
@@ -561,127 +545,21 @@
 
 			tr {
 
-				td {
-					
-					&:nth-of-type(1) {
-						width: 25%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(2) {
-						width: 7%;
-					}
-					
-					&:nth-of-type(3) {
-						width: 7%;
-					}
-
-					&:nth-of-type(5) {
-						width: 18%;
-					}
-
-					&:nth-of-type(6) {
-						width: 18%;
-					}
-				}
-			}
-		}
-
-		tr {
-
-			td {
-
-				&:nth-of-type(1) {
-					width: 35%;
-				}
-				&:nth-of-type(2) {
-					width: 5%;
-
-					p {
-						padding: 0px;
-					}
-				}
-				&:nth-of-type(3) {
-					width: 5%;
-
-					p {
-						padding: 0px;
-					}
-				}
-				&:nth-of-type(4) {
-					width: 4%;
-				}
-				&:nth-of-type(5) {
-					width: 15%;
-				}
-				&:nth-of-type(6) {
-					width: 15%;
-				}
-				&:nth-of-type(7) {
-					width: 15%;
-				}
-				&:nth-of-type(8) {
-					width: 6%;
-				}
-			}
-		}
-	}
-	&.tType2_2 {
-
-		&.hide1 {
-
-			tr {
-
 				th,td {
-
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(3) {
 						display: none;
 					}
 				}
 			}
 		}
 
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 25%;
-					}
-
-					&:nth-of-type(3) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
 		&.hide3 {
 
 			tr {
 
-				td {
-
-					&:nth-of-type(2) {
-						width: 7%;
-					}
-
-					&:nth-of-type(3) {
-						width: 7%;
-					}
-
-					&:nth-of-type(7) {
-						width: 7%;
+				th,td {
+					&:nth-last-of-type(4) {
+						display: none;
 					}
 				}
 			}
@@ -690,21 +568,19 @@
 		tr {
 
 			td {
-				&:nth-of-type(1) {
-					line-height: 25px;
-					width: 31%;
-				}
 
+				&:nth-of-type(1) {
+					width: 18.5%;
+				}
 				&:nth-of-type(2) {
-					width: 5%;
+					width: 6%;
 
 					p {
 						padding: 0px;
 					}
 				}
-
 				&:nth-of-type(3) {
-					width: 5%;
+					width: 5.5%;
 
 					p {
 						padding: 0px;
@@ -712,22 +588,30 @@
 				}
 
 				&:nth-of-type(4) {
-					width: 5%;
+					width: 4%;
 				}
 
 				&:nth-of-type(5) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(6) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(7) {
-					width: 16%;
+					width: 12%;
 				}
 
 				&:nth-of-type(8) {
+					width: 12%;
+				}
+
+				&:nth-of-type(9) {
+					width: 12%;
+				}
+
+				&:nth-of-type(10) {
 					width: 6%;
 				}
 			}
@@ -875,13 +759,6 @@
 						display: none;
 					}
 				}
-				
-				td {
-
-					&:nth-of-type(1) {
-						width: 30%;
-					}
-				}
 			}
 		}
 
@@ -889,14 +766,9 @@
 
 			tr {
 
-				td {
-
-					&:nth-of-type(7) {
-						width: 14%;
-					}
-
-					&:nth-of-type(8) {
-						width: 14%;
+				th,td {
+					&:nth-last-of-type(3) {
+						display: none;
 					}
 				}
 			}
@@ -906,9 +778,9 @@
 
 			tr {
 
-				td {
-					&:nth-of-type(1) {
-						width: 20%;
+				th,td {
+					&:nth-last-of-type(4) {
+						display: none;
 					}
 				}
 			}
@@ -919,7 +791,7 @@
 			td {
 
 				&:nth-of-type(1) {
-					width: 40%;
+					width: 20%;
 				}
 				&:nth-of-type(2) {
 					width: 2%;
@@ -937,16 +809,25 @@
 					width: 2%;
 				}
 				&:nth-of-type(7) {
-					width: 15%;
+					width: 4%;
 				}
 				&:nth-of-type(8) {
-					width: 15%;
+					width: 12%;
 				}
 				&:nth-of-type(9) {
-					width: 15%;
+					width: 12%;
 				}
 				&:nth-of-type(10) {
-					width: 5%;
+					width: 12%;
+				}
+				&:nth-of-type(11) {
+					width: 12%;
+				}
+				&:nth-of-type(12) {
+					width: 12%;
+				}
+				&:nth-of-type(13) {
+					width: 6%;
 				}
 			}
 		}

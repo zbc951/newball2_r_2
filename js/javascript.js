@@ -617,6 +617,8 @@ $(function(){
         $('.beachballBtn a').attr('href','./html/balls/beachball.html');
         $('.footballBtn a').attr('href','./html/balls/football.html');
         $('.tableballBtn a').attr('href','./html/balls/tableball.html');
+        $('.filter,.unLogin').css('display','none')
+        $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
     })
 
     $('.logoutBtn').click(function(){
@@ -628,8 +630,30 @@ $(function(){
         $('.signupWindow,.filter').addClass('display');
     })
 
-    $('.signupbar button').click(function(){
+    $('.signupbar button,.signupbox button:nth-of-type(1)').click(function(){
         $('.signupWindow,.filter').removeClass('display');
+    })
+
+    $('.cantUse').click(function(){
+        $('.filter,.unLogin').addClass('display');
+    })
+
+    $('.topBar button,.remindBox button').click(function(){
+        $('.filter,.unLogin').removeClass('display');
+    })
+})
+
+//我的最愛切換
+$(function(){
+    $('.love').click(function(){
+        $(this).addClass('active');
+        $(this).closest('table').addClass('haveLove');
+        $(this).closest('tr').addClass('myLove');
+        if(window.location.href.indexOf("index") >= 0 ){
+            $('.haveLove tr:nth-of-type(1),.haveLove tr:nth-of-type(2)').addClass('myLove')
+        } else {
+            $('.haveLove tr:nth-of-type(1)').addClass('myLove')
+        }
     })
 })
 
