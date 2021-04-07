@@ -461,10 +461,12 @@
                             <th>4</th>
                             <th>5</th>
                             <th>局數</th>
+                            <th>獨贏</th>
                             <th>盤數</th>
                             <th>讓分</th>
                             <th>大小</th>
-                            <th>獨贏</th>
+                            <th>上半讓分</th>
+                            <th>上半獨贏</th>
                             <th></th>
                         </tr>
                         <!--第一行-->
@@ -510,11 +512,31 @@
                             </td>
                             <td>
                                 <button class="type1">
+                                    <span>主</span>
+                                    000.987
+                                </button>
+                                <button class="type1 disable">
+                                    <span>客</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
                                     <span>+0.5</span>
                                     000.987
                                 </button>
                                 <button class="type1 disable">
                                     <span>-1.5</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
+                                    <span>大</span>
+                                    000.987
+                                </button>
+                                <button class="type1">
+                                    <span>小</span>
                                     000.987
                                 </button>
                             </td>
@@ -530,12 +552,12 @@
                             </td>
                             <td>
                                 <button class="type1">
+                                    <span>大</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
-                                <button class="type1 disable">
+                                <button class="type1">
+                                    <span>小</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
                             </td>
                             <td>
@@ -586,11 +608,31 @@
                             </td>
                             <td>
                                 <button class="type1">
+                                    <span>主</span>
+                                    000.987
+                                </button>
+                                <button class="type1 disable">
+                                    <span>客</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
                                     <span>+0.5</span>
                                     000.987
                                 </button>
-                                <button class="type1">
+                                <button class="type1 disable">
                                     <span>-1.5</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
+                                    <span>大</span>
+                                    000.987
+                                </button>
+                                <button class="type1">
+                                    <span>小</span>
                                     000.987
                                 </button>
                             </td>
@@ -599,19 +641,19 @@
                                     <span>高於3.0</span>
                                     000.987
                                 </button>
-                                <button class="type1 up">
+                                <button class="type1">
                                     <span>低於3.0</span>
                                     000.987
                                 </button>
                             </td>
                             <td>
-                                <button class="type1 up">
+                                <button class="type1">
+                                    <span>大</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
                                 <button class="type1">
+                                    <span>小</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
                             </td>
                             <td>
@@ -662,11 +704,31 @@
                             </td>
                             <td>
                                 <button class="type1">
+                                    <span>主</span>
+                                    000.987
+                                </button>
+                                <button class="type1 disable">
+                                    <span>客</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
                                     <span>+0.5</span>
                                     000.987
                                 </button>
-                                <button class="type1">
+                                <button class="type1 disable">
                                     <span>-1.5</span>
+                                    000.987
+                                </button>
+                            </td>
+                            <td>
+                                <button class="type1">
+                                    <span>大</span>
+                                    000.987
+                                </button>
+                                <button class="type1">
+                                    <span>小</span>
                                     000.987
                                 </button>
                             </td>
@@ -675,19 +737,19 @@
                                     <span>高於3.0</span>
                                     000.987
                                 </button>
-                                <button class="type1 up">
+                                <button class="type1">
                                     <span>低於3.0</span>
                                     000.987
                                 </button>
                             </td>
                             <td>
-                                <button class="type1 up">
+                                <button class="type1">
+                                    <span>大</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
                                 <button class="type1">
+                                    <span>小</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
                             </td>
                             <td>
@@ -709,9 +771,11 @@
                             <th>5</th>
                             <th>局數</th>
                             <th>盤數</th>
+                            <th>獨贏</th>
                             <th>讓分</th>
                             <th>大小</th>
-                            <th>獨贏</th>
+                            <th>上半讓分</th>
+                            <th>上半大小</th>
                             <th></th>
                         </tr>
                         <!--第一行-->
@@ -721,7 +785,7 @@
                                 <br>
                                 米洛斯.拉歐里克[加拿大]
                                 <br>
-                                <span class="gameTime">星期四 3/4 01:30</span>
+                                <span class="gameStyle">滾球</span>&emsp;<span class="gameTime">第三局&ensp;10:45</span>
                             </td>
                             <td>
                                 <p><span class="mark"></span></p>
@@ -756,22 +820,30 @@
                                 <p>1</p>
                             </td>
                             <td>
-                                <button class="type2 twin"><span>高於3.0</span>000.987</button>
-                                <button class="type2 twin"><span>低於3.0</span>000.987</button>
-                            </td>
-                            <td>
-                                <button class="type2 twin">
+                                <button class="type2">
+                                    <span>主</span>
                                     000.987
-                                    <i class="fas fa-lock"></i>
                                 </button>
-                                <button class="type2 twin disable">
+                                <button class="type2">
+                                    <span>客</span>
                                     000.98
-                                    <i class="fas fa-lock"></i>
                                 </button>
                             </td>
                             <td>
-                                <button class="type2 twin"><span>1+50</span>000.987</button>
-                                <button class="type2 twin"><span>1+50</span>000.987</button>
+                                <button class="type2"><span>1+50</span>000.987</button>
+                                <button class="type2"><span>1+50</span>000.987</button>
+                            </td>
+                            <td>
+                                <button class="type2"><span>大</span>000.987</button>
+                                <button class="type2"><span>小</span>000.987</button>
+                            </td>
+                            <td>
+                                <button class="type2"><span>高於3.0</span>000.987</button>
+                                <button class="type2"><span>低於3.0</span>000.987</button>
+                            </td>
+                            <td>
+                                <button class="type2"><span>單</span>000.987</button>
+                                <button class="type2"><span>雙</span>000.987</button>
                             </td>
                             <td>
                                 <a href="javascript:;" class="tbimg2 love"></a>
