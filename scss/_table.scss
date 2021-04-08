@@ -1,4 +1,5 @@
-.playBorad {
+//一般版
+.playBoard {
 	width: calc(100% - 10px);
     height: auto;
     border-collapse: collapse;
@@ -325,29 +326,22 @@
 				&:nth-of-type(1) {
 					width: 19%;
 				}
+
 				&:nth-of-type(2) {
 					width: 7%;
 				}
-				&:nth-of-type(3) {
+
+				&:nth-of-type(3),&:nth-of-type(9) {
 					width: 4%;
 				}
+
 				&:nth-of-type(4) {
 					width: 18%;
 				}
-				&:nth-of-type(5) {
-					width: 12%;
-				}
-				&:nth-of-type(6) {
-					width: 12%;
-				}
-				&:nth-of-type(7) {
-					width: 12%;
-				}
+
+				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
 					width: 12%;
-				}
-				&:nth-of-type(9) {
-					width: 4%;
 				}
 			}
 		}
@@ -3499,371 +3493,6 @@
 		}
 	}
 
-    //足球比賽結果
-    &.tsocre {
-		&:first-child {
-			margin-top: 85px;
-		}
-      .rowup {
-        td {
-          &:nth-child(1) {
-			width: 10%;
-          }
-          &:nth-child(2) {
-            width: 18%;
-          }
-          &:nth-child(3) {
-            width: 38%;
-          }
-          &:nth-child(4) {
-            width: 17%;
-          }
-          &:nth-child(5) {
-            width: 17%;
-          }
-        }
-      }
-    }
-    //棒球比賽結果
-    &.tbasere {
-		&:first-child {
-			margin-top: 85px;
-		}
-      	.rowup {
-			td {
-				&:nth-child(1) {
-					width: 10%;
-				}
-				&:nth-child(2) {
-					width: 20%;
-				}
-				&:nth-child(3) {
-					width: 25%;
-				}
-				&:nth-child(4) {
-					width: 4%;
-				}
-				&:nth-child(5) {
-					width: 4%;
-				}
-				&:nth-child(6) {
-					width: 4%;
-				}
-				&:nth-child(7) {
-					width: 4%;
-				}
-				&:nth-child(8) {
-					width: 4%;
-				}
-				&:nth-child(9) {
-					width: 4%;
-				}
-				&:nth-child(10) {
-					width: 4%;
-				}
-				&:nth-child(11) {
-					width: 4%;
-				}
-				&:nth-child(12) {
-					width: 4%;
-				}
-				&:nth-child(13) {
-					width: 4%;
-				}
-				&:nth-child(14) {
-					width: 5%;
-				}
-			}
-        }
-    }
-    //籃球比賽結果
-    &.tbskre {
-		&:first-child {
-			margin-top: 85px;
-		}
-		.rowup {
-			td {
-				&:nth-child(1) {
-					width: 10%;
-				}
-				&:nth-child(2) {
-					width: 20%;
-				}
-				&:nth-child(3) {
-					width: 34%;
-				}
-				&:nth-child(4) {
-					width: 6%;
-				}
-				&:nth-child(5) {
-					width: 6%;
-				}
-				&:nth-child(6) {
-					width: 6%;
-				}
-				&:nth-child(7) {
-					width: 6%;
-				}
-				&:nth-child(8) {
-					width: 6%;
-				}
-				&:nth-child(9) {
-					width: 6%;
-				}
-			}
-		}
-	}
-	//賽馬比賽結果
-	&.tracere {
-		&:first-child {
-			margin-top: 85px;
-		}
-		tr {
-			td {
-				&:nth-child(1) {
-					width: 10%;
-				}
-				&:nth-child(2) {
-					width: 10%;
-				}
-				&:nth-child(3) {
-					width: 30%;
-				}
-				&:nth-child(4) {
-					width: 10%;
-				}
-				&:nth-child(5) {
-					width: 30%;
-				}
-				&:nth-child(6) {
-					width: 10%;
-				}
-			}
-		}
-	}
-	//電競比賽結果
-	&.tespre {
-		&:first-child {
-			margin-top: 85px;
-		}
-		&.cs {
-			.win {
-				display: inline-block;
-				width: 15px;
-				height: 15px;
-				background: url('../images/statust.png');
-			}
-			.rowup {
-				td {
-					&:nth-child(11) {
-						width: 5%;
-					}
-					&:nth-child(12) {
-						width: 12%;
-					}
-					&:nth-child(13) {
-						width: 12%;
-					}
-					&:nth-child(14) {
-						width: 12%;
-					}
-					&:nth-child(15) {
-						width: 5%;
-					}
-				}
-			}
-		}
-		.rowup {
-			a {
-				margin: 3px;
-			}
-			td {
-				&:nth-child(1) {
-					width: 8%;
-				}
-				&:nth-child(2) {
-					width: 6%;
-				}
-				&:nth-child(3) {
-					width: 12%;
-				}
-				&:nth-child(4) {
-					width: 4%;
-				}
-				&:nth-child(5) {
-					width: 4%;
-				}
-				&:nth-child(6) {
-					width: 4%;
-				}
-				&:nth-child(7) {
-					width: 4%;
-				}
-				&:nth-child(8) {
-					width: 4%;
-				}
-				&:nth-child(9) {
-					width: 4%;
-				}
-				&:nth-child(10) {
-					width: 4%;
-				}
-				&:nth-child(11) {
-					width: 4%;
-				}
-				&:nth-child(12) {
-					width: 5%;
-				}
-				&:nth-child(13) {
-					width: 8%;
-				}
-				&:nth-child(14) {
-					width: 5%;
-				}
-				&:nth-child(15) {
-					width: 5%;
-				}
-				&:nth-child(16) {
-					width: 5%;
-				}
-				&:nth-child(17) {
-					width: 5%;
-				}
-				&:nth-child(18) {
-					width: 5%;
-				}
-				&:nth-child(19) {
-					width: 4%;
-				}
-			}
-		}
-	}
-	//股票比賽結果
-	&.tstockre {
-		&:first-child {
-			margin-top: 85px;
-		}
-		tr {
-			td {
-				&:nth-child(1) {
-					width: 20%;
-				}
-				&:nth-child(2) {
-					width: 20%;
-				}
-				&:nth-child(3) {
-					width: 20%;
-				}
-				&:nth-child(4) {
-					width: 15%;
-				}
-				&:nth-child(5) {
-					width: 15%;
-				}
-				&:nth-child(6) {
-					width: 10%;
-				}
-			}
-		}
-	}
-	//彩球比賽結果
-	&.tlottore {
-		&:first-child {
-			margin-top: 85px;
-		}
-		.rowup {
-			td {
-				&:nth-child(1) {
-					width: 6%;
-				}
-				&:nth-child(2) {
-					width: 6%;
-				}
-				&:nth-child(3) {
-					width: 6%;
-				}
-				&:nth-child(4) {
-					width: 6%;
-				}
-				&:nth-child(5) {
-					width: 6%;
-				}
-				&:nth-child(6) {
-					width: 6%;
-				}
-				&:nth-child(7) {
-					width: 6%;
-				}
-				&:nth-child(8) {
-					width: 6%;
-				}
-				&:nth-child(9) {
-					width: 6%;
-				}
-				&:nth-child(10) {
-					width: 6%;
-				}
-				&:nth-child(11) {
-					width: 10%;
-				}
-				&:nth-child(12) {
-					width: 10%;
-				}
-				&:nth-child(13) {
-					width: 10%;
-				}
-				&:nth-child(14) {
-					width: 10%;
-				}
-			}
-		}
-	}
-	//冰球比賽結果
-	&.ticeballre {
-		&:first-child {
-			margin-top: 85px;
-		}
-		.rowup {
-			a {
-				margin: 3px;
-			}
-			td {
-				&:nth-child(1) {
-					width: 8%;
-				}
-				&:nth-child(2) {
-					width: 8%;
-				}
-				&:nth-child(3) {
-					width: 10%;
-				}
-				&:nth-child(4) {
-					width: 20%;
-				}
-				&:nth-child(5) {
-					width: 8%;
-				}
-				&:nth-child(6) {
-					width: 8%;
-				}
-				&:nth-child(7) {
-					width: 8%;
-				}
-				&:nth-child(8) {
-					width: 8%;
-				}
-				&:nth-child(9) {
-					width: 8%;
-				}
-				&:nth-child(10) {
-					width: 8%;
-				}
-				&:nth-child(11) {
-					width: 6%;
-				}
-			}
-		}
-	}
     //投注記錄選單
     &.tbet {
 		display: none;
@@ -5788,7 +5417,8 @@
 	}
 }
 
-.bettingBorad {
+//右列即時注單資訊
+.bettingBoard {
 	width: 95%;
     height: auto;
     overflow: hidden;
@@ -5849,7 +5479,8 @@
 	}
 }
 
-.conversionBorad {
+//盤口對照表
+.conversionBoard {
 	width: 96%;
 	height: auto;
 	margin: 2% auto 0px;
@@ -5898,7 +5529,8 @@
 	}
 }
 
-.innerBorad {
+//投注窗小窗
+.innerBoard {
 	width: 100%;
 	height: auto;
 	border-collapse: collapse;
@@ -5933,6 +5565,103 @@
 			&:last-child {
 				border-left: solid 1px #ababab;
 				line-height: 18px;
+			}
+		}
+	}
+}
+
+//內頁img資訊
+.imgBoard {
+	width: 100%;
+	height: 100%;
+
+	tr {
+
+		td {
+			vertical-align: middle;
+			word-break: break-all;
+			color: #fff;
+			position: relative;
+
+			&:nth-of-type(1) {
+				width: 15%;
+				text-align: left;
+				padding-left: 20px;
+			}
+
+			&:nth-of-type(2) {
+				width: 30%;
+				text-align: right;
+				padding-right: 50px;
+			}
+
+			&:nth-of-type(3) {
+				width: 10%;
+			}
+
+			&:nth-of-type(4) {
+				width: 30%;
+				text-align: left;
+				padding-left: 50px;
+			}
+			
+			&:nth-of-type(5) {
+				width: 15%;
+				text-align: right;
+				padding-right: 20px;
+			}
+
+			.teamImg {
+				display: block;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0px;
+
+				&.twin {
+					left: 0px;
+				}
+			}
+
+			p {
+				line-height: 35px;
+			}
+
+			a {
+				display: inline-block;
+				width: 33px;
+				height: 30px;
+				background: url('../images/topfix_ic.png');
+				background-size: 200%;
+				position: relative;
+				overflow: hidden;
+				margin: 12px 5px 0px;
+
+				&:hover,&:active,&.active {
+					
+					&::before {
+						left: 50px;
+						transition: 0.3s all;
+					}
+				}
+
+				&:nth-of-type(1) {
+					background-position-x: 100%;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 20px;
+					height: 60px;
+					background: linear-gradient(to right, transparent, #fff, transparent);
+					transform: rotate(135deg);
+					top: -15px;
+					left: -40px;
+				}
 			}
 		}
 	}

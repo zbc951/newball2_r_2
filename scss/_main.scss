@@ -13,12 +13,8 @@ main {
         overflow: hidden;
         position: relative;
         //優惠用
-        &.discountborad {
+        &.discountBoard {
             width: 1170px;
-        }
-        //我的頁面用
-        &.mineboard {
-            width: 1125px;
         }
     }
 

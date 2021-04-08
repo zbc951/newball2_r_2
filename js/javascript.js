@@ -562,14 +562,14 @@ $(function(){
 
 //一般投注
 $(function(){
-    $('.playBorad button').click(function(){
+    $('.playBoard button').click(function(){
         $('.filter,.norbetting').addClass('display');
         $(this).addClass('active');
     })
 
     $('.norcancelbtn').click(function(){
         $('.norbetting,.filter').removeClass('display');
-        $('.playBorad button').removeClass('active');
+        $('.playBoard button').removeClass('active');
     })
 
     $('.decideBtn').click(function(){
@@ -579,7 +579,7 @@ $(function(){
 
     $('.checkCancelBtn').click(function(){
         $('.norbettingCheck,.filter').removeClass('display');
-        $('.playBorad button').removeClass('active');
+        $('.playBoard button').removeClass('active');
     })
 })
 
@@ -619,6 +619,7 @@ $(function(){
         $('.tableballBtn a').attr('href','./html/balls/tableball.html');
         $('.filter,.unLogin').css('display','none')
         $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
+        $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
     })
 
     $('.logoutBtn').click(function(){
@@ -908,26 +909,26 @@ $(function(){
     if(wWD == 1920) {
         $('.middle').css('width',(String(1270) + 'px'));
         $('.topfix,.hideboard').css('width',(String(1260) + 'px'));
-        $('.playBorad').removeClass('hide1 hide2 hide3');
+        $('.playBoard').removeClass('hide1 hide2 hide3');
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').removeClass('hide1');
+        $('.playBoard').removeClass('hide1');
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').addClass('hide1');
-        $('.playBorad').removeClass('hide2');
+        $('.playBoard').addClass('hide1');
+        $('.playBoard').removeClass('hide2');
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').addClass('hide1 hide2');
-        $('.playBorad').removeClass('hide3');
+        $('.playBoard').addClass('hide1 hide2');
+        $('.playBoard').removeClass('hide3');
     } else {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
         $('.topfix,.hideboard').css('width',(String(870) + 'px'));
-        $('.playBorad').addClass('hide1 hide2 hide3');
+        $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
     }
 
@@ -943,26 +944,26 @@ $(function(){
     if(wWD == 1920) {
         $('.middle').css('width',(String(1270) + 'px'));
         $('.topfix,.hideboard').css('width',(String(1260) + 'px'));
-        $('.playBorad').removeClass('hide1 hide2 hide3');
+        $('.playBoard').removeClass('hide1 hide2 hide3');
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').removeClass('hide1');
+        $('.playBoard').removeClass('hide1');
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').addClass('hide1');
-        $('.playBorad').removeClass('hide2');
+        $('.playBoard').addClass('hide1');
+        $('.playBoard').removeClass('hide2');
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
-        $('.playBorad').addClass('hide1 hide2');
-        $('.playBorad').removeClass('hide3');
+        $('.playBoard').addClass('hide1 hide2');
+        $('.playBoard').removeClass('hide3');
     } else {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
         $('.topfix,.hideboard').css('width',(String(870) + 'px'));
-        $('.playBorad').addClass('hide1 hide2 hide3');
+        $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
     }
 
@@ -979,11 +980,11 @@ $(function(){
 //disable鎖圖
 $(function(){
     var txt1 = "<p>text</p>";
-    if($('.playBorad button').hasClass('disable')) {
+    if($('.playBoard button').hasClass('disable')) {
         $('.disable').children('span').addClass('fas fa-lock');
         $('.disable').children('span').text("");
         $('.disable').append(txt1);
     }
 
-    $('.playBorad button').has('i').children('p').css('display','none');
+    $('.playBoard button').has('i').children('p').css('display','none');
 })

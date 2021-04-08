@@ -24,7 +24,12 @@
     }
 
     .mainBox {
+        display: none;
         margin-top: 70px;
+
+        &.display {
+            display: block;
+        }
     }
 
     //串關投注
@@ -240,6 +245,7 @@
             }
         }
     }
+
     //串關投注確認窗
     .bettingch {
         display: none;
@@ -449,20 +455,23 @@
             }
         }
     }
+
     //內頁
     .inner {
         display: none;
+
         &.display {
             display: block;
         }
+
         //上頂圖
         .topimg {
-            width: 885px;
-            height: 130px;
+            width: 1260px;
+            height: 185px;
             background: url('../images/inn_soc.png') no-repeat;
             background-size: 100%;
             position: fixed;
-            margin: -160px 0px 0px 10px;
+            margin-left: 10px;
             z-index: 6;
             &.base {
                 background: url('../images/inn_base.png') no-repeat;
@@ -524,132 +533,6 @@
                 background: url('../images/inn_tab.png') no-repeat;
                 background-size: 100%;
             }
-            //左字+右雙IC
-            .topword,.toplink {
-                width: 20%;
-                height: 100%;
-                float: left;
-                text-align: left;
-                p {
-                    color: #fff;
-                    width: 100%;
-                    margin: 30px 0px 0px 20px;
-                    font-size: 15px;
-                    &:last-child {
-                        margin-top: 10px;
-                    }
-                }
-                button {
-                    float: right;
-                    width: 33px;
-                    height: 30px;
-                    margin: 30px 20px 0px 0px;
-                    background: url('../images/topfix_ic.png');
-                    background-size: 200%;
-                    position: relative;
-                    overflow: hidden;
-                    &:last-child {
-                        margin-right: 10px;
-                        background-position-x: -33px;
-                    }
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        width: 20px;
-                        height: 60px;
-                        background: linear-gradient(to right,transparent,#fff,transparent);
-                        transform: rotate(135deg);
-                        top: -15px;
-                        left: -40px;
-                    }
-                    &:hover,&:active,&.active:before {
-                        left: 50px;
-                        transition: 0.3s left;
-                    }
-                }
-            }
-            //中間隊伍
-            .topteam {
-                width: 60%;
-                height: 100%;
-                float: left;
-                div {
-                    width: 33%;
-                    height: 100%;
-                    float: left;
-                    line-height: 10px;
-                    word-break: break-all;
-                    &:first-child {
-                        text-align: right;
-                    }
-                    &.team2 {
-                        text-align: left;
-                        span {
-                            float: left;
-                        }
-                        p {
-                            float: left;
-                            margin: 43px 0px 0px 10px;
-                        }
-                    }
-                    &.teammid {
-                        p {
-                            display: block;
-                            width: 100%;
-                            margin: 10px 0px;
-                            font-size: 18px;
-                            &:first-child {
-                                margin: 13px 0px 0px 0px;
-                                font-size: 15px;
-                            }
-                            &:last-child {
-                                margin-top: 5px;
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                    p {
-                        // display: inline;
-                        width: 64%;
-                        height: auto;
-                        color: #fff;
-                        font-size: 17px;
-                        float: right;
-                        margin: 43px 10px 0px 0px;
-                        line-height: 18px;
-                    }
-                    span {
-                        display: block;
-                        width: 50px;
-                        height: 35px;
-                        margin-top: 31px;
-                        background: url('../images/team_icon.png') no-repeat;
-                        background-size: 600%;
-                        float: right;
-                        &.team2 {
-                            background-position-x: -50px;
-                        }
-                        &.team3 {
-                            background-position-x: -100px;
-                        }
-                        &.team4 {
-                            background-position-x: -150px;
-                        }
-                        &.team5 {
-                            background-position-x: -200px;
-                        }
-                        &.team6 {
-                            background-position-x: -250px;
-                        }
-                    }
-                }
-            }
-        }
-        //table
-        table {
-            &:nth-of-type(1) {
-                margin-top: 160px;
-            }
         }
     }
 }
@@ -667,7 +550,6 @@
 
 //懸浮列
 .topfix {
-    display: none;
     width: calc(100% - 660px);
     height: 50px;
     border-radius: 3px;
@@ -677,16 +559,21 @@
     left: 280px;
     z-index: 6;
 
-    &.display {
-        display: block;
+    &.innerMode {
+        top: 178px;
     }
 
-    ul {
+    .nor {
+        display: none;
         float: left;
         width: 100%;
         height: 100%;
         line-height: 50px;
         text-align: left;
+
+        &.display {
+            display: block;
+        }
 
         i {
             color: #fff;
@@ -922,6 +809,89 @@
                 &:hover,&:active,&.active {
                     background: #fff;
                     color: #000;
+                }
+            }
+        }
+    }
+
+    .inn {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &.display {
+            display: block;
+        }
+
+        li {
+            float: left;
+            width: auto;
+            height: 50px;
+
+            &:nth-of-type(1) {
+                margin-left: 90px;
+            }
+
+            &:hover,&:active,&.active {
+                
+                button {
+                    border-color: #f39800;
+                }
+            }
+
+            button {
+                height: 50px;
+                background: transparent;
+                border-bottom: solid 3px transparent;
+                position: relative;
+                color: #fff;
+                padding: 0px 8px;
+                margin-left: 4px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: -2px;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 24px;
+                    background: #fff;
+                }
+            }
+        }
+
+        .back {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 6px 8px 8px 21px;
+            background: #535353;
+            color: #fff;
+            border: solid 1px #fff;
+            border-radius: 3px;
+            left: 15px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 6px;
+                border-style: solid;
+                border-color: transparent #fff;
+                border-width: 6px 10px 6px 0px;
+            }
+
+            &:hover,&:active,&.active {
+                color: #535353;
+                background: #fff;
+
+                &::before {
+                    border-color: transparent #535353;
                 }
             }
         }
