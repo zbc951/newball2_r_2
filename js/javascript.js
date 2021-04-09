@@ -86,24 +86,6 @@ $(function(){
         $('.bgsm').addClass('display');
     });
 });
-//內頁出入
-$(function(){
-    $('.inn_soc').click(function(){
-        $('.topfix,.new,.old,.bettingbar,.chleague,.complex').removeClass('display');
-        $('.innertopfix,.inner').addClass('display');
-        $('.hideboard').addClass('innerboard');
-        $('.newold,.timesort').removeClass('open')
-    });
-    $('.back').click(function(){
-        $('.topfix,.new,.complex').addClass('display');
-        $('.innertopfix,.inner').removeClass('display');
-        $('.hideboard').removeClass('innerboard');
-        $('.turnold').removeClass('active');
-        $('.turnnew').addClass('active');
-        $('.newbut').removeClass('un');
-        $('.oldbut').addClass('un');
-    });
-});
 //所有賽事
 $(function(){
     $('.allgame').click(function(){
@@ -786,6 +768,20 @@ $(function(){
 })
 
 //共用
+
+//內頁
+$(function(){
+    $('.innerBtn').click(function(){
+        $('.inner,.inn').addClass('display');
+        $('.topfix').addClass('innerMode')
+        $('.mainBox,.nor').removeClass('display');
+    });
+    $('.back').click(function(){
+        $('.inner,.inn').removeClass('display');
+        $('.topfix').removeClass('innerMode')
+        $('.mainBox,.nor').addClass('display');
+    });
+});
 
 //修改密碼窗
 $(function(){
