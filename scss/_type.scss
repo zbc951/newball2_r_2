@@ -471,70 +471,85 @@
         .topimg {
             width: 1260px;
             height: 130px;
-            background: url('../images/inn_soc.png') no-repeat top center;
+            background: url('../images/inn_soccer.png') no-repeat top center;
             background-size: cover;
             position: fixed;
             margin-left: 10px;
             z-index: 6;
-            &.base {
-                background: url('../images/inn_base.png') no-repeat;
-                background-size: 100%;
+
+            &.baseball {
+                background: url('../images/inn_baseball.png') no-repeat top center;
+                background-size: cover;
             }
-            &.bask {
-                background: url('../images/inn_bask.png') no-repeat;
-                background-size: 100%;
+
+            &.basketball {
+                background: url('../images/inn_basketball.png') no-repeat top center;
+                background-size: cover;
             }
+
             &.race {
-                background: url('../images/inn_race.png') no-repeat;
-                background-size: 100%;
+                background: url('../images/inn_basketball.png') no-repeat top center;
+                background-size: cover;
             }
+
             &.esp {
-                background: url('../images/inn_esp.png') no-repeat;
-                background-size: 100%;
+                background: url('../images/inn_esp.png') no-repeat top center;
+                background-size: cover;
             }
+
             &.stock {
-                background: url('../images/inn_stock.png') no-repeat;
-                background-size: 100%;
+                background: url('../images/inn_stock.png') no-repeat top center;
+                background-size: cover;
             }
-            &.lot {
-                background: url('../images/inn_lot.png') no-repeat;
-                background-size: 100%;
+
+            &.lotto {
+                background: url('../images/inn_lotto.png') no-repeat top center;
+                background-size: cover;
             }
-            &.ice {
-                background: url('../images/inn_ice.png') no-repeat;
-                background-size: 100%;
+
+            &.iceball {
+                background: url('../images/inn_iceball.png') no-repeat top center;
+                background-size: cover;
             }
-            &.football {
-                background: url('../images/inn_football.png') no-repeat;
-                background-size: 100%;
+
+            &.tennis {
+                background: url('../images/inn_tennis.png') no-repeat top center;
+                background-size: cover;
             }
-            &.ten {
-                background: url('../images/inn_ten.png') no-repeat;
-                background-size: 100%;
-            }
+
             &.snooker {
-                background: url('../images/inn_sno.png') no-repeat;
-                background-size: 100%;
+                background: url('../images/inn_snooker.png') no-repeat top center;
+                background-size: cover;
             }
-            &.vball {
-                background: url('../images/inn_vba.png') no-repeat;
-                background-size: 100%;
+
+            &.vball{
+                background: url('../images/inn_vball.png') no-repeat top center;
+                background-size: cover;
             }
-            &.racecar {
-                background: url('../images/inn_mot.png') no-repeat;
-                background-size: 100%;
+
+            &.racecar{
+                background: url('../images/inn_racecar.png') no-repeat top center;
+                background-size: cover;
             }
-            &.bad {
-                background: url('../images/inn_bad.png') no-repeat;
-                background-size: 100%;
+
+            &.badminton{
+                background: url('../images/inn_badminton.png') no-repeat top center;
+                background-size: cover;
             }
-            &.bso {
-                background: url('../images/inn_bso.png') no-repeat;
-                background-size: 100%;
+
+            &.beachball{
+                background: url('../images/inn_beachball.png') no-repeat top center;
+                background-size: cover;
             }
-            &.pp {
-                background: url('../images/inn_tab.png') no-repeat;
-                background-size: 100%;
+
+            &.football{
+                background: url('../images/inn_football.png') no-repeat top center;
+                background-size: cover;
+            }
+
+            &.tableball{
+                background: url('../images/inn_tableball.png') no-repeat top center;
+                background-size: cover;
             }
         }
     }
