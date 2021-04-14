@@ -459,6 +459,9 @@
     //內頁
     .inner {
         display: none;
+        float: left;
+        width: 100%;
+        height: auto;
 
         &.display {
             display: block;
@@ -467,9 +470,9 @@
         //上頂圖
         .topimg {
             width: 1260px;
-            height: 185px;
-            background: url('../images/inn_soc.png') no-repeat;
-            background-size: 100%;
+            height: 130px;
+            background: url('../images/inn_soc.png') no-repeat top center;
+            background-size: cover;
             position: fixed;
             margin-left: 10px;
             z-index: 6;
@@ -560,7 +563,7 @@
     z-index: 6;
 
     &.innerMode {
-        top: 178px;
+        top: 126px;
     }
 
     .nor {
@@ -580,14 +583,6 @@
             font-size: 18px;
             margin: 0px 6px 0px 12px;
             transform: translateY(2px);
-
-            &.fa-sync-alt {
-                position: absolute;
-                top: 14px;
-                right: -25px;
-                margin: 0px;
-                cursor: pointer;
-            }
         }
 
         svg {
@@ -635,16 +630,58 @@
                 padding: 5px 30px 4px 5px;
                 border: solid 1px #fff;
                 font-size: 12px;
+
+                option {
+
+                    span {
+                        color: #ffee00;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
             }
 
-            button {
-                width: 25px;
-                height: 25px;
-                background: #fff;
+            .clock {
                 position: absolute;
-                right: -40px;
+                background: #2a2a2a;
+                top: 50%;
+                right: -36px;
+                width: 30px;
+                height: 23px;
+                transform: translateY(-50%);
+                line-height: 24px;
+                text-align: center;
+                border-radius: 3px;
+                color: #ffee00;
+            }
+
+            .reBtn {
+                position: absolute;
+                right: -72px;
                 top: 50%;
                 transform: translateY(-50%);
+                width: 28px;
+                height: 28px;
+                border: solid 1px #fff;
+                border-radius: 20px;
+                cursor: pointer;
+
+                i {
+                    font-size: 14px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    margin: 0px;
+                }
+
+                &:hover,&:active,&.active {
+                    background: #fff;
+
+                    i {
+                        color: #000;
+                    }
+                }
             }
         }
 
@@ -836,14 +873,14 @@
             &:hover,&:active,&.active {
                 
                 button {
-                    border-color: #f39800;
+                    border-color: #59a936;
                 }
             }
 
             button {
                 height: 50px;
                 background: transparent;
-                border-bottom: solid 3px transparent;
+                border-bottom: solid 4px transparent;
                 position: relative;
                 color: #fff;
                 padding: 0px 8px;

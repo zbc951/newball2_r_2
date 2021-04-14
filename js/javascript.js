@@ -906,28 +906,28 @@ $(document).ready(function () {
 //middle全版型自動寬度
 $(function(){
     var wWD = window.innerWidth;
-    if(wWD == 1920) {
-        $('.middle').css('width',(String(1270) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(1260) + 'px'));
+    if(wWD >= 1920) {
+        $('.middle').css('width',(String(wWD - 650) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1 hide2 hide3');
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1');
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1');
         $('.playBoard').removeClass('hide2');
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1 hide2');
         $('.playBoard').removeClass('hide3');
-    } else {
+    } else if(wWD < 1560) {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(870) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
         $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
     }
@@ -941,28 +941,28 @@ $(function(){
     }
     $(window).resize(function(){
         var wWD = window.innerWidth;
-    if(wWD == 1920) {
-        $('.middle').css('width',(String(1270) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(1260) + 'px'));
+    if(wWD >= 1920) {
+        $('.middle').css('width',(String(wWD - 650) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1 hide2 hide3');
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1');
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1');
         $('.playBoard').removeClass('hide2');
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(wWD - 660) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1 hide2');
         $('.playBoard').removeClass('hide3');
-    } else {
+    } else if(wWD < 1560) {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
-        $('.topfix,.hideboard').css('width',(String(870) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
         $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
     }

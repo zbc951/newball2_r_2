@@ -155,7 +155,7 @@ header article ul li {
 header article ul li a {
   display: block;
   padding: 0px 10px;
-  height: 80px;
+  height: 76px;
   line-height: 85px;
   color: #fff;
   border-bottom: solid 5px transparent;
@@ -850,6 +850,10 @@ main .bg.index {
 .right .room .livelist ul li.active {
   height: auto;
   background: #dadada;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 .right .room .livelist ul li.active::before {
   transform: rotate(90deg);
@@ -1032,8 +1036,6 @@ main .bg.index {
 }
 .playBoard tr td {
   font-size: 12px;
-  border-bottom: solid 1px #ababab;
-  border-bottom-width: 0px;
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
@@ -1055,7 +1057,7 @@ main .bg.index {
 }
 .playBoard tr td button {
   background: #767676;
-  color: #fff;
+  color: #d9de06;
   border-radius: 3px;
   position: relative;
   word-break: break-all;
@@ -1163,7 +1165,7 @@ main .bg.index {
   padding: 0px;
 }
 .playBoard.tType1.hide1 tr td:nth-of-type(1) {
-  width: 50%;
+  width: 55%;
 }
 .playBoard.tType1.hide2 tr td:nth-of-type(1) {
   width: 45%;
@@ -1195,11 +1197,14 @@ main .bg.index {
 .playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType1_2.hide1 tr td:nth-of-type(1) {
+  width: 30%;
+}
 .playBoard.tType1_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType1_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
 }
 .playBoard.tType1_2.hide2 tr td:nth-of-type(1) {
-  width: 28%;
+  width: 34%;
 }
 .playBoard.tType1_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType1_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -1313,6 +1318,9 @@ main .bg.index {
 .playBoard.tType2_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType2_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
 }
+.playBoard.tType2_2.hide2 tr td:nth-of-type(1) {
+  width: 29.5%;
+}
 .playBoard.tType2_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType2_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
 }
@@ -1425,8 +1433,14 @@ main .bg.index {
 .playBoard.tType3_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType3_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType3_2.hide1 tr td:nth-of-type(1) {
+  width: 30%;
+}
 .playBoard.tType3_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType3_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
+}
+.playBoard.tType3_2.hide2 tr td:nth-of-type(1) {
+  width: 34%;
 }
 .playBoard.tType3_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType3_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -1569,8 +1583,14 @@ main .bg.index {
 .playBoard.tType5_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType5_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType5_2.hide1 tr td:nth-of-type(1) {
+  width: 24%;
+}
 .playBoard.tType5_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType5_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
+}
+.playBoard.tType5_2.hide2 tr td:nth-of-type(1) {
+  width: 30%;
 }
 .playBoard.tType5_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType5_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -1797,6 +1817,9 @@ main .bg.index {
 .playBoard.tType8_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType8_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
 }
+.playBoard.tType8_2.hide2 tr td:nth-of-type(1) {
+  width: 26%;
+}
 .playBoard.tType8_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType8_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
 }
@@ -1876,8 +1899,14 @@ main .bg.index {
 .playBoard.tType9_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType9_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType9_2.hide1 tr td:nth-of-type(1) {
+  width: 34%;
+}
 .playBoard.tType9_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType9_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
+}
+.playBoard.tType9_2.hide2 tr td:nth-of-type(1) {
+  width: 38%;
 }
 .playBoard.tType9_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType9_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -1938,8 +1967,14 @@ main .bg.index {
 .playBoard.tType10_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType10_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType10_2.hide1 td:nth-of-type(1) {
+  width: 20%;
+}
 .playBoard.tType10_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType10_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
+}
+.playBoard.tType10_2.hide2 tr td:nth-of-type(1) {
+  width: 24%;
 }
 .playBoard.tType10_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType10_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -2070,8 +2105,14 @@ main .bg.index {
 .playBoard.tType12_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType12_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
 }
+.playBoard.tType12_2.hide1 tr td:nth-of-type(1) {
+  width: 24%;
+}
 .playBoard.tType12_2.hide2 tr th:nth-last-of-type(3), .playBoard.tType12_2.hide2 tr td:nth-last-of-type(3) {
   display: none;
+}
+.playBoard.tType12_2.hide2 tr td:nth-of-type(1) {
+  width: 30%;
 }
 .playBoard.tType12_2.hide3 tr th:nth-last-of-type(4), .playBoard.tType12_2.hide3 tr td:nth-last-of-type(4) {
   display: none;
@@ -3956,34 +3997,34 @@ main .bg.index {
   background: #535353;
 }
 
-.innerBoard {
+.bettingRemind {
   width: 100%;
   height: auto;
   border-collapse: collapse;
   background: #4d4d4d;
 }
-.innerBoard tr th {
+.bettingRemind tr th {
   padding: 7px 15px;
   color: #ffffff;
   font-size: 13px;
   border-bottom: solid 1px #ababab;
   text-align: left;
 }
-.innerBoard tr td {
+.bettingRemind tr td {
   width: 50%;
   vertical-align: middle;
   color: #fff;
   padding: 15px;
   font-size: 13px;
 }
-.innerBoard tr td .remind {
+.bettingRemind tr td .remind {
   float: right;
 }
-.innerBoard tr td .remind .odds {
+.bettingRemind tr td .remind .odds {
   margin-left: 5px;
   color: #ff0000;
 }
-.innerBoard tr td:last-child {
+.bettingRemind tr td:last-child {
   border-left: solid 1px #ababab;
   line-height: 18px;
 }
@@ -3999,22 +4040,25 @@ main .bg.index {
   position: relative;
 }
 .imgBoard tr td:nth-of-type(1) {
-  width: 15%;
+  width: 17%;
   text-align: left;
   padding-left: 20px;
+  font-size: 14px;
 }
 .imgBoard tr td:nth-of-type(2) {
-  width: 30%;
+  width: 29%;
   text-align: right;
   padding-right: 50px;
+  font-size: 15px;
 }
 .imgBoard tr td:nth-of-type(3) {
   width: 10%;
 }
 .imgBoard tr td:nth-of-type(4) {
-  width: 30%;
+  width: 29%;
   text-align: left;
   padding-left: 50px;
+  font-size: 15px;
 }
 .imgBoard tr td:nth-of-type(5) {
   width: 15%;
@@ -4063,6 +4107,74 @@ main .bg.index {
   transform: rotate(135deg);
   top: -15px;
   left: -40px;
+}
+
+.innerBoard {
+  float: left;
+  width: calc(100% - 10px);
+  height: auto;
+  border-collapse: collapse;
+  border-radius: 3px;
+  margin: 187px 0px 20px 10px;
+  background: #4d4d4d;
+}
+.innerBoard tr:hover, .innerBoard tr:active, .innerBoard tr.active {
+  background: #949494;
+}
+.innerBoard tr th {
+  width: 100%;
+  padding: 5px 8px;
+  color: #fff;
+  border-bottom: solid 1px #808080;
+  font-size: 14px;
+  text-align: left;
+  background: #4d4d4d;
+}
+.innerBoard tr td {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 5px 0px;
+  border-bottom: solid 1px #808080;
+  flex-wrap: wrap;
+}
+.innerBoard tr td.two button {
+  width: 49.5%;
+}
+.innerBoard tr td.three button {
+  width: 32.5%;
+}
+.innerBoard tr td.four button {
+  width: 24.5%;
+}
+.innerBoard tr td.four button.longTwo {
+  width: 49.5%;
+}
+.innerBoard tr td.eight button {
+  width: 12%;
+}
+.innerBoard tr td button {
+  border-radius: 3px;
+  border: none;
+  height: auto;
+  padding: 8px;
+  background: #767676;
+  font-size: 14px;
+  color: #d9de06;
+  margin-bottom: 8px;
+}
+.innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
+  background: #dadada;
+  color: #333333;
+}
+.innerBoard tr td button.title {
+  background: transparent;
+  pointer-events: none;
+  color: #fff;
+}
+.innerBoard tr td button .name {
+  font-size: 12px;
+  padding-right: 20px;
+  color: #fff;
 }
 
 .middle {
@@ -4509,15 +4621,18 @@ main .bg.index {
 }
 .middle .inner {
   display: none;
+  float: left;
+  width: 100%;
+  height: auto;
 }
 .middle .inner.display {
   display: block;
 }
 .middle .inner .topimg {
   width: 1260px;
-  height: 185px;
-  background: url("../images/inn_soc.png") no-repeat;
-  background-size: 100%;
+  height: 130px;
+  background: url("../images/inn_soc.png") no-repeat top center;
+  background-size: cover;
   position: fixed;
   margin-left: 10px;
   z-index: 6;
@@ -4604,7 +4719,7 @@ main .bg.index {
   z-index: 6;
 }
 .topfix.innerMode {
-  top: 178px;
+  top: 126px;
 }
 .topfix .nor {
   display: none;
@@ -4622,13 +4737,6 @@ main .bg.index {
   font-size: 18px;
   margin: 0px 6px 0px 12px;
   transform: translateY(2px);
-}
-.topfix .nor i.fa-sync-alt {
-  position: absolute;
-  top: 14px;
-  right: -25px;
-  margin: 0px;
-  cursor: pointer;
 }
 .topfix .nor svg {
   width: 18px;
@@ -4671,14 +4779,48 @@ main .bg.index {
   border: solid 1px #fff;
   font-size: 12px;
 }
-.topfix .nor .reWeb button {
-  width: 25px;
-  height: 25px;
-  background: #fff;
+.topfix .nor .reWeb select option span {
+  color: #ffee00;
+  font-size: 14px;
+  font-weight: bold;
+}
+.topfix .nor .reWeb .clock {
   position: absolute;
-  right: -40px;
+  background: #2a2a2a;
+  top: 50%;
+  right: -36px;
+  width: 30px;
+  height: 23px;
+  transform: translateY(-50%);
+  line-height: 24px;
+  text-align: center;
+  border-radius: 3px;
+  color: #ffee00;
+}
+.topfix .nor .reWeb .reBtn {
+  position: absolute;
+  right: -72px;
   top: 50%;
   transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.topfix .nor .reWeb .reBtn i {
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+}
+.topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
+  background: #fff;
+}
+.topfix .nor .reWeb .reBtn:hover i, .topfix .nor .reWeb .reBtn:active i, .topfix .nor .reWeb .reBtn.active i {
+  color: #000;
 }
 .topfix .nor .kind, .topfix .nor .sort, .topfix .nor .chooseLeague {
   float: right;
@@ -4835,12 +4977,12 @@ main .bg.index {
   margin-left: 90px;
 }
 .topfix .inn li:hover button, .topfix .inn li:active button, .topfix .inn li.active button {
-  border-color: #f39800;
+  border-color: #59a936;
 }
 .topfix .inn li button {
   height: 50px;
   background: transparent;
-  border-bottom: solid 3px transparent;
+  border-bottom: solid 4px transparent;
   position: relative;
   color: #fff;
   padding: 0px 8px;

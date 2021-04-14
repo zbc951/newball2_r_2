@@ -100,8 +100,6 @@
       	}
 		td {
 			font-size: 12px;
-			border-bottom: solid 1px #ababab;
-			border-bottom-width: 0px;
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
@@ -137,7 +135,7 @@
 			//行內按鈕
 			button {
 				background: #767676;
-				color: #fff;
+				color: #d9de06;
 				border-radius: 3px;
 				position: relative;
 				word-break: break-all;
@@ -291,7 +289,7 @@
 				td {
 
 					&:nth-of-type(1) {
-						width: 50%;
+						width: 55%;
 					}
 				}
 			}
@@ -365,6 +363,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
+					}
+				}
 			}
 		}
 
@@ -381,7 +386,7 @@
 				td {
 
 					&:nth-of-type(1) {
-						width: 28%;
+						width: 34%;
 					}
 				}
 			}
@@ -632,6 +637,13 @@
 				th,td {
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+				
+				td {
+
+					&:nth-of-type(1) {
+						width: 29.5%;
 					}
 				}
 			}
@@ -890,6 +902,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
+					}
+				}
 			}
 		}
 
@@ -900,6 +919,13 @@
 				th,td {
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 34%;
 					}
 				}
 			}
@@ -1217,6 +1243,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 24%;
+					}
+				}
 			}
 		}
 
@@ -1227,6 +1260,13 @@
 				th,td {
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
 					}
 				}
 			}
@@ -1761,6 +1801,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 26%;
+					}
+				}
 			}
 		}
 
@@ -1931,6 +1978,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 34%;
+					}
+				}
 			}
 		}
 
@@ -1941,6 +1995,13 @@
 				th,td {
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 38%;
 					}
 				}
 			}
@@ -2079,6 +2140,13 @@
 					}
 				}
 			}
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 20%;
+				}
+			}
 		}
 
 		&.hide2 {
@@ -2088,6 +2156,13 @@
 				th,td {
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 24%;
 					}
 				}
 			}
@@ -2386,6 +2461,13 @@
 						display: none;
 					}
 				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 24%;
+					}
+				}
 			}
 		}
 
@@ -2397,6 +2479,13 @@
 
 					&:nth-last-of-type(3) {
 						display: none;
+					}
+				}
+
+				td {
+
+					&:nth-of-type(1) {
+						width: 30%;
 					}
 				}
 			}
@@ -4549,7 +4638,7 @@
 }
 
 //投注窗小窗
-.innerBoard {
+.bettingRemind {
 	width: 100%;
 	height: auto;
 	border-collapse: collapse;
@@ -4603,15 +4692,17 @@
 			position: relative;
 
 			&:nth-of-type(1) {
-				width: 15%;
+				width: 17%;
 				text-align: left;
 				padding-left: 20px;
+				font-size: 14px;
 			}
 
 			&:nth-of-type(2) {
-				width: 30%;
+				width: 29%;
 				text-align: right;
 				padding-right: 50px;
+				font-size: 15px;
 			}
 
 			&:nth-of-type(3) {
@@ -4619,9 +4710,10 @@
 			}
 
 			&:nth-of-type(4) {
-				width: 30%;
+				width: 29%;
 				text-align: left;
 				padding-left: 50px;
+				font-size: 15px;
 			}
 			
 			&:nth-of-type(5) {
@@ -4680,6 +4772,102 @@
 					transform: rotate(135deg);
 					top: -15px;
 					left: -40px;
+				}
+			}
+		}
+	}
+}
+
+//內頁table
+.innerBoard {
+	float: left;
+	width: calc(100% - 10px);
+    height: auto;
+    border-collapse: collapse;
+	border-radius: 3px;
+	margin: 187px 0px 20px 10px;
+	background: #4d4d4d;
+
+	tr {
+
+		&:hover,&:active,&.active {
+			background: #949494;
+		}
+
+		th {
+			width: 100%;
+			padding: 5px 8px;
+			color: #fff;
+			border-bottom: solid 1px #808080;
+			font-size: 14px;
+			text-align: left;
+			background: #4d4d4d;
+		}
+
+		td {
+			display: flex;
+			justify-content: space-around;
+			padding: 8px 5px 0px;
+			border-bottom: solid 1px #808080;
+			flex-wrap: wrap;
+
+			&.two {
+		
+				button {
+					width: 49.5%;
+				}
+			}
+
+			&.three {
+		
+				button {
+					width: 32.5%;
+				}
+			}
+
+			&.four {
+				
+				button {
+					width: 24.5%;
+
+					&.longTwo {
+						width: 49.5%;
+					}
+				}
+			}
+
+			&.eight {
+
+				button {
+					width: 12%;
+				}
+			}
+
+			button {
+				border-radius: 3px;
+				border: none;
+				height: auto;
+				padding: 8px;
+				background: #767676;
+				font-size: 14px;
+				color: #d9de06;
+				margin-bottom: 8px;
+
+				&:hover,&:active,&.active {
+					background: #dadada;
+					color: #333333;
+				}
+
+				&.title {
+					background: transparent;
+					pointer-events: none;
+					color: #fff;
+				}
+
+				.name {
+					font-size: 12px;
+					padding-right: 20px;
+					color: #fff;
 				}
 			}
 		}
