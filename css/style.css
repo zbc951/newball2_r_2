@@ -715,42 +715,43 @@ main .bg.index {
   font-size: 12px;
   text-align: left;
 }
-.right .liveWindow .leftTeam, .right .liveWindow .rightTeam {
+.right .liveWindow .teamWindow {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.right .liveWindow .teamWindow .leftTeam, .right .liveWindow .teamWindow .rightTeam {
   display: inline-block;
   width: 35%;
-  height: 50px;
+  height: auto;
   position: relative;
 }
-.right .liveWindow .leftTeam.leftTeam p, .right .liveWindow .rightTeam.leftTeam p {
+.right .liveWindow .teamWindow .leftTeam.leftTeam p, .right .liveWindow .teamWindow .rightTeam.leftTeam p {
   text-align: right;
-  right: 0px;
+  padding: 5px 0px 5px 5px;
 }
-.right .liveWindow .leftTeam.rightTeam p, .right .liveWindow .rightTeam.rightTeam p {
+.right .liveWindow .teamWindow .leftTeam.rightTeam p, .right .liveWindow .teamWindow .rightTeam.rightTeam p {
   text-align: left;
-  left: 0px;
+  padding: 5px 5px 5px 0px;
 }
-.right .liveWindow .leftTeam p, .right .liveWindow .rightTeam p {
+.right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
   font-size: 12px;
   color: #000;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 15px;
+  line-height: 20px;
 }
-.right .liveWindow .score {
+.right .liveWindow .teamWindow .score {
   display: inline-block;
   width: 25%;
-  height: 50px;
-  position: relative;
+  height: auto;
 }
-.right .liveWindow .score p {
+.right .liveWindow .teamWindow .score p {
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.right .liveWindow .score p span {
+.right .liveWindow .teamWindow .score p span {
   color: #fff;
   font-size: 12px;
 }
@@ -5279,14 +5280,14 @@ main .bg.index {
   width: 100%;
   height: 54px;
   line-height: 54px;
-  padding-left: 50px;
+  padding-left: 30px;
   font-size: 14px;
 }
-.controlBox .innerBox1 .longBox button {
+.controlBox .innerBox1 .longBox input {
   text-align: right;
   background: #535353;
   border-radius: 3px;
-  width: 80px;
+  width: 67px;
   height: 30px;
   padding-right: 10px;
   font-size: 16px;
@@ -5294,10 +5295,10 @@ main .bg.index {
   margin-right: 4px;
   border: solid 1px transparent;
 }
-.controlBox .innerBox1 .longBox button:nth-of-type(1) {
+.controlBox .innerBox1 .longBox input:nth-of-type(1) {
   margin-left: 20px;
 }
-.controlBox .innerBox1 .longBox button:hover, .controlBox .innerBox1 .longBox button:active, .controlBox .innerBox1 .longBox button.active {
+.controlBox .innerBox1 .longBox input:hover, .controlBox .innerBox1 .longBox input:active, .controlBox .innerBox1 .longBox input.active {
   background: #353535;
   border-color: #fff;
 }

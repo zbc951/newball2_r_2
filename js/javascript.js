@@ -476,7 +476,7 @@ $(function(){
     });
     //直播賽事選單開關
     $('.livelist li').click(function(){
-        $(this).addClass('active');
+        $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
     })
 })
@@ -532,6 +532,10 @@ $(function(){
     $('.cancelBtn').click(function(){
         $('.filter').removeClass('display');
         $('.controlBox').removeClass('display');
+    })
+    $('.longBox input').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
     })
 })
 
