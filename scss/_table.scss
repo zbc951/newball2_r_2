@@ -2943,106 +2943,6 @@
 			}
 		}
 	}
-	//內頁
-	&.tinn {
-		border-radius: 10px;
-		margin: 0px auto 20px;
-		&:last-child {
-			margin-bottom: 80px;
-		}
-		tr {
-			&.cell3 {
-				td {
-					width: 33%;
-					button {
-						span {
-							margin-left: 100px;
-						}
-					}
-				}
-			}
-			&.cell8 {
-				td {
-					width: 12.5%;
-					button {
-						span {
-							margin-left: 15px;
-						}
-					}
-				}
-			}
-			&.cell6 {
-				td {
-					width: 15%;
-					button {
-						span {
-							margin-left: 15px;
-						}
-					}
-				}
-			}
-			&.cell4 {
-				td {
-					width: 25%;
-					button {
-						span {
-							margin-left: 30px;
-						}
-					}
-				}
-			}
-			&.cell2 {
-				td {
-					width: 50%;
-					button {
-						span {
-							margin-left: 120px;
-						}
-					}
-				}
-			}
-			td {
-				border: none;
-				font-size: 15px;
-				padding: 5px 0px;
-				&:first-child {
-					padding-left: 8px;
-				}
-				&:last-child {
-					padding-right: 8px;
-				}
-				button {
-					width: 98%;
-					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
-					background-color: #ebecf7;
-					font-size: 15px;
-					/*for IE 9*/
-					@media all and (min-width:0\0) and (min-resolution:.001dpcm){
-						padding: 5px 0px;
-					}
-					/*for IE*/
-					@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-						padding: 5px 0px;
-					}
-					&:hover,&:active,&.active {
-						background: #3654ff;
-						color: #fff;
-						span {
-							color: #fff;
-						}
-					}
-					&.disable {
-						pointer-events: none;
-						background: #eeeded;
-						border: none;
-						span {
-							color: #000;
-						}
-					}
-				}
-			}
-		}
-	}
 	//多版table
 	&.tperson {
 		width: 850px;
@@ -4869,6 +4769,169 @@
 					padding-right: 20px;
 					color: #fff;
 				}
+			}
+		}
+	}
+}
+
+//我的頁面用
+.minetable {
+	width: calc(100% - 15px);
+    height: auto;
+    border-collapse: collapse;
+	border-radius: 3px;
+	margin: 0px 0px 10px 10px;
+	background: #4d4d4d;
+
+	tr {
+		text-align: center;
+
+		th {
+			color: #fff;
+			font-size: 12px;
+			padding: 8px 0px 7px;
+			vertical-align: middle;
+			background: #3d3d3d;
+			border-bottom: solid 1px #ababab;
+
+			//字靠左
+			&.tLeft {
+				text-align: left;
+				padding: 8px 10px 7px;
+			}
+		}
+
+		td {
+			position: relative;
+			vertical-align: middle;
+		}
+	}
+
+	//個人資料-基本資料
+	&.infor {
+		
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 12%;
+				}
+
+				&:nth-of-type(2) {
+					width: 88%;
+				}
+
+				//大頭貼
+				.sticker {
+					width: 79px;
+					height: 81px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					background: url('../images/avatar_big.png') no-repeat;
+					background-size: 100%;
+
+					&::before {
+						content: "";
+						width: 30px;
+						height: 30px;
+						position: absolute;
+						background: url('../images/edit.png') no-repeat;
+						right: 0px;
+						bottom: 0px;
+						cursor: pointer;
+					}
+				}
+
+				//外圍框線
+				.mainWindow {
+					width: 98%;
+					height: 100%;
+					border: solid 1px #ababab;
+					border-radius: 5px;
+					box-sizing: border-box;
+					margin: 25px 0px 15px;
+					font-size: 0px;
+
+					div {
+						display: inline-block;
+						width: 50%;
+						height: auto;
+						text-align: left;
+						padding: 12px 0px 12px 18px;
+						box-sizing: border-box;
+
+						p {
+							color: #fff;
+							font-size: 14px;
+							position: relative;
+
+							span {
+								display: inline-block;
+
+								&:nth-of-type(1) {
+									width: 25%;
+									height: auto;
+								}
+
+								&:nth-of-type(2) {
+									width: 60%;
+									color: #ea9700;
+									font-size: 12px;
+								}
+							}
+
+							button {
+								border: solid 1px #ababab;
+								background: transparent;
+								padding: 5px 8px;
+								color: #fff;
+								border-radius: 3px;
+
+								&:hover,&:active,&.active {
+									background: #fff;
+									color: #ababab;
+								}
+							}
+						}
+					}
+				}
+
+				//提醒
+				.remind {
+					width: 98.3%;
+					height: auto;
+					text-align: right;
+					padding-bottom: 15px;
+					color: #fff;
+					font-size: 12px;
+
+					a {
+						color: #1bc100;
+						padding-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	//個人資料-投注限額
+	&.bettingLimit {
+		float: left;
+		width: 49%;
+
+		tr {
+			
+			&:nth-of-type(2n) {
+				background: #656565;
+			}
+
+			td {
+				width: 33.3%;
+				padding: 10px 0px;
+				font-size: 12px;
+				color: #fff;
 			}
 		}
 	}

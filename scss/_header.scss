@@ -6,11 +6,6 @@ header {
     background: #505050;
     position: relative;
     z-index: 10;
-
-    //首頁縮拉
-    &.index {
-        min-width: 1160px;
-    }
     
     //上列
     .top {

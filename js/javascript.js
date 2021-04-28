@@ -460,27 +460,8 @@ $(function(){
     })
 })
 
-//right房間切換
-$(function(){
-    $('.liveBtn').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active')
-        $('.livelist').addClass('open');
-        $('.chatroom').removeClass('open');
-    });
-    $('.StatusBtn').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active')
-        $('.chatroom').addClass('open');
-        $('.livelist').removeClass('open');
-    });
-    //直播賽事選單開關
-    $('.livelist li').click(function(){
-        $(this).toggleClass('active');
-        $(this).siblings().removeClass('active');
-    })
-})
 
+    //上段
 //球頭換算表
 $(function(){
     $('.conversionBtn').click(function(){
@@ -539,36 +520,7 @@ $(function(){
     })
 })
 
-//選擇聯盟
-$(function(){
-    $('.chooseLeague span').click(function(){
-        $('.chleague').toggleClass('display');
-    })
-})
-
-//一般投注
-$(function(){
-    $('.playBoard button').click(function(){
-        $('.filter,.norbetting').addClass('display');
-        $(this).addClass('active');
-    })
-
-    $('.norcancelbtn').click(function(){
-        $('.norbetting,.filter').removeClass('display');
-        $('.playBoard button').removeClass('active');
-    })
-
-    $('.decideBtn').click(function(){
-        $('.norbetting').removeClass('display');
-        $('.norbettingCheck').addClass('display');
-    })
-
-    $('.checkCancelBtn').click(function(){
-        $('.norbettingCheck,.filter').removeClass('display');
-        $('.playBoard button').removeClass('active');
-    })
-})
-
+    //左側
 //左列效果
 $(function(){
     $('.left li').click(function(){
@@ -582,65 +534,25 @@ $(function(){
     })
 })
 
-//登入登出+註冊切換
+    //右側
+//right房間切換
 $(function(){
-    $('.loginBtn').click(function(){
-        $('.logged').removeClass('display');
-        $('.loggedIn').addClass('display');
-        $('.soccerBtn a').attr('href','./html/balls/soccer.html');
-        $('.baseballBtn a').attr('href','./html/balls/baseball.html');
-        $('.basketballBtn a').attr('href','./html/balls/basketball.html');
-        $('.raceBtn a').attr('href','./html/balls/race.html');
-        $('.espBtn a').attr('href','./html/balls/esp.html');
-        $('.stockBtn a').attr('href','./html/balls/stock.html');
-        $('.lottoBtn a').attr('href','./html/balls/lotto.html');
-        $('.iceballBtn a').attr('href','./html/balls/iceball.html');
-        $('.tennisBtn a').attr('href','./html/balls/tennis.html');
-        $('.snookerBtn a').attr('href','./html/balls/snooker.html');
-        $('.vballBtn a').attr('href','./html/balls/vball.html');
-        $('.racecarBtn a').attr('href','./html/balls/racecar.html');
-        $('.badmintonBtn a').attr('href','./html/balls/badminton.html');
-        $('.beachballBtn a').attr('href','./html/balls/beachball.html');
-        $('.footballBtn a').attr('href','./html/balls/football.html');
-        $('.tableballBtn a').attr('href','./html/balls/tableball.html');
-        $('.filter,.unLogin').css('display','none')
-        $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
-        $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
-    })
-
-    $('.logoutBtn').click(function(){
-        $('.logged').addClass('display');
-        $('.loggedIn').removeClass('display');
-    })
-
-    $('.signupBtn').click(function(){
-        $('.signupWindow,.filter').addClass('display');
-    })
-
-    $('.signupbar button,.signupbox button:nth-of-type(1)').click(function(){
-        $('.signupWindow,.filter').removeClass('display');
-    })
-
-    $('.cantUse').click(function(){
-        $('.filter,.unLogin').addClass('display');
-    })
-
-    $('.topBar button,.remindBox button').click(function(){
-        $('.filter,.unLogin').removeClass('display');
-    })
-})
-
-//我的最愛切換
-$(function(){
-    $('.love').click(function(){
+    $('.liveBtn').click(function(){
         $(this).addClass('active');
-        $(this).closest('table').addClass('haveLove');
-        $(this).closest('tr').addClass('myLove');
-        if(window.location.href.indexOf("index") >= 0 ){
-            $('.haveLove tr:nth-of-type(1),.haveLove tr:nth-of-type(2)').addClass('myLove')
-        } else {
-            $('.haveLove tr:nth-of-type(1)').addClass('myLove')
-        }
+        $(this).siblings().removeClass('active')
+        $('.livelist').addClass('open');
+        $('.chatroom').removeClass('open');
+    });
+    $('.StatusBtn').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active')
+        $('.chatroom').addClass('open');
+        $('.livelist').removeClass('open');
+    });
+    //直播賽事選單開關
+    $('.livelist li').click(function(){
+        $(this).toggleClass('active');
+        $(this).siblings().removeClass('active');
     })
 })
 
@@ -677,6 +589,7 @@ $(function(){
     })
 });
 
+    //首頁
 //首頁時間列
 $(function(){
     $('.timeSelect .date').click(function(){
@@ -771,7 +684,109 @@ $(function(){
     })
 })
 
-//共用
+//登入登出+註冊切換
+$(function(){
+    $('.loginBtn').click(function(){
+        $('.logged').removeClass('display');
+        $('.loggedIn').addClass('display');
+        $('.soccerBtn a').attr('href','./html/balls/soccer.html');
+        $('.baseballBtn a').attr('href','./html/balls/baseball.html');
+        $('.basketballBtn a').attr('href','./html/balls/basketball.html');
+        $('.raceBtn a').attr('href','./html/balls/race.html');
+        $('.espBtn a').attr('href','./html/balls/esp.html');
+        $('.stockBtn a').attr('href','./html/balls/stock.html');
+        $('.lottoBtn a').attr('href','./html/balls/lotto.html');
+        $('.iceballBtn a').attr('href','./html/balls/iceball.html');
+        $('.tennisBtn a').attr('href','./html/balls/tennis.html');
+        $('.snookerBtn a').attr('href','./html/balls/snooker.html');
+        $('.vballBtn a').attr('href','./html/balls/vball.html');
+        $('.racecarBtn a').attr('href','./html/balls/racecar.html');
+        $('.badmintonBtn a').attr('href','./html/balls/badminton.html');
+        $('.beachballBtn a').attr('href','./html/balls/beachball.html');
+        $('.footballBtn a').attr('href','./html/balls/football.html');
+        $('.tableballBtn a').attr('href','./html/balls/tableball.html');
+        $('.filter,.unLogin').css('display','none')
+        $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
+        $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
+    })
+
+    $('.logoutBtn').click(function(){
+        $('.logged').addClass('display');
+        $('.loggedIn').removeClass('display');
+    })
+
+    $('.signupBtn').click(function(){
+        $('.signupWindow,.filter').addClass('display');
+    })
+
+    $('.signupbar button,.signupbox button:nth-of-type(1)').click(function(){
+        $('.signupWindow,.filter').removeClass('display');
+    })
+
+    $('.cantUse').click(function(){
+        $('.filter,.unLogin').addClass('display');
+    })
+
+    $('.topBar button,.remindBox button').click(function(){
+        $('.filter,.unLogin').removeClass('display');
+    })
+})
+
+    //賽事比分頁
+//選擇聯盟
+$(function(){
+    $('.chooseLeague span').click(function(){
+        $('.chleague').toggleClass('display');
+    })
+})
+
+//一般投注
+$(function(){
+    $('.playBoard button').click(function(){
+        $('.filter,.norbetting').addClass('display');
+        $(this).addClass('active');
+    })
+
+    $('.norcancelbtn').click(function(){
+        $('.norbetting,.filter').removeClass('display');
+        $('.playBoard button').removeClass('active');
+    })
+
+    $('.decideBtn').click(function(){
+        $('.norbetting').removeClass('display');
+        $('.norbettingCheck').addClass('display');
+    })
+
+    $('.checkCancelBtn').click(function(){
+        $('.norbettingCheck,.filter').removeClass('display');
+        $('.playBoard button').removeClass('active');
+    })
+})
+
+//我的最愛切換
+$(function(){
+    $('.love').click(function(){
+        $(this).addClass('active');
+        $(this).closest('table').addClass('haveLove');
+        $(this).closest('tr').addClass('myLove');
+        if(window.location.href.indexOf("index") >= 0 ){
+            $('.haveLove tr:nth-of-type(1),.haveLove tr:nth-of-type(2)').addClass('myLove')
+        } else {
+            $('.haveLove tr:nth-of-type(1)').addClass('myLove')
+        }
+    })
+})
+
+//修改密碼窗
+$(function(){
+    $('.changePassword').click(function(){
+        $('.filter,.changePasswordWindow').addClass('display');
+    });
+
+    $('.changePasswordWindow .topbar button,.changePasswordWindow .box .cancelBtn').click(function(){
+        $('.filter,.changePasswordWindow').removeClass('display');
+    });
+});
 
 //內頁
 $(function(){
@@ -787,17 +802,19 @@ $(function(){
     });
 });
 
-//修改密碼窗
+//disable鎖圖
 $(function(){
-    $('.changebut').click(function(){
-        $('.filter').addClass('on');
-        $('.passwordchange').addClass('display');
-    });
-    $('.changebar button').click(function(){
-        $('.filter').removeClass('on');
-        $('.passwordchange').removeClass('display');
-    });
-});
+    var txt1 = "<p>text</p>";
+    if($('.playBoard button').hasClass('disable')) {
+        $('.disable').children('span').addClass('fas fa-lock');
+        $('.disable').children('span').text("");
+        $('.disable').append(txt1);
+    }
+
+    $('.playBoard button').has('i').children('p').css('display','none');
+})
+
+//共用
 
 //radio單擊取消
 $(function(){
@@ -850,11 +867,11 @@ $(document).ready(function () {
 $(document).ready(function () {
     var middleNav = $(".myself");
     var wH = window.innerHeight;
-    middleNav.css("height", (String(wH - 260) + "px"));
+    middleNav.css("height", (String(wH - 110) + "px"));
     $(window).resize(function () {
         var middleNav = $(".myself");
         var wH = window.innerHeight;
-        middleNav.css("height", (String(wH - 260) + "px"));
+        middleNav.css("height", (String(wH - 110) + "px"));
     });
 });
 
@@ -932,59 +949,43 @@ $(function(){
         $('body').css('overflow-x','auto');
     }
 
-    if(wWD == 1920) {
-        $('.chleague').css('width',(String(1260) + 'px'));
-    } else if(wWD < 1920 && wWD > 1460) {
+    if(wWD > 1460) {
         $('.chleague').css('width',(String(wWD - 660) + 'px'));
     } else {
         $('.chleague').css('width',(String(870) + 'px'));
     }
     $(window).resize(function(){
         var wWD = window.innerWidth;
-    if(wWD >= 1920) {
-        $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
-        $('.playBoard').removeClass('hide1 hide2 hide3');
-    } else if(wWD < 1920 && wWD >= 1840) {
-        $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
-        $('.playBoard').removeClass('hide1');
-    } else if(wWD < 1840 && wWD >= 1700) {
-        $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
-        $('.playBoard').addClass('hide1');
-        $('.playBoard').removeClass('hide2');
-    } else if(wWD < 1700 && wWD >= 1560) {
-        $('.middle').css('width',(String(wWD - 650) + 'px'));
-        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
-        $('.playBoard').addClass('hide1 hide2');
-        $('.playBoard').removeClass('hide3');
-    } else if(wWD < 1560) {
-        $('.marqueeBox').css('width',(String(59) + '%'));
-        $('.middle').css('width',(String(880) + 'px'));
-        $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
-        $('.playBoard').addClass('hide1 hide2 hide3');
-        $('body').css('overflow-x','auto');
-    }
+        if(wWD >= 1920) {
+            $('.middle').css('width',(String(wWD - 650) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+            $('.playBoard').removeClass('hide1 hide2 hide3');
+        } else if(wWD < 1920 && wWD >= 1840) {
+            $('.middle').css('width',(String(wWD - 650) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+            $('.playBoard').removeClass('hide1');
+        } else if(wWD < 1840 && wWD >= 1700) {
+            $('.middle').css('width',(String(wWD - 650) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+            $('.playBoard').addClass('hide1');
+            $('.playBoard').removeClass('hide2');
+        } else if(wWD < 1700 && wWD >= 1560) {
+            $('.middle').css('width',(String(wWD - 650) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+            $('.playBoard').addClass('hide1 hide2');
+            $('.playBoard').removeClass('hide3');
+        } else if(wWD < 1560) {
+            $('.marqueeBox').css('width',(String(59) + '%'));
+            $('.middle').css('width',(String(880) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
+            $('.playBoard').addClass('hide1 hide2 hide3');
+            $('body').css('overflow-x','auto');
+        }
 
-        if(wWD == 1920) {
-            $('.chleague').css('width',(String(1260) + 'px'));
-        } else if(wWD < 1920 && wWD > 1460) {
+        if(wWD > 1560) {
             $('.chleague').css('width',(String(wWD - 660) + 'px'));
         } else {
             $('.chleague').css('width',(String(870) + 'px'));
         }
     })
-})
-
-//disable鎖圖
-$(function(){
-    var txt1 = "<p>text</p>";
-    if($('.playBoard button').hasClass('disable')) {
-        $('.disable').children('span').addClass('fas fa-lock');
-        $('.disable').children('span').text("");
-        $('.disable').append(txt1);
-    }
-
-    $('.playBoard button').has('i').children('p').css('display','none');
 })

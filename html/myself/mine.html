@@ -202,6 +202,23 @@
         </div>
         <button class="cancelBtn"></button>
     </div>
+    <!--修改密碼-->
+    <div class="changePasswordWindow">
+        <!--上字-->
+        <div class="topbar">
+            <span>修改密碼</span>
+            <button></button>
+        </div>
+        <!--主內容-->
+        <div class="box">
+            <div><span>新密碼</span><input type="password"></div>
+            <div><span>確認密碼</span><input type="password"></div>
+            <div>
+                <button class="cancelBtn">取消</button>
+                <button>確認</button>
+            </div>
+        </div>
+    </div>
     <!--header-->
     <header>
         <!--上時間列-->
@@ -225,12 +242,12 @@
             <div class="logo">LOGO</div>
             <!--上列表-->
             <ul class="headerlist">
-                <li><a href="./soccer.html" class="active">市場列表</a></li>
+                <li><a href="../balls/soccer.html">市場列表</a></li>
                 <li><a href="#">直播</a></li>
                 <li><a href="#">比賽結果</a></li>
                 <li><a href="#">盤口教程</a></li>
                 <li><a href="../../index.html">賽事比分</a></li>
-                <li><a href="#"><i class="fas fa-user-minus"></i>我的</a></li>
+                <li><a href="./mine.html" class="active"><i class="fas fa-user-minus"></i>我的</a></li>
             </ul>
             <!--登入前樣式-->
             <div class="logged">
@@ -273,7 +290,7 @@
     <!--main-->
     <main>
         <!--置中外包-->
-        <article>
+        <article class="mine">
             <!--左列-->
             <section class="left mine">
                 <!--上視窗-->
@@ -302,7 +319,7 @@
                 </div>
                 <!--選單-->
                 <ul>
-                    <li>
+                    <li class="active">
                         <a href="./mine.html" class="active">
                             <i class="fas fa-id-card"></i>
                             個人資料
@@ -382,341 +399,379 @@
             </section>
             <!--個人資料-->
             <section class="myself">
-                <!--懸浮列-->
-                <div class="minetopfix">
-                    <!--左段字-->
-                    <p class="leftword">個人資料</p>
-                    <!--中段字-->
-                    <div class="midword">
-                        <p>可信用額度<br><span class="wd_blue">199500</span></p>
-                    </div>
-                    <!--懸浮假bar-->
-                    <div class="fixbar">
-                        <p>帳戶名稱：<span class="wd_blue">user545</span></p>
-                        <div class="topline"></div>
-                        <p>會員名稱：<span class="wd_blue">user545</span></p>
-                        <div class="topline"></div>
-                        <p>結帳方式：<span class="wd_blue">週結</span></p>
-                        <button class="changebut">修改密碼</button>
-                    </div>
+                <div class="mineMainBox">
+                    <!--基本資料-->
+                    <table class="minetable infor">
+                        <tr>
+                            <th class="tLeft" colspan="2">基本資料</th>
+                        </tr>
+                        <tr>
+                            <td><div class="sticker"></div></td>
+                            <td>
+                                <div class="mainWindow">
+                                    <div>
+                                        <p>
+                                            <span>帳號名稱</span>
+                                            <span>user545</span>
+                                            <button>編輯</button>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>出生日期</span>
+                                            <span>2020-07-08</span>
+                                            <button class="nomar_r">編輯</button>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>真實姓名</span>
+                                            <span>林小明</span>
+                                            <button>編輯</button>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>手機號碼</span>
+                                            <span>020488995</span>
+                                            <button class="nomar_r">編輯</button>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>性別</span>
+                                            <span>未選擇</span>
+                                            <button>編輯</button>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>電子信箱</span>
+                                            <span>xiaominlin@gmail.com</span>
+                                            <button class="nomar_r">編輯</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p class="remind">為了維護您的隱私安全，信息在確認後將無法修改，如需幫助，請聯繫<a href="#">線上客服</a></p></td>
+                        </tr>
+                    </table>
+                    <!--足球投注限額-->
+                    <table class="minetable bettingLimit">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="3">足球投注限額</th>
+                        </tr>
+                        <tr>
+                            <th>玩法</th>
+                            <th>單場限額</th>
+                            <th>單注限額</th>
+                        </tr>
+                        <!--內容-->
+                        <tr>
+                            <td>一輸二贏</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>綜合過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>單雙</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>半全場</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>先得分</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>獨贏</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓分過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓球</td>
+                            <td>20萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地讓球</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地單雙</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地大小</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>總入球</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <!--籃球投注限額-->
+                    <table class="minetable bettingLimit">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="3">籃球投注限額</th>
+                        </tr>
+                        <tr>
+                            <th>玩法</th>
+                            <th>單場限額</th>
+                            <th>單注限額</th>
+                        </tr>
+                        <!--內容-->
+                        <tr>
+                            <td>一輸二贏</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>綜合過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>單雙</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>半全場</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>先得分</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>獨贏</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓分過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓球</td>
+                            <td>20萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地讓球</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地單雙</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地大小</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>總入球</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <!--棒球投注限額-->
+                    <table class="minetable bettingLimit">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="3">棒球投注限額</th>
+                        </tr>
+                        <tr>
+                            <th>玩法</th>
+                            <th>單場限額</th>
+                            <th>單注限額</th>
+                        </tr>
+                        <!--內容-->
+                        <tr>
+                            <td>一輸二贏</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>綜合過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>單雙</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>半全場</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>先得分</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>獨贏</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓分過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓球</td>
+                            <td>20萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地讓球</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地單雙</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地大小</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>總入球</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <!--美式足球投注限額-->
+                    <table class="minetable bettingLimit">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="3">籃球投注限額</th>
+                        </tr>
+                        <tr>
+                            <th>玩法</th>
+                            <th>單場限額</th>
+                            <th>單注限額</th>
+                        </tr>
+                        <!--內容-->
+                        <tr>
+                            <td>一輸二贏</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>綜合過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>單雙</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>半全場</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>先得分</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>獨贏</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓分過關</td>
+                            <td>30萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>讓球</td>
+                            <td>20萬</td>
+                            <td>10萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地讓球</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地單雙</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>走地大小</td>
+                            <td>30萬</td>
+                            <td>5萬</td>
+                        </tr>
+                        <tr>
+                            <td>總入球</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
                 </div>
-                <!--隱藏版-->
-                <div class="hideboard index mineboard"></div>
-                <!--基本資料-->
-                <table class="tperson person">
-                    <tr>
-                        <th class="tleft bg_gray" colspan="2">基本資料</th>
-                    </tr>
-                    <tr>
-                        <td><div class="sticker"></div></td>
-                        <td>
-                            <div class="tbox">
-                                <div class="norword"><p>帳號名稱</p><span>user545</span><button>編輯</button></div>
-                                <div class="norword"><p>出生日期</p><span>2020-07-08</span><button class="nomar_r">編輯</button></div>
-                                <div class="norword"><p>真實姓名</p><span>林小明</span><button>編輯</button></div>
-                                <div class="norword"><p>手機號碼</p><span>020488995</span><button class="nomar_r">編輯</button></div>
-                                <div class="norword"><p>性別</p><span>未選擇</span><button>編輯</button></div>
-                                <div class="norword"><p>電子信箱</p><span>xiaominlin@gmail.com</span><button class="nomar_r">編輯</button></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="npad"><p class="remind">為了維護您的隱私安全，信息在確認後將無法修改，如需幫助，請聯繫<a href="#">線上客服</a></p></td>
-                    </tr>
-                </table>
-                <!--足球投注限額-->
-                <table class="tsmall">
-                    <!--標題-->
-                    <tr>
-                        <th colspan="3" class="tleft bg_gray"><span class="soccer un"></span>足球投注限額</th>
-                    </tr>
-                    <tr class="bg_title_un">
-                        <th>玩法</th>
-                        <th>單場限額</th>
-                        <th>單注限額</th>
-                    </tr>
-                    <!--內容-->
-                    <tr>
-                        <td>一輸二贏</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>綜合過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>單雙</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>半全場</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>先得分</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>獨贏</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>讓分過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>讓球</td>
-                        <td>20萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地讓球</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>走地單雙</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地大小</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>總入球</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-                <!--籃球投注限額-->
-                <table class="tsmall un">
-                    <!--標題-->
-                    <tr>
-                        <th colspan="3" class="tleft bg_gray"><span class="basketball un"></span>籃球投注限額</th>
-                    </tr>
-                    <tr class="bg_title_un">
-                        <th>玩法</th>
-                        <th>單場限額</th>
-                        <th>單注限額</th>
-                    </tr>
-                    <!--內容-->
-                    <tr>
-                        <td>一輸二贏</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>綜合過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>單雙</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>半全場</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>先得分</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>獨贏</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>讓分過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>讓球</td>
-                        <td>20萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地讓球</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>走地單雙</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地大小</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>總入球</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-                <!--棒球投注限額-->
-                <table class="tsmall">
-                    <!--標題-->
-                    <tr>
-                        <th colspan="3" class="tleft bg_gray"><span class="baseball un"></span>棒球投注限額</th>
-                    </tr>
-                    <tr class="bg_title_un">
-                        <th>玩法</th>
-                        <th>單場限額</th>
-                        <th>單注限額</th>
-                    </tr>
-                    <!--內容-->
-                    <tr>
-                        <td>一輸二贏</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>綜合過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>單雙</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>半全場</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>先得分</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>獨贏</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>讓分過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>讓球</td>
-                        <td>20萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地讓球</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>走地單雙</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地大小</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>總入球</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-                <!--美式足球投注限額-->
-                <table class="tsmall un">
-                    <!--標題-->
-                    <tr>
-                        <th colspan="3" class="tleft bg_gray"><span class="football un"></span>籃球投注限額</th>
-                    </tr>
-                    <tr class="bg_title_un">
-                        <th>玩法</th>
-                        <th>單場限額</th>
-                        <th>單注限額</th>
-                    </tr>
-                    <!--內容-->
-                    <tr>
-                        <td>一輸二贏</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>綜合過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>單雙</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>半全場</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>先得分</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>獨贏</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>讓分過關</td>
-                        <td>30萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>讓球</td>
-                        <td>20萬</td>
-                        <td>10萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地讓球</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>走地單雙</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr>
-                        <td>走地大小</td>
-                        <td>30萬</td>
-                        <td>5萬</td>
-                    </tr>
-                    <tr class="bg_wdgray">
-                        <td>總入球</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
             </section>
+            <!--懸浮列-->
+            <div class="minetopfix">
+                <!--左段字-->
+                <p class="leftword">個人資料</p>
+                <!--中段字-->
+                <div class="midword">
+                    <p>可信用額度<br><span>199500</span></p>
+                </div>
+                <!--懸浮假bar-->
+                <div class="fixbar">
+                    <p>帳戶名稱：<span>user545</span></p>
+                    <div class="line"></div>
+                    <p>會員名稱：<span>user545</span></p>
+                    <div class="line"></div>
+                    <p>結帳方式：<span>週結</span></p>
+                    <button class="changePassword">修改密碼</button>
+                </div>
+            </div>
+            <!--隱藏版-->
+            <div class="mineHideBoard index mineboard"></div>
         </article>
         <!--懸浮側鍵-->
         <section class="fixside">
@@ -730,26 +785,26 @@
                 <button>確認</button>
                 <!--隊伍內容-->
                 <ul class="searchbox">
-                    <li class="box1">熱門賽事</li>
-                    <div class="sbox1">
+                    <li>熱門賽事</li>
+                    <div>
                         <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box2">埃及</li>
-                    <div class="sbox2">
+                    <li>埃及</li>
+                    <div>
                         <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box3">阿爾及利亞</li>
-                    <div class="sbox3">
+                    <li>阿爾及利亞</li>
+                    <div>
                         <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box4">巴林</li>
-                    <div class="sbox4">
+                    <li>巴林</li>
+                    <div>
                         <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box5">巴西</li>
-                    <div class="sbox5">
+                    <li>巴西</li>
+                    <div>
                         <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
                         <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
@@ -757,95 +812,31 @@
                     </div>
                 </ul>
             </div>
+
             <!--功能列-->
             <div class="fun">
-                <a href="#" class="deposit">
-                    <div class="fixsideimg img2"></div>
-                    <span class="wd_red">存款</span>
-                </a>
-                <a href="#" class="trans">
-                    <div class="fixsideimg img3"></div>
-                    <span>轉點</span>
-                </a>
-                <a href="#" class="dealrecord">
-                    <div class="fixsideimg img4"></div>
-                    <span>交易紀錄</span>
-                </a>
-                <a href="#" class="bettingrecord">
-                    <div class="fixsideimg img5"></div>
-                    <span>投注紀錄</span>
-                </a>
-                <a href="#" class="help">
-                    <div class="fixsideimg img6"></div>
-                    <span>幫助中心</span>
-                </a>
-                <a href="#" class="online">
-                    <div class="fixsideimg img7"></div>
-                    <span>在線客服</span>
-                </a>
-                <a href="#" class="app">
-                    <div class="fixsideimg img8"></div>
-                    <span>APP下載</span>
-                </a>
-            </div>
-        </section>
-        <!--懸浮側鍵RWD-->
-        <section class="fixside_rwd">
-            <!--搜尋列-->
-            <div class="search">
-                <div class="searchbut">
-                    <div class="fixsideimg img1"></div>
-                    <span>搜尋</span>
+                <!--漢堡選單-->
+                <div class="hamBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <input type="text" placeholder="搜尋賽事">
-                <button>確認</button>
-                <!--隊伍內容-->
-                <ul class="searchbox">
-                    <li class="box1">熱門賽事</li>
-                    <div class="sbox1">
-                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box2">埃及</li>
-                    <div class="sbox2">
-                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box3">阿爾及利亞</li>
-                    <div class="sbox3">
-                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box4">巴林</li>
-                    <div class="sbox4">
-                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box5">巴西</li>
-                    <div class="sbox5">
-                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                </ul>
-            </div>
-            <!--功能列-->
-            <div class="fun">
-                <button class="rwd_hambut">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="#" class="deposit">
+                <!-- <a href="#" class="deposit">
                     <div class="fixsideimg img2"></div>
                     <span class="wd_red">存款</span>
-                </a>
-                <a href="#" class="trans">
+                </a> -->
+                <!-- <a href="#" class="trans">
                     <div class="fixsideimg img3"></div>
                     <span>轉點</span>
-                </a>
-                <a href="#" class="dealrecord">
+                </a> -->
+                <!-- <a href="#" class="dealrecord">
                     <div class="fixsideimg img4"></div>
                     <span>交易紀錄</span>
+                </a> -->
+                <a href="#" class="bettingrenow">
+                    <div class="fixsideimg img9"></div>
+                    <span>即時投注</span>
+                </a>
                 <a href="#" class="bettingrecord">
                     <div class="fixsideimg img5"></div>
                     <span>投注紀錄</span>
@@ -858,35 +849,15 @@
                     <div class="fixsideimg img7"></div>
                     <span>在線客服</span>
                 </a>
-                <a href="#" class="app">
+                <!-- <a href="#" class="app">
                     <div class="fixsideimg img8"></div>
                     <span>APP下載</span>
-                </a>
+                </a> -->
             </div>
         </section>
         <!--背景-->
-        <div class="bg index"></div>
+        <div class="bg"></div>
     </main>
-    <!--彈出窗-->
-    <div>
-        <!--修改密碼窗-->
-        <div class="passwordchange">
-            <!--上字-->
-            <div class="changebar">
-                <span>修改密碼</span>
-                <button></button>
-            </div>
-            <!--主內容-->
-            <div class="changebox">
-                <div><span>新密碼</span><input type="password"></div>
-                <div><span>確認密碼</span><input type="password"></div>
-                <div>
-                    <button>取消</button>
-                    <button>確認</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
