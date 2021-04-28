@@ -4304,6 +4304,7 @@ main .bg {
   vertical-align: middle;
   background: #3d3d3d;
   border-bottom: solid 1px #ababab;
+  position: relative;
 }
 .minetable tr th.tLeft {
   text-align: left;
@@ -4312,6 +4313,10 @@ main .bg {
 .minetable tr td {
   position: relative;
   vertical-align: middle;
+}
+.minetable tr td.tLeft {
+  text-align: left;
+  padding: 8px 10px 7px;
 }
 .minetable.infor tr td:nth-of-type(1) {
   width: 12%;
@@ -4412,6 +4417,125 @@ main .bg {
   padding: 10px 0px;
   font-size: 12px;
   color: #fff;
+}
+.minetable.bettingRecord {
+  display: none;
+  margin: 0px auto 10px;
+  cursor: pointer;
+}
+.minetable.bettingRecord.display {
+  display: table;
+}
+.minetable.bettingRecord.open .arrow {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+.minetable.bettingRecord.now {
+  width: 1150px;
+  margin: 0px 0px 10px 10px;
+}
+.minetable.bettingRecord tr {
+  border-bottom: solid 1px #ababab;
+}
+.minetable.bettingRecord tr.totalInfo {
+  background: #a43e4a;
+}
+.minetable.bettingRecord tr th p {
+  float: left;
+}
+.minetable.bettingRecord tr th .line {
+  float: left;
+  width: 1px;
+  height: 14px;
+  background: #bcbcbc;
+  margin: 0px 10px;
+}
+.minetable.bettingRecord tr th .arrow {
+  width: 9px;
+  height: 16px;
+  background: url("../images/arrow_w.png") no-repeat;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+.minetable.bettingRecord tr td {
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  border-right: solid 1px #ababab;
+}
+.minetable.bettingRecord tr td:nth-of-type(1), .minetable.bettingRecord tr td:nth-of-type(3), .minetable.bettingRecord tr td:nth-of-type(5) {
+  width: 10%;
+}
+.minetable.bettingRecord tr td:nth-of-type(2) {
+  width: 40%;
+}
+.minetable.bettingRecord tr td:nth-of-type(4), .minetable.bettingRecord tr td:nth-of-type(6) {
+  width: 15%;
+}
+.minetable.bettingRecord tr td:last-child {
+  border: none;
+}
+.minetable.bettingRecord tr td.gray {
+  background: #c7c7c7;
+  color: #4d4d4d;
+}
+.minetable.bettingRecord tr td.yellow {
+  color: #fff700;
+}
+.minetable.bettingRecord tr td.highSeparate {
+  line-height: 20px;
+}
+.minetable.bettingRecord tr td .teamName {
+  color: #ff9000;
+}
+.minetable.bettingRecord tr td .separate {
+  display: inline-block;
+  padding: 0px 5px;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+.minetable.bettingRecord tr td .odd {
+  color: #ff0000;
+}
+.minetable.bettingRecord tr td .vs {
+  color: #b4cbec;
+  font-size: 12px;
+  padding: 0px 8px;
+}
+.minetable.totalInfo {
+  margin: 0px auto 10px;
+  background: #dfb187;
+}
+.minetable.totalInfo tr td {
+  padding: 10px 0px;
+  font-size: 15px;
+}
+.minetable.totalInfo tr td:nth-of-type(1), .minetable.totalInfo tr td:nth-of-type(3), .minetable.totalInfo tr td:nth-of-type(5) {
+  width: 10%;
+}
+.minetable.totalInfo tr td:nth-of-type(2) {
+  width: 30%;
+}
+.minetable.totalInfo tr td:nth-of-type(4), .minetable.totalInfo tr td:nth-of-type(6) {
+  width: 20%;
+}
+.minetable.totalInfo tr td.tLeft {
+  text-align: left;
+  padding-left: 10px;
+}
+.minetable.totalInfo tr td .line {
+  float: right;
+  width: 1px;
+  height: 16px;
+  background: #202020;
 }
 
 .middle {
@@ -7253,22 +7377,19 @@ main .bg {
   background: #b9becf;
   border-radius: 10px;
 }
-.myself.forrecord {
-  padding-top: 170px;
-}
 .myself .mineMainBox {
   padding: 140px 0px 10px;
   float: left;
 }
+.myself .mineMainBox.record {
+  padding-top: 175px;
+}
 .myself .recordbar {
-  width: 850px;
+  width: 1148px;
   height: 35px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#edeef5));
-  background: -o-linear-gradient(top, #ffffff 0%, #edeef5 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
-  background-color: #d6d9ee;
-  border-radius: 5px;
-  margin: 0px 0px 15px 17px;
+  background: #c1c1c1;
+  border-radius: 3px;
+  margin: 0px 0px 15px 10px;
   border: 1px solid #989dbc;
   position: relative;
   z-index: 1;
@@ -7285,16 +7406,18 @@ main .bg {
   text-align: center;
   color: #4d515d;
   font-size: 15px;
-  padding-top: 12px;
-  position: relative;
+  line-height: 37px;
   cursor: pointer;
 }
 .myself .recordbar div .line {
   width: 1px;
-  height: 10px;
-  background: #bcbcbc;
-  margin: -5px 0px 0px 0px;
+  height: 15px;
+  background: #202020;
+  margin: 10px 0px 0px 0px;
   float: right;
+}
+.myself .recordbar div span {
+  color: #ff0000;
 }
 .myself .recordbar div span.remind {
   position: absolute;
@@ -7302,27 +7425,25 @@ main .bg {
   height: 18px;
   background: #ff0000;
   left: 35px;
-  top: 10px;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   line-height: 20px;
   color: #fff;
   border-radius: 5px;
   padding-left: 2px;
 }
-.myself .recordbar .recordbox {
-  width: 100%;
-  height: auto;
-}
 .myself .recordbox {
   display: none;
-  width: 850px;
+  width: 1148px;
   height: auto;
-  background: #000;
-  margin: -20px 0px 15px 17px;
+  margin: -20px 0px 15px 10px;
   border: 1px solid #b7906e;
   border-top: none;
-  background: #ffdbb9;
+  background: #777777;
   padding-top: 20px;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 3px 3px;
   overflow: hidden;
 }
 .myself .recordbox.display {
@@ -7793,9 +7914,6 @@ main .bg {
   left: 280px;
   top: 0px;
 }
-.minetopfix.forrecord {
-  margin-top: -170px;
-}
 .minetopfix .fixbar {
   position: absolute;
   width: 100%;
@@ -7833,42 +7951,63 @@ main .bg {
 .minetopfix .fixbar p span {
   color: #ea9700;
 }
-.minetopfix .fixbar .timesearch {
+.minetopfix .fixbar .timeSearch {
   width: 380px;
-  height: 50px;
-  margin-left: 10px;
+  height: 45px;
+  margin-left: 20px;
   float: left;
 }
-.minetopfix .fixbar .timesearch.un {
+.minetopfix .fixbar .timeSearch.deal {
   float: right;
 }
-.minetopfix .fixbar .timesearch button.date {
+.minetopfix .fixbar .timeSearch button.date {
   width: 19px;
   height: 19px;
-  background: url("../images/date_icon.png");
+  background: url("../images/date_icon.png") no-repeat;
   float: left;
   margin: 13px 0px 0px 0px;
   border: none;
 }
-.minetopfix .fixbar .timesearch button.timesearchbut {
-  margin: 8px 0px 0px 0px;
-  float: none;
+.minetopfix .fixbar .timeSearch button.timesearchbut {
+  margin: 8px 24px 0px 0px;
+  border: solid 1px #bcbcbc;
+  background: transparent;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #fff;
 }
-.minetopfix .fixbar .timesearch span {
+.minetopfix .fixbar .timeSearch button.timesearchbut:hover, .minetopfix .fixbar .timeSearch button.timesearchbut:active, .minetopfix .fixbar .timeSearch button.timesearchbut.active {
+  background: #fff;
+  color: #000;
+}
+.minetopfix .fixbar .timeSearch span {
   float: left;
-  line-height: 50px;
+  line-height: 45px;
   font-weight: bold;
   padding: 0px 10px;
 }
-.minetopfix .fixbar .timesearch select {
+.minetopfix .fixbar .timeSearch select {
   float: left;
-  margin: 13px 0px 0px 10px;
+  margin: 11px 0px 0px 10px;
   border: 1px solid #3145b2;
   outline: none;
   border-radius: 5px;
-  width: 100px;
-  height: 20px;
+  width: 95px;
+  height: 24px;
   font-family: "my_font";
+}
+.minetopfix .fixbar .smallTimeBtn {
+  margin: 8px 12px 0px 0px;
+  border: solid 1px #bcbcbc;
+  background: transparent;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+}
+.minetopfix .fixbar .smallTimeBtn:hover, .minetopfix .fixbar .smallTimeBtn:active, .minetopfix .fixbar .smallTimeBtn.active {
+  background: #fff;
+  color: #000;
 }
 .minetopfix .fixbar .mes_rowbut {
   display: none;
@@ -7949,25 +8088,27 @@ main .bg {
 .minetopfix .fixbar ul li {
   float: left;
   font-size: 15px;
-  line-height: 42px;
+  height: 42px;
+  line-height: 47px;
   border-bottom: solid 3px transparent;
-  color: #4d515d;
+  color: #1e2129;
+  margin-right: 10px;
   cursor: pointer;
 }
 .minetopfix .fixbar ul li:first-child {
   margin-left: 15px;
 }
 .minetopfix .fixbar ul li:hover, .minetopfix .fixbar ul li:active, .minetopfix .fixbar ul li.active {
-  color: #293eb0;
-  border-color: #293eb0;
+  color: #fff;
+  border-color: #59a936;
 }
-.minetopfix .recordname {
-  width: 850px;
+.minetopfix .floatName {
+  width: 100%;
   height: 35px;
   background: #404b87;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 3px 3px;
 }
-.minetopfix .recordname.betting div {
+.minetopfix .floatName.betting div {
   float: left;
   width: 25%;
   text-align: center;
@@ -7975,40 +8116,39 @@ main .bg {
   font-size: 15px;
   padding-top: 12px;
 }
-.minetopfix .recordname.betting div .line {
+.minetopfix .floatName.betting div .line {
   width: 1px;
   height: 10px;
   background: #bcbcbc;
   margin: -5px 0px 0px 0px;
   float: right;
 }
-.minetopfix .recordname.deal div {
+.minetopfix .floatName.deal div {
   float: left;
-  width: 25%;
   text-align: center;
   color: #fff;
   font-size: 15px;
   padding-top: 12px;
 }
-.minetopfix .recordname.deal div:nth-child(1) {
+.minetopfix .floatName.deal div:nth-child(1) {
   width: 18%;
 }
-.minetopfix .recordname.deal div:nth-child(2) {
+.minetopfix .floatName.deal div:nth-child(2) {
   width: 12%;
 }
-.minetopfix .recordname.deal div:nth-child(3) {
+.minetopfix .floatName.deal div:nth-child(3) {
   width: 16%;
 }
-.minetopfix .recordname.deal div:nth-child(4) {
+.minetopfix .floatName.deal div:nth-child(4) {
   width: 20%;
 }
-.minetopfix .recordname.deal div:nth-child(5) {
+.minetopfix .floatName.deal div:nth-child(5) {
   width: 19%;
 }
-.minetopfix .recordname.deal div:nth-child(6) {
+.minetopfix .floatName.deal div:nth-child(6) {
   width: 15%;
 }
-.minetopfix .recordname.deal div .line {
+.minetopfix .floatName.deal div .line {
   width: 1px;
   height: 10px;
   background: #bcbcbc;
@@ -8048,8 +8188,8 @@ main .bg {
 }
 
 .mineHideBoard {
-  width: 1170px;
-  height: 70px;
+  width: 1165px;
+  height: 125px;
   background: #2a2a2a;
   position: absolute;
   z-index: 5;
@@ -8058,9 +8198,6 @@ main .bg {
 }
 .mineHideBoard.innerboard {
   height: 155px;
-}
-.mineHideBoard.mineboard {
-  height: 125px;
 }
 .mineHideBoard.recordboard {
   height: 160px;
@@ -8713,17 +8850,4 @@ html body .cardadd.display {
 
 .wd_brown {
   color: #dec2a9;
-}
-
-.wd_b {
-  font-weight: bold;
-}
-
-.power {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  border-radius: 20px;
-  background: #00b8ee;
-  margin: 3px 0px 0px 0px;
 }

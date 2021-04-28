@@ -4793,6 +4793,7 @@
 			vertical-align: middle;
 			background: #3d3d3d;
 			border-bottom: solid 1px #ababab;
+			position: relative;
 
 			//字靠左
 			&.tLeft {
@@ -4804,6 +4805,12 @@
 		td {
 			position: relative;
 			vertical-align: middle;
+
+			//字靠左
+			&.tLeft {
+				text-align: left;
+				padding: 8px 10px 7px;
+			}
 		}
 	}
 
@@ -4932,6 +4939,157 @@
 				padding: 10px 0px;
 				font-size: 12px;
 				color: #fff;
+			}
+		}
+	}
+
+	//投注紀錄-展開條
+	&.bettingRecord {
+		display: none;
+		margin: 0px auto 10px;
+		cursor: pointer;
+
+		&.display {
+			display: table;
+		}
+
+		&.open {
+
+			.arrow {
+				transform: translateY(-50%) rotate(90deg);
+			}
+		}
+
+		&.now {
+			width: 1150px;
+			margin: 0px 0px 10px 10px;
+		}
+		
+		tr {
+			border-bottom: solid 1px #ababab;
+
+			&.totalInfo {
+				background: #a43e4a;
+			}
+
+			th {
+
+				p {
+					float: left;
+				}
+
+				.line {
+					float: left;
+					width: 1px;
+					height: 14px;
+					background: #bcbcbc;
+					margin: 0px 10px;
+				}
+
+				.arrow {
+					width: 9px;
+					height: 16px;
+					background: url('../images/arrow_w.png') no-repeat;
+					background-size: 100%;
+					display: block;
+					position: absolute;
+					right: 25px;
+					top: 50%;
+					transform: translateY(-50%) rotate(-90deg);
+				}
+			}
+
+			td {
+				padding: 10px;
+				color: #fff;
+				font-size: 14px;
+				border-right: solid 1px #ababab;
+
+				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
+					width: 10%;
+				}
+
+				&:nth-of-type(2) {
+					width: 40%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:last-child {
+					border: none;
+				}
+
+				&.gray {
+					background: #c7c7c7;
+					color: #4d4d4d;
+				}
+
+				&.yellow {
+					color: #fff700;
+				}
+
+				&.highSeparate {
+					line-height: 20px;
+				}
+
+				.teamName {
+					color: #ff9000;
+				}
+
+				.separate {
+					display: inline-block;
+					padding: 0px 5px;
+					transform: translateY(-1px);
+				}
+
+				.odd {
+					color: #ff0000;
+				}
+
+				.vs {
+					color: #b4cbec;
+					font-size: 12px;
+					padding: 0px 8px;
+				}
+			}
+		}
+	}
+	//投注紀錄-總計條
+	&.totalInfo {
+		margin: 0px auto 10px;
+		background: #dfb187;
+		
+		tr {
+
+			td {
+				padding: 10px 0px;
+				font-size: 15px;
+
+				&:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(5) {
+					width: 10%;
+				}
+
+				&:nth-of-type(2) {
+					width: 30%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(6) {
+					width: 20%;
+				}
+
+				&.tLeft {
+					text-align: left;
+					padding-left: 10px;
+				}
+
+				.line {
+					float: right;
+					width: 1px;
+					height: 16px;
+					background: #202020;
+				}
 			}
 		}
 	}

@@ -100,28 +100,6 @@ $(function(){
         $('.turnold').removeClass('active');
     });
 });
-//即時注單
-$(function(){
-    $('.tbet').click(function(){
-        if($(this).next().hasClass('op')){
-            $(this).removeClass('display');
-            $(this).next().addClass('display')
-        };
-    });
-    $('.op').click(function(){
-        $(this).prev().addClass('display');
-        $(this).removeClass('display')
-    });
-});
-//投注紀錄
-$(function(){
-    $('.recordbar').click(function(){
-        if($(this).next().hasClass('recordbox')){
-            $(this).next().toggleClass('display');
-            $(this).toggleClass('open');
-        };
-    });
-});
 //交易紀錄
 $(function(){
     $('.deal_li1').click(function(){
@@ -813,6 +791,27 @@ $(function(){
 
     $('.playBoard button').has('i').children('p').css('display','none');
 })
+
+    //我的頁面
+//投注紀錄
+$(function(){
+    $('.recordbar').click(function(){
+        if($(this).next().hasClass('recordbox')){
+            $(this).next().toggleClass('display');
+            $(this).toggleClass('open');
+        };
+    });
+
+    $('.recordbox .bettingRecord,.bettingRecord.now').click(function(){
+        $(this).next('.open').addClass('display');
+        $(this).removeClass('display');
+    })
+
+    $('.recordbox .bettingRecord.open,.bettingRecord.now.open').click(function(){
+        $(this).prev().addClass('display');
+        $(this).removeClass('display');
+    })
+});
 
 //共用
 

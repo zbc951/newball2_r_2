@@ -24,55 +24,60 @@
         border-radius: 10px;
     }
 
-    &.forrecord {
-        padding-top: 170px;
-    }
-
     .mineMainBox {
         padding: 140px 0px 10px;
         float: left;
+
+        &.record {
+            padding-top: 175px;
+        }
     }
 
     //投注紀錄
     .recordbar {
-        width: 850px;
+        width: 1148px;
         height: 35px;
-        background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
-        background-color: #d6d9ee;
-        border-radius: 5px;
-        margin: 0px 0px 15px 17px;
+        background: #c1c1c1;
+        border-radius: 3px;
+        margin: 0px 0px 15px 10px;
         border: 1px solid #989dbc;
         position: relative;
         z-index: 1;
+
         &.open {
             background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
             background-color: #d8a77b;
         }
+
         div {
             float: left;
             width: 25%;
             text-align: center;
             color: #4d515d;
             font-size: 15px;
-            padding-top: 12px;
-            position: relative;
+            line-height: 37px;
             cursor: pointer;
+
             //線段
             .line {
                 width: 1px;
-                height: 10px;
-                background: #bcbcbc;
-                margin: -5px 0px 0px 0px;
+                height: 15px;
+                background: #202020;
+                margin: 10px 0px 0px 0px;
                 float: right;
             }
+            
             span {
+                color: #ff0000;
+
                 &.remind {
                     position: absolute;
                     width: 20px;
                     height: 18px;
                     background: #ff0000;
                     left: 35px;
-                    top: 10px;
+                    top: 48%;
+                    transform: translateY(-50%);
                     line-height: 20px;
                     color: #fff;
                     border-radius: 5px;
@@ -80,28 +85,24 @@
                 }
             }
         }
-        //內容物
-        .recordbox {
-            width: 100%;
-            height: auto;
-        }
     }
     .recordbox {
         display: none;
-        width: 850px;
+        width: 1148px;
         height: auto;
-        background: #000;
-        margin: -20px 0px 15px 17px;
+        margin: -20px 0px 15px 10px;
         border: 1px solid #b7906e;
         border-top: none;
-        background: #ffdbb9;
+        background: #777777;
         padding-top: 20px;
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 3px 3px;
         overflow: hidden;
+
         &.display {
             display: block;
         }
     }
+
     //幫助中心/消息中心
     .helpbar {
         width: 850px;
@@ -540,10 +541,6 @@
     left: 280px;
     top: 0px;
 
-    &.forrecord {
-        margin-top: -170px;
-    }
-
     //懸浮列假bar
     .fixbar {
         position: absolute;
@@ -594,43 +591,74 @@
         }
 
         //日期搜尋列
-        .timesearch {
+        .timeSearch {
             width: 380px;
-            height: 50px;
-            margin-left: 10px;
+            height: 45px;
+            margin-left: 20px;
             float: left;
-            &.un {
+
+            //交易紀錄用
+            &.deal {
                 float: right;
             }
+
             button {
+
                 &.date {
                     width: 19px;
                     height: 19px;
-                    background: url('../images/date_icon.png');
+                    background: url('../images/date_icon.png') no-repeat;
                     float: left;
                     margin: 13px 0px 0px 0px;
                     border: none;
                 }
+
                 &.timesearchbut {
-                    margin: 8px 0px 0px 0px;
-                    float: none;
+                    margin: 8px 24px 0px 0px;
+                    border: solid 1px #bcbcbc;
+                    background: transparent;
+                    padding: 5px 8px;
+                    border-radius: 3px;
+                    color: #fff;
+
+                    &:hover,&:active,&.active {
+                        background: #fff;
+                        color: #000;
+                    }
                 }
             }
+
             span {
                 float: left;
-                line-height: 50px;
+                line-height: 45px;
                 font-weight: bold;
                 padding: 0px 10px;
             }
+
             select {
                 float: left;
-                margin: 13px 0px 0px 10px;
+                margin: 11px 0px 0px 10px;
                 border: 1px solid #3145b2;
                 outline: none;
                 border-radius: 5px;
-                width: 100px;
-                height: 20px;
+                width: 95px;
+                height: 24px;
                 font-family: "my_font";
+            }
+        }
+
+        .smallTimeBtn {
+            margin: 8px 12px 0px 0px;
+            border: solid 1px #bcbcbc;
+            background: transparent;
+            padding: 5px 8px;
+            border-radius: 3px;
+            color: #fff;
+            float: right;
+
+            &:hover,&:active,&.active {
+                background: #fff;
+                color: #000;
             }
         }
 
@@ -724,27 +752,34 @@
             li {
                 float: left;
                 font-size: 15px;
-                line-height: 42px;
+                height: 42px;
+                line-height: 47px;
                 border-bottom: solid 3px transparent;
-                color: #4d515d;
+                color: #1e2129;
+                margin-right: 10px;
                 cursor: pointer;
+
                 &:first-child {
                     margin-left: 15px;
                 }
+                
                 &:hover,&:active,&.active {
-                    color: #293eb0;
-                    border-color: #293eb0;
+                    color: #fff;
+                    border-color: #59a936;
                 }
             }
         }
     }
-    //投注紀錄標題字
-    .recordname {
-        width: 850px;
+    //懸浮下標題字
+    .floatName {
+        width: 100%;
         height: 35px;
         background: #404b87;
-        border-radius: 0px 0px 8px 8px;
+        border-radius: 0px 0px 3px 3px;
+
+        //投注紀錄用
         &.betting {
+            
             div {
                 float: left;
                 width: 25%;
@@ -752,6 +787,7 @@
                 color: #fff;
                 font-size: 15px;
                 padding-top: 12px;
+
                 .line {
                     width: 1px;
                     height: 10px;
@@ -761,32 +797,41 @@
                 }
             }
         }
+
+        //交易紀錄用
         &.deal {
+
             div {
                 float: left;
-                width: 25%;
                 text-align: center;
                 color: #fff;
                 font-size: 15px;
                 padding-top: 12px;
+
                 &:nth-child(1) {
                     width: 18%;
                 }
+
                 &:nth-child(2) {
                     width: 12%;
                 }
+
                 &:nth-child(3) {
                     width: 16%;
                 }
+
                 &:nth-child(4) {
                     width: 20%;
                 }
+
                 &:nth-child(5) {
                     width: 19%;
                 }
+
                 &:nth-child(6) {
                     width: 15%;
                 }
+
                 .line {
                     width: 1px;
                     height: 10px;
@@ -838,8 +883,8 @@
 
 //隱藏版
 .mineHideBoard {
-    width: 1170px;
-    height: 70px;
+    width: 1165px;
+    height: 125px;
     background: #2a2a2a;
     position: absolute;
     z-index: 5;
@@ -851,11 +896,7 @@
         height: 155px;
     }
 
-    //我的頁面高
-    &.mineboard {
-        height: 125px;
-    }
-
+    //投注記錄用
     &.recordboard {
         height: 160px;
     }
