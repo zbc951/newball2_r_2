@@ -100,21 +100,6 @@ $(function(){
         $('.turnold').removeClass('active');
     });
 });
-//交易紀錄
-$(function(){
-    $('.deal_li1').click(function(){
-        $('.forli1').addClass('display');
-        $('.forli1').siblings().removeClass('display');
-    });
-    $('.deal_li2').click(function(){
-        $('.forli2').addClass('display');
-        $('.forli2').siblings().removeClass('display');
-    });
-    $('.deal_li3').click(function(){
-        $('.forli3').addClass('display');
-        $('.forli3').siblings().removeClass('display');
-    });
-});
 //我的錢包
 $(function(){
     //無註冊信用卡彈出信息
@@ -793,6 +778,15 @@ $(function(){
 })
 
     //我的頁面
+
+//懸浮列fixbar ul選定效果
+$(function(){
+    $('.fixbar ul li').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+})
+
 //投注紀錄
 $(function(){
     $('.recordbar').click(function(){
@@ -812,6 +806,24 @@ $(function(){
         $(this).removeClass('display');
     })
 });
+
+//交易紀錄
+$(function(){
+    $('.depositBtn').click(function(){
+        $('.dealRecord.deposit').addClass('display');
+        $('.dealRecord.deposit').siblings().removeClass('display');
+    })
+
+    $('.transferBtn').click(function(){
+        $('.dealRecord.transfer').addClass('display');
+        $('.dealRecord.transfer').siblings().removeClass('display');
+    })
+
+    $('.withdrawlBtn').click(function(){
+        $('.dealRecord.withdrawl').addClass('display');
+        $('.dealRecord.withdrawl').siblings().removeClass('display');
+    })
+})
 
 //共用
 

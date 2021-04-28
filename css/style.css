@@ -4287,7 +4287,6 @@ main .bg {
 }
 
 .minetable {
-  width: calc(100% - 15px);
   height: auto;
   border-collapse: collapse;
   border-radius: 3px;
@@ -4317,6 +4316,9 @@ main .bg {
 .minetable tr td.tLeft {
   text-align: left;
   padding: 8px 10px 7px;
+}
+.minetable.infor {
+  width: 1150px;
 }
 .minetable.infor tr td:nth-of-type(1) {
   width: 12%;
@@ -4407,7 +4409,7 @@ main .bg {
 }
 .minetable.bettingLimit {
   float: left;
-  width: 49%;
+  width: 570px;
 }
 .minetable.bettingLimit tr:nth-of-type(2n) {
   background: #656565;
@@ -4417,6 +4419,58 @@ main .bg {
   padding: 10px 0px;
   font-size: 12px;
   color: #fff;
+}
+.minetable.dealRecord {
+  width: 1150px;
+  background: #545454;
+  display: none;
+}
+.minetable.dealRecord.display {
+  display: table;
+}
+.minetable.dealRecord tr {
+  border-bottom: solid 1px #ababab;
+}
+.minetable.dealRecord tr.fail {
+  background: #3e3e3e;
+}
+.minetable.dealRecord tr:last-child {
+  border: none;
+}
+.minetable.dealRecord tr td {
+  border-right: solid 1px #ababab;
+  padding: 10px;
+  color: #fff;
+}
+.minetable.dealRecord tr td:nth-of-type(1) {
+  width: 18%;
+}
+.minetable.dealRecord tr td:nth-of-type(2) {
+  width: 12%;
+}
+.minetable.dealRecord tr td:nth-of-type(3) {
+  width: 16%;
+}
+.minetable.dealRecord tr td:nth-of-type(4) {
+  width: 20%;
+}
+.minetable.dealRecord tr td:nth-of-type(5) {
+  width: 19%;
+}
+.minetable.dealRecord tr td:nth-of-type(6) {
+  width: 15%;
+}
+.minetable.dealRecord tr td:last-child {
+  border: none;
+}
+.minetable.dealRecord tr td.dealCode {
+  color: #90b9ff;
+}
+.minetable.dealRecord tr td.depositMoney {
+  color: #ffa500;
+}
+.minetable.dealRecord tr td .time {
+  padding-left: 8px;
 }
 .minetable.bettingRecord {
   display: none;
@@ -4536,6 +4590,102 @@ main .bg {
   width: 1px;
   height: 16px;
   background: #202020;
+}
+.minetable.download {
+  width: 570px;
+  float: left;
+}
+.minetable.download tr td p {
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+.minetable.download tr td .codeBox {
+  width: 80%;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0px;
+  margin: 20px auto 10px;
+}
+.minetable.download tr td .codeBox div {
+  display: inline-block;
+  width: 50%;
+  height: 110px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+}
+.minetable.download tr td .codeBox div .qrcode {
+  background: url("../images/download_app_qr.png") no-repeat;
+  background-size: 100%;
+  width: 110px;
+  height: 110px;
+  margin: 0px auto;
+}
+.minetable.download tr td .codeBox div .remind {
+  width: 100%;
+  margin: 15px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.minetable.download tr td .codeBox div button {
+  background: transparent;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  padding: 5px 8px;
+  color: #fff;
+}
+.minetable.download tr td .codeBox div button:hover, .minetable.download tr td .codeBox div button:active, .minetable.download tr td .codeBox div button.active {
+  color: #4d4d4d;
+  background: #fff;
+}
+.minetable.download tr td .bowserBox {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 19px auto;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+}
+.minetable.download tr td .bowserBox .bowser {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/download_app_browser.png") no-repeat;
+  background-size: 200%;
+}
+.minetable.download tr td .bowserBox .bowser.ie {
+  background-position-x: 100%;
+}
+.minetable.download tr td .bowserBox p {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  line-height: 24px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.minetable.download tr td .bowserBox p span {
+  display: block;
+}
+.minetable.download tr td .bowserBox button {
+  background: transparent;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  padding: 5px 8px;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 19px;
+}
+.minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
+  color: #4d4d4d;
+  background: #fff;
 }
 
 .middle {
@@ -7959,6 +8109,10 @@ main .bg {
 }
 .minetopfix .fixbar .timeSearch.deal {
   float: right;
+  width: 335px;
+}
+.minetopfix .fixbar .timeSearch.deal .timesearchbut {
+  margin-right: 0px;
 }
 .minetopfix .fixbar .timeSearch button.date {
   width: 19px;
@@ -8092,7 +8246,6 @@ main .bg {
   line-height: 47px;
   border-bottom: solid 3px transparent;
   color: #1e2129;
-  margin-right: 10px;
   cursor: pointer;
 }
 .minetopfix .fixbar ul li:first-child {
@@ -8145,6 +8298,9 @@ main .bg {
 .minetopfix .floatName.deal div:nth-child(5) {
   width: 19%;
 }
+.minetopfix .floatName.deal div:nth-child(5) .line.record {
+  margin-right: -1px;
+}
 .minetopfix .floatName.deal div:nth-child(6) {
   width: 15%;
 }
@@ -8154,6 +8310,9 @@ main .bg {
   background: #bcbcbc;
   margin: -5px 0px 0px 0px;
   float: right;
+}
+.minetopfix .floatName.deal div .line.record {
+  margin-right: -2px;
 }
 .minetopfix .leftword {
   font-weight: bold;

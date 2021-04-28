@@ -600,6 +600,11 @@
             //交易紀錄用
             &.deal {
                 float: right;
+                width: 335px;
+
+                .timesearchbut {
+                    margin-right: 0px;
+                }
             }
 
             button {
@@ -756,13 +761,12 @@
                 line-height: 47px;
                 border-bottom: solid 3px transparent;
                 color: #1e2129;
-                margin-right: 10px;
                 cursor: pointer;
 
                 &:first-child {
                     margin-left: 15px;
                 }
-                
+
                 &:hover,&:active,&.active {
                     color: #fff;
                     border-color: #59a936;
@@ -826,6 +830,13 @@
 
                 &:nth-child(5) {
                     width: 19%;
+
+                    .line {
+                        
+                        &.record {
+                            margin-right: -1px;
+                        }
+                    }
                 }
 
                 &:nth-child(6) {
@@ -838,6 +849,10 @@
                     background: #bcbcbc;
                     margin: -5px 0px 0px 0px;
                     float: right;
+
+                    &.record {
+                        margin-right: -2px;
+                    }
                 }
             }
         }

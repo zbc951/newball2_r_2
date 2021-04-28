@@ -4776,7 +4776,6 @@
 
 //我的頁面用
 .minetable {
-	width: calc(100% - 15px);
     height: auto;
     border-collapse: collapse;
 	border-radius: 3px;
@@ -4816,6 +4815,7 @@
 
 	//個人資料-基本資料
 	&.infor {
+		width: 1150px;
 		
 		tr {
 
@@ -4926,7 +4926,7 @@
 	//個人資料-投注限額
 	&.bettingLimit {
 		float: left;
-		width: 49%;
+		width: 570px;
 
 		tr {
 			
@@ -4943,7 +4943,76 @@
 		}
 	}
 
-	//投注紀錄-展開條
+	//交易紀錄
+	&.dealRecord {
+		width: 1150px;
+		background: #545454;
+		display: none;
+
+		&.display {
+			display: table;
+		}
+
+		tr {
+			border-bottom: solid 1px #ababab;
+
+			&.fail {
+				background: #3e3e3e;
+			}
+
+			&:last-child {
+				border: none;
+			}
+			
+			td {
+				border-right: solid 1px #ababab;
+				padding: 10px;
+				color: #fff;
+
+				&:nth-of-type(1) {
+					width: 18%;
+				}
+
+				&:nth-of-type(2) {
+					width: 12%;
+				}
+
+				&:nth-of-type(3) {
+					width: 16%;
+				}
+
+				&:nth-of-type(4) {
+					width: 20%;
+				}
+
+				&:nth-of-type(5) {
+					width: 19%;
+				}
+
+				&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:last-child {
+					border: none;
+				}
+
+				&.dealCode {
+					color: #90b9ff;
+				}
+
+				&.depositMoney {
+					color: #ffa500;
+				}
+
+				.time {
+					padding-left: 8px;
+				}
+			}
+		}
+	}
+
+	//投注紀錄-展開條+即時注單
 	&.bettingRecord {
 		display: none;
 		margin: 0px auto 10px;
@@ -5089,6 +5158,121 @@
 					width: 1px;
 					height: 16px;
 					background: #202020;
+				}
+			}
+		}
+	}
+
+	//下載APP
+	&.download {
+		width: 570px;
+		float: left;
+
+		tr {
+
+			td {
+
+				p {
+					color: #fff;
+					padding: 10px;
+					font-size: 14px;
+				}
+
+				.codeBox {
+					width: 80%;
+					border: solid 1px #ababab;
+					border-radius: 3px;
+					padding: 10px;
+					box-sizing: border-box;
+					font-size: 0px;
+					margin: 20px auto 10px;
+
+					div {
+						display: inline-block;
+						width: 50%;
+						height: 110px;
+						text-align: center;
+						position: relative;
+						vertical-align: top;
+
+						.qrcode {
+							background: url('../images/download_app_qr.png') no-repeat;
+							background-size: 100%;
+							width: 110px;
+							height: 110px;
+							margin: 0px auto;
+						}
+
+						.remind {
+							width: 100%;
+							margin: 15px 0px;
+							box-sizing: border-box;
+						}
+
+						button {
+							background: transparent;
+							border: solid 1px #ababab;
+							border-radius: 3px;
+							padding: 5px 8px;
+							color: #fff;
+
+							&:hover,&:active,&.active {
+								color: #4d4d4d;
+								background: #fff;
+							}
+						}
+					}
+				}
+
+				.bowserBox {
+					width: 90%;
+					height: auto;
+					padding: 10px;
+					margin: 19px auto;
+					border: solid 1px #ababab;
+					border-radius: 3px;
+
+					.bowser {
+						display: inline-block;
+						width: 40px;
+						height: 40px;
+						background: url('../images/download_app_browser.png') no-repeat;
+						background-size: 200%;
+
+						&.ie {
+							background-position-x: 100%;
+						}
+					}
+
+					p {
+						display: inline-block;
+						width: 80%;
+						text-align: left;
+						line-height: 24px;
+						padding-left: 30px;
+						box-sizing: border-box;
+						position: relative;
+
+						span {
+							display: block;
+						}
+					}
+
+					button {
+						background: transparent;
+						border: solid 1px #ababab;
+						border-radius: 3px;
+						padding: 5px 8px;
+						color: #fff;
+						position: absolute;
+						right: 0px;
+						top: 19px;
+
+						&:hover,&:active,&.active {
+							color: #4d4d4d;
+							background: #fff;
+						}
+					}
 				}
 			}
 		}
