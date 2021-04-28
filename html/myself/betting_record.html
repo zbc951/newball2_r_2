@@ -14,17 +14,208 @@
 <body>
     <!--filter-->
     <div class="filter"></div>
+    <!--盤口對照表彈窗-->
+    <div class="conversionBox">
+        <h1>盤口對照表</h1>
+        <div class="innerBox">
+            <p>球頭換算法</p>
+            <div class="baseline"></div>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+        </div>
+        <button></button>
+    </div>
+    <!--設定彈窗-->
+    <div class="controlBox">
+        <h1>設定</h1>
+        <div class="innerBox1">
+            <p>介面設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                盤口切換
+                <div class="slideBase Handicap lSide">
+                    <p class="eu">歐洲盤</p>
+                    <p class="hk">香港盤</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                主題風格
+                <div class="slideBase Theme lSide">
+                    <p class="light">日間</p>
+                    <p class="dark">夜間</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>通知設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                桌面通知
+                <div class="slideBase Desktop lSide">
+                    <p class="on">開起</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                電子郵件通知
+                <div class="slideBase Email lSide">
+                    <p class="on">開啟</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>籌碼快捷設定</p>
+            <div class="baseline"></div>
+            <div class="longBox">
+                <span>設定下注</span>
+                <input type="text" value="1000">
+                <input type="text" value="2000">
+                <input type="text" value="5000">
+                <input type="text" value="10000">
+                <input type="text" value="20000">
+            </div>
+        </div>
+        <div class="innerBox2">
+            版本資訊
+            <p>
+                v4.0.3
+                <span>目前為最新版本</span>
+            </p>
+        </div>
+        <button class="cancelBtn"></button>
+    </div>
     <!--header-->
-    <header class="index">
+    <header>
         <!--上時間列-->
-        <div class="time">
-            <div>
-                <span>
-                    <script language="javascript" class="clock">
-                        var dt = new Date();
-                        document.write(dt);
-                    </script>
-                </span>
+        <div class="top">
+            <button class="conversionBtn">盤口對照表</button>
+            <button class="controlBtn">設定</button>
+            <span>
+                <script language="javascript" class="clock">
+                    var dt = new Date();
+                    document.write(dt);
+                </script>
+            </span>
+            <div class="marqueeBox">
+                <i class="fas fa-volume-up"></i>
+                <marquee behavior="" direction="">跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</marquee>
             </div>
         </div>
         <!--置中外包-->
@@ -33,14 +224,48 @@
             <div class="logo">LOGO</div>
             <!--上列表-->
             <ul class="headerlist">
-                <li><a href="../../index.html">市場列表</a></li>
-                <li><a href="../discount/discount.html"><span></span>優惠</a></li>
-                <li><a href="./mine.html" class="active"><span class="head_ic3"></span>我的</a></li>
+                <li><a href="../balls/soccer.html">市場列表</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">比賽結果</a></li>
+                <li><a href="#">盤口教程</a></li>
+                <li><a href="../../index.html">賽事比分</a></li>
+                <li><a href="./mine.html" class="active"><i class="fas fa-user-minus"></i>我的</a></li>
             </ul>
+            <!--登入前樣式-->
+            <div class="logged">
+                <div class="inputBox">
+                    <input type="text" placeholder="用戶帳號">
+                    <a href="#" class="forget">忘記密碼?</a>
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="密碼">
+                    <p class="remember"><span class="cube"></span>記住密碼</p>
+                </div>
+                <button class="loginBtn">登入</button>
+                <button class="signupBtn">註冊</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
+            </div>
             <!--登入後樣式-->
-            <div class="lobbyact">
-				<p>user545<span>0</span></p>
-				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            <div class="loggedIn display">
+				<p>帳戶名稱:<span>AAA888</span></p>
+                <p class="quota">昨日信用額度:<span>1000000</span>元</p>
+                <p class="quota">今日信用額度:<span>1000000</span>元</p>
+                <button class="logoutBtn" onclick="window.location.href='../../index.html'">登出</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
             </div>
         </article>
     </header>
