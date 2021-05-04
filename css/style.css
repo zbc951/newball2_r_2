@@ -1003,42 +1003,6 @@ main .bg {
   margin: 0px 0px 10px 10px;
   background: #4d4d4d;
 }
-.playBoard.newP tr td {
-  padding: 6px 0px;
-}
-.playBoard.newP tr td button {
-  width: 100px;
-  height: 50px;
-}
-.playBoard.newP tr td button span {
-  display: block;
-  color: #d4d4d4;
-  font-size: 12px;
-  margin-bottom: 3px;
-}
-.playBoard.newP tr td button span.fa-lock {
-  color: #3d3d3d;
-}
-.playBoard.oldP tr td button {
-  display: block;
-  width: 135px;
-  height: 40px;
-  margin: 0px auto 5px;
-}
-.playBoard.oldP tr td button:last-child {
-  margin-bottom: 0px;
-}
-.playBoard.oldP tr td button.third {
-  height: 25px;
-}
-.playBoard.oldP tr td button span {
-  margin-right: 10px;
-  color: #d4d4d4;
-  font-size: 12px;
-}
-.playBoard.oldP tr td button span.fa-lock {
-  color: #3d3d3d;
-}
 .playBoard tr {
   text-align: center;
   border-bottom: solid 1px #ababab;
@@ -1199,6 +1163,42 @@ main .bg {
 }
 .playBoard tr td p:last-child {
   padding: 0px;
+}
+.playBoard.newP tr td {
+  padding: 6px 0px;
+}
+.playBoard.newP tr td button {
+  width: 100px;
+  height: 50px;
+}
+.playBoard.newP tr td button span {
+  display: block;
+  color: #d4d4d4;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.playBoard.newP tr td button span.fa-lock {
+  color: #3d3d3d;
+}
+.playBoard.oldP tr td button {
+  display: block;
+  width: 135px;
+  height: 40px;
+  margin: 0px auto 5px;
+}
+.playBoard.oldP tr td button:last-child {
+  margin-bottom: 0px;
+}
+.playBoard.oldP tr td button.third {
+  height: 25px;
+}
+.playBoard.oldP tr td button span {
+  margin-right: 10px;
+  color: #d4d4d4;
+  font-size: 12px;
+}
+.playBoard.oldP tr td button span.fa-lock {
+  color: #3d3d3d;
 }
 .playBoard.tType1.hide1 tr td:nth-of-type(1) {
   width: 55%;
@@ -4420,6 +4420,297 @@ main .bg {
   font-size: 12px;
   color: #fff;
 }
+.minetable.totalMoney {
+  width: 1150px;
+}
+.minetable.totalMoney tr th button {
+  color: #fff;
+  background: transparent;
+  border: none;
+  float: right;
+  position: relative;
+  margin-right: 10px;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.minetable.totalMoney tr th button:hover::before, .minetable.totalMoney tr th button:active::before, .minetable.totalMoney tr th button.active::before {
+  -webkit-animation: reset 1s linear 0s infinite;
+          animation: reset 1s linear 0s infinite;
+}
+.minetable.totalMoney tr th button::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: url("../images/reset2.png") no-repeat;
+  background-size: 100%;
+  left: -18px;
+  top: 3px;
+}
+.minetable.totalMoney tr td {
+  padding: 20px 0px;
+}
+.minetable.totalMoney tr td .box {
+  width: 90%;
+  margin: 0px auto;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  font-size: 0px;
+  position: relative;
+}
+.minetable.totalMoney tr td .box .half {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.minetable.totalMoney tr td .box .half p {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  width: 50%;
+  margin: 0px auto;
+  padding-top: 13px;
+  position: relative;
+}
+.minetable.totalMoney tr td .box .half p.dollar span {
+  color: #ea9700;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.minetable.totalMoney tr td .box .half p.locked span {
+  color: #f32727;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.minetable.totalMoney tr td .box .half p button {
+  background: transparent;
+  border: solid 1px #ababab;
+  border-radius: 30px;
+  padding: 5px 8px;
+  color: #fff;
+  position: absolute;
+  right: -80px;
+  top: 5px;
+}
+.minetable.totalMoney tr td .box .half p button:hover, .minetable.totalMoney tr td .box .half p button:active, .minetable.totalMoney tr td .box .half p button.active {
+  background: #fff;
+  color: #4d4d4d;
+}
+.minetable.totalMoney tr td .box .half .wallet_ic {
+  float: left;
+  width: 34px;
+  height: 32px;
+  background: url("../images/wallet_ic.png") no-repeat;
+  background-size: 200%;
+  margin: 20px 0px 20px 40px;
+}
+.minetable.totalMoney tr td .box .half .wallet_ic.lock {
+  background-position-x: 100%;
+}
+.minetable.totalMoney tr td .box .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 25px;
+  background: #ababab;
+}
+.minetable.creditcard {
+  width: 1150px;
+}
+.minetable.creditcard tr th span {
+  display: inline-block;
+  float: right;
+  padding-bottom: 4px;
+  font-size: 13px;
+}
+.minetable.creditcard tr td .creditcardBtn {
+  width: 270px;
+  height: 145px;
+  border-radius: 5px;
+  background: #7d7d7d;
+  color: #fff;
+  font-size: 17px;
+  margin: 20px 30px;
+  -webkit-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  position: relative;
+}
+.minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
+  background: #dbdbdb;
+  -webkit-box-shadow: 0px 0px 5px 0px #fff;
+          box-shadow: 0px 0px 5px 0px #fff;
+  color: #000;
+}
+.minetable.creditcard tr td .creditcardBtn:hover div, .minetable.creditcard tr td .creditcardBtn:active div, .minetable.creditcard tr td .creditcardBtn.active div {
+  background-position-x: 100%;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before, .minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before, .minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: solid 5px #fff;
+  border-radius: 30px;
+  top: -8px;
+  right: -8px;
+}
+.minetable.creditcard tr td .creditcardBtn.c1:active::after, .minetable.creditcard tr td .creditcardBtn.c1.active::after, .minetable.creditcard tr td .creditcardBtn.c2:active::after, .minetable.creditcard tr td .creditcardBtn.c2.active::after, .minetable.creditcard tr td .creditcardBtn.c3:active::after, .minetable.creditcard tr td .creditcardBtn.c3.active::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  border: solid 5px #fff;
+  border-width: 0px 5px 5px 0px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0px;
+  right: 5px;
+}
+.minetable.creditcard tr td .creditcardBtn.c1 {
+  background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
+  background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c1:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
+  background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before {
+  background: #6589c6;
+}
+.minetable.creditcard tr td .creditcardBtn.c2 {
+  background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
+  background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c2:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
+  background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before {
+  background: #31a8b1;
+}
+.minetable.creditcard tr td .creditcardBtn.c3 {
+  background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
+  background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c3:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
+  background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
+}
+.minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
+  background: #d7767a;
+}
+.minetable.creditcard tr td .creditcardBtn .addCard {
+  width: 42px;
+  height: 29px;
+  margin: 0px auto 10px;
+  background: url("../images/add_card.png") no-repeat;
+  background-size: 200%;
+}
+.minetable.creditcard tr td .creditcardBtn .box .bankIc {
+  width: 40px;
+  height: 40px;
+  background: url("../images/bank_ic.png") no-repeat;
+  background-size: 300%;
+  position: absolute;
+  top: 24%;
+  left: 10%;
+}
+.minetable.creditcard tr td .creditcardBtn .box .bankIc.c1 {
+  background-position-x: 0%;
+}
+.minetable.creditcard tr td .creditcardBtn .box .bankIc.c2 {
+  background-position-x: 50%;
+}
+.minetable.creditcard tr td .creditcardBtn .box .bankIc.c3 {
+  background-position-x: 100%;
+}
+.minetable.creditcard tr td .creditcardBtn .box p {
+  text-align: left;
+  padding-left: 28%;
+  font-size: 15px;
+}
+.minetable.creditcard tr td .creditcardBtn .box p.race {
+  margin-bottom: 7%;
+  font-size: 12px;
+}
+.minetable.creditcard tr td .remind {
+  float: right;
+  color: #fff;
+  margin: 0px 20px 20px 0px;
+  font-size: 12px;
+  position: relative;
+}
+.minetable.creditcard tr td .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url("../images/infor.png") no-repeat;
+  top: -1px;
+  left: -18px;
+}
+.minetable.creditcard tr td .remind a {
+  color: #ff9000;
+}
+.minetable.moneyDetail {
+  width: 1150px;
+}
+.minetable.moneyDetail tr td {
+  padding: 25px 0px 5px;
+}
+.minetable.moneyDetail tr td div {
+  display: inline-block;
+  width: 23%;
+  height: 100px;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  background: #bcbcbc;
+  margin: 0px 10px 20px 0px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.minetable.moneyDetail tr td div:nth-of-type(4n) {
+  margin-right: 0px;
+}
+.minetable.moneyDetail tr td div p {
+  text-align: left;
+  line-height: 28px;
+  font-size: 15px;
+}
+.minetable.moneyDetail tr td div p.dollar {
+  font-size: 13px;
+}
+.minetable.moneyDetail tr td div p.dollar span {
+  font-size: 15px;
+  font-weight: bold;
+}
 .minetable.dealRecord {
   width: 1150px;
   background: #545454;
@@ -4474,6 +4765,7 @@ main .bg {
 }
 .minetable.bettingRecord {
   display: none;
+  width: 1120px;
   margin: 0px auto 10px;
   cursor: pointer;
 }
@@ -4565,6 +4857,7 @@ main .bg {
   padding: 0px 8px;
 }
 .minetable.totalInfo {
+  width: 1070px;
   margin: 0px auto 10px;
   background: #dfb187;
 }
@@ -4590,6 +4883,31 @@ main .bg {
   width: 1px;
   height: 16px;
   background: #202020;
+}
+.minetable.sportRule {
+  display: none;
+  margin-top: 122px;
+  width: 1150px;
+}
+.minetable.sportRule.display {
+  display: table;
+}
+.minetable.sportRule tr {
+  border-bottom: solid 1px #ababab;
+}
+.minetable.sportRule tr:nth-of-type(2n) {
+  background: #575757;
+}
+.minetable.sportRule tr td {
+  text-align: left;
+  padding: 10px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+}
+.minetable.sportRule tr td span.remind {
+  color: #fc3838;
+  padding: 0px 3px;
 }
 .minetable.download {
   width: 570px;
@@ -7600,15 +7918,13 @@ main .bg {
   display: block;
 }
 .myself .helpbar {
-  width: 850px;
+  width: 1150px;
   height: 45px;
-  background: #ffffff;
-  border-radius: 12px;
-  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
-          box-shadow: 0 0 6px 3px #ccd0ec;
+  background: #e2e2e2;
+  border-radius: 3px;
   position: relative;
   z-index: 1;
-  margin: 0px 0px 15px 17px;
+  margin: 0px 0px 15px 10px;
   cursor: pointer;
 }
 .myself .helpbar::before {
@@ -7624,24 +7940,18 @@ main .bg {
           transform: rotate(90deg);
 }
 .myself .helpbar.open {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
-  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
-  background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
-  background-color: #424d89;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
+  background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
+  background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
 }
 .myself .helpbar.open::before {
-  width: 8px;
-  height: 11px;
-  background: url("../images/arrow_w.png");
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.myself .helpbar.open p {
-  color: #fff;
-}
-.myself .helpbar.open span {
-  color: #fff;
+  width: 6px;
+  height: 8px;
+  background: url("../images/arrow_b.png") no-repeat;
+  background-size: 100%;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .myself .helpbar.edit {
   background: #ffffff;
@@ -7679,6 +7989,7 @@ main .bg {
   padding-left: 15px;
   font-size: 15px;
   color: #4d515d;
+  font-weight: bold;
 }
 .myself .helpbar span {
   float: right;
@@ -7696,15 +8007,13 @@ main .bg {
 }
 .myself .helpbox {
   display: none;
-  width: 850px;
+  width: 1150px;
   height: auto;
-  margin: -20px 0px 15px 17px;
+  margin: -20px 0px 15px 10px;
   background: #fff;
   padding-top: 20px;
-  border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 3px 3px;
   color: #4d515d;
-  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
-          box-shadow: 0 0 6px 3px #ccd0ec;
   text-align: left;
 }
 .myself .helpbox.display {
@@ -7776,31 +8085,30 @@ main .bg {
   display: block;
 }
 .myself .sportbar {
-  width: 800px;
+  width: 1120px;
   height: auto;
-  background: #fff;
+  background: #bcbcbc;
   padding: 15px 15px 0px 15px;
   position: fixed;
-  margin-left: 17px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px 1px #d9dbef;
-          box-shadow: 0 0 5px 1px #d9dbef;
+  top: 250px;
+  margin-left: 10px;
+  border-radius: 3px;
   z-index: 1;
 }
 .myself .sportbar button {
   float: left;
-  width: 80px;
+  width: 84px;
   height: 32px;
   border: 1px solid #b78960;
   background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b78960));
   background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
   background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
   background-color: #b78960;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #fff;
   font-size: 14px;
-  line-height: 0px;
   padding: 0px;
+  line-height: 0px;
   margin: 0px 10px 15px 0px;
 }
 .myself .sportbar button:hover, .myself .sportbar button:active, .myself .sportbar button.active {
@@ -8392,36 +8700,40 @@ main .bg {
   font-weight: bold;
 }
 .changePasswordWindow .topbar button {
-  width: 18px;
-  height: 18px;
   position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #cacaca;
+  border: solid 3px #676767;
+  right: -50px;
+  top: -50px;
+  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
+          box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #676767;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
   content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
   position: absolute;
-  left: 8px;
-  top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #676767;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
@@ -8488,6 +8800,255 @@ main .bg {
   color: #fff;
 }
 .changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+}
+
+.cardremind {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 200px;
+  z-index: 20;
+}
+.cardremind.display {
+  display: block;
+}
+.cardremind .topbar {
+  width: 100%;
+  height: 50px;
+  background: #ababab;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+}
+.cardremind .topbar span {
+  font-size: 14px;
+  color: #434343;
+  line-height: 50px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.cardremind .topbar button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #cacaca;
+  border: solid 3px #676767;
+  right: -50px;
+  top: -50px;
+  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
+          box-shadow: 0px 0px 0px 5px #cacaca;
+}
+.cardremind .topbar button::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #676767;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cardremind .topbar button::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #676767;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cardremind .box {
+  width: 100%;
+  height: 105px;
+  background: #747474;
+  border-radius: 0px 0px 3px 3px;
+  padding: 20px 0px;
+  text-align: center;
+}
+.cardremind .box p {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.cardremind .box p.remind {
+  color: #ea9700;
+}
+.cardremind .box button {
+  width: 160px;
+  height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+  background-color: #3247b8;
+  border: 1px solid #495cc5;
+  color: #4d515d;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4d515d;
+}
+.cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
+  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+}
+.cardremind .box button:last-child {
+  margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  color: #fff;
+}
+.cardremind .box button:last-child:hover, .cardremind .box button:last-child:active, .cardremind .box button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+}
+
+.cardAdd {
+  display: none;
+  position: absolute;
+  width: 800px;
+  height: 360px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 110px;
+  z-index: 20;
+}
+.cardAdd.display {
+  display: block;
+}
+.cardAdd .topbar {
+  width: 100%;
+  height: 40px;
+  background: #ababab;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+  text-align: center;
+}
+.cardAdd .topbar span {
+  font-size: 14px;
+  color: #434343;
+  line-height: 42px;
+  font-weight: bold;
+}
+.cardAdd .topbar button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #cacaca;
+  border: solid 3px #676767;
+  right: -50px;
+  top: -50px;
+  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
+          box-shadow: 0px 0px 0px 5px #cacaca;
+}
+.cardAdd .topbar button::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #676767;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cardAdd .topbar button::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #676767;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cardAdd .box {
+  width: 100%;
+  height: 315px;
+  background: #747474;
+  border-radius: 0px 0px 3px 3px;
+  padding: 20px 0px;
+}
+.cardAdd .box .inputBox {
+  width: 50%;
+  height: 50px;
+  float: left;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cardAdd .box .inputBox:nth-of-type(2n) {
+  padding-right: 30px;
+}
+.cardAdd .box .inputBox input, .cardAdd .box .inputBox select {
+  background: #535353;
+  color: #ababab;
+  width: 245px;
+  height: 36px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px 0px 3px 10px;
+  float: right;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 7px 0px 0px 0px;
+}
+.cardAdd .box .inputBox input.short, .cardAdd .box .inputBox select.short {
+  width: 105px;
+  margin-right: 30px;
+}
+.cardAdd .box .inputBox input.short:nth-of-type(1), .cardAdd .box .inputBox select.short:nth-of-type(1) {
+  margin-right: 0px;
+}
+.cardAdd .box .inputBox span {
+  line-height: 50px;
+  color: #434343;
+  padding-left: 30px;
+  font-weight: bold;
+}
+.cardAdd .box button {
+  width: 220px;
+  height: 36px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  background-color: #3247b8;
+  border: 1px solid #495cc5;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0%;
+}
+.cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
   background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
@@ -8667,346 +9228,4 @@ html body::-webkit-scrollbar-track {
 html body::-webkit-scrollbar-thumb {
   background: #b9becf;
   border-radius: 10px;
-}
-html body .cardremind {
-  display: none;
-  position: absolute;
-  width: 500px;
-  height: 200px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 200px;
-  z-index: 20;
-}
-html body .cardremind .remindbar {
-  width: 100%;
-  height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
-  background-color: #3046b7;
-  border-radius: 12px 12px 0px 0px;
-  position: relative;
-}
-html body .cardremind .remindbar span {
-  font-size: 17px;
-  line-height: 50px;
-  padding-left: 20px;
-  color: #fff;
-}
-html body .cardremind .remindbar button {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
-}
-html body .cardremind .remindbar button::before {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-html body .cardremind .remindbar button::after {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-html body .cardremind .remindbox {
-  width: 100%;
-  height: 110px;
-  background: #fff;
-  border-radius: 0px 0px 12px 12px;
-  padding: 20px 0px;
-  text-align: center;
-}
-html body .cardremind .remindbox p {
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-html body .cardremind .remindbox button {
-  width: 160px;
-  height: 36px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-  background-color: #3247b8;
-  border: 1px solid #495cc5;
-  color: #4d515d;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #4d515d;
-}
-html body .cardremind .remindbox button:hover, html body .cardremind .remindbox button:active, html body .cardremind .remindbox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
-  background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
-}
-html body .cardremind .remindbox button:last-child {
-  margin: 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  color: #fff;
-}
-html body .cardremind .remindbox button:last-child:hover, html body .cardremind .remindbox button:last-child:active, html body .cardremind .remindbox button:last-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-}
-html body .cardremind.display {
-  display: block;
-}
-html body .cardadd {
-  display: none;
-  position: absolute;
-  width: 800px;
-  height: 360px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 110px;
-  z-index: 20;
-}
-html body .cardadd .cardaddbar {
-  width: 100%;
-  height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
-  background-color: #3046b7;
-  border-radius: 12px 12px 0px 0px;
-  position: relative;
-}
-html body .cardadd .cardaddbar span {
-  font-size: 17px;
-  color: #fff;
-  line-height: 50px;
-  padding-left: 20px;
-}
-html body .cardadd .cardaddbar button {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-  background: transparent;
-}
-html body .cardadd .cardaddbar button::before {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-html body .cardadd .cardaddbar button::after {
-  content: "";
-  width: 1px;
-  height: 18px;
-  background: #fff;
-  position: absolute;
-  left: 8px;
-  top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-html body .cardadd .cardaddbox {
-  width: 100%;
-  height: 315px;
-  background: #fff;
-  border-radius: 0px 0px 12px 12px;
-  padding: 20px 0px;
-}
-html body .cardadd .cardaddbox div {
-  width: 50%;
-  height: 50px;
-  float: left;
-  position: relative;
-}
-html body .cardadd .cardaddbox div:last-child {
-  width: 500px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: 20px;
-  text-align: center;
-}
-html body .cardadd .cardaddbox div input {
-  width: 235px;
-  height: 28px;
-  font-size: 17px;
-  padding: 3px 0px 3px 10px;
-  float: right;
-  margin: 7px 30px 0px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 4px;
-}
-html body .cardadd .cardaddbox div select {
-  float: right;
-  width: 245px;
-  height: 36px;
-  margin: 7px 30px 0px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 4px;
-  font-family: "my_font";
-  padding-left: 10px;
-  outline: none;
-  font-size: 15px;
-}
-html body .cardadd .cardaddbox div select.short {
-  width: 105px;
-}
-html body .cardadd .cardaddbox div span {
-  line-height: 50px;
-  color: #4d515d;
-  padding-left: 30px;
-}
-html body .cardadd .cardaddbox div button {
-  width: 220px;
-  height: 36px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
-  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-  background-color: #3247b8;
-  border: 1px solid #495cc5;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-}
-html body .cardadd .cardaddbox div button:hover, html body .cardadd .cardaddbox div button:active, html body .cardadd .cardaddbox div button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
-  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-}
-html body .cardadd.display {
-  display: block;
-}
-
-.bg_gold {
-  background-color: #fedab8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
-  background: -o-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
-  background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
-  color: #6c2600;
-  font-size: 14px;
-}
-
-.bg_gray {
-  background-color: #f0f0f0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
-  background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
-  background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-  color: #4d515d;
-  font-size: 14px;
-}
-
-.bg_darkpurple {
-  background-color: #414c88;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
-  background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
-  background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.bg_title {
-  background: #fff0e2;
-}
-
-.bg_title_un {
-  background: #f3f3f3;
-}
-
-.bg_wdgray {
-  background: #f8f8f8;
-}
-
-.bg_red {
-  background: #ff6767;
-}
-
-.bg_purple {
-  background: #b67bff;
-}
-
-.bg_white {
-  background: #ffffff;
-}
-
-.bg_darkblue {
-  background: #404b87;
-}
-
-.bg_brown {
-  background: #bf652e;
-}
-
-.bg_darkgreen {
-  background: #50a1a2;
-}
-
-.bg_darkpurple2 {
-  background: #5b6498;
-}
-
-.bg_lightpurple {
-  background: #eef0f7;
-}
-
-.wd_blue {
-  color: #005aff;
-}
-
-.wd_red {
-  color: #ff0000;
-}
-
-.wd_white {
-  color: #ffffff;
-}
-
-.wd_darkblue {
-  color: #061d93;
-}
-
-.wd_gold {
-  color: #b98353;
-}
-
-.wd_lightpurple {
-  color: #7486ea;
-}
-
-.wd_pink {
-  color: #c75665;
-}
-
-.wd_brown {
-  color: #dec2a9;
 }

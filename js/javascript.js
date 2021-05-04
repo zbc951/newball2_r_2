@@ -100,150 +100,6 @@ $(function(){
         $('.turnold').removeClass('active');
     });
 });
-//我的錢包
-$(function(){
-    //無註冊信用卡彈出信息
-    $('.remindbox button,.remindbar button').click(function(){
-        $('.filter').removeClass('on');
-        $('.cardremind').removeClass('display');
-    });
-    //銀行卡
-    $('.creditcard').hover(function(){
-        $(this).toggleClass('un');
-    });
-    $('.c1,.c2,.c3').click(function(){
-        $(this).addClass('click');
-        $(this).siblings().removeClass('click');
-    });
-    $('.cardbank button').click(function(){
-        $('.cardbank').toggleClass('open');
-    });
-    $('.city button').click(function(){
-        $('.city').toggleClass('open');
-    });
-    $('.county button').click(function(){
-        $('.county').toggleClass('open');
-    });
-    $('.cardaddbar button').click(function(){
-        $('.cardadd').removeClass('display');
-        $('.filter').removeClass('on');
-    });
-    $('.add .creditcard').click(function(){
-        $('.cardadd').addClass('display');
-        $('.filter').addClass('on');
-    });
-});
-//幫助中心
-$(function(){
-    $('.helpbar').click(function(){
-        if($(this).next().hasClass('helpbox')){
-            $(this).next().toggleClass('display');
-            $(this).toggleClass('open');
-        };
-    });
-    //頁面切換
-    $('.help li:nth-of-type(1)').click(function(){
-        $('.depositP').addClass('display');
-        $('.depositP').siblings().removeClass('display');
-    });
-    $('.help li:nth-of-type(2)').click(function(){
-        $('.transP').addClass('display');
-        $('.transP').siblings().removeClass('display');
-    });
-    $('.help li:nth-of-type(3)').click(function(){
-        $('.withP').addClass('display');
-        $('.withP').siblings().removeClass('display');
-    });
-    $('.help li:nth-of-type(4)').click(function(){
-        $('.betP').addClass('display');
-        $('.betP').siblings().removeClass('display');
-    });
-    $('.help li:nth-of-type(5)').click(function(){
-        $('.sportP').addClass('display');
-        $('.sportP').siblings().removeClass('display');
-    });
-    $('.help li:nth-of-type(6)').click(function(){
-        $('.skillP').addClass('display');
-        $('.skillP').siblings().removeClass('display');
-    });
-    //sportP
-    $('.sportbar button').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    });
-    $('.sportbar button:nth-of-type(1)').click(function(){
-        $('.sportP table:nth-of-type(1)').addClass('display');
-        $('.sportP table:nth-of-type(1)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(2)').click(function(){
-        $('.sportP table:nth-of-type(2)').addClass('display');
-        $('.sportP table:nth-of-type(2)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(3)').click(function(){
-        $('.sportP table:nth-of-type(3)').addClass('display');
-        $('.sportP table:nth-of-type(3)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(4)').click(function(){
-        $('.sportP table:nth-of-type(4)').addClass('display');
-        $('.sportP table:nth-of-type(4)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(5)').click(function(){
-        $('.sportP table:nth-of-type(5)').addClass('display');
-        $('.sportP table:nth-of-type(5)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(6)').click(function(){
-        $('.sportP table:nth-of-type(6)').addClass('display');
-        $('.sportP table:nth-of-type(6)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(7)').click(function(){
-        $('.sportP table:nth-of-type(7)').addClass('display');
-        $('.sportP table:nth-of-type(7)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(8)').click(function(){
-        $('.sportP table:nth-of-type(8)').addClass('display');
-        $('.sportP table:nth-of-type(8)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(9)').click(function(){
-        $('.sportP table:nth-of-type(9)').addClass('display');
-        $('.sportP table:nth-of-type(9)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(10)').click(function(){
-        $('.sportP table:nth-of-type(10)').addClass('display');
-        $('.sportP table:nth-of-type(10)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(11)').click(function(){
-        $('.sportP table:nth-of-type(11)').addClass('display');
-        $('.sportP table:nth-of-type(11)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(12)').click(function(){
-        $('.sportP table:nth-of-type(12)').addClass('display');
-        $('.sportP table:nth-of-type(12)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(13)').click(function(){
-        $('.sportP table:nth-of-type(13)').addClass('display');
-        $('.sportP table:nth-of-type(13)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(14)').click(function(){
-        $('.sportP table:nth-of-type(14)').addClass('display');
-        $('.sportP table:nth-of-type(14)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(15)').click(function(){
-        $('.sportP table:nth-of-type(15)').addClass('display');
-        $('.sportP table:nth-of-type(15)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(16)').click(function(){
-        $('.sportP table:nth-of-type(16)').addClass('display');
-        $('.sportP table:nth-of-type(16)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(17)').click(function(){
-        $('.sportP table:nth-of-type(17)').addClass('display');
-        $('.sportP table:nth-of-type(17)').siblings().removeClass('display');
-    });
-    $('.sportbar button:nth-of-type(18)').click(function(){
-        $('.sportP table:nth-of-type(18)').addClass('display');
-        $('.sportP table:nth-of-type(18)').siblings().removeClass('display');
-    });
-});
 //聯絡我們
 $(function(){
     $('.callus li').click(function(){
@@ -425,6 +281,7 @@ $(function(){
 
 
     //上段
+
 //球頭換算表
 $(function(){
     $('.conversionBtn').click(function(){
@@ -484,6 +341,7 @@ $(function(){
 })
 
     //左側
+
 //左列效果
 $(function(){
     $('.left li').click(function(){
@@ -553,6 +411,7 @@ $(function(){
 });
 
     //首頁
+
 //首頁時間列
 $(function(){
     $('.timeSelect .date').click(function(){
@@ -696,6 +555,7 @@ $(function(){
 })
 
     //賽事比分頁
+
 //選擇聯盟
 $(function(){
     $('.chooseLeague span').click(function(){
@@ -825,7 +685,146 @@ $(function(){
     })
 })
 
-//共用
+//我的錢包
+$(function(){
+    //無註冊信用卡彈出信息
+    $('.cardremind .topbar button,.cardremind .box button').click(function(){
+        $('.filter').removeClass('display');
+        $('.cardremind').removeClass('display');
+    });
+
+    //銀行卡點擊打勾
+    $('.creditcardBtn.c1,.creditcardBtn.c2,.creditcardBtn.c3').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+
+    //添加銀行卡
+    $('.creditcardBtn').click(function(){
+        $('.filter,.cardAdd').addClass('display');
+    })
+
+    $('.cardAdd .box button,.cardAdd .topbar button').click(function(){
+        $('.filter,.cardAdd').removeClass('display');
+    })
+})
+
+//幫助中心
+$(function(){
+    //展開列
+    $('.helpbar').click(function(){
+        if($(this).next().hasClass('helpbox')){
+            $(this).next().toggleClass('display');
+            $(this).toggleClass('open');
+        };
+    });
+
+    //頁面切換
+    $('.help1').click(function(){
+        $('.depositP').addClass('display');
+        $('.depositP').siblings().removeClass('display');
+    })
+    $('.help2').click(function(){
+        $('.transP').addClass('display');
+        $('.transP').siblings().removeClass('display');
+    })
+    $('.help3').click(function(){
+        $('.withP').addClass('display');
+        $('.withP').siblings().removeClass('display');
+    })
+    $('.help4').click(function(){
+        $('.betP').addClass('display');
+        $('.betP').siblings().removeClass('display');
+    })
+    $('.help5').click(function(){
+        $('.sportP').addClass('display');
+        $('.sportP').siblings().removeClass('display');
+    })
+    $('.help6').click(function(){
+        $('.skillP').addClass('display');
+        $('.skillP').siblings().removeClass('display');
+    })
+
+    //sportbar
+    $('.sportbar button').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
+    $('.ruleB1').click(function(){
+        $('.rule1').addClass('display');
+        $('.rule1').siblings().removeClass('display');
+    })
+    $('.ruleB2').click(function(){
+        $('.rule2').addClass('display');
+        $('.rule2').siblings().removeClass('display');
+    })
+    $('.ruleB3').click(function(){
+        $('.rule3').addClass('display');
+        $('.rule3').siblings().removeClass('display');
+    })
+    $('.ruleB4').click(function(){
+        $('.rule4').addClass('display');
+        $('.rule4').siblings().removeClass('display');
+    })
+    $('.ruleB5').click(function(){
+        $('.rule5').addClass('display');
+        $('.rule5').siblings().removeClass('display');
+    })
+    $('.ruleB6').click(function(){
+        $('.rule6').addClass('display');
+        $('.rule6').siblings().removeClass('display');
+    })
+    $('.ruleB7').click(function(){
+        $('.rule7').addClass('display');
+        $('.rule7').siblings().removeClass('display');
+    })
+    $('.ruleB8').click(function(){
+        $('.rule8').addClass('display');
+        $('.rule8').siblings().removeClass('display');
+    })
+    $('.ruleB9').click(function(){
+        $('.rule9').addClass('display');
+        $('.rule9').siblings().removeClass('display');
+    })
+    $('.ruleB10').click(function(){
+        $('.rule10').addClass('display');
+        $('.rule10').siblings().removeClass('display');
+    })
+    $('.ruleB11').click(function(){
+        $('.rule11').addClass('display');
+        $('.rule11').siblings().removeClass('display');
+    })
+    $('.ruleB12').click(function(){
+        $('.rule12').addClass('display');
+        $('.rule12').siblings().removeClass('display');
+    })
+    $('.ruleB13').click(function(){
+        $('.rule13').addClass('display');
+        $('.rule13').siblings().removeClass('display');
+    })
+    $('.ruleB14').click(function(){
+        $('.rule14').addClass('display');
+        $('.rule14').siblings().removeClass('display');
+    })
+    $('.ruleB15').click(function(){
+        $('.rule15').addClass('display');
+        $('.rule15').siblings().removeClass('display');
+    })
+    $('.ruleB16').click(function(){
+        $('.rule16').addClass('display');
+        $('.rule16').siblings().removeClass('display');
+    })
+    $('.ruleB17').click(function(){
+        $('.rule17').addClass('display');
+        $('.rule17').siblings().removeClass('display');
+    })
+    $('.ruleB18').click(function(){
+        $('.rule18').addClass('display');
+        $('.rule18').siblings().removeClass('display');
+    })
+})
+
+    //共用
 
 //radio單擊取消
 $(function(){
