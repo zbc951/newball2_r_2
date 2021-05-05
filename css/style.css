@@ -3197,6 +3197,23 @@ main .bg {
 .minetable.callus {
   width: 1150px;
 }
+.minetable.callus tr th .remind {
+  color: #ababab;
+  font-size: 14px;
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  font-weight: bold;
+}
+.minetable.callus tr th .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: -1px;
+  left: -18px;
+}
 .minetable.callus tr td {
   padding: 20px;
 }
@@ -3250,6 +3267,27 @@ main .bg {
 .minetable.callus tr td .box .half .contact_ic.sk {
   background-position-x: 50%;
 }
+.minetable.callus tr td .box .half .contact_ic.ask {
+  background-position-x: 75%;
+}
+.minetable.callus tr td .box .half .contact_ic.fly {
+  background-position-x: 100%;
+}
+.minetable.callus tr td .box .half .join_ic {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url("../images/joinus_ic.png") no-repeat;
+  background-size: 500%;
+  margin-left: 25px;
+  transform: translateY(5px);
+}
+.minetable.callus tr td .box .half .join_ic.img4 {
+  background-position-x: 75%;
+}
+.minetable.callus tr td .box .half .join_ic.img5 {
+  background-position-x: 100%;
+}
 .minetable.callus tr td .box .half p {
   display: inline-block;
   width: 85%;
@@ -3260,9 +3298,20 @@ main .bg {
   padding-left: 30px;
   box-sizing: border-box;
 }
+.minetable.callus tr td .box .half p.control {
+  width: 60%;
+}
 .minetable.callus tr td .box .half p span {
   display: block;
   padding: 7px 0px;
+}
+.minetable.callus tr td .box .half p span.sup {
+  font-size: 16px;
+  font-weight: bold;
+}
+.minetable.callus tr td .box .half p span.remind {
+  font-size: 12px;
+  color: #ababab;
 }
 .minetable.callus tr td .box .half p button {
   margin: 8px 24px 0px 0px;
@@ -3278,6 +3327,149 @@ main .bg {
 .minetable.callus tr td .box .half p button:hover, .minetable.callus tr td .box .half p button:active, .minetable.callus tr td .box .half p button.active {
   background: #fff;
   color: #1a1a1a;
+}
+.minetable.callus tr td .box .half .rowbut {
+  display: inline-block;
+  position: relative;
+  background: #b3b3b3;
+  padding: 8px 12px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.minetable.callus tr td .box .half .rowbut.lside .innbut {
+  left: 3%;
+  animation: rowbut 0.3s ease-out 0s;
+}
+.minetable.callus tr td .box .half .rowbut.lside span:nth-of-type(2) {
+  color: #fff;
+}
+.minetable.callus tr td .box .half .rowbut.rside .innbut {
+  left: 49%;
+  animation: rowbut2 0.3s ease-out 0s;
+}
+.minetable.callus tr td .box .half .rowbut.rside span:nth-of-type(1) {
+  color: #fff;
+}
+.minetable.callus tr td .box .half .rowbut .innbut {
+  display: block;
+  width: 48%;
+  height: 80%;
+  background: #fff;
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  border-radius: 20px;
+}
+.minetable.callus tr td .box .half .rowbut span {
+  font-size: 15px;
+  position: relative;
+  padding-right: 15px;
+}
+.minetable.callus tr td .box .half .rowbut span:last-child {
+  padding: 0px;
+}
+.minetable.callus tr td .box .officalimg {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+}
+.minetable.callus tr td .box .officalimg div {
+  width: 80px;
+  height: 50px;
+  background: url("../images/about_offical.png") no-repeat;
+  background-size: 400%;
+  margin: 0px auto 5px;
+}
+.minetable.callus tr td .box .officalimg div.img2 {
+  background-position-x: -80px;
+}
+.minetable.callus tr td .box .officalimg div.img3 {
+  background-position-x: -160px;
+}
+.minetable.callus tr td .box .officalimg div.img4 {
+  background-position-x: -240px;
+}
+.minetable.callus tr td .box .officalimg p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+.minetable.callus tr td .box .partnerimg {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+}
+.minetable.callus tr td .box .partnerimg div {
+  width: 80px;
+  height: 50px;
+  background: url("../images/about_partner.png") no-repeat;
+  background-size: 700%;
+  margin: 0px auto 5px;
+}
+.minetable.callus tr td .box .partnerimg div.img2 {
+  background-position-x: -80px;
+}
+.minetable.callus tr td .box .partnerimg div.img3 {
+  background-position-x: -160px;
+}
+.minetable.callus tr td .box .partnerimg div.img4 {
+  background-position-x: -240px;
+}
+.minetable.callus tr td .box .partnerimg div.img5 {
+  background-position-x: -320px;
+}
+.minetable.callus tr td .box .partnerimg div.img6 {
+  margin-top: 10px;
+  background-position-x: -400px;
+}
+.minetable.callus tr td .box .partnerimg div.img7 {
+  margin-top: 10px;
+  background-position-x: -480px;
+}
+.minetable.callus tr td .box .partnerimg p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+.minetable.callus tr td .bigBox {
+  display: inline-block;
+  width: 31%;
+  height: 170px;
+  border: solid 1px #ababab;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 12px;
+  font-size: 0px;
+  padding: 15px 0px;
+  vertical-align: top;
+}
+.minetable.callus tr td .bigBox:last-child {
+  margin: 0px;
+}
+.minetable.callus tr td .bigBox .join_ic {
+  width: 50px;
+  height: 50px;
+  background: url("../images/joinus_ic.png") no-repeat;
+  background-size: 500%;
+  margin: 15px auto;
+}
+.minetable.callus tr td .bigBox .join_ic.img2 {
+  background-position-x: 25%;
+}
+.minetable.callus tr td .bigBox .join_ic.img3 {
+  background-position-x: 50%;
+}
+.minetable.callus tr td .bigBox p {
+  font-size: 14px;
+  color: #fff;
+}
+.minetable.callus tr td .bigBox p.remind {
+  font-size: 12px;
+  color: #ababab;
+  padding-top: 10px;
 }
 .minetable.problem {
   width: 1150px;
@@ -3418,6 +3610,29 @@ main .bg {
   box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
+}
+.minetable.download tr td .codeBox.control {
+  margin: 20px auto;
+}
+.minetable.download tr td .codeBox .versionWord {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+}
+.minetable.download tr td .codeBox .versionWord span {
+  display: block;
+  color: #1bc100;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.minetable.download tr td .codeBox .version {
+  display: inline-block;
+  width: 82px;
+  height: 65px;
+  background: url("../images/version_check.png") no-repeat;
 }
 .minetable.download tr td .codeBox div {
   display: inline-block;
@@ -6476,64 +6691,66 @@ main .bg {
 .myself .onlineCilent .onlineroom .send:hover, .myself .onlineCilent .onlineroom .send:active, .myself .onlineCilent .onlineroom .send.active {
   background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
 }
-.myself .aboutus, .myself .aboutlink {
+.myself .aboutBox, .myself .linkBox {
   display: none;
 }
-.myself .aboutus.display, .myself .aboutlink.display {
+.myself .aboutBox.display, .myself .linkBox.display {
   display: block;
 }
-.myself .aboutlink div {
-  width: 850px;
+.myself .linkBox div {
+  width: 1080px;
   height: auto;
-  margin-left: 17px;
+  margin-left: 45px;
 }
-.myself .aboutlink div a {
+.myself .linkBox div a {
   float: left;
   width: 200px;
   height: 120px;
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  box-shadow: 0 0 6px 1px #d7dced;
-  margin: 0px 10px 10px 0px;
+  margin: 0px 20px 20px 0px;
 }
-.myself .aboutlink div a:hover, .myself .aboutlink div a:active, .myself .aboutlink div a.active {
-  text-decoration: underline;
-}
-.myself .aboutlink div a.nmar {
+.myself .linkBox div a:nth-of-type(5n) {
   margin-right: 0px;
 }
-.myself .aboutlink div a span {
+.myself .linkBox div a:hover, .myself .linkBox div a:active, .myself .linkBox div a.active {
+  text-decoration: underline;
+}
+.myself .linkBox div a.nmar {
+  margin-right: 0px;
+}
+.myself .linkBox div a span {
   display: block;
   width: 200px;
   height: 88px;
   background: url("../images/about_link.png") no-repeat;
 }
-.myself .aboutlink div a span.mlb {
+.myself .linkBox div a span.mlb {
   background-position-x: 0px;
 }
-.myself .aboutlink div a span.npb {
+.myself .linkBox div a span.npb {
   background-position-x: -200px;
 }
-.myself .aboutlink div a span.cpbl {
+.myself .linkBox div a span.cpbl {
   background-position-x: -400px;
 }
-.myself .aboutlink div a span.nba {
+.myself .linkBox div a span.nba {
   background-position-x: -600px;
 }
-.myself .aboutlink div a span.donbest {
+.myself .linkBox div a span.donbest {
   background-position-x: -800px;
 }
-.myself .aboutlink div a span.kbl {
+.myself .linkBox div a span.kbl {
   background-position-x: -1000px;
 }
-.myself .aboutlink div a span.ncaa {
+.myself .linkBox div a span.ncaa {
   background-position-x: -1200px;
 }
-.myself .aboutlink div a span.nfl {
+.myself .linkBox div a span.nfl {
   background-position-x: -1400px;
 }
-.myself .aboutlink div a p {
+.myself .linkBox div a p {
   height: 32px;
   background: #fff;
   line-height: 32px;

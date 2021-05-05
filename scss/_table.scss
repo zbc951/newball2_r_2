@@ -3928,11 +3928,33 @@
 		}
 	}
 
-	//聯繫我們-聯繫我們
+	//聯繫我們-聯繫我們+設定+加入我們
 	&.callus {
 		width: 1150px;
 
 		tr {
+
+			th {
+
+				.remind {
+					color: #ababab;
+					font-size: 14px;
+					margin-right: 20px;
+					float: right;
+					position: relative;
+					font-weight: bold;
+
+					&::before {
+						content: "";
+						width: 15px;
+						height: 15px;
+						position: absolute;
+						background: url(../images/infor.png) no-repeat;
+						top: -1px;
+						left: -18px;
+					}
+				}
+			}
 
 			td {
 				padding: 20px;
@@ -3991,6 +4013,32 @@
 							&.sk {
 								background-position-x: 50%;
 							}
+
+							&.ask {
+								background-position-x: 75%;
+							}
+
+							&.fly {
+								background-position-x: 100%;
+							}
+						}
+
+						.join_ic {
+							display: inline-block;
+							width: 50px;
+							height: 50px;
+							background: url('../images/joinus_ic.png') no-repeat;
+							background-size: 500%;
+							margin-left: 25px;
+							transform: translateY(5px);
+	
+							&.img4 {
+								background-position-x: 75%;
+							}
+	
+							&.img5 {
+								background-position-x: 100%;
+							}
 						}
 
 						p {
@@ -4003,9 +4051,23 @@
 							padding-left: 30px;
 							box-sizing: border-box;
 
+							&.control {
+								width: 60%;
+							}
+
 							span {
 								display: block;
 								padding: 7px 0px;
+								
+								&.sup {
+									font-size: 16px;
+									font-weight: bold;
+								}
+	
+								&.remind {
+									font-size: 12px;
+									color: #ababab;
+								}
 							}
 							
 							button {
@@ -4024,6 +4086,189 @@
 									color: #1a1a1a;
 								}
 							}
+						}
+
+						.rowbut {
+							display: inline-block;
+							position: relative;
+							background: #b3b3b3;
+							padding: 8px 12px;
+							border-radius: 20px;
+							position: relative;
+							cursor: pointer;
+							user-select: none;
+
+							&.lside {
+
+								.innbut {
+									left: 3%;
+									animation: rowbut 0.3s ease-out 0s;
+								}
+
+								span {
+
+									&:nth-of-type(2) {
+										color: #fff;
+									}
+								}
+							}
+
+							&.rside {
+
+								.innbut {
+									left: 49%;
+									animation: rowbut2 0.3s ease-out 0s;
+								}
+
+								span {
+
+									&:nth-of-type(1) {
+										color: #fff;
+									}
+								}
+							}
+
+							.innbut {
+								display: block;
+								width: 48%;
+								height: 80%;
+								background: #fff;
+								position: absolute;
+								left: 3%;
+								top: 10%;
+								border-radius: 20px;
+							}
+
+							span {
+								font-size: 15px;
+								position: relative;
+								padding-right: 15px;
+
+								&:last-child {
+									padding: 0px;
+								}
+							}
+						}
+					}
+
+					.officalimg {
+						display: inline-block;
+						width: 25%;
+						height: 100%;
+						
+						div {
+							width: 80px;
+							height: 50px;
+							background: url('../images/about_offical.png') no-repeat;
+							background-size: 400%;
+							margin: 0px auto 5px;
+
+							&.img2 {
+								background-position-x: -80px;
+							}
+
+							&.img3 {
+								background-position-x: -160px;
+							}
+
+							&.img4 {
+								background-position-x: -240px;
+							}
+						}
+
+						p {
+							font-size: 14px;
+							line-height: 20px;
+							color: #fff;
+						}
+					}
+					.partnerimg {
+						display: inline-block;
+						width: 20%;
+						height: 100%;
+						
+						div {
+							width: 80px;
+							height: 50px;
+							background: url('../images/about_partner.png') no-repeat;
+							background-size: 700%;
+							margin: 0px auto 5px;
+
+							&.img2 {
+								background-position-x: -80px;
+							}
+
+							&.img3 {
+								background-position-x: -160px;
+							}
+
+							&.img4 {
+								background-position-x: -240px;
+							}
+
+							&.img5 {
+								background-position-x: -320px;
+							}
+
+							&.img6 {
+								margin-top: 10px;
+								background-position-x: -400px;
+							}
+
+							&.img7 {
+								margin-top: 10px;
+								background-position-x: -480px;
+							}
+						}
+
+						p {
+							font-size: 14px;
+							line-height: 20px;
+							color: #fff;
+						}
+					}
+				}
+
+				.bigBox {
+					display: inline-block;
+					width: 31%;
+					height: 170px;
+					border: solid 1px #ababab;
+					border-radius: 5px;
+					box-sizing: border-box;
+					margin-right: 12px;
+					font-size: 0px;
+					padding: 15px 0px;
+					vertical-align: top;
+
+					&:last-child {
+						margin: 0px;
+					}
+
+					.join_ic {
+						width: 50px;
+						height: 50px;
+						background: url('../images/joinus_ic.png') no-repeat;
+						background-size: 500%;
+						margin: 15px auto;
+
+						&.img2 {
+							background-position-x: 25%;
+						}
+
+						&.img3 {
+							background-position-x: 50%;
+						}
+					}
+
+					p {
+						font-size: 14px;
+						color: #fff;
+
+						&.remind {
+							font-size: 12px;
+							color: #ababab;
+							padding-top: 10px;
 						}
 					}
 				}
@@ -4201,6 +4446,33 @@
 					box-sizing: border-box;
 					font-size: 0px;
 					margin: 20px auto 10px;
+
+					&.control {
+						margin: 20px auto;
+					}
+
+					.versionWord {
+						display: inline-block;
+						width: 50%;
+						box-sizing: border-box;
+						padding: 5px;
+						text-align: left;
+
+						span {
+							display: block;
+							color: #1bc100;
+							font-size: 20px;
+							font-weight: bold;
+							padding-bottom: 15px;
+						}
+					}
+
+					.version {
+						display: inline-block;
+						width: 82px;
+						height: 65px;
+						background: url('../images/version_check.png') no-repeat;
+					}
 
 					div {
 						display: inline-block;

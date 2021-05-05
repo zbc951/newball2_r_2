@@ -142,29 +142,6 @@ $(function(){
         };
     });
 });
-//設定
-$(function(){
-    $('.rowbut').click(function(){
-        if($(this).hasClass('lside')){
-            $(this).removeClass('lside');
-            $(this).addClass('rside');
-        } else{
-            $(this).removeClass('rside');
-            $(this).addClass('lside');
-        };
-    });
-});
-//關於我們
-$(function(){
-    $('.about li:nth-of-type(1)').click(function(){
-        $('.aboutus').addClass('display');
-        $('.aboutus').siblings().removeClass('display');
-    });
-    $('.about li:nth-of-type(2)').click(function(){
-        $('.aboutlink').addClass('display');
-        $('.aboutlink').siblings().removeClass('display');
-    });
-});
 //取款
 $(function(){
     $('.withdrawl input').focus(function(){
@@ -809,6 +786,32 @@ $(function(){
     $('.fixbar .call4').click(function(){
         $('.onlineCilentBox').siblings().removeClass('display');
         $('.onlineCilentBox').addClass('display');
+    })
+})
+
+//設定
+$(function(){
+    $('.rowbut').click(function(){
+        if($(this).hasClass('lside')){
+            $(this).removeClass('lside');
+            $(this).addClass('rside');
+        } else{
+            $(this).removeClass('rside');
+            $(this).addClass('lside');
+        };
+    });
+});
+
+//關於
+$(function(){
+    $('.fixbar .about1').click(function(){
+        $('.aboutBox').addClass('display');
+        $('.aboutBox').siblings().removeClass('display');
+    })
+
+    $('.fixbar .about2').click(function(){
+        $('.linkBox').addClass('display');
+        $('.linkBox').siblings().removeClass('display');
     })
 })
 
