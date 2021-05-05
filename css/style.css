@@ -68,8 +68,7 @@ input {
 html {
   font-family: "my_font";
   background: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -191,18 +190,6 @@ header article .logged .inputBox input {
   padding-left: 5px;
   border-radius: 3px;
   border: none;
-}
-header article .logged .inputBox input::-webkit-input-placeholder {
-  color: #8f8f8f;
-}
-header article .logged .inputBox input::-moz-placeholder {
-  color: #8f8f8f;
-}
-header article .logged .inputBox input:-ms-input-placeholder {
-  color: #8f8f8f;
-}
-header article .logged .inputBox input::-ms-input-placeholder {
-  color: #8f8f8f;
 }
 header article .logged .inputBox input::placeholder {
   color: #8f8f8f;
@@ -383,11 +370,10 @@ main article.discountBoard {
   width: 1170px;
 }
 main article.mine {
-  width: 1440px;
+  width: 1460px;
 }
 main .bg {
   width: 100%;
-  min-width: 1530px;
   height: 1000px;
   position: absolute;
   top: 0px;
@@ -470,8 +456,6 @@ main .bg {
   display: inline-block;
   width: 40px;
   height: 17px;
-  background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
-  background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
   background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
   background-color: #2e44b6;
   position: relative;
@@ -607,9 +591,7 @@ main .bg {
   height: auto;
   width: auto;
   top: 49%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 42px;
   font-size: 12px;
   background: #4d4d4d;
@@ -701,9 +683,7 @@ main .bg {
   width: 1px;
   height: 7px;
   background: #000;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 3px;
   right: 6px;
 }
@@ -713,9 +693,7 @@ main .bg {
   width: 1px;
   height: 7px;
   background: #000;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 3px;
   left: 6px;
 }
@@ -767,9 +745,7 @@ main .bg {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .right .liveWindow .teamWindow .score p span {
   color: #fff;
@@ -862,9 +838,7 @@ main .bg {
   background: #dadada;
 }
 .right .room .livelist ul li:hover::before, .right .room .livelist ul li:active::before {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .right .room .livelist ul li:hover span, .right .room .livelist ul li:active span {
   color: #000;
@@ -878,9 +852,7 @@ main .bg {
   z-index: 2;
 }
 .right .room .livelist ul li.active::before {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .right .room .livelist ul li.active span {
   color: #000;
@@ -895,8 +867,6 @@ main .bg {
   border-color: transparent #000;
   right: 25px;
   top: 8px;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .right .room .livelist ul li .gameName {
@@ -925,9 +895,7 @@ main .bg {
   position: absolute;
   left: 10px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 12px;
   color: #575757;
 }
@@ -1073,8 +1041,7 @@ main .bg {
   border-style: solid;
   border-width: 0px 15px 15px 0px;
   border-color: transparent #108c2e transparent transparent;
-  -webkit-animation: btnFlashing 1s linear 0s infinite;
-          animation: btnFlashing 1s linear 0s infinite;
+  animation: btnFlashing 1s linear 0s infinite;
 }
 .playBoard tr td button::after {
   display: none;
@@ -1087,8 +1054,7 @@ main .bg {
   border-style: solid;
   border-width: 15px 15px 0px 0px;
   border-color: transparent #ae4639 transparent transparent;
-  -webkit-animation: btnFlashing 1s linear 0s infinite;
-          animation: btnFlashing 1s linear 0s infinite;
+  animation: btnFlashing 1s linear 0s infinite;
 }
 .playBoard tr td button.up::before {
   display: block;
@@ -1101,17 +1067,13 @@ main .bg {
   pointer-events: none;
   color: transparent;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .playBoard tr td button.disable span {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 18px;
 }
 .playBoard tr td button.disable i {
@@ -1124,9 +1086,7 @@ main .bg {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .playBoard tr td a {
   display: block;
@@ -2204,165 +2164,12 @@ main .bg {
 .playBoard.tType12_index tr td:nth-of-type(12) {
   width: 6%;
 }
-.playBoard.tbet {
-  display: none;
-  width: 850px;
-  margin-left: 17px;
-  cursor: pointer;
-}
-.playBoard.tbet.display {
-  display: table;
-}
-.playBoard.tbet.recordboard {
-  width: 96%;
-  margin: 0px auto 15px;
-}
-.playBoard.tbet tr th {
-  font-size: 15px;
-  border-color: #b9c0d2;
-  border-width: 0px 0px 1px 0px;
-}
-.playBoard.tbet tr th:first-child {
-  padding-left: 20px;
-}
-.playBoard.tbet tr th.spth {
-  padding: 0px;
-  border-right: solid 1px #b9c0d2;
-  width: 5%;
-  font-size: 24px;
-}
-.playBoard.tbet tr th.tright {
-  padding: 0px 20px 0px 0px;
-}
-.playBoard.tbet tr th.tright.record {
-  padding-right: 13px;
-}
-.playBoard.tbet tr th.tright p {
-  display: inline-block;
-  float: none;
-}
-.playBoard.tbet tr th.tright span {
-  display: inline-block;
-  float: none;
-}
-.playBoard.tbet tr th p {
-  float: left;
-  padding-top: 3px;
-}
-.playBoard.tbet tr th span {
-  margin-top: 3px;
-}
-.playBoard.tbet tr th span.arrow {
-  width: 13px;
-  height: 13px;
-  background: url("../images/arrow.png") no-repeat;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background-size: 100%;
-  margin: 2px 0px 0px 15px;
-}
-.playBoard.tbet tr th span.arrow.un {
-  background-position: 0px -13px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.playBoard.tbet tr th .topline {
-  width: 1px;
-  height: 20px;
-  background: #b9c0d2;
-  float: left;
-  margin: 0px 10px;
-  padding: 0px;
-}
-.playBoard.tbet tr td {
-  font-size: 14px;
-  font-weight: normal;
-  border-color: #b9c0d2;
-  border-width: 1px 1px 1px 0px;
-  padding: 8px 0px;
-  line-height: 20px;
-}
-.playBoard.tbet tr td:nth-child(1) {
-  width: 11%;
-}
-.playBoard.tbet tr td:nth-child(2) {
-  width: 25%;
-}
-.playBoard.tbet tr td:nth-child(3) {
-  width: 10%;
-}
-.playBoard.tbet tr td:nth-child(4) {
-  width: 22%;
-}
-.playBoard.tbet tr td:nth-child(5) {
-  width: 10%;
-}
-.playBoard.tbet tr td:nth-child(6) {
-  width: 22%;
-}
-.playBoard.tbet tr td.tleft {
-  padding: 5px 0px 5px 10px;
-}
-.playBoard.tbet2 {
-  width: 96%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 12px;
-  margin: 0px auto 25px;
-}
-.playBoard.tbet2 tr {
-  background: #bf652e;
-}
-.playBoard.tbet2 tr td {
-  font-weight: normal;
-  position: relative;
-  font-size: 14px;
-  color: white;
-  border: none;
-  padding: 8px 0px;
-  vertical-align: middle;
-  padding: 5px 0px;
-  line-height: 28px;
-}
-.playBoard.tbet2 tr td:nth-child(1) {
-  width: 11%;
-  padding-left: 10px;
-}
-.playBoard.tbet2 tr td:nth-child(2) {
-  width: 25%;
-}
-.playBoard.tbet2 tr td:nth-child(3) {
-  width: 10%;
-}
-.playBoard.tbet2 tr td:nth-child(4) {
-  width: 22%;
-}
-.playBoard.tbet2 tr td:nth-child(5) {
-  width: 10%;
-}
-.playBoard.tbet2 tr td:nth-child(6) {
-  width: 22%;
-}
-.playBoard.tbet2 tr td.tleft {
-  text-align: left;
-  padding-left: 10px;
-}
-.playBoard.tbet2 tr td .topline {
-  float: right;
-  width: 1px;
-  height: 22px;
-  background: #fff;
-  margin-top: 3px;
-}
 .playBoard.tbetting {
   width: 100%;
   border-radius: 0px;
   margin: 0px;
   position: relative;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .playBoard.tbetting tr th {
   border-width: 1px;
@@ -2384,9 +2191,7 @@ main .bg {
   background: #000;
   top: 0px;
   left: 8px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .playBoard.tbetting tr th button::after {
   content: "";
@@ -2396,9 +2201,7 @@ main .bg {
   background: #000;
   left: 8px;
   top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 .playBoard.tbetting tr td {
   height: 50px;
@@ -2435,9 +2238,7 @@ main .bg {
   padding: 5px 0px 30px 145px;
 }
 .playBoard.tteach tr.teachre.dou td .rebody {
-  -webkit-transform: translateY(-70%) translateX(-50%);
-      -ms-transform: translateY(-70%) translateX(-50%);
-          transform: translateY(-70%) translateX(-50%);
+  transform: translateY(-70%) translateX(-50%);
 }
 .playBoard.tteach tr.teachre td {
   border: none;
@@ -2451,16 +2252,12 @@ main .bg {
 .playBoard.tteach tr.teachre td .rebody {
   width: 320px;
   height: 80px;
-  background: -webkit-gradient(linear, left top, right top, from(#e7eefd), color-stop(40%, #effbff), color-stop(60%, #effbff), to(#e7eefd));
-  background: -o-linear-gradient(left, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background-color: #effbff;
   border-radius: 40px;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateY(-38%) translateX(-50%);
-      -ms-transform: translateY(-38%) translateX(-50%);
-          transform: translateY(-38%) translateX(-50%);
+  transform: translateY(-38%) translateX(-50%);
 }
 .playBoard.tteach tr.teachre td .rebody p {
   width: 100%;
@@ -2487,9 +2284,7 @@ main .bg {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   background: #e9f5ff;
   border-radius: 50%;
 }
@@ -2524,9 +2319,7 @@ main .bg {
   background-size: 200%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .playBoard.tteach tr td .teamimg.fr {
   right: 0px;
@@ -2542,1470 +2335,11 @@ main .bg {
   padding: 5px 10px;
   bottom: -20px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border: solid 1px #b9c0d2;
   border-radius: 30px;
   color: #4a5ec5;
   background: #fff;
-}
-.playBoard.tperson {
-  width: 850px;
-  position: relative;
-  margin-left: 17px;
-}
-.playBoard.tperson.person tr td .sticker {
-  width: 79px;
-  height: 81px;
-  background: url("../images/avatar_big.png") no-repeat;
-  position: relative;
-  cursor: pointer;
-}
-.playBoard.tperson.person tr td .sticker::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: url("../images/edit.png") no-repeat;
-  right: 0px;
-  bottom: 0px;
-}
-.playBoard.tperson.money tr th .re {
-  position: absolute;
-  background: transparent;
-  font-size: 14px;
-  right: 20px;
-  top: 4px;
-  color: #4d515d;
-  /*for IE 9*/
-  /*for IE*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .playBoard.tperson.money tr th .re {
-    padding-left: 20px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .playBoard.tperson.money tr th .re {
-    padding-left: 20px;
-  }
-}
-.playBoard.tperson.money tr th .re.notbut {
-  cursor: default;
-}
-.playBoard.tperson.money tr th .re.notbut::before {
-  display: none;
-}
-.playBoard.tperson.money tr th .re::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  background: url("../images/reset.png") no-repeat;
-  background-size: 100%;
-  left: -17px;
-  top: 4px;
-  /*for IE 9*/
-  /*for IE*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .playBoard.tperson.money tr th .re::before {
-    top: 3px;
-    left: 3px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .playBoard.tperson.money tr th .re::before {
-    top: 3px;
-    left: 3px;
-  }
-}
-.playBoard.tperson.money tr th .re:hover::before, .playBoard.tperson.money tr th .re:active::before, .playBoard.tperson.money tr th .re.active::before {
-  -webkit-animation: reset 1s linear 0s infinite;
-          animation: reset 1s linear 0s infinite;
-}
-.playBoard.tperson.money tr td .creditcard {
-  width: 250px;
-  height: 110px;
-  background: #f1f1f1;
-  border-radius: 5px;
-  float: left;
-  margin-right: 20px;
-  border: none;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-  position: relative;
-}
-.playBoard.tperson.money tr td .creditcard.un .card_ic {
-  background-position-x: -42px;
-}
-.playBoard.tperson.money tr td .creditcard.c1.click::before, .playBoard.tperson.money tr td .creditcard.c2.click::before, .playBoard.tperson.money tr td .creditcard.c3.click::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: solid 5px #fff;
-  border-radius: 30px;
-  top: -8px;
-  right: -8px;
-}
-.playBoard.tperson.money tr td .creditcard.c1.click::after, .playBoard.tperson.money tr td .creditcard.c2.click::after, .playBoard.tperson.money tr td .creditcard.c3.click::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 16px;
-  border: solid 5px #fff;
-  border-width: 0px 5px 5px 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 0px;
-  right: 5px;
-}
-.playBoard.tperson.money tr td .creditcard.c1 div, .playBoard.tperson.money tr td .creditcard.c2 div, .playBoard.tperson.money tr td .creditcard.c3 div {
-  width: 35px;
-  height: 35px;
-  background: url("../images/bank_ic.png") no-repeat;
-  background-size: 300%;
-  position: absolute;
-  top: 20px;
-  left: 10px;
-}
-.playBoard.tperson.money tr td .creditcard.c1 p, .playBoard.tperson.money tr td .creditcard.c2 p, .playBoard.tperson.money tr td .creditcard.c3 p {
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  color: #fff;
-}
-.playBoard.tperson.money tr td .creditcard.c1 p.race, .playBoard.tperson.money tr td .creditcard.c2 p.race, .playBoard.tperson.money tr td .creditcard.c3 p.race {
-  top: 40px;
-  font-size: 10px;
-  font-weight: lighter;
-}
-.playBoard.tperson.money tr td .creditcard.c1 p.cardnum, .playBoard.tperson.money tr td .creditcard.c2 p.cardnum, .playBoard.tperson.money tr td .creditcard.c3 p.cardnum {
-  left: 10px;
-  top: 70px;
-  font-weight: bold;
-}
-.playBoard.tperson.money tr td .creditcard.c1 {
-  background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
-  background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
-  background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
-  background-color: #6589c6;
-}
-.playBoard.tperson.money tr td .creditcard.c1:hover, .playBoard.tperson.money tr td .creditcard.c1:active, .playBoard.tperson.money tr td .creditcard.c1.active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
-  background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
-  background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
-  background-color: #6589c6;
-}
-.playBoard.tperson.money tr td .creditcard.c1.click:before {
-  background: #6589c6;
-}
-.playBoard.tperson.money tr td .creditcard.c1::before {
-  -webkit-box-shadow: 0 0 6px 1px #6689c6;
-          box-shadow: 0 0 6px 1px #6689c6;
-}
-.playBoard.tperson.money tr td .creditcard.c2 {
-  background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
-  background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
-  background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
-  background-color: #31a8b1;
-}
-.playBoard.tperson.money tr td .creditcard.c2:hover, .playBoard.tperson.money tr td .creditcard.c2:active, .playBoard.tperson.money tr td .creditcard.c2.active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
-  background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
-  background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
-  background-color: #31a8b1;
-}
-.playBoard.tperson.money tr td .creditcard.c2.click:before {
-  background: #31a8b1;
-}
-.playBoard.tperson.money tr td .creditcard.c2::before {
-  -webkit-box-shadow: 0 0 6px 1px #32a9b2;
-          box-shadow: 0 0 6px 1px #32a9b2;
-}
-.playBoard.tperson.money tr td .creditcard.c2 div {
-  background-position-x: -35px;
-}
-.playBoard.tperson.money tr td .creditcard.c3 {
-  background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
-  background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
-  background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
-  background-color: #d7767a;
-}
-.playBoard.tperson.money tr td .creditcard.c3:hover, .playBoard.tperson.money tr td .creditcard.c3:active, .playBoard.tperson.money tr td .creditcard.c3.active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
-  background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
-  background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
-  background-color: #d7767a;
-}
-.playBoard.tperson.money tr td .creditcard.c3.click::before {
-  background: #d7767a;
-}
-.playBoard.tperson.money tr td .creditcard.c3::before {
-  -webkit-box-shadow: 0 0 6px 1px #d8767a;
-          box-shadow: 0 0 6px 1px #d8767a;
-}
-.playBoard.tperson.money tr td .creditcard.c3 div {
-  background-position-x: -70px;
-}
-.playBoard.tperson.money tr td .creditcard:last-child {
-  margin: 0px;
-}
-.playBoard.tperson.money tr td .creditcard:hover, .playBoard.tperson.money tr td .creditcard:active, .playBoard.tperson.money tr td .creditcard.active {
-  -webkit-box-shadow: 0 0 4px 1px #bac0db;
-          box-shadow: 0 0 4px 1px #bac0db;
-  background: #fff;
-}
-.playBoard.tperson.money tr td .creditcard .card_ic {
-  width: 42px;
-  height: 29px;
-  margin: 0px auto 10px;
-  background: url("../images/add_card.png");
-}
-.playBoard.tperson.money tr td .creditcard p {
-  font-size: 14px;
-  color: #4d515d;
-}
-.playBoard.tperson.money tr td .smallbox {
-  width: 190px;
-  height: 90px;
-  border: solid 1px #b9c0d2;
-  border-radius: 5px;
-  text-align: left;
-  float: left;
-  margin: 0px 7px 7px 0px;
-  position: relative;
-}
-.playBoard.tperson.money tr td .smallbox.nmar {
-  margin-right: 0px;
-}
-.playBoard.tperson.money tr td .smallbox .charge {
-  background: #d7af8a;
-  color: #fff;
-  position: absolute;
-  border: none;
-  font-size: 14px;
-  padding: 2px 5px;
-  border-radius: 20px;
-  border: solid 1px #d7af8a;
-  top: 10px;
-  right: 5px;
-}
-.playBoard.tperson.money tr td .smallbox .charge:hover, .playBoard.tperson.money tr td .smallbox .charge:active, .playBoard.tperson.money tr td .smallbox .charge.active {
-  background: transparent;
-  color: #d7af8a;
-}
-.playBoard.tperson.money tr td .smallbox p {
-  color: #4d515d;
-  font-size: 14px;
-  padding: 15px 0px 10px 20px;
-}
-.playBoard.tperson.money tr td .smallbox p.dollar {
-  font-size: 10px;
-}
-.playBoard.tperson.money tr td .smallbox p.dollar span {
-  font-size: 16px;
-}
-.playBoard.tperson.contactus tr td:nth-child(1) {
-  width: 13%;
-}
-.playBoard.tperson.contactus tr td .innerlist {
-  float: left;
-  height: 34px;
-}
-.playBoard.tperson.contactus tr td .innerlist select {
-  width: 220px;
-  height: 34px;
-  border: 1px solid #b9bfdc;
-  border-radius: 5px;
-  padding-left: 10px;
-  outline: none;
-}
-.playBoard.tperson.contactus tr td .sword {
-  font-size: 15px;
-  color: #8c93a6;
-}
-.playBoard.tperson.contactus tr td textarea {
-  width: 95%;
-  margin-bottom: 20px;
-  resize: none;
-  border: none;
-  outline: none;
-}
-.playBoard.tperson.contactus tr td .upimg {
-  width: 70px;
-  height: 70px;
-  background: transparent;
-  padding-top: 20px;
-  position: relative;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-}
-.playBoard.tperson.contactus tr td .upimg:hover, .playBoard.tperson.contactus tr td .upimg:active, .playBoard.tperson.contactus tr td .upimg.active {
-  -webkit-box-shadow: 0 0 8px 1px #d7ddf1;
-          box-shadow: 0 0 8px 1px #d7ddf1;
-  color: #000;
-}
-.playBoard.tperson.contactus tr td .upimg span {
-  display: block;
-  width: 24px;
-  height: 19px;
-  background: url("../images/uploadimg.png");
-  position: absolute;
-  top: 13px;
-  left: 23px;
-}
-.playBoard.tperson.contactus tr td .imgpage {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #838ba0;
-}
-.playBoard.tperson.contactus tr td .upimgbut {
-  width: 220px;
-  height: 36px;
-  color: #fff;
-  font-size: 16px;
-  float: right;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3247b8));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
-  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
-  background-color: #3247b8;
-  border-radius: 5px;
-  padding: 0px;
-}
-.playBoard.tperson.contactus tr td .upimgbut:hover, .playBoard.tperson.contactus tr td .upimgbut:active, .playBoard.tperson.contactus tr td .upimgbut.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#3247b8));
-  background: -o-linear-gradient(bottom, #8f9cdc 0%, #3247b8 100%);
-  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
-}
-.playBoard.tperson.control .midC {
-  width: 50%;
-  padding: 20px 0px;
-  float: left;
-}
-.playBoard.tperson.control .midC .rowbut {
-  display: inline-block;
-  position: relative;
-  background: #a3a8c4;
-  margin-left: 40px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  position: relative;
-  cursor: pointer;
-}
-.playBoard.tperson.control .midC .rowbut.lside span:last-child {
-  color: #fff;
-}
-.playBoard.tperson.control .midC .rowbut.lside .innbut {
-  -webkit-animation: rowbut 0.3s ease-out 0s;
-          animation: rowbut 0.3s ease-out 0s;
-}
-.playBoard.tperson.control .midC .rowbut.rside span:nth-of-type(1) {
-  color: #fff;
-}
-.playBoard.tperson.control .midC .rowbut.rside .innbut {
-  left: 53%;
-  -webkit-animation: rowbut2 0.3s ease-out 0s;
-          animation: rowbut2 0.3s ease-out 0s;
-}
-.playBoard.tperson.control .midC .rowbut span {
-  margin-right: 22px;
-  font-size: 14px;
-  position: relative;
-}
-.playBoard.tperson.control .midC .rowbut span:last-child {
-  margin: 0px;
-}
-.playBoard.tperson.control .midC .rowbut .innbut {
-  width: 44%;
-  height: 80%;
-  background: #fff;
-  position: absolute;
-  left: 3%;
-  top: 10%;
-  border-radius: 20px;
-}
-.playBoard.tperson.joinus tr td .join_ic {
-  float: left;
-  width: 50px;
-  height: 50px;
-  background: url("../images/joinus_ic.png") no-repeat;
-  background-size: 500%;
-}
-.playBoard.tperson.joinus tr td .join_ic.img2 {
-  background-position-x: -50px;
-}
-.playBoard.tperson.joinus tr td .join_ic.img3 {
-  background-position-x: -100px;
-}
-.playBoard.tperson.joinus tr td .join_ic.img4 {
-  background-position-x: -150px;
-  margin: 8px 20px 0px 40px;
-}
-.playBoard.tperson.joinus tr td .join_ic.img5 {
-  background-position-x: -200px;
-  margin: 8px 20px 0px 60px;
-}
-.playBoard.tperson.joinus tr td .support {
-  float: left;
-  width: 214px;
-  height: 214px;
-  padding: 20px;
-  border: 1px solid #b9c0d2;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-.playBoard.tperson.joinus tr td .support:last-child {
-  margin-right: 0px;
-}
-.playBoard.tperson.joinus tr td .support div {
-  margin: 20px auto 30px;
-  float: none;
-}
-.playBoard.tperson.joinus tr td .support p {
-  font-size: 18px;
-  color: #4d515d;
-}
-.playBoard.tperson.joinus tr td .support p.gray {
-  font-size: 15px;
-  padding-top: 15px;
-  line-height: 20px;
-}
-.playBoard.tperson.withdrawl tr td {
-  font-size: 14px;
-  color: #4d515d;
-}
-.playBoard.tperson.withdrawl tr td input {
-  width: 220px;
-  height: 30px;
-  font-size: 15px;
-  padding-left: 10px;
-  margin: 10px 0px;
-  border-radius: 5px;
-  border: 1px solid #b9c0d2;
-}
-.playBoard.tperson.withdrawl tr td input::-webkit-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.withdrawl tr td input::-moz-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.withdrawl tr td input:-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.withdrawl tr td input::-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.withdrawl tr td input::placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.withdrawl tr td input.focus {
-  border: 1px solid #364bb9;
-}
-.playBoard.tperson.withdrawl tr td .range {
-  color: #8c93a6;
-  font-size: 14px;
-  position: relative;
-  margin-left: 40px;
-}
-.playBoard.tperson.withdrawl tr td .range::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background: url("../images/infor.png") no-repeat;
-  top: -1px;
-  left: -18px;
-}
-.playBoard.tperson.withdrawl tr td .withbut {
-  width: 235px;
-  height: 34px;
-  padding: 0px;
-  font-weight: bold;
-  background: #c3c7d2;
-  color: #fff;
-  cursor: default;
-}
-.playBoard.tperson.withdrawl tr td .withbut.focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-  cursor: pointer;
-}
-.playBoard.tperson.withdrawl tr td .withbut.focus:hover, .playBoard.tperson.withdrawl tr td .withbut.focus:active, .playBoard.tperson.withdrawl tr td .withbut.focus.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-}
-.playBoard.tperson.withdrawl tr td .timebox {
-  float: left;
-  width: 250px;
-  height: 120px;
-  background: #fff;
-  margin-right: 17px;
-  border-radius: 10px;
-  border: 1px solid #b9bfdc;
-  overflow: hidden;
-}
-.playBoard.tperson.withdrawl tr td .timebox:last-child {
-  margin-right: 0px;
-}
-.playBoard.tperson.withdrawl tr td .timebox .boxtitle {
-  width: 100%;
-  height: 35px;
-  background: #dee0e5;
-  text-align: left;
-}
-.playBoard.tperson.withdrawl tr td .timebox .boxtitle p {
-  line-height: 35px;
-  padding-left: 20px;
-}
-.playBoard.tperson.withdrawl tr td .timebox .content {
-  width: 100%;
-  height: 85px;
-}
-.playBoard.tperson.withdrawl tr td .timebox .content p {
-  font-size: 24px;
-  padding: 15px 0px 10px;
-}
-.playBoard.tperson.transpoint tr td.sword {
-  font-size: 14px;
-  color: #4d515d;
-}
-.playBoard.tperson.transpoint tr td .ulbox {
-  display: inline-block;
-  width: 262px;
-  height: 34px;
-  position: relative;
-  margin: 0px 20px;
-}
-.playBoard.tperson.transpoint tr td .ulbox select {
-  width: 260px;
-  height: 32px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: #fff;
-  border: 1px solid #b9bfdc;
-  border-radius: 5px;
-  padding-left: 10px;
-}
-.playBoard.tperson.transpoint tr td .inputmoney {
-  width: 248px;
-  height: 26px;
-  border-radius: 5px;
-  border: 1px solid #b9bfdc;
-  padding-left: 10px;
-  margin: 15px 0px;
-}
-.playBoard.tperson.transpoint tr td .inputmoney::-webkit-input-placeholder {
-  color: #c7c7c7;
-  font-weight: bold;
-}
-.playBoard.tperson.transpoint tr td .inputmoney::-moz-placeholder {
-  color: #c7c7c7;
-  font-weight: bold;
-}
-.playBoard.tperson.transpoint tr td .inputmoney:-ms-input-placeholder {
-  color: #c7c7c7;
-  font-weight: bold;
-}
-.playBoard.tperson.transpoint tr td .inputmoney::-ms-input-placeholder {
-  color: #c7c7c7;
-  font-weight: bold;
-}
-.playBoard.tperson.transpoint tr td .inputmoney::placeholder {
-  color: #c7c7c7;
-  font-weight: bold;
-}
-.playBoard.tperson.transpoint tr td .arrow {
-  display: inline-block;
-  width: 24px;
-  height: 15px;
-  background: url("../images/arrow_trans.png");
-  margin-bottom: 10px;
-}
-.playBoard.tperson.transpoint tr td .transbut {
-  width: 262px;
-  height: 32px;
-  padding: 0px;
-  font-weight: bold;
-  background: #c3c7d2;
-  color: #fff;
-  font-size: 16px;
-  cursor: default;
-}
-.playBoard.tperson.transpoint tr td .transbut.focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-  cursor: pointer;
-}
-.playBoard.tperson.transpoint tr td .transbut.focus:hover, .playBoard.tperson.transpoint tr td .transbut.focus:active, .playBoard.tperson.transpoint tr td .transbut.focus.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-}
-.playBoard.tperson.deposit.tbank, .playBoard.tperson.deposit.tnum, .playBoard.tperson.deposit.tnetcard {
-  display: none;
-}
-.playBoard.tperson.deposit.tbank.display, .playBoard.tperson.deposit.tnum.display, .playBoard.tperson.deposit.tnetcard.display {
-  display: table;
-}
-.playBoard.tperson.deposit tr th .teach {
-  position: absolute;
-  background: transparent;
-  font-size: 14px;
-  right: 20px;
-  top: 4px;
-  color: #4d515d;
-}
-.playBoard.tperson.deposit tr th .teach::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: url("../images/infor.png") no-repeat;
-  background-size: 100%;
-  left: -17px;
-  top: 3px;
-}
-.playBoard.tperson.deposit tr td button.paybut {
-  width: 100px;
-  height: 80px;
-  border-radius: 10px;
-  background: transparent;
-  padding: 0px;
-  margin: 5px;
-  color: #4d515d;
-  position: relative;
-}
-.playBoard.tperson.deposit tr td button.paybut:hover, .playBoard.tperson.deposit tr td button.paybut:active, .playBoard.tperson.deposit tr td button.paybut.active {
-  color: #4d515d;
-  border: solid 1px #1b2f92;
-}
-.playBoard.tperson.deposit tr td button.paybut:hover::before, .playBoard.tperson.deposit tr td button.paybut:active::before, .playBoard.tperson.deposit tr td button.paybut.active::before {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 29px;
-  background: url("../images/box_check.png");
-  right: 0px;
-  bottom: 0px;
-}
-.playBoard.tperson.deposit tr td button.paybut span {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/save_icon.png") no-repeat;
-  margin: 0px auto;
-  background-size: 1400%;
-}
-.playBoard.tperson.deposit tr td button.paybut span.bankcard {
-  background-position-x: -40px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.paypalcard {
-  background-position-x: -80px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.wechat {
-  background-position-x: -120px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.paypal {
-  background-position-x: -160px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.QQ {
-  background-position-x: -200px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.UP {
-  background-position-x: -240px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.num {
-  background-position-x: -280px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.QRcode {
-  background-position-x: -320px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.instead {
-  background-position-x: -360px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.netcard {
-  background-position-x: -400px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.wechatcard {
-  background-position-x: -440px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.cloudcard {
-  background-position-x: -480px;
-}
-.playBoard.tperson.deposit tr td button.paybut span.big {
-  background-position-x: -520px;
-}
-.playBoard.tperson.deposit tr td button.moneybut {
-  width: 140px;
-  height: 40px;
-  background: transparent;
-  border-radius: 10px;
-  font-size: 17px;
-  color: #4d515d;
-  margin: 20px 15px 0px 0px;
-  position: relative;
-}
-.playBoard.tperson.deposit tr td button.moneybut:hover, .playBoard.tperson.deposit tr td button.moneybut:active, .playBoard.tperson.deposit tr td button.moneybut.active {
-  color: #4d515d;
-  border-color: #3046b7;
-}
-.playBoard.tperson.deposit tr td button.moneybut:hover::before, .playBoard.tperson.deposit tr td button.moneybut:active::before, .playBoard.tperson.deposit tr td button.moneybut.active::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: url("../images/box_check.png");
-  background-size: 100%;
-  right: 0px;
-  bottom: 0px;
-}
-.playBoard.tperson.deposit tr td button.payline {
-  width: 140px;
-  height: 40px;
-  border-radius: 10px;
-  background: transparent;
-  padding: 0px;
-  font-size: 17px;
-  line-height: 40px;
-  margin: 0px 5px;
-  color: #4d515d;
-  position: relative;
-}
-.playBoard.tperson.deposit tr td button.payline:hover, .playBoard.tperson.deposit tr td button.payline:active, .playBoard.tperson.deposit tr td button.payline.active {
-  color: #4d515d;
-  border-color: #3046b7;
-}
-.playBoard.tperson.deposit tr td button.payline:hover::before, .playBoard.tperson.deposit tr td button.payline:active::before, .playBoard.tperson.deposit tr td button.payline.active::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background: url("../images/box_check.png");
-  background-size: 100%;
-  right: 0px;
-  bottom: 0px;
-}
-.playBoard.tperson.deposit tr td button.payline span {
-  display: block;
-  width: 25px;
-  height: 25px;
-  float: left;
-  background: url("../images/change.png");
-  margin: 6px 0px 0px 20px;
-}
-.playBoard.tperson.deposit tr td .chbank {
-  width: 240px;
-  height: 36px;
-  border: 1px solid #b9bfdc;
-  border-radius: 5px;
-  padding: 0px 10px;
-  outline: none;
-}
-.playBoard.tperson.deposit tr td .numbox {
-  width: 50%;
-  float: left;
-}
-.playBoard.tperson.deposit tr td .numbox p {
-  width: 100px;
-  float: left;
-  margin: 30px 0px 0px 20px;
-  color: #4d515d;
-  font-size: 14px;
-}
-.playBoard.tperson.deposit tr td .numbox p:nth-of-type(3) {
-  margin-bottom: 30px;
-}
-.playBoard.tperson.deposit tr td .numbox select {
-  width: 200px;
-  float: left;
-  margin: 19px 0px 0px 0px;
-}
-.playBoard.tperson.deposit tr td .numbox input {
-  float: left;
-  width: 186px;
-  height: 32px;
-  margin: 19px 0px 0px 0px;
-  border: 1px solid #b9bfdc;
-  border-radius: 5px;
-  padding-left: 10px;
-}
-.playBoard.tperson.deposit tr td .numbox input.dis {
-  width: 188px;
-  border: none;
-  background: transparent;
-  color: #838ba0;
-}
-.playBoard.tperson.deposit tr td .numbox .copy {
-  float: left;
-  width: 50px;
-  height: 24px;
-  background: transparent;
-  margin: 25px 10px 6px 10px;
-  border-radius: 20px;
-  padding: 0px;
-  color: #b9c0d2;
-  background-color: #ffffff;
-}
-.playBoard.tperson.deposit tr td .numbox .copy:hover, .playBoard.tperson.deposit tr td .numbox .copy:active, .playBoard.tperson.deposit tr td .numbox .copy.active {
-  background: #b9c0d2;
-  color: #fff;
-}
-.playBoard.tperson.deposit tr td .depositmoney {
-  width: 220px;
-  height: 30px;
-  font-size: 15px;
-  padding-left: 10px;
-  margin: 10px 0px;
-  border-radius: 5px;
-  border: 1px solid #b9c0d2;
-}
-.playBoard.tperson.deposit tr td .depositmoney::-webkit-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.deposit tr td .depositmoney::-moz-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.deposit tr td .depositmoney:-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.deposit tr td .depositmoney::-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.deposit tr td .depositmoney::placeholder {
-  font-weight: bold;
-  font-size: 13px;
-  color: #c7c7c7;
-}
-.playBoard.tperson.deposit tr td .depositmoney.focus {
-  border: 1px solid #364bb9;
-}
-.playBoard.tperson.deposit tr td .range {
-  color: #8c93a6;
-  font-size: 14px;
-  position: relative;
-  margin-left: 40px;
-}
-.playBoard.tperson.deposit tr td .range::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background: url("../images/infor.png") no-repeat;
-  top: -1px;
-  left: -18px;
-}
-.playBoard.tperson.deposit tr td .withbut {
-  width: 235px;
-  height: 34px;
-  padding: 0px;
-  font-weight: bold;
-  background: #c3c7d2;
-  color: #fff;
-  cursor: default;
-}
-.playBoard.tperson.deposit tr td .withbut.focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-  cursor: pointer;
-}
-.playBoard.tperson.deposit tr td .withbut.focus:hover, .playBoard.tperson.deposit tr td .withbut.focus:active, .playBoard.tperson.deposit tr td .withbut.focus.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
-  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-  background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
-  background-color: #3046b7;
-}
-.playBoard.tperson tr th {
-  font-size: 15px;
-}
-.playBoard.tperson tr th.tleft {
-  padding: 8px 0px 8px 20px;
-}
-.playBoard.tperson tr th p {
-  float: right;
-  margin: 2px 20px 0px 0px;
-}
-.playBoard.tperson tr th .topline {
-  display: inline-block;
-  width: 1px;
-  height: 18px;
-  background: #bcbcbc;
-  margin: 0px 10px -4px 10px;
-}
-.playBoard.tperson tr th .remind {
-  color: #8c93a6;
-  font-size: 14px;
-  margin: 3px 20px 0px 0px;
-  float: right;
-  position: relative;
-}
-.playBoard.tperson tr th .remind.un {
-  float: left;
-  margin: 10px 0px 0px 20px;
-}
-.playBoard.tperson tr th .remind::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background: url("../images/infor.png") no-repeat;
-  top: -1px;
-  left: -18px;
-}
-.playBoard.tperson tr th .remind a {
-  display: inline;
-  margin-left: 10px;
-  color: #5163c7;
-}
-.playBoard.tperson tr td {
-  padding: 20px;
-  border: none;
-  position: relative;
-}
-.playBoard.tperson tr td.npad {
-  padding: 0px;
-}
-.playBoard.tperson tr td .line {
-  width: 1px;
-  height: 60px;
-  background: #b9c0d2;
-  position: absolute;
-  left: 50%;
-}
-.playBoard.tperson tr td .line.sec {
-  top: 120px;
-}
-.playBoard.tperson tr td .line.base {
-  width: 90%;
-  height: 1px;
-  left: 5%;
-  top: 50%;
-}
-.playBoard.tperson tr td .line.bottom {
-  width: 96%;
-  left: 2%;
-  height: 1px;
-  bottom: 0px;
-}
-.playBoard.tperson tr td .line.nbox {
-  height: 80%;
-  top: 10%;
-}
-.playBoard.tperson tr td .tbox {
-  width: auto;
-  height: 100%;
-  border: 1px solid #b9c0d2;
-  border-radius: 12px;
-  padding: 20px 15px;
-  float: left;
-  position: relative;
-}
-.playBoard.tperson tr td .tbox.trans {
-  margin-left: 21px;
-}
-.playBoard.tperson tr td .tbox.control {
-  border: none;
-}
-.playBoard.tperson tr td .tbox.npad {
-  padding: 0px;
-}
-.playBoard.tperson tr td .tbox .norword {
-  width: 319px;
-  height: 20px;
-  height: auto;
-  text-align: left;
-  float: left;
-  margin-bottom: 15px;
-}
-.playBoard.tperson tr td .tbox .norword:nth-last-child(1), .playBoard.tperson tr td .tbox .norword:nth-last-child(2) {
-  margin-bottom: 0px;
-}
-.playBoard.tperson tr td .tbox .norword p {
-  float: left;
-  width: 100px;
-  font-size: 15px;
-  color: #515560;
-  line-height: 20px;
-}
-.playBoard.tperson tr td .tbox .norword span {
-  float: left;
-  width: 155px;
-  font-size: 15px;
-  line-height: 20px;
-}
-.playBoard.tperson tr td .tbox .norword button {
-  font-size: 15px;
-  background: #8892c9;
-  border-radius: 20px;
-  padding: 0px 10px;
-  color: #fff;
-  float: right;
-  margin: -3px 10px 0px 0px;
-  /*for IE 9*/
-  /*for IE*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .playBoard.tperson tr td .tbox .norword button {
-    padding: 3px 10px;
-    margin-top: 0px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .playBoard.tperson tr td .tbox .norword button {
-    padding: 3px 10px;
-    margin-top: 0px;
-  }
-}
-.playBoard.tperson tr td .tbox .norword button:hover, .playBoard.tperson tr td .tbox .norword button:active, .playBoard.tperson tr td .tbox .norword button.active {
-  color: #8892c9;
-  background: transparent;
-}
-.playBoard.tperson tr td .tbox .norword button.nomar_r {
-  margin-right: 0px;
-}
-.playBoard.tperson tr td .tbox .half {
-  width: 379px;
-  height: auto;
-  float: left;
-  position: relative;
-  text-align: left;
-}
-.playBoard.tperson tr td .tbox .half.lite {
-  width: 235px;
-}
-.playBoard.tperson tr td .tbox .half.lite .rowbut {
-  width: 50px;
-  height: 25px;
-  background: #cbcdd9;
-  position: absolute;
-  right: 0px;
-  top: 18px;
-  border-radius: 15px;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-  cursor: pointer;
-}
-.playBoard.tperson tr td .tbox .half.lite .rowbut.turn {
-  background: #4d515d;
-}
-.playBoard.tperson tr td .tbox .half.lite .rowbut.turn div {
-  left: 50%;
-}
-.playBoard.tperson tr td .tbox .half.lite .rowbut div {
-  width: 40%;
-  height: 80%;
-  background: #fff;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  border-radius: 30px;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-}
-.playBoard.tperson tr td .tbox .half.lite .wallet_ic {
-  width: 17px;
-  height: 16px;
-  margin: 8px 10px 0px 0px;
-}
-.playBoard.tperson tr td .tbox .half.lite .wallet_ic.un {
-  background-position-x: -17px;
-  margin: 8px 10px 0px 20px;
-}
-.playBoard.tperson tr td .tbox .half.sec {
-  margin-top: 40px;
-}
-.playBoard.tperson tr td .tbox .half p {
-  padding: 10px 0px 0px;
-  font-size: 15px;
-}
-.playBoard.tperson tr td .tbox .half p.sup {
-  font-size: 18px;
-}
-.playBoard.tperson tr td .tbox .half p.gray {
-  font-size: 15px;
-  color: #838ba0;
-}
-.playBoard.tperson tr td .tbox .half p.dollar {
-  font-size: 10px;
-}
-.playBoard.tperson tr td .tbox .half p.dollar.lite {
-  padding-left: 20px;
-}
-.playBoard.tperson tr td .tbox .half p.dollar span {
-  font-size: 24px;
-}
-.playBoard.tperson tr td .tbox .half .wallet_ic {
-  float: left;
-  width: 34px;
-  height: 32px;
-  background: url("../images/wallet_ic.png") no-repeat;
-  background-size: 200%;
-  margin: 14px 20px 14px 40px;
-}
-.playBoard.tperson tr td .tbox .half .wallet_ic.un {
-  background-position-x: -34px;
-  margin-left: 60px;
-}
-.playBoard.tperson tr td .tbox .half .contact_ic {
-  float: left;
-  width: 30px;
-  height: 30px;
-  background: url("../images/contact_ic.png") no-repeat;
-  background-size: 500%;
-  margin: 14px 20px 14px 40px;
-}
-.playBoard.tperson tr td .tbox .half .contact_ic.QQ {
-  background-position-x: -30px;
-}
-.playBoard.tperson tr td .tbox .half .contact_ic.sk {
-  background-position-x: -60px;
-}
-.playBoard.tperson tr td .tbox .half .contact_ic.ask {
-  background-position-x: -90px;
-}
-.playBoard.tperson tr td .tbox .half .contact_ic.fly {
-  background-position-x: -120px;
-}
-.playBoard.tperson tr td .tbox .half .charge {
-  background: #d7af8a;
-  color: #fff;
-  border: none;
-  font-size: 14px;
-  padding: 2px 5px;
-  border-radius: 20px;
-  float: right;
-  margin-right: 20px;
-  border: solid 1px #d7af8a;
-}
-.playBoard.tperson tr td .tbox .half .charge:hover, .playBoard.tperson tr td .tbox .half .charge:active, .playBoard.tperson tr td .tbox .half .charge.active {
-  background: transparent;
-  color: #d7af8a;
-}
-.playBoard.tperson tr td .tbox .half .copy {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5daef));
-  background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
-  background-color: #ffffff;
-  border-radius: 5px;
-  border: 1px solid #495cc5;
-  float: right;
-  margin: 13px 20px 0px 0px;
-  padding: 6px 20px;
-}
-.playBoard.tperson tr td .tbox .half .copy:hover, .playBoard.tperson tr td .tbox .half .copy:active, .playBoard.tperson tr td .tbox .half .copy.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5daef));
-  background: -o-linear-gradient(bottom, #ffffff 0%, #d5daef 100%);
-  background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
-  background-color: #d5daef;
-  color: #000;
-}
-.playBoard.tperson tr td .tbox .officalimg {
-  display: inline-block;
-  width: 194px;
-  height: 80px;
-  margin-bottom: 20px;
-}
-.playBoard.tperson tr td .tbox .officalimg div {
-  width: 80px;
-  height: 50px;
-  background: url("../images/about_offical.png") no-repeat;
-  margin: 0px auto 5px;
-}
-.playBoard.tperson tr td .tbox .officalimg div.img2 {
-  background-position-x: -80px;
-}
-.playBoard.tperson tr td .tbox .officalimg div.img3 {
-  background-position-x: -160px;
-}
-.playBoard.tperson tr td .tbox .officalimg div.img4 {
-  background-position-x: -240px;
-}
-.playBoard.tperson tr td .tbox .officalimg p {
-  line-height: 18px;
-  font-size: 15px;
-}
-.playBoard.tperson tr td .tbox .partnerimg {
-  display: inline-block;
-  width: 155px;
-  height: 80px;
-  margin: 0px auto 20px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div {
-  width: 80px;
-  height: 50px;
-  background: url("../images/about_partner.png") no-repeat;
-  margin: 0px auto 5px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img2 {
-  background-position-x: -80px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img3 {
-  background-position-x: -160px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img4 {
-  background-position-x: -240px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img5 {
-  background-position-x: -320px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img6 {
-  background-position-x: -400px;
-}
-.playBoard.tperson tr td .tbox .partnerimg div.img7 {
-  background-position-x: -480px;
-}
-.playBoard.tperson tr td .tbox .partnerimg p {
-  line-height: 18px;
-  font-size: 15px;
-}
-.playBoard.tperson tr td .remind {
-  color: #8c93a6;
-  font-size: 14px;
-  margin: 0px 20px 20px 0px;
-  float: right;
-  position: relative;
-}
-.playBoard.tperson tr td .remind.un {
-  float: left;
-  margin: 10px 0px 0px 20px;
-}
-.playBoard.tperson tr td .remind::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  background: url("../images/infor.png") no-repeat;
-  top: -1px;
-  left: -18px;
-}
-.playBoard.tperson tr td .remind a {
-  display: inline;
-  margin-left: 10px;
-  color: #5163c7;
-}
-.playBoard.tsmall {
-  float: left;
-  width: 419px;
-  margin: 0px 0px 15px 17px;
-}
-.playBoard.tsmall.un {
-  margin-left: 10px;
-}
-.playBoard.tsmall tr td {
-  width: 33.3%;
-  border-width: 0px 0px 1px 0px;
-  color: #4d515d;
-  padding: 10px 20px;
-  font-size: 15px;
-  line-height: 20px;
-}
-.playBoard.tsmall tr td .tbox {
-  width: 100%;
-  height: auto;
-  padding: 20px 0px;
-  border: 1px solid #b9c0d2;
-  border-radius: 5px;
-  float: left;
-  text-align: left;
-}
-.playBoard.tsmall tr td .tbox.app {
-  margin-top: 15px;
-}
-.playBoard.tsmall tr td .tbox.bowser {
-  padding: 30px 0px;
-}
-.playBoard.tsmall tr td .tbox p {
-  float: left;
-  margin: 10px 0px 0px 30px;
-  line-height: 22px;
-}
-.playBoard.tsmall tr td .tbox p.bowserP {
-  margin: 0px 0px 0px 30px;
-}
-.playBoard.tsmall tr td .tbox p span {
-  color: #1bc100;
-  font-size: 18px;
-  font-weight: bold;
-}
-.playBoard.tsmall tr td .tbox .line {
-  width: 90%;
-  height: 1px;
-  background: #b9c0d2;
-  float: left;
-  margin: 28px 0px 28px 18px;
-}
-.playBoard.tsmall tr td .tbox .version {
-  width: 82px;
-  height: 65px;
-  background: url("../images/version_check.png") no-repeat;
-  float: right;
-  margin-right: 70px;
-}
-.playBoard.tsmall tr td .tbox .qrcode {
-  float: left;
-  width: 110px;
-  height: 110px;
-  background: url("../images/download_app_qr.png") no-repeat;
-  margin: 0px 0px 0px 40px;
-}
-.playBoard.tsmall tr td .tbox .appbut {
-  border: 1px solid #495cc5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
-  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
-  background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
-  background-color: #d5daef;
-  width: 80px;
-  margin: 20px 0px 0px 50px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 0px;
-}
-.playBoard.tsmall tr td .tbox .appbut:hover, .playBoard.tsmall tr td .tbox .appbut:active, .playBoard.tsmall tr td .tbox .appbut.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
-  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
-  background: linear-gradient(to top, #fff 0%, #d5daef 100%);
-  color: #000;
-}
-.playBoard.tsmall tr td .tbox .bowser {
-  float: left;
-  width: 40px;
-  height: 40px;
-  background: url("../images/download_app_browser.png");
-  background-size: 200%;
-  margin: 0px 0px 0px 30px;
-}
-.playBoard.tsmall tr td .tbox .bowser.un {
-  background-position-x: -40px;
-}
-.playBoard.tsmall tr td .tbox .bowserbut {
-  width: 80px;
-  padding: 5px 0px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 5px 0px;
-  float: right;
-  margin: 3px 30px 0px 0px;
-  border: 1px solid #495cc5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
-  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
-  background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
-  background-color: #d5daef;
-}
-.playBoard.tsmall tr td .tbox .bowserbut:hover, .playBoard.tsmall tr td .tbox .bowserbut:active, .playBoard.tsmall tr td .tbox .bowserbut.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
-  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
-  background: linear-gradient(to top, #fff 0%, #d5daef 100%);
-  color: #000;
-}
-.playBoard.tdeal {
-  display: none;
-  width: 850px;
-  margin-left: 17px;
-}
-.playBoard.tdeal.display {
-  display: table;
-}
-.playBoard.tdeal tr.fail {
-  background: #ededed;
-}
-.playBoard.tdeal tr.fail td {
-  color: #838ba0;
-}
-.playBoard.tdeal tr td {
-  font-size: 14px;
-  padding: 15px 0px;
-}
-.playBoard.tdeal tr td:nth-child(1) {
-  width: 18%;
-}
-.playBoard.tdeal tr td:nth-child(2) {
-  width: 12%;
-}
-.playBoard.tdeal tr td:nth-child(3) {
-  width: 16%;
-}
-.playBoard.tdeal tr td:nth-child(4) {
-  width: 20%;
-}
-.playBoard.tdeal tr td:nth-child(5) {
-  width: 19%;
-}
-.playBoard.tdeal tr td:nth-child(6) {
-  width: 15%;
-}
-.playBoard.tsportP {
-  display: none;
-  width: 850px;
-  margin: 0px 0px 20px 17px;
-  -webkit-transform: translateY(130px);
-      -ms-transform: translateY(130px);
-          transform: translateY(130px);
-}
-.playBoard.tsportP.display {
-  display: table;
-}
-.playBoard.tsportP tr {
-  text-align: left;
-}
-.playBoard.tsportP tr th {
-  padding: 8px 20px;
-}
-.playBoard.tsportP tr td {
-  padding: 10px;
-  line-height: 28px;
-  font-size: 15px;
-  color: #4d515d;
-}
-.playBoard.tmes {
-  width: 96%;
-}
-.playBoard.tmes tr th {
-  border: none;
-}
-.playBoard.tmes tr td:first-child {
-  width: 50%;
 }
 
 .bettingBoard {
@@ -4030,8 +2364,7 @@ main .bg {
   border-color: transparent #d5d5d5 #bcbcbc #8c8c8c;
   vertical-align: middle;
   background: #ababab;
-  -webkit-box-shadow: 0px -1px 0px 0px #8c8c8c inset;
-          box-shadow: 0px -1px 0px 0px #8c8c8c inset;
+  box-shadow: 0px -1px 0px 0px #8c8c8c inset;
   font-size: 12px;
 }
 .bettingBoard tr td.waiting {
@@ -4169,9 +2502,7 @@ main .bg {
   height: 40px;
   background: #fff;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0px;
 }
 .imgBoard tr td .teamImg.twin {
@@ -4192,8 +2523,6 @@ main .bg {
 }
 .imgBoard tr td a:hover::before, .imgBoard tr td a:active::before, .imgBoard tr td a.active::before {
   left: 50px;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .imgBoard tr td a:nth-of-type(1) {
@@ -4204,12 +2533,8 @@ main .bg {
   position: absolute;
   width: 20px;
   height: 60px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
-  background: -o-linear-gradient(left, transparent, #fff, transparent);
   background: linear-gradient(to right, transparent, #fff, transparent);
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   top: -15px;
   left: -40px;
 }
@@ -4236,15 +2561,11 @@ main .bg {
   background: #4d4d4d;
 }
 .innerBoard tr td {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 8px 5px 0px;
   border-bottom: solid 1px #808080;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .innerBoard tr td.two button {
   width: 49.5%;
@@ -4332,9 +2653,7 @@ main .bg {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: url("../images/avatar_big.png") no-repeat;
   background-size: 100%;
 }
@@ -4353,8 +2672,7 @@ main .bg {
   height: 100%;
   border: solid 1px #ababab;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
 }
@@ -4364,8 +2682,7 @@ main .bg {
   height: auto;
   text-align: left;
   padding: 12px 0px 12px 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .minetable.infor tr td .mainWindow div p {
   color: #fff;
@@ -4430,13 +2747,10 @@ main .bg {
   float: right;
   position: relative;
   margin-right: 10px;
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 .minetable.totalMoney tr th button:hover::before, .minetable.totalMoney tr th button:active::before, .minetable.totalMoney tr th button.active::before {
-  -webkit-animation: reset 1s linear 0s infinite;
-          animation: reset 1s linear 0s infinite;
+  animation: reset 1s linear 0s infinite;
 }
 .minetable.totalMoney tr th button::before {
   content: "";
@@ -4464,8 +2778,7 @@ main .bg {
   width: 50%;
   vertical-align: top;
   padding: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .minetable.totalMoney tr td .box .half p {
   font-size: 14px;
@@ -4515,9 +2828,7 @@ main .bg {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 1px;
   height: 25px;
   background: #ababab;
@@ -4539,15 +2850,12 @@ main .bg {
   color: #fff;
   font-size: 17px;
   margin: 20px 30px;
-  -webkit-transition: 0.25s all;
-  -o-transition: 0.25s all;
   transition: 0.25s all;
   position: relative;
 }
 .minetable.creditcard tr td .creditcardBtn:hover, .minetable.creditcard tr td .creditcardBtn:active, .minetable.creditcard tr td .creditcardBtn.active {
   background: #dbdbdb;
-  -webkit-box-shadow: 0px 0px 5px 0px #fff;
-          box-shadow: 0px 0px 5px 0px #fff;
+  box-shadow: 0px 0px 5px 0px #fff;
   color: #000;
 }
 .minetable.creditcard tr td .creditcardBtn:hover div, .minetable.creditcard tr td .creditcardBtn:active div, .minetable.creditcard tr td .creditcardBtn.active div {
@@ -4555,13 +2863,11 @@ main .bg {
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover, .minetable.creditcard tr td .creditcardBtn.c2:hover, .minetable.creditcard tr td .creditcardBtn.c3:hover {
   color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active, .minetable.creditcard tr td .creditcardBtn.c1.active, .minetable.creditcard tr td .creditcardBtn.c2:active, .minetable.creditcard tr td .creditcardBtn.c2.active, .minetable.creditcard tr td .creditcardBtn.c3:active, .minetable.creditcard tr td .creditcardBtn.c3.active {
   color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before, .minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before, .minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
   content: "";
@@ -4580,46 +2886,32 @@ main .bg {
   height: 16px;
   border: solid 5px #fff;
   border-width: 0px 5px 5px 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 0px;
   right: 5px;
 }
 .minetable.creditcard tr td .creditcardBtn.c1 {
-  background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
-  background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c1:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
-  background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c1:active::before, .minetable.creditcard tr td .creditcardBtn.c1.active::before {
   background: #6589c6;
 }
 .minetable.creditcard tr td .creditcardBtn.c2 {
-  background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
-  background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c2:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
-  background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c2:active::before, .minetable.creditcard tr td .creditcardBtn.c2.active::before {
   background: #31a8b1;
 }
 .minetable.creditcard tr td .creditcardBtn.c3 {
-  background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
-  background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c3:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
-  background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
 }
 .minetable.creditcard tr td .creditcardBtn.c3:active::before, .minetable.creditcard tr td .creditcardBtn.c3.active::before {
@@ -4693,8 +2985,7 @@ main .bg {
   background: #bcbcbc;
   margin: 0px 10px 20px 0px;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .minetable.moneyDetail tr td div:nth-of-type(4n) {
   margin-right: 0px;
@@ -4773,9 +3064,7 @@ main .bg {
   display: table;
 }
 .minetable.bettingRecord.open .arrow {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-      -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
 }
 .minetable.bettingRecord.now {
   width: 1150px;
@@ -4806,9 +3095,7 @@ main .bg {
   position: absolute;
   right: 25px;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(-90deg);
-      -ms-transform: translateY(-50%) rotate(-90deg);
-          transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
 }
 .minetable.bettingRecord tr td {
   padding: 10px;
@@ -4844,9 +3131,7 @@ main .bg {
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
   padding: 0px 5px;
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
   color: #ff0000;
@@ -4909,6 +3194,213 @@ main .bg {
   color: #fc3838;
   padding: 0px 3px;
 }
+.minetable.callus {
+  width: 1150px;
+}
+.minetable.callus tr td {
+  padding: 20px;
+}
+.minetable.callus tr td .box {
+  width: 96%;
+  border: solid 1px #ababab;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  font-size: 0px;
+  padding: 15px 0px;
+}
+.minetable.callus tr td .box .line {
+  width: 1px;
+  height: 40px;
+  background: #ababab;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.minetable.callus tr td .box .line.mid {
+  width: 80%;
+  height: 1px;
+  right: unset;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.minetable.callus tr td .box .half {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  text-align: left;
+  position: relative;
+}
+.minetable.callus tr td .box .half:nth-of-type(3), .minetable.callus tr td .box .half:nth-of-type(4) {
+  margin-top: 30px;
+}
+.minetable.callus tr td .box .half .contact_ic {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/contact_ic.png") no-repeat;
+  background-size: 500%;
+  margin-left: 30px;
+  margin: 0px 0px 6px 30px;
+}
+.minetable.callus tr td .box .half .contact_ic.QQ {
+  background-position-x: 25%;
+}
+.minetable.callus tr td .box .half .contact_ic.sk {
+  background-position-x: 50%;
+}
+.minetable.callus tr td .box .half p {
+  display: inline-block;
+  width: 85%;
+  height: 100%;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.minetable.callus tr td .box .half p span {
+  display: block;
+  padding: 7px 0px;
+}
+.minetable.callus tr td .box .half p button {
+  margin: 8px 24px 0px 0px;
+  border: solid 1px #bcbcbc;
+  background: transparent;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
+.minetable.callus tr td .box .half p button:hover, .minetable.callus tr td .box .half p button:active, .minetable.callus tr td .box .half p button.active {
+  background: #fff;
+  color: #1a1a1a;
+}
+.minetable.problem {
+  width: 1150px;
+}
+.minetable.problem tr td {
+  padding: 15px 15px 0px;
+  text-align: left;
+  color: #fff;
+  font-size: 15px;
+}
+.minetable.problem tr td .inputBox {
+  width: 100%;
+}
+.minetable.problem tr td .inputBox span {
+  padding-right: 30px;
+}
+.minetable.problem tr td .inputBox select {
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  background: #535353;
+  color: #cccccc;
+  width: 156px;
+  height: 36px;
+  padding-left: 10px;
+}
+.minetable.problem tr td .line {
+  width: 100%;
+  height: 1px;
+  background: #ababab;
+  margin: 15px auto 0px;
+}
+.minetable.problem tr td .sword {
+  font-size: 12px;
+  color: #e2e2e2;
+}
+.minetable.problem tr td textarea {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  resize: none;
+  border-radius: 3px;
+}
+.minetable.problem tr td textarea::placeholder {
+  color: #ababab;
+}
+.minetable.problem tr td .upimg {
+  background: transparent;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  width: 70px;
+  height: 70px;
+  color: #ababab;
+  font-size: 12px;
+}
+.minetable.problem tr td .upimg:hover, .minetable.problem tr td .upimg:active, .minetable.problem tr td .upimg.active {
+  border-color: transparent;
+  box-shadow: 0px 0px 5px 0px #fff;
+  transition: all 0.3s;
+}
+.minetable.problem tr td .upimg span {
+  display: block;
+  width: 24px;
+  height: 19px;
+  background: url(../images/uploadimg.png);
+  margin: 0px auto 5px;
+}
+.minetable.problem tr td .imgPage {
+  float: right;
+}
+.minetable.problem tr td .remind {
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0px 0px 20px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+}
+.minetable.problem tr td .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: -2px;
+  left: -18px;
+}
+.minetable.problem tr td .uploadImg {
+  width: 220px;
+  height: 36px;
+  color: #fff;
+  font-size: 16px;
+  float: right;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+  background-color: #3247b8;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.minetable.problem tr td .uploadImg:hover, .minetable.problem tr td .uploadImg:active, .minetable.problem tr td .uploadImg.active {
+  background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
+}
+.minetable.innerActive {
+  width: 1000px;
+  margin: 0px auto 20px;
+}
+.minetable.innerActive tr {
+  border-bottom: solid 1px #ababab;
+}
+.minetable.innerActive tr:nth-of-type(2n) {
+  background: #636363;
+}
+.minetable.innerActive tr td {
+  padding: 10px;
+  color: #fff;
+  border-right: solid 1px #ababab;
+}
+.minetable.innerActive tr td:last-child {
+  border: none;
+}
 .minetable.download {
   width: 570px;
   float: left;
@@ -4923,8 +3415,7 @@ main .bg {
   border: solid 1px #ababab;
   border-radius: 3px;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
 }
@@ -4946,8 +3437,7 @@ main .bg {
 .minetable.download tr td .codeBox div .remind {
   width: 100%;
   margin: 15px 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .minetable.download tr td .codeBox div button {
   background: transparent;
@@ -4984,8 +3474,7 @@ main .bg {
   text-align: left;
   line-height: 24px;
   padding-left: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
 }
 .minetable.download tr td .bowserBox p span {
@@ -5042,15 +3531,11 @@ main .bg {
   position: fixed;
   margin: 0px 0px 0px 250px;
   bottom: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
-  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
   z-index: 10;
   cursor: pointer;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 .middle .bettingbar::before {
@@ -5061,9 +3546,7 @@ main .bg {
   background: url("../images/arrow_w.png");
   right: 40px;
   top: 20px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   pointer-events: none;
 }
 .middle .bettingbar.display {
@@ -5073,9 +3556,7 @@ main .bg {
   bottom: 502px;
 }
 .middle .bettingbar.open::before {
-  -webkit-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 .middle .bettingbar .barnum {
   display: block;
@@ -5128,8 +3609,6 @@ main .bg {
   border-top-width: 0px;
   overflow: hidden;
   cursor: default;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 .middle .bettingbar .bettingbox .bettingwindow {
@@ -5157,8 +3636,7 @@ main .bg {
 .middle .bettingbar .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 .middle .bettingbar .bettingbox .bettingtotal div {
@@ -5200,26 +3678,6 @@ main .bg {
   font-size: 16px;
   padding-left: 5px;
 }
-.middle .bettingbar .bettingbox .bettingend .endbox input::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input::-moz-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input:-ms-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input::-ms-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
 .middle .bettingbar .bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
   color: #c7c7c7;
@@ -5252,19 +3710,13 @@ main .bg {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#efd5d5), to(#fff));
-  background: -o-linear-gradient(bottom, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
   background-color: #efd5d5;
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#efd5d5), to(#fff));
-  background: -o-linear-gradient(top, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button:active, .middle .bettingbar .bettingbox .bettingend .endbox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
-  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
   background-color: #850004;
   color: #fff;
@@ -5272,14 +3724,10 @@ main .bg {
 .middle .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
-  background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
   background-color: #850004;
 }
 .middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .middle .bettingbar .bettingbox .bettingend .endbox button.cur:active, .middle .bettingbar .bettingbox .bettingend .endbox button.cur.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
-  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
 }
 .middle .bettingbar .bettingbox.open {
@@ -5293,8 +3741,6 @@ main .bg {
   z-index: 20;
   left: 35%;
   top: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
-  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
@@ -5345,9 +3791,7 @@ main .bg {
   background: #fff;
   top: 0px;
   left: 11px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .middle .bettingch .chbut::after {
   content: "";
@@ -5357,9 +3801,7 @@ main .bg {
   background: #fff;
   top: 0px;
   left: 11px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 .middle .bettingch .bettingbox {
   width: 576px;
@@ -5397,8 +3839,7 @@ main .bg {
 .middle .bettingch .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 .middle .bettingch .bettingbox .bettingtotal div {
@@ -5454,9 +3895,7 @@ main .bg {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 30px;
   left: -18px;
 }
@@ -5484,22 +3923,16 @@ main .bg {
   color: white;
   float: left;
   margin: 0px 5px 20px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
-  background: -o-linear-gradient(top, #dfb995, #b6885f);
   background: linear-gradient(to bottom, #dfb995, #b6885f);
   background: #b6885f;
   border: 1px solid #b78960;
   font-size: 15px;
 }
 .middle .teach button:hover, .middle .teach button:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
-  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   border: 1px solid #444f8b;
 }
 .middle .teach button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
-  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   background-color: #6a75b2;
   border: 1px solid #444f8b;
@@ -5621,17 +4054,13 @@ main .bg {
   color: #fff;
   font-size: 18px;
   margin: 0px 6px 0px 12px;
-  -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
 }
 .topfix .nor svg {
   width: 18px;
   height: 18px;
   margin: 0px 6px 0px 12px;
-  -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
+  transform: translateY(4px);
   fill: #fff;
 }
 .topfix .nor .gameName {
@@ -5680,9 +4109,7 @@ main .bg {
   right: -36px;
   width: 30px;
   height: 23px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   line-height: 24px;
   text-align: center;
   border-radius: 3px;
@@ -5692,9 +4119,7 @@ main .bg {
   position: absolute;
   right: -72px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 28px;
   height: 28px;
   border: solid 1px #fff;
@@ -5706,9 +4131,7 @@ main .bg {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   margin: 0px;
 }
 .topfix .nor .reWeb .reBtn:hover, .topfix .nor .reWeb .reBtn:active, .topfix .nor .reWeb .reBtn.active {
@@ -5762,8 +4185,6 @@ main .bg {
   height: 100%;
   margin-left: 15px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   position: relative;
 }
@@ -5775,17 +4196,11 @@ main .bg {
   border-width: 10px 13px 10px 0px;
   border-color: transparent #fff;
   cursor: pointer;
-  -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-transform-origin: 10px 32px;
-      -ms-transform-origin: 10px 32px;
-          transform-origin: 10px 32px;
+  transform: translateY(4px);
+  transform-origin: 10px 32px;
 }
 .topfix .nor .timeSelect .turnBtn:active {
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 .topfix .nor .timeSelect .turnBtn.next {
   border-width: 10px 0px 10px 13px;
@@ -5896,9 +4311,7 @@ main .bg {
   position: absolute;
   top: 50%;
   right: -2px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 1px;
   height: 24px;
   background: #fff;
@@ -5906,9 +4319,7 @@ main .bg {
 .topfix .inn .back {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   padding: 6px 8px 8px 21px;
   background: #535353;
   color: #fff;
@@ -5922,9 +4333,7 @@ main .bg {
   width: 0px;
   height: 0px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 6px;
   border-style: solid;
   border-color: transparent #fff;
@@ -5975,12 +4384,8 @@ main .bg {
   width: 20%;
 }
 .chleague ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .chleague ul li {
   width: 20%;
@@ -6014,16 +4419,12 @@ main .bg {
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   color: #fff;
   margin-top: 15px;
 }
 .chleague button:hover, .chleague button:active, .chleague button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
   background-color: #8e9bdc;
 }
@@ -6051,9 +4452,7 @@ main .bg {
   z-index: 20;
   left: 50%;
   top: 20%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .conversionBox.display {
   display: block;
@@ -6096,8 +4495,7 @@ main .bg {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
-          box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .conversionBox button::before {
   content: "";
@@ -6107,9 +4505,7 @@ main .bg {
   right: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .conversionBox button::after {
   content: "";
@@ -6119,9 +4515,7 @@ main .bg {
   left: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .signupWindow {
@@ -6130,9 +4524,7 @@ main .bg {
   width: 800px;
   height: 360px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
@@ -6168,9 +4560,7 @@ main .bg {
   position: absolute;
   left: 8px;
   top: 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .signupWindow .signupbar button::after {
   content: "";
@@ -6180,9 +4570,7 @@ main .bg {
   position: absolute;
   left: 8px;
   top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 .signupWindow .signupbox {
   width: 100%;
@@ -6200,9 +4588,7 @@ main .bg {
 .signupWindow .signupbox div:last-child {
   width: 500px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -6225,8 +4611,6 @@ main .bg {
   width: 180px;
   height: 36px;
   margin-right: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -6237,14 +4621,10 @@ main .bg {
   color: #4d515d;
 }
 .signupWindow .signupbox div button:hover, .signupWindow .signupbox div button:active, .signupWindow .signupbox div button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 .signupWindow .signupbox div button:last-child {
   margin: 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
   /*for IE 9*/
@@ -6255,8 +4635,6 @@ main .bg {
   }
 }
 .signupWindow .signupbox div button:last-child:hover, .signupWindow .signupbox div button:last-child:active, .signupWindow .signupbox div button:last-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
@@ -6270,9 +4648,7 @@ main .bg {
   z-index: 20;
   left: 50%;
   top: 15%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .controlBox h1 {
   width: 100%;
@@ -6358,8 +4734,6 @@ main .bg {
   top: 8.5%;
   background: #ababab;
   border-radius: 30px;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .controlBox .innerBox1 .longBox {
@@ -6421,8 +4795,7 @@ main .bg {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
-          box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .controlBox .cancelBtn::before {
   content: "";
@@ -6432,9 +4805,7 @@ main .bg {
   right: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .controlBox .cancelBtn::after {
   content: "";
@@ -6444,9 +4815,7 @@ main .bg {
   left: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .controlBox.display {
   display: block;
@@ -6456,8 +4825,6 @@ main .bg {
   display: block;
   width: 12px;
   height: 12px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
-  background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
   background-color: #cbd0e9;
   border: 1px solid #b2afcf;
@@ -6469,8 +4836,6 @@ main .bg {
 .cube.active {
   width: 12px;
   height: 12px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3449b9), to(#8694d8));
-  background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
   background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
   background-color: #3449b9;
   position: absolute;
@@ -6483,9 +4848,7 @@ main .bg {
   width: 3px;
   height: 8px;
   border: solid 1px #fff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   border-width: 0px 2px 2px 0px;
 }
 
@@ -6496,9 +4859,7 @@ main .bg {
   position: fixed;
   left: 50%;
   top: 10%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: #3d3d3d;
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
@@ -6527,9 +4888,7 @@ main .bg {
   height: 20px;
   top: 0px;
   left: 10px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   background: #fff;
 }
 .norbetting .norcancelbtn::after {
@@ -6539,9 +4898,7 @@ main .bg {
   height: 20px;
   top: 0px;
   right: 9px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background: #fff;
 }
 .norbetting .nor_bettingbox {
@@ -6594,22 +4951,6 @@ main .bg {
   font-size: 16px;
   padding-left: 5px;
 }
-.norbetting .nor_bettingbox .bettingend .endbox input::-webkit-input-placeholder {
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.norbetting .nor_bettingbox .bettingend .endbox input::-moz-placeholder {
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.norbetting .nor_bettingbox .bettingend .endbox input:-ms-input-placeholder {
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.norbetting .nor_bettingbox .bettingend .endbox input::-ms-input-placeholder {
-  color: #c7c7c7;
-  font-size: 14px;
-}
 .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
   color: #c7c7c7;
   font-size: 14px;
@@ -6641,19 +4982,13 @@ main .bg {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5d9ef));
-  background: -o-linear-gradient(top, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5d9ef));
-  background: -o-linear-gradient(bottom, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
 }
 .norbetting .nor_bettingbox .bettingend .endbox button:active, .norbetting .nor_bettingbox .bettingend .endbox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
-  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
   color: #fff;
@@ -6661,14 +4996,10 @@ main .bg {
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn {
   width: 176px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
 }
 .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:hover, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn:active, .norbetting .nor_bettingbox .bettingend .endbox button.decideBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
-  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
 }
 
@@ -6679,9 +5010,7 @@ main .bg {
   position: fixed;
   z-index: 20;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 150px;
   background: #3d3d3d;
   border-radius: 3px 3px 0px 0px;
@@ -6710,9 +5039,7 @@ main .bg {
   background: #fff;
   top: 0px;
   left: 11px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .norbettingCheck .checkCancelBtn::after {
   content: "";
@@ -6722,9 +5049,7 @@ main .bg {
   background: #fff;
   top: 0px;
   left: 11px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 .norbettingCheck .bettingbox {
   width: 576px;
@@ -6795,9 +5120,7 @@ main .bg {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 18px;
   left: -18px;
 }
@@ -6814,9 +5137,7 @@ main .bg {
   position: fixed;
   left: 50%;
   top: 10%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 20;
 }
 .calculator.display {
@@ -6826,8 +5147,6 @@ main .bg {
   width: 100%;
   height: 40px;
   border-radius: 15px 15px 0px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   position: relative;
@@ -6852,9 +5171,7 @@ main .bg {
   width: 2px;
   height: 25px;
   background: #fff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 3px;
   right: 14px;
 }
@@ -6864,9 +5181,7 @@ main .bg {
   width: 2px;
   height: 25px;
   background: #fff;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 3px;
   left: 14px;
 }
@@ -6914,8 +5229,7 @@ main .bg {
 }
 .calculator .calbox .mid table {
   width: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin: 0px;
   border-radius: 0px;
 }
@@ -7045,8 +5359,6 @@ main .bg {
 .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
-  background: -webkit-gradient(linear, right top, left top, from(#9ca8e4), to(#495cc5));
-  background: -o-linear-gradient(right, #9ca8e4, #495cc5);
   background: linear-gradient(to left, #9ca8e4, #495cc5);
   background-color: #495cc5;
   border-radius: 3px;
@@ -7085,9 +5397,7 @@ main .bg {
   width: 300px;
   height: 200px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
@@ -7123,9 +5433,7 @@ main .bg {
   position: absolute;
   left: 8px;
   top: 0px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .unLogin .topBar button::after {
   content: "";
@@ -7135,9 +5443,7 @@ main .bg {
   position: absolute;
   left: 8px;
   top: 0px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 .unLogin .remindBox {
   width: 100%;
@@ -7157,8 +5463,6 @@ main .bg {
   width: 180px;
   height: 36px;
   margin-top: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -7168,8 +5472,6 @@ main .bg {
   font-weight: bold;
 }
 .unLogin .remindBox button:hover, .unLogin .remindBox button:active, .unLogin .remindBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
@@ -7179,9 +5481,7 @@ main .bg {
   height: 5px;
   background: #ffee00;
   border-radius: 50px;
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   margin-right: 3px;
   position: relative;
 }
@@ -7194,8 +5494,7 @@ main .bg {
   height: 5px;
   background: #ffee00;
   border-radius: 50px;
-  -webkit-animation: liveRemind 0.8s ease-in 0s infinite;
-          animation: liveRemind 0.8s ease-in 0s infinite;
+  animation: liveRemind 0.8s ease-in 0s infinite;
 }
 
 .mark {
@@ -7251,9 +5550,7 @@ main .bg {
   position: absolute;
   width: 10px;
   height: 10px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background: transparent;
   border: solid 1px #fff;
 }
@@ -7264,9 +5561,7 @@ main .bg {
 .baseBag span.second {
   top: 0px;
   left: 50%;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) rotate(45deg);
-          transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
 }
 .baseBag span.third {
   bottom: 0px;
@@ -7363,8 +5658,6 @@ main .bg {
   position: absolute;
   top: 0px;
   left: 0px;
-  -webkit-transition: 0.5s left;
-  -o-transition: 0.5s left;
   transition: 0.5s left;
   z-index: 2;
 }
@@ -7380,8 +5673,6 @@ main .bg {
   text-align: center;
 }
 .fixside .search .searchbut:hover, .fixside .search .searchbut:active, .fixside .search .searchbut.active {
-  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
-  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7407,32 +5698,11 @@ main .bg {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
-          box-shadow: inset 0 0 2px 2px #c6cae0;
+  box-shadow: inset 0 0 2px 2px #c6cae0;
   border: none;
   border-radius: 15px;
   float: left;
   margin: 15px 0px 0px 10px;
-}
-.fixside .search input::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.fixside .search input::-moz-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.fixside .search input:-ms-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 14px;
-}
-.fixside .search input::-ms-input-placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 14px;
 }
 .fixside .search input::placeholder {
   font-weight: bold;
@@ -7442,8 +5712,6 @@ main .bg {
 .fixside .search button {
   width: 50px;
   height: 28px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
-  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   color: #fff;
@@ -7453,8 +5721,6 @@ main .bg {
   margin: 16px 0px 16px 15px;
 }
 .fixside .search button:hover, .fixside .search button:active, .fixside .search button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
-  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
 }
 .fixside .search .searchbox {
@@ -7472,8 +5738,6 @@ main .bg {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
-  background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
   background-color: #e2e6f5;
   cursor: pointer;
@@ -7488,14 +5752,10 @@ main .bg {
   top: 21px;
 }
 .fixside .search .searchbox li:hover, .fixside .search .searchbox li:active, .fixside .search .searchbox li.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
-  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 .fixside .search .searchbox li:hover::before, .fixside .search .searchbox li:active::before, .fixside .search .searchbox li.active::before {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .fixside .search .searchbox div {
   background: #fff;
@@ -7546,8 +5806,6 @@ main .bg {
   margin-top: 62px;
   border-radius: 3px 0px 0px 3px;
   position: relative;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
 }
@@ -7564,8 +5822,6 @@ main .bg {
   cursor: pointer;
 }
 .fixside .fun .hamBtn:hover, .fixside .fun .hamBtn:active, .fixside .fun .hamBtn.active {
-  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
-  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7598,8 +5854,6 @@ main .bg {
   height: 75px;
 }
 .fixside .fun a:hover, .fixside .fun a:active, .fixside .fun a.active {
-  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
-  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
@@ -7671,15 +5925,12 @@ main .bg {
 .discount .window {
   width: 93%;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
-  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 15px 0px 0px 5%;
   border-radius: 20px;
   border: 1px solid #8581b4;
-  -webkit-box-shadow: 0 0 4px 2px #bac0db;
-          box-shadow: 0 0 4px 2px #bac0db;
+  box-shadow: 0 0 4px 2px #bac0db;
   position: relative;
 }
 .discount .window p {
@@ -7711,9 +5962,7 @@ main .bg {
   background: url("../images/discountleft_ic.png");
   background-size: 500%;
   background-position-y: -20px;
-  -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
+  transform: translateY(4px);
 }
 .discount .window p span.limit {
   background-position-x: -20px;
@@ -7769,8 +6018,6 @@ main .bg {
   background: url("../images/disimg_3.png") no-repeat;
 }
 .discount .window button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3349b8));
-  background: -o-linear-gradient(top, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
   background: #3349b8;
   border: solid 1px #1e2f8e;
@@ -7784,24 +6031,17 @@ main .bg {
   border-radius: 5px;
 }
 .discount .window button:hover, .discount .window button:active, .discount .window button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3349b8));
-  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
 }
 .discount .activebox {
   width: 93%;
   height: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
-  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 0px 0px 0px 5%;
   border-radius: 0px 0px 20px 20px;
-  -webkit-box-shadow: 0 0 4px 2px #bac0db;
-          box-shadow: 0 0 4px 2px #bac0db;
-  -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
+  box-shadow: 0 0 4px 2px #bac0db;
+  transform: translateY(-20px);
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -7863,8 +6103,6 @@ main .bg {
   z-index: 1;
 }
 .myself .recordbar.open {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
-  background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
   background-color: #d8a77b;
 }
@@ -7894,9 +6132,7 @@ main .bg {
   background: #ff0000;
   left: 35px;
   top: 48%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   line-height: 20px;
   color: #fff;
   border-radius: 5px;
@@ -7935,13 +6171,9 @@ main .bg {
   background: url("../images/arrow_b.png") no-repeat;
   right: 20px;
   top: 18px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .myself .helpbar.open {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
-  background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
 }
 .myself .helpbar.open::before {
@@ -7949,39 +6181,19 @@ main .bg {
   height: 8px;
   background: url("../images/arrow_b.png") no-repeat;
   background-size: 100%;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .myself .helpbar.edit {
   background: #ffffff;
 }
-.myself .helpbar.edit::before {
-  width: 6px;
-  height: 8px;
-  background: url("../images/arrow_b.png") no-repeat;
-}
 .myself .helpbar.edit input {
   display: block;
 }
-.myself .helpbar.edit p, .myself .helpbar.edit span {
-  color: #000;
+.myself .helpbar.feeback {
+  pointer-events: none;
 }
-.myself .helpbar.nb {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
-  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
-  background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
-  background-color: #424d89;
-}
-.myself .helpbar.nb::before {
+.myself .helpbar.feeback::before {
   display: none;
-}
-.myself .helpbar.nb p {
-  color: #fff;
-}
-.myself .helpbar.nb span {
-  color: #fff;
-  padding-right: 20px;
 }
 .myself .helpbar p {
   float: left;
@@ -8022,7 +6234,7 @@ main .bg {
 .myself .helpbox.mes {
   padding-bottom: 40px;
 }
-.myself .helpbox.editing {
+.myself .helpbox.edit {
   display: none;
 }
 .myself .helpbox p {
@@ -8037,9 +6249,7 @@ main .bg {
   width: 92%;
   height: auto;
   border-radius: 12px;
-  border: 1px solid #6b76b4;
-  -webkit-box-shadow: 0 0 7px 1px #e2e4f3;
-          box-shadow: 0 0 7px 1px #e2e4f3;
+  border: 1px solid #777777;
   margin: 0px auto 20px;
   padding: 15px;
 }
@@ -8048,15 +6258,12 @@ main .bg {
   font-size: 16px;
 }
 .myself .helpbox .remind {
-  color: #8c93a6;
+  color: #4d4d4d;
   font-size: 14px;
   margin: 0px 20px 20px 0px;
   float: right;
   position: relative;
-}
-.myself .helpbox .remind.un {
-  float: left;
-  margin: 10px 0px 0px 20px;
+  font-weight: bold;
 }
 .myself .helpbox .remind::before {
   content: "";
@@ -8064,13 +6271,8 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url("../images/infor.png") no-repeat;
-  top: -1px;
+  top: -2px;
   left: -18px;
-}
-.myself .helpbox .remind a {
-  display: inline;
-  margin-left: 10px;
-  color: #5163c7;
 }
 .myself .depositP, .myself .transP, .myself .withP, .myself .betP, .myself .sportP, .myself .skillP {
   display: none;
@@ -8100,8 +6302,6 @@ main .bg {
   width: 84px;
   height: 32px;
   border: 1px solid #b78960;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b78960));
-  background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
   background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
   background-color: #b78960;
   border-radius: 3px;
@@ -8112,8 +6312,6 @@ main .bg {
   margin: 0px 10px 15px 0px;
 }
 .myself .sportbar button:hover, .myself .sportbar button:active, .myself .sportbar button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#434e8a), to(#6974b2));
-  background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
   background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
   border-color: #444f8b;
   background-color: #434e8a;
@@ -8121,177 +6319,161 @@ main .bg {
 .myself .sportbar button.nmar {
   margin-right: 0px;
 }
-.myself .contact, .myself .suggest, .myself .feeback, .myself .online {
+.myself .callusBox, .myself .problemBox, .myself .feebackBox, .myself .onlineCilentBox {
   display: none;
 }
-.myself .contact.display, .myself .suggest.display, .myself .feeback.display, .myself .online.display {
+.myself .callusBox.display, .myself .problemBox.display, .myself .feebackBox.display, .myself .onlineCilentBox.display {
   display: block;
 }
-.myself .onlineroom {
-  width: 850px;
-  height: 725px;
-  margin: -15px 0px 0px 17px;
+.myself .onlineCilent {
+  width: 1150px;
+  height: 100%;
+  margin: -15px 0px 0px 10px;
   background: #fff;
-  border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 3px 3px;
   overflow: hidden;
 }
-.myself .onlineroom .chatwindow {
+.myself .onlineCilent .chatwindow {
   width: 100%;
   height: 75%;
   background: #fafafa;
-  border-bottom: 1px solid #e0e1e3;
+  border-bottom: solid 1px #ababab;
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
 }
-.myself .onlineroom .chatwindow::-webkit-scrollbar {
+.myself .onlineCilent .chatwindow::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
-.myself .onlineroom .chatwindow::-webkit-scrollbar-track {
+.myself .onlineCilent .chatwindow::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
-.myself .onlineroom .chatwindow::-webkit-scrollbar-thumb {
+.myself .onlineCilent .chatwindow::-webkit-scrollbar-thumb {
   background: #b9becf;
   border-radius: 10px;
 }
-.myself .onlineroom .chatwindow .time {
+.myself .onlineCilent .chatwindow .time {
   width: 100%;
   height: 50px;
   line-height: 50px;
   color: #838ba0;
   float: left;
 }
-.myself .onlineroom .chatwindow .chat {
+.myself .onlineCilent .chatwindow .chat {
   width: 100%;
   height: auto;
   margin: 10px 0px;
   float: left;
 }
-.myself .onlineroom .chatwindow .chat span {
+.myself .onlineCilent .chatwindow .chat span {
   display: block;
   width: 40px;
   height: 40px;
   margin: 0px 15px;
 }
-.myself .onlineroom .chatwindow .chat span.gm {
+.myself .onlineCilent .chatwindow .chat span.gm {
   background: url("../images/avatar_s.png") no-repeat;
   background-size: 100%;
   float: left;
 }
-.myself .onlineroom .chatwindow .chat span.user {
+.myself .onlineCilent .chatwindow .chat span.user {
   height: 41px;
   background: url("../images/avatar_big.png") no-repeat;
   background-size: 100%;
   float: right;
 }
-.myself .onlineroom .chatwindow .chat .gmchat {
+.myself .onlineCilent .chatwindow .chat .gmchat {
   float: left;
   border: 1px solid #c2c5ff;
-  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
-          box-shadow: 0 0 8px 1px #dfe1ec;
-  border-radius: 0px 15px 15px 15px;
+  box-shadow: 0 0 8px 1px #dfe1ec;
+  border-radius: 0px 8px 8px 8px;
   font-size: 14px;
   padding: 12px;
   text-align: left;
 }
-.myself .onlineroom .chatwindow .chat .gmchat a {
+.myself .onlineCilent .chatwindow .chat .gmchat a {
   display: block;
   width: 60%;
-  padding: 3px 0px;
+  padding: 5px 10px 4px;
 }
-.myself .onlineroom .chatwindow .chat .gmchat a:hover, .myself .onlineroom .chatwindow .chat .gmchat a:active, .myself .onlineroom .chatwindow .chat .gmchat a.active {
+.myself .onlineCilent .chatwindow .chat .gmchat a:hover, .myself .onlineCilent .chatwindow .chat .gmchat a:active, .myself .onlineCilent .chatwindow .chat .gmchat a.active {
   background: #2D43B6;
   color: #fff;
 }
-.myself .onlineroom .chatwindow .chat .userchat {
+.myself .onlineCilent .chatwindow .chat .userchat {
   float: right;
   background: #273aa1;
   color: #fff;
-  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
-          box-shadow: 0 0 8px 1px #dfe1ec;
-  border-radius: 15px 0px 15px 15px;
+  box-shadow: 0 0 8px 1px #dfe1ec;
+  border-radius: 8px 0px 8px 8px;
   font-size: 14px;
   padding: 12px;
 }
-.myself .onlineroom .chatarea {
+.myself .onlineCilent .onlineroom {
   width: 100%;
   height: 25%;
   text-align: right;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
-.myself .onlineroom .chatarea .face {
+.myself .onlineCilent .onlineroom::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.myself .onlineCilent .onlineroom::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.myself .onlineCilent .onlineroom::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.myself .onlineCilent .onlineroom .chatStyle {
   width: 100%;
-  height: 20px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 15px;
 }
-.myself .onlineroom .chatarea .face button {
+.myself .onlineCilent .onlineroom .chatStyle button {
   width: 16px;
   height: 16px;
   background: url("../images/windowface.png") no-repeat;
   background-size: 200%;
   float: left;
-  margin: 8px 0px 0px 5px;
+  margin-right: 10px;
 }
-.myself .onlineroom .chatarea .face button:first-child {
-  margin-left: 15px;
+.myself .onlineCilent .onlineroom .chatStyle button.font {
+  background-position-x: 100%;
 }
-.myself .onlineroom .chatarea .face button:hover, .myself .onlineroom .chatarea .face button:active, .myself .onlineroom .chatarea .face button.active {
-  width: 16px;
-  height: 16px;
-  background: url("../images/windowface.png") no-repeat;
-  background-size: 200%;
-}
-.myself .onlineroom .chatarea .face button.un {
-  background-position-x: -16px;
-}
-.myself .onlineroom .chatarea textarea {
-  width: 97%;
+.myself .onlineCilent .onlineroom textarea {
+  width: 100%;
   height: 80px;
-  padding: 10px;
+  padding: 0px 15px;
   border: none;
   outline: none;
   resize: none;
+  box-sizing: border-box;
+  font-size: 15px;
 }
-.myself .onlineroom .chatarea textarea::-webkit-input-placeholder {
-  color: #e0dede;
+.myself .onlineCilent .onlineroom textarea::placeholder {
+  color: #999999;
   font-size: 14px;
   font-weight: bold;
 }
-.myself .onlineroom .chatarea textarea::-moz-placeholder {
-  color: #e0dede;
-  font-size: 14px;
-  font-weight: bold;
-}
-.myself .onlineroom .chatarea textarea:-ms-input-placeholder {
-  color: #e0dede;
-  font-size: 14px;
-  font-weight: bold;
-}
-.myself .onlineroom .chatarea textarea::-ms-input-placeholder {
-  color: #e0dede;
-  font-size: 14px;
-  font-weight: bold;
-}
-.myself .onlineroom .chatarea textarea::placeholder {
-  color: #e0dede;
-  font-size: 14px;
-  font-weight: bold;
-}
-.myself .onlineroom .chatarea button {
+.myself .onlineCilent .onlineroom .send {
   width: 90px;
   height: 36px;
-  margin-right: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8996da), to(#3046b7));
-  background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
+  margin: 0px 20px 20px 0px;
   background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 5px;
   color: #fff;
   font-size: 15px;
 }
-.myself .onlineroom .chatarea button:hover, .myself .onlineroom .chatarea button:active, .myself .onlineroom .chatarea button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8996da), to(#3046b7));
-  background: -o-linear-gradient(bottom, #8996da 0%, #3046b7 100%);
+.myself .onlineCilent .onlineroom .send:hover, .myself .onlineCilent .onlineroom .send:active, .myself .onlineCilent .onlineroom .send.active {
   background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
 }
 .myself .aboutus, .myself .aboutlink {
@@ -8312,8 +6494,7 @@ main .bg {
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  -webkit-box-shadow: 0 0 6px 1px #d7dced;
-          box-shadow: 0 0 6px 1px #d7dced;
+  box-shadow: 0 0 6px 1px #d7dced;
   margin: 0px 10px 10px 0px;
 }
 .myself .aboutlink div a:hover, .myself .aboutlink div a:active, .myself .aboutlink div a.active {
@@ -8382,14 +6563,68 @@ main .bg {
   z-index: 2;
   color: #fff;
 }
-.minetopfix .fixbar.edit .editbut {
+.minetopfix .fixbar .editbut, .minetopfix .fixbar .cancelbut, .minetopfix .fixbar .delbut {
   display: none;
+  float: right;
+  padding: 3px 5px;
+  color: #fff;
+  background: #505050;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 8px 10px 0px 0px;
 }
-.minetopfix .fixbar.edit .cancelbut, .minetopfix .fixbar.edit .delbut {
+.minetopfix .fixbar .editbut.display, .minetopfix .fixbar .cancelbut.display, .minetopfix .fixbar .delbut.display {
   display: block;
 }
-.minetopfix .fixbar .cancelbut, .minetopfix .fixbar .delbut {
+.minetopfix .fixbar .editbut:hover, .minetopfix .fixbar .editbut:active, .minetopfix .fixbar .editbut.active, .minetopfix .fixbar .cancelbut:hover, .minetopfix .fixbar .cancelbut:active, .minetopfix .fixbar .cancelbut.active, .minetopfix .fixbar .delbut:hover, .minetopfix .fixbar .delbut:active, .minetopfix .fixbar .delbut.active {
+  background: #fff;
+  color: #505050;
+}
+.minetopfix .fixbar .rowbutMes {
   display: none;
+  float: right;
+  position: relative;
+  background: #b3b3b3;
+  margin: 7px 20px 0px 0px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.minetopfix .fixbar .rowbutMes.display {
+  display: block;
+}
+.minetopfix .fixbar .rowbutMes.lside span:last-child {
+  color: #fff;
+}
+.minetopfix .fixbar .rowbutMes.lside .innbut {
+  animation: rowbut 0.3s ease-out 0s;
+}
+.minetopfix .fixbar .rowbutMes.rside span:nth-of-type(1) {
+  color: #fff;
+}
+.minetopfix .fixbar .rowbutMes.rside .innbut {
+  left: 53%;
+  animation: rowbut2 0.3s ease-out 0s;
+}
+.minetopfix .fixbar .rowbutMes span {
+  margin-right: 20px;
+  font-size: 14px;
+  position: relative;
+  color: #4d4d4d;
+}
+.minetopfix .fixbar .rowbutMes span:last-child {
+  margin: 0px;
+}
+.minetopfix .fixbar .rowbutMes .innbut {
+  width: 44%;
+  height: 80%;
+  background: #fff;
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  border-radius: 20px;
 }
 .minetopfix .fixbar .line {
   width: 1px;
@@ -8397,17 +6632,6 @@ main .bg {
   background: #bcbcbc;
   float: left;
   margin: 10px 10px 0px 10px;
-}
-.minetopfix .fixbar p {
-  line-height: 45px;
-  font-size: 15px;
-  float: left;
-}
-.minetopfix .fixbar p:first-child {
-  padding-left: 20px;
-}
-.minetopfix .fixbar p span {
-  color: #ea9700;
 }
 .minetopfix .fixbar .timeSearch {
   width: 380px;
@@ -8471,52 +6695,6 @@ main .bg {
   background: #fff;
   color: #000;
 }
-.minetopfix .fixbar .mes_rowbut {
-  display: none;
-  float: right;
-  position: relative;
-  background: #a3a8c4;
-  margin: 7px 20px 0px 0px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  position: relative;
-  cursor: pointer;
-}
-.minetopfix .fixbar .mes_rowbut.display {
-  display: block;
-}
-.minetopfix .fixbar .mes_rowbut.lside span:last-child {
-  color: #fff;
-}
-.minetopfix .fixbar .mes_rowbut.lside .innbut {
-  -webkit-animation: rowbut 0.3s ease-out 0s;
-          animation: rowbut 0.3s ease-out 0s;
-}
-.minetopfix .fixbar .mes_rowbut.rside span:nth-of-type(1) {
-  color: #fff;
-}
-.minetopfix .fixbar .mes_rowbut.rside .innbut {
-  left: 53%;
-  -webkit-animation: rowbut2 0.3s ease-out 0s;
-          animation: rowbut2 0.3s ease-out 0s;
-}
-.minetopfix .fixbar .mes_rowbut span {
-  margin-right: 20px;
-  font-size: 14px;
-  position: relative;
-}
-.minetopfix .fixbar .mes_rowbut span:last-child {
-  margin: 0px;
-}
-.minetopfix .fixbar .mes_rowbut .innbut {
-  width: 44%;
-  height: 80%;
-  background: #fff;
-  position: absolute;
-  left: 3%;
-  top: 10%;
-  border-radius: 20px;
-}
 .minetopfix .fixbar .changePassword {
   float: right;
   padding: 3px 5px;
@@ -8562,6 +6740,17 @@ main .bg {
 .minetopfix .fixbar ul li:hover, .minetopfix .fixbar ul li:active, .minetopfix .fixbar ul li.active {
   color: #fff;
   border-color: #59a936;
+}
+.minetopfix .fixbar p {
+  line-height: 45px;
+  font-size: 15px;
+  float: left;
+}
+.minetopfix .fixbar p:first-child {
+  padding-left: 20px;
+}
+.minetopfix .fixbar p span {
+  color: #ea9700;
 }
 .minetopfix .floatName {
   width: 100%;
@@ -8677,9 +6866,7 @@ main .bg {
   height: 360px;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 20;
 }
 .changePasswordWindow.display {
@@ -8708,8 +6895,7 @@ main .bg {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
-          box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .changePasswordWindow .topbar button::before {
   content: "";
@@ -8719,9 +6905,7 @@ main .bg {
   right: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .changePasswordWindow .topbar button::after {
   content: "";
@@ -8731,9 +6915,7 @@ main .bg {
   left: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .changePasswordWindow .box {
   width: 100%;
@@ -8751,9 +6933,7 @@ main .bg {
 .changePasswordWindow .box div:last-child {
   width: 500px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -8775,8 +6955,6 @@ main .bg {
   width: 152px;
   height: 36px;
   margin-right: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -8787,21 +6965,15 @@ main .bg {
   color: #4d515d;
 }
 .changePasswordWindow .box div button:hover, .changePasswordWindow .box div button:active, .changePasswordWindow .box div button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 .changePasswordWindow .box div button:last-child {
   margin: 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   color: #fff;
 }
 .changePasswordWindow .box div button:last-child:hover, .changePasswordWindow .box div button:last-child:active, .changePasswordWindow .box div button:last-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
@@ -8811,9 +6983,7 @@ main .bg {
   width: 500px;
   height: 200px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
@@ -8843,8 +7013,7 @@ main .bg {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
-          box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .cardremind .topbar button::before {
   content: "";
@@ -8854,9 +7023,7 @@ main .bg {
   right: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .cardremind .topbar button::after {
   content: "";
@@ -8866,9 +7033,7 @@ main .bg {
   left: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .cardremind .box {
   width: 100%;
@@ -8889,8 +7054,6 @@ main .bg {
 .cardremind .box button {
   width: 160px;
   height: 36px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -8901,20 +7064,14 @@ main .bg {
   color: #4d515d;
 }
 .cardremind .box button:hover, .cardremind .box button:active, .cardremind .box button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
-  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 .cardremind .box button:last-child {
   margin: 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
 }
 .cardremind .box button:last-child:hover, .cardremind .box button:last-child:active, .cardremind .box button:last-child.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
@@ -8924,9 +7081,7 @@ main .bg {
   width: 800px;
   height: 360px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 110px;
   z-index: 20;
 }
@@ -8956,8 +7111,7 @@ main .bg {
   border: solid 3px #676767;
   right: -50px;
   top: -50px;
-  -webkit-box-shadow: 0px 0px 0px 5px #cacaca;
-          box-shadow: 0px 0px 0px 5px #cacaca;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .cardAdd .topbar button::before {
   content: "";
@@ -8967,9 +7121,7 @@ main .bg {
   right: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .cardAdd .topbar button::after {
   content: "";
@@ -8979,9 +7131,7 @@ main .bg {
   left: 16px;
   top: 8px;
   background: #676767;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .cardAdd .box {
   width: 100%;
@@ -8995,8 +7145,7 @@ main .bg {
   height: 50px;
   float: left;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .cardAdd .box .inputBox:nth-of-type(2n) {
   padding-right: 30px;
@@ -9006,8 +7155,7 @@ main .bg {
   color: #ababab;
   width: 245px;
   height: 36px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 3px 0px 3px 10px;
   float: right;
   outline: none;
@@ -9032,8 +7180,6 @@ main .bg {
 .cardAdd .box button {
   width: 220px;
   height: 36px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -9043,103 +7189,41 @@ main .bg {
   font-weight: bold;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0%;
 }
 .cardAdd .box button:hover, .cardAdd .box button:active, .cardAdd .box button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
-  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
-}
-
-@-webkit-keyframes reset {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
 }
 
 @keyframes reset {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes rowbut {
-  0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: rotate(-360deg);
   }
 }
 @keyframes rowbut {
   0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes rowbut2 {
-  0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes rowbut2 {
   0% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes btnFlashing {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    transform: scale(1);
   }
 }
 @keyframes btnFlashing {
@@ -9153,58 +7237,26 @@ main .bg {
     opacity: 0;
   }
 }
-@-webkit-keyframes liveRemind {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    opacity: 0.75;
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  80% {
-    opacity: 0.25;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2.8);
-            transform: scale(2.8);
-  }
-}
 @keyframes liveRemind {
   0% {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   25% {
     opacity: 0.75;
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+    transform: scale(1.25);
   }
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   80% {
     opacity: 0.25;
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
+    transform: scale(2.5);
   }
   100% {
     opacity: 0;
-    -webkit-transform: scale(2.8);
-            transform: scale(2.8);
+    transform: scale(2.8);
   }
 }
 html {

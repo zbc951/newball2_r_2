@@ -100,56 +100,39 @@ $(function(){
         $('.turnold').removeClass('active');
     });
 });
-//聯絡我們
-$(function(){
-    $('.callus li').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    });
-    $('.callus li:nth-of-type(1)').click(function(){
-        $('.contact').addClass('display');
-        $('.contact').siblings().removeClass('display');
-    });
-    $('.callus li:nth-of-type(2)').click(function(){
-        $('.suggest').addClass('display');
-        $('.suggest').siblings().removeClass('display');
-    });
-    $('.callus li:nth-of-type(3)').click(function(){
-        $('.feeback').addClass('display');
-        $('.feeback').siblings().removeClass('display');
-    });
-    $('.callus li:nth-of-type(4)').click(function(){
-        $('.online').addClass('display');
-        $('.online').siblings().removeClass('display');
-    });
-});
 //消息中心
 $(function(){
-    $('.mes li:nth-of-type(1)').click(function(){
-        $('.notice').addClass('display');
+    $('.editbut').click(function(){
+        $(this).removeClass('display');
+        $('.helpbar,.helpbox').addClass('edit');
+        $('.cancelbut,.delbut').addClass('display');
+    });
+    $('.fixbar li,.cancelbut').click(function(){
+        $('.editbut').addClass('display');
+        $('.helpbar,.helpbox').removeClass('edit');
+        $('.cancelbut,.delbut').removeClass('display');
+    });
+    $('.mes1').click(function(){
+        $('.notice,.editbut').addClass('display');
+        $('.rowbutMes').removeClass('display');
         $('.notice').siblings().removeClass('display');
-        $('.mes button').removeClass('none');
-        $('.mes_rowbut').removeClass('display')
-    });
-    $('.mes li:nth-of-type(2)').click(function(){
+    })
+    $('.mes2').click(function(){
         $('.activity').addClass('display');
+        $('.editbut,.rowbutMes').removeClass('display');
         $('.activity').siblings().removeClass('display');
-        $('.mes button').addClass('none');
-        $('.mes_rowbut').removeClass('display')
-    });
-    $('.mes li:nth-of-type(3)').click(function(){
+    })
+    $('.mes3').click(function(){
         $('.announcement').addClass('display');
+        $('.editbut,.rowbutMes').removeClass('display');
         $('.announcement').siblings().removeClass('display');
-        $('.mes button').addClass('none');
-        $('.mes_rowbut').removeClass('display')
-    });
-    $('.mes li:nth-of-type(4)').click(function(){
-        $('.competition').addClass('display');
+    })
+    $('.mes4').click(function(){
+        $('.competition,.rowbutMes').addClass('display');
+        $('.editbut').removeClass('display');
         $('.competition').siblings().removeClass('display');
-        $('.mes button').addClass('none');
-        $('.mes_rowbut').addClass('display')
-    });
-    $('.mes_rowbut').click(function(){
+    })
+    $('.rowbutMes').click(function(){
         if($(this).hasClass('lside')){
             $(this).removeClass('lside');
             $(this).addClass('rside');
@@ -157,21 +140,6 @@ $(function(){
             $(this).removeClass('rside');
             $(this).addClass('lside');
         };
-    });
-    $('.editbut').click(function(){
-        $('.helpbar').addClass('edit');
-        $('.helpbar').next().addClass('editing');
-        $('.fixbar').addClass('edit');
-    });
-    $('.cancelbut').click(function(){
-        $('.fixbar').removeClass('edit');
-        $('.helpbar').removeClass('edit');
-        $('.helpbar').next().removeClass('editing');
-    });
-    $('.mes li').click(function(){
-        $('.fixbar').removeClass('edit');
-        $('.helpbar').removeClass('edit');
-        $('.helpbar').next().removeClass('editing');
     });
 });
 //設定
@@ -824,6 +792,26 @@ $(function(){
     })
 })
 
+//聯繫我們
+$(function(){
+    $('.fixbar .call1').click(function(){
+        $('.callusBox').siblings().removeClass('display');
+        $('.callusBox').addClass('display');
+    })
+    $('.fixbar .call2').click(function(){
+        $('.problemBox').siblings().removeClass('display');
+        $('.problemBox').addClass('display');
+    })
+    $('.fixbar .call3').click(function(){
+        $('.feebackBox').siblings().removeClass('display');
+        $('.feebackBox').addClass('display');
+    })
+    $('.fixbar .call4').click(function(){
+        $('.onlineCilentBox').siblings().removeClass('display');
+        $('.onlineCilentBox').addClass('display');
+    })
+})
+
     //共用
 
 //radio單擊取消
@@ -875,13 +863,15 @@ $(document).ready(function () {
 
 // myself自動高度
 $(document).ready(function () {
-    var middleNav = $(".myself");
     var wH = window.innerHeight;
-    middleNav.css("height", (String(wH - 110) + "px"));
+    $('.myself').css("height", (String(wH - 110) + "px"));
+    //聯繫我們-線上客服
+    $('.onlineCilent').css("height", (String(wH - 250) + "px"));
     $(window).resize(function () {
-        var middleNav = $(".myself");
         var wH = window.innerHeight;
-        middleNav.css("height", (String(wH - 110) + "px"));
+        $('.myself').css("height", (String(wH - 110) + "px"));
+        //聯繫我們-線上客服
+        $('.onlineCilent').css("height", (String(wH - 250) + "px"));
     });
 });
 

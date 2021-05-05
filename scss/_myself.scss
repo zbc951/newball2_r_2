@@ -141,37 +141,17 @@
         &.edit {
             background: #ffffff;
 
-            &::before {
-                width: 6px;
-                height: 8px;
-                background: url('../images/arrow_b.png') no-repeat;
-            }
-
             input {
                 display: block;
             }
-
-            p,span {
-                color: #000;
-            }
         }
 
-        //不含before版本
-        &.nb {
-            background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
-            background-color: #424d89;
+        //聯繫我們-我的反饋
+        &.feeback {
+            pointer-events: none;
 
             &::before {
                 display: none;
-            }
-
-            p {
-                color: #fff;
-            }
-
-            span {
-                color: #fff;
-                padding-right: 20px;
             }
         }
 
@@ -221,7 +201,7 @@
         }
 
         //編輯中
-        &.editing {
+        &.edit {
             display: none;
         }
         
@@ -238,8 +218,7 @@
             width: 92%;
             height: auto;
             border-radius: 12px;
-            border: 1px solid #6b76b4;
-            box-shadow: 0 0 7px 1px #e2e4f3;
+            border: 1px solid #777777;
             margin: 0px auto 20px;
             padding: 15px;
 
@@ -251,28 +230,21 @@
 
         //視窗右下灰色字
         .remind {
-            color: #8c93a6;
+            color: #4d4d4d;
             font-size: 14px;
             margin: 0px 20px 20px 0px;
             float: right;
             position: relative;
-            &.un {
-                float: left;
-                margin: 10px 0px 0px 20px;
-            }
+            font-weight: bold;
+
             &::before {
                 content: "";
                 width: 15px;
                 height: 15px;
                 position: absolute;
                 background: url('../images/infor.png') no-repeat;
-                top: -1px;
+                top: -2px;
                 left: -18px;
-            }
-            a {
-                display: inline;
-                margin-left: 10px;
-                color: #5163c7;
             }
         }
     }
@@ -328,28 +300,31 @@
     }
 
     //連絡我們
-    .contact,.suggest,.feeback,.online {
+    .callusBox,.problemBox,.feebackBox,.onlineCilentBox {
         display: none;
+
         &.display {
             display: block;
         }
     }
-    .onlineroom {
-        width: 850px;
-        height: 725px;
-        margin: -15px 0px 0px 17px;
+    .onlineCilent {
+        width: 1150px;
+        height: 100%;
+        margin: -15px 0px 0px 10px;
         background: #fff;
-        border-radius: 0px 0px 12px 12px;
+        border-radius: 0px 0px 3px 3px;
         overflow: hidden;
+
         //聊天窗
         .chatwindow {
             width: 100%;
             height: 75%;
             background: #fafafa;
-            border-bottom: 1px solid #e0e1e3;
+            border-bottom: solid 1px #ababab;
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
+
             &::-webkit-scrollbar {
                 width: 5px;
                 background-color: transparent;
@@ -362,6 +337,7 @@
                 background: #b9becf;
                 border-radius: 10px;
             }
+
             //時間列
             .time {
                 width: 100%;
@@ -370,22 +346,26 @@
                 color: #838ba0;
                 float: left;
             }
+            
             //對話欄
             .chat {
                 width: 100%;
                 height: auto;
                 margin: 10px 0px;
                 float: left;
+
                 span {
                     display: block;
                     width: 40px;
                     height: 40px;
                     margin: 0px 15px;
+
                     &.gm {
                         background: url('../images/avatar_s.png') no-repeat;
                         background-size: 100%;
                         float: left;
                     }
+
                     &.user {
                         height: 41px;
                         background: url('../images/avatar_big.png') no-repeat;
@@ -393,81 +373,102 @@
                         float: right;
                     }
                 }
+                
                 .gmchat {
                     float: left;
                     border: 1px solid #c2c5ff;
                     box-shadow: 0 0 8px 1px #dfe1ec;
-                    border-radius: 0px 15px 15px 15px;
+                    border-radius: 0px 8px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
                     text-align: left;
+
                     a {
                         display: block;
                         width: 60%;
-                        padding: 3px 0px;
+                        padding: 5px 10px 4px;
                         &:hover,&:active,&.active {
                             background: #2D43B6;
                             color: #fff;
                         }
                     }
                 }
+
                 .userchat {
                     float: right;
                     background: #273aa1;
                     color: #fff;
                     box-shadow: 0 0 8px 1px #dfe1ec;
-                    border-radius: 15px 0px 15px 15px;
+                    border-radius: 8px 0px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
                 }
             }
         }
+        
         //打字窗
-        .chatarea {
+        .onlineroom {
             width: 100%;
             height: 25%;
             text-align: right;
-            .face {
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-width: thin;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #b9becf;
+                border-radius: 10px;
+            }
+
+            .chatStyle {
                 width: 100%;
-                height: 20px;
+                height: 40px;
+                box-sizing: border-box;
+                padding: 10px 15px;
+
                 button {
                     width: 16px;
                     height: 16px;
                     background: url('../images/windowface.png') no-repeat;
                     background-size: 200%;
                     float: left;
-                    margin: 8px 0px 0px 5px;
-                    &:first-child {
-                        margin-left: 15px;
-                    }
-                    &:hover,&:active,&.active {
-                        width: 16px;
-                        height: 16px;
-                        background: url('../images/windowface.png') no-repeat;
-                        background-size: 200%;
-                    }
-                    &.un {
-                        background-position-x: -16px;
+                    margin-right: 10px;
+                    
+                    &.font {
+                        background-position-x: 100%;
                     }
                 }
             }
+
             textarea {
-                width: 97%;
+                width: 100%;
                 height: 80px;
-                padding: 10px;
+                padding: 0px 15px;
                 border: none;
                 outline: none;
                 resize: none;
+                box-sizing: border-box;
+                font-size: 15px;
+
                 &::placeholder {
-                    color: #e0dede;
+                    color: #999999;
                     font-size: 14px;
                     font-weight: bold;
                 }
             }
-            button {
+
+            .send {
                 width: 90px;
                 height: 36px;
-                margin-right: 20px;
+                margin: 0px 20px 20px 0px;
                 background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
                 background-color: #3046b7;
                 border-radius: 5px;
@@ -479,6 +480,7 @@
             }
         }
     }
+
     //關於我們
     .aboutus,.aboutlink {
         display: none;
@@ -572,19 +574,87 @@
         z-index: 2;
         color: #fff;
 
-        //消息中心用
-        &.edit {
-            .editbut {
-                display: none;
-            }
-            .cancelbut,.delbut {
+        .editbut,.cancelbut,.delbut {
+            display: none;
+            float: right;
+            padding: 3px 5px;
+            color: #fff;
+            background: #505050;
+            border: solid 1px #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            margin: 8px 10px 0px 0px;
+
+            &.display {
                 display: block;
             }
-        }
 
-        //消息中心刪除+取消鈕
-        .cancelbut,.delbut {
+            &:hover,&:active,&.active {
+                background: #fff;
+                color: #505050;
+            }
+        }
+        .rowbutMes {
             display: none;
+            float: right;
+            position: relative;
+            background: #b3b3b3;
+            margin: 7px 20px 0px 0px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+
+            &.display {
+                display: block;
+            }
+
+            &.lside {
+
+                span {
+                    &:last-child {
+                        color: #fff;
+                    }
+                }
+
+                .innbut {
+                    animation: rowbut 0.3s ease-out 0s;
+                }
+            }
+
+            &.rside {
+                span {
+                    &:nth-of-type(1) {
+                        color: #fff;
+                    }
+                }
+                
+                .innbut {
+                    left: 53%;
+                    animation: rowbut2 0.3s ease-out 0s;
+                }
+            }
+
+            span {
+                margin-right: 20px;
+                font-size: 14px;
+                position: relative;
+                color: #4d4d4d;
+
+                &:last-child {
+                    margin: 0px;
+                }
+            }
+
+            .innbut {
+                width: 44%;
+                height: 80%;
+                background: #fff;
+                position: absolute;
+                left: 3%;
+                top: 10%;
+                border-radius: 20px;
+            }
         }
 
         //線段
@@ -594,20 +664,6 @@
             background: #bcbcbc;
             float: left;
             margin: 10px 10px 0px 10px;
-        }
-
-        p {
-            line-height: 45px;
-            font-size: 15px;
-            float: left;
-
-            &:first-child {
-                padding-left: 20px;
-            }
-
-            span {
-                color: #ea9700;
-            }
         }
 
         //日期搜尋列
@@ -671,7 +727,6 @@
                 font-family: "my_font";
             }
         }
-
         .smallTimeBtn {
             margin: 8px 12px 0px 0px;
             border: solid 1px #bcbcbc;
@@ -684,60 +739,6 @@
             &:hover,&:active,&.active {
                 background: #fff;
                 color: #000;
-            }
-        }
-
-        //message橫排切換按鈕
-        .mes_rowbut {
-            display: none;
-            float: right;
-            position: relative;
-            background: #a3a8c4;
-            margin: 7px 20px 0px 0px;
-            padding: 8px 12px;
-            border-radius: 20px;
-            position: relative;
-            cursor: pointer;
-            &.display {
-                display: block;
-            }
-            &.lside {
-                span {
-                    &:last-child {
-                        color: #fff;
-                    }
-                }
-                .innbut {
-                    animation: rowbut 0.3s ease-out 0s;
-                }
-            }
-            &.rside {
-                span {
-                    &:nth-of-type(1) {
-                        color: #fff;
-                    }
-                }
-                .innbut {
-                    left: 53%;
-                    animation: rowbut2 0.3s ease-out 0s;
-                }
-            }
-            span {
-                margin-right: 20px;
-                font-size: 14px;
-                position: relative;
-                &:last-child {
-                    margin: 0px;
-                }
-            }
-            .innbut {
-                width: 44%;
-                height: 80%;
-                background: #fff;
-                position: absolute;
-                left: 3%;
-                top: 10%;
-                border-radius: 20px;
             }
         }
 
@@ -791,6 +792,20 @@
                     color: #fff;
                     border-color: #59a936;
                 }
+            }
+        }
+
+        p {
+            line-height: 45px;
+            font-size: 15px;
+            float: left;
+
+            &:first-child {
+                padding-left: 20px;
+            }
+
+            span {
+                color: #ea9700;
             }
         }
     }
