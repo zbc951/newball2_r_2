@@ -142,34 +142,6 @@ $(function(){
         };
     });
 });
-//取款
-$(function(){
-    $('.withdrawl input').focus(function(){
-        $(this).addClass('focus');
-        $('.withdrawl button').addClass('focus');
-    });
-    $('.withdrawl input').blur(function(){
-        $(this).removeClass('focus');
-        $('.withdrawl button').removeClass('focus');
-    });
-});
-//轉點
-$(function(){
-    $('.transpoint ul button').click(function(){
-        $(this).closest('ul').toggleClass('open')
-    })
-    $('.trans .rowbut').click(function(){
-        $(this).toggleClass('turn');
-    })
-    $('.sword input').focus(function(){
-        $(this).addClass('focus');
-        $('.sword button').addClass('focus');
-    });
-    $('.sword input').blur(function(){
-        $(this).removeClass('focus');
-        $('.sword button').removeClass('focus');
-    });
-});
 //存款
 $(function(){
     $('.paybut').click(function(){
@@ -638,18 +610,19 @@ $(function(){
         $('.cardremind').removeClass('display');
     });
 
-    //銀行卡點擊打勾
-    $('.creditcardBtn.c1,.creditcardBtn.c2,.creditcardBtn.c3').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-
     //添加銀行卡
     $('.creditcardBtn').click(function(){
         $('.filter,.cardAdd').addClass('display');
     })
 
     $('.cardAdd .box button,.cardAdd .topbar button').click(function(){
+        $('.filter,.cardAdd').removeClass('display');
+    })
+
+    //銀行卡點擊打勾
+    $('.creditcardBtn.c1,.creditcardBtn.c2,.creditcardBtn.c3').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
         $('.filter,.cardAdd').removeClass('display');
     })
 })
@@ -812,6 +785,13 @@ $(function(){
     $('.fixbar .about2').click(function(){
         $('.linkBox').addClass('display');
         $('.linkBox').siblings().removeClass('display');
+    })
+})
+
+//轉點
+$(function(){
+    $('.turnBtn').click(function(){
+        $(this).toggleClass('turn');
     })
 })
 
