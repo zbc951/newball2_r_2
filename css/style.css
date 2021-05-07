@@ -2916,14 +2916,13 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.big {
   float: left;
   width: 60%;
-  border: solid 1px #828282;
+  border: solid 1px #ababab;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
   box-sizing: border-box;
   margin-left: 20px;
   padding: 20px 0px;
-  background: #3e3e3e;
 }
 .minetable.totalMoney tr td .separateBox.big .half {
   display: inline-block;
@@ -2985,14 +2984,13 @@ main .bg {
 .minetable.totalMoney tr td .separateBox.small {
   float: right;
   width: 30%;
-  border: solid 1px #828282;
+  border: solid 1px #ababab;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
   box-sizing: border-box;
   margin-right: 20px;
   padding: 20px;
-  background: #3e3e3e;
 }
 .minetable.totalMoney tr td .separateBox.small p {
   color: #fff;

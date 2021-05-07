@@ -76,6 +76,43 @@ $(function(){
         };
     });
 });
+
+//存款
+$(function(){
+    $('.paybut').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+    $('.moneybut').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+    $('.tnetcard button').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+    $('.dbox input').focus(function(){
+        $(this).addClass('focus');
+        $('.dbox button').addClass('focus');
+    });
+    $('.dbox input').blur(function(){
+        $(this).removeClass('focus');
+        $('.dbox button').removeClass('focus');
+    });
+    $('.bank').click(function(){
+        $('.tbank').addClass('display');
+        $('.tbank').siblings().removeClass('display');
+    })
+    $('.num').click(function(){
+        $('.tnum').addClass('display');
+        $('.tnum').siblings().removeClass('display');
+    })
+    $('.netcard').click(function(){
+        $('.tnetcard').addClass('display');
+        $('.tnetcard').siblings().removeClass('display');
+    })
+})
+
 //優惠頁
 $(function(){
     $('.discount .window button').click(function(){
@@ -713,6 +750,7 @@ $(function(){
         $(this).toggleClass('turn');
     })
 })
+
 
 //存款
 $(function(){
