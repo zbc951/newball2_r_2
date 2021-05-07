@@ -1,29 +1,3 @@
-//專業版/新手版切換
-$(function(){
-    $('.newbut,.oldbut').click(function(){
-        $('.newold').toggleClass('open')
-    })
-    $('.turnnew').click(function(){
-        $('.oldbut').addClass('un');
-        $('.newbut').removeClass('un');
-        $('.new').addClass('display');
-        $('.newold,.timesort').removeClass('open')
-        $('.turnnew').addClass('active')
-        $('.turnold').removeClass('active')
-        $('.old,.let,.bgsm,.bettingbar').removeClass('display');
-        $('.teachbut,.bettingbut').removeClass('active');
-    });
-    $('.turnold').click(function(){
-        $('.newbut').addClass('un');
-        $('.oldbut').removeClass('un');
-        $('.old').addClass('display');
-        $('.newold,.timesort').removeClass('open')
-        $('.turnold').addClass('active')
-        $('.turnnew').removeClass('active')
-        $('.new,.let,.bgsm,.bettingbar').removeClass('display');
-        $('.teachbut,.bettingbut').removeClass('active');
-    });
-});
 //串關投注
 $(function(){
     $('.opbut').click(function(){
@@ -86,20 +60,6 @@ $(function(){
         $('.bgsm').addClass('display');
     });
 });
-//所有賽事
-$(function(){
-    $('.allgame').click(function(){
-        $('.new,.sort,.teachbut,.complex').addClass('display');
-        $('.old,.bettingbar,.teach,.result,.resultsearch').removeClass('display');
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-        $('.newbut').removeClass('un');
-        $('.oldbut').addClass('un');
-        $('.newold,.timesort').removeClass('open');
-        $('.turnnew').addClass('active');
-        $('.turnold').removeClass('active');
-    });
-});
 //消息中心
 $(function(){
     $('.editbut').click(function(){
@@ -142,69 +102,6 @@ $(function(){
         };
     });
 });
-//取款
-$(function(){
-    $('.withdrawl input').focus(function(){
-        $(this).addClass('focus');
-        $('.withdrawl button').addClass('focus');
-    });
-    $('.withdrawl input').blur(function(){
-        $(this).removeClass('focus');
-        $('.withdrawl button').removeClass('focus');
-    });
-});
-//轉點
-$(function(){
-    $('.transpoint ul button').click(function(){
-        $(this).closest('ul').toggleClass('open')
-    })
-    $('.trans .rowbut').click(function(){
-        $(this).toggleClass('turn');
-    })
-    $('.sword input').focus(function(){
-        $(this).addClass('focus');
-        $('.sword button').addClass('focus');
-    });
-    $('.sword input').blur(function(){
-        $(this).removeClass('focus');
-        $('.sword button').removeClass('focus');
-    });
-});
-//存款
-$(function(){
-    $('.paybut').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.moneybut').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.tnetcard button').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.dbox input').focus(function(){
-        $(this).addClass('focus');
-        $('.dbox button').addClass('focus');
-    });
-    $('.dbox input').blur(function(){
-        $(this).removeClass('focus');
-        $('.dbox button').removeClass('focus');
-    });
-    $('.bank').click(function(){
-        $('.tbank').addClass('display');
-        $('.tbank').siblings().removeClass('display');
-    })
-    $('.num').click(function(){
-        $('.tnum').addClass('display');
-        $('.tnum').siblings().removeClass('display');
-    })
-    $('.netcard').click(function(){
-        $('.tnetcard').addClass('display');
-        $('.tnetcard').siblings().removeClass('display');
-    })
-})
 //優惠頁
 $(function(){
     $('.discount .window button').click(function(){
@@ -638,18 +535,19 @@ $(function(){
         $('.cardremind').removeClass('display');
     });
 
-    //銀行卡點擊打勾
-    $('.creditcardBtn.c1,.creditcardBtn.c2,.creditcardBtn.c3').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-
     //添加銀行卡
     $('.creditcardBtn').click(function(){
         $('.filter,.cardAdd').addClass('display');
     })
 
     $('.cardAdd .box button,.cardAdd .topbar button').click(function(){
+        $('.filter,.cardAdd').removeClass('display');
+    })
+
+    //銀行卡點擊打勾
+    $('.creditcardBtn.c1,.creditcardBtn.c2,.creditcardBtn.c3').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
         $('.filter,.cardAdd').removeClass('display');
     })
 })
@@ -812,6 +710,21 @@ $(function(){
     $('.fixbar .about2').click(function(){
         $('.linkBox').addClass('display');
         $('.linkBox').siblings().removeClass('display');
+    })
+})
+
+//轉點
+$(function(){
+    $('.turnBtn').click(function(){
+        $(this).toggleClass('turn');
+    })
+})
+
+//存款
+$(function(){
+    $('.payStyle button').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
     })
 })
 

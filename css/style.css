@@ -1127,6 +1127,10 @@ main .bg {
 .playBoard.newP tr td {
   padding: 6px 0px;
 }
+.playBoard.newP tr td.tLeft {
+  text-align: left;
+  padding: 0px 10px;
+}
 .playBoard.newP tr td button {
   width: 100px;
   height: 50px;
@@ -2670,11 +2674,12 @@ main .bg {
 .minetable.infor tr td .mainWindow {
   width: 98%;
   height: 100%;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 25px 0px 15px;
   font-size: 0px;
+  background: #3e3e3e;
 }
 .minetable.infor tr td .mainWindow div {
   display: inline-block;
@@ -2768,10 +2773,11 @@ main .bg {
 .minetable.totalMoney tr td .box {
   width: 90%;
   margin: 0px auto;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 3px;
   font-size: 0px;
   position: relative;
+  background: #3e3e3e;
 }
 .minetable.totalMoney tr td .box .half {
   display: inline-block;
@@ -2832,6 +2838,130 @@ main .bg {
   width: 1px;
   height: 25px;
   background: #ababab;
+}
+.minetable.totalMoney tr td .separateBox {
+  height: 89px;
+}
+.minetable.totalMoney tr td .separateBox.big {
+  float: left;
+  width: 60%;
+  border: solid 1px #828282;
+  border-radius: 3px;
+  font-size: 0px;
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 20px;
+  padding: 20px 0px;
+  background: #3e3e3e;
+}
+.minetable.totalMoney tr td .separateBox.big .half {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+.minetable.totalMoney tr td .separateBox.big .half .wallet_ic {
+  float: left;
+  width: 30px;
+  height: 28px;
+  background: url(../images/wallet_ic.png) no-repeat;
+  background-size: 200%;
+  margin: -6px 10px 0px 0px;
+}
+.minetable.totalMoney tr td .separateBox.big .half .wallet_ic.lock {
+  background-position-x: 100%;
+}
+.minetable.totalMoney tr td .separateBox.big .half p {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+.minetable.totalMoney tr td .separateBox.big .half p.dollar {
+  padding-top: 15px;
+}
+.minetable.totalMoney tr td .separateBox.big .half p.dollar span {
+  font-size: 18px;
+  padding-left: 10px;
+  color: #ea9700;
+}
+.minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked {
+  color: #f32727;
+}
+.minetable.totalMoney tr td .separateBox.big .half p button {
+  background: transparent;
+  color: #fff;
+  border: solid 1px #ababab;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  float: right;
+  margin: -4px 40px 0px 0px;
+}
+.minetable.totalMoney tr td .separateBox.big .half p button:hover, .minetable.totalMoney tr td .separateBox.big .half p button:active, .minetable.totalMoney tr td .separateBox.big .half p button.active {
+  color: #4d4d4d;
+  background: #fff;
+}
+.minetable.totalMoney tr td .separateBox.big .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background: #ababab;
+}
+.minetable.totalMoney tr td .separateBox.small {
+  float: right;
+  width: 30%;
+  border: solid 1px #828282;
+  border-radius: 3px;
+  font-size: 0px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 20px;
+  padding: 20px;
+  background: #3e3e3e;
+}
+.minetable.totalMoney tr td .separateBox.small p {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+  color: #dfb187;
+}
+.minetable.totalMoney tr td .separateBox.small p.remind {
+  font-size: 12px;
+  color: #ababab;
+  padding-top: 20px;
+}
+.minetable.totalMoney tr td .separateBox.small .turnBtn {
+  width: 50px;
+  height: 25px;
+  background: #8f8f8f;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.minetable.totalMoney tr td .separateBox.small .turnBtn.turn {
+  background: #6a6a6a;
+}
+.minetable.totalMoney tr td .separateBox.small .turnBtn.turn div {
+  left: 50%;
+}
+.minetable.totalMoney tr td .separateBox.small .turnBtn div {
+  width: 40%;
+  height: 80%;
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border-radius: 30px;
+  transition: 0.3s all;
 }
 .minetable.creditcard {
   width: 1150px;
@@ -3001,6 +3131,17 @@ main .bg {
 .minetable.moneyDetail tr td div p.dollar span {
   font-size: 15px;
   font-weight: bold;
+}
+.minetable.moneyDetail tr td div p .charge {
+  padding: 5px 8px;
+  background: transparent;
+  border-radius: 15px;
+  border: solid 1px #4d4d4d;
+  float: right;
+}
+.minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
+  background: #4d4d4d;
+  color: #fff;
 }
 .minetable.dealRecord {
   width: 1150px;
@@ -3219,12 +3360,13 @@ main .bg {
 }
 .minetable.callus tr td .box {
   width: 96%;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 5px;
   box-sizing: border-box;
   margin: 0px auto;
   font-size: 0px;
   padding: 15px 0px;
+  background: #3e3e3e;
 }
 .minetable.callus tr td .box .line {
   width: 1px;
@@ -3438,13 +3580,14 @@ main .bg {
   display: inline-block;
   width: 31%;
   height: 170px;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 5px;
   box-sizing: border-box;
   margin-right: 12px;
   font-size: 0px;
   padding: 15px 0px;
   vertical-align: top;
+  background: #3e3e3e;
 }
 .minetable.callus tr td .bigBox:last-child {
   margin: 0px;
@@ -3604,12 +3747,13 @@ main .bg {
 }
 .minetable.download tr td .codeBox {
   width: 80%;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 3px;
   padding: 10px;
   box-sizing: border-box;
   font-size: 0px;
   margin: 20px auto 10px;
+  background: #3e3e3e;
 }
 .minetable.download tr td .codeBox.control {
   margin: 20px auto;
@@ -3670,8 +3814,9 @@ main .bg {
   height: auto;
   padding: 10px;
   margin: 19px auto;
-  border: solid 1px #ababab;
+  border: solid 1px #828282;
   border-radius: 3px;
+  background: #3e3e3e;
 }
 .minetable.download tr td .bowserBox .bowser {
   display: inline-block;
@@ -3708,6 +3853,437 @@ main .bg {
 .minetable.download tr td .bowserBox button:hover, .minetable.download tr td .bowserBox button:active, .minetable.download tr td .bowserBox button.active {
   color: #4d4d4d;
   background: #fff;
+}
+.minetable.withdrawl {
+  width: 1150px;
+}
+.minetable.withdrawl tr td {
+  padding: 15px;
+  color: #fff;
+}
+.minetable.withdrawl tr td p {
+  font-size: 14px;
+  text-align: left;
+}
+.minetable.withdrawl tr td .inputBox {
+  width: 50%;
+  height: auto;
+  margin: 20px 0px;
+  text-align: left;
+}
+.minetable.withdrawl tr td .inputBox input {
+  width: 180px;
+  height: 36px;
+  box-sizing: border-box;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  color: #fff;
+  padding-left: 10px;
+  background: #535353;
+}
+.minetable.withdrawl tr td .inputBox input::placeholder {
+  color: #ababab;
+}
+.minetable.withdrawl tr td .inputBox .remind {
+  color: #fff;
+  margin-left: 30px;
+  font-size: 12px;
+  position: relative;
+}
+.minetable.withdrawl tr td .inputBox .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: 0px;
+  left: -18px;
+}
+.minetable.withdrawl tr td .inputBox button {
+  width: 180px;
+  height: 36px;
+  font-weight: bold;
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  color: #fff;
+  border-radius: 3px;
+  border: solid 1px #325b3b;
+  margin-top: 15px;
+}
+.minetable.withdrawl tr td .inputBox button:hover, .minetable.withdrawl tr td .inputBox button:active, .minetable.withdrawl tr td .inputBox button.active {
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+}
+.minetable.withdrawl tr td .box {
+  display: inline-block;
+  width: 31%;
+  height: auto;
+  margin-right: 12px;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.minetable.withdrawl tr td .box:last-child {
+  margin: 0px;
+}
+.minetable.withdrawl tr td .box .title {
+  background: #7b7b7b;
+  padding: 10px 20px;
+}
+.minetable.withdrawl tr td .box .content p {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+}
+.minetable.withdrawl tr td .box .content span {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.minetable.transpoint {
+  width: 1150px;
+}
+.minetable.transpoint tr td {
+  padding: 0px 20px;
+  text-align: left;
+}
+.minetable.transpoint tr td .inputBox {
+  width: 100%;
+  height: auto;
+}
+.minetable.transpoint tr td .inputBox select {
+  width: 240px;
+  height: 40px;
+  box-sizing: border-box;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: #cfcfcf;
+}
+.minetable.transpoint tr td .inputBox .arrow {
+  display: inline-block;
+  width: 24px;
+  height: 15px;
+  background: url(../images/arrow_trans.png);
+  margin: 0px 10px -3px 10px;
+}
+.minetable.transpoint tr td p {
+  margin: 20px 0px;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+.minetable.transpoint tr td p.remind {
+  position: relative;
+  margin: 20px;
+}
+.minetable.transpoint tr td p.remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: -2px;
+  left: -18px;
+}
+.minetable.transpoint tr td input {
+  width: 240px;
+  height: 40px;
+  box-sizing: border-box;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  padding-left: 10px;
+  color: #cfcfcf;
+}
+.minetable.transpoint tr td button {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0px 20px;
+}
+.minetable.transpoint tr td button:hover, .minetable.transpoint tr td button:active, .minetable.transpoint tr td button.active {
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+}
+.minetable.payStyle {
+  width: 1150px;
+}
+.minetable.payStyle tr th .remind {
+  float: right;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 12px;
+  position: relative;
+  background: transparent;
+}
+.minetable.payStyle tr th .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: 1px;
+  left: -18px;
+}
+.minetable.payStyle tr td {
+  padding: 20px 20px 0px;
+}
+.minetable.payStyle tr td button {
+  width: 110px;
+  height: 90px;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  color: #cfcfcf;
+  margin: 0px 30px 20px 0px;
+  position: relative;
+}
+.minetable.payStyle tr td button:hover, .minetable.payStyle tr td button:active, .minetable.payStyle tr td button.active {
+  border-color: #ababab;
+  background: #fff;
+  color: #4d4d4d;
+  border-radius: 3px 3px 10px 3px;
+}
+.minetable.payStyle tr td button:hover::before, .minetable.payStyle tr td button:active::before, .minetable.payStyle tr td button.active::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  background: url(../images/box_check.png);
+  right: -1px;
+  bottom: -1px;
+}
+.minetable.payStyle tr td button:nth-of-type(7n) {
+  margin-right: 0px;
+}
+.minetable.payStyle tr td button span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../images/save_icon.png") no-repeat;
+  margin: -5px auto 0px;
+  background-size: 1400%;
+}
+.minetable.payStyle tr td button span.bankcard {
+  background-position-x: -50px;
+}
+.minetable.payStyle tr td button span.paypalcard {
+  background-position-x: -100px;
+}
+.minetable.payStyle tr td button span.wechat {
+  background-position-x: -150px;
+}
+.minetable.payStyle tr td button span.paypal {
+  background-position-x: -200px;
+}
+.minetable.payStyle tr td button span.QQ {
+  background-position-x: -250px;
+}
+.minetable.payStyle tr td button span.UP {
+  background-position-x: -300px;
+}
+.minetable.payStyle tr td button span.num {
+  background-position-x: -350px;
+}
+.minetable.payStyle tr td button span.QRcode {
+  background-position-x: -400px;
+}
+.minetable.payStyle tr td button span.instead {
+  background-position-x: -450px;
+}
+.minetable.payStyle tr td button span.netcard {
+  background-position-x: -500px;
+}
+.minetable.payStyle tr td button span.wechatcard {
+  background-position-x: -550px;
+}
+.minetable.payStyle tr td button span.cloudcard {
+  background-position-x: -600px;
+}
+.minetable.payStyle tr td button span.big {
+  background-position-x: -650px;
+}
+.minetable.tbank {
+  width: 1150px;
+}
+.minetable.tbank tr td {
+  text-align: left;
+  padding: 20px;
+}
+.minetable.tbank tr td select {
+  width: 240px;
+  height: 40px;
+  background: #3e3e3e;
+  border: solid 1px #828282;
+  border-radius: 3px;
+  color: #cfcfcf;
+  padding-left: 10px;
+}
+.minetable.tnum {
+  width: 1150px;
+}
+.minetable.tnum tr td {
+  font-size: 0px;
+  position: relative;
+}
+.minetable.tnum tr td .line {
+  width: 1px;
+  height: 120px;
+  background: #ababab;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.minetable.tnum tr td .half {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.minetable.tnum tr td .half .inputBox {
+  margin-bottom: 15px;
+}
+.minetable.tnum tr td .half .inputBox:last-child {
+  margin: 0px;
+}
+.minetable.tnum tr td .half .inputBox span {
+  display: inline-block;
+  width: 110px;
+  color: #cfcfcf;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.minetable.tnum tr td .half .inputBox select, .minetable.tnum tr td .half .inputBox input {
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  color: #cfcfcf;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.minetable.tnum tr td .half .inputBox button {
+  color: #cfcfcf;
+  padding: 5px 8px;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  background: transparent;
+  margin-left: 20px;
+}
+.minetable.tnetcard {
+  width: 1150px;
+}
+.minetable.tnetcard tr td {
+  padding: 20px 0px;
+}
+.minetable.tnetcard tr td button {
+  width: 150px;
+  height: auto;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  color: #cfcfcf;
+  line-height: 35px;
+  font-size: 18px;
+  margin-right: 15px;
+}
+.minetable.tnetcard tr td button:last-child {
+  margin: 0px;
+}
+.minetable.tnetcard tr td button:hover, .minetable.tnetcard tr td button:active, .minetable.tnetcard tr td button.active {
+  background: #fff;
+  color: #4d4d4d;
+}
+.minetable.tnetcard tr td button:hover span, .minetable.tnetcard tr td button:active span, .minetable.tnetcard tr td button.active span {
+  background-position-y: 100%;
+}
+.minetable.tnetcard tr td button span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/change.png") no-repeat;
+  margin: 0px 10px -5px 0px;
+}
+.minetable.depositMoney {
+  width: 1150px;
+}
+.minetable.depositMoney tr td {
+  padding: 20px 20px 0px;
+  text-align: left;
+}
+.minetable.depositMoney tr td .moneybut {
+  width: 150px;
+  height: auto;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  color: #cfcfcf;
+  line-height: 35px;
+  font-size: 18px;
+  margin-right: 15px;
+}
+.minetable.depositMoney tr td .moneybut:last-child {
+  margin: 0px;
+}
+.minetable.depositMoney tr td .moneybut:hover, .minetable.depositMoney tr td .moneybut:active, .minetable.depositMoney tr td .moneybut.active {
+  background: #fff;
+  color: #4d4d4d;
+}
+.minetable.depositMoney tr td .inputBox {
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+.minetable.depositMoney tr td .inputBox input {
+  width: 240px;
+  height: 40px;
+  border: solid 1px #828282;
+  background: #3e3e3e;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #cfcfcf;
+  font-size: 14px;
+}
+.minetable.depositMoney tr td .inputBox .remind {
+  display: inline-block;
+  color: #fff;
+  margin-left: 30px;
+  font-size: 12px;
+  position: relative;
+}
+.minetable.depositMoney tr td .inputBox .remind::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/infor.png) no-repeat;
+  top: -1px;
+  left: -18px;
+}
+.minetable.depositMoney tr td .depositBtn {
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  margin: 0px 0px 20px;
+}
+.minetable.depositMoney tr td .depositBtn:hover, .minetable.depositMoney tr td .depositBtn:active, .minetable.depositMoney tr td .depositBtn.active {
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
 .middle {
@@ -6962,6 +7538,7 @@ main .bg {
   line-height: 45px;
   font-size: 15px;
   float: left;
+  padding-right: 10px;
 }
 .minetopfix .fixbar p:first-child {
   padding-left: 20px;
