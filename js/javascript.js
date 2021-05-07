@@ -34,32 +34,6 @@ $(function(){
         $('.new,.old,.sort,.let,.bgsm,.bettingbar,.teachbut,.complex').removeClass('display');
     });
 });
-//盤口教程
-$(function(){
-    $('.teachbut').click(function(){
-        $('.letbut,.teachbut').addClass('active');
-        $('.bgsmbut,.bettingbut,.allgame').removeClass('active');
-        $('.let').addClass('display');
-        $('.bgsm,.bettingbar,.new,.old').removeClass('display');
-        $('.newbut').removeClass('un');
-        $('.oldbut').addClass('un');
-        $('.newold,.timesort').removeClass('open')
-        $('.turnnew').addClass('active');
-        $('.turnold').removeClass('active');
-    });
-    $('.letbut').click(function(){
-        $('.letbut').addClass('active');
-        $('.bgsmbut').removeClass('active');
-        $('.let').addClass('display');
-        $('.bgsm').removeClass('display');
-    });
-    $('.bgsmbut').click(function(){
-        $('.letbut').removeClass('active');
-        $('.bgsmbut').addClass('active');
-        $('.let').removeClass('display');
-        $('.bgsm').addClass('display');
-    });
-});
 //消息中心
 $(function(){
     $('.editbut').click(function(){
@@ -371,6 +345,7 @@ $(function(){
         $('.tableballBtn a').attr('href','./html/balls/tableball.html');
         $('.filter,.unLogin').css('display','none')
         $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
+        $('.headerlist li:nth-of-type(4) a').attr('href','./html/balls/teach.html');
         $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
     })
 
@@ -479,6 +454,19 @@ $(function(){
     $('.playBoard button').has('i').children('p').css('display','none');
 })
 
+//盤口教程
+$(function(){
+    $('.teach1').click(function(){
+        $('.let').addClass('display');
+        $('.let').siblings().removeClass('display');
+    })
+
+    $('.teach2').click(function(){
+        $('.bgsm').addClass('display');
+        $('.bgsm').siblings().removeClass('display');
+    })
+})
+
     //我的頁面
 
 //懸浮列fixbar ul選定效果
@@ -565,26 +553,32 @@ $(function(){
     //頁面切換
     $('.help1').click(function(){
         $('.depositP').addClass('display');
+        $('.mineHideBoard').removeClass('sportBoard');
         $('.depositP').siblings().removeClass('display');
     })
     $('.help2').click(function(){
         $('.transP').addClass('display');
+        $('.mineHideBoard').removeClass('sportBoard');
         $('.transP').siblings().removeClass('display');
     })
     $('.help3').click(function(){
         $('.withP').addClass('display');
+        $('.mineHideBoard').removeClass('sportBoard');
         $('.withP').siblings().removeClass('display');
     })
     $('.help4').click(function(){
         $('.betP').addClass('display');
+        $('.mineHideBoard').removeClass('sportBoard');
         $('.betP').siblings().removeClass('display');
     })
     $('.help5').click(function(){
         $('.sportP').addClass('display');
+        $('.mineHideBoard').addClass('sportBoard');
         $('.sportP').siblings().removeClass('display');
     })
     $('.help6').click(function(){
         $('.skillP').addClass('display');
+        $('.mineHideBoard').removeClass('sportBoard');
         $('.skillP').siblings().removeClass('display');
     })
 

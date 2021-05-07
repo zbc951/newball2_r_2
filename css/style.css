@@ -530,14 +530,21 @@ main .bg {
   top: 12px;
   font-size: 20px;
 }
-.left ul li:hover .smallList, .left ul li:active .smallList, .left ul li.active .smallList {
-  display: block;
-}
-.left ul li:hover a, .left ul li:active a, .left ul li.active a {
+.left ul li:hover a {
   background: #8c8c8c;
   color: #ffffff;
 }
-.left ul li:hover a svg, .left ul li:hover a .total, .left ul li:active a svg, .left ul li:active a .total, .left ul li.active a svg, .left ul li.active a .total {
+.left ul li:hover a svg, .left ul li:hover a .total {
+  fill: #fff;
+}
+.left ul li:active .smallList, .left ul li.active .smallList {
+  display: block;
+}
+.left ul li:active a, .left ul li.active a {
+  background: #8c8c8c;
+  color: #ffffff;
+}
+.left ul li:active a svg, .left ul li:active a .total, .left ul li.active a svg, .left ul li.active a .total {
   fill: #fff;
 }
 .left ul li.onLive .live {
@@ -2226,125 +2233,6 @@ main .bg {
   color: #4d515d;
   line-height: 25px;
 }
-.playBoard.tteach {
-  width: 100%;
-}
-.playBoard.tteach tr th {
-  font-size: 15px;
-}
-.playBoard.tteach tr th.tleft {
-  padding: 7px 20px;
-}
-.playBoard.tteach tr.teachre.dou td.tright {
-  padding: 5px 145px 30px 0px;
-}
-.playBoard.tteach tr.teachre.dou td.tleft {
-  padding: 5px 0px 30px 145px;
-}
-.playBoard.tteach tr.teachre.dou td .rebody {
-  transform: translateY(-70%) translateX(-50%);
-}
-.playBoard.tteach tr.teachre td {
-  border: none;
-}
-.playBoard.tteach tr.teachre td.tright {
-  padding: 50px 145px 30px 0px;
-}
-.playBoard.tteach tr.teachre td.tleft {
-  padding: 50px 0px 30px 145px;
-}
-.playBoard.tteach tr.teachre td .rebody {
-  width: 320px;
-  height: 80px;
-  background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
-  background-color: #effbff;
-  border-radius: 40px;
-  position: absolute;
-  left: 50%;
-  transform: translateY(-38%) translateX(-50%);
-}
-.playBoard.tteach tr.teachre td .rebody p {
-  width: 100%;
-  margin: 0px;
-}
-.playBoard.tteach tr.teachre td .rebody p:first-child {
-  margin-top: 15px;
-}
-.playBoard.tteach tr.teachre td .rebody .releft {
-  float: left;
-  width: 33%;
-  position: unset;
-  padding-left: 10px;
-}
-.playBoard.tteach tr.teachre td .rebody .reright {
-  float: right;
-  width: 33%;
-  position: unset;
-  padding-right: 10px;
-}
-.playBoard.tteach tr.teachre td .rebody .remid {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  background: #e9f5ff;
-  border-radius: 50%;
-}
-.playBoard.tteach tr.teachre td .rebody .remid p:first-child {
-  margin-top: 20px;
-}
-.playBoard.tteach tr.teachre td .rebody .remid p:last-child {
-  font-size: 24px;
-}
-.playBoard.tteach tr td {
-  line-height: 24px;
-  position: relative;
-  border-width: 0px 0px 1px 0px;
-}
-.playBoard.tteach tr td:nth-child(1) {
-  width: 45%;
-}
-.playBoard.tteach tr td:nth-child(2) {
-  width: 10%;
-}
-.playBoard.tteach tr td:nth-child(3) {
-  width: 45%;
-}
-.playBoard.tteach tr td.tright, .playBoard.tteach tr td.tleft {
-  padding: 20px 60px;
-}
-.playBoard.tteach tr td .teamimg {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url("../images/teamimg.png") no-repeat;
-  background-size: 200%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.playBoard.tteach tr td .teamimg.fr {
-  right: 0px;
-}
-.playBoard.tteach tr td .teamimg.fl {
-  left: 0px;
-  background-position-x: -30px;
-}
-.playBoard.tteach tr td .capital {
-  display: block;
-  width: 200%;
-  position: absolute;
-  padding: 5px 10px;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: solid 1px #b9c0d2;
-  border-radius: 30px;
-  color: #4a5ec5;
-  background: #fff;
-}
 
 .bettingBoard {
   width: 95%;
@@ -2609,6 +2497,189 @@ main .bg {
   font-size: 12px;
   padding-right: 20px;
   color: #fff;
+}
+
+.teachBoard {
+  width: calc(100% - 10px);
+  height: auto;
+  border-collapse: collapse;
+  border-radius: 3px;
+  margin: 0px 0px 10px 10px;
+  background: #4d4d4d;
+}
+.teachBoard tr {
+  text-align: center;
+  border-bottom: solid 1px #ababab;
+}
+.teachBoard tr.noBorder {
+  border: none;
+}
+.teachBoard tr th {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 0px 7px;
+  vertical-align: middle;
+  background: #3d3d3d;
+  border-bottom: solid 1px #ababab;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  z-index: 2;
+}
+.teachBoard tr th.tLeft {
+  text-align: left;
+  padding: 8px 10px 7px;
+}
+.teachBoard tr td {
+  padding: 8px 0px;
+  vertical-align: middle;
+  word-break: break-all;
+}
+.teachBoard tr td .team {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 20px 0px;
+  position: relative;
+}
+.teachBoard tr td .team p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.teachBoard tr td .team p .odd {
+  font-weight: bold;
+  color: #ff4747;
+  padding-left: 5px;
+}
+.teachBoard tr td .team .img {
+  width: 30px;
+  height: 30px;
+  background: url(../images/teamimg.png) no-repeat;
+  background-size: 200%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+.teachBoard tr td .team .img.un {
+  left: 0px;
+  right: unset;
+  background-position-x: 100%;
+}
+.teachBoard tr td .vs {
+  display: inline-block;
+  font-size: 18px;
+  width: 60px;
+  height: 88px;
+  line-height: 88px;
+  vertical-align: top;
+  color: #fff;
+  position: relative;
+}
+.teachBoard tr td .vs span {
+  display: block;
+  width: 160px;
+  height: auto;
+  line-height: 0px;
+  font-size: 14px;
+  padding: 15px 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -24px;
+  border: solid 1px #828282;
+  border-radius: 30px;
+  background: #4d4d4d;
+}
+.teachBoard tr td .explain {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  padding: 20px 0px;
+}
+.teachBoard tr td .explain.lside {
+  text-align: right;
+}
+.teachBoard tr td .explain.rside {
+  text-align: left;
+}
+.teachBoard tr td .explain.win {
+  color: #1bc100;
+}
+.teachBoard tr td .explain.lose {
+  color: #b7b7b7;
+}
+.teachBoard tr td .explain p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.teachBoard tr td .box {
+  display: inline-block;
+  width: 300px;
+  height: 82px;
+  padding: 15px;
+  vertical-align: top;
+  position: relative;
+}
+.teachBoard tr td .box::before {
+  content: "";
+  background: #2f2f2f;
+  width: 90%;
+  height: 80px;
+  border-radius: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.teachBoard tr td .box .textBox {
+  width: 120px;
+  height: auto;
+  margin-top: 18px;
+  position: relative;
+  z-index: 2;
+}
+.teachBoard tr td .box .textBox.lside {
+  float: left;
+}
+.teachBoard tr td .box .textBox.rside {
+  float: right;
+}
+.teachBoard tr td .box .textBox p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.teachBoard tr td .box .textBox p.win {
+  font-weight: bold;
+  color: #f32727;
+}
+.teachBoard tr td .box .textBox p.lose {
+  color: #8f8f8f;
+}
+.teachBoard tr td .box .midBox {
+  width: 90px;
+  height: 90px;
+  background: #5f5f5f;
+  border-radius: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.teachBoard tr td .box .midBox p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 18px;
+}
+.teachBoard tr td .box .midBox p.score {
+  color: #ff0000;
+  margin-top: 6px;
+  font-size: 24px;
 }
 
 .minetable {
@@ -4315,6 +4386,12 @@ main .bg {
 .middle .mainBox.display {
   display: block;
 }
+.middle .let, .middle .bgsm {
+  display: none;
+}
+.middle .let.display, .middle .bgsm.display {
+  display: block;
+}
 .middle .bettingbar {
   display: none;
   width: 580px;
@@ -4697,36 +4774,6 @@ main .bg {
 }
 .middle .bettingch.display {
   display: block;
-}
-.middle .teach {
-  display: none;
-  width: 96%;
-  height: auto;
-  margin: 80px auto 0px;
-}
-.middle .teach.display {
-  display: block;
-}
-.middle .teach button {
-  width: 85px;
-  height: 35px;
-  border-radius: 5px;
-  color: white;
-  float: left;
-  margin: 0px 5px 20px 0px;
-  background: linear-gradient(to bottom, #dfb995, #b6885f);
-  background: #b6885f;
-  border: 1px solid #b78960;
-  font-size: 15px;
-}
-.middle .teach button:hover, .middle .teach button:active {
-  background: linear-gradient(to bottom, #444f8b, #6a75b2);
-  border: 1px solid #444f8b;
-}
-.middle .teach button.active {
-  background: linear-gradient(to bottom, #444f8b, #6a75b2);
-  background-color: #6a75b2;
-  border: 1px solid #444f8b;
 }
 .middle .inner {
   display: none;
@@ -5136,6 +5183,32 @@ main .bg {
 }
 .topfix .inn .back:hover::before, .topfix .inn .back:active::before, .topfix .inn .back.active::before {
   border-color: transparent #535353;
+}
+.topfix .teach {
+  width: 100%;
+}
+.topfix .teach li {
+  float: left;
+  font-size: 15px;
+  height: 46px;
+  line-height: 50px;
+  border-bottom: solid 3px transparent;
+  color: #1e2129;
+  cursor: pointer;
+}
+.topfix .teach li:first-child {
+  margin-left: 15px;
+}
+.topfix .teach li:hover, .topfix .teach li:active, .topfix .teach li.active {
+  color: #fff;
+  border-color: #59a936;
+}
+.topfix .teach .line {
+  width: 1px;
+  height: 32px;
+  background: #bcbcbc;
+  float: left;
+  margin: 10px 10px 0px 10px;
 }
 
 .chleague {
@@ -7086,7 +7159,7 @@ main .bg {
   top: 250px;
   margin-left: 10px;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 6;
 }
 .myself .sportbar button {
   float: left;
@@ -7646,11 +7719,11 @@ main .bg {
   left: 270px;
   top: 0px;
 }
-.mineHideBoard.innerboard {
-  height: 155px;
-}
 .mineHideBoard.recordboard {
   height: 160px;
+}
+.mineHideBoard.sportBoard {
+  height: 250px;
 }
 
 .changePasswordWindow {

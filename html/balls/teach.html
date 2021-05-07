@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盤口教程</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../js/javascript.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--filter-->
+    <div class="filter"></div>
+    <!--盤口對照表彈窗-->
+    <div class="conversionBox">
+        <h1>盤口對照表</h1>
+        <div class="innerBox">
+            <p>球頭換算法</p>
+            <div class="baseline"></div>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+        </div>
+        <button></button>
+    </div>
+    <!--設定彈窗-->
+    <div class="controlBox">
+        <h1>設定</h1>
+        <div class="innerBox1">
+            <p>介面設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                盤口切換
+                <div class="slideBase Handicap lSide">
+                    <p class="eu">歐洲盤</p>
+                    <p class="hk">香港盤</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                主題風格
+                <div class="slideBase Theme lSide">
+                    <p class="light">日間</p>
+                    <p class="dark">夜間</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>通知設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                桌面通知
+                <div class="slideBase Desktop lSide">
+                    <p class="on">開起</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                電子郵件通知
+                <div class="slideBase Email lSide">
+                    <p class="on">開啟</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>籌碼快捷設定</p>
+            <div class="baseline"></div>
+            <div class="longBox">
+                <span>設定下注</span>
+                <input type="text" value="1000">
+                <input type="text" value="2000">
+                <input type="text" value="5000">
+                <input type="text" value="10000">
+                <input type="text" value="20000">
+            </div>
+        </div>
+        <div class="innerBox2">
+            版本資訊
+            <p>
+                v4.0.3
+                <span>目前為最新版本</span>
+            </p>
+        </div>
+        <button class="cancelBtn"></button>
+    </div>
+    <!--header-->
+    <header>
+        <!--上時間列-->
+        <div class="top">
+            <button class="conversionBtn">盤口對照表</button>
+            <button class="controlBtn">設定</button>
+            <span>
+                <script language="javascript" class="clock">
+                    var dt = new Date();
+                    document.write(dt);
+                </script>
+            </span>
+            <div class="marqueeBox">
+                <i class="fas fa-volume-up"></i>
+                <marquee behavior="" direction="">跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</marquee>
+            </div>
+        </div>
+        <!--置中外包-->
+        <article>
+            <!--LOGO-->
+            <div class="logo">LOGO</div>
+            <!--上列表-->
+            <ul class="headerlist">
+                <li><a href="./soccer.html">市場列表</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">比賽結果</a></li>
+                <li><a href="./teach.html" class="active">盤口教程</a></li>
+                <li><a href="../../index.html">賽事比分</a></li>
+                <li><a href="../myself/mine.html"><i class="fas fa-user-minus"></i>我的</a></li>
+            </ul>
+            <!--登入前樣式-->
+            <div class="logged">
+                <div class="inputBox">
+                    <input type="text" placeholder="用戶帳號">
+                    <a href="#" class="forget">忘記密碼?</a>
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="密碼">
+                    <p class="remember"><span class="cube"></span>記住密碼</p>
+                </div>
+                <button class="loginBtn">登入</button>
+                <button class="signupBtn">註冊</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
+            </div>
+            <!--登入後樣式-->
+            <div class="loggedIn display">
+				<p>帳戶名稱:<span>AAA888</span></p>
+                <p class="quota">昨日信用額度:<span>1000000</span>元</p>
+                <p class="quota">今日信用額度:<span>1000000</span>元</p>
+                <button class="logoutBtn" onclick="window.location.href='../../index.html'">登出</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
+            </div>
+        </article>
+    </header>
+    <!--main-->
+    <main>
+        <!--置中外包-->
+        <article>
+            <!--左列-->
+            <section class="left">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                            我的最愛
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-hotjar"></i>
+                            熱門賽事
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li class="onLive">
+                        <a href="./soccer.html">
+                            <i class="far fa-futbol"></i>
+                            足球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                        <div class="smallList active">滾球盤<span>4</span></div>
+                        <div class="smallList">讓分大小<span>520</span></div>
+                        <div class="smallList">混合過關<span>40</span></div>
+                        <div class="smallList">上半場<span>18</span></div>
+                        <div class="smallList">波膽<span>155</span></div>
+                        <div class="smallList">比賽結果</div>
+                    </li>
+                    <li>
+                        <a href="./baseball.html">
+                            <i class="fas fa-baseball-ball"></i>
+                            棒球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./basketball.html">
+                            <i class="fas fa-basketball-ball"></i>
+                            籃球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./race.html">
+                            <i class="fas fa-flag-checkered"></i>
+                            賽馬賽狗
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./esp.html">
+                            <i class="fas fa-keyboard"></i>
+                            電競
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./stock.html">
+                            <i class="fas fa-signal"></i>
+                            股票指數
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./lotto.html">
+                            <i class="fas fa-ticket-alt"></i>
+                            彩球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./iceball.html">
+                            <i class="fas fa-hockey-puck"></i>
+                            冰球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tennis.html">
+                            <i class="fas fa-baseball-ball"></i>
+                            網球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./snooker.html">
+                            <i class="fas fa-dot-circle"></i>
+                            斯諾克
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./vball.html">
+                            <i class="fas fa-volleyball-ball"></i>
+                            排球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./racecar.html">
+                            <i class="fas fa-car"></i>
+                            賽車
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./badminton.html">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.985 511.985" style="enable-background:new 0 0 511.985 511.985;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M499.455,230.673l-75.616-16.928l-222.976,171.36l-22.816-22.816l228.672-175.712l-6.848-60.384
+                                            c-0.832-7.424-6.688-13.28-14.08-14.08l-64.544-7.328l-171.84,228.896l-22.816-22.848L300.223,79.505l-7.36-65.312
+                                            c-0.448-4.384-2.784-8.384-6.304-11.008c-3.52-2.624-8-3.712-12.352-2.944l-90.496,16c-5.792,1.024-10.528,5.088-12.416,10.656
+                                            L81.983,294.193l-26.592,26.592l135.744,135.744l26.56-26.56l267.296-89.312c5.44-1.824,9.504-6.4,10.624-12.032l16-79.168
+                                            C513.375,240.945,507.967,232.593,499.455,230.673z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M32.767,343.441l-4.672,4.672c-37.408,37.44-37.408,98.304,0,135.744c18.112,18.144,42.24,28.128,67.872,28.128
+                                            s49.76-10.016,67.872-28.128l4.672-4.672L32.767,343.441z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            羽毛球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./beachball.html">
+                            <i class="far fa-futbol"></i>
+                            沙灘足球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./football.html">
+                            <i class="fas fa-football-ball"></i>
+                            美式足球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tableball.html">
+                            <i class="fas fa-table-tennis"></i>
+                            乒乓球
+                            <div class="live">LIVE</div>
+                            <div class="total">295</div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!--盤口教程-->
+            <section class="middle">
+                <!--遊戲版面-->
+                <div class="mainBox display">
+                    <!--讓球-->
+                    <div class="let display">
+                        <!--和局-->
+                        <table class="teachBoard">
+                            <!--標題-->
+                            <tr>
+                                <th class="tLeft">足球-讓球-和局</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="team">
+                                        <p>曼聯[主]</p>
+                                        <p>1球<span class="odd">0.910</span></p>
+                                        <div class="img"></div>
+                                    </div>
+                                    <p class="vs">
+                                        vs
+                                        <span>投注本金1000元</span>
+                                    </p>
+                                    <div class="team">
+                                        <p>阿仙奴</p>
+                                        <p>-<span class="odd">0.910</span></p>
+                                        <div class="img un"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="explain lside win">
+                                        <p>讓球為"1球"</p>
+                                        <p>故無法分出勝負</p>
+                                        <p>退回本金</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注主隊</p>
+                                            <p class="win">退回本金</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">1-0</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注客隊</p>
+                                            <p class="win">退回本金</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside win">
+                                        <p>讓球為"1球"</p>
+                                        <p>故無法分出勝負</p>
+                                        <p>退回本金</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--全贏/全輸-->
+                        <table class="teachBoard">
+                            <!--標題-->
+                            <tr>
+                                <th class="tLeft">足球-讓球-全贏/全輸</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="team">
+                                        <p>皇家馬德里[主]</p>
+                                        <p>1球半/2球<span class="odd">0.920</span></p>
+                                        <div class="img"></div>
+                                    </div>
+                                    <p class="vs">
+                                        vs
+                                        <span>投注本金1000元</span>
+                                    </p>
+                                    <div class="team">
+                                        <p>巴塞隆納</p>
+                                        <p>-<span class="odd">0.960</span></p>
+                                        <div class="img un"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="noBorder">
+                                <td>
+                                    <div class="explain lside win">
+                                        <p>贏1000&ensp;X&ensp;(0.920)&ensp;=&ensp;920</p>
+                                        <p>(不含本金)</p>
+                                        <p>&ensp;</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注主隊</p>
+                                            <p class="win">贏920元</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">3-0</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注客隊</p>
+                                            <p class="lose">輸本金1000元</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside lose">
+                                        <p>讓球為"1球"</p>
+                                        <p>故無法分出勝負</p>
+                                        <p>退回本金</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="explain lside lose">
+                                        <p>讓球為"1球/2球"</p>
+                                        <p>賓果兩隊分數總合為1</p>
+                                        <p>故投注主隊輸掉本金</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注主隊</p>
+                                            <p class="lose">輸本金1000元</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">3-0</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注客隊</p>
+                                            <p class="win">贏960元</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside win">
+                                        <p>贏1000&ensp;X&ensp;(0.960)&ensp;=&ensp;960</p>
+                                        <p>(不含本金)</p>
+                                        <p>&ensp;</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--贏一半/輸一半-->
+                        <table class="teachBoard">
+                            <!--標題-->
+                            <tr>
+                                <th class="tLeft">足球-讓球-贏一半/輸一半</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="team">
+                                        <p>皇家馬德里[主]</p>
+                                        <p>1球半/2球<span class="odd">0.920</span></p>
+                                        <div class="img"></div>
+                                    </div>
+                                    <p class="vs">
+                                        vs
+                                        <span>投注本金1000元</span>
+                                    </p>
+                                    <div class="team">
+                                        <p>巴塞隆納</p>
+                                        <p>-<span class="odd">0.960</span></p>
+                                        <div class="img un"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="noBorder">
+                                <td>
+                                    <div class="explain lside win">
+                                        <p>贏1000&ensp;X&ensp;(50%)&ensp;X&ensp;(1+0.92)</p>
+                                        <p>-1000&ensp;X&ensp;50%&ensp;=&ensp;460</p>
+                                        <p>(不含本金)</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注主隊</p>
+                                            <p class="win">贏460元</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">2-0</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注客隊</p>
+                                            <p class="lose">輸本金500元</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside lose">
+                                        <p>1000&ensp;X&ensp;(50%)&ensp;-&ensp;1000&ensp;=&ensp;-500</p>
+                                        <p>輸本金500元</p>
+                                        <p>&ensp;</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--大小球-->
+                    <div class="bgsm">
+                        <!--全贏全輸-->
+                        <table class="teachBoard">
+                            <!--標題-->
+                            <tr>
+                                <th class="tLeft">足球-大小球-全贏/全輸</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="team">
+                                        <p>皇家馬德里[主]</p>
+                                        <p>2.5大<span class="odd">0.960</span></p>
+                                        <div class="img"></div>
+                                    </div>
+                                    <p class="vs">
+                                        vs
+                                        <span>投注本金1000元</span>
+                                    </p>
+                                    <div class="team">
+                                        <p>巴塞隆納</p>
+                                        <p>2.5小<span class="odd">0.880</span></p>
+                                        <div class="img un"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="explain lside win">
+                                        <p>贏1000&ensp;X&ensp;(0.960)&ensp;=&ensp;960</p>
+                                        <p>(不含本金)</p>
+                                        <p>&ensp;</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注2.5大</p>
+                                            <p class="win">贏960元</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">1-2</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注2.5小</p>
+                                            <p class="lose">輸本金1000元</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside lose">
+                                        <p>大小球為"2.5大/2.5小"</p>
+                                        <p>賽果兩隊分數總合為3</p>
+                                        <p>故投注2.5小輸掉本金</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--和局-->
+                        <table class="teachBoard">
+                            <!--標題-->
+                            <tr>
+                                <th class="tLeft">足球-大小球-和局</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="team">
+                                        <p>皇家馬德里[主]</p>
+                                        <p>3平大<span class="odd">0.900</span></p>
+                                        <div class="img"></div>
+                                    </div>
+                                    <p class="vs">
+                                        vs
+                                        <span>投注本金1000元</span>
+                                    </p>
+                                    <div class="team">
+                                        <p>巴塞隆納</p>
+                                        <p>3平小<span class="odd">0.900</span></p>
+                                        <div class="img un"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="explain lside win">
+                                        <p>大小球為"3平大/3平小"</p>
+                                        <p>賽果兩隊分數總合為3</p>
+                                        <p>故無法分出勝負退回本金</p>
+                                    </div>
+                                    <div class="box">
+                                        <div class="textBox lside">
+                                            <p>投注3平大</p>
+                                            <p class="win">退回本金</p>
+                                        </div>
+                                        <div class="midBox">
+                                            <p>賽果</p>
+                                            <p class="score">2-1</p>
+                                        </div>
+                                        <div class="textBox rside">
+                                            <p>投注3平小</p>
+                                            <p class="lose">退回本金</p>
+                                        </div>
+                                    </div>
+                                    <div class="explain rside win">
+                                        <p>大小球為"3平大/3平小"</p>
+                                        <p>賽果兩隊分數總合為3</p>
+                                        <p>故無法分出勝負退回本金</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!--隱藏版-->
+            <div class="hideboard"></div>
+            <!--懸浮列-->
+            <div class="topfix">
+                <ul class="teach">
+                    <li class="teach1 active">讓球</li>
+                    <div class="line"></div>
+                    <li class="teach2">大小球</li>
+                </ul>
+            </div>
+            <!--選擇聯盟-->
+            <div class="chleague">
+                <ul>
+                    <li>
+                        <p><span class="cube active"></span>選取/取消所有聯盟</p>
+                        <p><span class="cube active"></span>英格蘭足總杯</p>
+                        <p><span class="cube active"></span>巴林超級聯賽</p>
+                        <p><span class="cube active"></span>巴西巴西利亞甲組聯賽</p>
+                        <p><span class="cube active"></span>比利時盃</p>
+                        <p><span class="cube active"></span>克羅地亞盃</p>
+                        <p><span class="cube active"></span>超級盃(在卡塔爾)</p>
+                        <p><span class="cube active"></span>摩洛哥甲組聯賽</p>
+                        <p><span class="cube active"></span>南非盃</p>
+                        <p><span class="cube active"></span>塞浦路斯甲組聯賽</p>
+                        <p><span class="cube active"></span>土耳其盃</p>
+                        <p><span class="cube active"></span>希臘盃</p>
+                        <p><span class="cube active"></span>以色列超級聯賽</p>
+                        <p><span class="cube active"></span>印度超級聯賽</p>
+                        <p><span class="cube active"></span>義大利青年盃U19</p>
+                    </li>
+                    <li>
+                        <p>&ensp;</p>
+                        <p><span class="cube active"></span>義大利甲組聯賽</p>
+                        <p><span class="cube active"></span>埃及超級聯賽</p>
+                        <p><span class="cube active"></span>巴西盃</p>
+                        <p><span class="cube active"></span>巴西巴亞諾甲組聯賽</p>
+                        <p><span class="cube active"></span>德國足協盃</p>
+                        <p><span class="cube active"></span>卡塔爾埃米爾盃</p>
+                        <p><span class="cube active"></span>南美洲球會盃</p>
+                        <p><span class="cube active"></span>奇幻賽事</p>
+                        <p><span class="cube active"></span>沙特超級聯賽</p>
+                        <p><span class="cube active"></span>突尼斯甲組聯賽</p>
+                        <p><span class="cube active"></span>西班牙盃</p>
+                        <p><span class="cube active"></span>以色列北部國家聯賽U19</p>
+                        <p><span class="cube active"></span>印度I聯賽</p>
+                        <p><span class="cube active"></span>英格蘭足球協會南部全國聯賽</p>
+                    </li>
+                    <li>
+                        <p>&ensp;</p>
+                        <p><span class="cube active"></span>法國甲組聯賽</p>
+                        <p><span class="cube active"></span>阿爾及利亞甲組聯賽</p>
+                        <p><span class="cube active"></span>巴西里約州甲組聯賽</p>
+                        <p><span class="cube active"></span>巴西伯南布哥甲組-聯賽</p>
+                        <p><span class="cube active"></span>法國甲組聯賽-特別投注</p>
+                        <p><span class="cube active"></span>墨西哥超級聯賽</p>
+                        <p><span class="cube active"></span>南美自由盃</p>
+                        <p><span class="cube active"></span>塞浦路斯盃</p>
+                        <p><span class="cube active"></span>英格蘭超級聯賽</p>
+                        <p><span class="cube active"></span>匈牙利甲組聯賽</p>
+                        <p><span class="cube active"></span>亞洲足聯盃外圍賽-附加賽</p>
+                        <p><span class="cube active"></span>伊朗超級聯賽</p>
+                        <p><span class="cube active"></span>印度果阿超級聯賽</p>
+                        <p><span class="cube active"></span>英格蘭伊斯米安超級聯賽</p>
+                    </li>
+                </ul>
+                <button>確認</button>
+            </div>
+            <!--右列-->
+            <section class="right">
+                <!--上段字樣-->
+                <div class="statusWindow">
+                    <p>即時資訊</p>
+                    <ul>
+                        <li>03:35 單式 足球-讓分<button></button><span class="onWait">等待中...</span></li>
+                        <li>03:35 單式 足球-讓分<button></button><span>成功</span></li>
+                        <li>03:35 單式 足球-讓分<button></button><span>失敗</span></li>
+                    </ul>
+                </div>
+                <!--直播小框-->
+                <div class="liveWindow">
+                    <p class="title">體育直播</p>
+                    <div class="teamWindow">
+                        <div class="leftTeam">
+                            <p>
+                                布咸美恩斯 1905
+                                <br>
+                                接球員_Sea_food
+                            </p>
+                        </div>
+                        <div class="score">
+                            <p>
+                                <span>0</span>
+                                &ensp;vs&ensp;
+                                <span>0</span>
+                            </p>
+                        </div>
+                        <div class="rightTeam">
+                            <p>
+                                布拉格斯拉維亞B
+                                <br>
+                                接球員_Chickens
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liveShow"></div>
+                </div>
+                <!--下大框-->
+                <div class="room">
+                    <!--切換按鈕-->
+                    <div class="twobut">
+                        <button class="liveBtn">直播賽事列表</button>
+                        <div class="line"></div>
+                        <button class="active StatusBtn">即時注單</button>
+                    </div>
+                    <!--直播賽事-->
+                    <div class="livelist">
+                        <ul>
+                            <li class="active">
+                                <span class="gameName">足球</span>
+                                <p class="games">20</p>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation">06/24 18:00</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation">06/24 18:00</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="gameName">棒球</span>
+                                <p class="games">20</p>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="gameName">籃球</span>
+                                <p class="games">20</p>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                                <div class="innerList">
+                                    <p>
+                                        <span>俱樂部友誼賽<span class="situation onLive">直播中</span></span>
+                                        <br>
+                                        布咸美恩斯 1905
+                                        <br>
+                                        布拉格斯拉維亞 B
+                                        <button>直播</button>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="gameName">賽馬賽狗</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">電競</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">指數</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">彩球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">冰球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">網球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">斯諾克</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">排球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">賽車</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">羽毛球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">沙灘足球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">美式足球</span>
+                                <p class="games">20</p>
+                            </li>
+                            <li>
+                                <span class="gameName">乒乓球</span>
+                                <p class="games">20</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--即時注單資訊-->
+                    <div class="bettingStatus open">
+                        <table class="bettingBoard">
+                            <tr>
+                                <td>2021/03/03 14:30:08</td>
+                                <td class="waiting">等待中...</td>
+                            </tr>
+                            <tr>
+                                <td>M58755837</td>
+                                <td>單式 足球-獨贏</td>
+                            </tr>
+                            <tr>
+                                <td>投注 : 100</td>
+                                <td>可贏 : 450</td>
+                            </tr>
+                            <tr>
+                                <td class="listName" colspan="2">布咸美恩斯 1905[主]<span class="vs">vs</span>布拉格斯拉維亞 B @ <span class="odds">4.5</span></td>
+                            </tr>
+                        </table>
+                        <table class="bettingBoard">
+                            <tr>
+                                <td>2021/03/03 14:30:08</td>
+                                <td class="waiting">等待中...</td>
+                            </tr>
+                            <tr>
+                                <td>M58755837</td>
+                                <td>單式 足球-獨贏</td>
+                            </tr>
+                            <tr>
+                                <td>投注 : 100</td>
+                                <td>可贏 : 450</td>
+                            </tr>
+                            <tr>
+                                <td class="listName" colspan="2">布咸美恩斯 1905[主]<span class="vs">vs</span>布拉格斯拉維亞 B @ <span class="odds">4.5</span></td>
+                            </tr>
+                        </table>
+                        <table class="bettingBoard">
+                            <tr>
+                                <td>2021/03/03 14:30:08</td>
+                                <td class="waiting">等待中...</td>
+                            </tr>
+                            <tr>
+                                <td>M58755837</td>
+                                <td>單式 足球-獨贏</td>
+                            </tr>
+                            <tr>
+                                <td>投注 : 100</td>
+                                <td>可贏 : 450</td>
+                            </tr>
+                            <tr>
+                                <td class="listName" colspan="2">布咸美恩斯 1905[主]<span class="vs">vs</span>布拉格斯拉維亞 B @ <span class="odds">4.5</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--懸浮側鍵-->
+        <section class="fixside">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                    <span>搜尋</span>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li>熱門賽事</li>
+                    <div>
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li>埃及</li>
+                    <div>
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li>阿爾及利亞</li>
+                    <div>
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li>巴林</li>
+                    <div>
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li>巴西</li>
+                    <div>
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+
+            <!--功能列-->
+            <div class="fun">
+                <!--漢堡選單-->
+                <div class="hamBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a> -->
+                <!-- <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a> -->
+                <!-- <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                </a> -->
+                <a href="#" class="bettingrenow">
+                    <div class="fixsideimg img9"></div>
+                    <span>即時投注</span>
+                </a>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <!-- <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a> -->
+            </div>
+        </section>
+        <!--背景-->
+        <div class="bg">
+        </div>
+    </main>
+</body>
+
+</html>

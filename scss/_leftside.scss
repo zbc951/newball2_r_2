@@ -200,7 +200,19 @@
 
         li {
 
-            &:hover,&:active,&.active {
+            &:hover {
+
+                a {
+                    background: #8c8c8c;
+                    color: #ffffff;
+
+                    svg,.total {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            &:active,&.active {
 
                 .smallList {
                     display: block;

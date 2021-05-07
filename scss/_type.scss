@@ -32,6 +32,15 @@
         }
     }
 
+    //盤口教程
+    .let,.bgsm {
+        display: none;
+
+        &.display {
+            display: block;
+        }
+    }
+
     //串關投注
     .bettingbar {
         display: none;
@@ -421,38 +430,6 @@
         //顯示
         &.display {
             display: block;
-        }
-    }
-
-    //盤口教程
-    .teach {
-        display: none;
-        width: 96%;
-        height: auto;
-        margin: 80px auto 0px;
-        &.display {
-            display: block;
-        }
-        button {
-            width: 85px;
-            height: 35px;
-            border-radius: 5px;
-            color: white;
-            float: left;
-            margin: 0px 5px 20px 0px;
-            background: linear-gradient(to bottom, #dfb995, #b6885f);
-            background: #b6885f;
-            border: 1px solid #b78960;
-            font-size: 15px;
-            &:hover,&:active {
-                background: linear-gradient(to bottom, #444f8b, #6a75b2);
-                border: 1px solid #444f8b;
-            }
-            &.active {
-                background: linear-gradient(to bottom, #444f8b, #6a75b2);
-                background-color: #6a75b2;
-                border: 1px solid #444f8b;
-            }
         }
     }
 
@@ -946,6 +923,37 @@
                     border-color: transparent #535353;
                 }
             }
+        }
+    }
+
+    .teach {
+        width: 100%;
+        
+        li {
+            float: left;
+            font-size: 15px;
+            height: 46px;
+            line-height: 50px;
+            border-bottom: solid 3px transparent;
+            color: #1e2129;
+            cursor: pointer;
+
+            &:first-child {
+                margin-left: 15px;
+            }
+
+            &:hover,&:active,&.active {
+                color: #fff;
+                border-color: #59a936;
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: 32px;
+            background: #bcbcbc;
+            float: left;
+            margin: 10px 10px 0px 10px;
         }
     }
 }

@@ -271,7 +271,7 @@
         top: 250px;
         margin-left: 10px;
         border-radius: 3px;
-        z-index: 1;
+        z-index: 6;
         
         button {
             float: left;
@@ -951,14 +951,14 @@
     left: 270px;
     top: 0px;
 
-    //內頁高
-    &.innerboard {
-        height: 155px;
-    }
-
     //投注記錄用
     &.recordboard {
         height: 160px;
+    }
+
+    //體育規則用
+    &.sportBoard {
+        height: 250px;
     }
 }
 
