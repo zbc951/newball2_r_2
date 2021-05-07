@@ -82,7 +82,7 @@ table {
 
 header {
   width: 100%;
-  min-width: 1530px;
+  min-width: 1480px;
   height: 110px;
   background: #505050;
   position: relative;
@@ -356,7 +356,7 @@ header article .loggedIn .selectBox select option {
 main {
   display: block;
   width: 100%;
-  min-width: 1530px;
+  min-width: 1480px;
   height: auto;
   position: relative;
 }
@@ -485,7 +485,7 @@ main .bg {
   display: inline-block;
   width: 60px;
   height: 58px;
-  margin: 0px 5px;
+  margin: 0px 4px;
   border-radius: 3px;
   font-size: 16px;
   text-align: center;
@@ -517,6 +517,7 @@ main .bg {
   width: 28px;
   text-align: center;
   font-size: 14px;
+  left: 115px;
 }
 .left.mine ul li a i {
   font-size: 22px;

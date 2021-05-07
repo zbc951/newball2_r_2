@@ -875,29 +875,47 @@ $(function(){
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1 hide2 hide3');
+        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1');
+        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1');
         $('.playBoard').removeClass('hide2');
+        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1 hide2');
         $('.playBoard').removeClass('hide3');
-    } else if(wWD < 1560) {
+        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.left').css('width',(String(270) + 'px'));
+    } else if(wWD < 1560 && wWD > 1510 ) {
+        $('.marqueeBox').css('width',(String(59) + '%'));
+        $('.middle').css('width',(String(wWD - 650) + 'px'));
+        $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+        $('.playBoard').addClass('hide1 hide2 hide3');
+        $('body').css('overflow-x','auto');
+        $('.left').css('width',(String(wWD - 1290) + 'px'));
+        $('.topfix,.chleague,.minetopfix').css('left',(String(wWD - 1280) + 'px'));
+    } else {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
         $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
+        $('.left').css('width',(String(220) + 'px'));
+        $('.topfix,.chleague,.minetopfix').css('left',(String(230) + 'px'));
     }
 
-    if(wWD > 1460) {
+    if(wWD > 1560) {
         $('.chleague').css('width',(String(wWD - 660) + 'px'));
     } else {
         $('.chleague').css('width',(String(870) + 'px'));
@@ -908,26 +926,44 @@ $(function(){
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1 hide2 hide3');
+            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1920 && wWD >= 1840) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1');
+            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1840 && wWD >= 1700) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1');
             $('.playBoard').removeClass('hide2');
+            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1700 && wWD >= 1560) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1 hide2');
             $('.playBoard').removeClass('hide3');
-        } else if(wWD < 1560) {
+            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.left').css('width',(String(270) + 'px'));
+        } else if(wWD < 1560 && wWD > 1510 ) {
+            $('.marqueeBox').css('width',(String(59) + '%'));
+            $('.middle').css('width',(String(wWD - 650) + 'px'));
+            $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
+            $('.playBoard').addClass('hide1 hide2 hide3');
+            $('body').css('overflow-x','auto');
+            $('.left').css('width',(String(wWD - 1290) + 'px'));
+            $('.topfix,.chleague,.minetopfix').css('left',(String(wWD - 1280) + 'px'));
+        } else {
             $('.marqueeBox').css('width',(String(59) + '%'));
             $('.middle').css('width',(String(880) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(870) + 'px'));
             $('.playBoard').addClass('hide1 hide2 hide3');
             $('body').css('overflow-x','auto');
+            $('.left').css('width',(String(220) + 'px'));
+            $('.topfix,.chleague,.minetopfix').css('left',(String(230) + 'px'));
         }
 
         if(wWD > 1560) {
