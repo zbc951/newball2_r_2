@@ -493,14 +493,34 @@ $(function(){
 
 //盤口教程
 $(function(){
-    $('.teach1').click(function(){
-        $('.let').addClass('display');
-        $('.let').siblings().removeClass('display');
+    $('.Soc_teach1').click(function(){
+        $('.soccerTeach,.let').addClass('display');
+        $('.soccerTeach,.let').siblings().removeClass('display');
     })
 
-    $('.teach2').click(function(){
-        $('.bgsm').addClass('display');
-        $('.bgsm').siblings().removeClass('display');
+    $('.Soc_teach2').click(function(){
+        $('.soccerTeach,.bgsm').addClass('display');
+        $('.soccerTeach,.bgsm').siblings().removeClass('display');
+    })
+
+    $('.Base_teach1').click(function(){
+        $('.baseballTeach,.let').addClass('display');
+        $('.baseballTeach,.let').siblings().removeClass('display');
+    })
+
+    $('.Base_teach2').click(function(){
+        $('.baseballTeach,.bgsm').addClass('display');
+        $('.baseballTeach,.bgsm').siblings().removeClass('display');
+    })
+
+    $('.Bask_teach1').click(function(){
+        $('.basketballTeach,.let').addClass('display');
+        $('.basketballTeach,.let').siblings().removeClass('display');
+    })
+
+    $('.Bask_teach2').click(function(){
+        $('.basketballTeach,.bgsm').addClass('display');
+        $('.basketballTeach,.bgsm').siblings().removeClass('display');
     })
 })
 
@@ -508,7 +528,7 @@ $(function(){
 
 //懸浮列fixbar ul選定效果
 $(function(){
-    $('.fixbar ul li').click(function(){
+    $('.fixbar ul li,.teach li').click(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
     })

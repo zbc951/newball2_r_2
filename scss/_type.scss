@@ -40,6 +40,13 @@
             display: block;
         }
     }
+    .soccerTeach,.baseballTeach,.basketballTeach {
+        display: none;
+
+        &.display {
+            display: block;
+        }
+    }
 
     //串關投注
     .bettingbar {
@@ -946,14 +953,26 @@
                 color: #fff;
                 border-color: #59a936;
             }
+
+            &.name {
+                color: #fff;
+                font-size: 20px;
+                margin-right: 10px;
+                pointer-events: none;
+            }
         }
 
         .line {
             width: 1px;
-            height: 32px;
+            height: 15px;
             background: #bcbcbc;
             float: left;
-            margin: 10px 10px 0px 10px;
+            margin: 16px 10px 0px 10px;
+
+            &.long {
+                height: 30px;
+                margin-top: 10px;
+            }
         }
     }
 }

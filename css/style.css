@@ -2536,6 +2536,15 @@ main .bg {
   vertical-align: middle;
   word-break: break-all;
 }
+.teachBoard tr td.moreTop {
+  padding-top: 24px;
+}
+.teachBoard tr td.lessBottom {
+  padding-bottom: 0px;
+}
+.teachBoard tr td.lessTop {
+  padding-top: 0px;
+}
 .teachBoard tr td .team {
   display: inline-block;
   width: 200px;
@@ -2550,7 +2559,7 @@ main .bg {
 }
 .teachBoard tr td .team p .odd {
   font-weight: bold;
-  color: #ff4747;
+  color: #ffd400;
   padding-left: 5px;
 }
 .teachBoard tr td .team .img {
@@ -2598,6 +2607,7 @@ main .bg {
   height: auto;
   display: inline-block;
   padding: 20px 0px;
+  color: #cfcfcf;
 }
 .teachBoard tr td .explain.lside {
   text-align: right;
@@ -2605,29 +2615,23 @@ main .bg {
 .teachBoard tr td .explain.rside {
   text-align: left;
 }
-.teachBoard tr td .explain.win {
-  color: #1bc100;
-}
-.teachBoard tr td .explain.lose {
-  color: #b7b7b7;
-}
 .teachBoard tr td .explain p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
 }
 .teachBoard tr td .box {
   display: inline-block;
   width: 300px;
-  height: 82px;
+  height: 70px;
   padding: 15px;
   vertical-align: top;
   position: relative;
 }
 .teachBoard tr td .box::before {
   content: "";
-  background: #2f2f2f;
+  background: #383838;
   width: 90%;
-  height: 80px;
+  height: 70px;
   border-radius: 80px;
   position: absolute;
   top: 50%;
@@ -2637,7 +2641,7 @@ main .bg {
 .teachBoard tr td .box .textBox {
   width: 120px;
   height: auto;
-  margin-top: 18px;
+  margin-top: 12px;
   position: relative;
   z-index: 2;
 }
@@ -2654,14 +2658,14 @@ main .bg {
 }
 .teachBoard tr td .box .textBox p.win {
   font-weight: bold;
-  color: #f32727;
+  color: #ffd400;
 }
 .teachBoard tr td .box .textBox p.lose {
   color: #8f8f8f;
 }
 .teachBoard tr td .box .midBox {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background: #5f5f5f;
   border-radius: 90px;
   position: absolute;
@@ -2675,12 +2679,15 @@ main .bg {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 18px;
+  margin-top: 12px;
 }
 .teachBoard tr td .box .midBox p.score {
-  color: #ff0000;
+  color: #ffd400;
   margin-top: 6px;
   font-size: 24px;
+}
+.teachBoard tr td .box .midBox p.score.more {
+  font-size: 18px;
 }
 
 .minetable {
@@ -4391,6 +4398,12 @@ main .bg {
 .middle .let.display, .middle .bgsm.display {
   display: block;
 }
+.middle .soccerTeach, .middle .baseballTeach, .middle .basketballTeach {
+  display: none;
+}
+.middle .soccerTeach.display, .middle .baseballTeach.display, .middle .basketballTeach.display {
+  display: block;
+}
 .middle .bettingbar {
   display: none;
   width: 580px;
@@ -5202,12 +5215,22 @@ main .bg {
   color: #fff;
   border-color: #59a936;
 }
+.topfix .teach li.name {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  pointer-events: none;
+}
 .topfix .teach .line {
   width: 1px;
-  height: 32px;
+  height: 15px;
   background: #bcbcbc;
   float: left;
-  margin: 10px 10px 0px 10px;
+  margin: 16px 10px 0px 10px;
+}
+.topfix .teach .line.long {
+  height: 30px;
+  margin-top: 10px;
 }
 
 .chleague {
