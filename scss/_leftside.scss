@@ -175,6 +175,10 @@
                     svg,.total {
                         fill: #fff;
                     }
+
+                    i {
+                        color: #fff;
+                    }
                 }
             }
 
@@ -203,11 +207,11 @@
 
             a {
                 display: block;
-                color: #505050;
+                color: #000;
                 width: calc(100% - 50px);
                 height: 45px;
                 line-height: 45px;
-                font-size: 13px;
+                font-size: 14px;
                 padding-left: 50px;
                 position: relative;
                 border-bottom: solid 1px #ababab;
@@ -218,6 +222,7 @@
                     top: 12px;
                     left: 18px;
                     font-size: 18px;
+                    color: #505050;
 
                     &::before {
                         margin: 0px auto;
