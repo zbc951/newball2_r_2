@@ -247,6 +247,7 @@ $(function(){
         $('.tableballBtn a').attr('href','./html/balls/tableball.html');
         $('.filter,.unLogin').css('display','none')
         $('.headerlist li:nth-of-type(1) a').attr('href','./html/balls/soccer.html');
+        $('.headerlist li:nth-of-type(3) a').attr('href','./html/balls/result.html');
         $('.headerlist li:nth-of-type(4) a').attr('href','./html/balls/teach.html');
         $('.headerlist li:nth-of-type(6) a').attr('href','./html/myself/mine.html');
     })
