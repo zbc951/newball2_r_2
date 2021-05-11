@@ -404,33 +404,6 @@ main .bg {
   background: #b9becf;
   border-radius: 10px;
 }
-.left.dis {
-  width: 260px;
-  height: 275px;
-  background: #fff;
-}
-.left.dis ul li:hover span, .left.dis ul li:active span, .left.dis ul li.active span {
-  background-position-y: -19px;
-}
-.left.dis span {
-  width: 20px;
-  height: 20px;
-  margin: 15px 20px 0px 20px;
-  background: url("../images/discountleft_ic.png");
-  background-size: 500%;
-}
-.left.dis span.lf_ic2 {
-  background-position-x: -20px;
-}
-.left.dis span.lf_ic3 {
-  background-position-x: -40px;
-}
-.left.dis span.lf_ic4 {
-  background-position-x: -60px;
-}
-.left.dis span.lf_ic5 {
-  background-position-x: -80px;
-}
 .left.mine .minewindow {
   width: 100%;
   height: 270px;
@@ -571,8 +544,11 @@ main .bg {
 .left ul li a i::before {
   margin: 0px auto;
 }
-.left ul li a i.fa-hotjar, .left ul li a i.fa-hockey-puck, .left ul li a i.fa-baseball-ball, .left ul li a i.fa-basketball-ball, .left ul li a i.fa-futbol, .left ul li a i.fa-volleyball-ball {
+.left ul li a i.fa-hotjar, .left ul li a i.fa-hockey-puck, .left ul li a i.fa-baseball-ball, .left ul li a i.fa-basketball-ball, .left ul li a i.fa-futbol, .left ul li a i.fa-volleyball-ball, .left ul li a i.fa-calendar-alt {
   left: 19px;
+}
+.left ul li a i.fa-piggy-bank {
+  left: 16px;
 }
 .left ul li a i.fa-signal {
   font-size: 17px;
@@ -4292,6 +4268,12 @@ main .bg {
   background: url("../images/change.png") no-repeat;
   margin: 0px 10px -5px 0px;
 }
+.minetable.tbank, .minetable.tnum, .minetable.tnetcard {
+  display: none;
+}
+.minetable.tbank.display, .minetable.tnum.display, .minetable.tnetcard.display {
+  display: table;
+}
 .minetable.depositMoney {
   width: 1150px;
 }
@@ -4402,389 +4384,6 @@ main .bg {
   display: none;
 }
 .middle .soccerTeach.display, .middle .baseballTeach.display, .middle .basketballTeach.display {
-  display: block;
-}
-.middle .bettingbar {
-  display: none;
-  width: 580px;
-  height: 50px;
-  position: fixed;
-  margin: 0px 0px 0px 250px;
-  bottom: 0px;
-  background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
-  background-color: #850004;
-  border-radius: 15px 15px 0px 0px;
-  z-index: 10;
-  cursor: pointer;
-  transition: 0.5s all;
-}
-.middle .bettingbar::before {
-  content: "";
-  width: 8px;
-  height: 11px;
-  position: absolute;
-  background: url("../images/arrow_w.png");
-  right: 40px;
-  top: 20px;
-  transform: rotate(90deg);
-  pointer-events: none;
-}
-.middle .bettingbar.display {
-  display: block;
-}
-.middle .bettingbar.open {
-  bottom: 502px;
-}
-.middle .bettingbar.open::before {
-  transform: rotate(270deg);
-}
-.middle .bettingbar .barnum {
-  display: block;
-  float: left;
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 5px;
-  margin: 13px 0px 0px 40px;
-  line-height: 28px;
-  font-size: 17px;
-  color: #850004;
-  position: relative;
-  /*for IE 9*/
-  /*for IE*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .middle .bettingbar .barnum {
-    line-height: 24px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .middle .bettingbar .barnum {
-    line-height: 24px;
-  }
-}
-.middle .bettingbar .opbut {
-  width: 100%;
-  height: 50px;
-}
-.middle .bettingbar .opbut span {
-  float: left;
-  margin: 18px 0px 0px 10px;
-  color: #fff;
-}
-.middle .bettingbar .calbtn {
-  width: 22px;
-  height: 30px;
-  position: absolute;
-  right: 100px;
-  top: 10px;
-  background: url("../images/calculator.png") no-repeat;
-}
-.middle .bettingbar .bettingbox {
-  width: 576px;
-  height: 0px;
-  background: #fff;
-  border: solid 2px #e01821;
-  border-bottom-width: 0px;
-  border-top-width: 0px;
-  overflow: hidden;
-  cursor: default;
-  transition: 0.5s all;
-}
-.middle .bettingbar .bettingbox .bettingwindow {
-  width: 100%;
-  height: 260px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-}
-.middle .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar {
-  width: 5px;
-  background-color: transparent;
-}
-.middle .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-.middle .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #b9becf;
-  border-radius: 10px;
-}
-.middle .bettingbar .bettingbox .bettingwindow table {
-  margin: 0px;
-}
-.middle .bettingbar .bettingbox .bettingtotal {
-  width: 100%;
-  height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-  background: #e2e4ed;
-}
-.middle .bettingbar .bettingbox .bettingtotal div {
-  display: block;
-  width: 180px;
-  height: 100%;
-  border-right: solid 1px #c7c7c7;
-  float: left;
-  line-height: 45px;
-  font-size: 14px;
-  text-align: left;
-  padding-left: 10px;
-}
-.middle .bettingbar .bettingbox .bettingtotal div:last-child {
-  border: none;
-}
-.middle .bettingbar .bettingbox .bettingend {
-  width: 100%;
-  height: 197px;
-  background: #f8f8f8;
-}
-.middle .bettingbar .bettingbox .bettingend p {
-  margin: 20px 200px 25px 15px;
-  float: left;
-  font-size: 14px;
-  font-weight: bold;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox {
-  width: 50%;
-  text-align: right;
-  float: left;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input {
-  width: 150px;
-  height: 31px;
-  margin: 0px 5px 10px 0px;
-  border-radius: 5px;
-  border: solid 1px #8593d8;
-  font-size: 16px;
-  padding-left: 5px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input::placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox input:last-child {
-  color: #ff0000;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox div {
-  position: relative;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox div .inputname {
-  float: left;
-  margin: 12px 0px 0px 15px;
-  font-size: 14px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox div .dollar {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox button {
-  width: 85px;
-  height: 35px;
-  float: left;
-  margin: 0px 3px 10px 3px;
-  border: solid 1px #eb0004;
-  border-radius: 5px;
-  font-size: 17px;
-  color: #4d515d;
-  font-weight: bold;
-  line-height: 35px;
-  background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
-  background-color: #efd5d5;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox button:hover {
-  background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
-}
-.middle .bettingbar .bettingbox .bettingend .endbox button:active, .middle .bettingbar .bettingbox .bettingend .endbox button.active {
-  background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-  background-color: #850004;
-  color: #fff;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox button.cur {
-  width: 176px;
-  color: #fff;
-  background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
-  background-color: #850004;
-}
-.middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .middle .bettingbar .bettingbox .bettingend .endbox button.cur:active, .middle .bettingbar .bettingbox .bettingend .endbox button.cur.active {
-  background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-}
-.middle .bettingbar .bettingbox.open {
-  height: 502px;
-}
-.middle .bettingch {
-  display: none;
-  width: 580px;
-  height: 50px;
-  position: fixed;
-  z-index: 20;
-  left: 35%;
-  top: 150px;
-  background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
-  background-color: #850004;
-  border-radius: 15px 15px 0px 0px;
-}
-.middle .bettingch .barnum {
-  display: block;
-  float: left;
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 5px;
-  margin: 13px 0px 0px 15px;
-  line-height: 28px;
-  font-size: 17px;
-  color: #850004;
-  position: relative;
-  /*for IE 9*/
-  /*for IE*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  .middle .bettingch .barnum {
-    line-height: 24px;
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .middle .bettingch .barnum {
-    line-height: 24px;
-  }
-}
-.middle .bettingch .barword {
-  color: #fff;
-  float: left;
-  margin: 18px 0px 0px 10px;
-}
-.middle .bettingch .chbut {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  background: transparent;
-  right: 30px;
-  top: 13px;
-}
-.middle .bettingch .chbut::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
-  transform: rotate(45deg);
-}
-.middle .bettingch .chbut::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
-  transform: rotate(135deg);
-}
-.middle .bettingch .bettingbox {
-  width: 576px;
-  height: 430px;
-  margin-top: 50px;
-  background: #fff;
-  border: solid 2px #e01821;
-  border-top-width: 0px;
-  border-radius: 0px 0px 15px 15px;
-  overflow: hidden;
-  cursor: default;
-}
-.middle .bettingch .bettingbox .bettingwindow {
-  width: 100%;
-  height: 260px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-}
-.middle .bettingch .bettingbox .bettingwindow::-webkit-scrollbar {
-  width: 5px;
-  background-color: transparent;
-}
-.middle .bettingch .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-.middle .bettingch .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #b9becf;
-  border-radius: 10px;
-}
-.middle .bettingch .bettingbox .bettingwindow table {
-  margin: 0px;
-}
-.middle .bettingch .bettingbox .bettingtotal {
-  width: 100%;
-  height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-  background: #e2e4ed;
-}
-.middle .bettingch .bettingbox .bettingtotal div {
-  display: block;
-  width: 180px;
-  height: 100%;
-  border-right: solid 1px #8a8a8a;
-  float: left;
-  line-height: 45px;
-  font-size: 14px;
-  text-align: left;
-  padding-left: 10px;
-}
-.middle .bettingch .bettingbox .bettingtotal div:last-child {
-  border: none;
-}
-.middle .bettingch .bettingbox .bettingend {
-  width: 100%;
-  height: 200px;
-  background: #f8f8f8;
-}
-.middle .bettingch .bettingbox .bettingend .endbox {
-  width: 287px;
-  height: 75px;
-  text-align: left;
-  float: left;
-  margin-top: 25px;
-}
-.middle .bettingch .bettingbox .bettingend .endbox:last-child {
-  border-left: solid 1px #c7c7c7;
-}
-.middle .bettingch .bettingbox .bettingend .endbox p {
-  margin: 0px 0px 0px 40px;
-  line-height: 75px;
-  color: #f31d1d;
-  font-size: 14px;
-  position: relative;
-}
-.middle .bettingch .bettingbox .bettingend .endbox p::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #f31d1d;
-  border-radius: 12px;
-  left: -25px;
-  top: 26px;
-}
-.middle .bettingch .bettingbox .bettingend .endbox p::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 8px;
-  border: solid 3px #fff;
-  border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
-  top: 30px;
-  left: -18px;
-}
-.middle .bettingch .bettingbox .bettingend .endbox span {
-  font-size: 13px;
-  line-height: 24px;
-  margin-left: 10px;
-}
-.middle .bettingch.display {
   display: block;
 }
 .middle .inner {
@@ -6016,6 +5615,520 @@ main .bg {
   margin-left: 10px;
 }
 
+.bettingbar {
+  display: none;
+  width: 580px;
+  height: 50px;
+  position: fixed;
+  margin: 0px 0px 0px 280px;
+  bottom: 0px;
+  background: #828282;
+  border-radius: 3px 3px 0px 0px;
+  z-index: 10;
+  transition: 0.5s all;
+}
+.bettingbar.display {
+  display: block;
+}
+.bettingbar::before {
+  content: "";
+  width: 8px;
+  height: 11px;
+  position: absolute;
+  background: url("../images/arrow_w.png");
+  right: 40px;
+  top: 20px;
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+.bettingbar.open {
+  bottom: 502px;
+}
+.bettingbar.open::before {
+  transform: rotate(270deg);
+}
+.bettingbar .num {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 3px;
+  margin: 13px 0px 0px 40px;
+  line-height: 28px;
+  font-size: 17px;
+  color: #850004;
+  position: relative;
+  text-align: center;
+  /*for IE 9*/
+  /*for IE*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .bettingbar .num {
+    line-height: 24px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .bettingbar .num {
+    line-height: 24px;
+  }
+}
+.bettingbar .openBtn {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+.bettingbar .openBtn span {
+  float: left;
+  margin: 18px 0px 0px 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.bettingbar .calbtn {
+  width: 22px;
+  height: 30px;
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  background: url("../images/calculator.png") no-repeat;
+}
+.bettingbar .bettingbox {
+  width: 100%;
+  height: 0px;
+  background: #ababab;
+  border: solid 2px #828282;
+  box-sizing: border-box;
+  border-width: 0px 2px;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.bettingbar .bettingbox .bettingwindow {
+  width: 100%;
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.bettingbar .bettingbox .bettingwindow::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.bettingbar .bettingbox .bettingwindow table {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.bettingbar .bettingbox .bettingwindow table tr {
+  text-align: center;
+  border-bottom: solid 1px #ababab;
+}
+.bettingbar .bettingbox .bettingwindow table tr th {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 10px 9px;
+  background: #3d3d3d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  text-align: left;
+}
+.bettingbar .bettingbox .bettingwindow table tr td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+.bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(1) {
+  width: 10%;
+}
+.bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(2) {
+  width: 45%;
+}
+.bettingbar .bettingbox .bettingwindow table tr td:nth-of-type(3) {
+  width: 45%;
+}
+.bettingbar .bettingbox .bettingwindow table tr td.tLeft {
+  border-left: solid 1px #8a8a8a;
+  text-align: left;
+  padding: 2px 8px;
+}
+.bettingbar .bettingbox .bettingwindow table tr td .pitcher {
+  color: #233698;
+}
+.bettingbar .bettingbox .bettingwindow table tr td .odds {
+  color: #ff0000;
+}
+.bettingbar .bettingbox .bettingwindow table tr td p {
+  color: #000;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bettingbar .bettingbox .bettingwindow table tr td p.leagueName {
+  color: #4d4d4d;
+}
+.bettingbar .bettingbox .bettingwindow table tr td p .odds {
+  padding-left: 10px;
+}
+.bettingbar .bettingbox .bettingwindow table tr td p.vs {
+  color: #354ecf;
+}
+.bettingbar .bettingbox .bettingtotal {
+  width: 100%;
+  height: 45px;
+  background: #828282;
+  color: #fff;
+}
+.bettingbar .bettingbox .bettingtotal div {
+  width: 180px;
+  height: 100%;
+  border-right: solid 1px #c7c7c7;
+  float: left;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+}
+.bettingbar .bettingbox .bettingtotal div:last-child {
+  border: none;
+}
+.bettingbar .bettingbox .bettingtotal div .remind {
+  color: #ffd400;
+  padding-left: 5px;
+}
+.bettingbar .bettingbox .bettingend {
+  width: 100%;
+  height: 197px;
+  background: #cccccc;
+}
+.bettingbar .bettingbox .bettingend p {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 17px;
+}
+.bettingbar .bettingbox .bettingend .endbox {
+  width: 50%;
+  text-align: right;
+  float: left;
+}
+.bettingbar .bettingbox .bettingend .endbox input {
+  width: 150px;
+  height: 31px;
+  margin: 0px 5px 10px 0px;
+  border-radius: 3px;
+  border: solid 1px #ababab;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.bettingbar .bettingbox .bettingend .endbox input::placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+.bettingbar .bettingbox .bettingend .endbox input:last-child {
+  color: #ff0000;
+}
+.bettingbar .bettingbox .bettingend .endbox div {
+  position: relative;
+}
+.bettingbar .bettingbox .bettingend .endbox div .inputname {
+  float: left;
+  margin: 12px 0px 0px 15px;
+  font-size: 14px;
+}
+.bettingbar .bettingbox .bettingend .endbox div .dollar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.bettingbar .bettingbox .bettingend .endbox button {
+  width: 85px;
+  height: 35px;
+  float: left;
+  margin: 0px 3px 10px 3px;
+  border: solid 1px #eb0004;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #4d515d;
+  font-weight: bold;
+  line-height: 35px;
+  background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+  background-color: #efd5d5;
+}
+.bettingbar .bettingbox .bettingend .endbox button:hover {
+  background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
+}
+.bettingbar .bettingbox .bettingend .endbox button:active, .bettingbar .bettingbox .bettingend .endbox button.active {
+  background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+  background-color: #850004;
+  color: #fff;
+}
+.bettingbar .bettingbox .bettingend .endbox button.cur {
+  width: 176px;
+  color: #fff;
+  background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+  background-color: #850004;
+}
+.bettingbar .bettingbox .bettingend .endbox button.cur:hover, .bettingbar .bettingbox .bettingend .endbox button.cur:active, .bettingbar .bettingbox .bettingend .endbox button.cur.active {
+  background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+}
+.bettingbar .bettingbox.open {
+  height: 502px;
+}
+
+.bettingCheck {
+  display: none;
+  width: 580px;
+  height: 50px;
+  position: fixed;
+  z-index: 20;
+  left: 35%;
+  top: 150px;
+  background: #828282;
+  border-radius: 3px 3px 0px 0px;
+}
+.bettingCheck .num {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 13px 0px 0px 15px;
+  line-height: 28px;
+  font-size: 17px;
+  color: #850004;
+  position: relative;
+  text-align: center;
+  /*for IE 9*/
+  /*for IE*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .bettingCheck .num {
+    line-height: 24px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .bettingCheck .num {
+    line-height: 24px;
+  }
+}
+.bettingCheck .barword {
+  color: #fff;
+  float: left;
+  margin: 18px 0px 0px 10px;
+}
+.bettingCheck .cancelBtn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #cacaca;
+  border: solid 3px #676767;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #cacaca;
+}
+.bettingCheck .cancelBtn::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #676767;
+  transform: rotate(45deg);
+}
+.bettingCheck .cancelBtn::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #676767;
+  transform: rotate(-45deg);
+}
+.bettingCheck .bettingbox {
+  width: 576px;
+  height: 430px;
+  margin-top: 50px;
+  background: #ababab;
+  border: solid 2px #828282;
+  border-top-width: 0px;
+  border-radius: 0px 0px 3px 3px;
+  overflow: hidden;
+  cursor: default;
+}
+.bettingCheck .bettingbox .bettingwindow {
+  width: 100%;
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.bettingCheck .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.bettingCheck .bettingbox .bettingwindow table {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.bettingCheck .bettingbox .bettingwindow table tr {
+  text-align: center;
+  border-bottom: solid 1px #ababab;
+}
+.bettingCheck .bettingbox .bettingwindow table tr th {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 10px 9px;
+  background: #3d3d3d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  text-align: left;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(1) {
+  width: 10%;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(2) {
+  width: 45%;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td:nth-of-type(3) {
+  width: 45%;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td.tLeft {
+  border-left: solid 1px #8a8a8a;
+  text-align: left;
+  padding: 2px 8px;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td .pitcher {
+  color: #233698;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td .odds {
+  color: #ff0000;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td p {
+  color: #000;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td p.leagueName {
+  color: #4d4d4d;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td p .odds {
+  padding-left: 10px;
+}
+.bettingCheck .bettingbox .bettingwindow table tr td p.vs {
+  color: #354ecf;
+}
+.bettingCheck .bettingbox .bettingtotal {
+  width: 100%;
+  height: 45px;
+  background: #828282;
+  color: #fff;
+}
+.bettingCheck .bettingbox .bettingtotal div {
+  width: 180px;
+  height: 100%;
+  border-right: solid 1px #c7c7c7;
+  float: left;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+}
+.bettingCheck .bettingbox .bettingtotal div:last-child {
+  border: none;
+}
+.bettingCheck .bettingbox .bettingtotal div .remind {
+  color: #ffd400;
+  padding-left: 5px;
+}
+.bettingCheck .bettingbox .bettingend {
+  width: 100%;
+  height: 200px;
+  background: #cccccc;
+}
+.bettingCheck .bettingbox .bettingend .endbox {
+  width: 287px;
+  height: 75px;
+  text-align: left;
+  float: left;
+  margin-top: 25px;
+}
+.bettingCheck .bettingbox .bettingend .endbox:last-child {
+  border-left: solid 1px #888888;
+}
+.bettingCheck .bettingbox .bettingend .endbox .remind {
+  margin: 0px 0px 0px 40px;
+  line-height: 75px;
+  color: #f31d1d;
+  font-size: 14px;
+  position: relative;
+}
+.bettingCheck .bettingbox .bettingend .endbox .remind::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f31d1d;
+  border-radius: 12px;
+  left: -25px;
+  top: 26px;
+}
+.bettingCheck .bettingbox .bettingend .endbox .remind::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  border: solid 3px #fff;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  top: 30px;
+  left: -18px;
+}
+.bettingCheck .bettingbox .bettingend .endbox p {
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.bettingCheck .bettingbox .bettingend .endbox p span {
+  padding-left: 5px;
+}
+.bettingCheck .bettingbox .bettingend .endbox p span.listCode {
+  color: #354ecf;
+}
+.bettingCheck .bettingbox .bettingend .endbox p span.way {
+  color: #f31d1d;
+}
+.bettingCheck.display {
+  display: block;
+}
+
 .calculator {
   display: none;
   width: 715px;
@@ -6032,56 +6145,59 @@ main .bg {
 .calculator .calbar {
   width: 100%;
   height: 40px;
-  border-radius: 15px 15px 0px 0px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-  background-color: #2f45b7;
+  border-radius: 3px 3px 0px 0px;
+  background: #ababab;
+  color: #434343;
   position: relative;
   text-align: center;
-  line-height: 44px;
-  color: #fff;
-  font-size: 17px;
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .calculator .calbar button {
-  width: 35px;
-  height: 35px;
   position: absolute;
-  right: -40px;
-  top: -40px;
-  border-radius: 20px;
-  border: solid 2px #fff;
-  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #cacaca;
+  border: solid 3px #676767;
+  right: -50px;
+  top: -50px;
+  box-shadow: 0px 0px 0px 5px #cacaca;
 }
 .calculator .calbar button::before {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 25px;
-  background: #fff;
+  width: 3px;
+  height: 18px;
+  right: 16px;
+  top: 8px;
+  background: #676767;
   transform: rotate(45deg);
-  top: 3px;
-  right: 14px;
 }
 .calculator .calbar button::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 25px;
-  background: #fff;
+  width: 3px;
+  height: 18px;
+  left: 16px;
+  top: 8px;
+  background: #676767;
   transform: rotate(-45deg);
-  top: 3px;
-  left: 14px;
 }
 .calculator .calbox {
-  width: calc(100% - 60px);
-  height: 385px;
-  background: #f7f7f7;
-  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+  height: 430px;
+  background: #747474;
+  box-sizing: border-box;
+  border-radius: 0px 0px 3px 3px;
   position: relative;
   overflow: hidden;
-  padding: 0px 30px 20px;
+  padding: 0px 30px;
 }
 .calculator .calbox .top {
   padding: 10px 0px;
+  color: #fff;
 }
 .calculator .calbox .top .inputbox input {
   width: 80px;
@@ -6106,37 +6222,40 @@ main .bg {
 }
 .calculator .calbox .mid {
   width: 100%;
-  height: 170px;
-  border: solid 1px #9ba1c5;
-  border-radius: 10px;
+  height: auto;
+  border: solid 1px #ababab;
+  border-radius: 3px;
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
 }
 .calculator .calbox .mid table {
   width: 100%;
-  box-shadow: none;
-  margin: 0px;
-  border-radius: 0px;
+  height: auto;
+  background: #5a5a5a;
 }
 .calculator .calbox .mid table tr:nth-child(odd) {
-  background: #f7f8fc;
+  background: #909090;
 }
 .calculator .calbox .mid table tr th {
-  border-bottom-width: 0px;
   font-size: 14px;
+  padding: 5px 0px;
+  color: #fff;
 }
 .calculator .calbox .mid table tr td {
-  border-top-width: 0px;
-  padding: 3px 5px;
+  padding: 5px 0px;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
 }
 .calculator .calbox .mid table tr td:nth-of-type(1), .calculator .calbox .mid table tr td:nth-of-type(4) {
   width: 10%;
 }
 .calculator .calbox .mid table tr td .odds {
   width: 50px;
+  height: 18px;
   padding-left: 5px;
-  border: solid 1px #9ba1c5;
+  border: solid 1px #ababab;
   border-radius: 3px;
 }
 .calculator .calbox .mid table tr td .selectbox {
@@ -6171,7 +6290,7 @@ main .bg {
   border-width: 5px 3px 0px 3px;
   border-color: #687abc transparent transparent transparent;
   top: 9px;
-  left: 84px;
+  left: 92px;
   pointer-events: none;
 }
 .calculator .calbox .mid table tr td .selectbox select {
@@ -6225,6 +6344,7 @@ main .bg {
   width: 100%;
   height: auto;
   text-align: center;
+  color: #fff;
 }
 .calculator .calbox .bottom .inputbox {
   margin: 10px 0px;
@@ -6235,7 +6355,7 @@ main .bg {
   width: 100px;
   height: 28px;
   padding-left: 10px;
-  border: solid 1px #9ba1c5;
+  border: solid 1px #ababab;
   border-radius: 3px;
   margin-left: 5px;
   color: #e60012;
@@ -6258,10 +6378,10 @@ main .bg {
 .calculator .calbox .bottom .remind {
   margin-top: 10px;
   width: calc(100% - 20px);
-  border-radius: 10px;
-  background: #fff;
+  border-radius: 3px;
+  background: #5a5a5a;
   text-align: left;
-  border: solid 1px #9ba1c5;
+  border: solid 1px #ababab;
   padding: 10px;
 }
 .calculator .calbox .bottom .remind p {
@@ -6787,13 +6907,12 @@ main .bg {
 }
 
 .discount {
-  width: 880px;
-  height: 850px;
+  width: 1190px;
+  height: 100%;
   float: left;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  text-align: center;
   scrollbar-width: thin;
 }
 .discount::-webkit-scrollbar {
@@ -6809,130 +6928,128 @@ main .bg {
   border-radius: 10px;
 }
 .discount .window {
-  width: 93%;
+  width: 90%;
   height: 180px;
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
-  margin: 15px 0px 0px 5%;
+  margin: 15px auto 0px;
   border-radius: 20px;
   border: 1px solid #8581b4;
   box-shadow: 0 0 4px 2px #bac0db;
   position: relative;
 }
-.discount .window p {
-  width: 324px;
+.discount .window .topbar {
+  width: 279px;
   height: 34px;
   text-align: left;
   line-height: 34px;
   float: left;
-  background: url("../images/discounttitle_bg.png");
+  background: url("../images/discounttitle_bg.png") no-repeat;
+  background-size: 100%;
+  padding-left: 45px;
   color: #fff;
 }
-.discount .window p.blue {
+.discount .window .topbar.blue {
   background-position-y: 0px;
 }
-.discount .window p.aqua {
+.discount .window .topbar.aqua {
   background-position-y: -34px;
 }
-.discount .window p.orange {
+.discount .window .topbar.orange {
   background-position-y: -68px;
 }
-.discount .window p.green {
+.discount .window .topbar.green {
   background-position-y: -102px;
 }
-.discount .window p span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0px 10px 0px 10px;
-  background: url("../images/discountleft_ic.png");
-  background-size: 500%;
-  background-position-y: -20px;
-  transform: translateY(4px);
-}
-.discount .window p span.limit {
-  background-position-x: -20px;
-}
-.discount .window p span.new {
-  background-position-x: -40px;
-}
-.discount .window p span.active {
-  background-position-x: -60px;
-}
-.discount .window p span.dividend {
-  background-position-x: -80px;
-}
-.discount .window div {
-  width: 465px;
-  height: 180px;
-  background-position: cover;
-  background: url("../images/disimg_1.png") no-repeat;
-  float: left;
-}
-.discount .window div.word {
-  width: 280px;
-  height: 100px;
-  background: none;
-  float: none;
+.discount .window .topbar i {
   position: absolute;
-  top: 55px;
-  left: 5%;
-  text-align: left;
-}
-.discount .window div.word .time {
-  display: block;
-  color: #4d515d;
-  width: 100%;
-  margin-bottom: 15px;
-  float: left;
-}
-.discount .window div.word .mainword {
-  color: #b98353;
-  margin-bottom: 15px;
-  float: left;
-  font-size: 30px;
-}
-.discount .window div.word .norword {
-  color: #4d515d;
-  float: left;
+  top: 7px;
+  left: 18px;
   font-size: 18px;
 }
-.discount .window div.disimg2 {
-  background: url("../images/disimg_2.png") no-repeat;
+.discount .window .topbar i.fa-calendar-alt {
+  left: 19px;
 }
-.discount .window div.disimg3 {
+.discount .window .topbar i.fa-piggy-bank {
+  left: 16px;
+}
+.discount .window .img {
+  float: right;
+  margin-right: 220px;
+  pointer-events: none;
+}
+.discount .window .img.bg1 {
+  width: 383px;
+  height: 180px;
+  background: url("../images/disimg_1.png") no-repeat;
+  background-size: 100%;
+}
+.discount .window .img.bg2 {
+  width: 423px;
+  height: 180px;
+  background: url("../images/disimg_2.png") no-repeat;
+  background-size: 100%;
+  margin-right: 200px;
+}
+.discount .window .img.bg3 {
+  width: 483px;
+  height: 180px;
   background: url("../images/disimg_3.png") no-repeat;
+  background-size: 100%;
+  margin-right: 155px;
+}
+.discount .window .word {
+  width: 40%;
+  height: auto;
+  float: left;
+}
+.discount .window .word p {
+  color: #4d515d;
+  padding: 20px 0px 0px 50px;
+  font-size: 14px;
+}
+.discount .window .word p.main {
+  color: #b98353;
+  font-size: 32px;
+}
+.discount .window .word p.underWord {
+  font-size: 18px;
+}
+.discount .window .word p.underWord .remind {
+  color: #b98353;
+  padding: 0px 15px;
+  font-size: 20px;
 }
 .discount .window button {
   background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
-  background: #3349b8;
   border: solid 1px #1e2f8e;
-  width: 110px;
-  height: 30px;
+  width: 160px;
+  height: 40px;
   position: absolute;
-  right: 20px;
+  right: 30px;
   bottom: 20px;
   font-weight: bold;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
+  font-size: 18px;
 }
 .discount .window button:hover, .discount .window button:active, .discount .window button.active {
   background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
 }
 .discount .activebox {
-  width: 93%;
+  width: 90%;
   height: 0px;
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
-  margin: 0px 0px 0px 5%;
+  margin: 0px auto;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 0 4px 2px #bac0db;
   transform: translateY(-20px);
   position: relative;
   z-index: -1;
   overflow: hidden;
 }
 .discount .activebox.open {
+  box-shadow: 0 0 4px 2px #bac0db;
   height: auto;
 }
 .discount .activebox ul {

@@ -1,138 +1,3 @@
-//串關投注
-$(function(){
-    $('.opbut').click(function(){
-        $('.bettingbar,.bettingbox').toggleClass('open');
-    });
-    $('.cur').click(function(){
-        $('.bettingch').addClass('display');
-        $('.filter').addClass('on');
-    });
-    $('.chbut').click(function(){
-        $('.bettingch').removeClass('display');
-        $('.filter').removeClass('on');
-    });
-    $('.bettingbut').click(function(){
-        $('.bettingbar').toggleClass('display');
-        $(this).toggleClass('active');
-        $(this).siblings().removeClass('active');
-        $('.new,.result,.teach,.resultsearch').removeClass('display');
-        $('.teachbut,.sort,.old,.complex').addClass('display');
-        $('.newbut').addClass('un');
-        $('.oldbut').removeClass('un');
-        $('.turnold').addClass('active')
-        $('.turnnew').removeClass('active')
-        $('.newold,.timesort').removeClass('open')
-    });
-});
-//比賽結果
-$(function(){
-    $('.resultbut').click(function(){
-        $(this).addClass('active');
-        $('.newold,.timesort').removeClass('open')
-        $('.bettingbut,.allgame').removeClass('active');
-        $('.sort,.resultsearch,.result').addClass('display');
-        $('.new,.old,.sort,.let,.bgsm,.bettingbar,.teachbut,.complex').removeClass('display');
-    });
-});
-//消息中心
-$(function(){
-    $('.editbut').click(function(){
-        $(this).removeClass('display');
-        $('.helpbar,.helpbox').addClass('edit');
-        $('.cancelbut,.delbut').addClass('display');
-    });
-    $('.fixbar li,.cancelbut').click(function(){
-        $('.editbut').addClass('display');
-        $('.helpbar,.helpbox').removeClass('edit');
-        $('.cancelbut,.delbut').removeClass('display');
-    });
-    $('.mes1').click(function(){
-        $('.notice,.editbut').addClass('display');
-        $('.rowbutMes').removeClass('display');
-        $('.notice').siblings().removeClass('display');
-    })
-    $('.mes2').click(function(){
-        $('.activity').addClass('display');
-        $('.editbut,.rowbutMes').removeClass('display');
-        $('.activity').siblings().removeClass('display');
-    })
-    $('.mes3').click(function(){
-        $('.announcement').addClass('display');
-        $('.editbut,.rowbutMes').removeClass('display');
-        $('.announcement').siblings().removeClass('display');
-    })
-    $('.mes4').click(function(){
-        $('.competition,.rowbutMes').addClass('display');
-        $('.editbut').removeClass('display');
-        $('.competition').siblings().removeClass('display');
-    })
-    $('.rowbutMes').click(function(){
-        if($(this).hasClass('lside')){
-            $(this).removeClass('lside');
-            $(this).addClass('rside');
-        } else{
-            $(this).removeClass('rside');
-            $(this).addClass('lside');
-        };
-    });
-});
-
-//存款
-$(function(){
-    $('.paybut').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.moneybut').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.tnetcard button').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    })
-    $('.dbox input').focus(function(){
-        $(this).addClass('focus');
-        $('.dbox button').addClass('focus');
-    });
-    $('.dbox input').blur(function(){
-        $(this).removeClass('focus');
-        $('.dbox button').removeClass('focus');
-    });
-    $('.bank').click(function(){
-        $('.tbank').addClass('display');
-        $('.tbank').siblings().removeClass('display');
-    })
-    $('.num').click(function(){
-        $('.tnum').addClass('display');
-        $('.tnum').siblings().removeClass('display');
-    })
-    $('.netcard').click(function(){
-        $('.tnetcard').addClass('display');
-        $('.tnetcard').siblings().removeClass('display');
-    })
-})
-
-//優惠頁
-$(function(){
-    $('.discount .window button').click(function(){
-        $($(this).closest('div')).next().toggleClass('open');
-        $($(this).closest('div')).next().siblings().removeClass('open');
-    })
-})
-//串關計算機
-$(function(){
-    $('.calbtn').click(function(){
-        $('.calculator').addClass('display');
-        $('.filter').addClass('on');
-    })
-    $('.calbar button').click(function(){
-        $('.calculator').removeClass('display');
-        $('.filter').removeClass('on');
-    })
-})
-
-
     //上段
 
 //球頭換算表
@@ -524,6 +389,31 @@ $(function(){
     })
 })
 
+//串關計算機
+$(function(){
+    $('.calbtn').click(function(){
+        $('.calculator,.filter').addClass('display');
+    })
+    $('.calbar button').click(function(){
+        $('.calculator,.filter').removeClass('display');
+    })
+})
+
+//串關投注
+$(function(){
+    $('.openBtn').click(function(){
+        $('.bettingbar,.bettingbox').toggleClass('open');
+    });
+
+    $('.cur').click(function(){
+        $('.bettingCheck,.filter').addClass('display');
+    });
+
+    $('.bettingCheck .cancelBtn').click(function(){
+        $('.bettingCheck,.filter').removeClass('display');
+    });
+});
+
     //我的頁面
 
 //懸浮列fixbar ul選定效果
@@ -718,6 +608,49 @@ $(function(){
     })
 })
 
+//消息中心
+$(function(){
+    $('.editbut').click(function(){
+        $(this).removeClass('display');
+        $('.helpbar,.helpbox').addClass('edit');
+        $('.cancelbut,.delbut').addClass('display');
+    });
+    $('.fixbar li,.cancelbut').click(function(){
+        $('.editbut').addClass('display');
+        $('.helpbar,.helpbox').removeClass('edit');
+        $('.cancelbut,.delbut').removeClass('display');
+    });
+    $('.mes1').click(function(){
+        $('.notice,.editbut').addClass('display');
+        $('.rowbutMes').removeClass('display');
+        $('.notice').siblings().removeClass('display');
+    })
+    $('.mes2').click(function(){
+        $('.activity').addClass('display');
+        $('.editbut,.rowbutMes').removeClass('display');
+        $('.activity').siblings().removeClass('display');
+    })
+    $('.mes3').click(function(){
+        $('.announcement').addClass('display');
+        $('.editbut,.rowbutMes').removeClass('display');
+        $('.announcement').siblings().removeClass('display');
+    })
+    $('.mes4').click(function(){
+        $('.competition,.rowbutMes').addClass('display');
+        $('.editbut').removeClass('display');
+        $('.competition').siblings().removeClass('display');
+    })
+    $('.rowbutMes').click(function(){
+        if($(this).hasClass('lside')){
+            $(this).removeClass('lside');
+            $(this).addClass('rside');
+        } else{
+            $(this).removeClass('rside');
+            $(this).addClass('lside');
+        };
+    });
+});
+
 //聯繫我們
 $(function(){
     $('.fixbar .call1').click(function(){
@@ -771,12 +704,35 @@ $(function(){
     })
 })
 
-
 //存款
 $(function(){
     $('.payStyle button').click(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
+    })
+
+    $('.payStyle .bank').click(function(){
+        $('.tbank').addClass('display');
+        $('.tbank').siblings().removeClass('display');
+    })
+
+    $('.payStyle .num').click(function(){
+        $('.tnum').addClass('display');
+        $('.tnum').siblings().removeClass('display');
+    })
+
+    $('.payStyle .netcard').click(function(){
+        $('.tnetcard').addClass('display');
+        $('.tnetcard').siblings().removeClass('display');
+    })
+})
+
+    //優惠
+
+$(function(){
+    $('.discount .window button').click(function(){
+        $($(this).closest('div')).next().toggleClass('open');
+        $($(this).closest('div')).next().siblings().removeClass('open');
     })
 })
 

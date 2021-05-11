@@ -48,398 +48,6 @@
         }
     }
 
-    //串關投注
-    .bettingbar {
-        display: none;
-        width: 580px;
-        height: 50px;
-        position: fixed;
-        margin: 0px 0px 0px 250px;
-        bottom: 0px;
-        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
-        background-color: #850004;
-        border-radius: 15px 15px 0px 0px;
-        z-index: 10;
-        cursor: pointer;
-        transition: 0.5s all;
-        &::before {
-            content: "";
-            width: 8px;
-            height: 11px;
-            position: absolute;
-            background: url('../images/arrow_w.png');
-            right: 40px;
-            top: 20px;
-            transform: rotate(90deg);
-            pointer-events: none;
-        }
-        &.display {
-            display: block;
-        }
-        &.open {
-            bottom: 502px;
-            &::before {
-                transform: rotate(270deg);
-            }
-        }
-        //總投注額
-        .barnum {
-            display: block;
-            float: left;
-            width: 24px;
-            height: 24px;
-            background: #fff;
-            border-radius: 5px;
-            margin: 13px 0px 0px 40px;
-            line-height: 28px;
-            font-size: 17px;
-            color: #850004;
-            position: relative;
-            /*for IE 9*/
-            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                line-height: 24px;
-            }
-            /*for IE*/
-            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                line-height: 24px;
-            }
-        }
-        //觸發按鈕
-        .opbut {
-            width: 100%;
-            height: 50px;
-            span {
-                float: left;
-                margin: 18px 0px 0px 10px;
-                color: #fff;
-            }
-        }
-        //計算機按鈕
-        .calbtn {
-            width: 22px;
-            height: 30px;
-            position: absolute;
-            right: 100px;
-            top: 10px;
-            background: url('../images/calculator.png') no-repeat;
-        }
-        //投注內容
-        .bettingbox {
-            width: 576px;
-            height: 0px;
-            background: #fff;
-            border: solid 2px #e01821;
-            border-bottom-width: 0px;
-            border-top-width: 0px;
-            overflow: hidden;
-            cursor: default;
-            transition: 0.5s all;
-            //table視窗
-            .bettingwindow {
-                width: 100%;
-                height: 260px;
-                overflow-y: auto;
-                overflow-x: hidden;
-                scrollbar-width: thin;
-                &::-webkit-scrollbar {
-                    width: 5px;
-                    background-color: transparent;
-                }
-                &::-webkit-scrollbar-track {
-                    background: #f1f1f1;
-                    border-radius: 10px;
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: #b9becf;
-                    border-radius: 10px;
-                }
-                table {
-                    margin: 0px;
-                }
-            }
-            //總額顯示
-            .bettingtotal {
-                width: 100%;
-                height: 45px;
-                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-                background: #e2e4ed;
-                div {
-                    display: block;
-                    width: 180px;
-                    height: 100%;
-                    border-right: solid 1px #c7c7c7;
-                    float: left;
-                    line-height: 45px;
-                    font-size: 14px;
-                    text-align: left;
-                    padding-left: 10px;
-                    &:last-child {
-                        border: none;
-                    }
-                }
-            }
-            //決定金額
-            .bettingend {
-                width: 100%;
-                height: 197px;
-                background: #f8f8f8;
-                p {
-                    margin: 20px 200px 25px 15px;
-                    float: left;
-                    font-size: 14px;
-                    font-weight: bold;
-                }
-                .endbox {
-                    width: 50%;
-                    text-align: right;
-                    float: left;
-                    input {
-                        width: 150px;
-                        height: 31px;
-                        margin: 0px 5px 10px 0px;
-                        border-radius: 5px;
-                        border: solid 1px #8593d8;
-                        font-size: 16px;
-                        padding-left: 5px;
-                        &::placeholder {
-                            font-weight: bold;
-                            color: #c7c7c7;
-                            font-size: 15px;
-                        }
-                        &:last-child {
-                            color: #ff0000;
-                        }
-                    }
-                    div {
-                        position: relative;
-                        .inputname {
-                            float: left;
-                            margin: 12px 0px 0px 15px;
-                            font-size: 14px;
-                        }
-                        .dollar {
-                            position: absolute;
-                            top: 10px;
-                            right: 20px;
-                        }
-                    }
-                    button {
-                        width: 85px;
-                        height: 35px;
-                        float: left;
-                        margin: 0px 3px 10px 3px;
-                        border: solid 1px #eb0004;
-                        border-radius: 5px;
-                        font-size: 17px;
-                        color: #4d515d;
-                        font-weight: bold;
-                        line-height: 35px;
-                        background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
-                        background-color: #efd5d5;
-                        &:hover {
-                            background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
-                        }
-                        &:active,&.active {
-                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-                            background-color: #850004;
-                            color: #fff;
-                        }
-                        &.cur {
-                            width: 176px;
-                            color: #fff;
-                            background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
-                            background-color: #850004;
-                            &:hover,&:active,&.active {
-                                background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-                            }
-                        }
-                    }
-                }
-            }
-            &.open {
-                height: 502px;
-            }
-        }
-    }
-
-    //串關投注確認窗
-    .bettingch {
-        display: none;
-        width: 580px;
-        height: 50px;
-        position: fixed;
-        z-index: 20;
-        left: 35%;
-        top: 150px;
-        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
-        background-color: #850004;
-        border-radius: 15px 15px 0px 0px;
-        //總投注額
-        .barnum {
-            display: block;
-            float: left;
-            width: 24px;
-            height: 24px;
-            background: #fff;
-            border-radius: 5px;
-            margin: 13px 0px 0px 15px;
-            line-height: 28px;
-            font-size: 17px;
-            color: #850004;
-            position: relative;
-            /*for IE 9*/
-            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                line-height: 24px;
-            }
-            /*for IE*/
-            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                line-height: 24px;
-            }
-        }
-        .barword {
-            color: #fff;
-            float: left;
-            margin: 18px 0px 0px 10px;
-        }
-        .chbut {
-            width: 22px;
-            height: 22px;
-            position: absolute;
-            background: transparent;
-            right: 30px;
-            top: 13px;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 20px;
-                background: #fff;
-                top: 0px;
-                left: 11px;
-                transform: rotate(45deg);
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 20px;
-                background: #fff;
-                top: 0px;
-                left: 11px;
-                transform: rotate(135deg);
-            }
-        }
-        //投注內容
-        .bettingbox {
-            width: 576px;
-            height: 430px;
-            margin-top: 50px;
-            background: #fff;
-            border: solid 2px #e01821;
-            border-top-width: 0px;
-            border-radius: 0px 0px 15px 15px;
-            overflow: hidden;
-            cursor: default;
-            //table視窗
-            .bettingwindow {
-                width: 100%;
-                height: 260px;
-                overflow-y: auto;
-                overflow-x: hidden;
-                scrollbar-width: thin;
-                &::-webkit-scrollbar {
-                    width: 5px;
-                    background-color: transparent;
-                }
-                &::-webkit-scrollbar-track {
-                    background: #f1f1f1;
-                    border-radius: 10px;
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: #b9becf;
-                    border-radius: 10px;
-                }
-                table {
-                    margin: 0px;
-                }
-            }
-            //總額顯示
-            .bettingtotal {
-                width: 100%;
-                height: 45px;
-                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-                background: #e2e4ed;
-                div {
-                    display: block;
-                    width: 180px;
-                    height: 100%;
-                    border-right: solid 1px #8a8a8a;
-                    float: left;
-                    line-height: 45px;
-                    font-size: 14px;
-                    text-align: left;
-                    padding-left: 10px;
-                    &:last-child {
-                        border: none;
-                    }
-                }
-            }
-            //決定金額
-            .bettingend {
-                width: 100%;
-                height: 200px;
-                background: #f8f8f8;
-                .endbox {
-                    width: 287px;
-                    height: 75px;
-                    text-align: left;
-                    float: left;
-                    margin-top: 25px;
-                    &:last-child {
-                        border-left: solid 1px #c7c7c7;
-                    }
-                    p {
-                        margin: 0px 0px 0px 40px;
-                        line-height: 75px;
-                        color: #f31d1d;
-                        font-size: 14px;
-                        position: relative;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 20px;
-                            height: 20px;
-                            background: #f31d1d;
-                            border-radius: 12px;
-                            left: -25px;
-                            top: 26px;
-                        }
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            width: 4px;
-                            height: 8px;
-                            border: solid 3px #fff;
-                            border-width: 0px 2px 2px 0px;
-                            transform: rotate(45deg);
-                            top: 30px;
-                            left: -18px;
-                        }
-                    }
-                    span {
-                        font-size: 13px;
-                        line-height: 24px;
-                        margin-left: 10px;
-                    }
-                }
-            }
-        }
-        //顯示
-        &.display {
-            display: block;
-        }
-    }
-
     //內頁
     .inner {
         display: none;
@@ -1883,6 +1491,610 @@
     }
 }
 
+//串關投注
+.bettingbar {
+    display: none;
+    width: 580px;
+    height: 50px;
+    position: fixed;
+    margin: 0px 0px 0px 280px;
+    bottom: 0px;
+    background: #828282;
+    border-radius: 3px 3px 0px 0px;
+    z-index: 10;
+    transition: 0.5s all;
+
+    &.display {
+        display: block;
+    }
+
+    &::before {
+        content: "";
+        width: 8px;
+        height: 11px;
+        position: absolute;
+        background: url('../images/arrow_w.png');
+        right: 40px;
+        top: 20px;
+        transform: rotate(90deg);
+        pointer-events: none;
+    }
+    
+    &.open {
+        bottom: 502px;
+
+        &::before {
+            transform: rotate(270deg);
+        }
+    }
+
+    //總投注額
+    .num {
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border-radius: 3px;
+        margin: 13px 0px 0px 40px;
+        line-height: 28px;
+        font-size: 17px;
+        color: #850004;
+        position: relative;
+        text-align: center;
+
+        /*for IE 9*/
+        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+            line-height: 24px;
+        }
+
+        /*for IE*/
+        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+            line-height: 24px;
+        }
+    }
+
+    //觸發按鈕
+    .openBtn {
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+
+        span {
+            float: left;
+            margin: 18px 0px 0px 10px;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+
+    //計算機按鈕
+    .calbtn {
+        width: 22px;
+        height: 30px;
+        position: absolute;
+        right: 100px;
+        top: 10px;
+        background: url('../images/calculator.png') no-repeat;
+    }
+
+    //投注內容
+    .bettingbox {
+        width: 100%;
+        height: 0px;
+        background: #ababab;
+        border: solid 2px #828282;
+        box-sizing: border-box;
+        border-width: 0px 2px;
+        overflow: hidden;
+        transition: 0.5s all;
+
+        //table視窗
+        .bettingwindow {
+            width: 100%;
+            height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #b9becf;
+                border-radius: 10px;
+            }
+            
+            table {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+                tr {
+                    text-align: center;
+                    border-bottom: solid 1px #ababab;
+
+                    th {
+                        color: #fff;
+                        font-size: 12px;
+                        padding: 8px 10px 9px;
+                        background: #3d3d3d;
+                        position: sticky;
+                        top: 0px;
+                        z-index: 2;
+                        text-align: left;
+                    }
+
+                    td {
+                        vertical-align: middle;
+                        font-size: 14px; 
+
+                        &:nth-of-type(1) {
+                            width: 10%;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 45%;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: 45%;
+                        }
+
+                        &.tLeft {
+                            border-left: solid 1px #8a8a8a;
+                            text-align: left;
+                            padding: 2px 8px;
+                        }
+
+                        .pitcher {
+                            color: #233698;
+                        }
+
+                        .odds {
+                            color: #ff0000;
+                        }
+
+                        p {
+                            color: #000;
+                            font-size: 12px;
+                            line-height: 20px;
+
+                            &.leagueName {
+                                color: #4d4d4d;
+                            }
+
+                            .odds {
+                                padding-left: 10px;
+                            }
+
+                            &.vs {
+                                color: #354ecf;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //總額顯示
+        .bettingtotal {
+            width: 100%;
+            height: 45px;
+            background: #828282;
+            color: #fff;
+
+            div {
+                width: 180px;
+                height: 100%;
+                border-right: solid 1px #c7c7c7;
+                float: left;
+                line-height: 45px;
+                font-size: 14px;
+                text-align: left;
+                padding-left: 10px;
+
+                &:last-child {
+                    border: none;
+                }
+
+                .remind {
+                    color: #ffd400;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        //決定金額
+        .bettingend {
+            width: 100%;
+            height: 197px;
+            background: #cccccc;
+
+            p {
+                width: 100%;
+                height: auto;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 17px;
+            }
+
+            .endbox {
+                width: 50%;
+                text-align: right;
+                float: left;
+
+                input {
+                    width: 150px;
+                    height: 31px;
+                    margin: 0px 5px 10px 0px;
+                    border-radius: 3px;
+                    border: solid 1px #ababab;
+                    font-size: 16px;
+                    padding-left: 5px;
+
+                    &::placeholder {
+                        font-weight: bold;
+                        color: #c7c7c7;
+                        font-size: 15px;
+                    }
+
+                    &:last-child {
+                        color: #ff0000;
+                    }
+                }
+
+                div {
+                    position: relative;
+
+                    .inputname {
+                        float: left;
+                        margin: 12px 0px 0px 15px;
+                        font-size: 14px;
+                    }
+
+                    .dollar {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                    }
+                }
+
+                button {
+                    width: 85px;
+                    height: 35px;
+                    float: left;
+                    margin: 0px 3px 10px 3px;
+                    border: solid 1px #eb0004;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    color: #4d515d;
+                    font-weight: bold;
+                    line-height: 35px;
+                    background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+                    background-color: #efd5d5;
+
+                    &:hover {
+                        background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
+                    }
+
+                    &:active,&.active {
+                        background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                        background-color: #850004;
+                        color: #fff;
+                    }
+
+                    &.cur {
+                        width: 176px;
+                        color: #fff;
+                        background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+                        background-color: #850004;
+                        &:hover,&:active,&.active {
+                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.open {
+            height: 502px;
+        }
+    }
+}
+
+//串關投注確認窗
+.bettingCheck {
+    display: none;
+    width: 580px;
+    height: 50px;
+    position: fixed;
+    z-index: 20;
+    left: 35%;
+    top: 150px;
+    background: #828282;
+    border-radius: 3px 3px 0px 0px;
+
+    //總投注額
+    .num {
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border-radius: 5px;
+        margin: 13px 0px 0px 15px;
+        line-height: 28px;
+        font-size: 17px;
+        color: #850004;
+        position: relative;
+        text-align: center;
+
+        /*for IE 9*/
+        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+            line-height: 24px;
+        }
+
+        /*for IE*/
+        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+            line-height: 24px;
+        }
+    }
+
+    .barword {
+        color: #fff;
+        float: left;
+        margin: 18px 0px 0px 10px;
+    }
+
+    .cancelBtn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #cacaca;
+        border: solid 3px #676767;
+        right: -50px;
+        top: -50px;
+        box-shadow: 0px 0px 0px 5px #cacaca;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            right: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 18px;
+            left: 16px;
+            top: 8px;
+            background: #676767;
+            transform: rotate(-45deg);
+        }
+    }
+
+    //投注內容
+    .bettingbox {
+        width: 576px;
+        height: 430px;
+        margin-top: 50px;
+        background: #ababab;
+        border: solid 2px #828282;
+        border-top-width: 0px;
+        border-radius: 0px 0px 3px 3px;
+        overflow: hidden;
+        cursor: default;
+
+        //table視窗
+        .bettingwindow {
+            width: 100%;
+            height: 260px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #b9becf;
+                border-radius: 10px;
+            }
+            
+            table {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+                tr {
+                    text-align: center;
+                    border-bottom: solid 1px #ababab;
+
+                    th {
+                        color: #fff;
+                        font-size: 12px;
+                        padding: 8px 10px 9px;
+                        background: #3d3d3d;
+                        position: sticky;
+                        top: 0px;
+                        z-index: 2;
+                        text-align: left;
+                    }
+
+                    td {
+                        vertical-align: middle;
+                        font-size: 14px; 
+
+                        &:nth-of-type(1) {
+                            width: 10%;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 45%;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: 45%;
+                        }
+
+                        &.tLeft {
+                            border-left: solid 1px #8a8a8a;
+                            text-align: left;
+                            padding: 2px 8px;
+                        }
+
+                        .pitcher {
+                            color: #233698;
+                        }
+
+                        .odds {
+                            color: #ff0000;
+                        }
+
+                        p {
+                            color: #000;
+                            font-size: 12px;
+                            line-height: 20px;
+
+                            &.leagueName {
+                                color: #4d4d4d;
+                            }
+
+                            .odds {
+                                padding-left: 10px;
+                            }
+
+                            &.vs {
+                                color: #354ecf;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //總額顯示
+        .bettingtotal {
+            width: 100%;
+            height: 45px;
+            background: #828282;
+            color: #fff;
+
+            div {
+                width: 180px;
+                height: 100%;
+                border-right: solid 1px #c7c7c7;
+                float: left;
+                line-height: 45px;
+                font-size: 14px;
+                text-align: left;
+                padding-left: 10px;
+
+                &:last-child {
+                    border: none;
+                }
+
+                .remind {
+                    color: #ffd400;
+                    padding-left: 5px;
+                }
+            }
+        }
+        //決定金額
+        .bettingend {
+            width: 100%;
+            height: 200px;
+            background: #cccccc;
+
+            .endbox {
+                width: 287px;
+                height: 75px;
+                text-align: left;
+                float: left;
+                margin-top: 25px;
+
+                &:last-child {
+                    border-left: solid 1px #888888;
+                }
+
+                .remind {
+                    margin: 0px 0px 0px 40px;
+                    line-height: 75px;
+                    color: #f31d1d;
+                    font-size: 14px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background: #f31d1d;
+                        border-radius: 12px;
+                        left: -25px;
+                        top: 26px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 4px;
+                        height: 8px;
+                        border: solid 3px #fff;
+                        border-width: 0px 2px 2px 0px;
+                        transform: rotate(45deg);
+                        top: 30px;
+                        left: -18px;
+                    }
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 24px;
+                    margin-left: 10px;
+
+                    span {
+                        padding-left: 5px;
+
+                        &.listCode {
+                            color: #354ecf;
+                        }
+
+                        &.way {
+                            color: #f31d1d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //顯示
+    &.display {
+        display: block;
+    }
+}
+
 //串關計算機
 .calculator {
     display: none;
@@ -1893,62 +2105,74 @@
     top: 10%;
     transform: translateX(-50%);
     z-index: 20;
+
     &.display {
         display: block;
     }
+
     .calbar {
         width: 100%;
         height: 40px;
-        border-radius: 15px 15px 0px 0px;
-        background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-        background-color:#2f45b7;
+        border-radius: 3px 3px 0px 0px;
+        background: #ababab;
+        color: #434343;
         position: relative;
         text-align: center;
-        line-height: 44px;
-        color: #fff;
-        font-size: 17px;
+        line-height: 42px;
+        font-size: 14px;
+        font-weight: bold;
+
         button {
-            width: 35px;
-            height: 35px;
             position: absolute;
-            right: -40px;
-            top: -40px;
-            border-radius: 20px;
-            border: solid 2px #fff;
-            background: transparent;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background: #cacaca;
+            border: solid 3px #676767;
+            right: -50px;
+            top: -50px;
+            box-shadow: 0px 0px 0px 5px #cacaca;
+
             &::before {
                 content: "";
                 position: absolute;
-                width: 2px;
-                height: 25px;
-                background: #fff;
+                width: 3px;
+                height: 18px;
+                right: 16px;
+                top: 8px;
+                background: #676767;
                 transform: rotate(45deg);
-                top: 3px;
-                right: 14px;
             }
+
             &::after {
                 content: "";
                 position: absolute;
-                width: 2px;
-                height: 25px;
-                background: #fff;
+                width: 3px;
+                height: 18px;
+                left: 16px;
+                top: 8px;
+                background: #676767;
                 transform: rotate(-45deg);
-                top: 3px;
-                left: 14px;
             }
         }
     }
+
     .calbox {
-        width: calc(100% - 60px);
-        height: 385px;
-        background: #f7f7f7;
-        border-radius: 0px 0px 15px 15px;
+        width: 100%;
+        height: 430px;
+        background: #747474;
+        box-sizing: border-box;
+        border-radius: 0px 0px 3px 3px;
         position: relative;
         overflow: hidden;
-        padding: 0px 30px 20px;
+        padding: 0px 30px;
+
         .top {
             padding: 10px 0px;
+            color: #fff;
+
             .inputbox {
+
                 input {
                     width: 80px;
                     height: 24px;
@@ -1959,6 +2183,7 @@
                     font-weight: bold;
                     color: #2539a0;
                 }
+
                 button {
                     width: 60px;
                     height: 28px;
@@ -1972,55 +2197,70 @@
                 }
             }
         }
+
         .mid {
             width: 100%;
-            height: 170px;
-            border: solid 1px #9ba1c5;
-            border-radius: 10px;
+            height: auto;
+            border: solid 1px #ababab;
+            border-radius: 3px;
             overflow-x: hidden;
             overflow-y: auto;
             scrollbar-width: thin;
+
             table {
                 width: 100%;
-                box-shadow: none;
-                margin: 0px;
-                border-radius: 0px;
+                height: auto;
+                background: #5a5a5a;
+
                 tr {
+
                     &:nth-child(odd) {
-                        background: #f7f8fc;
+                        background: #909090;
                     }
+                    
                     th {
-                        border-bottom-width: 0px;
                         font-size: 14px;
+                        padding: 5px 0px;
+                        color: #fff;
                     }
+
                     td {
-                        border-top-width: 0px;
-                        padding: 3px 5px;
+                        padding: 5px 0px;
+                        text-align: center;
+                        color: #fff;
+                        vertical-align: middle;
+
                         &:nth-of-type(1),&:nth-of-type(4) {
                             width: 10%;
                         }
+
                         .odds {
                             width: 50px;
+                            height: 18px;
                             padding-left: 5px;
-                            border: solid 1px #9ba1c5;
+                            border: solid 1px #ababab;
                             border-radius: 3px;
                             
                         }
+
                         .selectbox {
                             position: relative;
                             font-size: 14px;
+
                             /*for IE*/
                             @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                                 &::before {
                                     display: none;
                                 }
                             }
+
                             /*for IE 9*/
                             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                 &::before {
                                     display: none;
                                 }
                             }
+
                             /*for FireFox*/
                             @media screen and (min--moz-device-pixel-ratio:0){
                                 &::before {
@@ -2028,6 +2268,7 @@
                                     left: 87px;
                                 }
                             }
+
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -2037,9 +2278,10 @@
                                 border-width: 5px 3px 0px 3px;
                                 border-color: #687abc transparent transparent transparent;
                                 top: 9px;
-                                left: 84px;
+                                left: 92px;
                                 pointer-events: none;
                             }
+
                             select {
                                 color: #687abc;
                                 appearance: none;
@@ -2053,19 +2295,23 @@
                                 line-height: 22px;
                                 font-size: 14px;
                                 margin: 0px 3px;
+
                                 /*for IE*/
                                 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                                     width: 60px;
                                 }
+
                                 /*for IE 9*/
                                 @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                     width: 60px;
                                 }
+
                                 /*for FireFox*/
                                 @media screen and (min--moz-device-pixel-ratio:0){
                                     width: 60px;
                                 }
                             }
+
                             input {
                                 background: #d7d7d7;
                                 border-radius: 3px;
@@ -2077,6 +2323,7 @@
                                 font-weight: bold;
                                 font-size: 15px;
                             }
+
                             span {
                                 font-size: 15px;
                                 padding-left: 5px;
@@ -2086,10 +2333,13 @@
                 }
             }
         }
+
         .bottom {
             width: 100%;
             height: auto;
             text-align: center;
+            color: #fff;
+
             .inputbox {
                 margin: 10px 0px;
                 text-align: center;
@@ -2098,13 +2348,14 @@
                     width: 100px;
                     height: 28px;
                     padding-left: 10px;
-                    border: solid 1px #9ba1c5;
+                    border: solid 1px #ababab;
                     border-radius: 3px;
                     margin-left: 5px;
                     color: #e60012;
                     font-size: 16px;
                     font-weight: bold;
                 }
+
                 button {
                     width: 260px;
                     height: 40px;
@@ -2119,22 +2370,26 @@
                     }
                 }
             }
+
             .remind {
                 margin-top: 10px;
                 width: calc(100% - 20px);
-                border-radius: 10px;
-                background: #fff;
+                border-radius: 3px;
+                background: #5a5a5a;
                 text-align: left;
-                border: solid 1px #9ba1c5;
+                border: solid 1px #ababab;
                 padding: 10px;
+
                 p {
                     font-size: 14px;
                     line-height: 20px;
+
                     &.retitle {
                         text-align: center;
                         border-bottom: solid 1px #e0e1e3;
                         padding-bottom: 7px;
                     }
+
                     &.extitle {
                         padding-top: 10px;
                     }

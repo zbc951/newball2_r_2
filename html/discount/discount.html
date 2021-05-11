@@ -9,22 +9,214 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../../js/javascript.js"></script>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
     <!--filter-->
     <div class="filter"></div>
+    <!--盤口對照表彈窗-->
+    <div class="conversionBox">
+        <h1>盤口對照表</h1>
+        <div class="innerBox">
+            <p>球頭換算法</p>
+            <div class="baseline"></div>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+            <table class="conversionBoard">
+                <tr>
+                    <td rowspan="2" class="title">讓分</td>
+                    <td>足球</td>
+                    <td>平手</td>
+                    <td>
+                        平手/
+                        <br>
+                        半球
+                    </td>
+                    <td>半球</td>
+                    <td>
+                        半球/
+                        <br>
+                        1球
+                    </td>
+                    <td>1球</td>
+                    <td>
+                        1球/
+                        <br>
+                        1球半
+                    </td>
+                    <td>1球半</td>
+                    <td>
+                        1球半/
+                        <br>
+                        2球
+                    </td>
+                    <td>2球</td>
+                    <td>
+                        2球/
+                        <br>
+                        2球半
+                    </td>
+                    <td>2球半</td>
+                    <td>
+                        2球半/
+                        <br>
+                        3球
+                    </td>
+                </tr>
+                <tr>
+                    <td>棒球</td>
+                    <td>PK</td>
+                    <td>0-50</td>
+                    <td>0輸</td>
+                    <td>1+50</td>
+                    <td>1平</td>
+                    <td>1-50</td>
+                    <td>1輸</td>
+                    <td>2+50</td>
+                    <td>2平</td>
+                    <td>2-50</td>
+                    <td>2輸</td>
+                    <td>3+50</td>
+                </tr>
+            </table>
+        </div>
+        <button></button>
+    </div>
+    <!--設定彈窗-->
+    <div class="controlBox">
+        <h1>設定</h1>
+        <div class="innerBox1">
+            <p>介面設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                盤口切換
+                <div class="slideBase Handicap lSide">
+                    <p class="eu">歐洲盤</p>
+                    <p class="hk">香港盤</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                主題風格
+                <div class="slideBase Theme lSide">
+                    <p class="light">日間</p>
+                    <p class="dark">夜間</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>通知設定</p>
+            <div class="baseline"></div>
+            <div class="partingBox">
+                桌面通知
+                <div class="slideBase Desktop lSide">
+                    <p class="on">開起</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+            <div class="partingBox">
+                電子郵件通知
+                <div class="slideBase Email lSide">
+                    <p class="on">開啟</p>
+                    <p class="off">關閉</p>
+                    <div class="slideBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="innerBox1">
+            <p>籌碼快捷設定</p>
+            <div class="baseline"></div>
+            <div class="longBox">
+                <span>設定下注</span>
+                <input type="text" value="1000">
+                <input type="text" value="2000">
+                <input type="text" value="5000">
+                <input type="text" value="10000">
+                <input type="text" value="20000">
+            </div>
+        </div>
+        <div class="innerBox2">
+            版本資訊
+            <p>
+                v4.0.3
+                <span>目前為最新版本</span>
+            </p>
+        </div>
+        <button class="cancelBtn"></button>
+    </div>
     <!--header-->
-    <header class="index">
+    <header>
         <!--上時間列-->
-        <div class="time">
-            <div>
-                <span>
-                    <script language="javascript" class="clock">
-                        var dt = new Date();
-                        document.write(dt);
-                    </script>
-                </span>
+        <div class="top">
+            <button class="conversionBtn">盤口對照表</button>
+            <button class="controlBtn">設定</button>
+            <span>
+                <script language="javascript" class="clock">
+                    var dt = new Date();
+                    document.write(dt);
+                </script>
+            </span>
+            <div class="marqueeBox">
+                <i class="fas fa-volume-up"></i>
+                <marquee behavior="" direction="">跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</marquee>
             </div>
         </div>
         <!--置中外包-->
@@ -33,41 +225,104 @@
             <div class="logo">LOGO</div>
             <!--上列表-->
             <ul class="headerlist">
-                <li><a href="../../index.html">市場列表</a></li>
-                <li><a href="./discount.html" class="active"><span></span>優惠</a></li>
-                <li><a href="../myself/mine.html"><span class="head_ic3"></span>我的</a></li>
+                <li><a href="../balls/soccer.html">市場列表</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">比賽結果</a></li>
+                <li><a href="../balls/teach.html">盤口教程</a></li>
+                <li><a href="../../index.html">賽事比分</a></li>
+                <li><a href="../myself/mine.html"><i class="fas fa-user-minus"></i>我的</a></li>
             </ul>
+            <!--登入前樣式-->
+            <div class="logged">
+                <div class="inputBox">
+                    <input type="text" placeholder="用戶帳號">
+                    <a href="#" class="forget">忘記密碼?</a>
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="密碼">
+                    <p class="remember"><span class="cube"></span>記住密碼</p>
+                </div>
+                <button class="loginBtn">登入</button>
+                <button class="signupBtn">註冊</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
+            </div>
             <!--登入後樣式-->
-            <div class="lobbyact">
-				<p>user545<span>0</span></p>
-				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            <div class="loggedIn display">
+				<p>帳戶名稱:<span>AAA888</span></p>
+                <p class="quota">昨日信用額度:<span>1000000</span>元</p>
+                <p class="quota">今日信用額度:<span>1000000</span>元</p>
+                <button class="logoutBtn" onclick="window.location.href='../../index.html'">登出</button>
+                <div class="selectBox">
+                    <i class="fas fa-globe"></i>
+                    <select name="" id="">
+                        <option value="">繁體中文</option>
+                        <option value="">简体中文</option>
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
             </div>
         </article>
     </header>
     <!--main-->
-    <main class="index">
+    <main>
         <!--置中外包-->
-        <article class="discountBoard">
+        <article class="mine">
             <!--左列-->
-            <section class="left dis">
+            <section class="left">
+                <!--選單-->
                 <ul>
-                    <li><a href="#" class="active"><span></span>全部優惠</a></li>
-                    <li><a href="#"><span class="lf_ic2"></span>限時活動</a></li>
-                    <li><a href="#"><span class="lf_ic3"></span>新人首存</a></li>
-                    <li><a href="#"><span class="lf_ic4"></span>日常活動</a></li>
-                    <li><a href="#"><span class="lf_ic5"></span>高額返水</a></li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class="fas fa-gift"></i>
+                            全部優惠
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="fas fa-clock"></i>
+                            限時活動
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="fas fa-coins"></i>
+                            新人首存
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="fas fa-calendar-alt"></i>
+                            日常活動
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="fas fa-piggy-bank"></i>
+                            高額返水
+                        </a>
+                    </li>
                 </ul>
             </section>
             <!--優惠-->
             <section class="discount">
                 <!--大窗-->
                 <div class="window">
-                    <p class="blue"><span class="limit"></span>限時活動</p>
-                    <div></div>
+                    <p class="topbar blue">
+                        <i class="fas fa-clock"></i>
+                        限時活動
+                    </p>
+                    <div class="img bg1"></div>
                     <div class="word">
-                        <span class="time">2020/7/18-2020/7/26</span>
-                        <span class="mainword">存款返21% 當贏不讓</span>
-                        <span class="norword">最高返利&emsp;<span class="wd_gold">21672</span>&emsp;元</span>
+                        <p>2020/7/18-2020/7/26</p>
+                        <p class="main">存款返21% 當贏不讓</p>
+                        <p class="underWord">最高返利<span class="remind">21672</span>元</p>
                     </div>
                     <button>查看詳情</button>
                 </div>
@@ -83,12 +338,15 @@
                 </div>
                 <!--大窗-->
                 <div class="window">
-                    <p class="green"><span class="new"></span>新人首存</p>
-                    <div></div>
+                    <p class="topbar green">
+                        <i class="fas fa-coins"></i>
+                        新人首存
+                    </p>
+                    <div class="img bg1"></div>
                     <div class="word">
-                        <span class="time">2020/7/18-2020/7/26</span>
-                        <span class="mainword">存款返21% 當贏不讓</span>
-                        <span class="norword">最高返利&emsp;<span class="wd_gold">21672</span>&emsp;元</span>
+                        <p>2020/7/18-2020/7/26</p>
+                        <p class="main">存款返21% 當贏不讓</p>
+                        <p class="underWord">最高返利<span class="remind">21672</span>元</p>
                     </div>
                     <button>查看詳情</button>
                 </div>
@@ -104,12 +362,15 @@
                 </div>
                 <!--大窗-->
                 <div class="window">
-                    <p class="orange"><span class="active"></span>日常活動</p>
-                    <div class="disimg2"></div>
+                    <p class="topbar orange">
+                        <i class="fas fa-calendar-alt"></i>
+                        日常活動
+                    </p>
+                    <div class="img bg2"></div>
                     <div class="word">
-                        <span class="time">長期活動</span>
-                        <span class="mainword">體育連贏8場</span>
-                        <span class="norword">最高可獲得&emsp;<span class="wd_gold">12888</span>&emsp;元現金獎勵</span>
+                        <p>長期活動</p>
+                        <p class="main">體育連贏8場</p>
+                        <p class="underWord">最高可獲得<span class="remind">12888</span>元現金獎勵</p>
                     </div>
                     <button>查看詳情</button>
                 </div>
@@ -125,12 +386,15 @@
                 </div>
                 <!--大窗-->
                 <div class="window">
-                    <p class="aqua"><span class="dividend"></span>高額返水</p>
-                    <div class="disimg3"></div>
+                    <p class="topbar aqua">
+                        <i class="fas fa-piggy-bank"></i>
+                        高額返水
+                    </p>
+                    <div class="img bg3"></div>
                     <div class="word">
-                        <span class="time">2020/7/18-2020/7/26</span>
-                        <span class="mainword">王者回歸 尊享888元</span>
-                        <span class="norword">召回老友享千元禮金</span>
+                        <p>2020/7/18-2020/7/26</p>
+                        <p class="main">王者回歸 尊享888元</p>
+                        <p class="underWord">召回老友享千元禮金</p>
                     </div>
                     <button>查看詳情</button>
                 </div>
@@ -158,26 +422,26 @@
                 <button>確認</button>
                 <!--隊伍內容-->
                 <ul class="searchbox">
-                    <li class="box1">熱門賽事</li>
-                    <div class="sbox1">
+                    <li>熱門賽事</li>
+                    <div>
                         <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box2">埃及</li>
-                    <div class="sbox2">
+                    <li>埃及</li>
+                    <div>
                         <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box3">阿爾及利亞</li>
-                    <div class="sbox3">
+                    <li>阿爾及利亞</li>
+                    <div>
                         <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box4">巴林</li>
-                    <div class="sbox4">
+                    <li>巴林</li>
+                    <div>
                         <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
                     </div>
-                    <li class="box5">巴西</li>
-                    <div class="sbox5">
+                    <li>巴西</li>
+                    <div>
                         <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
                         <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
                         <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
@@ -185,95 +449,31 @@
                     </div>
                 </ul>
             </div>
+
             <!--功能列-->
             <div class="fun">
-                <a href="#" class="deposit">
-                    <div class="fixsideimg img2"></div>
-                    <span class="wd_red">存款</span>
-                </a>
-                <a href="#" class="trans">
-                    <div class="fixsideimg img3"></div>
-                    <span>轉點</span>
-                </a>
-                <a href="#" class="dealrecord">
-                    <div class="fixsideimg img4"></div>
-                    <span>交易紀錄</span>
-                </a>
-                <a href="#" class="bettingrecord">
-                    <div class="fixsideimg img5"></div>
-                    <span>投注紀錄</span>
-                </a>
-                <a href="#" class="help">
-                    <div class="fixsideimg img6"></div>
-                    <span>幫助中心</span>
-                </a>
-                <a href="#" class="online">
-                    <div class="fixsideimg img7"></div>
-                    <span>在線客服</span>
-                </a>
-                <a href="#" class="app">
-                    <div class="fixsideimg img8"></div>
-                    <span>APP下載</span>
-                </a>
-            </div>
-        </section>
-        <!--懸浮側鍵RWD-->
-        <section class="fixside_rwd">
-            <!--搜尋列-->
-            <div class="search">
-                <div class="searchbut">
-                    <div class="fixsideimg img1"></div>
-                    <span>搜尋</span>
+                <!--漢堡選單-->
+                <div class="hamBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <input type="text" placeholder="搜尋賽事">
-                <button>確認</button>
-                <!--隊伍內容-->
-                <ul class="searchbox">
-                    <li class="box1">熱門賽事</li>
-                    <div class="sbox1">
-                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box2">埃及</li>
-                    <div class="sbox2">
-                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box3">阿爾及利亞</li>
-                    <div class="sbox3">
-                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box4">巴林</li>
-                    <div class="sbox4">
-                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
-                    </div>
-                    <li class="box5">巴西</li>
-                    <div class="sbox5">
-                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
-                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
-                    </div>
-                </ul>
-            </div>
-            <!--功能列-->
-            <div class="fun">
-                <button class="rwd_hambut">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="#" class="deposit">
+                <!-- <a href="#" class="deposit">
                     <div class="fixsideimg img2"></div>
                     <span class="wd_red">存款</span>
-                </a>
-                <a href="#" class="trans">
+                </a> -->
+                <!-- <a href="#" class="trans">
                     <div class="fixsideimg img3"></div>
                     <span>轉點</span>
-                </a>
-                <a href="#" class="dealrecord">
+                </a> -->
+                <!-- <a href="#" class="dealrecord">
                     <div class="fixsideimg img4"></div>
                     <span>交易紀錄</span>
+                </a> -->
+                <a href="#" class="bettingrenow">
+                    <div class="fixsideimg img9"></div>
+                    <span>即時投注</span>
+                </a>
                 <a href="#" class="bettingrecord">
                     <div class="fixsideimg img5"></div>
                     <span>投注紀錄</span>
@@ -286,16 +486,15 @@
                     <div class="fixsideimg img7"></div>
                     <span>在線客服</span>
                 </a>
-                <a href="#" class="app">
+                <!-- <a href="#" class="app">
                     <div class="fixsideimg img8"></div>
                     <span>APP下載</span>
-                </a>
+                </a> -->
             </div>
         </section>
         <!--背景-->
-        <div class="bg index"></div>
+        <div class="bg"></div>
     </main>
-    <footer></footer>
 </body>
 
 </html>

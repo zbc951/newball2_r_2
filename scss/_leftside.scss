@@ -23,41 +23,6 @@
         background: #b9becf;
         border-radius: 10px;
     }
-
-    //優惠
-    &.dis {
-        width: 260px;
-        height: 275px;
-        background: #fff;
-        ul {
-            li {
-                &:hover,&:active,&.active {
-                    span {
-                        background-position-y: -19px;
-                    }
-                }
-            }
-        }
-        span {
-            width: 20px;
-            height: 20px;
-            margin: 15px 20px 0px 20px;
-            background: url('../images/discountleft_ic.png');
-            background-size: 500%;
-            &.lf_ic2 {
-                background-position-x: -20px;
-            }
-            &.lf_ic3 {
-                background-position-x: -40px;
-            }
-            &.lf_ic4 {
-                background-position-x: -60px;
-            }
-            &.lf_ic5 {
-                background-position-x: -80px;
-            }
-        }
-    }
     
     //我的頁面
     &.mine {
@@ -260,8 +225,12 @@
 
                     &.fa-hotjar,&.fa-hockey-puck,
                     &.fa-baseball-ball,&.fa-basketball-ball,
-                    &.fa-futbol,&.fa-volleyball-ball {
+                    &.fa-futbol,&.fa-volleyball-ball,&.fa-calendar-alt {
                         left: 19px;
+                    }
+
+                    &.fa-piggy-bank {
+                        left: 16px;
                     }
 
                     &.fa-signal {
