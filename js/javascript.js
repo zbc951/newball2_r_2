@@ -415,6 +415,13 @@ $(function(){
     });
 });
 
+//賽事比分頁麵切換
+$(function(){
+    $('.ddd').click(function(){
+        $('body').addClass("dddd");
+    })
+})
+
     //我的頁面
 
 //懸浮列fixbar ul選定效果
@@ -852,27 +859,27 @@ $(function(){
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1 hide2 hide3');
-        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1920 && wWD >= 1840) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1');
-        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1840 && wWD >= 1700) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1');
         $('.playBoard').removeClass('hide2');
-        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1700 && wWD >= 1560) {
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1 hide2');
         $('.playBoard').removeClass('hide3');
-        $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1560 && wWD > 1510 ) {
         $('.marqueeBox').css('width',(String(59) + '%'));
@@ -881,7 +888,7 @@ $(function(){
         $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
         $('.left').css('width',(String(wWD - 1290) + 'px'));
-        $('.topfix,.chleague,.minetopfix').css('left',(String(wWD - 1280) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(wWD - 1280) + 'px'));
     } else {
         $('.marqueeBox').css('width',(String(59) + '%'));
         $('.middle').css('width',(String(880) + 'px'));
@@ -889,7 +896,7 @@ $(function(){
         $('.playBoard').addClass('hide1 hide2 hide3');
         $('body').css('overflow-x','auto');
         $('.left').css('width',(String(220) + 'px'));
-        $('.topfix,.chleague,.minetopfix').css('left',(String(230) + 'px'));
+        $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(230) + 'px'));
     }
 
     if(wWD > 1560) {
@@ -903,27 +910,27 @@ $(function(){
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1 hide2 hide3');
-            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1920 && wWD >= 1840) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1');
-            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1840 && wWD >= 1700) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1');
             $('.playBoard').removeClass('hide2');
-            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1700 && wWD >= 1560) {
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1 hide2');
             $('.playBoard').removeClass('hide3');
-            $('.topfix,.chleague,.minetopfix').css('left',(String(280) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1560 && wWD > 1510 ) {
             $('.marqueeBox').css('width',(String(59) + '%'));
@@ -932,7 +939,7 @@ $(function(){
             $('.playBoard').addClass('hide1 hide2 hide3');
             $('body').css('overflow-x','auto');
             $('.left').css('width',(String(wWD - 1290) + 'px'));
-            $('.topfix,.chleague,.minetopfix').css('left',(String(wWD - 1280) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(wWD - 1280) + 'px'));
         } else {
             $('.marqueeBox').css('width',(String(59) + '%'));
             $('.middle').css('width',(String(880) + 'px'));
@@ -940,7 +947,7 @@ $(function(){
             $('.playBoard').addClass('hide1 hide2 hide3');
             $('body').css('overflow-x','auto');
             $('.left').css('width',(String(220) + 'px'));
-            $('.topfix,.chleague,.minetopfix').css('left',(String(230) + 'px'));
+            $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(230) + 'px'));
         }
 
         if(wWD > 1560) {

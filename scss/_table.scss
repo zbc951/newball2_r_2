@@ -30,9 +30,15 @@
 			//字靠左
 			&.tLeft {
 				text-align: left;
-				padding: 8px 10px 7px;
+				padding: 8px 10px;
 			}
-      	}
+
+			.date {
+				float: right;
+				margin-right: 10px;
+			}
+		  }
+		  
 		td {
 			font-size: 12px;
 			padding: 8px 0px;
@@ -55,6 +61,10 @@
 			&.tLeft {
 				text-align: left;
 				padding: 0px 10px;
+			}
+
+			&.allScore {
+				color: #ffd400;
 			}
 
 			//遊戲種類著名顏色
@@ -531,6 +541,45 @@
 			}
 		}
 	}
+	&.tType1_result {
+		
+		tr {
+
+			td {
+				
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 57%;
+				}
+
+				&:nth-of-type(4) {
+					width: 10%;
+
+					div {
+						
+						&:nth-of-type(1) {
+							margin-bottom: 8px;
+						}
+
+						p {
+							padding: 0px;
+						}
+					}
+				}
+
+				&:nth-of-type(5),&:nth-of-type(6) {
+					width: 5%;
+				}
+			}
+		}
+	}
 
 	//棒球版型
 	&.tType2 {
@@ -819,6 +868,37 @@
 			}
 		}
 	}
+	&.tType2_result {
+		
+		tr {
+
+			td {
+				
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 43%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
+				&:nth-of-type(13) {
+					width: 3%;
+				}
+
+				&:nth-of-type(14) {
+					width: 4%;
+				}
+			}
+		}
+	}
 
 	//籃球+冰球+美式足球版型
 	&.tType3 {
@@ -1040,6 +1120,35 @@
 			}
 		}
 	}
+	&.tType3_result {
+		
+		tr {
+
+			td {
+				
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 58%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8) {
+					width: 3%;
+				}
+
+				&:nth-of-type(9) {
+					width: 4%;
+				}
+			}
+		}
+	}
 
 	//賽馬賽狗版型
 	&.tType4 {
@@ -1174,6 +1283,46 @@
 
 				&:nth-of-type(10) {
 					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType4_result {
+		
+		tr {
+
+			td {
+
+				p {
+					padding-bottom: 8px;
+
+					&.first {
+						color: #ffd400;
+					}
+
+					&:last-child {
+						padding: 0px;
+					}
+				}
+				
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(7) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(6) {
+					width: 3%;
+				}
+
+				&:nth-of-type(5) {
+					width: 43%;
+				}
+
+				&:nth-of-type(6),&:nth-of-type(7) {
+					width: 5%;
 				}
 			}
 		}
@@ -1341,7 +1490,7 @@
 			}
 		}
 	}
-	&.tType5_lol_index{
+	&.tType5_lol_index {
 
 		&.hide1 {
 
@@ -1390,7 +1539,7 @@
 			}
 		}
 	}
-	&.tType5_dota_index{
+	&.tType5_dota_index {
 
 		&.hide1 {
 
@@ -1439,7 +1588,7 @@
 			}
 		}
 	}
-	&.tType5_cs_index{
+	&.tType5_cs_index {
 		
 		&.hide1 {
 
@@ -1482,6 +1631,104 @@
 				}
 
 				&:nth-of-type(15) {
+					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType5_lol_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 24%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
+				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
+				&:nth-of-type(17),&:nth-of-type(18) {
+					width: 4%;
+				}
+			}
+		}
+	}
+	&.tType5_dota_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 28%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
+				&:nth-of-type(14),&:nth-of-type(15),&:nth-of-type(16),
+				&:nth-of-type(17) {
+					width: 4%;
+				}
+			}
+		}
+	}
+	&.tType5_cs_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 34%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11) {
+					width: 4%;
+				}
+
+				&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(14) {
 					width: 6%;
 				}
 			}
@@ -1585,6 +1832,23 @@
 
 				&:nth-of-type(6) {
 					width: 8%;
+				}
+			}
+		}
+	}
+	&.tType6_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(5),
+				&:nth-of-type(6) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3),&:nth-of-type(4) {
+					width: 20%;
 				}
 			}
 		}
@@ -1732,6 +1996,60 @@
 
 				&:nth-of-type(10) {
 					width: 10%;
+				}
+			}
+		}
+	}
+	&.tType7_bingo_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 20%;
+				}
+
+				&:nth-of-type(3) {
+					width: 9%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 8%;
+				}
+			}
+		}
+	}
+	&.tType7_lottery_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 15%;
+				}
+
+				&:nth-of-type(2) {
+					width: 18%;
+				}
+
+				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
+				&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),
+				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
+				&:nth-of-type(12) {
+					width: 4%;
+				}
+
+				&:nth-of-type(13),&:nth-of-type(14),
+				&:nth-of-type(15) {
+					width: 9%;
 				}
 			}
 		}
@@ -1934,6 +2252,35 @@
 			}
 		}
 	}
+	&.tType8_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 51%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9) {
+					width: 3%;
+				}
+
+				&:nth-of-type(10),&:nth-of-type(11) {
+					width: 4%;
+				}
+			}
+		}
+	}
 
 	//斯諾克版型
 	&.tType9 {
@@ -2085,6 +2432,34 @@
 
 				&:nth-of-type(6) {
 					width: 8%;
+				}
+			}
+		}
+	}
+	&.tType9_result {
+
+		tr {
+
+			td {
+
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 4%;
+				}
+
+				&:nth-of-type(4) {
+					width: 58%;
+				}
+
+				&:nth-of-type(5) {
+					width: 15%;
 				}
 			}
 		}
@@ -2284,6 +2659,36 @@
 			}
 		}
 	}
+	&.tType10_result {
+		
+		tr {
+
+			td {
+				
+				&:nth-of-type(1) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(3) {
+					width: 48%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
+				&:nth-of-type(10) {
+					width: 3%;
+				}
+
+				&:nth-of-type(11),&:nth-of-type(12) {
+					width: 4%;
+				}
+			}
+		}
+	}
 
 	//賽車
 	&.tType11 {
@@ -2371,6 +2776,14 @@
 
 			td {
 
+				p {
+					padding-bottom: 8px;
+
+					&:last-child {
+						padding: 0px;
+					}
+				}
+
 				&:nth-of-type(1),&:nth-of-type(2) {
 					width: 7%;
 				}
@@ -2394,6 +2807,43 @@
 
 				&:nth-of-type(11) {
 					width: 6%;
+				}
+			}
+		}
+	}
+	&.tType11_result {
+		
+		tr {
+
+			td {
+
+				p {
+					padding-bottom: 8px;
+
+					&:last-child {
+						padding: 0px;
+					}
+				}
+
+				&:nth-of-type(1),&:nth-of-type(6) {
+					width: 8%;
+				}
+
+				&:nth-of-type(2) {
+					width: 15%;
+				}
+
+				&:nth-of-type(5),&:nth-of-type(8) {
+					width: 22%;
+				}
+
+				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(7),
+				&:nth-of-type(10) {
+					width: 4%;
+				}
+
+				&:nth-of-type(9) {
+					width: 9%;
 				}
 			}
 		}
@@ -2606,64 +3056,31 @@
 			}
 		}
 	}
-
-    //串關投注格
-    &.tbetting {
-      	width: 100%;
-		border-radius: 0px;
-		margin: 0px;
-		position: relative;
-		box-shadow: none;
+	&.tType12_result {
+		
 		tr {
-			th {
-				border-width: 1px;
-				font-size: 13px;
-				line-height: 16px;
-				button {
-					width: 18px;
-					height: 18px;
-					position: absolute;
-					right: 10px;
-					background: transparent;
-					&::before {
-						content: "";
-						position: absolute;
-						width: 1px;
-						height: 18px;
-						background: #000;
-						top: 0px;
-						left: 8px;
-						transform: rotate(45deg);
-					}
-					&::after {
-						content: "";
-						position: absolute;
-						width: 1px;
-						height: 18px;
-						background: #000;
-						left: 8px;
-						top: 0px;
-						transform: rotate(135deg);
-					}
-				}
-			}
+
 			td {
-				height: 50px;
-				border-width: 1px;
-				&:nth-child(1) {
-					width: 10%;
-					border-right: none;
+
+				&:nth-of-type(1) {
+					width: 8%;
 				}
-				&:nth-child(2) {
-					width: 40%;
-					border-left: none;
+
+				&:nth-of-type(2) {
+					width: 15%;
 				}
-				&:nth-child(3) {
-					width: 50%;
-					font-size: 13px;
-					font-weight: lighter;
-					color: #4d515d;
-					line-height: 25px;
+
+				&:nth-of-type(3) {
+					width: 58%;
+				}
+
+				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
+				&:nth-of-type(7),&:nth-of-type(8) {
+					width: 3%;
+				}
+
+				&:nth-of-type(9),&:nth-of-type(10) {
+					width: 4%;
 				}
 			}
 		}
@@ -3693,7 +4110,6 @@
 			th {
 
 				span {
-					display: inline-block;
 					float: right;
 					padding-bottom: 4px;
 					font-size: 13px;
