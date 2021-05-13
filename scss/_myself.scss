@@ -31,16 +31,21 @@
         &.record {
             padding-top: 175px;
         }
+
+        &.app {
+            width: calc(100% - 10px);
+        }
     }
 
     //投注紀錄
     .recordbar {
-        width: 1148px;
+        width: 1150px;
         height: 35px;
         background: #c1c1c1;
         border-radius: 3px;
         margin: 0px 0px 15px 10px;
         border: 1px solid #989dbc;
+        box-sizing: border-box;
         position: relative;
         z-index: 1;
 
@@ -88,7 +93,7 @@
     }
     .recordbox {
         display: none;
-        width: 1148px;
+        width: 1150px;
         height: auto;
         margin: -20px 0px 15px 10px;
         border: 1px solid #b7906e;
@@ -96,6 +101,7 @@
         background: #777777;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
+        box-sizing: border-box;
         overflow: hidden;
 
         &.display {
@@ -260,42 +266,6 @@
 
         &.display {
             display: block;
-        }
-    }
-    .sportbar {
-        width: 1120px;
-        height: auto;
-        background: #bcbcbc;
-        padding: 15px 15px 0px 15px;
-        position: fixed;
-        top: 250px;
-        margin-left: 10px;
-        border-radius: 3px;
-        z-index: 6;
-        
-        button {
-            float: left;
-            width: 84px;
-            height: 32px;
-            border: 1px solid #b78960;
-            background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
-            background-color: #b78960;
-            border-radius: 3px;
-            color: #fff;
-            font-size: 14px;
-            padding: 0px;
-            line-height: 0px;
-            margin: 0px 10px 15px 0px;
-
-            &:hover,&:active,&.active {
-                background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-                border-color: #444f8b;
-                background-color: #434e8a;
-            }
-
-            &.nmar {
-                margin-right: 0px;
-            }
         }
     }
 
@@ -490,19 +460,21 @@
         }
     }
     .linkBox {
+        
         div {
-            width: 1080px;
+            width: 100%;
             height: auto;
             margin-left: 45px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             a {
-
-                float: left;
                 width: 200px;
                 height: 120px;
                 border-radius: 5px;
                 overflow: hidden;
                 text-align: left;
-                margin: 0px 20px 20px 0px;
+                margin: 0px 0px 20px 0px;
 
                 &:nth-of-type(5n) {
                     margin-right: 0px;
@@ -962,6 +934,52 @@
     }
 }
 
+//消息中心-體育規則
+.sportbar {
+    display: none;
+    width: 1120px;
+    height: auto;
+    background: #bcbcbc;
+    padding: 15px 15px 0px 15px;
+    position: absolute;
+    top: 140px;
+    left: 270px;
+    margin-left: 10px;
+    border-radius: 3px;
+    z-index: 6;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &.display {
+        display: flex;
+    }
+    
+    button {
+        float: left;
+        width: 10%;
+        height: 32px;
+        border: 1px solid #b78960;
+        background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+        background-color: #b78960;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        padding: 0px;
+        line-height: 0px;
+        margin: 0px 10px 15px 0px;
+
+        &:hover,&:active,&.active {
+            background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
+            border-color: #444f8b;
+            background-color: #434e8a;
+        }
+
+        &.nmar {
+            margin-right: 0px;
+        }
+    }
+}
+
 //彈窗
 
 //修改密碼
@@ -1346,6 +1364,15 @@
             &:hover,&:active,&.active {
                 background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
             }
+        }
+    }
+}
+
+@media screen and(max-width: 1230px) {
+    .sportbar {
+
+        button {
+            width: 9%;
         }
     }
 }

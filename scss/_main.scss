@@ -6,6 +6,10 @@ main {
     height: auto;
     position: relative;
 
+    &.mine {
+        min-width: 1200px;
+    }
+
     //置中外包
     article {
         height: 890px;
@@ -15,7 +19,7 @@ main {
 
         //我的頁面用
         &.mine {
-            width: 1460px;
+            width: 1480px;
         }
     }
 

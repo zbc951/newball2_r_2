@@ -3816,7 +3816,7 @@
 	//個人資料-投注限額
 	&.bettingLimit {
 		float: left;
-		width: 570px;
+		width: calc(50% - 12px);
 
 		tr {
 			
@@ -4119,7 +4119,7 @@
 			td {
 
 				.creditcardBtn {
-					width: 270px;
+					width: 25%;
 					height: 145px;
 					border-radius: 5px;
 					background: #7d7d7d;
@@ -4308,6 +4308,7 @@
 					margin: 0px 10px 20px 0px;
 					padding: 20px;
 					box-sizing: border-box;
+					position: relative;
 		
 					&:nth-of-type(4n) {
 						margin-right: 0px;
@@ -4332,7 +4333,8 @@
 							background: transparent;
 							border-radius: 15px;
 							border: solid 1px #4d4d4d;
-							float: right;
+							position: absolute;
+							right: 10px;
 
 							&:hover,&:active,&.active {
 								background: #4d4d4d;
@@ -4373,6 +4375,7 @@
 
 				&:nth-of-type(1) {
 					width: 18%;
+					font-size: 13px;
 				}
 
 				&:nth-of-type(2) {
@@ -4725,6 +4728,10 @@
 							position: relative;
 							padding-left: 30px;
 							box-sizing: border-box;
+
+							&.joinus {
+								width: 75%;
+							}
 
 							&.control {
 								width: 60%;
@@ -5468,15 +5475,18 @@
 
 			td {
 				padding: 20px 20px 0px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
 
 				button {
-					width: 110px;
+					width: 10%;
 					height: 90px;
 					border: solid 1px #828282;
 					background: #3e3e3e;
 					border-radius: 3px;
 					color: #cfcfcf;
-					margin: 0px 30px 20px 0px;
+					margin: 0px 15px 20px;
 					position: relative;
 
 					&:hover,&:active,&.active {
@@ -5494,10 +5504,6 @@
 							right: -1px;
 							bottom: -1px;
 						}
-					}
-
-					&:nth-of-type(7n) {
-						margin-right: 0px;
 					}
 
 					span {
@@ -5608,7 +5614,7 @@
 					width: 50%;
 					height: auto;
 					display: inline-block;
-					padding: 15px 30px;
+					padding: 15px 18px;
 					box-sizing: border-box;
 					text-align: left;
 

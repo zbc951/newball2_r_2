@@ -6,6 +6,10 @@ header {
     background: #505050;
     position: relative;
     z-index: 10;
+
+    &.mine {
+        min-width: 1200px;
+    }
     
     //上列
     .top {
@@ -77,6 +81,8 @@ header {
         //上列表
         ul {
             float: left;
+            position: relative;
+            z-index: 2;
 
             li {
                 float: left;
@@ -106,10 +112,9 @@ header {
             display: none;
             width: auto;
             height: 100%;
-            float: right;
             text-align: right;
-            margin-right: 20px;
-            position: relative;
+            position: absolute;
+            right: 20px;
 
             &.display {
                 display: block;
@@ -237,9 +242,9 @@ header {
             display: none;
             width: auto;
             height: 100%;
-            float: right;
             text-align: right;
-            margin-right: 20px;
+            position: absolute;
+            right: 20px;
 
             &.display {
                 display: block;

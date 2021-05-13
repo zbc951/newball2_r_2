@@ -89,6 +89,9 @@ header {
   position: relative;
   z-index: 10;
 }
+header.mine {
+  min-width: 1200px;
+}
 header .top {
   width: 100%;
   height: 25px;
@@ -145,6 +148,8 @@ header article .logo {
 }
 header article ul {
   float: left;
+  position: relative;
+  z-index: 2;
 }
 header article ul li {
   float: left;
@@ -169,10 +174,9 @@ header article .logged {
   display: none;
   width: auto;
   height: 100%;
-  float: right;
   text-align: right;
-  margin-right: 20px;
-  position: relative;
+  position: absolute;
+  right: 20px;
 }
 header article .logged.display {
   display: block;
@@ -281,9 +285,9 @@ header article .loggedIn {
   display: none;
   width: auto;
   height: 100%;
-  float: right;
   text-align: right;
-  margin-right: 20px;
+  position: absolute;
+  right: 20px;
 }
 header article .loggedIn.display {
   display: block;
@@ -361,6 +365,9 @@ main {
   height: auto;
   position: relative;
 }
+main.mine {
+  min-width: 1200px;
+}
 main article {
   height: 890px;
   margin: 0px auto;
@@ -368,7 +375,7 @@ main article {
   position: relative;
 }
 main article.mine {
-  width: 1460px;
+  width: 1480px;
 }
 main .bg {
   width: 100%;
@@ -2980,7 +2987,7 @@ main .bg {
 }
 .minetable.bettingLimit {
   float: left;
-  width: 570px;
+  width: calc(50% - 12px);
 }
 .minetable.bettingLimit tr:nth-of-type(2n) {
   background: #656565;
@@ -3219,7 +3226,7 @@ main .bg {
   font-size: 13px;
 }
 .minetable.creditcard tr td .creditcardBtn {
-  width: 270px;
+  width: 25%;
   height: 145px;
   border-radius: 5px;
   background: #7d7d7d;
@@ -3362,6 +3369,7 @@ main .bg {
   margin: 0px 10px 20px 0px;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
 }
 .minetable.moneyDetail tr td div:nth-of-type(4n) {
   margin-right: 0px;
@@ -3383,7 +3391,8 @@ main .bg {
   background: transparent;
   border-radius: 15px;
   border: solid 1px #4d4d4d;
-  float: right;
+  position: absolute;
+  right: 10px;
 }
 .minetable.moneyDetail tr td div p .charge:hover, .minetable.moneyDetail tr td div p .charge:active, .minetable.moneyDetail tr td div p .charge.active {
   background: #4d4d4d;
@@ -3413,6 +3422,7 @@ main .bg {
 }
 .minetable.dealRecord tr td:nth-of-type(1) {
   width: 18%;
+  font-size: 13px;
 }
 .minetable.dealRecord tr td:nth-of-type(2) {
   width: 12%;
@@ -3685,6 +3695,9 @@ main .bg {
   position: relative;
   padding-left: 30px;
   box-sizing: border-box;
+}
+.minetable.callus tr td .box .half p.joinus {
+  width: 75%;
 }
 .minetable.callus tr td .box .half p.control {
   width: 60%;
@@ -4280,15 +4293,18 @@ main .bg {
 }
 .minetable.payStyle tr td {
   padding: 20px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .minetable.payStyle tr td button {
-  width: 110px;
+  width: 10%;
   height: 90px;
   border: solid 1px #828282;
   background: #3e3e3e;
   border-radius: 3px;
   color: #cfcfcf;
-  margin: 0px 30px 20px 0px;
+  margin: 0px 15px 20px;
   position: relative;
 }
 .minetable.payStyle tr td button:hover, .minetable.payStyle tr td button:active, .minetable.payStyle tr td button.active {
@@ -4305,9 +4321,6 @@ main .bg {
   background: url(../images/box_check.png);
   right: -1px;
   bottom: -1px;
-}
-.minetable.payStyle tr td button:nth-of-type(7n) {
-  margin-right: 0px;
 }
 .minetable.payStyle tr td button span {
   display: block;
@@ -4392,7 +4405,7 @@ main .bg {
   width: 50%;
   height: auto;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 15px 18px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -7288,13 +7301,17 @@ main .bg {
 .myself .mineMainBox.record {
   padding-top: 175px;
 }
+.myself .mineMainBox.app {
+  width: calc(100% - 10px);
+}
 .myself .recordbar {
-  width: 1148px;
+  width: 1150px;
   height: 35px;
   background: #c1c1c1;
   border-radius: 3px;
   margin: 0px 0px 15px 10px;
   border: 1px solid #989dbc;
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
@@ -7336,7 +7353,7 @@ main .bg {
 }
 .myself .recordbox {
   display: none;
-  width: 1148px;
+  width: 1150px;
   height: auto;
   margin: -20px 0px 15px 10px;
   border: 1px solid #b7906e;
@@ -7344,6 +7361,7 @@ main .bg {
   background: #777777;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 .myself .recordbox.display {
@@ -7481,39 +7499,6 @@ main .bg {
 }
 .myself .notice.display, .myself .announcement.display, .myself .activity.display, .myself .competition.display {
   display: block;
-}
-.myself .sportbar {
-  width: 1120px;
-  height: auto;
-  background: #bcbcbc;
-  padding: 15px 15px 0px 15px;
-  position: fixed;
-  top: 250px;
-  margin-left: 10px;
-  border-radius: 3px;
-  z-index: 6;
-}
-.myself .sportbar button {
-  float: left;
-  width: 84px;
-  height: 32px;
-  border: 1px solid #b78960;
-  background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
-  background-color: #b78960;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 14px;
-  padding: 0px;
-  line-height: 0px;
-  margin: 0px 10px 15px 0px;
-}
-.myself .sportbar button:hover, .myself .sportbar button:active, .myself .sportbar button.active {
-  background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-  border-color: #444f8b;
-  background-color: #434e8a;
-}
-.myself .sportbar button.nmar {
-  margin-right: 0px;
 }
 .myself .callusBox, .myself .problemBox, .myself .feebackBox, .myself .onlineCilentBox {
   display: none;
@@ -7679,18 +7664,20 @@ main .bg {
   display: block;
 }
 .myself .linkBox div {
-  width: 1080px;
+  width: 100%;
   height: auto;
   margin-left: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .myself .linkBox div a {
-  float: left;
   width: 200px;
   height: 120px;
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .myself .linkBox div a:nth-of-type(5n) {
   margin-right: 0px;
@@ -8058,6 +8045,47 @@ main .bg {
   height: 250px;
 }
 
+.sportbar {
+  display: none;
+  width: 1120px;
+  height: auto;
+  background: #bcbcbc;
+  padding: 15px 15px 0px 15px;
+  position: absolute;
+  top: 140px;
+  left: 270px;
+  margin-left: 10px;
+  border-radius: 3px;
+  z-index: 6;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sportbar.display {
+  display: flex;
+}
+.sportbar button {
+  float: left;
+  width: 10%;
+  height: 32px;
+  border: 1px solid #b78960;
+  background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+  background-color: #b78960;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  padding: 0px;
+  line-height: 0px;
+  margin: 0px 10px 15px 0px;
+}
+.sportbar button:hover, .sportbar button:active, .sportbar button.active {
+  background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
+  border-color: #444f8b;
+  background-color: #434e8a;
+}
+.sportbar button.nmar {
+  margin-right: 0px;
+}
+
 .changePasswordWindow {
   display: none;
   position: absolute;
@@ -8395,6 +8423,11 @@ main .bg {
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 
+@media screen and (max-width: 1230px) {
+  .sportbar button {
+    width: 9%;
+  }
+}
 @keyframes reset {
   0% {
     transform: rotate(0deg);
