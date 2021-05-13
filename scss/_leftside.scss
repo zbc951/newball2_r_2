@@ -133,12 +133,14 @@
                 a {
                     
                     .live {
-                        display: block;
+                        display: inline-block;
                         padding: 1px 0px 0px;
                         width: 28px;
                         text-align: center;
                         font-size: 14px;
-                        left: 115px;
+                        position: initial;
+                        margin-left: 10px;
+                        transform: translateY(0px);
                     }
 
                     i {
