@@ -415,6 +415,79 @@ $(function(){
     });
 });
 
+//球種篩選
+$(function(){
+    $('.selector').change(function(){
+        if($(this).val() == 0){
+            $('.playBoard').css('display','table');
+        }
+        if($(this).val() == 1){
+            $('.soccer').siblings().css('display','none');
+            $('.soccer').css('display','table');
+        }
+        if($(this).val() == 2){
+            $('.baseball').siblings().css('display','none');
+            $('.baseball').css('display','table');
+        }
+        if($(this).val() == 3){
+            $('.basketball').siblings().css('display','none');
+            $('.basketball').css('display','table');
+        }
+        if($(this).val() == 4){
+            $('.race').siblings().css('display','none');
+            $('.race').css('display','table');
+        }
+        if($(this).val() == 5){
+            $('.esp').siblings().css('display','none');
+            $('.esp').css('display','table');
+        }
+        if($(this).val() == 6){
+            $('.stock').siblings().css('display','none');
+            $('.stock').css('display','table');
+        }
+        if($(this).val() == 7){
+            $('.lottery').siblings().css('display','none');
+            $('.lottery').css('display','table');
+        }
+        if($(this).val() == 8){
+            $('.iceball').siblings().css('display','none');
+            $('.iceball').css('display','table');
+        }
+        if($(this).val() == 9){
+            $('.tennis').siblings().css('display','none');
+            $('.tennis').css('display','table');
+        }
+        if($(this).val() == 10){
+            $('.snooker').siblings().css('display','none');
+            $('.snooker').css('display','table');
+        }
+        if($(this).val() == 11){
+            $('.vball').siblings().css('display','none');
+            $('.vball').css('display','table');
+        }
+        if($(this).val() == 12){
+            $('.racecar').siblings().css('display','none');
+            $('.racecar').css('display','table');
+        }
+        if($(this).val() == 13){
+            $('.badminton').siblings().css('display','none');
+            $('.badminton').css('display','table');
+        }
+        if($(this).val() == 14){
+            $('.beachball').siblings().css('display','none');
+            $('.beachball').css('display','table');
+        }
+        if($(this).val() == 15){
+            $('.football').siblings().css('display','none');
+            $('.football').css('display','table');
+        }
+        if($(this).val() == 16){
+            $('.tableball').siblings().css('display','none');
+            $('.tableball').css('display','table');
+        }
+    })
+})
+
     //我的頁面
 
 //懸浮列fixbar ul選定效果
