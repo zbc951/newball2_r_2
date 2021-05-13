@@ -43,6 +43,7 @@ blockquote:before,blockquote:after,q:before,q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: "my_font";
 }
 button {
   // font-family: "my_font";
@@ -68,7 +69,4 @@ html {
 }
 a:link {
   text-decoration: none;
-}
-table {
-  font-family: "微軟正黑體";
 }

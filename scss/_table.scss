@@ -4372,6 +4372,7 @@
 				border-right: solid 1px #ababab;
 				padding: 10px;
 				color: #fff;
+				font-size: 14px;
 
 				&:nth-of-type(1) {
 					width: 18%;
@@ -4444,10 +4445,11 @@
 			border-bottom: solid 1px #ababab;
 
 			&.totalInfo {
-				background: #a43e4a;
+				background: #404b87;
 			}
 
 			th {
+				border-bottom: solid 1px #929292;
 
 				p {
 					float: left;
@@ -4496,13 +4498,8 @@
 					border: none;
 				}
 
-				&.gray {
-					background: #c7c7c7;
-					color: #4d4d4d;
-				}
-
 				&.yellow {
-					color: #fff700;
+					color: #ff9000;
 				}
 
 				&.highSeparate {
@@ -4510,7 +4507,7 @@
 				}
 
 				.teamName {
-					color: #ff9000;
+					color: #ffffff;
 				}
 
 				.separate {
@@ -4520,7 +4517,7 @@
 				}
 
 				.odd {
-					color: #ff0000;
+					color: #ff9000;
 				}
 
 				.vs {
@@ -4534,8 +4531,8 @@
 	//投注紀錄-總計條
 	&.totalInfo {
 		width: 1070px;
-		margin: 0px auto 10px;
-		background: #dfb187;
+		margin: 0px auto;
+		background: #f3b378;
 		
 		tr {
 

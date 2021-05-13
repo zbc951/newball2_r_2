@@ -1005,16 +1005,19 @@ $(function(){
 
     if(wWD >= 1450){
         $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(1150) + 'px'));
+        $('.record .bettingRecord').css('width',(String(1130) + 'px'));
         $('.sportbar').css('width',(String(1120) + 'px'));
         $('.linkBox').css('width',(String(1080) + 'px'));
         $('.minetable.bettingLimit,.minetable.download').css('width',(String(570) + 'px'));
     } else if(wWD < 1450 && wWD > 1200) {
         $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(wWD - 300) + 'px'));
+        $('.record .bettingRecord').css('width',(String(wWD - 320) + 'px'));
         $('.sportbar').css('width',(String(wWD - 330) + 'px'));
         $('.linkBox').css('width',(String(wWD - 370) + 'px'));
         $('.minetable.bettingLimit,.minetable.download').css('width','calc(50% - 10px)');
     } else {
         $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(900) + 'px'));
+        $('.record .bettingRecord').css('width',(String(880) + 'px'));
         $('.sportbar').css('width',(String(870) + 'px'));
         $('.linkBox').css('width',(String(840) + 'px'));
         $('.minetable.bettingLimit,.minetable.download').css('width',(String(445) + 'px'));
@@ -1104,16 +1107,19 @@ $(function(){
 
         if(wWD >= 1450){
             $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(1150) + 'px'));
+            $('.record .bettingRecord').css('width',(String(1130) + 'px'));
             $('.sportbar').css('width',(String(1120) + 'px'));
             $('.linkBox').css('width',(String(1080) + 'px'));
             $('.minetable.bettingLimit,.minetable.download').css('width',(String(570) + 'px'));
         } else if(wWD < 1450 && wWD > 1200) {
             $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(wWD - 300) + 'px'));
+            $('.record .bettingRecord').css('width',(String(wWD - 320) + 'px'));
             $('.sportbar').css('width',(String(wWD - 330) + 'px'));
             $('.linkBox').css('width',(String(wWD - 370) + 'px'));
             $('.minetable.bettingLimit,.minetable.download').css('width','calc(50% - 10px)');
         } else {
             $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(900) + 'px'));
+            $('.record .bettingRecord').css('width',(String(880) + 'px'));
             $('.sportbar').css('width',(String(870) + 'px'));
             $('.linkBox').css('width',(String(840) + 'px'));
             $('.minetable.bettingLimit,.minetable.download').css('width',(String(445) + 'px'));

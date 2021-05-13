@@ -44,7 +44,7 @@
         background: #c1c1c1;
         border-radius: 3px;
         margin: 0px 0px 15px 10px;
-        border: 1px solid #989dbc;
+        border: 1px solid #828282;
         box-sizing: border-box;
         position: relative;
         z-index: 1;
@@ -95,14 +95,15 @@
         display: none;
         width: 1150px;
         height: auto;
-        margin: -20px 0px 15px 10px;
+        margin: 0px 0px 15px 10px;
         border: 1px solid #b7906e;
         border-top: none;
-        background: #777777;
+        background: #b59273;
         padding-top: 20px;
         border-radius: 0px 0px 3px 3px;
         box-sizing: border-box;
         overflow: hidden;
+        transform: translateY(-20px);
 
         &.display {
             display: block;

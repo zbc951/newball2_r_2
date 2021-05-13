@@ -48,6 +48,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-family: "my_font";
 }
 
 button {
@@ -75,10 +76,6 @@ html {
 
 a:link {
   text-decoration: none;
-}
-
-table {
-  font-family: "微軟正黑體";
 }
 
 header {
@@ -3421,6 +3418,7 @@ main .bg {
   border-right: solid 1px #ababab;
   padding: 10px;
   color: #fff;
+  font-size: 14px;
 }
 .minetable.dealRecord tr td:nth-of-type(1) {
   width: 18%;
@@ -3473,7 +3471,10 @@ main .bg {
   border-bottom: solid 1px #ababab;
 }
 .minetable.bettingRecord tr.totalInfo {
-  background: #a43e4a;
+  background: #404b87;
+}
+.minetable.bettingRecord tr th {
+  border-bottom: solid 1px #929292;
 }
 .minetable.bettingRecord tr th p {
   float: left;
@@ -3514,18 +3515,14 @@ main .bg {
 .minetable.bettingRecord tr td:last-child {
   border: none;
 }
-.minetable.bettingRecord tr td.gray {
-  background: #c7c7c7;
-  color: #4d4d4d;
-}
 .minetable.bettingRecord tr td.yellow {
-  color: #fff700;
+  color: #ff9000;
 }
 .minetable.bettingRecord tr td.highSeparate {
   line-height: 20px;
 }
 .minetable.bettingRecord tr td .teamName {
-  color: #ff9000;
+  color: #ffffff;
 }
 .minetable.bettingRecord tr td .separate {
   display: inline-block;
@@ -3533,7 +3530,7 @@ main .bg {
   transform: translateY(-1px);
 }
 .minetable.bettingRecord tr td .odd {
-  color: #ff0000;
+  color: #ff9000;
 }
 .minetable.bettingRecord tr td .vs {
   color: #b4cbec;
@@ -3542,8 +3539,8 @@ main .bg {
 }
 .minetable.totalInfo {
   width: 1070px;
-  margin: 0px auto 10px;
-  background: #dfb187;
+  margin: 0px auto;
+  background: #f3b378;
 }
 .minetable.totalInfo tr td {
   padding: 10px 0px;
@@ -7312,7 +7309,7 @@ main .bg {
   background: #c1c1c1;
   border-radius: 3px;
   margin: 0px 0px 15px 10px;
-  border: 1px solid #989dbc;
+  border: 1px solid #828282;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -7357,14 +7354,15 @@ main .bg {
   display: none;
   width: 1150px;
   height: auto;
-  margin: -20px 0px 15px 10px;
+  margin: 0px 0px 15px 10px;
   border: 1px solid #b7906e;
   border-top: none;
-  background: #777777;
+  background: #b59273;
   padding-top: 20px;
   border-radius: 0px 0px 3px 3px;
   box-sizing: border-box;
   overflow: hidden;
+  transform: translateY(-20px);
 }
 .myself .recordbox.display {
   display: block;
