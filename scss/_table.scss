@@ -3440,6 +3440,10 @@
 				&:hover,&:active,&.active {
 					background: #dadada;
 					color: #333333;
+
+					span {
+						color: #333;
+					}
 				}
 
 				&.title {

@@ -465,11 +465,11 @@ main .bg {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color: #000;
+  color: #4556b1;
   padding-top: 10px;
 }
 .left.mine .minewindow .threebut a:hover, .left.mine .minewindow .threebut a:active, .left.mine .minewindow .threebut a.active {
-  background: #3654ff;
+  background: #4556b1;
   color: #fff;
 }
 .left.mine .minewindow .threebut a:hover span, .left.mine .minewindow .threebut a:active span, .left.mine .minewindow .threebut a.active span {
@@ -2681,6 +2681,9 @@ main .bg {
 .innerBoard tr td button:hover, .innerBoard tr td button:active, .innerBoard tr td button.active {
   background: #dadada;
   color: #333333;
+}
+.innerBoard tr td button:hover span, .innerBoard tr td button:active span, .innerBoard tr td button.active span {
+  color: #333;
 }
 .innerBoard tr td button.title {
   background: transparent;
@@ -5074,7 +5077,7 @@ main .bg {
   height: 46px;
   line-height: 50px;
   border-bottom: solid 3px transparent;
-  color: #ababab;
+  color: #fff;
   cursor: pointer;
 }
 .topfix .teach li:first-child {
