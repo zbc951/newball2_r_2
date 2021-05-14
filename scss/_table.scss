@@ -92,6 +92,10 @@
 				&:hover,&:active,&.active {
 					background: #fff;
 					color: #000;
+
+					span {
+						color: #000;
+					}
 				}
 
 				&::before {
@@ -242,6 +246,15 @@
 					width: 100px;
 					height: 50px;
 
+					&:hover,&:active,&.active {
+						background: #fff;
+						color: #000;
+	
+						span {
+							color: #000;
+						}
+					}
+
 					//註解
 					span {
 						display: block;
@@ -273,6 +286,15 @@
 
 					&:last-child {
 						margin-bottom: 0px;
+					}
+
+					&:hover,&:active,&.active {
+						background: #fff;
+						color: #000;
+	
+						span {
+							color: #000;
+						}
 					}
 
 					//三按鈕
@@ -4572,30 +4594,103 @@
 		display: none;
 		margin-top: 122px;
 		width: 1150px;
+		background: #565656;
 
 		&.display {
 			display: table;
 		}
 
 		tr {
-			border-bottom: solid 1px #ababab;
+
+			&:nth-of-type(2) {
+				
+				td {
+					padding-top: 35px;
+				}
+			}
+
+			&:last-child {
+
+				td {
+					padding-bottom: 35px;
+				}
+			}
 
 			&:nth-of-type(2n) {
-				background: #575757;
+				background: #585858;
+			}
+
+			th {
+				background: #bcbcbc;
+				color: #333;
+
+				&.tLeft {
+					padding: 8px 16px 7px;
+				}
 			}
 
 			td {
 				text-align: left;
-				padding: 10px;
+				padding: 10px 35px;
 				color: #fff;
 				line-height: 24px;
-				font-size: 12px;
+				font-size: 14px;
 
 				span {
 
 					&.remind {
 						color: #fc3838;
 						padding: 0px 3px;
+					}
+				}
+
+				button {
+					width: 10%;
+					height: auto;
+					padding: 8px 10px;
+					background: transparent;
+					border: solid 1px #ababab;
+					border-radius: 3px;
+					margin: 0px 8px 10px 0px;
+					color: #ababab;
+
+					&:hover,&:active,&.active {
+						background: #cecece;
+						color: #000;
+					}
+				}
+
+				p {
+					padding: 8px 0px;
+				}
+
+				.conversionBoard {
+					margin: 2% auto;
+					
+					tr {
+						
+						&:nth-of-type(1),&:last-child {
+							
+							td {
+								padding: 0px;
+							}
+						}
+				
+						td {
+							vertical-align: middle;
+							border: solid 1px #898989;
+							height: 45px;
+							width: 7%;
+							font-size: 13px;
+							line-height: 15px;
+							color: #ababab;
+							text-align: center;
+				
+							&.title {
+								width: 9%;
+								background: #535353;
+							}
+						}
 					}
 				}
 			}

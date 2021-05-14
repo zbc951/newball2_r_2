@@ -549,7 +549,7 @@
             height: 46px;
             line-height: 50px;
             border-bottom: solid 3px transparent;
-            color: #1e2129;
+            color: #ababab;
             cursor: pointer;
 
             &:first-child {
@@ -658,10 +658,11 @@
             p {
                 position: relative;
                 padding: 6px 0px;
+                font-size: 13px;
 
                 .cube {
                     left: -20px;
-                    top: 6px;
+                    top: 5px;
                 }
             }
         }

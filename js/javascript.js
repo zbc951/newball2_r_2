@@ -596,11 +596,6 @@ $(function(){
         $('.sportbar').removeClass('display');
         $('.betP').siblings().removeClass('display');
     })
-    $('.help5').click(function(){
-        $('.sportP,.sportbar').addClass('display');
-        $('.mineHideBoard').addClass('sportBoard');
-        $('.sportP').siblings().removeClass('display');
-    })
     $('.help6').click(function(){
         $('.skillP').addClass('display');
         $('.mineHideBoard').removeClass('sportBoard');
@@ -870,11 +865,15 @@ $(document).ready(function () {
     $('.myself').css("height", (String(wH - 110) + "px"));
     //聯繫我們-線上客服
     $('.onlineCilent').css("height", (String(wH - 250) + "px"));
+    //幫助中心-體育規則
+    $('.ruleBox').css("height", (String(wH - 427) + "px"));
     $(window).resize(function () {
         var wH = window.innerHeight;
         $('.myself').css("height", (String(wH - 110) + "px"));
         //聯繫我們-線上客服
         $('.onlineCilent').css("height", (String(wH - 250) + "px"));
+        //幫助中心-體育規則
+        $('.ruleBox').css("height", (String(wH - 427) + "px"));
     });
 });
 
@@ -1004,19 +1003,19 @@ $(function(){
     }
 
     if(wWD >= 1450){
-        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(1150) + 'px'));
+        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(1150) + 'px'));
         $('.record .bettingRecord').css('width',(String(1130) + 'px'));
         $('.sportbar').css('width',(String(1120) + 'px'));
         $('.linkBox').css('width',(String(1080) + 'px'));
         $('.minetable.bettingLimit,.minetable.download').css('width',(String(570) + 'px'));
     } else if(wWD < 1450 && wWD > 1200) {
-        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(wWD - 300) + 'px'));
+        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(wWD - 300) + 'px'));
         $('.record .bettingRecord').css('width',(String(wWD - 320) + 'px'));
         $('.sportbar').css('width',(String(wWD - 330) + 'px'));
         $('.linkBox').css('width',(String(wWD - 370) + 'px'));
         $('.minetable.bettingLimit,.minetable.download').css('width','calc(50% - 10px)');
     } else {
-        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(900) + 'px'));
+        $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(900) + 'px'));
         $('.record .bettingRecord').css('width',(String(880) + 'px'));
         $('.sportbar').css('width',(String(870) + 'px'));
         $('.linkBox').css('width',(String(840) + 'px'));
@@ -1106,19 +1105,19 @@ $(function(){
         }
 
         if(wWD >= 1450){
-            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(1150) + 'px'));
+            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(1150) + 'px'));
             $('.record .bettingRecord').css('width',(String(1130) + 'px'));
             $('.sportbar').css('width',(String(1120) + 'px'));
             $('.linkBox').css('width',(String(1080) + 'px'));
             $('.minetable.bettingLimit,.minetable.download').css('width',(String(570) + 'px'));
         } else if(wWD < 1450 && wWD > 1200) {
-            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(wWD - 300) + 'px'));
+            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(wWD - 300) + 'px'));
             $('.record .bettingRecord').css('width',(String(wWD - 320) + 'px'));
             $('.sportbar').css('width',(String(wWD - 330) + 'px'));
             $('.linkBox').css('width',(String(wWD - 370) + 'px'));
             $('.minetable.bettingLimit,.minetable.download').css('width','calc(50% - 10px)');
         } else {
-            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent').css('width',(String(900) + 'px'));
+            $('.minetopfix,.minetable,.mineHideBoard,.recordbar,.recordbox,.helpbar,.helpbox,.onlineCilent,.ruleBox,.ruleTitle').css('width',(String(900) + 'px'));
             $('.record .bettingRecord').css('width',(String(880) + 'px'));
             $('.sportbar').css('width',(String(870) + 'px'));
             $('.linkBox').css('width',(String(840) + 'px'));
@@ -1132,4 +1131,18 @@ $(function(){
             $('.chleague').css('width',(String(870) + 'px'));
         }
     })
+})
+
+function isMobile() {
+
+    try{ document.createEvent("TouchEvent"); return true; }
+  
+    catch(e){ return false;}
+}
+
+$(function(){
+    if(isMobile()){
+        $('.left,.middle,.right,.myself').css('height',(String(880) + 'px'));
+        $('header.mine').css('width',(String(1480) + 'px'));
+    }
 })

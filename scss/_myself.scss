@@ -452,6 +452,175 @@
         }
     }
 
+    //幫助中心
+    .ruleBox {
+        display: none;
+        width: 1150px;
+        height: 590px;
+        margin: 0px 0px 0px 10px;
+        border-radius: 0px 0px 3px 3px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+        position: relative;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background: #b9becf;
+            border-radius: 10px;
+        }
+
+        &.display {
+            display: block;
+        }
+
+        ol {
+            padding: 35px 0px;
+            background: #505050;
+
+            &.innRule {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+            }
+
+            li {
+                text-align: left;
+                padding: 10px 35px;
+                line-height: 24px;
+                font-size: 14px;
+                color: #d4d4d4;
+
+                &.smallTitle {
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    span {
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        background: #fff;
+                        margin: 0px 5px 2px;
+                    }
+                }
+    
+                .remind {
+                    font-size: 16px;
+                    color: #ffa600;
+                    padding: 0px 5px;
+                }
+    
+                .conversionBoard {
+                    margin: 1% auto;
+                }
+
+                .tableBox {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 3px;
+                    border: solid 1px #ababab;
+                    box-sizing: border-box;
+                    overflow-y: hidden;
+                    overflow-x: auto;
+
+                    &::-webkit-scrollbar {
+                        height: 8px;
+                        background-color: transparent;
+                    }
+                
+                    &::-webkit-scrollbar-track {
+                        background: #f1f1f1;
+                        border-radius: 10px;
+                    }
+                
+                    &::-webkit-scrollbar-thumb {
+                        background: #b9becf;
+                        border-radius: 10px;
+                    }
+
+                    table {
+                        width: 1200px;
+                        height: auto;
+                        user-select: none;
+                        
+                        tr {
+                            text-align: center;
+                            border-bottom: solid 1px #ababab;
+
+                            th {
+
+                                font-size: 14px;
+                                background: #3a3a3a;
+                                padding: 3px 0px;
+                                border-right: solid 1px #828282;
+
+                                &:last-child {
+                                    border: none;
+                                }
+
+                                &.title {
+                                    background: #ababab;
+                                    color: #4d4d4d;
+                                    padding: 6px 0px;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            td {
+                                padding: 5px 0px;
+                                vertical-align: middle;
+                                border-right: solid 1px #828282;
+
+                                &:last-child {
+                                    border: none;
+                                }
+
+                                span {
+                                    color: #ffa600;
+                                    font-size: 13px;
+                                    padding: 0px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ruleTitle {
+        display: none;
+        width: 1150px;
+        height: auto;
+        background: #ababab;
+        margin: 125px 0px 0px 10px;
+        border-radius: 3px 3px 0px 0px;
+
+        &.display {
+            display: block;
+        }
+
+        p {
+            padding: 10px 16px;
+            text-align: left;
+            color: #4d4d4d;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
     //關於我們
     .aboutBox,.linkBox {
         display: none;
@@ -940,7 +1109,7 @@
     display: none;
     width: 1120px;
     height: auto;
-    background: #bcbcbc;
+    background: #505050;
     padding: 15px 15px 0px 15px;
     position: absolute;
     top: 140px;

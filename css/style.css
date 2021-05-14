@@ -1032,6 +1032,9 @@ main .bg {
   background: #fff;
   color: #000;
 }
+.playBoard tr td button:hover span, .playBoard tr td button:active span, .playBoard tr td button.active span {
+  color: #000;
+}
 .playBoard tr td button::before {
   display: none;
   content: "";
@@ -1137,6 +1140,13 @@ main .bg {
   width: 100px;
   height: 50px;
 }
+.playBoard.newP tr td button:hover, .playBoard.newP tr td button:active, .playBoard.newP tr td button.active {
+  background: #fff;
+  color: #000;
+}
+.playBoard.newP tr td button:hover span, .playBoard.newP tr td button:active span, .playBoard.newP tr td button.active span {
+  color: #000;
+}
 .playBoard.newP tr td button span {
   display: block;
   color: #d4d4d4;
@@ -1154,6 +1164,13 @@ main .bg {
 }
 .playBoard.oldP tr td button:last-child {
   margin-bottom: 0px;
+}
+.playBoard.oldP tr td button:hover, .playBoard.oldP tr td button:active, .playBoard.oldP tr td button.active {
+  background: #fff;
+  color: #000;
+}
+.playBoard.oldP tr td button:hover span, .playBoard.oldP tr td button:active span, .playBoard.oldP tr td button.active span {
+  color: #000;
 }
 .playBoard.oldP tr td button.third {
   height: 25px;
@@ -3569,26 +3586,74 @@ main .bg {
   display: none;
   margin-top: 122px;
   width: 1150px;
+  background: #565656;
 }
 .minetable.sportRule.display {
   display: table;
 }
-.minetable.sportRule tr {
-  border-bottom: solid 1px #ababab;
+.minetable.sportRule tr:nth-of-type(2) td {
+  padding-top: 35px;
+}
+.minetable.sportRule tr:last-child td {
+  padding-bottom: 35px;
 }
 .minetable.sportRule tr:nth-of-type(2n) {
-  background: #575757;
+  background: #585858;
+}
+.minetable.sportRule tr th {
+  background: #bcbcbc;
+  color: #333;
+}
+.minetable.sportRule tr th.tLeft {
+  padding: 8px 16px 7px;
 }
 .minetable.sportRule tr td {
   text-align: left;
-  padding: 10px;
+  padding: 10px 35px;
   color: #fff;
   line-height: 24px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .minetable.sportRule tr td span.remind {
   color: #fc3838;
   padding: 0px 3px;
+}
+.minetable.sportRule tr td button {
+  width: 10%;
+  height: auto;
+  padding: 8px 10px;
+  background: transparent;
+  border: solid 1px #ababab;
+  border-radius: 3px;
+  margin: 0px 8px 10px 0px;
+  color: #ababab;
+}
+.minetable.sportRule tr td button:hover, .minetable.sportRule tr td button:active, .minetable.sportRule tr td button.active {
+  background: #cecece;
+  color: #000;
+}
+.minetable.sportRule tr td p {
+  padding: 8px 0px;
+}
+.minetable.sportRule tr td .conversionBoard {
+  margin: 2% auto;
+}
+.minetable.sportRule tr td .conversionBoard tr:nth-of-type(1) td, .minetable.sportRule tr td .conversionBoard tr:last-child td {
+  padding: 0px;
+}
+.minetable.sportRule tr td .conversionBoard tr td {
+  vertical-align: middle;
+  border: solid 1px #898989;
+  height: 45px;
+  width: 7%;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ababab;
+  text-align: center;
+}
+.minetable.sportRule tr td .conversionBoard tr td.title {
+  width: 9%;
+  background: #535353;
 }
 .minetable.callus {
   width: 1150px;
@@ -5009,7 +5074,7 @@ main .bg {
   height: 46px;
   line-height: 50px;
   border-bottom: solid 3px transparent;
-  color: #1e2129;
+  color: #ababab;
   cursor: pointer;
 }
 .topfix .teach li:first-child {
@@ -5097,10 +5162,11 @@ main .bg {
 .chleague ul li p {
   position: relative;
   padding: 6px 0px;
+  font-size: 13px;
 }
 .chleague ul li p .cube {
   left: -20px;
-  top: 6px;
+  top: 5px;
 }
 .chleague button {
   width: 160px;
@@ -7657,6 +7723,147 @@ main .bg {
 .myself .onlineCilent .onlineroom .send:hover, .myself .onlineCilent .onlineroom .send:active, .myself .onlineCilent .onlineroom .send.active {
   background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
 }
+.myself .ruleBox {
+  display: none;
+  width: 1150px;
+  height: 590px;
+  margin: 0px 0px 0px 10px;
+  border-radius: 0px 0px 3px 3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.myself .ruleBox::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.myself .ruleBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.myself .ruleBox::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.myself .ruleBox.display {
+  display: block;
+}
+.myself .ruleBox ol {
+  padding: 35px 0px;
+  background: #505050;
+}
+.myself .ruleBox ol.innRule {
+  display: none;
+}
+.myself .ruleBox ol.innRule.display {
+  display: block;
+}
+.myself .ruleBox ol li {
+  text-align: left;
+  padding: 10px 35px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+.myself .ruleBox ol li.smallTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+.myself .ruleBox ol li.smallTitle span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0px 5px 2px;
+}
+.myself .ruleBox ol li .remind {
+  font-size: 16px;
+  color: #ffa600;
+  padding: 0px 5px;
+}
+.myself .ruleBox ol li .conversionBoard {
+  margin: 1% auto;
+}
+.myself .ruleBox ol li .tableBox {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  border: solid 1px #ababab;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.myself .ruleBox ol li .tableBox::-webkit-scrollbar {
+  height: 8px;
+  background-color: transparent;
+}
+.myself .ruleBox ol li .tableBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.myself .ruleBox ol li .tableBox::-webkit-scrollbar-thumb {
+  background: #b9becf;
+  border-radius: 10px;
+}
+.myself .ruleBox ol li .tableBox table {
+  width: 1200px;
+  height: auto;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.myself .ruleBox ol li .tableBox table tr {
+  text-align: center;
+  border-bottom: solid 1px #ababab;
+}
+.myself .ruleBox ol li .tableBox table tr th {
+  font-size: 14px;
+  background: #3a3a3a;
+  padding: 3px 0px;
+  border-right: solid 1px #828282;
+}
+.myself .ruleBox ol li .tableBox table tr th:last-child {
+  border: none;
+}
+.myself .ruleBox ol li .tableBox table tr th.title {
+  background: #ababab;
+  color: #4d4d4d;
+  padding: 6px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.myself .ruleBox ol li .tableBox table tr td {
+  padding: 5px 0px;
+  vertical-align: middle;
+  border-right: solid 1px #828282;
+}
+.myself .ruleBox ol li .tableBox table tr td:last-child {
+  border: none;
+}
+.myself .ruleBox ol li .tableBox table tr td span {
+  color: #ffa600;
+  font-size: 13px;
+  padding: 0px 10px;
+}
+.myself .ruleTitle {
+  display: none;
+  width: 1150px;
+  height: auto;
+  background: #ababab;
+  margin: 125px 0px 0px 10px;
+  border-radius: 3px 3px 0px 0px;
+}
+.myself .ruleTitle.display {
+  display: block;
+}
+.myself .ruleTitle p {
+  padding: 10px 16px;
+  text-align: left;
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: bold;
+}
 .myself .aboutBox, .myself .linkBox {
   display: none;
 }
@@ -8049,7 +8256,7 @@ main .bg {
   display: none;
   width: 1120px;
   height: auto;
-  background: #bcbcbc;
+  background: #505050;
   padding: 15px 15px 0px 15px;
   position: absolute;
   top: 140px;
