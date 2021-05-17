@@ -171,14 +171,14 @@
             &:hover {
 
                 a {
-                    background: #8c8c8c;
-                    color: #ffffff;
+                    background: #747474;
+                    color: #fff;
 
-                    svg,.total {
+                    svg{
                         fill: #fff;
                     }
 
-                    i {
+                    i,.total  {
                         color: #fff;
                     }
                 }
@@ -191,14 +191,14 @@
                 }
 
                 a {
-                    background: #8c8c8c;
-                    color: #ffffff;
+                    background: #747474;
+                    color: #fff;
 
-                    svg,.total {
+                    svg {
                         fill: #fff;
                     }
 
-                    i {
+                    i,.total {
                         color: #fff;
                     }
                 }
@@ -264,7 +264,7 @@
                     right: 10px;
                     top: 0px;
                     font-size: 13px;
-                    color: #4d4d4d;
+                    color: #505050;
                 }
 
                 //LIVE小框
@@ -278,8 +278,8 @@
                     transform: translateY(-50%);
                     right: 42px;
                     font-size: 12px;
-                    background: #4d4d4d;
-                    color: #ed880d;
+                    background: #505050;
+                    color: #ff8c00;
                     padding: 0px 4px;
                     border-radius: 3px;
                 }
@@ -289,8 +289,9 @@
                 display: none;
                 width: calc(100% - 30px);
                 height: 30px;
-                background: #676767;
-                border-bottom: solid 1px #8c8c8c;
+                background: #505050;
+                border-bottom: solid 1px #ababab;
+                background: linear-gradient();
                 line-height: 30px;
                 padding-left: 30px;
                 font-size: 12px;
@@ -298,7 +299,7 @@
                 cursor: pointer;
 
                 &:hover,&:active,&.active {
-                    background: #4d4d4d;
+                    background: #3d3d3d;
                 }
 
                 span {

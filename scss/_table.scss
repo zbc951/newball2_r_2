@@ -5,7 +5,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	//內容
     tr {
@@ -69,7 +69,7 @@
 
 			//遊戲種類著名顏色
 			.gameStyle {
-				color: #ff9000;
+				color: #ff8c00;
 			}
 
 			//已進行時間
@@ -79,7 +79,7 @@
 
 			//行內按鈕
 			button {
-				background: #767676;
+				background: #747474;
 				color: #d9de06;
 				border-radius: 3px;
 				position: relative;
@@ -205,13 +205,13 @@
 
 			//已完賽顏色
 			&.overGame {
-				color: #74ca4f;
+				color: #4dff00;
 			}
 
 			span {
 
 				&.overGame {
-					color: #74ca4f;
+					color: #4dff00;
 				}
 			}
 
@@ -811,11 +811,11 @@
 						padding: 8px 26px;
 					}
 
-					&:nth-of-type(5),&:nth-of-type(6) {
-						width: 19%;
+					&:nth-of-type(5) {
+						width: 34%;
 					}
 
-					&:nth-of-type(20) {
+					&:nth-of-type(19) {
 						width: 8%;
 					}
 				}
@@ -863,7 +863,7 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(20) {
+				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(19) {
 					width: 6%;
 				}
 
@@ -876,15 +876,15 @@
 					padding: 8px 22px;
 				}
 
-				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 21%;
+				&:nth-of-type(5) {
+					width: 42%;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9),
-				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
-				&:nth-of-type(13),&:nth-of-type(14),&:nth-of-type(15),
-				&:nth-of-type(16),&:nth-of-type(17),&:nth-of-type(18),
-				&:nth-of-type(19) {
+				&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),
+				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
+				&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(14),
+				&:nth-of-type(15),&:nth-of-type(16),&:nth-of-type(17),
+				&:nth-of-type(18) {
 					width: 2%;
 				}
 			}
@@ -3226,13 +3226,13 @@
 	width: 100%;
 	height: auto;
 	border-collapse: collapse;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 
 		th {
 			padding: 7px 15px;
-			color: #ffffff;
+			color: #fff
 			font-size: 13px;
 			border-bottom: solid 1px #ababab;
 			text-align: left;
@@ -3370,7 +3370,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 187px 0px 20px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 
@@ -3385,7 +3385,7 @@
 			border-bottom: solid 1px #808080;
 			font-size: 14px;
 			text-align: left;
-			background: #4d4d4d;
+			background: #505050;
 		}
 
 		td {
@@ -3432,7 +3432,7 @@
 				border: none;
 				height: auto;
 				padding: 8px;
-				background: #767676;
+				background: #747474;
 				font-size: 14px;
 				color: #d9de06;
 				margin-bottom: 8px;
@@ -3469,7 +3469,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	//內容
     tr {
@@ -3575,7 +3575,7 @@
 					bottom: -24px;
 					border: solid 1px #828282;
 					border-radius: 30px;
-					background: #4d4d4d;
+					background: #505050;
 				}
 			}
 
@@ -3695,7 +3695,7 @@
     border-collapse: collapse;
 	border-radius: 3px;
 	margin: 0px 0px 10px 10px;
-	background: #4d4d4d;
+	background: #505050;
 
 	tr {
 		text-align: center;
@@ -3954,7 +3954,7 @@
 								
 								&:hover,&:active,&.active {
 									background: #fff;
-									color: #4d4d4d;
+									color: #505050;
 								}
 							}
 						}
@@ -4048,7 +4048,7 @@
 									margin: -4px 40px 0px 0px;
 
 									&:hover,&:active,&.active {
-										color: #4d4d4d;
+										color: #505050;
 										background: #fff;
 									}
 								}
@@ -4309,7 +4309,7 @@
 					}
 
 					a {
-						color: #ff9000;
+						color: #ff8c00;
 					}
 				}
 			}
@@ -4358,12 +4358,12 @@
 							padding: 5px 8px;
 							background: transparent;
 							border-radius: 15px;
-							border: solid 1px #4d4d4d;
+							border: solid 1px #505050;
 							position: absolute;
 							right: 10px;
 
 							&:hover,&:active,&.active {
-								background: #4d4d4d;
+								background: #505050;
 								color: #fff;
 							}
 						}
@@ -4525,7 +4525,7 @@
 				}
 
 				&.yellow {
-					color: #ff9000;
+					color: #ff8c00;
 				}
 
 				&.highSeparate {
@@ -4533,7 +4533,7 @@
 				}
 
 				.teamName {
-					color: #ffffff;
+					color: #fff
 				}
 
 				.separate {
@@ -4543,7 +4543,7 @@
 				}
 
 				.odd {
-					color: #ff9000;
+					color: #ff8c00;
 				}
 
 				.vs {
@@ -5284,7 +5284,7 @@
 							color: #fff;
 
 							&:hover,&:active,&.active {
-								color: #4d4d4d;
+								color: #505050;
 								background: #fff;
 							}
 						}
@@ -5337,7 +5337,7 @@
 						top: 19px;
 
 						&:hover,&:active,&.active {
-							color: #4d4d4d;
+							color: #505050;
 							background: #fff;
 						}
 					}
@@ -5588,7 +5588,7 @@
 					&:hover,&:active,&.active {
 						border-color: #ababab;
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 						border-radius: 3px 3px 10px 3px;
 						
 						&::before {
@@ -5778,7 +5778,7 @@
 
 					&:hover,&:active,&.active {
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 
 						span {
 							background-position-y: 100%;
@@ -5830,7 +5830,7 @@
 
 					&:hover,&:active,&.active {
 						background: #fff;
-						color: #4d4d4d;
+						color: #505050;
 					}
 				}
 

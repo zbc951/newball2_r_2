@@ -926,18 +926,21 @@ $(document).ready(function () {
 $(function(){
     var wWD = window.innerWidth;
     if(wWD >= 1920) {
+        $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1 hide2 hide3');
         $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1920 && wWD >= 1840) {
+        $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').removeClass('hide1');
         $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1840 && wWD >= 1700) {
+        $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1');
@@ -945,6 +948,7 @@ $(function(){
         $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wWD < 1700 && wWD >= 1560) {
+        $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
         $('.middle').css('width',(String(wWD - 650) + 'px'));
         $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
         $('.playBoard').addClass('hide1 hide2');
@@ -1030,18 +1034,21 @@ $(function(){
     $(window).resize(function(){
         var wWD = window.innerWidth;
         if(wWD >= 1920) {
+            $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1 hide2 hide3');
             $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1920 && wWD >= 1840) {
+            $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').removeClass('hide1');
             $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1840 && wWD >= 1700) {
+            $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1');
@@ -1049,6 +1056,7 @@ $(function(){
             $('.topfix,.chleague,.minetopfix,.hideboard,.mineHideBoard').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wWD < 1700 && wWD >= 1560) {
+            $('.marqueeBox').css('width',(String(wWD - 600) + 'px'));
             $('.middle').css('width',(String(wWD - 650) + 'px'));
             $('.topfix,.hideboard,.topimg').css('width',(String(wWD - 660) + 'px'));
             $('.playBoard').addClass('hide1 hide2');

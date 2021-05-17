@@ -400,7 +400,7 @@
                     width: 0px;
                     height: 0px;
                     border-style: solid;
-                    border-color: #b1b1b1 transparent;
+                    border-color: #ababab transparent;
                     border-width: 8px 6px 0px 6px;
                     margin-left: 10px;
                 }
@@ -675,13 +675,13 @@
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+        background: linear-gradient(to top, #3449b9 0%, #8694d8 100%);
         background-color: #3247b8;
         color: #fff;
         margin-top: 15px;
 
         &:hover,&:active,&.active {
-            background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+            background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
             background-color: #8e9bdc;
         }
     }
@@ -1266,7 +1266,7 @@
         .bettingend {
             width: 100%;
             height: 140px;
-            background: #4d4d4d;
+            background: #505050;
             padding-top: 15px;
 
             .endbox {
@@ -1438,7 +1438,7 @@
         .bettingend {
             width: 100%;
             height: 90px;
-            background: #4d4d4d;
+            background: #505050;
 
             .endbox {
                 width: 287px;
@@ -1668,7 +1668,7 @@
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #4d4d4d;
+                                color: #505050;
                             }
 
                             .odds {
@@ -1979,7 +1979,7 @@
                             line-height: 20px;
 
                             &.leagueName {
-                                color: #4d4d4d;
+                                color: #505050;
                             }
 
                             .odds {
@@ -2562,7 +2562,7 @@
 
 //投手名稱
 .pitcher {
-    color: #8596ee;
+    color: #ffee00;
     padding-left: 7px;
     font-size: 12px;
 }
@@ -2640,7 +2640,7 @@
         span {
             
             &:nth-of-type(1) {
-                background: #097c25;
+                background: #59a936;
             }
         }
     }
@@ -2650,7 +2650,7 @@
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #097c25;
+                background: #59a936;
             }
         }
     }
@@ -2660,7 +2660,7 @@
         span {
             
             &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
-                background: #097c25;
+                background: #59a936;
             }
         }
     }
@@ -2670,7 +2670,7 @@
         span {
             
             &:nth-of-type(1) {
-                background: #f39800;
+                background: #ff8c00;
             }
         }
     }
@@ -2680,7 +2680,7 @@
         span {
             
             &:nth-of-type(1),&:nth-of-type(2) {
-                background: #f39800;
+                background: #ff8c00;
             }
         }
     }
