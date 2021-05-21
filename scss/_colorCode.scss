@@ -87,6 +87,7 @@
 //.unLogin .topBar button::after;.unLogin .remindBox p;.unLogin .remindBox button;
 //.changePasswordWindow .box div span;.changePasswordWindow .box div button:last-child;
 //.cardremind .box p;.cardremind .box button:last-child;.cardAdd .box button;
+//.bettingCheck .bettingbox .bettingwindow table tr td p.vs;.bettingbar .bettingbox .bettingwindow table tr td p.vs;
 //---------------fixside-------------------
 //.fixside .search .searchbut:hover span;.fixside .fun a:hover span;
 //---------------myself--------------------
@@ -157,7 +158,7 @@ $black002: #000000b6;
 //背景色
 //-webkit-scrollbar-track------------------
 //.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
-//.chleague;.bettingbar .bettingbox .bettingwindow;.bettingCheck .bettingbox .bettingwindow;
+//.chleague;.bettingbar .bettingbox .bettingwindow;
 //.discount;.myself;.myself .onlineCilent .chatwindow;.myself .onlineCilent .onlineroom;
 //.myself .ruleBox ol li .tableBox;
 //---------------main----------------------
@@ -487,6 +488,11 @@ $gray010: #3d3d3d;
 //.controlBox .innerBox1 p;.controlBox .innerBox2;
 $gray011: #2a2a2a;
 
+//背景色
+//-webkit-scrollbar-track------------------
+//.bettingCheck .bettingbox .bettingwindow;
+$gray012: #676767;
+
 //字色
 //---------------header--------------------
 //.top button;.top span;.marqueeBox marquee;
@@ -500,7 +506,7 @@ $perple001: #b4bac8;
 //背景色
 //-webkit-scrollbar-thumb------------------
 //.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
-//.chleague;.bettingbar .bettingbox .bettingwindow;.bettingCheck .bettingbox .bettingwindow;
+//.chleague;.bettingbar .bettingbox .bettingwindow;
 //.discount;.myself;.myself .onlineCilent .chatwindow;.myself .onlineCilent .onlineroom;
 //.myself .ruleBox;.myself .ruleBox ol li .tableBox;
 $perple002: #b9becf;
@@ -616,9 +622,13 @@ $green003: #4dff00;
 //.norbettingCheck .bettingbox .bettingend .endbox p::before;.calculator .calbox .top .inputbox button;
 //字色
 //---------------jumpbox-------------------
-//.norbettingCheck .bettingbox .bettingend .endbox p;.bettingbar .bettingbox .bettingwindow table tr td p.vs;
-//.bettingCheck .bettingbox .bettingwindow table tr td p.vs;.bettingCheck .bettingbox .bettingend .endbox p span.listCode;
+//.norbettingCheck .bettingbox .bettingend .endbox p;
 $green004: #31a8b1;
+
+//背景色
+//-webkit-scrollbar-thumb------------------
+//.bettingCheck .bettingbox .bettingwindow;
+$green005: #60b73a;
 
 //背景色
 //---------------else----------------------
@@ -751,6 +761,11 @@ $blue003: #404b87;
 //.discount .window;.discount .activebox.open;
 $blue004: #8e9bdc;
 
+//字色
+//---------------jumpbox-------------------
+//.bettingCheck .bettingbox .bettingend .endbox p span.listCode;
+$blue005: #0054d2;
+
 //漸層背景色
 //---------------left----------------------
 //.minewindow .avater p span;
@@ -835,11 +850,11 @@ $linear-gradient008_2: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
 
 //漸層背景色
 //---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingend .endbox button.cur;
+$linear-gradient009: linear-gradient(to bottom, #EA1E22 0%, #AB0000 100%);
 //.bettingbar .bettingbox .bettingend .endbox button:active;
 //.bettingbar .bettingbox .bettingend .endbox button.cur:hover;
-$linear-gradient009: llinear-gradient(to top, #ec0004 0%, #ff0000 100%);
-//.bettingbar .bettingbox .bettingend .endbox button.cur;
-$linear-gradient009_2: llinear-gradient(to bottom, #ec0004 0%, #ff0000 100%);
+$linear-gradient009_2: linear-gradient(to top, #C71215 0%, #AB0000 100%);
 
 //漸層背景色
 //---------------jumpbox-------------------

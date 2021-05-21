@@ -270,7 +270,7 @@ header article .logged .selectBox select {
   border: solid 1px #fff;
   border-radius: 3px;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -346,7 +346,7 @@ header article .loggedIn .selectBox select {
   border: solid 1px #fff;
   border-radius: 3px;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -581,13 +581,13 @@ main .bg {
 .left ul li a .live {
   display: none;
   position: absolute;
-  line-height: 18px;
+  line-height: 19px;
   height: auto;
   width: auto;
   top: 49%;
   transform: translateY(-50%);
   right: 42px;
-  font-size: 12px;
+  font-size: 13px;
   background: #505050;
   color: #ff8c00;
   padding: 0px 4px;
@@ -600,9 +600,9 @@ main .bg {
   background: #505050;
   border-bottom: solid 1px #ababab;
   background: linear-gradient();
-  line-height: 30px;
+  line-height: 31px;
   padding-left: 30px;
-  font-size: 12px;
+  font-size: 13px;
   color: #fff;
   cursor: pointer;
 }
@@ -645,8 +645,8 @@ main .bg {
   background: #747474;
   border-bottom: solid 1px #ababab;
   color: #fff;
-  padding: 7px 15px;
-  font-size: 12px;
+  padding: 8px 15px 6px;
+  font-size: 13px;
 }
 .right .statusWindow ul li {
   padding: 7px 15px;
@@ -655,7 +655,7 @@ main .bg {
 }
 .right .statusWindow ul li span {
   float: right;
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 2px;
 }
 .right .statusWindow ul li span.onWait {
@@ -702,8 +702,8 @@ main .bg {
   background: #747474;
   border-bottom: solid 1px #ababab;
   color: #fff;
-  padding: 7px 15px;
-  font-size: 12px;
+  padding: 8px 15px 6px;
+  font-size: 13px;
   text-align: left;
 }
 .right .liveWindow .teamWindow {
@@ -726,7 +726,7 @@ main .bg {
   padding: 5px 5px 5px 0px;
 }
 .right .liveWindow .teamWindow .leftTeam p, .right .liveWindow .teamWindow .rightTeam p {
-  font-size: 12px;
+  font-size: 13px;
   color: #000;
   line-height: 20px;
 }
@@ -744,7 +744,7 @@ main .bg {
 }
 .right .liveWindow .teamWindow .score p span {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 }
 .right .liveWindow .liveShow {
   width: 100%;
@@ -890,7 +890,7 @@ main .bg {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 12px;
+  font-size: 13px;
   color: #3d3d3d;
 }
 .right .room .livelist ul li .innerList p span {
@@ -992,7 +992,7 @@ main .bg {
   margin-right: 10px;
 }
 .playBoard tr td {
-  font-size: 12px;
+  font-size: 13px;
   padding: 8px 0px;
   vertical-align: middle;
   word-break: break-all;
@@ -1148,7 +1148,7 @@ main .bg {
 .playBoard.newP tr td button span {
   display: block;
   color: #cacaca;
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 3px;
 }
 .playBoard.newP tr td button span.fa-lock {
@@ -1177,7 +1177,7 @@ main .bg {
 .playBoard.oldP tr td button span {
   margin-right: 10px;
   color: #cacaca;
-  font-size: 12px;
+  font-size: 13px;
 }
 .playBoard.oldP tr td button span.fa-lock {
   color: #3d3d3d;
@@ -2688,7 +2688,7 @@ main .bg {
   color: #fff;
 }
 .innerBoard tr td button .name {
-  font-size: 12px;
+  font-size: 13px;
   padding-right: 20px;
   color: #fff;
 }
@@ -2710,8 +2710,8 @@ main .bg {
 }
 .teachBoard tr th {
   color: #fff;
-  font-size: 12px;
-  padding: 8px 0px 7px;
+  font-size: 13px;
+  padding: 8px 0px 6px;
   vertical-align: middle;
   background: #3d3d3d;
   border-bottom: solid 1px #ababab;
@@ -2975,7 +2975,7 @@ main .bg {
 .minetable.infor tr td .mainWindow div p span:nth-of-type(2) {
   width: 60%;
   color: #ff8c00;
-  font-size: 12px;
+  font-size: 13px;
 }
 .minetable.infor tr td .mainWindow div p button {
   border: solid 1px #ababab;
@@ -2994,7 +2994,7 @@ main .bg {
   text-align: right;
   padding-bottom: 15px;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
 }
 .minetable.infor tr td .remind a {
   color: #4dff00;
@@ -3010,7 +3010,7 @@ main .bg {
 .minetable.bettingLimit tr td {
   width: 33.3%;
   padding: 10px 0px;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
 }
 .minetable.totalMoney {
@@ -3199,7 +3199,7 @@ main .bg {
   color: #ff8c00;
 }
 .minetable.totalMoney tr td .separateBox.small p.remind {
-  font-size: 12px;
+  font-size: 13px;
   color: #ababab;
   padding-top: 20px;
 }
@@ -3346,13 +3346,13 @@ main .bg {
 }
 .minetable.creditcard tr td .creditcardBtn .box p.race {
   margin-bottom: 7%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .minetable.creditcard tr td .remind {
   float: right;
   color: #fff;
   margin: 0px 20px 20px 0px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.creditcard tr td .remind::before {
@@ -3361,7 +3361,7 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url("../images/infor.png") no-repeat;
-  top: -1px;
+  top: -2px;
   left: -18px;
 }
 .minetable.creditcard tr td .remind a {
@@ -3931,7 +3931,7 @@ main .bg {
   color: #fff;
 }
 .minetable.callus tr td .bigBox p.remind {
-  font-size: 12px;
+  font-size: 13px;
   color: #ababab;
   padding-top: 10px;
 }
@@ -4207,7 +4207,7 @@ main .bg {
 .minetable.withdrawl tr td .inputBox .remind {
   color: #fff;
   margin-left: 30px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.withdrawl tr td .inputBox .remind::before {
@@ -4216,7 +4216,7 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url(../images/infor.png) no-repeat;
-  top: 0px;
+  top: -2px;
   left: -18px;
 }
 .minetable.withdrawl tr td .inputBox button {
@@ -4586,7 +4586,7 @@ main .bg {
   display: inline-block;
   color: #fff;
   margin-left: 30px;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
 }
 .minetable.depositMoney tr td .inputBox .remind::before {
@@ -4595,7 +4595,7 @@ main .bg {
   height: 15px;
   position: absolute;
   background: url(../images/infor.png) no-repeat;
-  top: -1px;
+  top: -2px;
   left: -18px;
 }
 .minetable.depositMoney tr td .depositBtn {
@@ -4811,7 +4811,7 @@ main .bg {
   -webkit-appearance: none;
   padding: 5px 30px 4px 5px;
   border: solid 1px #fff;
-  font-size: 12px;
+  font-size: 13px;
 }
 .topfix .nor .reWeb select option span {
   color: #ffd400;
@@ -4862,7 +4862,7 @@ main .bg {
   height: 100%;
   position: relative;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .topfix .nor .kind::before, .topfix .nor .sort::before, .topfix .nor .chooseLeague::before {
   content: "";
@@ -4873,7 +4873,7 @@ main .bg {
   border-width: 8px 6px 0px 6px;
   border-color: #fff transparent;
   right: 10px;
-  top: 22px;
+  top: 20px;
   pointer-events: none;
 }
 .topfix .nor .kind select, .topfix .nor .sort select, .topfix .nor .chooseLeague select {
@@ -5461,7 +5461,7 @@ main .bg {
   height: 100%;
   line-height: 35px;
   float: left;
-  font-size: 12px;
+  font-size: 13px;
   color: #ababab;
   text-align: center;
   padding: 0px;
@@ -5532,7 +5532,7 @@ main .bg {
 .controlBox .innerBox2 p span {
   color: #ffd400;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 10px;
 }
 .controlBox .cancelBtn {
@@ -5974,11 +5974,11 @@ main .bg {
   background-color: transparent;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #676767;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #60b73a;
   border-radius: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table {
@@ -5992,8 +5992,8 @@ main .bg {
 }
 .bettingbar .bettingbox .bettingwindow table tr th {
   color: #fff;
-  font-size: 12px;
-  padding: 8px 10px 9px;
+  font-size: 13px;
+  padding: 8px 10px 6px;
   background: #3d3d3d;
   position: sticky;
   top: 0px;
@@ -6026,7 +6026,7 @@ main .bg {
 }
 .bettingbar .bettingbox .bettingwindow table tr td p {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.leagueName {
@@ -6036,7 +6036,7 @@ main .bg {
   padding-left: 10px;
 }
 .bettingbar .bettingbox .bettingwindow table tr td p.vs {
-  color: #31a8b1;
+  color: #ffffff;
 }
 .bettingbar .bettingbox .bettingtotal {
   width: 100%;
@@ -6125,16 +6125,16 @@ main .bg {
   background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
 }
 .bettingbar .bettingbox .bettingend .endbox button:active, .bettingbar .bettingbox .bettingend .endbox button.active {
-  background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
+  background: linear-gradient(to top, #C71215 0%, #AB0000 100%);
   color: #fff;
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
   color: #fff;
-  background: linear-gradient(to bottom, #ec0004 0%, #ff0000 100%);
+  background: linear-gradient(to bottom, #EA1E22 0%, #AB0000 100%);
 }
 .bettingbar .bettingbox .bettingend .endbox button.cur:hover, .bettingbar .bettingbox .bettingend .endbox button.cur:active, .bettingbar .bettingbox .bettingend .endbox button.cur.active {
-  background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
+  background: linear-gradient(to top, #C71215 0%, #AB0000 100%);
 }
 .bettingbar .bettingbox.open {
   height: 502px;
@@ -6254,8 +6254,8 @@ main .bg {
 }
 .bettingCheck .bettingbox .bettingwindow table tr th {
   color: #fff;
-  font-size: 12px;
-  padding: 8px 10px 9px;
+  font-size: 13px;
+  padding: 8px 10px 6px;
   background: #3d3d3d;
   position: sticky;
   top: 0px;
@@ -6288,7 +6288,7 @@ main .bg {
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.leagueName {
@@ -6298,7 +6298,7 @@ main .bg {
   padding-left: 10px;
 }
 .bettingCheck .bettingbox .bettingwindow table tr td p.vs {
-  color: #31a8b1;
+  color: #ffffff;
 }
 .bettingCheck .bettingbox .bettingtotal {
   width: 100%;
@@ -6375,7 +6375,7 @@ main .bg {
   padding-left: 5px;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.listCode {
-  color: #31a8b1;
+  color: #0054d2;
 }
 .bettingCheck .bettingbox .bettingend .endbox p span.way {
   color: #ff0000;
@@ -6785,7 +6785,7 @@ main .bg {
 .pitcher {
   color: #ffd400;
   padding-left: 7px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .baseBag {
@@ -6941,7 +6941,7 @@ main .bg {
   background-position-y: 100%;
 }
 .fixside .search .searchbut span {
-  font-size: 12px;
+  font-size: 13px;
 }
 .fixside .search .searchbut .fixsideimg {
   width: 30px;
@@ -7118,7 +7118,7 @@ main .bg {
   background-position-y: -30px;
 }
 .fixside .fun a span {
-  font-size: 12px;
+  font-size: 13px;
   color: #000;
 }
 .fixside .fun a .fixsideimg {

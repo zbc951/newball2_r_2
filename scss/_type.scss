@@ -236,7 +236,7 @@
                 -webkit-appearance:none;
                 padding: 5px 30px 4px 5px;
                 border: solid 1px #fff;
-                font-size: 12px;
+                font-size: 13px;
 
                 option {
 
@@ -299,7 +299,7 @@
             height: 100%;
             position: relative;
             margin-right: 10px;
-            font-size: 12px;
+            font-size: 13px;
 
             &::before {
                 content: "";
@@ -310,7 +310,7 @@
                 border-width: 8px 6px 0px 6px;
                 border-color: #fff transparent;
                 right: 10px;
-                top: 22px;
+                top: 20px;
                 pointer-events: none;
             }
             
@@ -1012,7 +1012,7 @@
                     height: 100%;
                     line-height: 35px;
                     float: left;
-                    font-size: 12px;
+                    font-size: 13px;
                     color: #ababab;
                     text-align: center;
                     padding: 0px;
@@ -1094,7 +1094,7 @@
             span {
                 color: #ffd400;
                 font-weight: normal;
-                font-size: 12px;
+                font-size: 13px;
                 margin-left: 10px;
             }
         }
@@ -1595,12 +1595,12 @@
             }
 
             &::-webkit-scrollbar-track {
-                background: #f1f1f1;
+                background: #676767;
                 border-radius: 10px;
             }
 
             &::-webkit-scrollbar-thumb {
-                background: #b9becf;
+                background: #60b73a;
                 border-radius: 10px;
             }
             
@@ -1615,8 +1615,8 @@
 
                     th {
                         color: #fff;
-                        font-size: 12px;
-                        padding: 8px 10px 9px;
+                        font-size: 13px;
+                        padding: 8px 10px 6px;
                         background: #3d3d3d;
                         position: sticky;
                         top: 0px;
@@ -1656,7 +1656,7 @@
 
                         p {
                             color: #000;
-                            font-size: 12px;
+                            font-size: 13px;
                             line-height: 20px;
 
                             &.leagueName {
@@ -1668,7 +1668,7 @@
                             }
 
                             &.vs {
-                                color: #31a8b1;
+                                color: #ffffff;
                             }
                         }
                     }
@@ -1777,16 +1777,16 @@
                     }
 
                     &:active,&.active {
-                        background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
+                        background: linear-gradient(to top, #C71215 0%, #AB0000 100%);
                         color: #fff;
                     }
 
                     &.cur {
                         width: 176px;
                         color: #fff;
-                        background: linear-gradient(to bottom, #ec0004 0%, #ff0000 100%);
+                        background: linear-gradient(to bottom, #EA1E22 0%, #AB0000 100%);
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
+                            background: linear-gradient(to top, #C71215 0%, #AB0000 100%);
                         }
                     }
                 }
@@ -1923,8 +1923,8 @@
 
                     th {
                         color: #fff;
-                        font-size: 12px;
-                        padding: 8px 10px 9px;
+                        font-size: 13px;
+                        padding: 8px 10px 6px;
                         background: #3d3d3d;
                         position: sticky;
                         top: 0px;
@@ -1964,7 +1964,7 @@
 
                         p {
                             color: #000;
-                            font-size: 12px;
+                            font-size: 13px;
                             line-height: 20px;
 
                             &.leagueName {
@@ -1976,7 +1976,7 @@
                             }
 
                             &.vs {
-                                color: #31a8b1;
+                                color: #ffffff;
                             }
                         }
                     }
@@ -2066,7 +2066,7 @@
                         padding-left: 5px;
 
                         &.listCode {
-                            color: #31a8b1;
+                            color: #0054d2;
                         }
 
                         &.way {
@@ -2551,7 +2551,7 @@
 .pitcher {
     color: #ffd400;
     padding-left: 7px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 //壘包數

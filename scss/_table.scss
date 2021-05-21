@@ -40,7 +40,7 @@
 		  }
 		  
 		td {
-			font-size: 12px;
+			font-size: 13px;
 			padding: 8px 0px;
 			vertical-align: middle;
 			word-break: break-all;
@@ -259,7 +259,7 @@
 					span {
 						display: block;
 						color: #cacaca;
-						font-size: 12px;
+						font-size: 13px;
 						margin-bottom: 3px;
 
 						&.fa-lock {
@@ -307,7 +307,7 @@
 					span {
 						margin-right: 10px;
 						color: #cacaca;
-						font-size: 12px;
+						font-size: 13px;
 
 						&.fa-lock {
 							color: #3d3d3d;
@@ -3451,7 +3451,7 @@
 				}
 
 				.name {
-					font-size: 12px;
+					font-size: 13px;
 					padding-right: 20px;
 					color: #fff;
 				}
@@ -3480,8 +3480,8 @@
 
       	th {
 			color: #fff;
-			font-size: 12px;
-			padding: 8px 0px 7px;
+			font-size: 13px;
+			padding: 8px 0px 6px;
 			vertical-align: middle;
 			background: #3d3d3d;
 			border-bottom: solid 1px #ababab;
@@ -3800,7 +3800,7 @@
 								&:nth-of-type(2) {
 									width: 60%;
 									color: #ff8c00;
-									font-size: 12px;
+									font-size: 13px;
 								}
 							}
 
@@ -3827,7 +3827,7 @@
 					text-align: right;
 					padding-bottom: 15px;
 					color: #fff;
-					font-size: 12px;
+					font-size: 13px;
 
 					a {
 						color: #4dff00;
@@ -3851,7 +3851,7 @@
 			td {
 				width: 33.3%;
 				padding: 10px 0px;
-				font-size: 12px;
+				font-size: 14px;
 				color: #fff;
 			}
 		}
@@ -4082,7 +4082,7 @@
 							color: #ff8c00;
 
 							&.remind {
-								font-size: 12px;
+								font-size: 13px;
 								color: #ababab;
 								padding-top: 20px;
 							}
@@ -4282,7 +4282,7 @@
 
 							&.race {
 								margin-bottom: 7%;
-								font-size: 12px;
+								font-size: 14px;
 							}
 						}
 					}
@@ -4292,7 +4292,7 @@
 					float: right;
 					color: #fff;
 					margin: 0px 20px 20px 0px;
-					font-size: 12px;
+					font-size: 14px;
 					position: relative;
 
 					&::before {
@@ -4301,7 +4301,7 @@
 						height: 15px;
 						position: absolute;
 						background: url('../images/infor.png') no-repeat;
-						top: -1px;
+						top: -2px;
 						left: -18px;
 					}
 
@@ -5042,7 +5042,7 @@
 						color: #fff;
 
 						&.remind {
-							font-size: 12px;
+							font-size: 13px;
 							color: #ababab;
 							padding-top: 10px;
 						}
@@ -5381,7 +5381,7 @@
 					.remind {
 						color: #fff;
 						margin-left: 30px;
-						font-size: 12px;
+						font-size: 14px;
 						position: relative;
 
 						&::before {
@@ -5390,7 +5390,7 @@
 							height: 15px;
 							position: absolute;
 							background: url(../images/infor.png) no-repeat;
-							top: 0px;
+							top: -2px;
 							left: -18px;
 						}
 					}
@@ -5851,7 +5851,7 @@
 						display: inline-block;
 						color: #fff;
 						margin-left: 30px;
-						font-size: 12px;
+						font-size: 14px;
 						position: relative;
 
 						&::before {
@@ -5860,7 +5860,7 @@
 							height: 15px;
 							position: absolute;
 							background: url(../images/infor.png) no-repeat;
-							top: -1px;
+							top: -2px;
 							left: -18px;
 						}
 					}
