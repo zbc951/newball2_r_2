@@ -317,7 +317,7 @@ $(function(){
 $(function(){
     $('.playBoard button').click(function(){
         $('.filter,.norbetting').addClass('display');
-        $(this).addClass('active');
+        $(this).toggleClass('active');
     })
 
     $('.norcancelbtn').click(function(){
