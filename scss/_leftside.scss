@@ -61,7 +61,6 @@
                         width: 40px;
                         height: 17px;
                         background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
-                        background-color: #2e44b6;
                         position: relative;
                         text-align: right;
                         color: #fff;
@@ -123,7 +122,7 @@
             li {
 
                 &:nth-of-type(1),&:nth-of-type(5),&:nth-of-type(9) {
-                    border-bottom: solid 1px #e6e9f3;
+                    border-bottom: solid 1px  #f1f1f1;
 
                     a {
                         border: none;

@@ -88,7 +88,6 @@
 
             &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                background-color: #1a2b84;
 
                 span {
                     color: #fff;
@@ -126,7 +125,7 @@
 
             &::placeholder {
                 font-weight: bold;
-                color: #c7c7c7;
+                color: #cacaca;
                 font-size: 14px;
             }
         }
@@ -134,8 +133,7 @@
         button {
             width: 50px;
             height: 28px;
-            background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-            background-color: #2f45b7;
+            background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);;
             color: #fff;
             float: left;
             border-radius: 5px;
@@ -143,7 +141,7 @@
             margin: 16px 0px 16px 15px;
 
             &:hover,&:active,&.active {
-                background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
+                background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
             }
         }
 
@@ -163,8 +161,7 @@
                 padding-left: 20px;
                 position: relative;
                 font-size: 14px;
-                background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
-                background-color: #e2e6f5;
+                background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
                 cursor: pointer;
 
                 &::before {
@@ -201,7 +198,7 @@
                     height: 50px;
                     line-height: 50px;
                     color: #000;
-                    border-bottom: solid 1px #c8cedf;
+                    border-bottom: solid 1px #4d515d;
                     font-size: 14px;
 
                     &:last-child {
@@ -263,7 +260,6 @@
             cursor: pointer;
             &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                background-color: #1a2b84;
                 span {
                     background: #fff;
                 }
@@ -273,7 +269,7 @@
                 display: block;
                 width: 55%;
                 height: 4px;
-                background: #c0926b;
+                background: #f3b378;
                 margin:0px 0px 0px 7px;
                 border-radius: 5px;
                 &:first-child {
@@ -297,7 +293,6 @@
             }
             &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                background-color: #1a2b84;
                 span {
                     color: #fff;
                 }

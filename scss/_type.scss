@@ -241,7 +241,7 @@
                 option {
 
                     span {
-                        color: #ffee00;
+                        color: #ffd400;
                         font-size: 14px;
                         font-weight: bold;
                     }
@@ -259,7 +259,7 @@
                 line-height: 24px;
                 text-align: center;
                 border-radius: 3px;
-                color: #ffee00;
+                color: #ffd400;
             }
 
             .reBtn {
@@ -391,7 +391,7 @@
                     text-align: center;
 
                     span {
-                        color: #ffee00;
+                        color: #ffd400;
                     }
                 }
 
@@ -423,7 +423,7 @@
                     li {
                         text-align: center;
                         font-size: 14px;
-                        border-bottom: solid 1px #a0a0a0;
+                        border-bottom: solid 1px #ababab;
                         color: #fff;
 
                         &:last-child {
@@ -510,7 +510,7 @@
             top: 50%;
             transform: translateY(-50%);
             padding: 6px 8px 8px 21px;
-            background: #535353;
+            background: #505050;
             color: #fff;
             border: solid 1px #fff;
             border-radius: 3px;
@@ -530,11 +530,11 @@
             }
 
             &:hover,&:active,&.active {
-                color: #535353;
+                color: #505050;
                 background: #fff;
 
                 &::before {
-                    border-color: transparent #535353;
+                    border-color: transparent #505050;
                 }
             }
         }
@@ -671,18 +671,16 @@
     button {
         width: 160px;
         height: 36px;
-        border: 1px solid #495cc5;
+        border: 1px solid #4556b1;
         border-radius: 5px;
         font-size: 16px;
         font-weight: bold;
-        background: linear-gradient(to top, #3449b9 0%, #8694d8 100%);
-        background-color: #3247b8;
+        background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
         color: #fff;
         margin-top: 15px;
 
         &:hover,&:active,&.active {
-            background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
-            background-color: #8e9bdc;
+            background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
         }
     }
 }
@@ -692,7 +690,7 @@
 //黑幕
 .filter {
     display: none;
-    background: rgba(0,0,0,.8);
+    background: #000000b6;
     width: 1920px;
     height: 100%;
     position: absolute;
@@ -727,7 +725,7 @@
         line-height: 42px;
         text-align: center;
         background: #ababab;
-        color: #434343;
+        color: #3d3d3d;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
@@ -736,12 +734,12 @@
     .innerBox {
         width: 94%;
         height: 285px;
-        background: #9b9b9b;
+        background: #ababab;
         border-radius: 3px;
         margin: 3% auto;
 
         p {
-            color: #595959;
+            color: #2a2a2a;
             padding: 12px 14px;
             font-size: 14px;
         }
@@ -760,7 +758,7 @@
         height: 40px;
         border-radius: 40px;
         background: #cacaca;
-        border: solid 3px #676767;
+        border: solid 3px #5e5e5e;
         right: -50px;
         top: -50px;
         box-shadow: 0px 0px 0px 5px #cacaca;
@@ -772,7 +770,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(45deg);
         }
         &::after {
@@ -782,7 +780,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(-45deg);
         }
     }
@@ -880,7 +878,7 @@
                 padding: 3px 0px 3px 10px;
                 float: right;
                 margin: 7px 10px 0px 0px;
-                border: 1px solid #b9bfdc;
+                border: 1px solid #b4bac8;
                 border-radius: 4px;
             }
 
@@ -895,9 +893,7 @@
                 height: 36px;
                 margin-right: 10px;
                 background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-                background-color: #d5d9ef;
-                border: 1px solid #495cc5;
-                color: #4d515d;
+                border: 1px solid #4556b1;
                 border-radius: 5px;
                 font-size: 16px;
                 font-weight: bold;
@@ -907,14 +903,14 @@
                 }
                 &:last-child {
                     margin: 0px;
-                    background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                    background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
                     color: #fff;
                     /*for IE 9*/
                     @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                         color: #4d515d;
                     }
                     &:hover,&:active,&.active {
-                        background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                        background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
                     }
                 }
             }
@@ -941,7 +937,7 @@
         line-height: 42px;
         text-align: center;
         background: #ababab;
-        color: #434343;
+        color: #3d3d3d;
         border-radius: 3px 3px 0px 0px;
         font-size: 14px;
         font-weight: bold;
@@ -951,13 +947,13 @@
         width: 96%;
         height: 90px;
         margin: 2% auto 0px;
-        background: #9b9b9b;
+        background: #ababab;
         border-radius: 3px;
 
         p {
             font-size: 14px;
             padding: 10px 12px;
-            color: #595959;
+            color: #2a2a2a;
         }
 
         .baseline {
@@ -979,7 +975,7 @@
                 margin: 9px 40px 0px 15px;
                 width: 120px;
                 height: 35px;
-                background: #353535;
+                background: #3d3d3d;
                 border-radius: 40px;
                 position: relative;
 
@@ -992,7 +988,7 @@
                     p {
 
                         &:nth-of-type(1) {
-                            color: #353535;
+                            color: #3d3d3d;
                         }
                     }
                 }
@@ -1006,7 +1002,7 @@
                     p {
 
                         &:nth-of-type(2) {
-                            color: #353535;
+                            color: #3d3d3d;
                         }
                     }
                 }
@@ -1055,7 +1051,7 @@
 
             input {
                 text-align: right;
-                background: #535353;
+                background: #505050;
                 border-radius: 3px;
                 width: 67px;
                 height: 30px;
@@ -1070,7 +1066,7 @@
                 }
 
                 &:hover,&:active,&.active {
-                    background: #353535;
+                    background: #3d3d3d;
                     border-color: #fff;
                 }
             }
@@ -1081,22 +1077,22 @@
         width: calc(96% - 15px);
         height: 50px;
         margin: 2% auto 0px;
-        background: #9b9b9b;
+        background: #ababab;
         border-radius: 3px;
         line-height: 50px;
-        color: #595959;
+        color: #2a2a2a;
         padding-left: 15px;
         font-size: 14px;
 
         p {
             display: inline-block;
-            color: #434343;
+            color: #3d3d3d;
             margin: 0px 35px;
             font-size: 15px;
             font-weight: bold;
 
             span {
-                color: #923e4c;
+                color: #ffd400;
                 font-weight: normal;
                 font-size: 12px;
                 margin-left: 10px;
@@ -1110,7 +1106,7 @@
         height: 40px;
         border-radius: 40px;
         background: #cacaca;
-        border: solid 3px #676767;
+        border: solid 3px #5e5e5e;
         right: -50px;
         top: -50px;
         box-shadow: 0px 0px 0px 5px #cacaca;
@@ -1122,7 +1118,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(45deg);
         }
         &::after {
@@ -1132,7 +1128,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(-45deg);
         }
     }
@@ -1147,9 +1143,8 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
-    background-color: #cbd0e9;
-    border: 1px solid #b2afcf;
+    background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+    border: 1px solid #b4bac8;
     border-radius: 5px;
     overflow: hidden;
     position: absolute;
@@ -1158,8 +1153,7 @@
     &.active {
         width: 12px;
         height: 12px;
-        background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
-        background-color: #3449b9;
+        background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
         position: absolute;
         
         &::before {
@@ -1285,7 +1279,7 @@
                     padding-left: 5px;
 
                     &::placeholder {
-                        color: #c7c7c7;
+                        color: #cacaca;
                         font-size: 14px;
                     }
 
@@ -1315,22 +1309,20 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #495cc5;
+                    border: solid 1px #4556b1;
                     border-radius: 5px;
                     font-size: 17px;
                     color: #4d515d;
                     font-weight: bold;
                     line-height: 35px;
                     background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
-                    background-color:#d5d9ef;
 
                     &:hover {
                         background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
                     }
 
                     &:active,&.active {
-                        background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
-                        background-color: #2e44b7;
+                        background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
                         color: #fff;
                     }
 
@@ -1338,9 +1330,8 @@
                         width: 176px;
                         color: #fff;
                         background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
-                        background-color: #2e44b7;
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+                            background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
                         }
                     }
                 }
@@ -1449,13 +1440,13 @@
                 color: #fff;
 
                 &:last-child {
-                    border-left: solid 1px #c7c7c7;
+                    border-left: solid 1px #cacaca;
                 }
 
                 p {
                     margin: 0px 0px 0px 40px;
                     line-height: 48px;
-                    color: #556de7;
+                    color: #31a8b1;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -1463,7 +1454,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #354ecf;
+                        background: #31a8b1;
                         border-radius: 12px;
                         left: -25px;
                         top: 14px;
@@ -1539,7 +1530,7 @@
         margin: 13px 0px 0px 40px;
         line-height: 28px;
         font-size: 17px;
-        color: #850004;
+        color: #ff0000;
         position: relative;
         text-align: center;
 
@@ -1649,13 +1640,13 @@
                         }
 
                         &.tLeft {
-                            border-left: solid 1px #8a8a8a;
+                            border-left: solid 1px #8f8f8f;
                             text-align: left;
                             padding: 2px 8px;
                         }
 
                         .pitcher {
-                            color: #233698;
+                            color: #ffd400;
                         }
 
                         .odds {
@@ -1676,7 +1667,7 @@
                             }
 
                             &.vs {
-                                color: #354ecf;
+                                color: #31a8b1;
                             }
                         }
                     }
@@ -1694,7 +1685,7 @@
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #c7c7c7;
+                border-right: solid 1px #cacaca;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -1716,7 +1707,7 @@
         .bettingend {
             width: 100%;
             height: 197px;
-            background: #cccccc;
+            background: #cacaca;
 
             p {
                 width: 100%;
@@ -1742,7 +1733,7 @@
 
                     &::placeholder {
                         font-weight: bold;
-                        color: #c7c7c7;
+                        color: #cacaca;
                         font-size: 15px;
                     }
 
@@ -1772,32 +1763,29 @@
                     height: 35px;
                     float: left;
                     margin: 0px 3px 10px 3px;
-                    border: solid 1px #eb0004;
+                    border: solid 1px #ff0000;
                     border-radius: 5px;
                     font-size: 17px;
                     color: #4d515d;
                     font-weight: bold;
                     line-height: 35px;
                     background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
-                    background-color: #efd5d5;
 
                     &:hover {
                         background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
                     }
 
                     &:active,&.active {
-                        background: linear-gradient(to top, #ec0004 0%, #850004 100%);
-                        background-color: #850004;
+                        background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
                         color: #fff;
                     }
 
                     &.cur {
                         width: 176px;
                         color: #fff;
-                        background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
-                        background-color: #850004;
+                        background: linear-gradient(to bottom, #ec0004 0%, #ff0000 100%);
                         &:hover,&:active,&.active {
-                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            background: linear-gradient(to top, #ec0004 0%, #ff0000 100%);
                         }
                     }
                 }
@@ -1833,7 +1821,7 @@
         margin: 13px 0px 0px 15px;
         line-height: 28px;
         font-size: 17px;
-        color: #850004;
+        color: #ff0000;
         position: relative;
         text-align: center;
 
@@ -1860,7 +1848,7 @@
         height: 40px;
         border-radius: 40px;
         background: #cacaca;
-        border: solid 3px #676767;
+        border: solid 3px #5e5e5e;
         right: -50px;
         top: -50px;
         box-shadow: 0px 0px 0px 5px #cacaca;
@@ -1872,7 +1860,7 @@
             height: 18px;
             right: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(45deg);
         }
 
@@ -1883,7 +1871,7 @@
             height: 18px;
             left: 16px;
             top: 8px;
-            background: #676767;
+            background: #5e5e5e;
             transform: rotate(-45deg);
         }
     }
@@ -1960,13 +1948,13 @@
                         }
 
                         &.tLeft {
-                            border-left: solid 1px #8a8a8a;
+                            border-left: solid 1px #8f8f8f;
                             text-align: left;
                             padding: 2px 8px;
                         }
 
                         .pitcher {
-                            color: #233698;
+                            color: #ffd400;
                         }
 
                         .odds {
@@ -1987,7 +1975,7 @@
                             }
 
                             &.vs {
-                                color: #354ecf;
+                                color: #31a8b1;
                             }
                         }
                     }
@@ -2005,7 +1993,7 @@
             div {
                 width: 180px;
                 height: 100%;
-                border-right: solid 1px #c7c7c7;
+                border-right: solid 1px #cacaca;
                 float: left;
                 line-height: 45px;
                 font-size: 14px;
@@ -2026,7 +2014,7 @@
         .bettingend {
             width: 100%;
             height: 200px;
-            background: #cccccc;
+            background: #cacaca;
 
             .endbox {
                 width: 287px;
@@ -2036,13 +2024,13 @@
                 margin-top: 25px;
 
                 &:last-child {
-                    border-left: solid 1px #888888;
+                    border-left: solid 1px #828282;
                 }
 
                 .remind {
                     margin: 0px 0px 0px 40px;
                     line-height: 75px;
-                    color: #f31d1d;
+                    color: #ff0000;
                     font-size: 14px;
                     position: relative;
                     &::before {
@@ -2050,7 +2038,7 @@
                         position: absolute;
                         width: 20px;
                         height: 20px;
-                        background: #f31d1d;
+                        background: #ff0000;
                         border-radius: 12px;
                         left: -25px;
                         top: 26px;
@@ -2077,11 +2065,11 @@
                         padding-left: 5px;
 
                         &.listCode {
-                            color: #354ecf;
+                            color: #31a8b1;
                         }
 
                         &.way {
-                            color: #f31d1d;
+                            color: #ff0000;
                         }
                     }
                 }
@@ -2115,7 +2103,7 @@
         height: 40px;
         border-radius: 3px 3px 0px 0px;
         background: #ababab;
-        color: #434343;
+        color: #3d3d3d;
         position: relative;
         text-align: center;
         line-height: 42px;
@@ -2128,7 +2116,7 @@
             height: 40px;
             border-radius: 40px;
             background: #cacaca;
-            border: solid 3px #676767;
+            border: solid 3px #5e5e5e;
             right: -50px;
             top: -50px;
             box-shadow: 0px 0px 0px 5px #cacaca;
@@ -2140,7 +2128,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(45deg);
             }
 
@@ -2151,7 +2139,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(-45deg);
             }
         }
@@ -2177,22 +2165,22 @@
                     width: 80px;
                     height: 24px;
                     padding-left: 7px;
-                    border: solid 1px #9ba1c5;
+                    border: solid 1px #b4bac8;
                     margin: 0px 10px 0px 5px;
                     font-size: 15px;
                     font-weight: bold;
-                    color: #2539a0;
+                    color: #4556b1;
                 }
 
                 button {
                     width: 60px;
                     height: 28px;
                     color: #fff;
-                    background: #556de7;
+                    background: #31a8b1;
                     font-size: 15px;
                     border-radius: 3px;
                     &:hover,&:active,&.active {
-                        background: #2539a0;
+                        background: #4556b1;
                     }
                 }
             }
@@ -2210,12 +2198,12 @@
             table {
                 width: 100%;
                 height: auto;
-                background: #5a5a5a;
+                background: #5e5e5e;
 
                 tr {
 
                     &:nth-child(odd) {
-                        background: #909090;
+                        background: #8f8f8f;
                     }
                     
                     th {
@@ -2276,20 +2264,20 @@
                                 height: 0px;
                                 border-style: solid;
                                 border-width: 5px 3px 0px 3px;
-                                border-color: #687abc transparent transparent transparent;
+                                border-color: #4556b1 transparent transparent transparent;
                                 top: 9px;
                                 left: 92px;
                                 pointer-events: none;
                             }
 
                             select {
-                                color: #687abc;
+                                color: #4556b1;
                                 appearance: none;
                                 -moz-appearance: none;
                                 -webkit-appearance: none;
                                 width: 55px;
                                 height: 22px;
-                                border: solid 1px #9ba1c5;
+                                border: solid 1px #b4bac8;
                                 border-radius: 3px;
                                 padding-left: 5px;
                                 line-height: 22px;
@@ -2313,13 +2301,13 @@
                             }
 
                             input {
-                                background: #d7d7d7;
+                                background: #cacaca;
                                 border-radius: 3px;
                                 width: 35px;
                                 height: 20px;
                                 border: none;
                                 text-align: center;
-                                color: #585858;
+                                color: #505050;
                                 font-weight: bold;
                                 font-size: 15px;
                             }
@@ -2351,7 +2339,7 @@
                     border: solid 1px #ababab;
                     border-radius: 3px;
                     margin-left: 5px;
-                    color: #e60012;
+                    color: #ff0000;
                     font-size: 16px;
                     font-weight: bold;
                 }
@@ -2359,14 +2347,13 @@
                 button {
                     width: 260px;
                     height: 40px;
-                    background: linear-gradient(to left,#9ca8e4,#495cc5);
-                    background-color: #495cc5;
+                    background: linear-gradient(to left,#9ca8e4,#4556b1);
                     border-radius: 3px;
                     color: #fff;
                     font-size: 16px;
                     margin-left: 50px;
                     &:hover,&:active,&.active {
-                        background: #2539a0;
+                        background: #4556b1;
                     }
                 }
             }
@@ -2375,7 +2362,7 @@
                 margin-top: 10px;
                 width: calc(100% - 20px);
                 border-radius: 3px;
-                background: #5a5a5a;
+                background: #5e5e5e;
                 text-align: left;
                 border: solid 1px #ababab;
                 padding: 10px;
@@ -2386,7 +2373,7 @@
 
                     &.retitle {
                         text-align: center;
-                        border-bottom: solid 1px #e0e1e3;
+                        border-bottom: solid 1px #cacaca;
                         padding-bottom: 7px;
                     }
 
@@ -2482,9 +2469,8 @@
             width: 180px;
             height: 36px;
             margin-top: 30px;
-            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-            background-color: #3247b8;
-            border: 1px solid #495cc5;
+            background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+            border: 1px solid #4556b1;
             color: #fff;
             border-radius: 5px;
             font-size: 16px;
@@ -2503,7 +2489,7 @@
     display: inline-block;
     width: 5px;
     height: 5px;
-    background: #ffee00;
+    background: #ffd400;
     border-radius: 50px;
     transform: translateY(-2px);
     margin-right: 3px;
@@ -2516,7 +2502,7 @@
         top: 0px;
         width: 5px;
         height: 5px;
-        background: #ffee00;
+        background: #ffd400;
         border-radius: 50px;
         animation: liveRemind 0.8s ease-in 0s infinite;
     }
@@ -2548,7 +2534,7 @@
     &.yellowCard {
 
         span {
-            background: #ffee00;
+            background: #ffd400;
         }
     }
 }
@@ -2557,12 +2543,12 @@
 
 //選手狀況
 .playerStatus {
-    color: #c7cef3;
+    color: #90b9ff;
 }
 
 //投手名稱
 .pitcher {
-    color: #ffee00;
+    color: #ffd400;
     padding-left: 7px;
     font-size: 12px;
 }
@@ -2710,7 +2696,7 @@
         width: 7px;
         height: 7px;
         border-radius: 10px;
-        background: #b2b4c0;
+        background: #8f8f8f;
         margin: 6px 3px 0px 0px;
     }
 }

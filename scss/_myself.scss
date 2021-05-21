@@ -41,7 +41,7 @@
     .recordbar {
         width: 1150px;
         height: 35px;
-        background: #c1c1c1;
+        background: #cacaca;
         border-radius: 3px;
         margin: 0px 0px 15px 10px;
         border: 1px solid #828282;
@@ -51,7 +51,6 @@
 
         &.open {
             background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
-            background-color: #d8a77b;
         }
 
         div {
@@ -67,7 +66,7 @@
             .line {
                 width: 1px;
                 height: 15px;
-                background: #202020;
+                background: #000000;
                 margin: 10px 0px 0px 0px;
                 float: right;
             }
@@ -114,7 +113,7 @@
     .helpbar {
         width: 1150px;
         height: 45px;
-        background: #e2e2e2;
+        background: #cacaca;
         border-radius: 3px;
         position: relative;
         z-index: 1;
@@ -225,7 +224,7 @@
             width: 92%;
             height: auto;
             border-radius: 12px;
-            border: 1px solid #777777;
+            border: 1px solid #747474;
             margin: 0px auto 20px;
             padding: 15px;
 
@@ -290,7 +289,7 @@
         .chatwindow {
             width: 100%;
             height: 75%;
-            background: #fafafa;
+            background: #f1f1f1;
             border-bottom: solid 1px #ababab;
             overflow-x: hidden;
             overflow-y: auto;
@@ -314,7 +313,7 @@
                 width: 100%;
                 height: 50px;
                 line-height: 50px;
-                color: #838ba0;
+                color: #4556b1;
                 float: left;
             }
             
@@ -347,8 +346,8 @@
                 
                 .gmchat {
                     float: left;
-                    border: 1px solid #c2c5ff;
-                    box-shadow: 0 0 8px 1px #dfe1ec;
+                    border: 1px solid #304880;
+                    box-shadow: 0 0 8px 1px #f1f1f1;
                     border-radius: 0px 8px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
@@ -359,7 +358,7 @@
                         width: 60%;
                         padding: 5px 10px 4px;
                         &:hover,&:active,&.active {
-                            background: #2D43B6;
+                            background: #4556b1;
                             color: #fff;
                         }
                     }
@@ -367,9 +366,9 @@
 
                 .userchat {
                     float: right;
-                    background: #273aa1;
+                    background: #4556b1;
                     color: #fff;
-                    box-shadow: 0 0 8px 1px #dfe1ec;
+                    box-shadow: 0 0 8px 1px #f1f1f1;
                     border-radius: 8px 0px 8px 8px;
                     font-size: 14px;
                     padding: 12px;
@@ -430,7 +429,7 @@
                 font-size: 15px;
 
                 &::placeholder {
-                    color: #999999;
+                    color: #8f8f8f;
                     font-size: 14px;
                     font-weight: bold;
                 }
@@ -440,13 +439,12 @@
                 width: 90px;
                 height: 36px;
                 margin: 0px 20px 20px 0px;
-                background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
-                background-color: #3046b7;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
                 border-radius: 5px;
                 color: #fff;
                 font-size: 15px;
                 &:hover,&:active,&.active {
-                    background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
+                    background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
                 }
             }
         }
@@ -500,7 +498,7 @@
                 padding: 10px 35px;
                 line-height: 24px;
                 font-size: 14px;
-                color: #d4d4d4;
+                color: #cacaca;
 
                 &.smallTitle {
                     font-size: 16px;
@@ -518,7 +516,7 @@
     
                 .remind {
                     font-size: 16px;
-                    color: #ffa600;
+                    color: #ff8c00;
                     padding: 0px 5px;
                 }
     
@@ -562,7 +560,7 @@
                             th {
 
                                 font-size: 14px;
-                                background: #3a3a3a;
+                                background: #3d3d3d;
                                 padding: 3px 0px;
                                 border-right: solid 1px #828282;
 
@@ -589,7 +587,7 @@
                                 }
 
                                 span {
-                                    color: #ffa600;
+                                    color: #ff8c00;
                                     font-size: 13px;
                                     padding: 0px 10px;
                                 }
@@ -749,7 +747,7 @@
             display: none;
             float: right;
             position: relative;
-            background: #b3b3b3;
+            background: #ababab;
             margin: 7px 20px 0px 0px;
             padding: 8px 12px;
             border-radius: 20px;
@@ -870,7 +868,7 @@
             select {
                 float: left;
                 margin: 11px 0px 0px 10px;
-                border: 1px solid #3145b2;
+                border: 1px solid #4556b1;
                 outline: none;
                 border-radius: 5px;
                 width: 95px;
@@ -932,7 +930,7 @@
                 height: 42px;
                 line-height: 47px;
                 border-bottom: solid 3px transparent;
-                color: #1e2129;
+                color: #2a2a2a;
                 cursor: pointer;
 
                 &:first-child {
@@ -957,7 +955,7 @@
             }
 
             span {
-                color: #ea9700;
+                color: #ff8c00;
             }
         }
     }
@@ -1068,7 +1066,7 @@
                 display: block;
                 padding-top: 13px;
                 font-size: 17px;
-                color: #59a942;
+                color: #2a2a36;
             }
         }
 
@@ -1104,52 +1102,6 @@
     }
 }
 
-//消息中心-體育規則
-.sportbar {
-    display: none;
-    width: 1120px;
-    height: auto;
-    background: #505050;
-    padding: 15px 15px 0px 15px;
-    position: absolute;
-    top: 140px;
-    left: 270px;
-    margin-left: 10px;
-    border-radius: 3px;
-    z-index: 6;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    &.display {
-        display: flex;
-    }
-    
-    button {
-        float: left;
-        width: 10%;
-        height: 32px;
-        border: 1px solid #b78960;
-        background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
-        background-color: #b78960;
-        border-radius: 3px;
-        color: #fff;
-        font-size: 14px;
-        padding: 0px;
-        line-height: 0px;
-        margin: 0px 10px 15px 0px;
-
-        &:hover,&:active,&.active {
-            background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-            border-color: #444f8b;
-            background-color: #434e8a;
-        }
-
-        &.nmar {
-            margin-right: 0px;
-        }
-    }
-}
-
 //彈窗
 
 //修改密碼
@@ -1177,7 +1129,7 @@
 
         span {
             font-size: 14px;
-            color: #434343;
+            color: #3d3d3d;
             line-height: 50px;
             padding-left: 20px;
             font-weight: bold;
@@ -1190,7 +1142,7 @@
             height: 40px;
             border-radius: 40px;
             background: #cacaca;
-            border: solid 3px #676767;
+            border: solid 3px #5e5e5e;
             right: -50px;
             top: -50px;
             box-shadow: 0px 0px 0px 5px #cacaca;
@@ -1202,7 +1154,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(45deg);
             }
 
@@ -1213,7 +1165,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(-45deg);
             }
         }
@@ -1247,7 +1199,7 @@
                 font-size: 17px;
                 padding: 3px 0px 3px 10px;
                 float: right;
-                border: 1px solid #adadad;
+                border: 1px solid #ababab;
                 border-radius: 4px;
             }
             
@@ -1262,8 +1214,7 @@
                 height: 36px;
                 margin-right: 10px;
                 background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-                background-color: #d5d9ef;
-                border: 1px solid #495cc5;
+                border: 1px solid #4556b1;
                 color: #4d515d;
                 border-radius: 5px;
                 font-size: 16px;
@@ -1276,8 +1227,7 @@
 
                 &:last-child {
                     margin: 0px;
-                    background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-                    background-color: #3247b8;
+                    background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
                     color: #fff;
                     &:hover,&:active,&.active {
                         background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
@@ -1313,7 +1263,7 @@
 
         span {
             font-size: 14px;
-            color: #434343;
+            color: #3d3d3d;
             line-height: 50px;
             padding-left: 20px;
             font-weight: bold;
@@ -1326,7 +1276,7 @@
             height: 40px;
             border-radius: 40px;
             background: #cacaca;
-            border: solid 3px #676767;
+            border: solid 3px #5e5e5e;
             right: -50px;
             top: -50px;
             box-shadow: 0px 0px 0px 5px #cacaca;
@@ -1338,7 +1288,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(45deg);
             }
 
@@ -1349,7 +1299,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(-45deg);
             }
         }
@@ -1370,7 +1320,7 @@
             color: #fff;
 
             &.remind {
-                color: #ea9700;
+                color: #ff8c00;
             }
         }
 
@@ -1378,9 +1328,7 @@
             width: 160px;
             height: 36px;
             background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
-            background-color: #3247b8;
-            border: 1px solid #495cc5;
-            color: #4d515d;
+            border: 1px solid #4556b1;
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
@@ -1390,7 +1338,7 @@
             }
             &:last-child {
                 margin: 0px;
-                background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
                 color: #fff;
                 &:hover,&:active,&.active {
                     background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
@@ -1427,7 +1375,7 @@
 
         span {
             font-size: 14px;
-            color: #434343;
+            color: #3d3d3d;
             line-height: 42px;
             font-weight: bold;
         }
@@ -1439,7 +1387,7 @@
             height: 40px;
             border-radius: 40px;
             background: #cacaca;
-            border: solid 3px #676767;
+            border: solid 3px #5e5e5e;
             right: -50px;
             top: -50px;
             box-shadow: 0px 0px 0px 5px #cacaca;
@@ -1450,7 +1398,7 @@
                 height: 18px;
                 right: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(45deg);
             }
             &::after {
@@ -1460,7 +1408,7 @@
                 height: 18px;
                 left: 16px;
                 top: 8px;
-                background: #676767;
+                background: #5e5e5e;
                 transform: rotate(-45deg);
             }
         }
@@ -1486,7 +1434,7 @@
             }
 
             input,select {
-                background: #535353;
+                background: #505050;
                 color: #ababab;
                 width: 245px;
                 height: 36px;
@@ -1511,7 +1459,7 @@
 
             span {
                 line-height: 50px;
-                color: #434343;
+                color: #3d3d3d;
                 padding-left: 30px;
                 font-weight: bold;
             }
@@ -1520,9 +1468,8 @@
         button {
             width: 220px;
             height: 36px;
-            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-            background-color: #3247b8;
-            border: 1px solid #495cc5;
+            background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+            border: 1px solid #4556b1;
             color: #fff;
             border-radius: 5px;
             font-size: 16px;
@@ -1534,15 +1481,6 @@
             &:hover,&:active,&.active {
                 background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
             }
-        }
-    }
-}
-
-@media screen and(max-width: 1230px) {
-    .sportbar {
-
-        button {
-            width: 9%;
         }
     }
 }

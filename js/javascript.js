@@ -73,6 +73,36 @@ $(function(){
     })
 })
 
+//串關投注效果
+$(function(){
+    $('.parleyBtn').click(function(){
+        $('.playBoard').addClass('parley');
+
+        if($('.playBoard').hasClass('parley')){
+            $('.playBoard.parley button').click(function(){
+                $('.filter,.norbetting').removeClass('display');
+                $(this).siblings().removeClass('active');   
+            })
+        
+            $('.playBoard.newP.parley button').click(function(){
+                $(this).closest('td').siblings().children('button').removeClass('active');
+            })
+        }
+    })
+
+    $('.parleyBtn').siblings().click(function(){
+        $('.playBoard').removeClass('parley');
+        $('.playBoard button').removeClass('active');
+
+        if(!$('.playBoard').hasClass('parley')){
+            $('.playBoard button').click(function(){
+                $('.filter,.norbetting').addClass('display');
+                $(this).addClass('active');
+            })
+        }
+    })
+})
+
     //右側
 //right房間切換
 $(function(){
@@ -413,6 +443,15 @@ $(function(){
     $('.bettingCheck .cancelBtn').click(function(){
         $('.bettingCheck,.filter').removeClass('display');
     });
+
+    $('.playBoard.parley button').click(function(){
+        $('.filter,.norbetting').removeClass('display');
+        $(this).siblings().removeClass('active');
+    })
+
+    $('.playBoard.newP.parley button').click(function(){
+        $(this).closest('td').siblings().children('button').removeClass('active');
+    })
 });
 
 //球種篩選
@@ -601,84 +640,6 @@ $(function(){
         $('.mineHideBoard').removeClass('sportBoard');
         $('.sportbar').removeClass('display');
         $('.skillP').siblings().removeClass('display');
-    })
-
-    //sportbar
-    $('.sportbar button').click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-    });
-    $('.ruleB1').click(function(){
-        $('.rule1').addClass('display');
-        $('.rule1').siblings().removeClass('display');
-    })
-    $('.ruleB2').click(function(){
-        $('.rule2').addClass('display');
-        $('.rule2').siblings().removeClass('display');
-    })
-    $('.ruleB3').click(function(){
-        $('.rule3').addClass('display');
-        $('.rule3').siblings().removeClass('display');
-    })
-    $('.ruleB4').click(function(){
-        $('.rule4').addClass('display');
-        $('.rule4').siblings().removeClass('display');
-    })
-    $('.ruleB5').click(function(){
-        $('.rule5').addClass('display');
-        $('.rule5').siblings().removeClass('display');
-    })
-    $('.ruleB6').click(function(){
-        $('.rule6').addClass('display');
-        $('.rule6').siblings().removeClass('display');
-    })
-    $('.ruleB7').click(function(){
-        $('.rule7').addClass('display');
-        $('.rule7').siblings().removeClass('display');
-    })
-    $('.ruleB8').click(function(){
-        $('.rule8').addClass('display');
-        $('.rule8').siblings().removeClass('display');
-    })
-    $('.ruleB9').click(function(){
-        $('.rule9').addClass('display');
-        $('.rule9').siblings().removeClass('display');
-    })
-    $('.ruleB10').click(function(){
-        $('.rule10').addClass('display');
-        $('.rule10').siblings().removeClass('display');
-    })
-    $('.ruleB11').click(function(){
-        $('.rule11').addClass('display');
-        $('.rule11').siblings().removeClass('display');
-    })
-    $('.ruleB12').click(function(){
-        $('.rule12').addClass('display');
-        $('.rule12').siblings().removeClass('display');
-    })
-    $('.ruleB13').click(function(){
-        $('.rule13').addClass('display');
-        $('.rule13').siblings().removeClass('display');
-    })
-    $('.ruleB14').click(function(){
-        $('.rule14').addClass('display');
-        $('.rule14').siblings().removeClass('display');
-    })
-    $('.ruleB15').click(function(){
-        $('.rule15').addClass('display');
-        $('.rule15').siblings().removeClass('display');
-    })
-    $('.ruleB16').click(function(){
-        $('.rule16').addClass('display');
-        $('.rule16').siblings().removeClass('display');
-    })
-    $('.ruleB17').click(function(){
-        $('.rule17').addClass('display');
-        $('.rule17').siblings().removeClass('display');
-    })
-    $('.ruleB18').click(function(){
-        $('.rule18').addClass('display');
-        $('.rule18').siblings().removeClass('display');
     })
 })
 

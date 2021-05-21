@@ -1,78 +1,867 @@
-//html背景色,
-//header.top背景色,
-//.timeSelect .date .total背景色,
-$black001: #2a2a2a;
-
-//header article .logged .selectBox select option字色
-$black002: #000000;
-
-//header article .logged .loginBtn背景色,header article .logged .loginBtn.active字色,header article .loggedIn button背景色,
-$black003: #3d3d3d;
-
-//header背景色,
-$gray001: #505050;
-
-//.topfix背景色,.left .smallList背景色,.left smallList背景色,
-//.liveWindow .title背景色,playBoard td button背景色,
-$gray002: #747474;
-
-//header .top button字色,header .top .marqueeBox marquee字色,header .top span字色
-$perple001: #b4bac8;
-
-//球權mark背景色
-$perple002: #8e9bdc;
-
-//fixside .fun a
-$perple003: #eaedf4;
-
-//header article li a字色,header article .logged .loginBtn邊框色,header article .logged .loginBtn字色,header article .logged .loginBtn.active背景色,header article .logged .signupBtn字色,
-//header article .logged .signupBtn.active背景色,header .top .marqueeBox i字色,header article .logged .selectBox i字色,header article .logged .selectBox::after邊框色,
-//header article .logged .selectBox select邊框色,header article .logged .selectBox select字色,header article .loggedIn p字色,header article .loggedIn p.quota邊框色,
-//header article .loggedIn button字色,header article .loggedIn button邊框色
-//.signupBtn字色,.timeSelect .turnBtn邊框色,.timeSelect .date字色,
-//.left .smallList字色,.left .active全字色,.timeSelect .smallBtn字色,
-//.topfix .nor select字色,.playBoard td字色,.baseBag背景色
+//背景色
+//---------------header--------------------
+//.logged .loginBtn:hover;.logged .signupBtn:hover;.loggedIn button:hover;
+//---------------main----------------------
+//.playBoard tr td button:hover;.playBoard.newP tr td button:hover;
+//.playBoard.oldP tr td button:hover;.imgBoard tr td .teamImg;.minetable.infor tr td .mainWindow div p button:hover;
+//.minetable.totalMoney tr td .box .half p button:hover;.minetable.totalMoney tr td .separateBox.big .half p button:hover;
+//.minetable.totalMoney tr td .separateBox.small .turnBtn div;.minetable.callus tr td .box .half p button:hover;
+//.minetable.callus tr td .box .half .rowbut .innbut;.minetable.download tr td .codeBox div button:hover;
+//.minetable.download tr td .bowserBox button;.minetable.payStyle tr td button:hover;.minetable.tnetcard tr td button:hover;
+//.minetable.depositMoney tr td .moneybut:hover;
+//---------------topfix--------------------
+//.nor .reWeb .reBtn:hover;.nor .timeSelect .smallBtn:hover;.inn li button::before;
+//.inn .back:hover;.norbetting .nor_bettingbox;.minetopfix .fixbar .rowbutMes .innbut;
+//.minetopfix .fixbar .timeSearch button.timesearchbut:hover;.minetopfix .fixbar .smallTimeBtn:hover;
+//.minetopfix .fixbar .changePassword:hover;
+//---------------right---------------------
+//.room .livelist ul li .innerList p button:hover;
+//---------------jumpbox-------------------
+//.signupWindow .signupbar button::before;.signupWindow .signupbar button::after;
+//.norbetting .norcancelbtn::before;.norbetting .norcancelbtn::after;
+//.norbettingCheck .checkCancelBtn::before;.norbettingCheck .checkCancelBtn::after;
+//.norbettingCheck .bettingbox;.bettingbar .num;.bettingCheck .num;
+//---------------else----------------------
+//.baseBag.one span.first;.baseBag.one span.second;.baseBag.one span.third;
+//---------------fixside-------------------
+//.fixside .search .searchbox div;.fixside .fun .hamBtn:hover span;
+//---------------myself--------------------
+//.myself .helpbar.edit;.myself .helpbox;.myself .onlineCilent;.myself .ruleBox ol li.smallTitle span;
+//.myself .linkBox div a p;
+//字色
+//---------------header--------------------
+//.marquee icon;.logo;ul li a;.logged .loginBtn;.logged .signupBtn;
+//.logged .selectBox icon;.logged .selectBox select;.loggedIn p;
+//.loggedIn button;.loggedIn .selectBox icon;.loggedIn .selectBox select;
+//---------------main----------------------
+//.playBoard tr th;.playBoard tr td;.playBoard tr td a.tbimg3;.bettingRemind tr th;
+//.bettingRemind tr td;.imgBoard tr td;.innerBoard tr th;.innerBoard tr td button.title;
+//.innerBoard tr td button .name;.teachBoard tr th;.teachBoard tr td .team p;
+//.teachBoard tr td .vs;.teachBoard tr td .box .textBox p;.teachBoard tr td .box .midBox p;
+//.minetable tr th;.minetable.infor tr td .mainWindow div p;.minetable.infor tr td .mainWindow div p button;
+//.minetable.infor tr td .remind;.minetable.bettingLimit tr td;.minetable.totalMoney tr th button;
+//.minetable.totalMoney tr td .box .half p;.minetable.totalMoney tr td .box .half p button;
+//.minetable.totalMoney tr td .separateBox.big .half p;.minetable.totalMoney tr td .separateBox.big .half p button;
+//.minetable.creditcard tr td .creditcardBtn;.minetable.creditcard tr td .creditcardBtn.c1:hover;
+//.minetable.creditcard tr td .remind;.minetable.moneyDetail tr td div p .charge:hover;
+//.minetable.dealRecord tr td;.minetable.bettingRecord tr td;.minetable.bettingRecord tr td .teamName;
+//.minetable.sportRule tr td;.minetable.callus tr td .box .half p;.minetable.callus tr td .box .half p button;
+//.minetable.callus tr td .box .half .rowbut.lside span:nth-of-type(2);.minetable.callus tr td .box .half .rowbut.rside span:nth-of-type(1);
+//.minetable.callus tr td .box .officalimg p;.minetable.callus tr td .box .partnerimg p;.minetable.callus tr td .bigBox p;
+//.minetable.problem tr td;.minetable.problem tr td textarea;.minetable.problem tr td .remind;
+//.minetable.problem tr td .uploadImg;.minetable.innerActive tr td;.minetable.download tr td p;
+//.minetable.download tr td .codeBox div button;.minetable.download tr td .bowserBox button;
+//.minetable.withdrawl tr td;.minetable.withdrawl tr td .inputBox input;.minetable.withdrawl tr td .inputBox .remind;
+//.minetable.withdrawl tr td .inputBox button;.minetable.withdrawl tr td .box .content p;
+//.minetable.transpoint tr td button;.minetable.payStyle tr th .remind;.minetable.depositMoney tr td .inputBox .remind;
+//.minetable.depositMoney tr td .depositBtn;.discount .window .topbar;
+//---------------topfix--------------------
+//.nor i;.nor svg;.nor .gameName;.nor .reWeb select;.nor .kind select;
+//.nor .sort select;.nor .chooseLeague select;.nor .chooseLeague span;
+//.nor .timeSelect .date;.nor .timeSelect .date .moreTimeList li;
+//.nor .timeSelect .smallBtn;.inn li button;.inn .back;.teach li;.teach li:hover;
+//.teach li.name;.chleague button;.minetopfix .fixbar;.minetopfix .fixbar .editbut;
+//.minetopfix .fixbar .cancelbut;.minetopfix .fixbar .delbut;.minetopfix .fixbar .editbut:hover;
+//.minetopfix .fixbar .rowbutMes.lside span:last-child;.minetopfix .fixbar .rowbutMes.rside span:nth-of-type(1);
+//.minetopfix .fixbar .timeSearch button.timesearchbut;.minetopfix .fixbar .smallTimeBtn;
+//.minetopfix .fixbar .changePassword;.minetopfix .fixbar ul li:hover;
+//.minetopfix .floatName.betting div;.minetopfix .floatName.deal div;
+//---------------left----------------------
+//.minewindow .avater p span;.minewindow .threebut a:hover;ul li:hover a;
+//ul li:hover a svg;ul li:hover a i;ul li:hover a .total;ul li .smallList;
+//---------------right---------------------
+//.statusWindow p;.liveWindow .title;.liveWindow .teamWindow .score p span;
+//.room .twobut button;.room .onebut button;.room .livelist ul li .gameName;
+//.room .livelist ul li .innerList p button;
+//---------------jumpbox-------------------
+//.signupWindow .signupbar span;.signupWindow .signupbox div span;.signupWindow .signupbox div button:last-child;
+//.norbetting .nor_bettingbox .bettingtotal div;.norbetting .nor_bettingbox .bettingend .endbox;
+//.norbetting .nor_bettingbox .bettingend .endbox button.decideBtn;.norbettingCheck .bettingbox .bettingtotal div;
+//.norbettingCheck .bettingbox .bettingend .endbox;.bettingbar .openBtn span;
+//.bettingbar .bettingbox .bettingwindow table tr th;.bettingbar .bettingbox .bettingtotal;
+//.bettingbar .bettingbox .bettingend .endbox button:active;.bettingbar .bettingbox .bettingend .endbox button.cur;
+//.bettingCheck .barword;.bettingCheck .bettingbox .bettingwindow table tr th;
+//.bettingCheck .bettingbox .bettingtotal;.calculator .calbox .top;
+//.calculator .calbox .top .inputbox button;.calculator .calbox .mid table tr th;.calculator .calbox .mid table tr td;
+//.calculator .calbox .bottom;.calculator .calbox .bottom .inputbox button;.unLogin .topBar span;.unLogin .topBar button::before;
+//.unLogin .topBar button::after;.unLogin .remindBox p;.unLogin .remindBox button;
+//.changePasswordWindow .box div span;.changePasswordWindow .box div button:last-child;
+//.cardremind .box p;.cardremind .box button:last-child;.cardAdd .box button;
+//---------------fixside-------------------
+//.fixside .search .searchbut:hover span;.fixside .fun a:hover span;
+//---------------myself--------------------
+//.recordbar div span.remind;.myself .onlineCilent .chatwindow .chat .gmchat a:hover;
+//.myself .onlineCilent .chatwindow .chat .userchat;.myself .onlineCilent .onlineroom .send;
+//邊框色
+//---------------header--------------------
+//.logged .loginBtn;.logged .selectBox::after;.logged .selectBox select;
+//.loggedIn p.quota;.loggedIn button;.loggedIn .selectBox::after;
+//.loggedIn .selectBox select;.minetopfix .fixbar .cancelbut;.minetopfix .fixbar .editbut;
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c1:active::before;.minetable.creditcard tr td .creditcardBtn.c1:active::after;
+//---------------topfix--------------------
+//.nor .reWeb::before;.nor .reWeb select;.nor .reWeb .reBtn;.nor .kind::before;
+//.nor .sort::before;.nor .chooseLeague::before;.nor .kind select;.nor .sort select;
+//.nor .chooseLeague select;.nor .chooseLeague span;.nor .timeSelect .turnBtn;
+//.nor .timeSelect .date:hover .arrow;.nor .timeSelect .smallBtn;.inn .back;.inn .back::before;
+//.minetopfix .fixbar .delbut;.minetopfix .fixbar .changePassword;
+//---------------right---------------------
+//.room .livelist ul li .innerList p button;
+//---------------jumpbox-------------------
+//.controlBox .innerBox1 .longBox input:hover;.norbettingCheck .bettingbox .bettingend .endbox p::after;
+//.bettingCheck .bettingbox .bettingend .endbox .remind::after;
+//---------------else----------------------
+//.cube.active::before;.baseBag span;
+//陰影色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn:hover;.minetable.problem tr td .upimg:hover;
 $white001: #ffffff;
 
-//header article .logged .inputBox .forget字色,header article .logged .inputBox .remember字色,
-//timeSelect .date .arrow邊框色,.left .smallList邊框色,
-//chleague背景色,.liveWindow背景色,.bettingBoard背景色,
-$white002: #ababab;
+//背景色
+//---------------right---------------------
+//.statusWindow ul li button::before;.statusWindow ul li button::after;
+//---------------myself--------------------
+//.recordbar div .line;
+//字色
+//---------------header--------------------
+//.logged .selectBox select option;.loggedIn .selectBox select option;
+//---------------main----------------------
+//.playBoard tr td button:hover;.playBoard tr td button:hover span;.playBoard.newP tr td button:hover;
+//.playBoard.newP tr td button:hover span;.playBoard.oldP tr td button:hover;.playBoard.oldP tr td button:hover span;
+//.bettingBoard tr td.listName .vs;.minetable.creditcard tr td .creditcardBtn:hover;.minetable.totalInfo tr td .line;
+//.minetable.sportRule tr td button:hover;.minetable.callus tr td .box .half p button:hover;
+//---------------topfix--------------------
+//.nor .reWeb .reBtn:hover i;.nor .timeSelect .smallBtn:hover;.minetopfix .fixbar .timeSearch button.timesearchbut:hover;
+//.minetopfix .fixbar .smallTimeBtn:hover;
+//---------------left----------------------
+//ul li a;
+//---------------right---------------------
+//.liveWindow .teamWindow .leftTeam p;.liveWindow .teamWindow .rightTeam p;
+//.room .twobut button:hover;.room .onebut button:hover;.room .livelist ul li:hover;
+//.room .livelist ul li.active span;.room .livelist ul li .games;
+//.room .livelist ul li .innerList p span;
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingwindow table tr td p;.bettingCheck .bettingbox .bettingwindow table tr td p;
+//---------------fixside-------------------
+//.fixside .search .searchbox div a;.fixside .fun a span;
+//邊框色
+//---------------right---------------------
+//.statusWindow ul li button;.room .livelist ul li::before;
+$black001: #000000;
 
-//.left背景色,.twobut button.active,bettingStatus背景色,
-$white003: #bcbcbc;
+//背景色
+//---------------topfix--------------------
+//.filter
+$black002: #000000b6;
 
-//.playBoard td button span
-$white004: #d4d4d4;
+//背景色
+//-webkit-scrollbar-track------------------
+//.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
+//.chleague;.bettingbar .bettingbox .bettingwindow;.bettingCheck .bettingbox .bettingwindow;
+//.discount;.myself;.myself .onlineCilent .chatwindow;.myself .onlineCilent .onlineroom;
+//.myself .ruleBox ol li .tableBox;
+//---------------main----------------------
+//.innerBoard tr td button:hover;.innerBoard tr td button:hover;
+//---------------left----------------------
+//ul li:nth-of-type(1),ul li:nth-of-type(5),ul li:nth-of-type(9);
+//---------------right---------------------
+//.statusWindow;.room .livelist ul li;.room .livelist ul li:hover;
+//---------------myself--------------------
+//.myself .onlineCilent .chatwindow;.myself .onlineCilent .chatwindow .chat .userchat;
+//.myself .ruleBox;
+//邊框色
+//---------------main----------------------
+//.bettingBoard;.bettingBoard tr td;
+//---------------right---------------------
+//.room .livelist ul li .innerList
+//---------------myself--------------------
+//.myself .ruleBox ol li .tableBox;
+//陰影色
+//---------------myself--------------------
+//.myself .onlineCilent .chatwindow .chat .gmchat;
+$gray001: #f1f1f1;
 
-//header article .logged .inputBox input::placeholder
-$white005: #8f8f8f;
+//背景色
+//---------------header--------------------
+//.conversionBox button;
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn:hover;.minetable.sportRule tr td button:hover;
+//---------------jumpbox-------------------
+//.controlBox .cancelBtn;.bettingCheck .cancelBtn;.bettingCheck .bettingbox .bettingend;
+//.calculator .calbar button;.calculator .calbox .mid table tr td .selectbox input;
+//.changePasswordWindow .topbar button;.cardremind .topbar button;.cardAdd .topbar button;
+//---------------myself--------------------
+//.recordbar;.myself .helpbar;
+//字色
+//---------------main----------------------
+//.playBoard tr td .gameTime;.playBoard.newP tr td button span;.playBoard.oldP tr td button span;
+//.teachBoard tr td .explain;.minetable.problem tr td .inputBox select;.minetable.problem tr td .sword;
+//.minetable.transpoint tr td .inputBox select;.minetable.transpoint tr td p;.minetable.transpoint tr td input;
+//.minetable.payStyle tr td button;.minetable.tbank tr td select;.minetable.tnum tr td .half .inputBox span;
+//.minetable.tnum tr td .half .inputBox select;.minetable.tnum tr td .half .inputBox input;
+//.minetable.tnum tr td .half .inputBox button;.minetable.tnetcard tr td button;.minetable.depositMoney tr td .moneybut;
+//.minetable.depositMoney tr td .inputBox input;
+//---------------jumpbox----------------------
+//.norbetting .barname;.norbetting .nor_bettingbox .bettingend .endbox input::placeholder;
+//.norbettingCheck .barname;.bettingbar .bettingbox .bettingend;.bettingbar .bettingbox .bettingend .endbox input::placeholder;
+//---------------fixside-------------------
+//.fixside .search input::placeholder;
+//---------------myself--------------------
+//.myself .ruleBox ol li;
+//邊框色
+//---------------main----------------------
+//.bettingBoard tr td;.conversionBoard;
+//---------------jumpbox-------------------
+//.norbettingCheck .bettingbox .bettingend .endbox:last-child;.bettingbar .bettingbox .bettingtotal div;
+//.calculator .calbox .bottom .remind p.retitle;
+//陰影色
+//---------------header--------------------
+//.conversionBox button;
+//---------------main----------------------
+//.bettingBoard tr td;
+//---------------jumpbox-------------------
+//.controlBox .cancelBtn;.bettingCheck .cancelBtn;.bettingCheck .bettingbox .bettingtotal div;
+//.calculator .calbar button;.changePasswordWindow .topbar button;.cardremind .topbar button;
+//.cardAdd .topbar button;
+$gray002: #cacaca;
 
-//header article ul li a.active邊框色,header article .logged .signupBtn背景色,header article .logged .signupBtn.active字色,
-//header article .loggedIn p span字色
+//背景色
+//---------------main----------------------
+//.minetable.moneyDetail tr td div;.minetable.bettingRecord tr th .line;.minetable.sportRule tr th;
+//---------------topfix--------------------
+//.teach .line;.myself .linkBox div a p;.minetopfix .fixbar .line;.minetopfix .floatName.betting div .line;
+//.minetopfix .floatName.deal div .line;.minetopfix .midword .topline;
+//---------------left----------------------
+//.left
+//---------------right---------------------
+//.room .twobut button:hover;.room .onebut button:hover;.room .livelist ul li .innerList;
+//.room .bettingStatus;
+//邊框色
+//---------------main----------------------
+//.bettingBoard tr td;.minetable.callus tr td .box .half p button;
+//---------------topfix--------------------
+//.minetopfix .fixbar .timeSearch button.timesearchbut;.minetopfix .fixbar .smallTimeBtn;
+$gray003: #bcbcbc;
+
+//背景色
+//---------------header--------------------
+//.conversionBox h1;.conversionBox .innerBox;.conversionBox .innerBox .baseline;
+//---------------main----------------------
+//.bettingBoard tr td;.minetable.totalMoney tr td .box .line;.minetable.totalMoney tr td .separateBox.big .line;
+//.minetable.callus tr td .box .line;.minetable.callus tr td .box .half .rowbut;.minetable.problem tr td .line;
+//.minetable.tnum tr td .line;
+//---------------topfix--------------------
+//.chleague;
+//---------------right---------------------
+//.liveWindow;.room .twobut .line;.room .livelist;.room .livelist ul li .innerList p button;
+//---------------jumpbox-------------------
+//.controlBox h1;.controlBox .innerBox1;.controlBox .innerBox1 .baseline;.controlBox .innerBox1 .partingBox .slideBase .slideBar;
+//.controlBox .innerBox2;.bettingbar .bettingbox;.bettingCheck .bettingbox;.calculator .calbar;
+//.cardremind .topbar;
+//---------------myself--------------------
+//.myself .ruleBox ol li .tableBox table tr th.title;.myself .ruleTitle;
+//字色
+//---------------header--------------------
+//.logged .inputBox .forget;.logged .inputBox .remember;
+//---------------main----------------------
+//.conversionBoard tr td;.minetable.infor tr td .mainWindow div p button:hover;
+//.minetable.totalMoney tr td .separateBox.small p.remind;.minetable.sportRule tr td button;
+//.minetable.sportRule tr td .conversionBoard tr td;.minetable.callus tr th .remind;
+//.minetable.callus tr td .box .half p span.remind;.minetable.callus tr td .bigBox p.remind;
+//.minetable.problem tr td textarea::placeholder;.minetable.withdrawl tr td .inputBox input::placeholder;
+//---------------right---------------------
+//.room .livelist ul li .innerList p button:hover;
+//---------------jumpbox-------------------
+//.controlBox .innerBox1 .partingBox .slideBase p;.controlBox .innerBox1 .longBox input;
+//.changePasswordWindow .topbar;.cardAdd .topbar;.cardAdd .box .inputBox select;.cardAdd .box .inputBox select;
+//邊框色
+//---------------main----------------------
+//.playBoard tr;.playBoard tr th;.bettingRemind tr th;.bettingRemind tr td:last-child;
+//.teachBoard tr;.teachBoard tr th;.minetable tr th;.minetable.infor tr td .mainWindow div p button;
+//.minetable.totalMoney tr td .box .half p button;.minetable.totalMoney tr td .separateBox.big;
+//.minetable.totalMoney tr td .separateBox.big .half p button;.minetable.totalMoney tr td .separateBox.small;
+//.minetable.moneyDetail tr td div;.minetable.dealRecord tr;.minetable.dealRecord tr td;
+//.minetable.bettingRecord tr;.minetable.bettingRecord tr td;.minetable.sportRule tr td button;
+//.minetable.problem tr td .inputBox select;.minetable.problem tr td .upimg;.minetable.innerActive tr;
+//.minetable.innerActive tr td;.minetable.download tr td .codeBox div button;.minetable.download tr td .bowserBox button;
+//.minetable.withdrawl tr td .inputBox input;.minetable.withdrawl tr td .box;.minetable.payStyle tr td button:hover;
+//.minetable.tnum tr td .half .inputBox button;
+//---------------topfix--------------------
+//.nor .timeSelect .date .arrow;.nor .timeSelect .date .moreTimeList li;
+//.minetopfix .fixbar .rowbutMes;
+//---------------left----------------------
+//ul li a;ul li .smallList;
+//---------------right---------------------
+//.statusWindow p;.statusWindow ul li;.liveWindow .title;
+//---------------jumpbox-------------------
+//.norbetting .nor_bettingbox .bettingtotal div;.norbettingCheck .bettingbox .bettingtotal div;
+//.bettingbar .bettingbox .bettingwindow table tr;.bettingbar .bettingbox .bettingend .endbox input;
+//.calculator .calbox .mid;.calculator .calbox .mid table tr td .odds;.calculator .calbox .bottom .inputbox input;
+//.calculator .calbox .bottom .remind;.changePasswordWindow .box div input;
+//---------------myself--------------------
+//.myself .onlineCilent .chatwindow;.myself .ruleBox ol li .tableBox;
+//.myself .ruleBox ol li .tableBox table tr;
+$gray004: #ababab;
+
+//背景色
+//---------------main----------------------
+//.minetable.withdrawl tr td .box .title;
+//---------------jumpbox-------------------
+//.bettingbar;.bettingbar .bettingbox .bettingtotal;.bettingCheck;.bettingCheck .bettingbox .bettingtotal;
+//邊框色
+//---------------main----------------------
+//.teachBoard tr td .vs span;.minetable tr th;.minetable.totalMoney tr td .box;.minetable.bettingRecord tr th;
+//.minetable.callus tr td .box;.minetable.callus tr td .bigBox;.minetable.download tr td .codeBox;
+//.minetable.download tr td .bowserBox;.minetable.transpoint tr td .inputBox select;.minetable.transpoint tr td input;
+//.minetable.payStyle tr td button;.minetable.tbank tr td select;.minetable.tnum tr td .half .inputBox select;
+//.minetable.tnum tr td .half .inputBox input;.minetable.tnetcard tr td button;.minetable.depositMoney tr td .moneybut;
+//.minetable.depositMoney tr td .inputBox input;
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox;.bettingCheck .bettingbox;.bettingCheck .bettingbox .bettingend .endbox:last-child;
+//---------------myself--------------------
+//.recordbar;.myself .ruleBox ol li .tableBox table tr th;.myself .ruleBox ol li .tableBox table tr td;
+$gray005: #828282;
+
+//背景色
+//---------------main----------------------
+//.playBoard tr:hover;.innerBoard tr:hover;.minetable.totalMoney tr td .separateBox.small .turnBtn;
+//---------------jumpbox------------------
+//.calculator .calbox .mid table tr:nth-child(odd);
+//---------------else----------------------
+//.totalPitch span;
+//字色
+//---------------header--------------------
+//.logged .inputBox input::placeholder;
+//---------------main----------------------
+//.teachBoard tr td .box .textBox p.lose;
+//---------------myself--------------------
+//.myself .onlineCilent .onlineroom textarea::placeholder;
+//邊框色
+//---------------main----------------------
+//.conversionBoard tr td;.innerBoard tr:hover;.innerBoard tr th;.innerBoard tr td;
+//.minetable.sportRule tr td .conversionBoard tr td;
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingwindow table tr td.tLeft;.bettingCheck .bettingbox .bettingwindow table tr td.tLeft;
+$gray006: #8f8f8f;
+
+//背景色
+//---------------header--------------------
+//.conversionBox;
+//---------------main----------------------
+//.playBoard tr td button;.innerBoard tr td button;.minetable.totalMoney tr td .separateBox.small .turnBtn.turn;
+//.minetable.creditcard tr td .creditcardBtn;
+//---------------topfix--------------------
+//.topfix;.nor .timeSelect .date .moreTimeList li:hover;.controlBox;.norbetting .nor_bettingbox .bettingtotal;
+//.minetopfix .fixbar;
+//---------------left----------------------
+//ul li:hover a;
+//---------------right---------------------
+//.liveWindow .title;room .twobut;.room .onebut;
+//---------------jumpbox-------------------
+//.signupWindow .signupbox;.norbettingCheck .bettingbox .bettingtotal;.calculator .calbox;
+//.unLogin .remindBox;.changePasswordWindow .box;.cardremind .box;.cardAdd .box;
+//邊框色
+//---------------myself--------------------
+//.myself .helpbox .innerbox;
+$gray007: #747474;
+
+//背景色
+//---------------header--------------------
+//.conversionBox button::before;.conversionBox button::after;.cardAdd .topbar button::before;
+//.cardAdd .topbar button::after;
+//---------------main----------------------
+//.playBoard tr td button.disable;.teachBoard tr td .box .midBox;.minetable.sportRule;
+//.minetable.innerActive tr:nth-of-type(2n);
+//---------------jumpbox-------------------
+//.controlBox .cancelBtn::before;.controlBox .cancelBtn::after;.bettingCheck .cancelBtn::before;
+//bettingCheck .cancelBtn::after;.calculator .calbar button::before;.calculator .calbar button::after;
+//.calculator .calbox .mid table;.changePasswordWindow .topbar button;.changePasswordWindow .topbar button::before;
+//.cardremind .topbar button::before;.cardremind .topbar button::after;
+//.changePasswordWindow .topbar button::after;
+//邊框色
+//---------------header--------------------
+//.conversionBox button;
+//---------------jumpbox-------------------
+//.controlBox .cancelBtn;.bettingCheck .cancelBtn;.calculator .calbar button;
+//.calculator .calbox .bottom .remind;.cardremind .topbar button;
+//.cardAdd .topbar button;
+$gray008: #5e5e5e;
+
+//背景色
+//---------------header--------------------
+//header;
+//---------------main----------------------
+//.playBoard;.conversionBoard tr:nth-of-type(1);.conversionBoard tr td.title;.bettingRemind;
+//.innerBoard;.innerBoard tr th;.teachBoard;.teachBoard tr td .vs span;.minetable;
+//.minetable.moneyDetail tr td div p .charge:hover;.minetable.dealRecord;
+//.minetable.sportRule tr:nth-of-type(2n);.minetable.sportRule tr td .conversionBoard tr td.title;
+//.minetable.problem tr td .inputBox select;.minetable.withdrawl tr td .inputBox input;
+//---------------topfix--------------------
+//.nor .reWeb select;.nor .kind select;.nor .sort select;.nor .chooseLeague select;
+//.nor .chooseLeague span;.nor .timeSelect .date .moreTimeList;.inn .back;.inn .back:hover;
+//---------------left----------------------
+//ul li a .live;
+//---------------jumpbox-------------------
+//.controlBox .innerBox1 .longBox input;.norbetting .nor_bettingbox .bettingend;
+//.norbettingCheck .bettingbox .bettingend;.cardAdd .box .inputBox input;.cardAdd .box .inputBox select;
+//---------------myself--------------------
+//.myself .ruleBox ol;
+//字色
+//---------------main----------------------
+//.bettingBoard tr td;.minetable.totalMoney tr td .box .half p button:hover;
+//.minetable.totalMoney tr td .separateBox.big .half p button:hover;
+//.minetable.download tr td .codeBox div button:hover;.minetable.download tr td .bowserBox button;
+//.minetable.payStyle tr td button:hover;.minetable.tnetcard tr td button:hover;
+//.minetable.depositMoney tr td .moneybut:hover;
+//---------------left----------------------
+//ul li a i;ul li a svg;ul li a .total;
+//---------------topfix--------------------
+//.minetopfix .fixbar .editbut:hover;.minetopfix .fixbar .rowbutMes span;.minetopfix .fixbar .changePassword;
+//.minetopfix .fixbar .changePassword:hover;
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingwindow table tr td p.leagueName;.calculator .calbox .mid table tr td .selectbox input;
+//---------------myself--------------------
+//.myself .helpbox .remind;.myself .ruleBox ol li .tableBox table tr th.title;
+//.myself .ruleTitle p;
+//邊框色
+//---------------main----------------------
+//.minetable.moneyDetail tr td div p .charge;
+//---------------topfix--------------------
+//.inn .back:hover::before;.minetopfix .fixbar .editbut;.minetopfix .fixbar .cancelbut;.minetopfix .fixbar .delbut;
+//.minetopfix .fixbar .changePassword:hover;
+$gray009: #505050;
+
+//背景色
+//---------------header--------------------
+//.loggedIn button;.conversionBox h1;
+//---------------main----------------------
+//.playBoard tr th;.conversionBoard tr:nth-of-type(2);.teachBoard tr th;.teachBoard tr td .box::before;
+//.minetable tr th;.minetable.infor tr td .mainWindow;.minetable.bettingLimit tr:nth-of-type(2n);
+//.minetable.totalMoney tr td .box;.minetable.dealRecord tr.fail;.minetable.callus tr td .box;
+//.minetable.callus tr td .bigBox;.minetable.download tr td .codeBox;.minetable.download tr td .bowserBox;
+//.minetable.transpoint tr td input;.minetable.payStyle tr td button;.minetable.tbank tr td select;
+//.minetable.tnum tr td .half .inputBox select;.minetable.tnum tr td .half .inputBox input;
+//.minetable.tnetcard tr td button;.minetable.depositMoney tr td .moneybut;.minetable.depositMoney tr td .inputBox input;
+//---------------jumpbox-------------------
+//.controlBox .innerBox1 .partingBox .slideBasel;.controlBox .innerBox1 .longBox input:hover;
+//.norbetting;.norbettingCheck;.bettingbar .bettingbox .bettingwindow table tr th;
+//.bettingCheck .bettingbox .bettingwindow table tr th;
+//---------------myself--------------------
+//.myself .ruleBox ol li .tableBox table tr th;
+//字色
+//---------------header--------------------
+//.loggedIn button:hover;
+//---------------main----------------------
+//.playBoard tr td button.disable i;.playBoard.newP tr td button span icon;.playBoard.oldP tr td button span icon;
+//.innerBoard tr td button:hover;.innerBoard tr td button:hover span;.minetable.sportRule tr th;
+//.minetable.transpoint tr td .inputBox select;
+//---------------left----------------------
+//ul li .smallList:hover;
+//---------------right---------------------
+//.room .livelist ul li .innerList p;
+//---------------jumpbox-------------------
+//.controlBox h1;.controlBox .innerBox1 .partingBox .slideBase.lSide p:nth-of-type(1);
+//.controlBox .innerBox1 .partingBox .slideBase.rSide p:nth-of-type(2);.controlBox .innerBox2 p;
+//.calculator .calbar;.changePasswordWindow .topbar span;.cardremind .topbar span;
+//.cardAdd .topbar span;.cardAdd .box .inputBox span;
+//邊框色
+//---------------jumpbox-------------------
+//.norbetting .nor_bettingbox;.norbettingCheck .bettingbox;
+$gray010: #3d3d3d;
+
+//背景色
+//---------------header--------------------
+//.top;.logged .loginBtn;.conversionBox .innerBox p;
+//---------------main----------------------
+//.bg;.hideboard;.mineHideBoard;
+//---------------topfix--------------------
+//.nor .reWeb .clock;.nor .timeSelect .date .total;
+//---------------jumpbox-------------------
+//.signupWindow .signupbar;.unLogin .topBar;
+//字色
+//---------------header--------------------
+//.logged .loginBtn:hover;
+//---------------topfix--------------------
+//.minetopfix .fixbar ul li;
+//---------------jumpbox-------------------
+//.controlBox .innerBox1 p;.controlBox .innerBox2;
+$gray011: #2a2a2a;
+
+//字色
+//---------------header--------------------
+//.top button;.top span;.marqueeBox marquee;
+//邊框色
+//---------------topfix--------------------
+//.signupWindow .signupbox div input;
+//---------------jumpbox-------------------
+//.calculator .calbox .top .inputbox input;.calculator .calbox .mid table tr td .selectbox select;
+$perple001: #b4bac8;
+
+//背景色
+//-webkit-scrollbar-thumb------------------
+//.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
+//.chleague;.bettingbar .bettingbox .bettingwindow;.bettingCheck .bettingbox .bettingwindow;
+//.discount;.myself;.myself .onlineCilent .chatwindow;.myself .onlineCilent .onlineroom;
+//.myself .ruleBox;.myself .ruleBox ol li .tableBox;
+$perple002: #b9becf;
+
+//背景色
+//---------------left----------------------
+//.minewindow .threebut a:hover;
+//---------------right---------------------
+//.room .livelist ul li .innerList p span .situation.onLive::before;
+//---------------jumpbox-------------------
+//.calculator .calbox .top .inputbox button:hover;.calculator .calbox .bottom .inputbox button:hover;
+//---------------myself--------------------
+//.myself .onlineCilent .chatwindow .chat .gmchat a:hover;.myself .onlineCilent .chatwindow .chat .userchat;
+//字色
+//---------------main----------------------
+//.discount .window .word p;
+//---------------left----------------------
+//.minewindow .threebut a;
+//---------------right---------------------
+//.room .livelist ul li .innerList p span .situation.onLive;
+//---------------jumpbox-------------------
+//.calculator .calbox .top .inputbox input;.calculator .calbox .mid table tr td .selectbox select;
+//---------------myself--------------------
+//.myself .recordbar div;.myself .onlineCilent .chatwindow .time;
+//邊框色
+//---------------topfix--------------------
+//.chleague button;.minetopfix .fixbar .timeSearch select;
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button;.norbetting .nor_bettingbox .bettingend .endbox button;
+//.calculator .calbox .mid table tr td .selectbox::before;.unLogin .remindBox button;
+//.changePasswordWindow .box div button;.cardremind .box button;.cardAdd .box button;
+$perple003: #4556b1;
+
+//背景色
+//---------------main----------------------
+//.conversionBoard tr:nth-of-type(2) td:nth-of-type(1);
+//字色
+//---------------left----------------------
+//.minewindow .avater p.joinday;
+//邊框色
+//---------------myself--------------------
+//.myself .onlineCilent .chatwindow .chat .gmchat;
+$perple004: #304880;
+
+//字色
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button;.norbetting .nor_bettingbox .bettingend .endbox button;
+//.bettingbar .bettingbox .bettingend .endbox button;.changePasswordWindow .box div button;
+//.cardremind .box button;
+//---------------myself--------------------
+//.myself .helpbar p;.myself .helpbar span;.myself .helpbox;.myself .helpbox p;
+//.myself .linkBox div a p;
+//---------------topfix--------------------
+//.minetopfix .leftword;
+//邊框色
+//---------------fixside-------------------
+//.fixside .search .searchbox div a;
+$perple005: #4d515d;
+
+//背景色
+//---------------fixside-------------------
+//.fixside .search;.fixside .fun .hamBtn;.fixside .fun a;
+$perple006: #eaedf4;
+
+//陰影色
+//---------------fixside-------------------
+//.fixside .search input;
+$perple007: #c6cae0;
+
+//邊框色
+//---------------main----------------------
+//.discount .window
+$perple008: #8581b4;
+
+//背景色
+//---------------header--------------------
+//.logged .signupBtn;
+//---------------else----------------------
+//.totalPitch.b1 span:nth-of-type(1);.totalPitch.b2 span:nth-of-type(1);.totalPitch.b3 span:nth-of-type(1)
+//字色
+//---------------header--------------------
+//.logged .signupBtn:hover;.loggedIn p span;
+//---------------topfix--------------------
+//.minetopfix .midword p span;
+//邊框色
+//---------------header--------------------
+//ul li a:hover;
+//---------------topfix--------------------
+//.inn li:hover button;.teach li:hover;.minetopfix .fixbar ul li:hover;
 $green001: #59a936;
 
-//.overGame字色
-$green002: #4dff00;
+//背景色
+//---------------main----------------------
+//.playBoard tr td button::before;.conversionBoard tr:nth-of-type(1) td:nth-of-type(2);
+//字色
+//---------------main----------------------
+//.bettingBoard tr td.waiting;
+//---------------right---------------------
+//.statusWindow ul li span.onWait
+//邊框色
+//.minetable.withdrawl tr td .inputBox button;
+$green002: #3c7424;
 
-//.left .live字色,.totalPitch好球背景色,.gameStyle,
+//字色
+//---------------main----------------------
+//.playBoard tr td.overGame;.playBoard tr td span.overGame;.minetable.download tr td .codeBox .versionWord span;
+$green003: #4dff00;
+
+//背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c2:active::before;
+//---------------jumpbox-------------------
+//.norbettingCheck .bettingbox .bettingend .endbox p::before;.calculator .calbox .top .inputbox button;
+//字色
+//---------------jumpbox-------------------
+//.norbettingCheck .bettingbox .bettingend .endbox p;.bettingbar .bettingbox .bettingwindow table tr td p.vs;
+//.bettingCheck .bettingbox .bettingwindow table tr td p.vs;.bettingCheck .bettingbox .bettingend .endbox p span.listCode;
+$green004: #31a8b1;
+
+//背景色
+//---------------else----------------------
+//.totalPitch.s1 span:nth-of-type(1);.totalPitch.s2 span:nth-of-type(1);
+//字色
+//---------------main----------------------
+//.playBoard tr td .gameStyle;.minetable.infor tr td .mainWindow div p span:nth-of-type(2);
+//.minetable.totalMoney tr td .box .half p.dollar span;.minetable.totalMoney tr td .separateBox.big .half p.dollar span;
+//.minetable.totalMoney tr td .separateBox.small p;.minetable.creditcard tr td .remind a;
+//.minetable.dealRecord tr td.depositMoney;.minetable.bettingRecord tr td.yellow;
+//.minetable.bettingRecord tr td .odd;
+//---------------topfix--------------------
+//.minetopfix .fixbar p span;
+//---------------left----------------------
+//ul li a .live
+//---------------myself--------------------
+//.myself .ruleBox ol li .remind;.myself .ruleBox ol li .tableBox table tr td span;
+//---------------jumpbox-------------------
+//.cardremind .box p.remind;
 $orange001: #ff8c00;
 
-//timeSelect .date .total span字色,.liveRemind背景色,yellowCard背景色,
-//pitcher字色
-$yellow001: #ffee00;
+//背景色
+//---------------main----------------------
+//.playBoard tr td button::after;.bettingBoard tr td.listName .odds;
+$orange002: #ae4639;
 
-//playBoard td button字色
+//背景色
+//---------------main----------------------
+//.minetable.totalInfo
+//---------------fixside-------------------
+//.fixside .fun .hamBtn span;
+$orange003: #f3b378;
+
+//字色
+//---------------main----------------------
+//.discount .window .word p.main
+$orange004: #b98353;
+
+//邊框色
+//---------------myself--------------------
+//.myself .recordbox;
+$orange005: #b7906e;
+
+//背景色
+//---------------myself--------------------
+//.myself .recordbox;
+$orange006: #b59273;
+
+//背景色
+//---------------else----------------------
+//.liveRemind;.liveRemind::before;.redCard.yellowCard span;.yellowCard.yellowCard span;
+//字色
+//---------------main----------------------
+//.playBoard tr td.allScore;.playBoard.tType4_result tr td p.first;
+//.teachBoard tr td .team p .odd;.teachBoard tr td .box .textBox p.win;
+//.teachBoard tr td .box .midBox p.score;
+//---------------topfix--------------------
+//.nor .reWeb select option span;.nor .reWeb .clock;.nor .timeSelect .date .total span;
+//---------------jumpbox-------------------
+//.controlBox .innerBox2 p span;.bettingbar .bettingbox .bettingwindow table tr td .pitcher;
+//.bettingbar .bettingbox .bettingtotal div .remind;.bettingCheck .bettingbox .bettingwindow table tr td .pitcher;
+//---------------else----------------------
+//.pitcher;
+$yellow001: #ffd400;
+
+//字色
+//---------------main----------------------
+//.playBoard tr td button;.innerBoard tr td button;
 $yellow002: #d9de06;
 
-//.redCard背景色
+//背景色
+//---------------jumpbox-------------------
+//.bettingCheck .bettingbox .bettingend .endbox .remind::before;
+//---------------else----------------------
+//.redCard span;.yellowCard span;
+//---------------myself--------------------
+//.recordbar div span.remind;
+//字色
+//---------------main----------------------
+//.bettingRemind tr td .remind .odds,.minetable.totalMoney tr td .box .half p.locked span;
+//.minetable.totalMoney tr td .separateBox.big .half p.dollar span.locked;
+//.minetable.sportRule tr td span.remind;
+//---------------jumpbox-------------------
+//.norbetting .nor_bettingbox .bettingend .endbox input:last-child;.bettingbar .num;
+//.bettingbar .bettingbox .bettingwindow table tr td .odds;.bettingbar .bettingbox .bettingend .endbox input:last-child;
+//.bettingCheck .num;.bettingCheck .bettingbox .bettingwindow table tr td .odds;
+//.bettingCheck .bettingbox .bettingtotal div .remind;.bettingCheck .bettingbox .bettingend .endbox .remind;
+//.bettingCheck .bettingbox .bettingend .endbox p span.way;.calculator .calbox .bottom .inputbox input;
+//---------------myself--------------------
+//.recordbar div span;
+//邊框色
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingend .endbox button;
 $red001: #ff0000;
 
-//.totalPitch出局背景色
-$red002: #c84a4a;
+//背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c3:active::before;
+$red002: #d7767a;
 
-//cube背景色,.chleague背景色
-$linear-gradient001: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
+//背景色
+//---------------else----------------------
+//.totalPitch.o1 span:nth-of-type(1);.totalPitch.o2 span:nth-of-type(1)
+$red003: #c84a4a;
 
-//fixside .searchbox li
-$linear-gradient002: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
+//背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c1:active::before;
+$blue001: #6589c6;
+
+//字色
+//---------------main----------------------
+//.minetable.dealRecord tr td.dealCode;.minetable.bettingRecord tr td .vs;
+//---------------else----------------------
+//.playerStatus;
+$blue002: #90b9ff;
+
+//背景色
+//---------------main----------------------
+//.minetable.bettingRecord tr.totalInfo;
+//---------------topfix--------------------
+//.minetopfix .floatName;
+$blue003: #404b87;
+
+//背景色
+//---------------else----------------------
+//.mark
+//陰影色
+//---------------main----------------------
+//.discount .window;.discount .activebox.open;
+$blue004: #8e9bdc;
+
+//漸層背景色
+//---------------left----------------------
+//.minewindow .avater p span;
+$linear-gradient001: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+
+//漸層背景色
+//---------------main----------------------
+//.imgBoard tr td a::before;
+$linear-gradient002: linear-gradient(to right, transparent, #fff, transparent);
+
+//漸層背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c1;
+$linear-gradient003: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+//.minetable.creditcard tr td .creditcardBtn.c1:hover;
+$linear-gradient003_2: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
+
+//漸層背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c2;
+$linear-gradient004: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+//.minetable.creditcard tr td .creditcardBtn.c2:hover;
+$linear-gradient004_2: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
+
+//漸層背景色
+//---------------main----------------------
+//.minetable.creditcard tr td .creditcardBtn.c3;
+$linear-gradient005: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+//.minetable.creditcard tr td .creditcardBtn.c3:hover;
+$linear-gradient005_2: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
+
+//漸層背景色
+//---------------main----------------------
+//.minetable.problem tr td .uploadImg;.minetable.withdrawl tr td .inputBox button;.minetable.transpoint tr td button;
+//.minetable.depositMoney tr td .depositBtn;.chleague button;.discount .window button;
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button:last-child;.unLogin .remindBox button;
+//.changePasswordWindow .box div button:last-child;.cardremind .box button:last-child;
+//.cardAdd .box button;
+//---------------fixside-------------------
+//.fixside .search button;
+//---------------myself--------------------
+//.myself .onlineCilent .onlineroom .send;
+$linear-gradient006: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+//---------------main----------------------
+//.minetable.problem tr td .uploadImg:hover;.minetable.withdrawl tr td .inputBox button:hover;.minetable.transpoint tr td button:hover;
+//.minetable.depositMoney tr td .depositBtn;.chleague button;.discount .window button:hover;
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button:last-child:hover;.norbetting .nor_bettingbox .bettingend .endbox button.decideBtn;
+//.unLogin .remindBox button:hover;.changePasswordWindow .box div button:last-child:hover;
+//.cardremind .box button:last-child:hover;.cardAdd .box button:hover;
+//---------------else----------------------
+//.cube.active;
+//---------------fixside-------------------
+//.fixside .search button:hover;
+//---------------myself--------------------
+//.myself .onlineCilent .onlineroom .send:hover;
+$linear-gradient006_2: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
+
+//漸層背景色
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button;.norbetting .nor_bettingbox .bettingend .endbox button;
+//.changePasswordWindow .box div button;.cardremind .box button;
+//---------------else----------------------
+//.cube;
+//---------------fixside-------------------
+//.fixside .search .searchbox li;
+$linear-gradient007: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+//---------------jumpbox-------------------
+//.signupWindow .signupbox div button:hover;.norbetting .nor_bettingbox .bettingend .endbox button:hover;
+//.changePasswordWindow .box div button:hover;.cardremind .box button:hover;
+//---------------else----------------------
+//.cube;
+$linear-gradient007_2: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+
+//漸層背景色
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingend .endbox button;
+$linear-gradient008: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+//.bettingbar .bettingbox .bettingend .endbox button:hover;
+$linear-gradient008_2: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
+
+//漸層背景色
+//---------------jumpbox-------------------
+//.bettingbar .bettingbox .bettingend .endbox button:active;
+//.bettingbar .bettingbox .bettingend .endbox button.cur:hover;
+$linear-gradient009: llinear-gradient(to top, #ec0004 0%, #ff0000 100%);
+//.bettingbar .bettingbox .bettingend .endbox button.cur;
+$linear-gradient009_2: llinear-gradient(to bottom, #ec0004 0%, #ff0000 100%);
+
+//漸層背景色
+//---------------jumpbox-------------------
+//.calculator .calbox .bottom .inputbox button;
+$linear-gradient010: linear-gradient(to left, #9ca8e4, #4556b1);
+
+//漸層背景色
+//---------------fixside-------------------
+//.fixside .search .searchbut:hover;.fixside .fun .hamBtn:hover;.fixside .fun a:hover;
+$linear-gradient011: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+
+//漸層背景色
+//---------------fixside-------------------
+//.fixside .search .searchbox li:hover
+$linear-gradient012: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
+
+//漸層背景色
+//---------------main----------------------
+//.discount .window;.discount .activebox;
+$linear-gradient013: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+
+//漸層背景色
+//---------------myself--------------------
+//.myself .recordbar.open;.myself .helpbar.open;
+$linear-gradient014: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);

@@ -28,11 +28,10 @@
         width: 90%;
         height: 180px;
         background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
-        background-color: #fafbff;
         margin: 15px auto 0px;
         border-radius: 20px;
         border: 1px solid #8581b4;
-        box-shadow: 0 0 4px 2px #bac0db;
+        box-shadow: 0 0 4px 2px #8e9bdc;
         position: relative;
 
         //左上字
@@ -137,7 +136,7 @@
 
         //查看詳情
         button {
-            background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
+            background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
             border: solid 1px #1e2f8e;
             width: 160px;
             height: 40px;
@@ -149,7 +148,7 @@
             border-radius: 3px;
             font-size: 18px;
             &:hover,&:active,&.active {
-                background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
+                background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
             }
         }
     }
@@ -159,7 +158,6 @@
         width: 90%;
         height: 0px;
         background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
-        background-color: #fafbff;
         margin: 0px auto;
         border-radius: 0px 0px 20px 20px;
         transform: translateY(-20px);
@@ -168,7 +166,7 @@
         overflow: hidden;
 
         &.open {
-            box-shadow: 0 0 4px 2px #bac0db;
+            box-shadow: 0 0 4px 2px #8e9bdc;
             height: auto;
         }
 
