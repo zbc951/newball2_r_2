@@ -1137,6 +1137,10 @@ main .bg {
 .playBoard.newP tr td button {
   width: 100px;
   height: 50px;
+  margin-bottom: 5px;
+}
+.playBoard.newP tr td button:last-child {
+  margin: 0px;
 }
 .playBoard.newP tr td button:hover, .playBoard.newP tr td button:active, .playBoard.newP tr td button.active {
   background: #fff;
@@ -1144,6 +1148,12 @@ main .bg {
 }
 .playBoard.newP tr td button:hover span, .playBoard.newP tr td button:active span, .playBoard.newP tr td button.active span {
   color: #000;
+}
+.playBoard.newP tr td button.third {
+  height: 31px;
+}
+.playBoard.newP tr td button.third span {
+  display: inline;
 }
 .playBoard.newP tr td button span {
   display: block;
@@ -1202,16 +1212,16 @@ main .bg {
   padding-left: 8px;
 }
 .playBoard.tType1 tr td:nth-of-type(1) {
-  width: 58%;
+  width: 49%;
 }
 .playBoard.tType1 tr td:nth-of-type(2) {
   width: 7%;
 }
-.playBoard.tType1 tr td:nth-of-type(3), .playBoard.tType1 tr td:nth-of-type(9) {
+.playBoard.tType1 tr td:nth-of-type(3), .playBoard.tType1 tr td:nth-of-type(7) {
   width: 4%;
 }
 .playBoard.tType1 tr td:nth-of-type(4), .playBoard.tType1 tr td:nth-of-type(5), .playBoard.tType1 tr td:nth-of-type(6) {
-  width: 9%;
+  width: 12%;
 }
 .playBoard.tType1_2.hide1 tr th:nth-last-of-type(2), .playBoard.tType1_2.hide1 tr td:nth-last-of-type(2) {
   display: none;
