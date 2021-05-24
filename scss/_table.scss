@@ -440,27 +440,6 @@
 	}
 	&.tType1_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 10%;
-					}
-
-					&:nth-of-type(4),&:nth-of-type(7) {
-						width: 21%;
-					}
-	
-					&:nth-of-type(2),&:nth-of-type(10) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
@@ -472,25 +451,28 @@
 						&.redCard,&.yellowCard {
 							padding: 0px;
 						}
+
+						&.yellowCard {
+							padding-left: 6px;
+						}
 					}
 				}
 
 				&:nth-of-type(1) {
-					width: 7%;
-					padding: 0px 8px;
+					min-width: 70px;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6),
-				&:nth-of-type(9) {
-					width: 5%;
+				&:nth-of-type(5),&:nth-of-type(8) {
+					min-width: 60px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(10),
+				&:nth-of-type(6),&:nth-of-type(9) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(7) {
-					width: 26%;
-				}
-
-				&:nth-of-type(5),&:nth-of-type(8),&:nth-of-type(10) {
-					width: 7%;
+					width: 50%;
 				}
 			}
 		}
@@ -621,54 +603,6 @@
 	}
 	&.tType2_index {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 9%;
-						padding: 8px 26px;
-					}
-
-					&:nth-of-type(5) {
-						width: 34%;
-					}
-
-					&:nth-of-type(19) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						padding: 8px 20px;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						padding: 8px 16px;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
@@ -684,21 +618,17 @@
 					}
 				}
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(19) {
-					width: 6%;
+				&:nth-of-type(1) {
+					min-width: 70px;
 				}
 
-				&:nth-of-type(3) {
-					width: 7%;
-				}
-
-				&:nth-of-type(4) {
-					width: 7%;
-					padding: 8px 22px;
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
+				&:nth-of-type(19) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(5) {
-					width: 42%;
+					width: 100%;
 				}
 
 				&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),
@@ -706,7 +636,7 @@
 				&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(14),
 				&:nth-of-type(15),&:nth-of-type(16),&:nth-of-type(17),
 				&:nth-of-type(18) {
-					width: 2%;
+					min-width: 20px;
 				}
 			}
 		}
@@ -827,42 +757,25 @@
 	}
 	&.tType3_index {
 
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(4) {
-						width: 47%;
-					}
-
-					&:nth-of-type(11) {
-						width: 8%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
-				&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
-					width: 7%;
+				&:nth-of-type(1) {
+					min-width: 70px;
+				}
+
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(11) {
+					min-width: 50px;
 				}
 
 				&:nth-of-type(4) {
-					width: 49%;
+					width: 100%;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10) {
-					width: 4%;
-				}
-
-				&:nth-of-type(11) {
-					width: 6%;
+					min-width: 20px;
 				}
 			}
 		}
@@ -900,67 +813,20 @@
 	//賽馬賽狗版型
 	&.tType4 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 68%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 12%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 58%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 74%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 11%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1065,55 +931,31 @@
 
 	//電競版型
 	&.tType5 {
-
-		&.hide1 {
-
-			tr {
-
-				td {
-					&:nth-of-type(1) {
-						width: 48%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-			
-			tr {
-
-				td {
-					&:nth-of-type(1) {
-						width: 42%;
-					}
-				}
-			}
-		}
 		
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 56%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(9),&:nth-of-type(12) {
-					width: 4%;
+				&:nth-of-type(9) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(10),&:nth-of-type(11) {
 					width: 11%;
+				}
+
+				&:nth-of-type(12) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -1125,50 +967,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-			
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 38%;
-					}
-
-					&:nth-of-type(15) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44%;
 					}
 				}
 			}
@@ -1180,23 +980,23 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 33%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 					
 					p {
 						padding: 0px;
 					}
 				}
 
-				&:nth-of-type(9),&:nth-of-type(15) {
+				&:nth-of-type(9) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 					
 					p {
 						padding: 0px;
@@ -1205,11 +1005,11 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1462,67 +1262,20 @@
 	//股票指數版型
 	&.tType6 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 68%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 12%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 58%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 74%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 11%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1569,67 +1322,20 @@
 	//彩球版型
 	&.tType7 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 68%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 12%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 58%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 74%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 11%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1758,59 +1464,33 @@
 	//網球版型
 	&.tType8 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 53%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					width: 3%;
+					min-width: 25px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
-				&:nth-of-type(6),&:nth-of-type(7) {
-					width: 2%;
+				&:nth-of-type(3),&:nth-of-type(4),
+				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
+					min-width: 20px;
 				}
 
-				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(12) {
-					width: 4%;
+				&:nth-of-type(8),&:nth-of-type(9) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(10),&:nth-of-type(11) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(12) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -1822,50 +1502,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 28%;
-					}
-
-					&:nth-of-type(15) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-				
-				td {
-
-					&:nth-of-type(1) {
-						width: 42%;
 					}
 				}
 			}
@@ -1877,22 +1515,17 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 30%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					line-height: 25px;
-					width: 3%;
-
-					p {
-						padding: 0px;
-					}
+					min-width: 25px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),
-				&:nth-of-type(6),&:nth-of-type(7) {
+				&:nth-of-type(3),&:nth-of-type(4),
+				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 					
 					p {
 						padding: 0px;
@@ -1901,7 +1534,7 @@
 
 				&:nth-of-type(8),&:nth-of-type(9) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -1910,11 +1543,11 @@
 
 				&:nth-of-type(10),&:nth-of-type(11),&:nth-of-type(12),
 				&:nth-of-type(13),&:nth-of-type(14) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(15) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -1998,50 +1631,24 @@
 	//斯諾克版型
 	&.tType9 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 50%;
-					}
-
-					&:nth-of-type(6) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 66%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(6) {
-					width: 4%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(6) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2053,50 +1660,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(9) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 54%;
 					}
 				}
 			}
@@ -2108,16 +1673,12 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 43%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2),&:nth-of-type(9) {
-					width: 4%;
-				}
-
-				&:nth-of-type(3) {
+				&:nth-of-type(2),&:nth-of-type(3) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -2126,7 +1687,11 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 9%;
+					width: 1%;
+				}
+
+				&:nth-of-type(9) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2187,56 +1752,30 @@
 	//排球+乒乓球版型
 	&.tType10 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(13) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 38%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 52%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(13) {
-					width: 4%;
+				&:nth-of-type(9),&:nth-of-type(10) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(11),&:nth-of-type(12) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(13) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2248,50 +1787,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 27%;
-					}
-
-					&:nth-of-type(16) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
 					}
 				}
 			}
@@ -2303,14 +1800,14 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 29%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -2319,7 +1816,7 @@
 
 				&:nth-of-type(9),&:nth-of-type(10) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -2328,11 +1825,11 @@
 
 				&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),
 				&:nth-of-type(14),&:nth-of-type(15) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(16) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -2418,67 +1915,20 @@
 	//賽車
 	&.tType11 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 68%;
-					}
-
-					&:nth-of-type(2),&:nth-of-type(3) {
-						width: 12%;
-					}
-
-					&:nth-of-type(4) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 60%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 58%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 74%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3) {
-					width: 11%;
+					width: 1%;
 				}
 
 				&:nth-of-type(4) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -2565,55 +2015,29 @@
 	//羽毛球
 	&.tType12 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 50%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 42%;
-					}
-
-					&:nth-of-type(12) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 56%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(11) {
-					width: 4%;
+				&:nth-of-type(7),&:nth-of-type(8) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(9),&:nth-of-type(10) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(11) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -2626,52 +2050,8 @@
 
 				th,td {
 
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 40%;
-					}
-
-					&:nth-of-type(14) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44%;
 					}
 				}
 			}
@@ -2683,13 +2063,13 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 33%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -2698,7 +2078,7 @@
 
 				&:nth-of-type(7),&:nth-of-type(8) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -2707,11 +2087,11 @@
 
 				&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11),
 				&:nth-of-type(12),&:nth-of-type(13) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(14) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
