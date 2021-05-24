@@ -41,11 +41,12 @@
 		  
 		td {
 			font-size: 13px;
-			padding: 8px 0px;
+			padding: 8px 3px;
 			vertical-align: middle;
 			word-break: break-all;
 			color: #fff;
 			line-height: 18px;
+
 
 			&:nth-of-type(1) {
 
@@ -276,8 +277,7 @@
 		tr {
 
 			td {
-
-				padding: 6px 0px;
+				padding: 6px 2px;
 
 				&.tLeft {
 					text-align: left;
@@ -333,36 +333,6 @@
 	//足球+沙灘足球版型
 	&.tType1 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 46%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 36%;
-					}
-
-					&:nth-of-type(7) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
@@ -386,19 +356,22 @@
 				}
 
 				&:nth-of-type(1) {
-					width: 52%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
-					width: 7%;
+					min-width: 60px;
 				}
 
-				&:nth-of-type(3),&:nth-of-type(7) {
-					width: 4%;
+				&:nth-of-type(3) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6) {
-					width: 11%;
+					width: 1%;
+				}
+				&:nth-of-type(7) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -410,48 +383,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 45%;
-					}
-
-					&:nth-of-type(9) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-
-					&:nth-of-type(1) {
-						width: 55%;
 					}
 				}
 			}
@@ -477,17 +410,17 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 40%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2) {
 					line-height: 25px;
-					width: 7%;
+					min-width: 60px;
 				}
 
 				&:nth-of-type(3) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -496,11 +429,11 @@
 
 				&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),
 				&:nth-of-type(7),&:nth-of-type(8) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(9) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -605,89 +538,32 @@
 	//棒球版型
 	&.tType2 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-					
-					&:nth-of-type(1) {
-						width: 50.5%;
-					}
-
-					&:nth-of-type(3) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 48.5%;
-					}
-	
-					&:nth-of-type(3) {
-						width: 7%;
-					}
-	
-					&:nth-of-type(7) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44.5%;
-					}
-
-					&:nth-of-type(3) {
-						width: 7.5%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 58.5%;
+					width: 100%;
 				}
-				&:nth-of-type(2) {
-					width: 6%;
 
-					p {
-						padding: 0px;
-					}
-				}
-				&:nth-of-type(3) {
-					width: 5.5%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 50px;
 
 					p {
 						padding: 0px;
 					}
 				}
 
-				&:nth-of-type(4),&:nth-of-type(7) {
-					width: 4%;
+				&:nth-of-type(4) {
+					min-width: 40px;
 				}
 
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(7) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -699,65 +575,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 33.5%;
-					}
-
-					&:nth-of-type(3) {
-						width: 6%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-				
-				td {
-
-					&:nth-of-type(3) {
-						width: 6.5%;
-					}
-
-					&:nth-of-type(10) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 44.5%;
-					}
-
-					&:nth-of-type(3) {
-						width: 7%;
 					}
 				}
 			}
@@ -769,19 +588,11 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 35.5%;
+					width: 100%;
 				}
 
-				&:nth-of-type(2) {
-					width: 6%;
-
-					p {
-						padding: 0px;
-					}
-				}
-
-				&:nth-of-type(3) {
-					width: 5.5%;
+				&:nth-of-type(2),&:nth-of-type(3) {
+					min-width: 50px;
 
 					p {
 						padding: 0px;
@@ -790,7 +601,7 @@
 
 				&:nth-of-type(4) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 40px;
 
 					p {
 						padding: 0px;
@@ -799,11 +610,11 @@
 
 				&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7),
 				&:nth-of-type(8),&:nth-of-type(9) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(10) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
@@ -935,76 +746,29 @@
 	//籃球+冰球+美式足球版型
 	&.tType3 {
 
-		&.hide1 {
-
-			tr {
-
-				td {
-					
-					&:nth-of-type(1) {
-						width: 56%;
-					}
-
-					&:nth-of-type(8),&:nth-of-type(9) {
-						width: 12%;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 52%;
-					}
-
-					&:nth-of-type(8),&:nth-of-type(9) {
-						width: 13%;
-					} 
-
-					&:nth-of-type(10) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 46%;
-					}
-				}
-			}
-		}
-
 		tr {
 
 			td {
 
 				&:nth-of-type(1) {
-					width: 60%;
+					width: 100%;
 				}
 
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
-					width: 2%;
+					min-width: 20px;
 				}
 
-				&:nth-of-type(7),&:nth-of-type(10) {
-					width: 4%;
+				&:nth-of-type(7) {
+					min-width: 30px;
 				}
 
 				&:nth-of-type(8),&:nth-of-type(9) {
-					width: 11%;
+					width: 1%;
+				}
+
+				&:nth-of-type(10) {
+					min-width: 50px;
 				}
 			}
 		}
@@ -1016,50 +780,8 @@
 			tr {
 
 				th,td {
-					&:nth-last-of-type(2) {
+					&:nth-last-of-type(2),&:nth-last-of-type(3) {
 						display: none;
-					}
-				}
-			}
-		}
-
-		&.hide2 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(3) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 38%;
-					}
-
-					&:nth-of-type(13) {
-						width: 5%;
-					}
-				}
-			}
-		}
-
-		&.hide3 {
-
-			tr {
-
-				th,td {
-					&:nth-last-of-type(4) {
-						display: none;
-					}
-				}
-
-				td {
-
-					&:nth-of-type(1) {
-						width: 50%;
 					}
 				}
 			}
@@ -1071,12 +793,12 @@
 
 				&:nth-of-type(1) {
 					line-height: 25px;
-					width: 37%;
+					width: 100%;
 				}
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4),
 				&:nth-of-type(5),&:nth-of-type(6) {
 					line-height: 25px;
-					width: 2%;
+					min-width: 20px;
 
 					p {
 						padding: 0px;
@@ -1085,7 +807,7 @@
 
 				&:nth-of-type(7) {
 					line-height: 25px;
-					width: 4%;
+					min-width: 30px;
 
 					p {
 						padding: 0px;
@@ -1094,11 +816,11 @@
 				
 				&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),
 				&:nth-of-type(11),&:nth-of-type(12) {
-					width: 9%;
+					width: 1%;
 				}
 
 				&:nth-of-type(13) {
-					width: 4%;
+					min-width: 50px;
 				}
 			}
 		}
