@@ -48,6 +48,22 @@ $(function(){
         $('.Email').removeClass('lSide');
         $('.Email').addClass('rSide');
     })
+    $('.newBtn .on').click(function(){
+        $('.newBtn').removeClass('rSide');
+        $('.newBtn').addClass('lSide');
+    })
+    $('.newBtn .off').click(function(){
+        $('.newBtn').removeClass('lSide');
+        $('.newBtn').addClass('rSide');
+    })
+    $('.oldBtn .on').click(function(){
+        $('.oldBtn').removeClass('rSide');
+        $('.oldBtn').addClass('lSide');
+    })
+    $('.oldBtn .off').click(function(){
+        $('.oldBtn').removeClass('lSide');
+        $('.oldBtn').addClass('rSide');
+    })
     $('.cancelBtn').click(function(){
         $('.filter').removeClass('display');
         $('.controlBox').removeClass('display');

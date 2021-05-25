@@ -5014,7 +5014,7 @@ main .bg {
 .controlBox {
   display: none;
   width: 600px;
-  height: 430px;
+  height: auto;
   border-radius: 3px;
   background: #747474;
   position: fixed;
@@ -5023,6 +5023,7 @@ main .bg {
   top: 15%;
   transform: translateX(-50%);
   border: solid 1px #a2a2a2;
+  padding-bottom: 10px;
 }
 .controlBox h1 {
   width: 100%;
