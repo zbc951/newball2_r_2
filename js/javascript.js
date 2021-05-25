@@ -890,21 +890,21 @@ $(function(){
         $('.marqueeBox').css('width',(String(wwd - 600) + 'px'));
         $('main').css('width',(String(wwd) + 'px'));
         $('.middle').css('width',(String(wwd - 650) + 'px'));
-        $('.topfix,.chleague').css('width',(String(wwd - 660) + 'px'));
+        $('.topfix,.chleague,.topimg').css('width',(String(wwd - 660) + 'px'));
         $('.topfix,.hideboard,.chleague').css('left',(String(280) + 'px'));
         $('.left').css('width',(String(270) + 'px'));
     } else if(wwd < 1530 && wwd >= 1480) {
         $('.marqueeBox').css('width',(String(wwd - 600) + 'px'));
         $('main').css('width',(String(wwd) + 'px'));
         $('.middle').css('width',(String(880) + 'px'));
-        $('.topfix,.chleague').css('width',(String(870) + 'px'));
+        $('.topfix,.chleague,.topimg').css('width',(String(870) + 'px'));
         $('.topfix,.hideboard,.chleague').css('left',(String(wwd - 1250) + 'px'));
         $('.left').css('width',(String(wwd - 1260) + 'px'));
     } else {
         $('.marqueeBox').css('width',(String(830) + 'px'));
         $('main').css('width',(String(1480) + 'px'));
         $('.middle').css('width',(String(880) + 'px'));
-        $('.topfix,.chleague').css('width',(String(870) + 'px'));
+        $('.topfix,.chleague,.topimg').css('width',(String(870) + 'px'));
         $('.topfix,.hideboard,.chleague').css('left',(String(230) + 'px'));
         $('.left').css('width',(String(220) + 'px'));
     }
@@ -923,21 +923,21 @@ $(function(){
             $('.marqueeBox').css('width',(String(wwd - 600) + 'px'));
             $('main').css('width',(String(wwd) + 'px'));
             $('.middle').css('width',(String(wwd - 650) + 'px'));
-            $('.topfix,.chleague').css('width',(String(wwd - 660) + 'px'));
+            $('.topfix,.chleague,.topimg').css('width',(String(wwd - 660) + 'px'));
             $('.topfix,.hideboard,.chleague').css('left',(String(280) + 'px'));
             $('.left').css('width',(String(270) + 'px'));
         } else if(wwd < 1530 && wwd >= 1480) {
             $('.marqueeBox').css('width',(String(wwd - 600) + 'px'));
             $('main').css('width',(String(wwd) + 'px'));
             $('.middle').css('width',(String(880) + 'px'));
-            $('.topfix,.chleague').css('width',(String(870) + 'px'));
+            $('.topfix,.chleague,.topimg').css('width',(String(870) + 'px'));
             $('.topfix,.hideboard,.chleague').css('left',(String(wwd - 1250) + 'px'));
             $('.left').css('width',(String(wwd - 1260) + 'px'));
         } else {
             $('.marqueeBox').css('width',(String(830) + 'px'));
             $('main').css('width',(String(1480) + 'px'));
             $('.middle').css('width',(String(880) + 'px'));
-            $('.topfix,.chleague').css('width',(String(870) + 'px'));
+            $('.topfix,.chleague,.topimg').css('width',(String(870) + 'px'));
             $('.topfix,.hideboard,.chleague').css('left',(String(230) + 'px'));
             $('.left').css('width',(String(220) + 'px'));
         }

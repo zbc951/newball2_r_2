@@ -1266,16 +1266,16 @@ main .bg {
   width: 50%;
 }
 .playBoard.tType1_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType1_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType1_result tr td:nth-of-type(3) {
-  width: 57%;
+  width: 100%;
 }
 .playBoard.tType1_result tr td:nth-of-type(4) {
-  width: 10%;
+  min-width: 60px;
 }
 .playBoard.tType1_result tr td:nth-of-type(4) div:nth-of-type(1) {
   margin-bottom: 8px;
@@ -1283,8 +1283,11 @@ main .bg {
 .playBoard.tType1_result tr td:nth-of-type(4) div p {
   padding: 0px;
 }
+.playBoard.tType1_result tr td:nth-of-type(4) div p.yellowCard {
+  padding-left: 6px;
+}
 .playBoard.tType1_result tr td:nth-of-type(5), .playBoard.tType1_result tr td:nth-of-type(6) {
-  width: 5%;
+  min-width: 30px;
 }
 .playBoard.tType2 tr td:nth-of-type(1) {
   width: 100%;
@@ -1349,19 +1352,19 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType2_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType2_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType2_result tr td:nth-of-type(3) {
-  width: 43%;
+  width: 100%;
 }
 .playBoard.tType2_result tr td:nth-of-type(4), .playBoard.tType2_result tr td:nth-of-type(5), .playBoard.tType2_result tr td:nth-of-type(6), .playBoard.tType2_result tr td:nth-of-type(7), .playBoard.tType2_result tr td:nth-of-type(8), .playBoard.tType2_result tr td:nth-of-type(9), .playBoard.tType2_result tr td:nth-of-type(10), .playBoard.tType2_result tr td:nth-of-type(11), .playBoard.tType2_result tr td:nth-of-type(12), .playBoard.tType2_result tr td:nth-of-type(13) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType2_result tr td:nth-of-type(14) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType3 tr td:nth-of-type(1) {
   width: 100%;
@@ -1418,19 +1421,19 @@ main .bg {
   min-width: 20px;
 }
 .playBoard.tType3_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType3_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType3_result tr td:nth-of-type(3) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType3_result tr td:nth-of-type(4), .playBoard.tType3_result tr td:nth-of-type(5), .playBoard.tType3_result tr td:nth-of-type(6), .playBoard.tType3_result tr td:nth-of-type(7), .playBoard.tType3_result tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType3_result tr td:nth-of-type(9) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType4 tr td:nth-of-type(1) {
   width: 100%;
@@ -1441,35 +1444,26 @@ main .bg {
 .playBoard.tType4 tr td:nth-of-type(4) {
   min-width: 50px;
 }
-.playBoard.tType4_index.hide2 tr td:nth-of-type(5) {
-  width: 29%;
-}
-.playBoard.tType4_index.hide2 tr td:nth-of-type(10) {
-  width: 8%;
-}
 .playBoard.tType4_index tr td p {
   padding-bottom: 8px;
 }
 .playBoard.tType4_index tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType4_index tr td:nth-of-type(1), .playBoard.tType4_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType4_index tr td:nth-of-type(1), .playBoard.tType4_index tr td:nth-of-type(6), .playBoard.tType4_index tr td:nth-of-type(7) {
+  min-width: 70px;
+}
+.playBoard.tType4_index tr td:nth-of-type(2), .playBoard.tType4_index tr td:nth-of-type(10) {
+  min-width: 50px;
 }
 .playBoard.tType4_index tr td:nth-of-type(3), .playBoard.tType4_index tr td:nth-of-type(4), .playBoard.tType4_index tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 30px;
 }
 .playBoard.tType4_index tr td:nth-of-type(5) {
-  width: 31%;
-}
-.playBoard.tType4_index tr td:nth-of-type(6), .playBoard.tType4_index tr td:nth-of-type(7) {
-  width: 16%;
+  width: 100%;
 }
 .playBoard.tType4_index tr td:nth-of-type(9) {
-  width: 8%;
-}
-.playBoard.tType4_index tr td:nth-of-type(10) {
-  width: 6%;
+  min-width: 60px;
 }
 .playBoard.tType4_result tr td p {
   padding-bottom: 8px;
@@ -1480,20 +1474,20 @@ main .bg {
 .playBoard.tType4_result tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType4_result tr td:nth-of-type(1) {
-  width: 8%;
+.playBoard.tType4_result tr td:nth-of-type(1), .playBoard.tType4_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
-.playBoard.tType4_result tr td:nth-of-type(2), .playBoard.tType4_result tr td:nth-of-type(7) {
-  width: 15%;
+.playBoard.tType4_result tr td:nth-of-type(2) {
+  min-width: 150px;
 }
-.playBoard.tType4_result tr td:nth-of-type(3), .playBoard.tType4_result tr td:nth-of-type(4), .playBoard.tType4_result tr td:nth-of-type(6) {
-  width: 3%;
+.playBoard.tType4_result tr td:nth-of-type(3), .playBoard.tType4_result tr td:nth-of-type(4), .playBoard.tType4_result tr td:nth-of-type(8) {
+  min-width: 30px;
 }
 .playBoard.tType4_result tr td:nth-of-type(5) {
-  width: 43%;
+  width: 100%;
 }
 .playBoard.tType4_result tr td:nth-of-type(6), .playBoard.tType4_result tr td:nth-of-type(7) {
-  width: 5%;
+  min-width: 50px;
 }
 .playBoard.tType5 tr td:nth-of-type(1) {
   width: 100%;
@@ -1537,116 +1531,101 @@ main .bg {
 .playBoard.tType5_2 tr td:nth-of-type(15) {
   min-width: 50px;
 }
-.playBoard.tType5_lol_index.hide1 tr td:nth-of-type(3) {
-  width: 32%;
+.playBoard.tType5_lol_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_lol_index.hide1 tr td:nth-of-type(19) {
-  width: 8%;
-}
-.playBoard.tType5_lol_index tr td:nth-of-type(1), .playBoard.tType5_lol_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_lol_index tr td:nth-of-type(2), .playBoard.tType5_lol_index tr td:nth-of-type(19) {
+  min-width: 50px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(3) {
-  width: 34%;
+  width: 100%;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(4), .playBoard.tType5_lol_index tr td:nth-of-type(5), .playBoard.tType5_lol_index tr td:nth-of-type(6), .playBoard.tType5_lol_index tr td:nth-of-type(7), .playBoard.tType5_lol_index tr td:nth-of-type(8), .playBoard.tType5_lol_index tr td:nth-of-type(9), .playBoard.tType5_lol_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType5_lol_index tr td:nth-of-type(11), .playBoard.tType5_lol_index tr td:nth-of-type(12), .playBoard.tType5_lol_index tr td:nth-of-type(13), .playBoard.tType5_lol_index tr td:nth-of-type(14), .playBoard.tType5_lol_index tr td:nth-of-type(15), .playBoard.tType5_lol_index tr td:nth-of-type(16), .playBoard.tType5_lol_index tr td:nth-of-type(17), .playBoard.tType5_lol_index tr td:nth-of-type(18) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType5_lol_index tr td:nth-of-type(19) {
-  width: 6%;
+.playBoard.tType5_dota_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_dota_index.hide1 tr td:nth-of-type(3) {
-  width: 36%;
-}
-.playBoard.tType5_dota_index.hide1 tr td:nth-of-type(18) {
-  width: 8%;
-}
-.playBoard.tType5_dota_index tr td:nth-of-type(1), .playBoard.tType5_dota_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_dota_index tr td:nth-of-type(2), .playBoard.tType5_dota_index tr td:nth-of-type(18) {
+  min-width: 50px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(3) {
-  width: 38%;
+  width: 100%;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(4), .playBoard.tType5_dota_index tr td:nth-of-type(5), .playBoard.tType5_dota_index tr td:nth-of-type(6), .playBoard.tType5_dota_index tr td:nth-of-type(7), .playBoard.tType5_dota_index tr td:nth-of-type(8), .playBoard.tType5_dota_index tr td:nth-of-type(9), .playBoard.tType5_dota_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
 .playBoard.tType5_dota_index tr td:nth-of-type(11), .playBoard.tType5_dota_index tr td:nth-of-type(12), .playBoard.tType5_dota_index tr td:nth-of-type(13), .playBoard.tType5_dota_index tr td:nth-of-type(14), .playBoard.tType5_dota_index tr td:nth-of-type(15), .playBoard.tType5_dota_index tr td:nth-of-type(16), .playBoard.tType5_dota_index tr td:nth-of-type(17) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType5_dota_index tr td:nth-of-type(18) {
-  width: 6%;
+.playBoard.tType5_cs_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType5_cs_index.hide1 tr td:nth-of-type(3) {
-  width: 44%;
-}
-.playBoard.tType5_cs_index.hide1 tr td:nth-of-type(15) {
-  width: 8%;
-}
-.playBoard.tType5_cs_index tr td:nth-of-type(1), .playBoard.tType5_cs_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType5_cs_index tr td:nth-of-type(2), .playBoard.tType5_cs_index tr td:nth-of-type(15) {
+  min-width: 50px;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(3) {
-  width: 46%;
+  width: 100%;
 }
 .playBoard.tType5_cs_index tr td:nth-of-type(4), .playBoard.tType5_cs_index tr td:nth-of-type(5), .playBoard.tType5_cs_index tr td:nth-of-type(6), .playBoard.tType5_cs_index tr td:nth-of-type(7), .playBoard.tType5_cs_index tr td:nth-of-type(8), .playBoard.tType5_cs_index tr td:nth-of-type(9), .playBoard.tType5_cs_index tr td:nth-of-type(10) {
-  width: 2%;
+  min-width: 20px;
 }
-.playBoard.tType5_cs_index tr td:nth-of-type(11), .playBoard.tType5_cs_index tr td:nth-of-type(12), .playBoard.tType5_cs_index tr td:nth-of-type(13), .playBoard.tType5_cs_index tr td:nth-of-type(14) {
-  width: 5%;
+.playBoard.tType5_cs_index tr td:nth-of-type(11), .playBoard.tType5_cs_index tr td:nth-of-type(12), .playBoard.tType5_cs_index tr td:nth-of-type(13) {
+  min-width: 30px;
 }
-.playBoard.tType5_cs_index tr td:nth-of-type(15) {
-  width: 6%;
+.playBoard.tType5_cs_index tr td:nth-of-type(14) {
+  min-width: 40px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(3) {
-  width: 24%;
+  width: 100%;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(4), .playBoard.tType5_lol_result tr td:nth-of-type(5), .playBoard.tType5_lol_result tr td:nth-of-type(6), .playBoard.tType5_lol_result tr td:nth-of-type(7), .playBoard.tType5_lol_result tr td:nth-of-type(8), .playBoard.tType5_lol_result tr td:nth-of-type(9), .playBoard.tType5_lol_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType5_lol_result tr td:nth-of-type(11), .playBoard.tType5_lol_result tr td:nth-of-type(12), .playBoard.tType5_lol_result tr td:nth-of-type(13), .playBoard.tType5_lol_result tr td:nth-of-type(14), .playBoard.tType5_lol_result tr td:nth-of-type(15), .playBoard.tType5_lol_result tr td:nth-of-type(16), .playBoard.tType5_lol_result tr td:nth-of-type(17), .playBoard.tType5_lol_result tr td:nth-of-type(18) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(3) {
-  width: 28%;
+  width: 100%;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(4), .playBoard.tType5_dota_result tr td:nth-of-type(5), .playBoard.tType5_dota_result tr td:nth-of-type(6), .playBoard.tType5_dota_result tr td:nth-of-type(7), .playBoard.tType5_dota_result tr td:nth-of-type(8), .playBoard.tType5_dota_result tr td:nth-of-type(9), .playBoard.tType5_dota_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType5_dota_result tr td:nth-of-type(11), .playBoard.tType5_dota_result tr td:nth-of-type(12), .playBoard.tType5_dota_result tr td:nth-of-type(13), .playBoard.tType5_dota_result tr td:nth-of-type(14), .playBoard.tType5_dota_result tr td:nth-of-type(15), .playBoard.tType5_dota_result tr td:nth-of-type(16), .playBoard.tType5_dota_result tr td:nth-of-type(17) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(3) {
-  width: 34%;
+  width: 100%;
 }
 .playBoard.tType5_cs_result tr td:nth-of-type(4), .playBoard.tType5_cs_result tr td:nth-of-type(5), .playBoard.tType5_cs_result tr td:nth-of-type(6), .playBoard.tType5_cs_result tr td:nth-of-type(7), .playBoard.tType5_cs_result tr td:nth-of-type(8), .playBoard.tType5_cs_result tr td:nth-of-type(9), .playBoard.tType5_cs_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
-.playBoard.tType5_cs_result tr td:nth-of-type(11) {
-  width: 4%;
+.playBoard.tType5_cs_result tr td:nth-of-type(11), .playBoard.tType5_cs_result tr td:nth-of-type(12), .playBoard.tType5_cs_result tr td:nth-of-type(13) {
+  min-width: 30px;
 }
-.playBoard.tType5_cs_result tr td:nth-of-type(12), .playBoard.tType5_cs_result tr td:nth-of-type(13), .playBoard.tType5_cs_result tr td:nth-of-type(14) {
-  width: 6%;
+.playBoard.tType5_cs_result tr td:nth-of-type(14) {
+  min-width: 40px;
 }
 .playBoard.tType6 tr td:nth-of-type(1) {
   width: 100%;
@@ -1658,19 +1637,19 @@ main .bg {
   min-width: 50px;
 }
 .playBoard.tType6_index tr td:nth-of-type(1) {
-  width: 12%;
+  min-width: 120px;
 }
 .playBoard.tType6_index tr td:nth-of-type(2), .playBoard.tType6_index tr td:nth-of-type(3), .playBoard.tType6_index tr td:nth-of-type(4), .playBoard.tType6_index tr td:nth-of-type(5) {
-  width: 20%;
+  width: 25%;
 }
 .playBoard.tType6_index tr td:nth-of-type(6) {
-  width: 8%;
+  min-width: 50px;
 }
-.playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2), .playBoard.tType6_result tr td:nth-of-type(5), .playBoard.tType6_result tr td:nth-of-type(6) {
-  width: 15%;
+.playBoard.tType6_result tr td:nth-of-type(1), .playBoard.tType6_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
-.playBoard.tType6_result tr td:nth-of-type(3), .playBoard.tType6_result tr td:nth-of-type(4) {
-  width: 20%;
+.playBoard.tType6_result tr td:nth-of-type(3), .playBoard.tType6_result tr td:nth-of-type(4), .playBoard.tType6_result tr td:nth-of-type(5), .playBoard.tType6_result tr td:nth-of-type(6) {
+  width: 25%;
 }
 .playBoard.tType7 tr td:nth-of-type(1) {
   width: 100%;
@@ -1681,56 +1660,53 @@ main .bg {
 .playBoard.tType7 tr td:nth-of-type(4) {
   min-width: 50px;
 }
-.playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(13), .playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(14), .playBoard.tType7_bingo_index.hide3 tr td:nth-of-type(15) {
-  width: 8%;
+.playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2) {
+  min-width: 120px;
 }
-.playBoard.tType7_bingo_index tr td:nth-of-type(1), .playBoard.tType7_bingo_index tr td:nth-of-type(2), .playBoard.tType7_bingo_index tr td:nth-of-type(13), .playBoard.tType7_bingo_index tr td:nth-of-type(14), .playBoard.tType7_bingo_index tr td:nth-of-type(15) {
-  width: 12%;
+.playBoard.tType7_bingo_index tr td:nth-of-type(13), .playBoard.tType7_bingo_index tr td:nth-of-type(14), .playBoard.tType7_bingo_index tr td:nth-of-type(15) {
+  width: 33%;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(3), .playBoard.tType7_bingo_index tr td:nth-of-type(4), .playBoard.tType7_bingo_index tr td:nth-of-type(5), .playBoard.tType7_bingo_index tr td:nth-of-type(6), .playBoard.tType7_bingo_index tr td:nth-of-type(7), .playBoard.tType7_bingo_index tr td:nth-of-type(8), .playBoard.tType7_bingo_index tr td:nth-of-type(9), .playBoard.tType7_bingo_index tr td:nth-of-type(10), .playBoard.tType7_bingo_index tr td:nth-of-type(11), .playBoard.tType7_bingo_index tr td:nth-of-type(12) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType7_bingo_index tr td:nth-of-type(16) {
-  width: 10%;
+  min-width: 50px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(1), .playBoard.tType7_lottery_index tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 120px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(3) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(4), .playBoard.tType7_lottery_index tr td:nth-of-type(5), .playBoard.tType7_lottery_index tr td:nth-of-type(6), .playBoard.tType7_lottery_index tr td:nth-of-type(7), .playBoard.tType7_lottery_index tr td:nth-of-type(8) {
-  width: 9%;
+  min-width: 80px;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(9) {
-  width: 7%;
+  width: 100%;
 }
 .playBoard.tType7_lottery_index tr td:nth-of-type(10) {
-  width: 10%;
+  min-width: 50px;
 }
-.playBoard.tType7_bingo_result tr td:nth-of-type(1) {
-  width: 15%;
-}
-.playBoard.tType7_bingo_result tr td:nth-of-type(2) {
-  width: 20%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(1), .playBoard.tType7_bingo_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
 .playBoard.tType7_bingo_result tr td:nth-of-type(3) {
-  width: 9%;
+  min-width: 60px;
 }
-.playBoard.tType7_bingo_result tr td:nth-of-type(4), .playBoard.tType7_bingo_result tr td:nth-of-type(5), .playBoard.tType7_bingo_result tr td:nth-of-type(6), .playBoard.tType7_bingo_result tr td:nth-of-type(7), .playBoard.tType7_bingo_result tr td:nth-of-type(8), .playBoard.tType7_bingo_result tr td:nth-of-type(9), .playBoard.tType7_bingo_result tr td:nth-of-type(10) {
-  width: 8%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(4), .playBoard.tType7_bingo_result tr td:nth-of-type(5), .playBoard.tType7_bingo_result tr td:nth-of-type(6), .playBoard.tType7_bingo_result tr td:nth-of-type(7), .playBoard.tType7_bingo_result tr td:nth-of-type(8), .playBoard.tType7_bingo_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
-.playBoard.tType7_lottery_result tr td:nth-of-type(1) {
-  width: 15%;
+.playBoard.tType7_bingo_result tr td:nth-of-type(10) {
+  width: 100%;
 }
-.playBoard.tType7_lottery_result tr td:nth-of-type(2) {
-  width: 18%;
+.playBoard.tType7_lottery_result tr td:nth-of-type(1), .playBoard.tType7_lottery_result tr td:nth-of-type(2) {
+  min-width: 120px;
 }
 .playBoard.tType7_lottery_result tr td:nth-of-type(3), .playBoard.tType7_lottery_result tr td:nth-of-type(4), .playBoard.tType7_lottery_result tr td:nth-of-type(5), .playBoard.tType7_lottery_result tr td:nth-of-type(6), .playBoard.tType7_lottery_result tr td:nth-of-type(7), .playBoard.tType7_lottery_result tr td:nth-of-type(8), .playBoard.tType7_lottery_result tr td:nth-of-type(9), .playBoard.tType7_lottery_result tr td:nth-of-type(10), .playBoard.tType7_lottery_result tr td:nth-of-type(11), .playBoard.tType7_lottery_result tr td:nth-of-type(12) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType7_lottery_result tr td:nth-of-type(13), .playBoard.tType7_lottery_result tr td:nth-of-type(14), .playBoard.tType7_lottery_result tr td:nth-of-type(15) {
-  width: 9%;
+  width: 33%;
 }
 .playBoard.tType8 tr td:nth-of-type(1) {
   width: 100%;
@@ -1780,41 +1756,35 @@ main .bg {
 .playBoard.tType8_2 tr td:nth-of-type(15) {
   min-width: 50px;
 }
-.playBoard.tType8_index.hide1 tr td:nth-of-type(4) {
-  width: 48%;
+.playBoard.tType8_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType8_index.hide1 tr td:nth-of-type(13) {
-  width: 9%;
-}
-.playBoard.tType8_index tr td:nth-of-type(1), .playBoard.tType8_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType8_index tr td:nth-of-type(2), .playBoard.tType8_index tr td:nth-of-type(13) {
+  min-width: 50px;
 }
 .playBoard.tType8_index tr td:nth-of-type(3), .playBoard.tType8_index tr td:nth-of-type(11), .playBoard.tType8_index tr td:nth-of-type(12) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType8_index tr td:nth-of-type(4) {
-  width: 50%;
+  width: 100%;
 }
 .playBoard.tType8_index tr td:nth-of-type(5), .playBoard.tType8_index tr td:nth-of-type(6), .playBoard.tType8_index tr td:nth-of-type(7), .playBoard.tType8_index tr td:nth-of-type(8), .playBoard.tType8_index tr td:nth-of-type(9), .playBoard.tType8_index tr td:nth-of-type(10) {
-  width: 3%;
-}
-.playBoard.tType8_index tr td:nth-of-type(13) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType8_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType8_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType8_result tr td:nth-of-type(3) {
-  width: 51%;
+  width: 100%;
 }
 .playBoard.tType8_result tr td:nth-of-type(4), .playBoard.tType8_result tr td:nth-of-type(5), .playBoard.tType8_result tr td:nth-of-type(6), .playBoard.tType8_result tr td:nth-of-type(7), .playBoard.tType8_result tr td:nth-of-type(8), .playBoard.tType8_result tr td:nth-of-type(9) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType8_result tr td:nth-of-type(10), .playBoard.tType8_result tr td:nth-of-type(11) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType9 tr td:nth-of-type(1) {
   width: 100%;
@@ -1848,32 +1818,32 @@ main .bg {
 .playBoard.tType9_2 tr td:nth-of-type(9) {
   min-width: 50px;
 }
-.playBoard.tType9_index tr td:nth-of-type(1), .playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3) {
-  width: 7%;
+.playBoard.tType9_index tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType9_index tr td:nth-of-type(2), .playBoard.tType9_index tr td:nth-of-type(3), .playBoard.tType9_index tr td:nth-of-type(6) {
+  min-width: 50px;
 }
 .playBoard.tType9_index tr td:nth-of-type(4) {
-  width: 66%;
+  width: 100%;
 }
 .playBoard.tType9_index tr td:nth-of-type(5) {
-  width: 5%;
-}
-.playBoard.tType9_index tr td:nth-of-type(6) {
-  width: 8%;
+  min-width: 30px;
 }
 .playBoard.tType9_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType9_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType9_result tr td:nth-of-type(3) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType9_result tr td:nth-of-type(4) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType9_result tr td:nth-of-type(5) {
-  width: 15%;
+  min-width: 100px;
 }
 .playBoard.tType10 tr td:nth-of-type(1) {
   width: 100%;
@@ -1917,41 +1887,35 @@ main .bg {
 .playBoard.tType10_2 tr td:nth-of-type(16) {
   min-width: 50px;
 }
-.playBoard.tType10_index.hide1 tr td:nth-of-type(4) {
-  width: 45%;
+.playBoard.tType10_index tr td:nth-of-type(1) {
+  min-width: 70px;
 }
-.playBoard.tType10_index.hide1 tr td:nth-of-type(14) {
-  width: 8%;
-}
-.playBoard.tType10_index tr td:nth-of-type(1), .playBoard.tType10_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType10_index tr td:nth-of-type(2), .playBoard.tType10_index tr td:nth-of-type(14) {
+  min-width: 50px;
 }
 .playBoard.tType10_index tr td:nth-of-type(3), .playBoard.tType10_index tr td:nth-of-type(12), .playBoard.tType10_index tr td:nth-of-type(13) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType10_index tr td:nth-of-type(4) {
-  width: 47%;
+  width: 100%;
 }
 .playBoard.tType10_index tr td:nth-of-type(5), .playBoard.tType10_index tr td:nth-of-type(6), .playBoard.tType10_index tr td:nth-of-type(7), .playBoard.tType10_index tr td:nth-of-type(8), .playBoard.tType10_index tr td:nth-of-type(9), .playBoard.tType10_index tr td:nth-of-type(10), .playBoard.tType10_index tr td:nth-of-type(11) {
-  width: 3%;
-}
-.playBoard.tType10_index tr td:nth-of-type(14) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType10_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType10_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType10_result tr td:nth-of-type(3) {
-  width: 48%;
+  width: 100%;
 }
 .playBoard.tType10_result tr td:nth-of-type(4), .playBoard.tType10_result tr td:nth-of-type(5), .playBoard.tType10_result tr td:nth-of-type(6), .playBoard.tType10_result tr td:nth-of-type(7), .playBoard.tType10_result tr td:nth-of-type(8), .playBoard.tType10_result tr td:nth-of-type(9), .playBoard.tType10_result tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType10_result tr td:nth-of-type(11), .playBoard.tType10_result tr td:nth-of-type(12) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType11 tr td:nth-of-type(1) {
   width: 100%;
@@ -1968,23 +1932,17 @@ main .bg {
 .playBoard.tType11_index tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType11_index tr td:nth-of-type(1), .playBoard.tType11_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType11_index tr td:nth-of-type(1), .playBoard.tType11_index tr td:nth-of-type(9) {
+  min-width: 70px;
+}
+.playBoard.tType11_index tr td:nth-of-type(2), .playBoard.tType11_index tr td:nth-of-type(6), .playBoard.tType11_index tr td:nth-of-type(11) {
+  min-width: 50px;
 }
 .playBoard.tType11_index tr td:nth-of-type(3), .playBoard.tType11_index tr td:nth-of-type(4), .playBoard.tType11_index tr td:nth-of-type(7), .playBoard.tType11_index tr td:nth-of-type(10) {
-  width: 3%;
+  min-width: 30px;
 }
 .playBoard.tType11_index tr td:nth-of-type(5), .playBoard.tType11_index tr td:nth-of-type(8) {
-  width: 26%;
-}
-.playBoard.tType11_index tr td:nth-of-type(6) {
-  width: 5%;
-}
-.playBoard.tType11_index tr td:nth-of-type(9) {
-  width: 8%;
-}
-.playBoard.tType11_index tr td:nth-of-type(11) {
-  width: 6%;
+  width: 50%;
 }
 .playBoard.tType11_result tr td p {
   padding-bottom: 8px;
@@ -1992,20 +1950,20 @@ main .bg {
 .playBoard.tType11_result tr td p:last-child {
   padding: 0px;
 }
-.playBoard.tType11_result tr td:nth-of-type(1), .playBoard.tType11_result tr td:nth-of-type(6) {
-  width: 8%;
+.playBoard.tType11_result tr td:nth-of-type(1), .playBoard.tType11_result tr td:nth-of-type(9) {
+  min-width: 70px;
 }
 .playBoard.tType11_result tr td:nth-of-type(2) {
-  width: 15%;
-}
-.playBoard.tType11_result tr td:nth-of-type(5), .playBoard.tType11_result tr td:nth-of-type(8) {
-  width: 22%;
+  min-width: 150px;
 }
 .playBoard.tType11_result tr td:nth-of-type(3), .playBoard.tType11_result tr td:nth-of-type(4), .playBoard.tType11_result tr td:nth-of-type(7), .playBoard.tType11_result tr td:nth-of-type(10) {
-  width: 4%;
+  min-width: 30px;
 }
-.playBoard.tType11_result tr td:nth-of-type(9) {
-  width: 9%;
+.playBoard.tType11_result tr td:nth-of-type(5), .playBoard.tType11_result tr td:nth-of-type(8) {
+  width: 50%;
+}
+.playBoard.tType11_result tr td:nth-of-type(6) {
+  min-width: 40px;
 }
 .playBoard.tType12 tr td:nth-of-type(1) {
   width: 100%;
@@ -2055,35 +2013,35 @@ main .bg {
 .playBoard.tType12_index.hide1 tr td:nth-of-type(12) {
   width: 8%;
 }
-.playBoard.tType12_index tr td:nth-of-type(1), .playBoard.tType12_index tr td:nth-of-type(2) {
-  width: 7%;
+.playBoard.tType12_index tr td:nth-of-type(1) {
+  min-width: 70px;
+}
+.playBoard.tType12_index tr td:nth-of-type(2), .playBoard.tType12_index tr td:nth-of-type(12) {
+  min-width: 50px;
 }
 .playBoard.tType12_index tr td:nth-of-type(3), .playBoard.tType12_index tr td:nth-of-type(10), .playBoard.tType12_index tr td:nth-of-type(11) {
-  width: 4%;
+  min-width: 30px;
 }
 .playBoard.tType12_index tr td:nth-of-type(4) {
-  width: 53%;
+  width: 100%;
 }
 .playBoard.tType12_index tr td:nth-of-type(5), .playBoard.tType12_index tr td:nth-of-type(6), .playBoard.tType12_index tr td:nth-of-type(7), .playBoard.tType12_index tr td:nth-of-type(8), .playBoard.tType12_index tr td:nth-of-type(9) {
-  width: 3%;
-}
-.playBoard.tType12_index tr td:nth-of-type(12) {
-  width: 6%;
+  min-width: 20px;
 }
 .playBoard.tType12_result tr td:nth-of-type(1) {
-  width: 8%;
+  min-width: 70px;
 }
 .playBoard.tType12_result tr td:nth-of-type(2) {
-  width: 15%;
+  min-width: 150px;
 }
 .playBoard.tType12_result tr td:nth-of-type(3) {
-  width: 58%;
+  width: 100%;
 }
 .playBoard.tType12_result tr td:nth-of-type(4), .playBoard.tType12_result tr td:nth-of-type(5), .playBoard.tType12_result tr td:nth-of-type(6), .playBoard.tType12_result tr td:nth-of-type(7), .playBoard.tType12_result tr td:nth-of-type(8) {
-  width: 3%;
+  min-width: 20px;
 }
 .playBoard.tType12_result tr td:nth-of-type(9), .playBoard.tType12_result tr td:nth-of-type(10) {
-  width: 4%;
+  min-width: 30px;
 }
 
 .bettingBoard {
