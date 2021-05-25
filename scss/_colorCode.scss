@@ -157,7 +157,7 @@ $black002: #000000b6;
 
 //背景色
 //-webkit-scrollbar-track------------------
-//.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
+//body;.left;.right;.right .room .livelist;.room .bettingStatus;.middle;
 //.chleague;.bettingbar .bettingbox .bettingwindow;
 //.discount;.myself;.myself .onlineCilent .chatwindow;.myself .onlineCilent .onlineroom;
 //.myself .ruleBox ol li .tableBox;
@@ -305,6 +305,8 @@ $gray003: #bcbcbc;
 $gray004: #ababab;
 
 //背景色
+//-webkit-scrollbar-thumb------------------
+//body;
 //---------------main----------------------
 //.minetable.withdrawl tr td .box .title;
 //---------------jumpbox-------------------
@@ -493,6 +495,15 @@ $gray011: #2a2a2a;
 //.bettingCheck .bettingbox .bettingwindow;
 $gray012: #676767;
 
+//邊框色
+//---------------jumpbox-------------------
+//.conversionBox;.signupWindow .signupbar;.signupWindow .signupbox;.controlBox;
+//.norbetting;.norbetting .nor_bettingbox;.norbettingCheck;.norbettingCheck .bettingbox;
+//.calculator .calbar;.calculator .calbox;.unLogin .topBar;.unLogin .remindBox;
+//.changePasswordWindow .topbar;.changePasswordWindow .box;.cardremind .topbar;
+//.cardremind .box;.cardAdd .topbar;.cardAdd .box;
+$gray013: #a2a2a2;
+
 //字色
 //---------------header--------------------
 //.top button;.top span;.marqueeBox marquee;
@@ -629,6 +640,11 @@ $green004: #31a8b1;
 //-webkit-scrollbar-thumb------------------
 //.bettingCheck .bettingbox .bettingwindow;
 $green005: #60b73a;
+
+//邊框色
+//---------------jumpbox-------------------
+//.bettingbar .openBtn;.bettingbar .bettingbox;.bettingCheck;.bettingCheck .bettingbox;
+$green006: #87F757;
 
 //背景色
 //---------------else----------------------

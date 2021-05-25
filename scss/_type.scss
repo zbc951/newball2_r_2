@@ -714,6 +714,7 @@
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+    border: solid 1px #a2a2a2;
 
     &.display {
         display: block;
@@ -808,6 +809,8 @@
         background: #2a2a2a;
         border-radius: 3px 3px 0px 0px;
         position: relative;
+        border: solid 1px #a2a2a2;
+        box-sizing: border-box;
 
         span {
             font-size: 17px;
@@ -851,11 +854,13 @@
 
     //主內容
     .signupbox {
-        width: 100%;
+        width: calc(100% - 2px);
         height: 265px;
         background: #747474;
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
+        border: solid 1px #a2a2a2;
+        margin: -1px 0px 0px 0px;
 
         div {
             width: 48%;
@@ -930,6 +935,7 @@
     left: 50%;
     top: 15%;
     transform: translateX(-50%);
+    border: solid 1px #a2a2a2;
 
     h1 {
         width: 100%;
@@ -1233,7 +1239,7 @@
         border-radius: 0px 0px 3px 3px;
         border-top-width: 0px;
         overflow: hidden;
-        margin-left: -1px;
+        margin: -1px 0px 0px -1px;
 
         //總額顯示
         .bettingtotal {
@@ -1355,6 +1361,8 @@
     top: 150px;
     background: #3d3d3d;
     border-radius: 3px 3px 0px 0px;
+    border: solid 1px #a2a2a2;
+    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1397,13 +1405,14 @@
 
     //投注內容
     .bettingbox {
-        width: 576px;
+        width: 578px;
         height: auto;
         background: #fff;
-        border: solid 2px #3d3d3d;
+        border: solid 1px #a2a2a2;
         border-top-width: 0px;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
+        margin: -1px 0px 0px -1px;
         
         //總額顯示
         .bettingtotal {
@@ -1813,6 +1822,8 @@
     top: 150px;
     background: #828282;
     border-radius: 3px 3px 0px 0px;
+    border: solid 1px #87F757;
+    box-sizing: border-box;
 
     //總投注額
     .num {
@@ -1882,15 +1893,16 @@
 
     //投注內容
     .bettingbox {
-        width: 576px;
+        width: 578px;
         height: 430px;
         margin-top: 50px;
         background: #ababab;
-        border: solid 2px #828282;
+        border: solid 1px #87F757;
         border-top-width: 0px;
         border-radius: 0px 0px 3px 3px;
         overflow: hidden;
         cursor: default;
+        margin: 49px 0px 0px -1px;
 
         //table視窗
         .bettingwindow {
@@ -2113,6 +2125,8 @@
         line-height: 42px;
         font-size: 14px;
         font-weight: bold;
+        border: solid 1px #a2a2a2;
+        box-sizing: border-box;
 
         button {
             position: absolute;
@@ -2158,6 +2172,7 @@
         position: relative;
         overflow: hidden;
         padding: 0px 30px;
+        border: solid 1px #a2a2a2;
 
         .top {
             padding: 10px 0px;
@@ -2412,6 +2427,7 @@
         background: #2a2a2a;
         border-radius: 3px 3px 0px 0px;
         position: relative;
+        border: solid 1px #a2a2a2;
 
         span {
             font-size: 17px;
@@ -2461,6 +2477,8 @@
         border-radius: 0px 0px 3px 3px;
         padding: 20px 0px;
         text-align: center;
+        border: solid 1px #a2a2a2;
+        border-top: none;
 
         p {
             font-size: 24px;
