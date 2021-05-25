@@ -1183,6 +1183,8 @@
     border-radius: 3px 3px 0px 0px;
     z-index: 16;
     text-align: left;
+    border: solid 1px #a2a2a2;
+    box-sizing: border-box;
 
     &.display {
         display: block;
@@ -1224,13 +1226,14 @@
     }
 
     .nor_bettingbox {
-        width: 576px;
+        width: 578px;
         height: auto;
         background: #fff;
-        border: solid 2px #3d3d3d;
+        border: solid 1px #a2a2a2;
         border-radius: 0px 0px 3px 3px;
         border-top-width: 0px;
         overflow: hidden;
+        margin-left: -1px;
 
         //總額顯示
         .bettingtotal {

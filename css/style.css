@@ -5230,6 +5230,8 @@ main .bg {
   border-radius: 3px 3px 0px 0px;
   z-index: 16;
   text-align: left;
+  border: solid 1px #a2a2a2;
+  box-sizing: border-box;
 }
 .norbetting.display {
   display: block;
@@ -5268,13 +5270,14 @@ main .bg {
   background: #fff;
 }
 .norbetting .nor_bettingbox {
-  width: 576px;
+  width: 578px;
   height: auto;
   background: #fff;
-  border: solid 2px #3d3d3d;
+  border: solid 1px #a2a2a2;
   border-radius: 0px 0px 3px 3px;
   border-top-width: 0px;
   overflow: hidden;
+  margin-left: -1px;
 }
 .norbetting .nor_bettingbox .bettingtotal {
   width: 100%;
@@ -8259,6 +8262,6 @@ html body::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 html body::-webkit-scrollbar-thumb {
-  background: #b9becf;
+  background: #828282;
   border-radius: 10px;
 }
