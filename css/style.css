@@ -3805,7 +3805,7 @@ main .bg {
   text-align: left;
 }
 .minetable.withdrawl tr td .inputBox {
-  width: 50%;
+  width: 55%;
   height: auto;
   margin: 20px 0px;
   text-align: left;
@@ -7463,7 +7463,7 @@ main .bg {
   display: block;
 }
 .myself .linkBox div {
-  width: 100%;
+  width: 1080px;
   height: auto;
   margin-left: 45px;
   display: flex;
